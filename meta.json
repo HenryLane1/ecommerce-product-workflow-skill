@@ -1,1 +1,16 @@
-ew0KICAibmFtZSI6ICJlY29tbWVyY2UtcHJvZHVjdC13b3JrZmxvdyIsDQogICJ2ZXJzaW9uIjogIjEuMC4wIiwNCiAgInNjb3BlIjogInNraWxsIiwNCiAgImRpc3BsYXlfbmFtZSI6ICLnlLXllYbllYblk4Hlhajpk77ot6/kvJjljJblt6XkvZzmtYEiLA0KICAidHlwZSI6ICJza2lsbCIsDQogICJ1c2VfY2FzZXMiOiBbDQogICAgIueUteWVhuWVhuWTgeS8mOWMliIsDQogICAgIuS4u+WbvueUn+aIkCIsDQogICAgIuWNlueCueWbvueUn+aIkCIsDQogICAgIuagh+mimOaWh+ahiCIsDQogICAgIuernuWTgeWIhuaekCIsDQogICAgIuWFs+mUruivjeaPkOeCvCINCiAgXSwNCiAgIm1kNSI6ICJlNjk1MjFiMWVkMWNjNTVhZTYwMWY3YTU1NjU1MTE3NCINCn0=
+{
+  "name": "ecommerce-product-workflow",
+  "version": "1.0.0",
+  "scope": "skill",
+  "display_name": "电商商品全链路优化工作流",
+  "type": "skill",
+  "use_cases": [
+    "电商商品优化",
+    "主图生成",
+    "卖点图生成",
+    "标题文案",
+    "竞品分析",
+    "关键词提炼"
+  ],
+  "md5": "e69521b1ed1cc55ae601f7a556551174"
+}
