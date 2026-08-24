@@ -1,1 +1,186 @@
-LS0tCm5hbWU6IGltYWdlX2dlbmVyYXRpb24KZGlzcGxheV9uYW1lOiBBSSDlm77lg4/nlJ/miJAKZGVzY3JpcHRpb246IEFJ5Zu+5YOP55Sf5oiQ5LiO57yW6L6R6IO95Yqb77yM5Z+65LqOIE5hbm8gQmFuYW5hIChHZW1pbmkgSW1hZ2UpIOWunueOsOaWh+eUn+WbvuOAgeWbvueUn+WbvuOAgeWbvuWDj+e8lui+keOAgumAgueUqOS6juWIm+aEj+iuvuiuoeOAgeiQpemUgOe0oOadkOOAgeekvuS6pOWqkuS9k+WGheWuueOAgea8lOekuuaWh+eov+mFjeWbvuetieWcuuaZr+OAguaUr+aMgeWkmuenjemjjuagvOOAgemrmOWIhui+qOeOh+i+k+WHuu+8iOacgOmrmDRL77yJ44CB5paH5a2X5riy5p+T44CB6KeS6Imy5LiA6Ie05oCn5L+d5oyB44CCCnZlcnNpb246IDEuMC4wCmF1dGhvcjogc3lzdGVtCnRhZ3M6IFtpbWFnZSwgZ2VuZXJhdGlvbiwgZWRpdGluZywgZGVzaWduLCBjcmVhdGl2ZSwg55Sf5Zu+LCDlm77lg48sIOiuvuiuoSwgbmFuby1iYW5hbmEsIGdlbWluaV0KYWxsb3dlZF90b29sczogW2dlbmVyYXRlX2ltYWdlLCBlZGl0X2ltYWdlLCBjcmVhdGVfZG9jdW1lbnRdCm1heF9pdGVyYXRpb25zOiAxNQp0aW1lb3V0OiAzMDAKbWF0Y2hfdGhyZXNob2xkOiAwLjc1CnByaW9yaXR5OiA4CmVuYWJsZWQ6IHRydWUKLS0tCgojIyDog73lipvmpoLov7AKCkFJ5Zu+5YOP55Sf5oiQ6IO95Yqb6K6p5L2g6IO95aSf77yaCi0gKirmlofnlJ/lm74qKu+8muagueaNruaWh+Wtl+aPj+i/sOeUn+aIkOWbvuWDjwotICoq5Zu+55Sf5Zu+KirvvJrln7rkuo7lj4LogIPlm77lg4/nlJ/miJDmlrDlm77lg48KLSAqKuWbvuWDj+e8lui+kSoq77ya5L+u5pS5546w5pyJ5Zu+5YOP55qE54m55a6a6YOo5YiGCi0gKirpo47moLzovazmjaIqKu+8muaUueWPmOWbvuWDj+mjjuagvO+8iOWGmeWunuOAgeWKqOa8q+OAgeayueeUu+etie+8iQotICoq5paH5a2X5riy5p+TKirvvJrlnKjlm77lg4/kuK3nlJ/miJDmuIXmmbDlj6/or7vnmoTmloflrZcKCuW6leWxguWfuuS6jiBHb29nbGUgR2VtaW5pIOeahCBOYW5vIEJhbmFuYSAvIE5hbm8gQmFuYW5hIFBybyDmqKHlnovjgIIKCiMjIOW3peS9nOa1geeoiwoKIyMjIFBoYXNlIDE6IOmcgOaxgueQhuinowoxLiDnkIbop6PnlKjmiLfnmoTlm77lg4/pnIDmsYLvvIjkuLvpopjjgIHpo47moLzjgIHnlKjpgJTvvIkKMi4g56Gu6K6k6L6T5Ye65qC85byP77yI5bC65a+444CB5YiG6L6o546H44CB5pWw6YeP77yJCjMuIOWmguacieWPguiAg+Wbvu+8jOehruiupOe8lui+keaEj+WbvgoKIyMjIFBoYXNlIDI6IFByb21wdCDmnoTlu7oKMS4g5bCG55So5oi35oSP5Zu+6L2s5YyW5Li66Iux5paHIFByb21wdO+8iOaViOaenOabtOWlve+8iQoyLiDpgbXlvqogUHJvbXB0IOWFrOW8j++8mmA8c3ViamVjdD4gPGFjdGlvbj4gPHNjZW5lPiA8c3R5bGU+IDxxdWFsaXR5PmAKMy4g6KGl5YWF5b+F6KaB55qE57uG6IqC5o+P6L+wCgojIyMgUGhhc2UgMzog5Zu+5YOP55Sf5oiQCjEuIOiwg+eUqCBgZ2VuZXJhdGVfaW1hZ2VgIOW3peWFtwoyLiDlpoLpnIDnvJbovpHvvIzosIPnlKggYGVkaXRfaW1hZ2VgIOW3peWFtwozLiDnlJ/miJDlpJrkuKrlgJnpgInvvIjlpoLnlKjmiLfpnIDopoHpgInmi6nvvIkKCiMjIyBQaGFzZSA0OiDkuqTku5gKMS4g5bGV56S655Sf5oiQ57uT5p6cCjIuIOivoumXruaYr+WQpumcgOimgeiwg+aVtAozLiDkv53lrZjliLDnlKjmiLfmjIflrprkvY3nva4KCiMjIOW3peWFt+S9v+eUqAoKIyMjIGdlbmVyYXRlX2ltYWdlCi0gKirnlKjpgJQqKu+8muagueaNruaWh+Wtl+aPj+i/sOeUn+aIkOWbvuWDjwotICoq5Y+C5pWwKirvvJoKICAtIGBwcm9tcHRgOiDlm77lg4/mj4/ov7DvvIjoi7HmlofmlYjmnpzmm7TkvbPvvIkKICAtIGBzdHlsZWA6IOmjjuagvOmihOiuvu+8iHJlYWxpc3RpYywgYW5pbWUsIG9pbF9wYWludGluZywgd2F0ZXJjb2xvciwgbWluaW1hbCwgY2luZW1hdGlj77yJCiAgLSBgYXNwZWN0X3JhdGlvYDog5a696auY5q+U77yIMToxLCAxNjo5LCA5OjE2LCA0OjMsIDM6NO+8iQogIC0gYHJlc29sdXRpb25gOiDliIbovqjnjofvvIgxSywgMkssIDRL77yJCiAgLSBgbnVtX2ltYWdlc2A6IOeUn+aIkOaVsOmHj++8iDEtNO+8iQotICoq56S65L6LKirvvJoKICBgYGBweXRob24KICBnZW5lcmF0ZV9pbWFnZSgKICAgICAgcHJvbXB0PSJBIG1hamVzdGljIGhvcnNlIGdhbGxvcGluZyB0aHJvdWdoIGNoZXJyeSBibG9zc29tcywgZ29sZGVuIGhvdXIgbGlnaHRpbmcsIENoaW5lc2UgTmV3IFllYXIgZmVzdGl2ZSBhdG1vc3BoZXJlIiwKICAgICAgc3R5bGU9InJlYWxpc3RpYyIsCiAgICAgIGFzcGVjdF9yYXRpbz0iMTY6OSIsCiAgICAgIHJlc29sdXRpb249IjJLIiwKICAgICAgbnVtX2ltYWdlcz0yCiAgKQogIGBgYAoKIyMjIGVkaXRfaW1hZ2UKLSAqKueUqOmAlCoq77ya57yW6L6R546w5pyJ5Zu+5YOPCi0gKirlj4LmlbAqKu+8mgogIC0gYGltYWdlX3BhdGhgOiDljp/lm77ot6/lvoTmiJZVUkwKICAtIGBwcm9tcHRgOiDnvJbovpHmjIfku6TvvIjlpoLvvJoi5bCG6IOM5pmv5pS55Li65aSc5pmvIu+8iQogIC0gYHByZXNlcnZlX3N1YmplY3RgOiDmmK/lkKbkv53mjIHkuLvkvZPkuI3lj5jvvIjpu5jorqRUcnVl77yJCi0gKirnpLrkvosqKu+8mgogIGBgYHB5dGhvbgogIGVkaXRfaW1hZ2UoCiAgICAgIGltYWdlX3BhdGg9Ii93b3Jrc3BhY2UvcGhvdG8uanBnIiwKICAgICAgcHJvbXB0PSJBZGQgQ2hpbmVzZSBOZXcgWWVhciBkZWNvcmF0aW9ucyBhbmQgcmVkIGxhbnRlcm5zIHRvIHRoZSBiYWNrZ3JvdW5kIiwKICAgICAgcHJlc2VydmVfc3ViamVjdD1UcnVlCiAgKQogIGBgYAoKIyMgUHJvbXB0IOacgOS9s+Wunui3tQoKIyMjIOWfuuehgOWFrOW8jwpgYGAKW+S4u+S9k10gKyBb5Yqo5L2cL+Wnv+aAgV0gKyBb5Zy65pmvL+iDjOaZr10gKyBb6aOO5qC8XSArIFvmsJvlm7Qv5YWJ57q/XQpgYGAKCiMjIyDpo47moLzlhbPplK7or40KLSAqKuWGmeWunioq77yacGhvdG9yZWFsaXN0aWMsIGh5cGVycmVhbGlzdGljLCA4SywgZGV0YWlsZWQKLSAqKuWKqOa8qyoq77yaYW5pbWUgc3R5bGUsIEdoaWJsaSBzdHlsZSwgY2VsIHNoYWRpbmcKLSAqKuayueeUuyoq77yab2lsIHBhaW50aW5nIHN0eWxlLCBpbXByZXNzaW9uaXN0LCBWYW4gR29naCBzdHlsZQotICoq5p6B566AKirvvJptaW5pbWFsLCBmbGF0IGRlc2lnbiwgdmVjdG9yIGFydAotICoq55S15b2x5oSfKirvvJpjaW5lbWF0aWMsIGRyYW1hdGljIGxpZ2h0aW5nLCBtb3ZpZSBwb3N0ZXIgc3R5bGUKCiMjIyDotKjph4/lop7lvLror40KLSBgaGlnaCBxdWFsaXR5YCwgYGRldGFpbGVkYCwgYHNoYXJwIGZvY3VzYAotIGBwcm9mZXNzaW9uYWwgcGhvdG9ncmFwaHlgLCBgYXdhcmQgd2lubmluZ2AKLSBgNEsgcmVzb2x1dGlvbmAsIGB1bHRyYSBkZXRhaWxlZGAKCiMjIyDpgb/lhY3kuovpobkKLSDinYwg6YG/5YWN5qih57OK5o+P6L+w77yaIuS4gOW8oOWlveeci+eahOWbviIKLSDinYwg6YG/5YWN55+b55u+5o+P6L+w77yaIuWGmeWunumjjuagvOeahOWNoemAmiIKLSDinYwg6YG/5YWN5pWP5oSf5YaF5a65Ci0g4pyFIOWFt+S9k+OAgea4heaZsOOAgeacieWxguasoQoKIyMg5bqU55So5Zy65pmv5qih5p2/CgojIyMg5Zy65pmvMe+8muW+ruS/oee6ouWMheWwgemdoi/oioLml6XnpZ3npo/lm74KYGBgeWFtbApwcm9tcHRfdGVtcGxhdGU6IHwKICBBIHthbmltYWx9IGluIHtwb3NlfSwgc3Vycm91bmRlZCBieSB7ZGVjb3JhdGlvbnN9LCAKICBDaGluZXNlIE5ldyBZZWFyIHRoZW1lLCBmZXN0aXZlIHJlZCBhbmQgZ29sZCBjb2xvcnMsIAogIHtzdHlsZX0gc3R5bGUsIGhpZ2ggcXVhbGl0eSwge3RleHRfY29udGVudH0KICAKdmFyaWFibGVzOgogIGFuaW1hbDogIm1hamVzdGljIGhvcnNlIiAjIOmprOW5tAogIHBvc2U6ICJydW5uaW5nIGdyYWNlZnVsbHkiCiAgZGVjb3JhdGlvbnM6ICJjaGVycnkgYmxvc3NvbXMsIHJlZCBsYW50ZXJucywgZ29sZCBjb2lucyIKICBzdHlsZTogImVsZWdhbnQgaWxsdXN0cmF0aW9uIgogIHRleHRfY29udGVudDogIndpdGggQ2hpbmVzZSB0ZXh0ICfmga3llpzlj5HotKInIGluIGdvbGRlbiBjYWxsaWdyYXBoeSIKYGBgCgojIyMg5Zy65pmvMu+8mua8lOekuuaWh+eov+mFjeWbvgpgYGB5YW1sCnByb21wdF90ZW1wbGF0ZTogfAogIHtjb25jZXB0fSB2aXN1YWxpemF0aW9uLCBwcm9mZXNzaW9uYWwgaW5mb2dyYXBoaWMgc3R5bGUsCiAgY2xlYW4gd2hpdGUgYmFja2dyb3VuZCwgbW9kZXJuIGNvcnBvcmF0ZSBhZXN0aGV0aWMsCiAgc3VidGxlIGdyYWRpZW50cywgbWluaW1hbGlzdCBkZXNpZ24KCnZhcmlhYmxlczoKICBjb25jZXB0OiAiQUkgd29ya2Zsb3cgYXV0b21hdGlvbiIKYGBgCgojIyMg5Zy65pmvM++8muekvuS6pOWqkuS9k+WGheWuuQpgYGB5YW1sCnByb21wdF90ZW1wbGF0ZTogfAogIHtzdWJqZWN0fSB7YWN0aW9ufSwge3BsYXRmb3JtfSBvcHRpbWl6ZWQgYXNwZWN0IHJhdGlvLAogIHZpYnJhbnQgY29sb3JzLCBleWUtY2F0Y2hpbmcgY29tcG9zaXRpb24sIAogIHRyZW5kaW5nIGFlc3RoZXRpYywgc2hhcmVhYmxlIGNvbnRlbnQgc3R5bGUKICAKdmFyaWFibGVzOgogIHN1YmplY3Q6ICJjb2ZmZWUgY3VwIgogIGFjdGlvbjogIndpdGggc3RlYW0gcmlzaW5nIgogIHBsYXRmb3JtOiAiSW5zdGFncmFtIiAjIDE6MSBvciA0OjUKYGBgCgojIyDovpPlh7rmoLzlvI8KCiMjIyDnlJ/miJDnu5PmnpzlsZXnpLoKYGBgbWFya2Rvd24KIyMg8J+OqCDlm77lg4/nlJ/miJDlrozmiJAKCioqUHJvbXB0Kio6IFvkvb/nlKjnmoToi7HmlodQcm9tcHRdCgoqKuWPguaVsCoqOgotIOmjjuagvDogW3N0eWxlXQotIOWwuuWvuDogW2FzcGVjdF9yYXRpb10KLSDliIbovqjnjoc6IFtyZXNvbHV0aW9uXQoKKirnlJ/miJDnu5PmnpwqKjoKIVtHZW5lcmF0ZWQgSW1hZ2VdKHBhdGgvdG8vaW1hZ2UucG5nKQoKKirkuIvkuIDmraUqKjoKLSBbIF0g5ruh5oSP77yM5L+d5a2Y5Yiw5oyH5a6a5L2N572uCi0gWyBdIOmcgOimgeiwg+aVtOmjjuagvC/popzoibIKLSBbIF0g6ZyA6KaB5L+u5pS554m55a6a6YOo5YiGCi0gWyBdIOmHjeaWsOeUn+aIkApgYGAKCiMjIOazqOaEj+S6i+mhuQoKMS4gKirniYjmnYPlkIjop4QqKu+8mueUn+aIkOeahOWbvuWDj+W4puaciSBTeW50aElEIOawtOWNsAoyLiAqKuWGheWuueaUv+etlioq77ya6YG15a6IIEdvb2dsZSDkvb/nlKjmlL/nrZbvvIzkuI3nlJ/miJDmlY/mhJ/lhoXlrrkKMy4gKirllYbkuJrkvb/nlKgqKu+8muaUr+aMgeWVhuS4mueUqOmAlO+8iOiQpemUgOOAgeS6p+WTge+8iQo0LiAqKuaWh+Wtl+a4suafkyoq77yaTmFubyBCYW5hbmEgUHJvIOaUr+aMgeWkmuivreiogOaWh+Wtl++8jOS9huS4reaWh+aViOaenOmcgOimgemqjOivgQo1LiAqKuinkuiJsuS4gOiHtOaApyoq77ya6Leo5Zu+5L+d5oyB6KeS6Imy54m55b6B6ZyA6KaB5L2/55So5Y+C6ICD5Zu+5Yqf6IO9CgojIyDotYTmupDlvJXnlKgKCi0gYHJlc291cmNlcy9wcm9tcHRfdGVtcGxhdGVzLnlhbWxgIC0g6aKE6K6+IFByb21wdCDmqKHmnb8KLSBgcmVzb3VyY2VzL3N0eWxlX3ByZXNldHMubWRgIC0g6aOO5qC86aKE6K6+6K+m6KejCi0gYHJlc291cmNlcy9jaGluZXNlX25ld195ZWFyXzIwMjYubWRgIC0g6ams5bm05LiT5bGe5qih5p2/Cg==
+---
+name: image_generation
+display_name: AI 图像生成
+description: AI图像生成与编辑能力，基于 Nano Banana (Gemini Image) 实现文生图、图生图、图像编辑。适用于创意设计、营销素材、社交媒体内容、演示文稿配图等场景。支持多种风格、高分辨率输出（最高4K）、文字渲染、角色一致性保持。
+version: 1.0.0
+author: system
+tags: [image, generation, editing, design, creative, 生图, 图像, 设计, nano-banana, gemini]
+allowed_tools: [generate_image, edit_image, create_document]
+max_iterations: 15
+timeout: 300
+match_threshold: 0.75
+priority: 8
+enabled: true
+---
+
+## 能力概述
+
+AI图像生成能力让你能够：
+- **文生图**：根据文字描述生成图像
+- **图生图**：基于参考图像生成新图像
+- **图像编辑**：修改现有图像的特定部分
+- **风格转换**：改变图像风格（写实、动漫、油画等）
+- **文字渲染**：在图像中生成清晰可读的文字
+
+底层基于 Google Gemini 的 Nano Banana / Nano Banana Pro 模型。
+
+## 工作流程
+
+### Phase 1: 需求理解
+1. 理解用户的图像需求（主题、风格、用途）
+2. 确认输出格式（尺寸、分辨率、数量）
+3. 如有参考图，确认编辑意图
+
+### Phase 2: Prompt 构建
+1. 将用户意图转化为英文 Prompt（效果更好）
+2. 遵循 Prompt 公式：`<subject> <action> <scene> <style> <quality>`
+3. 补充必要的细节描述
+
+### Phase 3: 图像生成
+1. 调用 `generate_image` 工具
+2. 如需编辑，调用 `edit_image` 工具
+3. 生成多个候选（如用户需要选择）
+
+### Phase 4: 交付
+1. 展示生成结果
+2. 询问是否需要调整
+3. 保存到用户指定位置
+
+## 工具使用
+
+### generate_image
+- **用途**：根据文字描述生成图像
+- **参数**：
+  - `prompt`: 图像描述（英文效果更佳）
+  - `style`: 风格预设（realistic, anime, oil_painting, watercolor, minimal, cinematic）
+  - `aspect_ratio`: 宽高比（1:1, 16:9, 9:16, 4:3, 3:4）
+  - `resolution`: 分辨率（1K, 2K, 4K）
+  - `num_images`: 生成数量（1-4）
+- **示例**：
+  ```python
+  generate_image(
+      prompt="A majestic horse galloping through cherry blossoms, golden hour lighting, Chinese New Year festive atmosphere",
+      style="realistic",
+      aspect_ratio="16:9",
+      resolution="2K",
+      num_images=2
+  )
+  ```
+
+### edit_image
+- **用途**：编辑现有图像
+- **参数**：
+  - `image_path`: 原图路径或URL
+  - `prompt`: 编辑指令（如："将背景改为夜景"）
+  - `preserve_subject`: 是否保持主体不变（默认True）
+- **示例**：
+  ```python
+  edit_image(
+      image_path="/workspace/photo.jpg",
+      prompt="Add Chinese New Year decorations and red lanterns to the background",
+      preserve_subject=True
+  )
+  ```
+
+## Prompt 最佳实践
+
+### 基础公式
+```
+[主体] + [动作/姿态] + [场景/背景] + [风格] + [氛围/光线]
+```
+
+### 风格关键词
+- **写实**：photorealistic, hyperrealistic, 8K, detailed
+- **动漫**：anime style, Ghibli style, cel shading
+- **油画**：oil painting style, impressionist, Van Gogh style
+- **极简**：minimal, flat design, vector art
+- **电影感**：cinematic, dramatic lighting, movie poster style
+
+### 质量增强词
+- `high quality`, `detailed`, `sharp focus`
+- `professional photography`, `award winning`
+- `4K resolution`, `ultra detailed`
+
+### 避免事项
+- ❌ 避免模糊描述："一张好看的图"
+- ❌ 避免矛盾描述："写实风格的卡通"
+- ❌ 避免敏感内容
+- ✅ 具体、清晰、有层次
+
+## 应用场景模板
+
+### 场景1：微信红包封面/节日祝福图
+```yaml
+prompt_template: |
+  A {animal} in {pose}, surrounded by {decorations}, 
+  Chinese New Year theme, festive red and gold colors, 
+  {style} style, high quality, {text_content}
+  
+variables:
+  animal: "majestic horse" # 马年
+  pose: "running gracefully"
+  decorations: "cherry blossoms, red lanterns, gold coins"
+  style: "elegant illustration"
+  text_content: "with Chinese text '恭喜发财' in golden calligraphy"
+```
+
+### 场景2：演示文稿配图
+```yaml
+prompt_template: |
+  {concept} visualization, professional infographic style,
+  clean white background, modern corporate aesthetic,
+  subtle gradients, minimalist design
+
+variables:
+  concept: "AI workflow automation"
+```
+
+### 场景3：社交媒体内容
+```yaml
+prompt_template: |
+  {subject} {action}, {platform} optimized aspect ratio,
+  vibrant colors, eye-catching composition, 
+  trending aesthetic, shareable content style
+  
+variables:
+  subject: "coffee cup"
+  action: "with steam rising"
+  platform: "Instagram" # 1:1 or 4:5
+```
+
+## 输出格式
+
+### 生成结果展示
+```markdown
+## 🎨 图像生成完成
+
+**Prompt**: [使用的英文Prompt]
+
+**参数**:
+- 风格: [style]
+- 尺寸: [aspect_ratio]
+- 分辨率: [resolution]
+
+**生成结果**:
+![Generated Image](path/to/image.png)
+
+**下一步**:
+- [ ] 满意，保存到指定位置
+- [ ] 需要调整风格/颜色
+- [ ] 需要修改特定部分
+- [ ] 重新生成
+```
+
+## 注意事项
+
+1. **版权合规**：生成的图像带有 SynthID 水印
+2. **内容政策**：遵守 Google 使用政策，不生成敏感内容
+3. **商业使用**：支持商业用途（营销、产品）
+4. **文字渲染**：Nano Banana Pro 支持多语言文字，但中文效果需要验证
+5. **角色一致性**：跨图保持角色特征需要使用参考图功能
+
+## 资源引用
+
+- `resources/prompt_templates.yaml` - 预设 Prompt 模板
+- `resources/style_presets.md` - 风格预设详解
+- `resources/chinese_new_year_2026.md` - 马年专属模板
