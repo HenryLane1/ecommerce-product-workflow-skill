@@ -1,1 +1,32 @@
-ewogICAgInRpdGxlIjogIkFjdG9yIElucHV0IiwKICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAic2NoZW1hVmVyc2lvbiI6IDEsCiAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAic3RhcnRVcmxzIjogewogICAgICAgICAgICAidGl0bGUiOiAiU3RhcnQgVVJMcyIsCiAgICAgICAgICAgICJ0eXBlIjogImFycmF5IiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkxpc3Qgb2YgVVJMcyB0byBzY3JhcGUiLAogICAgICAgICAgICAiZWRpdG9yIjogInJlcXVlc3RMaXN0U291cmNlcyIsCiAgICAgICAgICAgICJwbGFjZWhvbGRlclZhbHVlIjogW3sidXJsIjogImh0dHBzOi8vZXhhbXBsZS5jb20ifV0sCiAgICAgICAgICAgICJtaW5JdGVtcyI6IDEKICAgICAgICB9LAogICAgICAgICJtYXhJdGVtcyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIk1heGltdW0gaXRlbXMiLAogICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk1heGltdW0gbnVtYmVyIG9mIGl0ZW1zIHRvIHNjcmFwZSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAibnVtYmVyIiwKICAgICAgICAgICAgImRlZmF1bHQiOiAxMDAsCiAgICAgICAgICAgICJtaW5pbXVtIjogMSwKICAgICAgICAgICAgIm1heGltdW0iOiAxMDAwMAogICAgICAgIH0sCiAgICAgICAgInByb3h5Q29uZmlndXJhdGlvbiI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlByb3h5IGNvbmZpZ3VyYXRpb24iLAogICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiUHJveHkgc2V0dGluZ3MgZm9yIHRoZSBBY3RvciIsCiAgICAgICAgICAgICJlZGl0b3IiOiAicHJveHkiLAogICAgICAgICAgICAiZGVmYXVsdCI6IHsidXNlQXBpZnlQcm94eSI6IHRydWV9CiAgICAgICAgfQogICAgfSwKICAgICJyZXF1aXJlZCI6IFsic3RhcnRVcmxzIl0KfQo=
+{
+    "title": "Actor Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "List of URLs to scrape",
+            "editor": "requestListSources",
+            "placeholderValue": [{"url": "https://example.com"}],
+            "minItems": 1
+        },
+        "maxItems": {
+            "title": "Maximum items",
+            "type": "integer",
+            "description": "Maximum number of items to scrape",
+            "editor": "number",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 10000
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Proxy settings for the Actor",
+            "editor": "proxy",
+            "default": {"useApifyProxy": true}
+        }
+    },
+    "required": ["startUrls"]
+}
