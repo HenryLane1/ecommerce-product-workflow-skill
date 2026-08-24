@@ -1,1 +1,152 @@
-IyAtKi0gY29kaW5nOiB1dGYtOCAtKi0KIiIiCuixhuWMhSBTZWVkcmVhbSDlm77lg4/nlJ/miJDmqKHlnZfvvIjnlLXllYYgc2tpbGwg55Sf5Zu+IEwxIOiDveWKmyDCtyDlm73lhoXnm7Tov57vvIkKPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQrlupXlsYLmqKHlnovvvJrngavlsbHmlrnoiJ8gRG91YmFvIFNlZWRyZWFt77yINS4wIC8gNC41IC8gNC4w77yJ77yM5a2X6IqC6Lez5YqoCkFQSSBLZXkg77ya5LuO546v5aKD5Y+Y6YePIEFSS19BUElfS0VZIOivu+WPlu+8m3NraWxsIOaWh+S7tuWGheS4gOW+i+S9v+eUqOWNoOS9jeespiAke0FSS19BUElfS0VZfQogICAgICAgICAg5Lil56aB5oqK5piO5paHIEtleSDlhpnov5vku7vkvZUgc2tpbGwgLyDohJrmnKwgLyDphY3nva7mlofku7bkuK3jgIIK6I635Y+WIEtleSDvvJpodHRwczovL2NvbnNvbGUudm9sY2VuZ2luZS5jb20vYXJrL3JlZ2lvbjpjbi1iZWlqaW5nL2FwaWtleSDvvIjngavlsbHmlrnoiJ8gQVBJIEtleSDnrqHnkIbvvIkKCueUqOazleekuuS+i++8mgogICAgcHl0aG9uIGRvdWJhb19pbWFnZV9nZW4ucHkgLS1wcm9tcHQgIi4uLiIgLS1vdXRwdXQgIkQ6L291dC9tYWluLnBuZyIgWy0tc2l6ZSAyS10gWy0tbW9kZWwgZG91YmFvLXNlZWRyZWFtLTUtMC0yNjAxMjhdIFstLW5vLXdhdGVybWFya10KCuaUr+aMge+8mgotIOaWh+eUn+Wbvu+8iC0tcHJvbXB077yJCi0g5Zu+55Sf5Zu+77yILS1pbWFnZSDlj6/kvKDmnKzlnLDot6/lvoTmiJYgVVJM77yM6Ieq5Yqo6L2sIGJhc2U2NO+8iQotIOe7hOWbvu+8iC0tbiDnlJ/miJDlpJrlvKDvvIkKIiIiCmltcG9ydCBhcmdwYXJzZQppbXBvcnQgYmFzZTY0CmltcG9ydCBqc29uCmltcG9ydCBtaW1ldHlwZXMKaW1wb3J0IG9zCmltcG9ydCBzeXMKaW1wb3J0IHVybGxpYi5yZXF1ZXN0CmltcG9ydCB1cmxsaWIuZXJyb3IKCkRFRkFVTFRfTU9ERUwgPSAiZG91YmFvLXNlZWRyZWFtLTUtMC0yNjAxMjgiICAjIFNlZWRyZWFtIDUuMCDmnIDmlrAKQVBJX1VSTCA9ICJodHRwczovL2Fyay5jbi1iZWlqaW5nLnZvbGNlcy5jb20vYXBpL3YzL2ltYWdlcy9nZW5lcmF0aW9ucyIKCgpkZWYgZ2V0X2FwaV9rZXkoKToKICAgIGtleSA9IG9zLmVudmlyb24uZ2V0KCJBUktfQVBJX0tFWSIsICIiKS5zdHJpcCgpCiAgICBpZiBub3Qga2V5IG9yIGtleS5zdGFydHN3aXRoKCIkeyIpOgogICAgICAgIHN5cy5zdGRlcnIud3JpdGUoCiAgICAgICAgICAgICJbRVJST1JdIOacquajgOa1i+WIsOacieaViOeahCBBUktfQVBJX0tFWeOAglxuIgogICAgICAgICAgICAi6K+35Yiw54Gr5bGx5pa56Iif5o6n5Yi25Y+w6I635Y+WIEFQSSBLZXnvvJpodHRwczovL2NvbnNvbGUudm9sY2VuZ2luZS5jb20vYXJrL3JlZ2lvbjpjbi1iZWlqaW5nL2FwaWtleVxuIgogICAgICAgICAgICAi54S25ZCO6YWN572u546v5aKD5Y+Y6YePIEFSS19BUElfS0VZ77yI5oiW55So5Y2g5L2N56ymICR7QVJLX0FQSV9LRVl9IOeUsei/kOihjOaXtuazqOWFpe+8ieOAglxuIgogICAgICAgICkKICAgICAgICBzeXMuZXhpdCgyKQogICAgcmV0dXJuIGtleQoKCmRlZiB0b19pbWFnZV9pdGVtKHNyYyk6CiAgICAiIiLmiormnKzlnLDot6/lvoQgLyBiYXNlNjQgLyBVUkwg57uf5LiA6L2s5Li6IEFQSSDnmoQgaW1hZ2Ug5a2X5q616aG5IiIiCiAgICBpZiBzcmMuc3RhcnRzd2l0aCgiZGF0YToiKToKICAgICAgICByZXR1cm4gc3JjICAjIOW3suaYryBiYXNlNjQgZGF0YSBVUkkKICAgIGlmIHNyYy5zdGFydHN3aXRoKCJodHRwOi8vIikgb3Igc3JjLnN0YXJ0c3dpdGgoImh0dHBzOi8vIik6CiAgICAgICAgcmV0dXJuIHsidXJsIjogc3JjfQogICAgaWYgb3MucGF0aC5leGlzdHMoc3JjKToKICAgICAgICBtaW1lID0gbWltZXR5cGVzLmd1ZXNzX3R5cGUoc3JjKVswXSBvciAiaW1hZ2UvcG5nIgogICAgICAgIHdpdGggb3BlbihzcmMsICJyYiIpIGFzIGZoOgogICAgICAgICAgICBiNjQgPSBiYXNlNjQuYjY0ZW5jb2RlKGZoLnJlYWQoKSkuZGVjb2RlKCJhc2NpaSIpCiAgICAgICAgcmV0dXJuIHsiaW1hZ2UiOiBzcmMsICJ1cmwiOiBmImRhdGE6e21pbWV9O2Jhc2U2NCx7YjY0fSJ9CiAgICByYWlzZSBWYWx1ZUVycm9yKGYi5peg5rOV6K+G5Yir55qE5Zu+54mH6L6T5YWlOiB7c3JjfSIpCgoKZGVmIGRvd25sb2FkKHVybCwgb3V0X3BhdGgpOgogICAgcmVxID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCh1cmwsIGhlYWRlcnM9eyJVc2VyLUFnZW50IjogIk1hcnZpcyJ9KQogICAgd2l0aCB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHJlcSwgdGltZW91dD0xMjApIGFzIHJlc3A6CiAgICAgICAgZGF0YSA9IHJlc3AucmVhZCgpCiAgICB3aXRoIG9wZW4ob3V0X3BhdGgsICJ3YiIpIGFzIGZoOgogICAgICAgIGZoLndyaXRlKGRhdGEpCiAgICByZXR1cm4gb3V0X3BhdGgsIGxlbihkYXRhKQoKCmRlZiBnZW5lcmF0ZShwcm9tcHQsIG91dHB1dF9wYXRoLCBzaXplPSIyMDQ4eDIwNDgiLCBtb2RlbD1ERUZBVUxUX01PREVMLCBudW1faW1hZ2VzPTEsCiAgICAgICAgICAgICBpbWFnZV9pbnB1dHM9Tm9uZSwgd2F0ZXJtYXJrPVRydWUsIHJlc3BvbnNlX2Zvcm1hdD0idXJsIiwgdGltZW91dD0xMjApOgogICAga2V5ID0gZ2V0X2FwaV9rZXkoKQogICAgcGF5bG9hZCA9IHsKICAgICAgICAibW9kZWwiOiBtb2RlbCwKICAgICAgICAicHJvbXB0IjogcHJvbXB0LAogICAgICAgICJzaXplIjogc2l6ZSwKICAgICAgICAibiI6IG51bV9pbWFnZXMsCiAgICAgICAgInJlc3BvbnNlX2Zvcm1hdCI6IHJlc3BvbnNlX2Zvcm1hdCwKICAgICAgICAid2F0ZXJtYXJrIjogd2F0ZXJtYXJrLAogICAgfQogICAgaWYgaW1hZ2VfaW5wdXRzOgogICAgICAgIHBheWxvYWRbImltYWdlIl0gPSBbdG9faW1hZ2VfaXRlbShwKSBmb3IgcCBpbiBpbWFnZV9pbnB1dHNdCgogICAgcmVxID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCgKICAgICAgICBBUElfVVJMLAogICAgICAgIGRhdGE9anNvbi5kdW1wcyhwYXlsb2FkKS5lbmNvZGUoInV0Zi04IiksCiAgICAgICAgaGVhZGVycz17CiAgICAgICAgICAgICJDb250ZW50LVR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgICAgICAgICJBdXRob3JpemF0aW9uIjogZiJCZWFyZXIge2tleX0iLAogICAgICAgIH0sCiAgICAgICAgbWV0aG9kPSJQT1NUIiwKICAgICkKICAgIHRyeToKICAgICAgICB3aXRoIHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxLCB0aW1lb3V0PXRpbWVvdXQpIGFzIHJlc3A6CiAgICAgICAgICAgIGRhdGEgPSBqc29uLmxvYWRzKHJlc3AucmVhZCgpLmRlY29kZSgidXRmLTgiKSkKICAgIGV4Y2VwdCB1cmxsaWIuZXJyb3IuSFRUUEVycm9yIGFzIGU6CiAgICAgICAgYm9keSA9IGUucmVhZCgpLmRlY29kZSgidXRmLTgiLCBlcnJvcnM9InJlcGxhY2UiKQogICAgICAgIHN5cy5zdGRlcnIud3JpdGUoZiJbRVJST1JdIEFyayBBUEkgSFRUUCB7ZS5jb2RlfToge2JvZHl9XG4iKQogICAgICAgIHN5cy5leGl0KDEpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgc3lzLnN0ZGVyci53cml0ZShmIltFUlJPUl0g6K+35rGC5aSx6LSlOiB7ZX1cbiIpCiAgICAgICAgc3lzLmV4aXQoMSkKCiAgICBpdGVtcyA9IGRhdGEuZ2V0KCJkYXRhIikgb3IgW10KICAgIGlmIG5vdCBpdGVtczoKICAgICAgICBlcnIgPSBkYXRhLmdldCgiZXJyb3IiKSBvciBkYXRhCiAgICAgICAgc3lzLnN0ZGVyci53cml0ZShmIltFUlJPUl0g5pyq6L+U5Zue5Zu+54mH44CC6L+U5ZueOiB7anNvbi5kdW1wcyhlcnIsIGVuc3VyZV9hc2NpaT1GYWxzZSlbOjgwMF19XG4iKQogICAgICAgIHN5cy5leGl0KDEpCgogICAgc2F2ZWQgPSBbXQogICAgYmFzZV9vdXQgPSBvcy5wYXRoLmFic3BhdGgob3V0cHV0X3BhdGgpCiAgICBvcy5tYWtlZGlycyhvcy5wYXRoLmRpcm5hbWUoYmFzZV9vdXQpLCBleGlzdF9vaz1UcnVlKQogICAgc3RlbSwgZXh0ID0gb3MucGF0aC5zcGxpdGV4dChiYXNlX291dCkKICAgIGlmIG5vdCBleHQ6CiAgICAgICAgZXh0ID0gIi5wbmciCiAgICAgICAgYmFzZV9vdXQgPSBzdGVtICsgZXh0CgogICAgZm9yIGlkeCwgaXRlbSBpbiBlbnVtZXJhdGUoaXRlbXMpOgogICAgICAgIG91dCA9IGJhc2Vfb3V0CiAgICAgICAgaWYgbGVuKGl0ZW1zKSA+IDE6CiAgICAgICAgICAgIG91dCA9IGYie3N0ZW19X3tpZHggKyAxfXtleHR9IgogICAgICAgIGlmIGl0ZW0uZ2V0KCJ1cmwiKToKICAgICAgICAgICAgb3V0LCBuYnl0ZXMgPSBkb3dubG9hZChpdGVtWyJ1cmwiXSwgb3V0KQogICAgICAgIGVsaWYgaXRlbS5nZXQoImI2NF9qc29uIik6CiAgICAgICAgICAgIHJhdyA9IGJhc2U2NC5iNjRkZWNvZGUoaXRlbVsiYjY0X2pzb24iXSkKICAgICAgICAgICAgd2l0aCBvcGVuKG91dCwgIndiIikgYXMgZmg6CiAgICAgICAgICAgICAgICBmaC53cml0ZShyYXcpCiAgICAgICAgICAgIG5ieXRlcyA9IGxlbihyYXcpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgc3lzLnN0ZGVyci53cml0ZShmIltFUlJPUl0g56yse2lkeCArIDF95byg5pegIHVybC9iNjRfanNvbiDlrZfmrrVcbiIpCiAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgc2F2ZWQuYXBwZW5kKG91dCkKICAgICAgICBwcmludChmIltPS10g5Zu+54mH5bey5L+d5a2YOiB7b3V0fSAoe25ieXRlc30gYnl0ZXMpIikKICAgIHJldHVybiBzYXZlZAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBhcCA9IGFyZ3BhcnNlLkFyZ3VtZW50UGFyc2VyKGRlc2NyaXB0aW9uPSLosYbljIUgU2VlZHJlYW0g55Sf5Zu+IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1wcm9tcHQiLCByZXF1aXJlZD1UcnVlLCBoZWxwPSLlm77lg4/mj4/ov7DvvIjkuK3mlofiiaQzMDDlrZcgLyDoi7HmlofiiaQ2MDDor43vvIzmlYjmnpzmm7TkvbPvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLW91dHB1dCIsIHJlcXVpcmVkPVRydWUsIGhlbHA9Iui+k+WHuuaWh+S7tui3r+W+hO+8iOWmgiBEOi9vdXQvbWFpbi5wbmfvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXNpemUiLCBkZWZhdWx0PSIyMDQ4eDIwNDgiLCBoZWxwPSLlsLrlr7jvvIhTZWVkcmVhbSA1LjAg5pSv5oyBIDIwNDh4MjA0OCAvIDRLIOetie+8mzQuMCDmlK/mjIEgMUsvMksvNEsg5oiW5YW35L2T5YiG6L6o546H5aaCIDEwMjR4MTAyNO+8iSIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tbW9kZWwiLCBkZWZhdWx0PURFRkFVTFRfTU9ERUwsIGhlbHA9IuaooeWeiyBJRO+8jOm7mOiupCBkb3ViYW8tc2VlZHJlYW0tNS0wLTI2MDEyOCIpCiAgICBhcC5hZGRfYXJndW1lbnQoIi0tbiIsIHR5cGU9aW50LCBkZWZhdWx0PTEsIGhlbHA9IueUn+aIkOaVsOmHj++8iOe7hOWbvu+8jOacgOWkmiA077yJIikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1pbWFnZSIsIG5hcmdzPSIqIiwgZGVmYXVsdD1Ob25lLCBoZWxwPSLlj4LogIPlm77vvIjmnKzlnLDot6/lvoTmiJYgVVJM77yJ77yM55So5LqO5Zu+55Sf5Zu+IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1uby13YXRlcm1hcmsiLCBhY3Rpb249InN0b3JlX3RydWUiLCBoZWxwPSLlhbPpl63msLTljbDvvIjpu5jorqTlvIDlkK/msLTljbDvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXRpbWVvdXQiLCB0eXBlPWludCwgZGVmYXVsdD0xMjAsIGhlbHA9Iuivt+axgui2heaXtu+8iOenku+8iSIpCiAgICBhcmdzID0gYXAucGFyc2VfYXJncygpCiAgICBnZW5lcmF0ZSgKICAgICAgICBhcmdzLnByb21wdCwgYXJncy5vdXRwdXQsIGFyZ3Muc2l6ZSwgYXJncy5tb2RlbCwgYXJncy5uLAogICAgICAgIGFyZ3MuaW1hZ2UsIG5vdCBhcmdzLm5vX3dhdGVybWFyaywgdGltZW91dD1hcmdzLnRpbWVvdXQsCiAgICApCg==
+# -*- coding: utf-8 -*-
+"""
+豆包 Seedream 图像生成模块（电商 skill 生图 L1 能力 · 国内直连）
+================================================================
+底层模型：火山方舟 Doubao Seedream（5.0 / 4.5 / 4.0），字节跳动
+API Key ：从环境变量 ARK_API_KEY 读取；skill 文件内一律使用占位符 ${ARK_API_KEY}
+          严禁把明文 Key 写进任何 skill / 脚本 / 配置文件中。
+获取 Key ：https://console.volcengine.com/ark/region:cn-beijing/apikey （火山方舟 API Key 管理）
+
+用法示例：
+    python doubao_image_gen.py --prompt "..." --output "D:/out/main.png" [--size 2K] [--model doubao-seedream-5-0-260128] [--no-watermark]
+
+支持：
+- 文生图（--prompt）
+- 图生图（--image 可传本地路径或 URL，自动转 base64）
+- 组图（--n 生成多张）
+"""
+import argparse
+import base64
+import json
+import mimetypes
+import os
+import sys
+import urllib.request
+import urllib.error
+
+DEFAULT_MODEL = "doubao-seedream-5-0-260128"  # Seedream 5.0 最新
+API_URL = "https://ark.cn-beijing.volces.com/api/v3/images/generations"
+
+
+def get_api_key():
+    key = os.environ.get("ARK_API_KEY", "").strip()
+    if not key or key.startswith("${"):
+        sys.stderr.write(
+            "[ERROR] 未检测到有效的 ARK_API_KEY。\n"
+            "请到火山方舟控制台获取 API Key：https://console.volcengine.com/ark/region:cn-beijing/apikey\n"
+            "然后配置环境变量 ARK_API_KEY（或用占位符 ${ARK_API_KEY} 由运行时注入）。\n"
+        )
+        sys.exit(2)
+    return key
+
+
+def to_image_item(src):
+    """把本地路径 / base64 / URL 统一转为 API 的 image 字段项。
+
+    火山方舟图片生成 API 的 image 参数为 string / string[]：
+    - URL 直接传字符串；
+    - Base64 需为小写 data URI，格式 data:image/png;base64,...
+    """
+    if src.startswith("data:"):
+        return src  # 已是 base64 data URI
+    if src.startswith("http://") or src.startswith("https://"):
+        return src  # URL 直接作为字符串
+    if os.path.exists(src):
+        mime = mimetypes.guess_type(src)[0] or "image/png"
+        with open(src, "rb") as fh:
+            b64 = base64.b64encode(fh.read()).decode("ascii")
+        return f"data:{mime};base64,{b64}"
+    raise ValueError(f"无法识别的图片输入: {src}")
+
+
+def download(url, out_path):
+    req = urllib.request.Request(url, headers={"User-Agent": "Marvis"})
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        data = resp.read()
+    with open(out_path, "wb") as fh:
+        fh.write(data)
+    return out_path, len(data)
+
+
+def generate(prompt, output_path, size="2048x2048", model=DEFAULT_MODEL, num_images=1,
+             image_inputs=None, watermark=True, response_format="url", timeout=120):
+    key = get_api_key()
+    payload = {
+        "model": model,
+        "prompt": prompt,
+        "size": size,
+        "n": num_images,
+        "response_format": response_format,
+        "watermark": watermark,
+    }
+    if image_inputs:
+        payload["image"] = [to_image_item(p) for p in image_inputs]
+
+    req = urllib.request.Request(
+        API_URL,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {key}",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        sys.stderr.write(f"[ERROR] Ark API HTTP {e.code}: {body}\n")
+        sys.exit(1)
+    except Exception as e:
+        sys.stderr.write(f"[ERROR] 请求失败: {e}\n")
+        sys.exit(1)
+
+    items = data.get("data") or []
+    if not items:
+        err = data.get("error") or data
+        sys.stderr.write(f"[ERROR] 未返回图片。返回: {json.dumps(err, ensure_ascii=False)[:800]}\n")
+        sys.exit(1)
+
+    saved = []
+    base_out = os.path.abspath(output_path)
+    os.makedirs(os.path.dirname(base_out), exist_ok=True)
+    stem, ext = os.path.splitext(base_out)
+    if not ext:
+        ext = ".png"
+        base_out = stem + ext
+
+    for idx, item in enumerate(items):
+        out = base_out
+        if len(items) > 1:
+            out = f"{stem}_{idx + 1}{ext}"
+        if item.get("url"):
+            out, nbytes = download(item["url"], out)
+        elif item.get("b64_json"):
+            raw = base64.b64decode(item["b64_json"])
+            with open(out, "wb") as fh:
+                fh.write(raw)
+            nbytes = len(raw)
+        else:
+            sys.stderr.write(f"[ERROR] 第{idx + 1}张无 url/b64_json 字段\n")
+            continue
+        saved.append(out)
+        print(f"[OK] 图片已保存: {out} ({nbytes} bytes)")
+    return saved
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="豆包 Seedream 生图")
+    ap.add_argument("--prompt", required=True, help="图像描述（中文≤300字 / 英文≤600词，效果更佳）")
+    ap.add_argument("--output", required=True, help="输出文件路径（如 D:/out/main.png）")
+    ap.add_argument("--size", default="2048x2048", help="尺寸（Seedream 5.0 支持 2048x2048 / 4K 等；4.0 支持 1K/2K/4K 或具体分辨率如 1024x1024）")
+    ap.add_argument("--model", default=DEFAULT_MODEL, help="模型 ID，默认 doubao-seedream-5-0-260128")
+    ap.add_argument("--n", type=int, default=1, help="生成数量（组图，最多 4）")
+    ap.add_argument("--image", nargs="*", default=None, help="参考图（本地路径或 URL），用于图生图")
+    ap.add_argument("--no-watermark", action="store_true", help="关闭水印（默认开启水印）")
+    ap.add_argument("--timeout", type=int, default=120, help="请求超时（秒）")
+    args = ap.parse_args()
+    generate(
+        args.prompt, args.output, args.size, args.model, args.n,
+        args.image, not args.no_watermark, timeout=args.timeout,
+    )
