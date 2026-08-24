@@ -1,1 +1,375 @@
-IyBBbnRpLUJsb2NraW5nICYgQW50aS1EZXRlY3Rpb24KCiMjIE92ZXJ2aWV3CgpXaGVuIHdlYnNpdGVzIGRldGVjdCBhdXRvbWF0ZWQgc2NyYXBpbmcsIHRoZXkgZGVwbG95IGFudGktYm90IG1lYXN1cmVzLiBUaGlzIGd1aWRlIGNvdmVycyBwcm94eS1tY3AncyBtdWx0aS1sYXllciBhbnRpLWRldGVjdGlvbiBzeXN0ZW0gZm9yIGludGVyYWN0aXZlIGRldmVsb3BtZW50IGFuZCBBcGlmeSdzIGZpbmdlcnByaW50LXN1aXRlIGZvciBwcm9kdWN0aW9uIEFjdG9ycy4KCiMjIFdoZW4gWW91IE5lZWQgQW50aS1CbG9ja2luZwoKIyMjIFNpZ25zIFlvdSdyZSBCZWluZyBCbG9ja2VkCgotICoqNDAzIEZvcmJpZGRlbioqIGVycm9ycwotICoqQ2xvdWRmbGFyZSBjaGFsbGVuZ2VzKiogKCJDaGVja2luZyB5b3VyIGJyb3dzZXIuLi4iKQotICoqQm90IGRldGVjdGlvbioqIG1lc3NhZ2VzICgiQWNjZXNzIERlbmllZCIsICJVbnVzdWFsIHRyYWZmaWMiKQotICoqQ0FQVENIQXMqKiBhcHBlYXJpbmcgdW5leHBlY3RlZGx5Ci0gKipSYXRlIGxpbWl0aW5nKiogKDQyOSBUb28gTWFueSBSZXF1ZXN0cykKLSAqKkVtcHR5IHJlc3BvbnNlcyoqIG9yIGluY29tcGxldGUgZGF0YQotICoqVGltZW91dHMqKiBvciBjb25uZWN0aW9uIHJlc2V0cwotIFBhZ2VzIHJldHVybiBkaWZmZXJlbnQgY29udGVudCB0aGFuIGEgcmVhbCBicm93c2VyIHNob3dzCgotLS0KCiMjIExheWVyIDE6IFN0ZWFsdGggQnJvd3NlciAoRGVmYXVsdCBmb3IgQWxsIENocm9tZSBTZXNzaW9ucykKCioqVG9vbCoqOiBgaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCh1cmwsIHN0ZWFsdGhNb2RlOiB0cnVlKWAKCioqQWx3YXlzIHVzZSB0aGlzKiogd2hlbiBsYXVuY2hpbmcgQ2hyb21lIHRocm91Z2ggcHJveHktbWNwLiBTdGVhbHRoIG1vZGUgcGF0Y2hlcyBicm93c2VyLWxldmVsIGRldGVjdGlvbiB2ZWN0b3JzOgoKIyMjIFdoYXQgSXQgUGF0Y2hlcwoKfCBEZXRlY3Rpb24gVmVjdG9yIHwgUGF0Y2ggfCBXaHkgfAp8LS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwtLS0tLXwKfCBgbmF2aWdhdG9yLndlYmRyaXZlcmAgfCBTZXQgdG8gYGZhbHNlYCB3aXRoIGBjb25maWd1cmFibGU6dHJ1ZWAgfCBQcmltYXJ5IGJvdCBjaGVjazsgYGNvbmZpZ3VyYWJsZTp0cnVlYCBtYXRjaGVzIHJlYWwgQ2hyb21lIGJlaGF2aW9yIHwKfCBgY2hyb21lLnJ1bnRpbWVgIHwgRXhpc3RzIHdpdGggZXhwZWN0ZWQgc2hhcGUgfCBBa2FtYWkncyBwcmltYXJ5IGRldGVjdGlvbiDigJQgbWlzc2luZyBgY2hyb21lLnJ1bnRpbWVgID0gaGVhZGxlc3MgQ2hyb21lIHwKfCBgUGVybWlzc2lvbnMucXVlcnlgIHwgQ29ycmVjdCBub3RpZmljYXRpb24gcmVzcG9uc2UgfCBDRFAgYXJ0aWZhY3RzIGNhdXNlIHdyb25nIG5vdGlmaWNhdGlvbiBwZXJtaXNzaW9uIHN0YXRlIHwKfCBgRXJyb3Iuc3RhY2tgIHwgQ2xlYW5lZCBvZiBDRFAgdHJhY2VzIHwgUmVtb3ZlcyBgSW5qZWN0ZWRTY3JpcHRgIGFuZCBgZXZhbHVhdGVgIGZyb20gc3RhY2sgdHJhY2VzIHwKCiMjIyBXaGF0IEl0IERlbGliZXJhdGVseSBPbWl0cwoKfCBDaHJvbWUgRmxhZyB8IFdoeSBPbWl0dGVkIHwKfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBgLS1kaXNhYmxlLWV4dGVuc2lvbnNgIHwgUmVtb3ZlcyBgY2hyb21lLnJ1bnRpbWVgIGVudGlyZWx5IOKAlCB0cmlnZ2VycyBBa2FtYWkgZGV0ZWN0aW9uIHwKfCBgLS1tdXRlLWF1ZGlvYCB8IERldGVjdGFibGUgdmlhIEF1ZGlvQ29udGV4dCBBUEkgfAp8IGAtLWRpc2FibGUtYmFja2dyb3VuZC1uZXR3b3JraW5nYCB8IENoYW5nZXMgb2JzZXJ2YWJsZSBuZXR3b3JrIGJlaGF2aW9yIHwKCkluamVjdGVkIHZpYSBgUGFnZS5hZGRTY3JpcHRUb0V2YWx1YXRlT25OZXdEb2N1bWVudGAg4oCUIHJ1bnMgYmVmb3JlIGFueSBwYWdlIHNjcmlwdCwgb24gZXZlcnkgZnJhbWUuCgojIyMgV2hlbiB0byBVc2UKCioqQWx3YXlzKiogd2hlbiBsYXVuY2hpbmcgQ2hyb21lIG9uIGFueSBzaXRlIHdpdGggYm90IGRldGVjdGlvbi4gVGhlcmUgaXMgbm8gZG93bnNpZGUgdG8gZW5hYmxpbmcgc3RlYWx0aCBtb2RlLgoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2goImh0dHBzOi8vdGFyZ2V0LXNpdGUuY29tIiwgc3RlYWx0aE1vZGU6IHRydWUpCmBgYAoKIyMjIEhvdyB0byBWZXJpZnkKCk5hdmlnYXRlIHRvIGJvdCBkZXRlY3Rpb24gdGVzdCBzaXRlczoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19uYXZpZ2F0ZSgiaHR0cHM6Ly9ib3Quc2Fubnlzb2Z0LmNvbS8iKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfc2NyZWVuc2hvdCgpCmBgYAoKQWxsIHRlc3RzIHNob3VsZCBwYXNzIHdpdGggc3RlYWx0aCBtb2RlIGVuYWJsZWQuCgotLS0KCiMjIExheWVyIDI6IEJlaGF2aW9yYWwgTWltaWNyeSAoSHVtYW5pemVyKQoKVXNlIGh1bWFuaXplciB0b29scyBmb3IgYW55IGludGVyYWN0aW9uIHdpdGggcGFnZSBlbGVtZW50cyBkdXJpbmcgcmVjb25uYWlzc2FuY2UuIEVhY2ggdG9vbCBhZGRzIGJ1aWx0LWluIGFudGktZGV0ZWN0aW9uIGJlaGF2aW9yLgoKIyMjIGh1bWFuaXplcl9tb3ZlKHRhcmdldF9pZCwgeCwgeSkKLSAqKkJlaGF2aW9yKio6IEN1YmljIEJlemllciBjdXJ2ZXMgd2l0aCByYW5kb21pemVkIGNvbnRyb2wgcG9pbnRzCi0gKipUaW1pbmcqKjogRml0dHMncyBsYXcgZHVyYXRpb24gc2NhbGluZyAobGFyZ2VyIGRpc3RhbmNlID0gcHJvcG9ydGlvbmFsbHkgZmFzdGVyKQotICoqUmVhbGlzbSoqOiBPdmVyc2hvb3QgKyBjb3JyZWN0aW9uIGZvciBkaXN0YW5jZXMgPjIwMHB4CgojIyMgaHVtYW5pemVyX2NsaWNrKHRhcmdldF9pZCwgc2VsZWN0b3IpCi0gKipCZWhhdmlvcioqOiBDb21iaW5lcyBgaHVtYW5pemVyX21vdmVgIHRvIHRhcmdldCArIGNsaWNrIHdpdGggaHVtYW4tbGlrZSB0aW1pbmcgdmFyaWFuY2UKLSAqKkFudGktZGV0ZWN0aW9uKio6IFJhbmRvbSBkZWxheSBiZWZvcmUgY2xpY2ssIG5hdHVyYWwgY3Vyc29yIHBhdGgKCiMjIyBodW1hbml6ZXJfdHlwZSh0YXJnZXRfaWQsIHRleHQpCi0gKipCZWhhdmlvcioqOiBXUE0tYmFzZWQgZGVsYXlzIChkZWZhdWx0IDQwIFdQTSkKLSAqKlRpbWluZyBtb2RpZmllcnMqKjogQmlncmFtIGZyZXF1ZW5jeSAoY29tbW9uIGxldHRlciBwYWlycyAwLjh4IHNwZWVkKSwgc2hpZnQgcGVuYWx0eSArNTBtcwotICoqUmVhbGlzbSoqOiBPcHRpb25hbCB0eXBvIGluamVjdGlvbiB3aXRoIFFXRVJUWSBuZWlnaGJvciBrZXkgbWFwcGluZwoKIyMjIGh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCBkaXJlY3Rpb24sIGFtb3VudCkKLSAqKkJlaGF2aW9yKio6IGVhc2VJbk91dFF1YWQgYWNjZWxlcmF0aW9uL2RlY2VsZXJhdGlvbiBjdXJ2ZQotICoqQW50aS1kZXRlY3Rpb24qKjogTmF0dXJhbCBzY3JvbGwgc3BlZWQgdmFyaWF0aW9uCgojIyMgaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCBkdXJhdGlvbl9tcykKLSAqKkJlaGF2aW9yKio6IE1pY3JvLWppdHRlciDCsTMtOHB4LCBvY2Nhc2lvbmFsIG1pY3JvLXNjcm9sbHMKLSAqKkFudGktZGV0ZWN0aW9uKio6IERlZmVhdHMgaWRsZSBkZXRlY3Rpb24gc3lzdGVtcyB0aGF0IGZsYWcgbW90aW9ubGVzcyBjdXJzb3JzCgojIyMgV2hlbiB0byBVc2UKCkFueSB0aW1lIHlvdSBpbnRlcmFjdCB3aXRoIHBhZ2UgZWxlbWVudHMgZHVyaW5nIHJlY29ubmFpc3NhbmNlLiBVc2UgYGh1bWFuaXplcl9jbGlja2AgaW5zdGVhZCBvZiBkaXJlY3QgRE9NIGNsaWNrcywgYGh1bWFuaXplcl90eXBlYCBpbnN0ZWFkIG9mIGRpcmVjdCBpbnB1dCwgZXRjLgoKLS0tCgojIyBMYXllciAzOiBQcm94eSBSb3RhdGlvbiAvIFVwc3RyZWFtIFByb3hpZXMKCldoZW4gSVAtbGV2ZWwgYmxvY2tpbmcgaXMgZGV0ZWN0ZWQgKENsb3VkZmxhcmUgZ2VvZ3JhcGhpYyByZXN0cmljdGlvbnMsIElQIGJhbnMpOgoKIyMjIENoYWluIHRvIFVwc3RyZWFtIFByb3h5CgpgYGAKcHJveHlfc2V0X3Vwc3RyZWFtKCJodHRwOi8vdXNlcjpwYXNzQHByb3h5LmFwaWZ5LmNvbTo4MDAwIikKYGBgCgpUaGlzIHJvdXRlcyBhbGwgcHJveHkgdHJhZmZpYyB0aHJvdWdoIHRoZSB1cHN0cmVhbSBwcm94eSwgZ2l2aW5nIHlvdToKLSAqKklQIHJvdGF0aW9uKiogKGRpZmZlcmVudCBJUCBwZXIgcmVxdWVzdCBvciBzZXNzaW9uKQotICoqR2VvZ3JhcGhpYyB0YXJnZXRpbmcqKiAocmVzaWRlbnRpYWwgSVBzIGluIHNwZWNpZmljIGNvdW50cmllcykKLSAqKlJlc2lkZW50aWFsIElQIGFkZHJlc3NlcyoqIGZvciBzdHJpY3Qgc2l0ZXMKCiMjIyBQZXItSG9zdCBVcHN0cmVhbQoKUm91dGUgb25seSBzcGVjaWZpYyBkb21haW5zIHRocm91Z2ggcHJveHk6CgpgYGAKcHJveHlfc2V0X2hvc3RfdXBzdHJlYW0oInRhcmdldC1zaXRlLmNvbSIsICJodHRwOi8vdXNlcjpwYXNzQHJlc2lkZW50aWFsLXByb3h5LmNvbTo4MDAwIikKYGBgCgojIyMgSW5qZWN0IEN1c3RvbSBIZWFkZXJzCgpgYGAKcHJveHlfaW5qZWN0X2hlYWRlcnMoewogICAgIkFjY2VwdC1MYW5ndWFnZSI6ICJlbi1VUyxlbjtxPTAuOSIsCiAgICAiWC1Gb3J3YXJkZWQtRm9yIjogInJlbW92ZWQiCn0pCmBgYAoKIyMjIFdoZW4gdG8gVXNlCgpXaGVuIHlvdSdyZSBnZXR0aW5nIElQLWJhc2VkIGJsb2NrczoKLSBDbG91ZGZsYXJlIHNob3dpbmcgZ2VvZ3JhcGhpYyBjaGFsbGVuZ2VzCi0gNDAzLzQyOSByZXNwb25zZXMgdGhhdCBkaXNhcHBlYXIgd2l0aCBkaWZmZXJlbnQgSVBzCi0gU2l0ZSByZXF1aXJlcyByZXNpZGVudGlhbCBJUCBhZGRyZXNzZXMKCi0tLQoKIyMgTGF5ZXIgNDogVExTIEZpbmdlcnByaW50IFNwb29maW5nIChIVFRQLU9ubHkgQ2xpZW50cyDigJQgQ29uZGl0aW9uYWwpCgoqKlRvb2wqKjogYHByb3h5X3NldF9maW5nZXJwcmludF9zcG9vZihwcmVzZXQpYAoKVXNlcyAqKmltcGl0KiogKFJ1c3QgTkFQSSBtb2R1bGUpIGZvciBuYXRpdmUgVExTIGltcGVyc29uYXRpb24uIFNwb29mczoKLSBKQTMgZmluZ2VycHJpbnQKLSBIVFRQLzIgZnJhbWUgb3JkZXJpbmcKLSBBdXRvLW5vcm1hbGl6ZXMgVXNlci1BZ2VudCArIFVBIENsaWVudCBIaW50cyBoZWFkZXJzCgojIyMgQXZhaWxhYmxlIFByZXNldHMKCnwgUHJlc2V0IHwgVXNlIENhc2UgfAp8LS0tLS0tLS18LS0tLS0tLS0tLXwKfCBgY2hyb21lXzEzMWAgfCBNYXRjaCBDaHJvbWUgMTMxIFRMUyBmaW5nZXJwcmludCB8CnwgYGNocm9tZV8xMzZgIHwgTWF0Y2ggQ2hyb21lIDEzNiBUTFMgZmluZ2VycHJpbnQgfAp8IGBjaHJvbWVfMTM2X2xpbnV4YCB8IE1hdGNoIENocm9tZSAxMzYgb24gTGludXggfAp8IGBmaXJlZm94XzEzM2AgfCBNYXRjaCBGaXJlZm94IDEzMyBUTFMgZmluZ2VycHJpbnQgfAp8IGBva2h0dHAzYCB8IE1hdGNoIE9rSHR0cCAzIChBbmRyb2lkIGFwcHMpIHwKfCBgb2todHRwNGAgfCBNYXRjaCBPa0h0dHAgNCAoQW5kcm9pZCBhcHBzKSB8CnwgYG9raHR0cDVgIHwgTWF0Y2ggT2tIdHRwIDUgKEFuZHJvaWQgYXBwcykgfAoKIyMjIFdoZW4gdG8gVXNlCgoqKk9OTFkqKiB3aGVuIEFMTCBvZiB0aGVzZSBjb25kaXRpb25zIGFyZSBtZXQ6CjEuIFlvdSd2ZSBkaXNjb3ZlcmVkIGFuIEFQSSB2aWEgdHJhZmZpYyBpbnRlcmNlcHRpb24KMi4gWW91IHdhbnQgdG8gc3dpdGNoIGZyb20gYnJvd3NlciB0byBIVFRQLW9ubHkgY2xpZW50IChnb3RTY3JhcGluZywgY3VybCwgZmV0Y2gpIGZvciBmYXN0ZXIgZXh0cmFjdGlvbgozLiBUaGUgdGFyZ2V0IGJsb2NrcyB0aGUgSFRUUCBjbGllbnQgYmFzZWQgb24gVExTIGZpbmdlcnByaW50CgpgYGAKcHJveHlfc2V0X2ZpbmdlcnByaW50X3Nwb29mKHByZXNldDogImNocm9tZV8xMzYiKQpgYGAKCiMjIyBXaGVuIE5PVCB0byBVc2UKCioqRG8gTk9UIHVzZSBmb3IgQ2hyb21lIGJyb3dzZXIgc2Vzc2lvbnMqKi4gQ2hyb21lIGFscmVhZHkgaGFzIGEgbGVnaXRpbWF0ZSBUTFMgZmluZ2VycHJpbnQg4oCUIHNwb29maW5nIGlzIHVubmVjZXNzYXJ5LCBpbmNvcnJlY3QsIGFuZCBtYXkgY2F1c2UgaXNzdWVzLgoKIyMjIEhvdyB0byBWZXJpZnkKCmBgYApwcm94eV9nZXRfdGxzX2ZpbmdlcnByaW50cygpICAgICAgICAgICDihpIgQ2hlY2sgd2hhdCBmaW5nZXJwcmludCB0aGUgc2VydmVyIHNlZXMKcHJveHlfbGlzdF9maW5nZXJwcmludF9wcmVzZXRzKCkgICAgICAg4oaSIExpc3QgYXZhaWxhYmxlIHByZXNldHMKcHJveHlfY2hlY2tfZmluZ2VycHJpbnRfcnVudGltZSgpICAgICDihpIgVmVyaWZ5IGltcGl0IHJ1bnRpbWUgaXMgYXZhaWxhYmxlCmBgYAoKLS0tCgojIyBMYXllciA1OiBSZXF1ZXN0IE1hbmlwdWxhdGlvbiAoU3VyZ2ljYWwpCgpGb3Igc3BlY2lmaWMgcmVxdWVzdC1sZXZlbCBhbnRpLWJvdCBjaGVja3M6CgojIyMgQWRkIEludGVyY2VwdGlvbiBSdWxlcwoKYGBgCnByb3h5X2FkZF9ydWxlKAogICAgbWF0Y2hlcjogeyB1cmxQYXR0ZXJuOiAiKi9ib3QtY2hlY2svKiIgfSwKICAgIGhhbmRsZXI6IHsgdHlwZTogImRyb3AiIH0KKQpgYGAKCiMjIyBSZXdyaXRlIFVSTHMKCmBgYApwcm94eV9yZXdyaXRlX3VybCgiL29sZC1lbmRwb2ludC8iLCAiL25ldy1lbmRwb2ludC8iKQpgYGAKCiMjIyBNb2NrIFJlc3BvbnNlcwoKYGBgCnByb3h5X21vY2tfcmVzcG9uc2UoCiAgICBtYXRjaGVyOiB7IHVybFBhdHRlcm46ICIqL2NhcHRjaGEtY2hlY2siIH0sCiAgICByZXNwb25zZTogeyBzdGF0dXM6IDIwMCwgYm9keTogJ3sic3VjY2VzcyI6IHRydWV9JyB9CikKYGBgCgojIyMgV2hlbiB0byBVc2UKClRhcmdldGVkIGZpeGVzIGZvciBzcGVjaWZpYyBhbnRpLWJvdCBjaGVja3MgZGlzY292ZXJlZCBkdXJpbmcgcmVjb25uYWlzc2FuY2U6Ci0gQmxvY2tpbmcgYW5hbHl0aWNzL3RyYWNraW5nIHJlcXVlc3RzIHRoYXQgc2xvdyB0aGluZ3MgZG93bgotIEJ5cGFzc2luZyBzcGVjaWZpYyByb3V0ZSBjaGVja3MKLSBUZXN0aW5nIHdpdGggbW9ja2VkIHJlc3BvbnNlcwoKLS0tCgojIyBFc2NhbGF0aW9uIFN0cmF0ZWd5CgpTdGFydCBzaW1wbGUsIGFkZCBsYXllcnMgb25seSBhcyBuZWVkZWQ6CgpgYGAKMS4gU3RlYWx0aCBCcm93c2VyIChMYXllciAxKSDigJQgdXN1YWxseSBzdWZmaWNpZW50CiAgIOKUlOKUgCBTdGlsbCBibG9ja2VkPwoyLiBBZGQgSHVtYW5pemVyIGZvciBpbnRlcmFjdGlvbnMgKExheWVyIDIpCiAgIOKUlOKUgCBJUC1ibG9ja2VkPwozLiBBZGQgVXBzdHJlYW0gUHJveGllcyAoTGF5ZXIgMykKICAg4pSU4pSAIFN3aXRjaGluZyB0byBIVFRQLW9ubHkgY2xpZW50IGFuZCBUTFMtYmxvY2tlZD8KNC4gQWRkIFRMUyBTcG9vZmluZyAoTGF5ZXIgNCkKICAg4pSU4pSAIFNwZWNpZmljIHJlcXVlc3QtbGV2ZWwgaXNzdWVzPwo1LiBBZGQgUmVxdWVzdCBSdWxlcyAoTGF5ZXIgNSkKYGBgCgoqKk1vc3Qgc2l0ZXMgb25seSBuZWVkIExheWVycyAxLTIqKi4gTGF5ZXIgMyBpcyBuZWVkZWQgZm9yIElQLWJhc2VkIGJsb2NraW5nLiBMYXllciA0IGlzIG9ubHkgZm9yIEhUVFAtb25seSBjbGllbnRzLiBMYXllciA1IGlzIGZvciBzdXJnaWNhbCBmaXhlcy4KCi0tLQoKIyMgUHJvZHVjdGlvbiBBY3RvcnM6IEFwaWZ5IGZpbmdlcnByaW50LXN1aXRlCgpGb3IgcHJvZHVjdGlvbiBBY3RvcnMgZGVwbG95ZWQgb24gQXBpZnkgaW5mcmFzdHJ1Y3R1cmUsIHVzZSB0aGUgKipmaW5nZXJwcmludC1zdWl0ZSoqIGluc3RlYWQgb2YgcHJveHktbWNwOgoKIyMjIENyYXdsZWUgd2l0aCBGaW5nZXJwcmludE9wdGlvbnMKCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsgQWN0b3IgfSBmcm9tICdhcGlmeSc7CmltcG9ydCB7IFBsYXl3cmlnaHRDcmF3bGVyIH0gZnJvbSAnY3Jhd2xlZSc7Cgphd2FpdCBBY3Rvci5tYWluKGFzeW5jICgpID0+IHsKICAgIGNvbnN0IGNyYXdsZXIgPSBuZXcgUGxheXdyaWdodENyYXdsZXIoewogICAgICAgIHVzZVNlc3Npb25Qb29sOiB0cnVlLAogICAgICAgIHNlc3Npb25Qb29sT3B0aW9uczogewogICAgICAgICAgICBtYXhQb29sU2l6ZTogNTAsCiAgICAgICAgfSwKICAgICAgICBmaW5nZXJwcmludE9wdGlvbnM6IHsKICAgICAgICAgICAgZGV2aWNlczogWydkZXNrdG9wJ10sCiAgICAgICAgICAgIG9wZXJhdGluZ1N5c3RlbXM6IFsnd2luZG93cycsICdtYWNvcyddLAogICAgICAgICAgICBicm93c2VyczogWydjaHJvbWUnXSwKICAgICAgICB9LAogICAgICAgIHByb3h5Q29uZmlndXJhdGlvbjogYXdhaXQgQWN0b3IuY3JlYXRlUHJveHlDb25maWd1cmF0aW9uKHsKICAgICAgICAgICAgZ3JvdXBzOiBbJ1JFU0lERU5USUFMJ10sCiAgICAgICAgfSksCiAgICAgICAgYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyBwYWdlLCByZXF1ZXN0LCBsb2cgfSkgewogICAgICAgICAgICBsb2cuaW5mbyhgU2NyYXBpbmc6ICR7cmVxdWVzdC51cmx9YCk7CiAgICAgICAgICAgIC8vIFlvdXIgc2NyYXBpbmcgbG9naWMKICAgICAgICB9LAogICAgfSk7CgogICAgYXdhaXQgY3Jhd2xlci5ydW4oWydodHRwczovL2V4YW1wbGUuY29tJ10pOwp9KTsKYGBgCgojIyMgZmluZ2VycHJpbnQtc3VpdGUgQ29tcG9uZW50cwoKfCBQYWNrYWdlIHwgUHVycG9zZSB8CnwtLS0tLS0tLS18LS0tLS0tLS0tfAp8ICoqaGVhZGVyLWdlbmVyYXRvcioqIHwgR2VuZXJhdGVzIHJlYWxpc3RpYyBIVFRQIGhlYWRlcnMgfAp8ICoqZmluZ2VycHJpbnQtZ2VuZXJhdG9yKiogfCBHZW5lcmF0ZXMgZnVsbCBicm93c2VyIGZpbmdlcnByaW50cyAoaGVhZGVycyArIEpTIEFQSXMpIHwKfCAqKmZpbmdlcnByaW50LWluamVjdG9yKiogfCBJbmplY3RzIGZpbmdlcnByaW50cyBpbnRvIFBsYXl3cmlnaHQvUHVwcGV0ZWVyIHwKfCAqKmdlbmVyYXRpdmUtYmF5ZXNpYW4tbmV0d29yayoqIHwgTUwgbW9kZWwgZm9yIHJlYWxpc3RpYyBmaW5nZXJwcmludCBnZW5lcmF0aW9uIHwKCiMjIyBQcm94eSBDb25maWd1cmF0aW9uIChQcm9kdWN0aW9uKQoKYGBgdHlwZXNjcmlwdAovLyBEYXRhY2VudGVyIHByb3hpZXMgKGZhc3RlciwgY2hlYXBlcikKY29uc3QgcHJveHlDb25maWd1cmF0aW9uID0gYXdhaXQgQWN0b3IuY3JlYXRlUHJveHlDb25maWd1cmF0aW9uKHsKICAgIGdyb3VwczogWydTSEFERVInXSwKfSk7CgovLyBSZXNpZGVudGlhbCBwcm94aWVzIChtb3JlIHJlbGlhYmxlIGZvciBzdHJpY3Qgc2l0ZXMpCmNvbnN0IHByb3h5Q29uZmlndXJhdGlvbiA9IGF3YWl0IEFjdG9yLmNyZWF0ZVByb3h5Q29uZmlndXJhdGlvbih7CiAgICBncm91cHM6IFsnUkVTSURFTlRJQUwnXSwKfSk7CmBgYAoKIyMjIFNlc3Npb24gTWFuYWdlbWVudCAoUHJvZHVjdGlvbikKCmBgYHR5cGVzY3JpcHQKY29uc3QgY3Jhd2xlciA9IG5ldyBQbGF5d3JpZ2h0Q3Jhd2xlcih7CiAgICB1c2VTZXNzaW9uUG9vbDogdHJ1ZSwKICAgIHNlc3Npb25Qb29sT3B0aW9uczogewogICAgICAgIG1heFBvb2xTaXplOiA1MCwKICAgICAgICBzZXNzaW9uT3B0aW9uczogewogICAgICAgICAgICBtYXhVc2FnZUNvdW50OiA1MCwKICAgICAgICAgICAgbWF4RXJyb3JTY29yZTogMywKICAgICAgICB9LAogICAgfSwKfSk7CmBgYAoKU2VlIGAuLi9yZWZlcmVuY2UvZmluZ2VycHJpbnQtcGF0dGVybnMubWRgIGZvciBjb21wbGV0ZSBmaW5nZXJwcmludCBjb25maWd1cmF0aW9uIHBhdHRlcm5zLgoKLS0tCgojIyBUcm91Ymxlc2hvb3RpbmcKCiMjIyBTdGlsbCBHZXR0aW5nIEJsb2NrZWQgd2l0aCBTdGVhbHRoIE1vZGU/CgoxLiAqKkNoZWNrIHVwc3RyZWFtIHByb3h5Kiog4oCUIElQIG1pZ2h0IGJlIGJsb2NrZWQgcmVnYXJkbGVzcyBvZiBicm93c2VyIGZpbmdlcnByaW50CjIuICoqQWRkIGh1bWFuaXplcioqIOKAlCBzaXRlIG1heSBkZXRlY3QgYXV0b21hdGVkIGNsaWNrIHBhdHRlcm5zCjMuICoqVHJ5IHJlc2lkZW50aWFsIHByb3hpZXMqKiDigJQgZGF0YWNlbnRlciBJUHMgYXJlIG9mdGVuIGJsYWNrbGlzdGVkCjQuICoqQ2hlY2sgZm9yIEphdmFTY3JpcHQgY2hhbGxlbmdlcyoqIOKAlCBzb21lIHJlcXVpcmUgc3BlY2lmaWMgSlMgZXhlY3V0aW9uIHRpbWluZwoKIyMjIEJsb2NrZWQgV2hlbiBTd2l0Y2hpbmcgdG8gSFRUUCBDbGllbnQ/CgoxLiAqKkVuYWJsZSBUTFMgc3Bvb2ZpbmcqKiDigJQgYHByb3h5X3NldF9maW5nZXJwcmludF9zcG9vZihwcmVzZXQ6ICJjaHJvbWVfMTM2IilgCjIuICoqQ29weSBleGFjdCBoZWFkZXJzKiogZnJvbSBicm93c2VyIHNlc3Npb24gKGZyb20gYHByb3h5X2dldF9leGNoYW5nZSgpYCkKMy4gKipJbmNsdWRlIGNvb2tpZXMqKiBmcm9tIGJyb3dzZXIgKGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9jb29raWVzKClgKQoKIyMjIERldGVjdGluZyBGaW5nZXJwcmludCBJc3N1ZXMKClRlc3Qgd2l0aCBib3QgZGV0ZWN0aW9uIHNpdGVzOgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX25hdmlnYXRlKCJodHRwczovL2JvdC5zYW5ueXNvZnQuY29tLyIpCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zY3JlZW5zaG90KCkKYGBgCgojIyBFdGhpY2FsIENvbnNpZGVyYXRpb25zCgoqKkFudGktYmxvY2tpbmcgaXMgYSB0b29sLCBub3QgcGVybWlzc2lvbioqOgoKLSBVc2UgZm9yIHB1YmxpYyBkYXRhIGNvbGxlY3Rpb24KLSBSZXNwZWN0IHJhdGUgbGltaXRzIChldmVuIGlmIHlvdSBjYW4gYnlwYXNzIHRoZW0pCi0gSG9ub3Igcm9ib3RzLnR4dAotIERvbid0IG92ZXJsb2FkIHNlcnZlcnMKLSBEb24ndCBieXBhc3MgcGF5d2FsbHMKLSBEb24ndCBzY3JhcGUgcHJpdmF0ZSBkYXRhCi0gRG9uJ3QgdmlvbGF0ZSB0ZXJtcyBvZiBzZXJ2aWNlCgojIyBSZWxhdGVkCgotICoqRmluZ2VycHJpbnQgcGF0dGVybnMqKjogU2VlIGAuLi9yZWZlcmVuY2UvZmluZ2VycHJpbnQtcGF0dGVybnMubWRgCi0gKipQcm94eS1NQ1AgdG9vbCByZWZlcmVuY2UqKjogU2VlIGAuLi9yZWZlcmVuY2UvcHJveHktdG9vbC1yZWZlcmVuY2UubWRgCi0gKipUcmFmZmljIGludGVyY2VwdGlvbioqOiBTZWUgYHRyYWZmaWMtaW50ZXJjZXB0aW9uLm1kYAotICoqU2Vzc2lvbiB3b3JrZmxvd3MqKjogU2VlIGBzZXNzaW9uLXdvcmtmbG93cy5tZGAKCiMjIFN1bW1hcnkKCioqTXVsdGktbGF5ZXIgYW50aS1kZXRlY3Rpb24gZm9yIGRpZmZlcmVudCBjb250ZXh0cyoqOgoKfCBDb250ZXh0IHwgUHJpbWFyeSBUb29sIHwgTGF5ZXJzIHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tfAp8ICoqSW50ZXJhY3RpdmUgZGV2ZWxvcG1lbnQqKiB8IHByb3h5LW1jcCB8IFN0ZWFsdGggbW9kZSDihpIgSHVtYW5pemVyIOKGkiBVcHN0cmVhbSBwcm94aWVzIOKGkiBUTFMgc3Bvb2ZpbmcgfAp8ICoqUHJvZHVjdGlvbiBBY3RvcnMqKiB8IEFwaWZ5IGZpbmdlcnByaW50LXN1aXRlIHwgRmluZ2VycHJpbnRPcHRpb25zIOKGkiBQcm94eSByb3RhdGlvbiDihpIgU2Vzc2lvbiBtYW5hZ2VtZW50IHwKCioqS2V5IHJ1bGVzKio6CjEuIFN0ZWFsdGggbW9kZSBmb3IgYWxsIENocm9tZSBzZXNzaW9ucyAoTGF5ZXIgMSkKMi4gSHVtYW5pemVyIGZvciBhbGwgaW50ZXJhY3Rpb25zIChMYXllciAyKQozLiBVcHN0cmVhbSBwcm94aWVzIGZvciBJUCBibG9ja2luZyAoTGF5ZXIgMykKNC4gVExTIHNwb29maW5nIE9OTFkgZm9yIEhUVFAtb25seSBjbGllbnRzIHdoZW4gVExTLWJsb2NrZWQgKExheWVyIDQpCjUuICoqTmV2ZXIqKiB1c2UgVExTIHNwb29maW5nIGZvciBDaHJvbWUgYnJvd3NlciBzZXNzaW9ucwo=
+# Anti-Blocking & Anti-Detection
+
+## Overview
+
+When websites detect automated scraping, they deploy anti-bot measures. This guide covers proxy-mcp's multi-layer anti-detection system for interactive development and Apify's fingerprint-suite for production Actors.
+
+## When You Need Anti-Blocking
+
+### Signs You're Being Blocked
+
+- **403 Forbidden** errors
+- **Cloudflare challenges** ("Checking your browser...")
+- **Bot detection** messages ("Access Denied", "Unusual traffic")
+- **CAPTCHAs** appearing unexpectedly
+- **Rate limiting** (429 Too Many Requests)
+- **Empty responses** or incomplete data
+- **Timeouts** or connection resets
+- Pages return different content than a real browser shows
+
+---
+
+## Layer 1: Stealth Browser (Default for All Chrome Sessions)
+
+**Tool**: `interceptor_chrome_launch(url, stealthMode: true)`
+
+**Always use this** when launching Chrome through proxy-mcp. Stealth mode patches browser-level detection vectors:
+
+### What It Patches
+
+| Detection Vector | Patch | Why |
+|-----------------|-------|-----|
+| `navigator.webdriver` | Set to `false` with `configurable:true` | Primary bot check; `configurable:true` matches real Chrome behavior |
+| `chrome.runtime` | Exists with expected shape | Akamai's primary detection — missing `chrome.runtime` = headless Chrome |
+| `Permissions.query` | Correct notification response | CDP artifacts cause wrong notification permission state |
+| `Error.stack` | Cleaned of CDP traces | Removes `InjectedScript` and `evaluate` from stack traces |
+
+### What It Deliberately Omits
+
+| Chrome Flag | Why Omitted |
+|-------------|-------------|
+| `--disable-extensions` | Removes `chrome.runtime` entirely — triggers Akamai detection |
+| `--mute-audio` | Detectable via AudioContext API |
+| `--disable-background-networking` | Changes observable network behavior |
+
+Injected via `Page.addScriptToEvaluateOnNewDocument` — runs before any page script, on every frame.
+
+### When to Use
+
+**Always** when launching Chrome on any site with bot detection. There is no downside to enabling stealth mode.
+
+```
+interceptor_chrome_launch("https://target-site.com", stealthMode: true)
+```
+
+### How to Verify
+
+Navigate to bot detection test sites:
+```
+interceptor_chrome_devtools_navigate("https://bot.sannysoft.com/")
+interceptor_chrome_devtools_screenshot()
+```
+
+All tests should pass with stealth mode enabled.
+
+---
+
+## Layer 2: Behavioral Mimicry (Humanizer)
+
+Use humanizer tools for any interaction with page elements during reconnaissance. Each tool adds built-in anti-detection behavior.
+
+### humanizer_move(target_id, x, y)
+- **Behavior**: Cubic Bezier curves with randomized control points
+- **Timing**: Fitts's law duration scaling (larger distance = proportionally faster)
+- **Realism**: Overshoot + correction for distances >200px
+
+### humanizer_click(target_id, selector)
+- **Behavior**: Combines `humanizer_move` to target + click with human-like timing variance
+- **Anti-detection**: Random delay before click, natural cursor path
+
+### humanizer_type(target_id, text)
+- **Behavior**: WPM-based delays (default 40 WPM)
+- **Timing modifiers**: Bigram frequency (common letter pairs 0.8x speed), shift penalty +50ms
+- **Realism**: Optional typo injection with QWERTY neighbor key mapping
+
+### humanizer_scroll(target_id, direction, amount)
+- **Behavior**: easeInOutQuad acceleration/deceleration curve
+- **Anti-detection**: Natural scroll speed variation
+
+### humanizer_idle(target_id, duration_ms)
+- **Behavior**: Micro-jitter ±3-8px, occasional micro-scrolls
+- **Anti-detection**: Defeats idle detection systems that flag motionless cursors
+
+### When to Use
+
+Any time you interact with page elements during reconnaissance. Use `humanizer_click` instead of direct DOM clicks, `humanizer_type` instead of direct input, etc.
+
+---
+
+## Layer 3: Proxy Rotation / Upstream Proxies
+
+When IP-level blocking is detected (Cloudflare geographic restrictions, IP bans):
+
+### Chain to Upstream Proxy
+
+```
+proxy_set_upstream("http://user:pass@proxy.apify.com:8000")
+```
+
+This routes all proxy traffic through the upstream proxy, giving you:
+- **IP rotation** (different IP per request or session)
+- **Geographic targeting** (residential IPs in specific countries)
+- **Residential IP addresses** for strict sites
+
+### Per-Host Upstream
+
+Route only specific domains through proxy:
+
+```
+proxy_set_host_upstream("target-site.com", "http://user:pass@residential-proxy.com:8000")
+```
+
+### Inject Custom Headers
+
+```
+proxy_inject_headers({
+    "Accept-Language": "en-US,en;q=0.9",
+    "X-Forwarded-For": "removed"
+})
+```
+
+### When to Use
+
+When you're getting IP-based blocks:
+- Cloudflare showing geographic challenges
+- 403/429 responses that disappear with different IPs
+- Site requires residential IP addresses
+
+---
+
+## Layer 4: TLS Fingerprint Spoofing (HTTP-Only Clients — Conditional)
+
+**Tool**: `proxy_set_fingerprint_spoof(preset)`
+
+Uses **impit** (Rust NAPI module) for native TLS impersonation. Spoofs:
+- JA3 fingerprint
+- HTTP/2 frame ordering
+- Auto-normalizes User-Agent + UA Client Hints headers
+
+### Available Presets
+
+| Preset | Use Case |
+|--------|----------|
+| `chrome_131` | Match Chrome 131 TLS fingerprint |
+| `chrome_136` | Match Chrome 136 TLS fingerprint |
+| `chrome_136_linux` | Match Chrome 136 on Linux |
+| `firefox_133` | Match Firefox 133 TLS fingerprint |
+| `okhttp3` | Match OkHttp 3 (Android apps) |
+| `okhttp4` | Match OkHttp 4 (Android apps) |
+| `okhttp5` | Match OkHttp 5 (Android apps) |
+
+### When to Use
+
+**ONLY** when ALL of these conditions are met:
+1. You've discovered an API via traffic interception
+2. You want to switch from browser to HTTP-only client (gotScraping, curl, fetch) for faster extraction
+3. The target blocks the HTTP client based on TLS fingerprint
+
+```
+proxy_set_fingerprint_spoof(preset: "chrome_136")
+```
+
+### When NOT to Use
+
+**Do NOT use for Chrome browser sessions**. Chrome already has a legitimate TLS fingerprint — spoofing is unnecessary, incorrect, and may cause issues.
+
+### How to Verify
+
+```
+proxy_get_tls_fingerprints()           → Check what fingerprint the server sees
+proxy_list_fingerprint_presets()       → List available presets
+proxy_check_fingerprint_runtime()     → Verify impit runtime is available
+```
+
+---
+
+## Layer 5: Request Manipulation (Surgical)
+
+For specific request-level anti-bot checks:
+
+### Add Interception Rules
+
+```
+proxy_add_rule(
+    matcher: { urlPattern: "*/bot-check/*" },
+    handler: { type: "drop" }
+)
+```
+
+### Rewrite URLs
+
+```
+proxy_rewrite_url("/old-endpoint/", "/new-endpoint/")
+```
+
+### Mock Responses
+
+```
+proxy_mock_response(
+    matcher: { urlPattern: "*/captcha-check" },
+    response: { status: 200, body: '{"success": true}' }
+)
+```
+
+### When to Use
+
+Targeted fixes for specific anti-bot checks discovered during reconnaissance:
+- Blocking analytics/tracking requests that slow things down
+- Bypassing specific route checks
+- Testing with mocked responses
+
+---
+
+## Escalation Strategy
+
+Start simple, add layers only as needed:
+
+```
+1. Stealth Browser (Layer 1) — usually sufficient
+   └─ Still blocked?
+2. Add Humanizer for interactions (Layer 2)
+   └─ IP-blocked?
+3. Add Upstream Proxies (Layer 3)
+   └─ Switching to HTTP-only client and TLS-blocked?
+4. Add TLS Spoofing (Layer 4)
+   └─ Specific request-level issues?
+5. Add Request Rules (Layer 5)
+```
+
+**Most sites only need Layers 1-2**. Layer 3 is needed for IP-based blocking. Layer 4 is only for HTTP-only clients. Layer 5 is for surgical fixes.
+
+---
+
+## Production Actors: Apify fingerprint-suite
+
+For production Actors deployed on Apify infrastructure, use the **fingerprint-suite** instead of proxy-mcp:
+
+### Crawlee with FingerprintOptions
+
+```typescript
+import { Actor } from 'apify';
+import { PlaywrightCrawler } from 'crawlee';
+
+await Actor.main(async () => {
+    const crawler = new PlaywrightCrawler({
+        useSessionPool: true,
+        sessionPoolOptions: {
+            maxPoolSize: 50,
+        },
+        fingerprintOptions: {
+            devices: ['desktop'],
+            operatingSystems: ['windows', 'macos'],
+            browsers: ['chrome'],
+        },
+        proxyConfiguration: await Actor.createProxyConfiguration({
+            groups: ['RESIDENTIAL'],
+        }),
+        async requestHandler({ page, request, log }) {
+            log.info(`Scraping: ${request.url}`);
+            // Your scraping logic
+        },
+    });
+
+    await crawler.run(['https://example.com']);
+});
+```
+
+### fingerprint-suite Components
+
+| Package | Purpose |
+|---------|---------|
+| **header-generator** | Generates realistic HTTP headers |
+| **fingerprint-generator** | Generates full browser fingerprints (headers + JS APIs) |
+| **fingerprint-injector** | Injects fingerprints into Playwright/Puppeteer |
+| **generative-bayesian-network** | ML model for realistic fingerprint generation |
+
+### Proxy Configuration (Production)
+
+```typescript
+// Datacenter proxies (faster, cheaper)
+const proxyConfiguration = await Actor.createProxyConfiguration({
+    groups: ['SHADER'],
+});
+
+// Residential proxies (more reliable for strict sites)
+const proxyConfiguration = await Actor.createProxyConfiguration({
+    groups: ['RESIDENTIAL'],
+});
+```
+
+### Session Management (Production)
+
+```typescript
+const crawler = new PlaywrightCrawler({
+    useSessionPool: true,
+    sessionPoolOptions: {
+        maxPoolSize: 50,
+        sessionOptions: {
+            maxUsageCount: 50,
+            maxErrorScore: 3,
+        },
+    },
+});
+```
+
+See `../reference/fingerprint-patterns.md` for complete fingerprint configuration patterns.
+
+---
+
+## Troubleshooting
+
+### Still Getting Blocked with Stealth Mode?
+
+1. **Check upstream proxy** — IP might be blocked regardless of browser fingerprint
+2. **Add humanizer** — site may detect automated click patterns
+3. **Try residential proxies** — datacenter IPs are often blacklisted
+4. **Check for JavaScript challenges** — some require specific JS execution timing
+
+### Blocked When Switching to HTTP Client?
+
+1. **Enable TLS spoofing** — `proxy_set_fingerprint_spoof(preset: "chrome_136")`
+2. **Copy exact headers** from browser session (from `proxy_get_exchange()`)
+3. **Include cookies** from browser (`interceptor_chrome_devtools_list_cookies()`)
+
+### Detecting Fingerprint Issues
+
+Test with bot detection sites:
+```
+interceptor_chrome_devtools_navigate("https://bot.sannysoft.com/")
+interceptor_chrome_devtools_screenshot()
+```
+
+## Ethical Considerations
+
+**Anti-blocking is a tool, not permission**:
+
+- Use for public data collection
+- Respect rate limits (even if you can bypass them)
+- Honor robots.txt
+- Don't overload servers
+- Don't bypass paywalls
+- Don't scrape private data
+- Don't violate terms of service
+
+## Related
+
+- **Fingerprint patterns**: See `../reference/fingerprint-patterns.md`
+- **Proxy-MCP tool reference**: See `../reference/proxy-tool-reference.md`
+- **Traffic interception**: See `traffic-interception.md`
+- **Session workflows**: See `session-workflows.md`
+
+## Summary
+
+**Multi-layer anti-detection for different contexts**:
+
+| Context | Primary Tool | Layers |
+|---------|-------------|--------|
+| **Interactive development** | proxy-mcp | Stealth mode → Humanizer → Upstream proxies → TLS spoofing |
+| **Production Actors** | Apify fingerprint-suite | FingerprintOptions → Proxy rotation → Session management |
+
+**Key rules**:
+1. Stealth mode for all Chrome sessions (Layer 1)
+2. Humanizer for all interactions (Layer 2)
+3. Upstream proxies for IP blocking (Layer 3)
+4. TLS spoofing ONLY for HTTP-only clients when TLS-blocked (Layer 4)
+5. **Never** use TLS spoofing for Chrome browser sessions
