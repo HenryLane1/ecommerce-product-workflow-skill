@@ -1,1 +1,135 @@
-LyoqCiAqIEFudGktQmxvY2tpbmcgU2NyYXBlcgogKgogKiBEZW1vbnN0cmF0ZXM6CiAqIC0gQnJvd3NlciBmaW5nZXJwcmludGluZwogKiAtIFByb3h5IGNvbmZpZ3VyYXRpb24KICogLSBTZXNzaW9uIG1hbmFnZW1lbnQKICogLSBCbG9ja2luZyBkZXRlY3Rpb24KICovCgppbXBvcnQgeyBBY3RvciB9IGZyb20gJ2FwaWZ5JzsKaW1wb3J0IHsgUGxheXdyaWdodENyYXdsZXIsIERhdGFzZXQgfSBmcm9tICdjcmF3bGVlJzsKCi8vIElucHV0IGludGVyZmFjZQppbnRlcmZhY2UgSW5wdXQgewogICAgc3RhcnRVcmxzOiB7IHVybDogc3RyaW5nIH1bXTsKICAgIG1heEl0ZW1zPzogbnVtYmVyOwogICAgdXNlRmluZ2VycHJpbnRpbmc/OiBib29sZWFuOwogICAgcHJveHlHcm91cD86ICdSRVNJREVOVElBTCcgfCAnU0hBREVSJzsKfQoKLy8gT3V0cHV0IGludGVyZmFjZQppbnRlcmZhY2UgU2NyYXBlZERhdGEgewogICAgdXJsOiBzdHJpbmc7CiAgICB0aXRsZTogc3RyaW5nOwogICAgY29udGVudD86IHN0cmluZzsKICAgIHNlc3Npb25JZD86IHN0cmluZzsKICAgIHNjcmFwZWRBdDogc3RyaW5nOwp9Cgphd2FpdCBBY3Rvci5tYWluKGFzeW5jICgpID0+IHsKICAgIC8vIEdldCB0eXBlZCBpbnB1dAogICAgY29uc3QgaW5wdXQgPSBhd2FpdCBBY3Rvci5nZXRJbnB1dDxJbnB1dD4oKTsKCiAgICBpZiAoIWlucHV0Py5zdGFydFVybHMpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ3N0YXJ0VXJscyBpcyByZXF1aXJlZCcpOwogICAgfQoKICAgIGNvbnNvbGUubG9nKCdJbnB1dDonLCBpbnB1dCk7CgogICAgLy8gQ29uZmlndXJlIHByb3h5CiAgICBjb25zdCBwcm94eUNvbmZpZ3VyYXRpb24gPSBhd2FpdCBBY3Rvci5jcmVhdGVQcm94eUNvbmZpZ3VyYXRpb24oewogICAgICAgIGdyb3VwczogW2lucHV0LnByb3h5R3JvdXAgfHwgJ1JFU0lERU5USUFMJ10sCiAgICB9KTsKCiAgICAvLyBDcmVhdGUgUGxheXdyaWdodCBjcmF3bGVyIHdpdGggYW50aS1ibG9ja2luZwogICAgY29uc3QgY3Jhd2xlciA9IG5ldyBQbGF5d3JpZ2h0Q3Jhd2xlcih7CiAgICAgICAgLy8gU2xvdyBkb3duIHRvIGF2b2lkIHJhdGUgbGltaXRpbmcKICAgICAgICBtYXhDb25jdXJyZW5jeTogMywKICAgICAgICBtYXhSZXF1ZXN0c1Blck1pbnV0ZTogMzAsCgogICAgICAgIC8vIEVuYWJsZSBzZXNzaW9uIG1hbmFnZW1lbnQKICAgICAgICB1c2VTZXNzaW9uUG9vbDogdHJ1ZSwKICAgICAgICBzZXNzaW9uUG9vbE9wdGlvbnM6IHsKICAgICAgICAgICAgbWF4UG9vbFNpemU6IDIwLAogICAgICAgICAgICBzZXNzaW9uT3B0aW9uczogewogICAgICAgICAgICAgICAgbWF4VXNhZ2VDb3VudDogMzAsIC8vIFJvdGF0ZSBhZnRlciAzMCByZXF1ZXN0cwogICAgICAgICAgICAgICAgbWF4RXJyb3JTY29yZTogMywgLy8gUmV0aXJlIGFmdGVyIDMgZXJyb3JzCiAgICAgICAgICAgIH0sCiAgICAgICAgfSwKCiAgICAgICAgLy8gRW5hYmxlIGZpbmdlcnByaW50aW5nIGlmIHJlcXVlc3RlZAogICAgICAgIC4uLihpbnB1dC51c2VGaW5nZXJwcmludGluZyAmJiB7CiAgICAgICAgICAgIGZpbmdlcnByaW50T3B0aW9uczogewogICAgICAgICAgICAgICAgZGV2aWNlczogWydkZXNrdG9wJ10sCiAgICAgICAgICAgICAgICBvcGVyYXRpbmdTeXN0ZW1zOiBbJ3dpbmRvd3MnLCAnbWFjb3MnXSwKICAgICAgICAgICAgICAgIGJyb3dzZXJzOiBbJ2Nocm9tZSddLAogICAgICAgICAgICB9LAogICAgICAgIH0pLAoKICAgICAgICAvLyBBZGQgcHJveGllcwogICAgICAgIHByb3h5Q29uZmlndXJhdGlvbiwKCiAgICAgICAgYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyBwYWdlLCByZXF1ZXN0LCBzZXNzaW9uLCBsb2cgfSkgewogICAgICAgICAgICBsb2cuaW5mbyhgU2NyYXBpbmc6ICR7cmVxdWVzdC51cmx9IChTZXNzaW9uOiAke3Nlc3Npb24/LmlkfSlgKTsKCiAgICAgICAgICAgIHRyeSB7CiAgICAgICAgICAgICAgICAvLyBXYWl0IGZvciBjb250ZW50CiAgICAgICAgICAgICAgICBhd2FpdCBwYWdlLndhaXRGb3JTZWxlY3RvcignYm9keScsIHsgdGltZW91dDogMTAwMDAgfSk7CgogICAgICAgICAgICAgICAgLy8gQ2hlY2sgZm9yIGJsb2NraW5nCiAgICAgICAgICAgICAgICBjb25zdCBpc0Jsb2NrZWQgPSBhd2FpdCBwYWdlLmV2YWx1YXRlKCgpID0+IHsKICAgICAgICAgICAgICAgICAgICBjb25zdCB0ZXh0ID0gZG9jdW1lbnQuYm9keS50ZXh0Q29udGVudD8udG9Mb3dlckNhc2UoKSB8fCAnJzsKICAgICAgICAgICAgICAgICAgICByZXR1cm4gKAogICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LmluY2x1ZGVzKCdhY2Nlc3MgZGVuaWVkJykgfHwKICAgICAgICAgICAgICAgICAgICAgICAgdGV4dC5pbmNsdWRlcygnY2xvdWRmbGFyZScpIHx8CiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQuaW5jbHVkZXMoJ2NhcHRjaGEnKSB8fAogICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LmluY2x1ZGVzKCdib3QnKQogICAgICAgICAgICAgICAgICAgICk7CiAgICAgICAgICAgICAgICB9KTsKCiAgICAgICAgICAgICAgICBpZiAoaXNCbG9ja2VkKSB7CiAgICAgICAgICAgICAgICAgICAgbG9nLndhcm5pbmcoYERldGVjdGVkIGJsb2NraW5nIG9uICR7cmVxdWVzdC51cmx9LCByZXRpcmluZyBzZXNzaW9uYCk7CiAgICAgICAgICAgICAgICAgICAgc2Vzc2lvbj8ucmV0aXJlKCk7CiAgICAgICAgICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdCbG9ja2VkJyk7CiAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgLy8gRXh0cmFjdCBkYXRhCiAgICAgICAgICAgICAgICBjb25zdCBkYXRhOiBTY3JhcGVkRGF0YSA9IGF3YWl0IHBhZ2UuZXZhbHVhdGUoKCkgPT4gKHsKICAgICAgICAgICAgICAgICAgICB1cmw6IHdpbmRvdy5sb2NhdGlvbi5ocmVmLAogICAgICAgICAgICAgICAgICAgIHRpdGxlOiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdoMScpPy50ZXh0Q29udGVudD8udHJpbSgpID8/IGRvY3VtZW50LnRpdGxlLAogICAgICAgICAgICAgICAgICAgIGNvbnRlbnQ6IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ21haW4sIGFydGljbGUsIC5jb250ZW50Jyk/LnRleHRDb250ZW50Py5zbGljZSgwLCA1MDApLAogICAgICAgICAgICAgICAgICAgIHNlc3Npb25JZDogdW5kZWZpbmVkLAogICAgICAgICAgICAgICAgICAgIHNjcmFwZWRBdDogbmV3IERhdGUoKS50b0lTT1N0cmluZygpLAogICAgICAgICAgICAgICAgfSkpOwoKICAgICAgICAgICAgICAgIC8vIEFkZCBzZXNzaW9uIGluZm8KICAgICAgICAgICAgICAgIGRhdGEuc2Vzc2lvbklkID0gc2Vzc2lvbj8uaWQ7CgogICAgICAgICAgICAgICAgLy8gU2F2ZSB0byBkYXRhc2V0CiAgICAgICAgICAgICAgICBhd2FpdCBEYXRhc2V0LnB1c2hEYXRhPFNjcmFwZWREYXRhPihkYXRhKTsKCiAgICAgICAgICAgICAgICAvLyBNYXJrIHNlc3Npb24gYXMgd29ya2luZwogICAgICAgICAgICAgICAgc2Vzc2lvbj8ubWFya0dvb2QoKTsKCiAgICAgICAgICAgICAgICBsb2cuaW5mbyhg4pyTIFNjcmFwZWQ6ICR7ZGF0YS50aXRsZX1gKTsKICAgICAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICAgICAgICAgIGxvZy5lcnJvcihgRXJyb3Igc2NyYXBpbmcgJHtyZXF1ZXN0LnVybH06ICR7KGVycm9yIGFzIEVycm9yKS5tZXNzYWdlfWApOwogICAgICAgICAgICAgICAgc2Vzc2lvbj8ubWFya0JhZCgpOwogICAgICAgICAgICAgICAgdGhyb3cgZXJyb3I7IC8vIFJldHJ5CiAgICAgICAgICAgIH0KICAgICAgICB9LAoKICAgICAgICBmYWlsZWRSZXF1ZXN0SGFuZGxlcih7IHJlcXVlc3QsIHNlc3Npb24gfSwgeyBsb2cgfSkgewogICAgICAgICAgICBsb2cuZXJyb3IoYFJlcXVlc3QgZmFpbGVkIGFmdGVyIHJldHJpZXM6ICR7cmVxdWVzdC51cmx9YCk7CiAgICAgICAgICAgIHNlc3Npb24/LnJldGlyZSgpOwogICAgICAgIH0sCiAgICB9KTsKCiAgICAvLyBBZGQgVVJMcyBhbmQgcnVuCiAgICBhd2FpdCBjcmF3bGVyLmFkZFJlcXVlc3RzKGlucHV0LnN0YXJ0VXJscyk7CiAgICBhd2FpdCBjcmF3bGVyLnJ1bigpOwoKICAgIGNvbnNvbGUubG9nKCfinJMgU2NyYXBpbmcgY29tcGxldGVkJyk7Cn0pOwo=
+/**
+ * Anti-Blocking Scraper
+ *
+ * Demonstrates:
+ * - Browser fingerprinting
+ * - Proxy configuration
+ * - Session management
+ * - Blocking detection
+ */
+
+import { Actor } from 'apify';
+import { PlaywrightCrawler, Dataset } from 'crawlee';
+
+// Input interface
+interface Input {
+    startUrls: { url: string }[];
+    maxItems?: number;
+    useFingerprinting?: boolean;
+    proxyGroup?: 'RESIDENTIAL' | 'SHADER';
+}
+
+// Output interface
+interface ScrapedData {
+    url: string;
+    title: string;
+    content?: string;
+    sessionId?: string;
+    scrapedAt: string;
+}
+
+await Actor.main(async () => {
+    // Get typed input
+    const input = await Actor.getInput<Input>();
+
+    if (!input?.startUrls) {
+        throw new Error('startUrls is required');
+    }
+
+    console.log('Input:', input);
+
+    // Configure proxy
+    const proxyConfiguration = await Actor.createProxyConfiguration({
+        groups: [input.proxyGroup || 'RESIDENTIAL'],
+    });
+
+    // Create Playwright crawler with anti-blocking
+    const crawler = new PlaywrightCrawler({
+        // Slow down to avoid rate limiting
+        maxConcurrency: 3,
+        maxRequestsPerMinute: 30,
+
+        // Enable session management
+        useSessionPool: true,
+        sessionPoolOptions: {
+            maxPoolSize: 20,
+            sessionOptions: {
+                maxUsageCount: 30, // Rotate after 30 requests
+                maxErrorScore: 3, // Retire after 3 errors
+            },
+        },
+
+        // Enable fingerprinting if requested
+        ...(input.useFingerprinting && {
+            fingerprintOptions: {
+                devices: ['desktop'],
+                operatingSystems: ['windows', 'macos'],
+                browsers: ['chrome'],
+            },
+        }),
+
+        // Add proxies
+        proxyConfiguration,
+
+        async requestHandler({ page, request, session, log }) {
+            log.info(`Scraping: ${request.url} (Session: ${session?.id})`);
+
+            try {
+                // Wait for content
+                await page.waitForSelector('body', { timeout: 10000 });
+
+                // Check for blocking
+                const isBlocked = await page.evaluate(() => {
+                    const text = document.body.textContent?.toLowerCase() || '';
+                    return (
+                        text.includes('access denied') ||
+                        text.includes('cloudflare') ||
+                        text.includes('captcha') ||
+                        text.includes('bot')
+                    );
+                });
+
+                if (isBlocked) {
+                    log.warning(`Detected blocking on ${request.url}, retiring session`);
+                    session?.retire();
+                    throw new Error('Blocked');
+                }
+
+                // Extract data
+                const data: ScrapedData = await page.evaluate(() => ({
+                    url: window.location.href,
+                    title: document.querySelector('h1')?.textContent?.trim() ?? document.title,
+                    content: document.querySelector('main, article, .content')?.textContent?.slice(0, 500),
+                    sessionId: undefined,
+                    scrapedAt: new Date().toISOString(),
+                }));
+
+                // Add session info
+                data.sessionId = session?.id;
+
+                // Save to dataset
+                await Dataset.pushData<ScrapedData>(data);
+
+                // Mark session as working
+                session?.markGood();
+
+                log.info(`✓ Scraped: ${data.title}`);
+            } catch (error) {
+                log.error(`Error scraping ${request.url}: ${(error as Error).message}`);
+                session?.markBad();
+                throw error; // Retry
+            }
+        },
+
+        failedRequestHandler({ request, session }, { log }) {
+            log.error(`Request failed after retries: ${request.url}`);
+            session?.retire();
+        },
+    });
+
+    // Add URLs and run
+    await crawler.addRequests(input.startUrls);
+    await crawler.run();
+
+    console.log('✓ Scraping completed');
+});
