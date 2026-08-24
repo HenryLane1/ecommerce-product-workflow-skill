@@ -1,1 +1,19 @@
-IyBRdWljayBSZWZlcmVuY2UKCkZhc3QgbG9va3VwIGd1aWRlcyBmb3IgY29tbW9uIHBhdHRlcm5zIGFuZCB0cm91Ymxlc2hvb3RpbmcuCgojIyBGaWxlcwoKMS4gKipwcm94eS10b29sLXJlZmVyZW5jZS5tZCoqIC0gUHJveHktTUNQIHRvb2wgcmVmZXJlbmNlIChhbGwgODArIHRvb2xzKQoyLiAqKnJlZ2V4LXBhdHRlcm5zLm1kKiogLSBVUkwgZmlsdGVyaW5nIHBhdHRlcm5zIGZvciBzaXRlbWFwcwozLiAqKmZpbmdlcnByaW50LXBhdHRlcm5zLm1kKiogLSBTdGVhbHRoIG1vZGUgKyBUTFMgZmluZ2VycHJpbnQgcHJlc2V0cwo0LiAqKmFudGktcGF0dGVybnMubWQqKiAtIFdoYXQgTk9UIHRvIGRvCgojIyBRdWljayBMaW5rcwoKLSBOZWVkIHByb3h5LW1jcCB0b29sIGluZm8/IOKGkiBgcHJveHktdG9vbC1yZWZlcmVuY2UubWRgCi0gTmVlZCB0byBmaWx0ZXIgc2l0ZW1hcCBVUkxzPyDihpIgYHJlZ2V4LXBhdHRlcm5zLm1kYAotIE5lZWQgYW50aS1kZXRlY3Rpb24gcGF0dGVybnM/IOKGkiBgZmluZ2VycHJpbnQtcGF0dGVybnMubWRgCi0gV2FudCB0byBhdm9pZCBtaXN0YWtlcz8g4oaSIGBhbnRpLXBhdHRlcm5zLm1kYAoKQmFjayB0byBtYWluIHNraWxsOiBgLi4vU0tJTEwubWRgCg==
+# Quick Reference
+
+Fast lookup guides for common patterns and troubleshooting.
+
+## Files
+
+1. **proxy-tool-reference.md** - Proxy-MCP tool reference (all 80+ tools)
+2. **regex-patterns.md** - URL filtering patterns for sitemaps
+3. **fingerprint-patterns.md** - Stealth mode + TLS fingerprint presets
+4. **anti-patterns.md** - What NOT to do
+
+## Quick Links
+
+- Need proxy-mcp tool info? → `proxy-tool-reference.md`
+- Need to filter sitemap URLs? → `regex-patterns.md`
+- Need anti-detection patterns? → `fingerprint-patterns.md`
+- Want to avoid mistakes? → `anti-patterns.md`
+
+Back to main skill: `../SKILL.md`
