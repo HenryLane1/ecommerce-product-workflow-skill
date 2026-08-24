@@ -1,1 +1,26 @@
-ewogICAgIm5hbWUiOiAibXktYWN0b3IiLAogICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgInR5cGUiOiAibW9kdWxlIiwKICAgICJkZXNjcmlwdGlvbiI6ICJBY3RvciBkZXNjcmlwdGlvbiIsCiAgICAic2NyaXB0cyI6IHsKICAgICAgICAic3RhcnQiOiAibnBtIHJ1biBidWlsZCAmJiBub2RlIGRpc3QvbWFpbi5qcyIsCiAgICAgICAgImJ1aWxkIjogInRzYyIsCiAgICAgICAgInRlc3QiOiAiZWNobyBcIk5vIHRlc3RzIHlldFwiIiwKICAgICAgICAibGludCI6ICJlc2xpbnQgc3JjIiwKICAgICAgICAibGludDpmaXgiOiAiZXNsaW50IHNyYyAtLWZpeCIKICAgIH0sCiAgICAiZGVwZW5kZW5jaWVzIjogewogICAgICAgICJhcGlmeSI6ICJeMy4wLjAiLAogICAgICAgICJjcmF3bGVlIjogIl4zLjAuMCIKICAgIH0sCiAgICAiZGV2RGVwZW5kZW5jaWVzIjogewogICAgICAgICJAdHlwZXNjcmlwdC1lc2xpbnQvZXNsaW50LXBsdWdpbiI6ICJeNi4wLjAiLAogICAgICAgICJAdHlwZXNjcmlwdC1lc2xpbnQvcGFyc2VyIjogIl42LjAuMCIsCiAgICAgICAgImVzbGludCI6ICJeOC4wLjAiLAogICAgICAgICJ0eXBlc2NyaXB0IjogIl41LjAuMCIKICAgIH0sCiAgICAiZW5naW5lcyI6IHsKICAgICAgICAibm9kZSI6ICI+PTE4LjAuMCIKICAgIH0KfQo=
+{
+    "name": "my-actor",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Actor description",
+    "scripts": {
+        "start": "npm run build && node dist/main.js",
+        "build": "tsc",
+        "test": "echo \"No tests yet\"",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix"
+    },
+    "dependencies": {
+        "apify": "^3.0.0",
+        "crawlee": "^3.0.0"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0",
+        "eslint": "^8.0.0",
+        "typescript": "^5.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
