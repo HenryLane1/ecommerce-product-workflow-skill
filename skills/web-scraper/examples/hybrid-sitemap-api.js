@@ -1,1 +1,84 @@
-LyoqCiAqIEh5YnJpZDogU2l0ZW1hcCArIEFQSSBTY3JhcGVyCiAqCiAqIFRoaXMgZXhhbXBsZSBzaG93cyBob3cgdG86CiAqIDEuIEdldCBhbGwgVVJMcyBmcm9tIHNpdGVtYXAgKGluc3RhbnQgZGlzY292ZXJ5KQogKiAyLiBFeHRyYWN0IElEcyBmcm9tIFVSTHMKICogMy4gRmV0Y2ggZGF0YSB2aWEgQVBJIChjbGVhbiBKU09OKQogKgogKiBVc2UgdGhpcyBwYXR0ZXJuIGZvcjogQmVzdCBwZXJmb3JtYW5jZSArIGRhdGEgcXVhbGl0eQogKiBQZXJmb3JtYW5jZTogNjB4IGZhc3RlciB0aGFuIGNyYXdsaW5nICsgbW9yZSByZWxpYWJsZSB0aGFuIEhUTUwgc2NyYXBpbmcKICovCgppbXBvcnQgeyBSb2JvdHNGaWxlIH0gZnJvbSAnY3Jhd2xlZSc7CmltcG9ydCB7IGdvdFNjcmFwaW5nIH0gZnJvbSAnZ290LXNjcmFwaW5nJzsKaW1wb3J0IHsgc2V0VGltZW91dCB9IGZyb20gJ3RpbWVycy9wcm9taXNlcyc7Cgphc3luYyBmdW5jdGlvbiBtYWluKCkgewogICAgY29uc3QgYmFzZVVybCA9ICdodHRwczovL3Nob3AuZXhhbXBsZS5jb20nOwoKICAgIGNvbnNvbGUubG9nKCfwn5SNIFBoYXNlIDE6IFNpdGVtYXAgRGlzY292ZXJ5Jyk7CgogICAgLy8gU3RlcCAxOiBHZXQgYWxsIFVSTHMgZnJvbSBzaXRlbWFwIChpbnN0YW50ISkKICAgIGNvbnN0IHJvYm90cyA9IGF3YWl0IFJvYm90c0ZpbGUuZmluZChiYXNlVXJsKTsKICAgIGNvbnN0IHVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CgogICAgY29uc29sZS5sb2coYOKckyBGb3VuZCAke3VybHMubGVuZ3RofSBVUkxzIGZyb20gc2l0ZW1hcGApOwoKICAgIC8vIFN0ZXAgMjogRXh0cmFjdCBwcm9kdWN0IElEcyBmcm9tIFVSTHMKICAgIGNvbnN0IHByb2R1Y3RJZHMgPSB1cmxzCiAgICAgICAgLm1hcCh1cmwgPT4gewogICAgICAgICAgICAvLyBFeHRyYWN0IElEIGZyb20gVVJMIHBhdHRlcm46IC9wcm9kdWN0cy8xMjMKICAgICAgICAgICAgY29uc3QgbWF0Y2ggPSB1cmwubWF0Y2goL1wvcHJvZHVjdHNcLyhcZCspLyk7CiAgICAgICAgICAgIHJldHVybiBtYXRjaCA/IG1hdGNoWzFdIDogbnVsbDsKICAgICAgICB9KQogICAgICAgIC5maWx0ZXIoQm9vbGVhbik7IC8vIFJlbW92ZSBudWxscwoKICAgIGNvbnNvbGUubG9nKGDinJMgRXh0cmFjdGVkICR7cHJvZHVjdElkcy5sZW5ndGh9IHByb2R1Y3QgSURzYCk7CgogICAgY29uc29sZS5sb2coJ/CflI0gUGhhc2UgMjogQVBJIERhdGEgRmV0Y2hpbmcnKTsKCiAgICAvLyBTdGVwIDM6IEZldGNoIGRhdGEgdmlhIEFQSSAobXVjaCBmYXN0ZXIgdGhhbiBzY3JhcGluZyBIVE1MISkKICAgIGNvbnN0IHJlc3VsdHMgPSBbXTsKCiAgICBmb3IgKGNvbnN0IGlkIG9mIHByb2R1Y3RJZHMuc2xpY2UoMCwgNTApKSB7IC8vIExpbWl0IHRvIDUwIGZvciBkZW1vCiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICAgICAgICAgICAgICB1cmw6IGBodHRwczovL2FwaS5leGFtcGxlLmNvbS92MS9wcm9kdWN0cy8ke2lkfWAsCiAgICAgICAgICAgICAgICByZXNwb25zZVR5cGU6ICdqc29uJywKICAgICAgICAgICAgICAgIGhlYWRlcnM6IHsKICAgICAgICAgICAgICAgICAgICAnVXNlci1BZ2VudCc6ICdNb3ppbGxhLzUuMC4uLicsCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgdGltZW91dDogewogICAgICAgICAgICAgICAgICAgIHJlcXVlc3Q6IDEwMDAwLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSk7CgogICAgICAgICAgICByZXN1bHRzLnB1c2goewogICAgICAgICAgICAgICAgaWQ6IHJlc3BvbnNlLmJvZHkuaWQsCiAgICAgICAgICAgICAgICBuYW1lOiByZXNwb25zZS5ib2R5Lm5hbWUsCiAgICAgICAgICAgICAgICBwcmljZTogcmVzcG9uc2UuYm9keS5wcmljZSwKICAgICAgICAgICAgICAgIHVybDogYCR7YmFzZVVybH0vcHJvZHVjdHMvJHtpZH1gLAogICAgICAgICAgICAgICAgc2NyYXBlZEF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksCiAgICAgICAgICAgIH0pOwoKICAgICAgICAgICAgaWYgKHJlc3VsdHMubGVuZ3RoICUgMTAgPT09IDApIHsKICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKGDinJMgRmV0Y2hlZCAke3Jlc3VsdHMubGVuZ3RofS8ke3Byb2R1Y3RJZHMubGVuZ3RofSBwcm9kdWN0c2ApOwogICAgICAgICAgICB9CgogICAgICAgICAgICAvLyBSYXRlIGxpbWl0aW5nCiAgICAgICAgICAgIGF3YWl0IHNldFRpbWVvdXQoNTApOyAvLyAyMCByZXF1ZXN0cy9zZWNvbmQKCiAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICAgICAgY29uc29sZS5lcnJvcihg4pyXIEZhaWxlZCB0byBmZXRjaCBwcm9kdWN0ICR7aWR9OmAsIGVycm9yLm1lc3NhZ2UpOwogICAgICAgIH0KICAgIH0KCiAgICBjb25zb2xlLmxvZyhg4pyTIENvbXBsZXRlZDogJHtyZXN1bHRzLmxlbmd0aH0gcHJvZHVjdHNgKTsKICAgIGNvbnNvbGUubG9nKCdTYW1wbGUgcmVzdWx0OicsIHJlc3VsdHNbMF0pOwoKICAgIC8vIFNhdmUgcmVzdWx0cyAoaW4gcmVhbCBzY2VuYXJpbykKICAgIC8vIGF3YWl0IGZzLndyaXRlRmlsZSgncHJvZHVjdHMuanNvbicsIEpTT04uc3RyaW5naWZ5KHJlc3VsdHMsIG51bGwsIDIpKTsKfQoKbWFpbigpOwo=
+/**
+ * Hybrid: Sitemap + API Scraper
+ *
+ * This example shows how to:
+ * 1. Get all URLs from sitemap (instant discovery)
+ * 2. Extract IDs from URLs
+ * 3. Fetch data via API (clean JSON)
+ *
+ * Use this pattern for: Best performance + data quality
+ * Performance: 60x faster than crawling + more reliable than HTML scraping
+ */
+
+import { RobotsFile } from 'crawlee';
+import { gotScraping } from 'got-scraping';
+import { setTimeout } from 'timers/promises';
+
+async function main() {
+    const baseUrl = 'https://shop.example.com';
+
+    console.log('🔍 Phase 1: Sitemap Discovery');
+
+    // Step 1: Get all URLs from sitemap (instant!)
+    const robots = await RobotsFile.find(baseUrl);
+    const urls = await robots.parseUrlsFromSitemaps();
+
+    console.log(`✓ Found ${urls.length} URLs from sitemap`);
+
+    // Step 2: Extract product IDs from URLs
+    const productIds = urls
+        .map(url => {
+            // Extract ID from URL pattern: /products/123
+            const match = url.match(/\/products\/(\d+)/);
+            return match ? match[1] : null;
+        })
+        .filter(Boolean); // Remove nulls
+
+    console.log(`✓ Extracted ${productIds.length} product IDs`);
+
+    console.log('🔍 Phase 2: API Data Fetching');
+
+    // Step 3: Fetch data via API (much faster than scraping HTML!)
+    const results = [];
+
+    for (const id of productIds.slice(0, 50)) { // Limit to 50 for demo
+        try {
+            const response = await gotScraping({
+                url: `https://api.example.com/v1/products/${id}`,
+                responseType: 'json',
+                headers: {
+                    'User-Agent': 'Mozilla/5.0...',
+                },
+                timeout: {
+                    request: 10000,
+                },
+            });
+
+            results.push({
+                id: response.body.id,
+                name: response.body.name,
+                price: response.body.price,
+                url: `${baseUrl}/products/${id}`,
+                scrapedAt: new Date().toISOString(),
+            });
+
+            if (results.length % 10 === 0) {
+                console.log(`✓ Fetched ${results.length}/${productIds.length} products`);
+            }
+
+            // Rate limiting
+            await setTimeout(50); // 20 requests/second
+
+        } catch (error) {
+            console.error(`✗ Failed to fetch product ${id}:`, error.message);
+        }
+    }
+
+    console.log(`✓ Completed: ${results.length} products`);
+    console.log('Sample result:', results[0]);
+
+    // Save results (in real scenario)
+    // await fs.writeFile('products.json', JSON.stringify(results, null, 2));
+}
+
+main();
