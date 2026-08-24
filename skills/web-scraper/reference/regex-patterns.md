@@ -1,1 +1,86 @@
-IyBDb21tb24gUmVnZXggUGF0dGVybnMgZm9yIFVSTCBGaWx0ZXJpbmcKClF1aWNrIHJlZmVyZW5jZSBmb3IgZmlsdGVyaW5nIHNpdGVtYXAgVVJMcyB3aXRoIHJlZ2V4LgoKIyMgUHJvZHVjdCBQYWdlcwoKYGBgamF2YXNjcmlwdAovLyBCYXNpYyBwcm9kdWN0IHBhdHRlcm4KL1wvcHJvZHVjdHNcL1thLXowLTktXSskL2kKCi8vIFByb2R1Y3Qgd2l0aCBudW1lcmljIElECi9cL3Byb2R1Y3RzXC8oXGQrKS8KCi8vIFByb2R1Y3Qgd2l0aCBzbHVnCi9cL3Byb2R1Y3RzXC8oW2EtejAtOS1dKykkL2kKCi8vIEV4Y2x1ZGUgY2F0ZWdvcnkgcGFnZXMKL1wvcHJvZHVjdHNcL1teXC9dKyQvCi8vIE1hdGNoZXM6IC9wcm9kdWN0cy9zaG9lLTEyMwovLyBTa2lwczogL3Byb2R1Y3RzL3Nob2VzL3J1bm5pbmcKCi8vIFNwZWNpZmljIGNhdGVnb3J5Ci9cL3Byb2R1Y3RzXC9lbGVjdHJvbmljc1wvW15cL10rJC8KYGBgCgojIyBCbG9nIFBvc3RzCgpgYGBqYXZhc2NyaXB0Ci8vIEJsb2cgd2l0aCBkYXRlCi9cL2Jsb2dcL1xkezR9XC9cZHsyfVwvW2EtejAtOS1dKy9pCi8vIE1hdGNoZXM6IC9ibG9nLzIwMjUvMTAvbXktcG9zdAoKLy8gQmxvZyB3aXRob3V0IGRhdGUKL1wvYmxvZ1wvW2EtejAtOS1dKyQvaQoKLy8gV29yZFByZXNzIHBhdHRlcm4KL1wvXGR7NH1cL1xkezJ9XC9bYS16MC05LV0rLwpgYGAKCiMjIE11bHRpcGxlIFBhdHRlcm5zCgpgYGBqYXZhc2NyaXB0Ci8vIFByb2R1Y3RzIE9SIGRlYWxzCi8oXC9wcm9kdWN0c1wvW15cL10rfFwvZGVhbHNcL1teXC9dKykvCgovLyBNdWx0aXBsZSBjYXRlZ29yaWVzCi9cLyhlbGVjdHJvbmljc3xjbG90aGluZ3xib29rcylcL1teXC9dKyQvCmBgYAoKIyMgRXhjbHVkZSBQYXR0ZXJucwoKYGBgamF2YXNjcmlwdAovLyBFeGNsdWRlIHBhZ2VzCi9eKD8hLiooYWJvdXR8Y29udGFjdHxoZWxwKSkuKiQvCgovLyBFeGNsdWRlIGZpbGUgZXh0ZW5zaW9ucwovXig/IS4qXC4ocGRmfGpwZ3xwbmcpKS4qJC8KYGBgCgojIyBVc2FnZSB3aXRoIFJlcXVlc3RMaXN0CgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IFJlcXVlc3RMaXN0IH0gZnJvbSAnY3Jhd2xlZSc7Cgpjb25zdCByZXF1ZXN0TGlzdCA9IGF3YWl0IFJlcXVlc3RMaXN0Lm9wZW4obnVsbCwgW3sKICAgIHJlcXVlc3RzRnJvbVVybDogJ2h0dHBzOi8vc2l0ZS5jb20vc2l0ZW1hcC54bWwnLAogICAgcmVnZXg6IC9cL3Byb2R1Y3RzXC9bXlwvXSskLywKfV0pOwpgYGAKCiMjIFRlc3RpbmcgUGF0dGVybnMKClRlc3QgeW91ciByZWdleCBiZWZvcmUgcnVubmluZzoKCmBgYGphdmFzY3JpcHQKY29uc3QgcGF0dGVybiA9IC9cL3Byb2R1Y3RzXC9bXlwvXSskLzsKY29uc3QgdXJscyA9IFsKICAgICdodHRwczovL3Nob3AuY29tL3Byb2R1Y3RzL3Nob2UtMTIzJywgICAgICAvLyDinJMgTWF0Y2gKICAgICdodHRwczovL3Nob3AuY29tL3Byb2R1Y3RzL3Nob2VzL3J1bm5pbmcnLCAvLyDinJcgTm8gbWF0Y2ggKGhhcyAvKQogICAgJ2h0dHBzOi8vc2hvcC5jb20vcHJvZHVjdHMnLCAgICAgICAgICAgICAgIC8vIOKclyBObyBtYXRjaCAobm8gcHJvZHVjdCkKXTsKCnVybHMuZm9yRWFjaCh1cmwgPT4gewogICAgY29uc29sZS5sb2coYCR7dXJsfTogJHtwYXR0ZXJuLnRlc3QodXJsKSA/ICfinJMnIDogJ+Kclyd9YCk7Cn0pOwpgYGAK
+# Common Regex Patterns for URL Filtering
+
+Quick reference for filtering sitemap URLs with regex.
+
+## Product Pages
+
+```javascript
+// Basic product pattern
+/\/products\/[a-z0-9-]+$/i
+
+// Product with numeric ID
+/\/products\/(\d+)/
+
+// Product with slug
+/\/products\/([a-z0-9-]+)$/i
+
+// Exclude category pages
+/\/products\/[^\/]+$/
+// Matches: /products/shoe-123
+// Skips: /products/shoes/running
+
+// Specific category
+/\/products\/electronics\/[^\/]+$/
+```
+
+## Blog Posts
+
+```javascript
+// Blog with date
+/\/blog\/\d{4}\/\d{2}\/[a-z0-9-]+/i
+// Matches: /blog/2025/10/my-post
+
+// Blog without date
+/\/blog\/[a-z0-9-]+$/i
+
+// WordPress pattern
+/\/\d{4}\/\d{2}\/[a-z0-9-]+/
+```
+
+## Multiple Patterns
+
+```javascript
+// Products OR deals
+/(\/products\/[^\/]+|\/deals\/[^\/]+)/
+
+// Multiple categories
+/\/(electronics|clothing|books)\/[^\/]+$/
+```
+
+## Exclude Patterns
+
+```javascript
+// Exclude pages
+/^(?!.*(about|contact|help)).*$/
+
+// Exclude file extensions
+/^(?!.*\.(pdf|jpg|png)).*$/
+```
+
+## Usage with RequestList
+
+```javascript
+import { RequestList } from 'crawlee';
+
+const requestList = await RequestList.open(null, [{
+    requestsFromUrl: 'https://site.com/sitemap.xml',
+    regex: /\/products\/[^\/]+$/,
+}]);
+```
+
+## Testing Patterns
+
+Test your regex before running:
+
+```javascript
+const pattern = /\/products\/[^\/]+$/;
+const urls = [
+    'https://shop.com/products/shoe-123',      // ✓ Match
+    'https://shop.com/products/shoes/running', // ✗ No match (has /)
+    'https://shop.com/products',               // ✗ No match (no product)
+];
+
+urls.forEach(url => {
+    console.log(`${url}: ${pattern.test(url) ? '✓' : '✗'}`);
+});
+```
