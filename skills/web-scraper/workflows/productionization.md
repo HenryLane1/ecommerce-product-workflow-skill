@@ -1,1 +1,187 @@
-IyBQaGFzZSA0OiBQcm9kdWN0aW9uaXphdGlvbiAoQXBpZnkgQWN0b3IgQ3JlYXRpb24pCgpQYXR0ZXJucyBmb3IgY29udmVydGluZyBzY3JhcGVycyBpbnRvIHByb2R1Y3Rpb24tcmVhZHkgQXBpZnkgQWN0b3JzLgoKIyMgQWN0aXZhdGlvbiBUcmlnZ2VycwoKTG9hZCB0aGlzIHdvcmtmbG93IHdoZW4gdXNlciByZXF1ZXN0czoKLSAiTWFrZSB0aGlzIGFuIEFwaWZ5IEFjdG9yIgotICJQcm9kdWN0aW9uaXplIHRoaXMgc2NyYXBlciIKLSAiRGVwbG95IHRvIEFwaWZ5IgotICJDcmVhdGUgYW4gYWN0b3IgZnJvbSB0aGlzIgoKIyMgRGV2ZWxvcG1lbnQgdnMgUHJvZHVjdGlvbgoKKipEdXJpbmcgZGV2ZWxvcG1lbnQqKiwgcHJveHktbWNwIHByb3ZpZGVzIHJlY29ubmFpc3NhbmNlIGFuZCB0cmFmZmljIGFuYWx5c2lzOgotIE1JVE0gdHJhZmZpYyBpbnRlcmNlcHRpb24gZm9yIEFQSSBkaXNjb3ZlcnkKLSBTdGVhbHRoIGJyb3dzZXIgZm9yIHByb3RlY3RlZCBzaXRlcwotIEh1bWFuaXplciBmb3IgYW50aS1kZXRlY3Rpb24gaW50ZXJhY3Rpb25zCi0gU2Vzc2lvbiByZWNvcmRpbmcgZm9yIHJlcGxheQoKKipGb3IgcHJvZHVjdGlvbiBBY3RvcnMqKiwgdXNlIENyYXdsZWUgY3Jhd2xlcnMgb24gQXBpZnkgaW5mcmFzdHJ1Y3R1cmU6Ci0gYENoZWVyaW9DcmF3bGVyYCBmb3Igc3RhdGljIEhUTUwgKGZhc3Rlc3QpCi0gYFBsYXl3cmlnaHRDcmF3bGVyYCBmb3IgSmF2YVNjcmlwdC1yZW5kZXJlZCBjb250ZW50Ci0gQXBpZnkgZmluZ2VycHJpbnQtc3VpdGUgZm9yIGFudGktZGV0ZWN0aW9uCi0gQXBpZnkgcHJveHkgaW5mcmFzdHJ1Y3R1cmUgZm9yIElQIHJvdGF0aW9uCgpUaGUgcmVjb25uYWlzc2FuY2UgaW50ZWxsaWdlbmNlIGZyb20gcHJveHktbWNwIGRpcmVjdGx5IGluZm9ybXMgd2hpY2ggQ3Jhd2xlZSBjcmF3bGVyIGFuZCBjb25maWd1cmF0aW9uIHRvIHVzZSBpbiBwcm9kdWN0aW9uLgoKIyMgU3RlcCAxOiBDb25maXJtIFR5cGVTY3JpcHQgUHJlZmVyZW5jZQoKYGBgCkZvciBwcm9kdWN0aW9uIEFjdG9ycywgVHlwZVNjcmlwdCBpcyBTVFJPTkdMWSBSRUNPTU1FTkRFRDoKCkJlbmVmaXRzOgrinJMgVHlwZSBzYWZldHkgKGNhdGNoIGVycm9ycyBhdCBjb21waWxlIHRpbWUpCuKckyBJREUgYXV0b2NvbXBsZXRlIGZvciBBcGlmeS9DcmF3bGVlIEFQSXMK4pyTIEJldHRlciByZWZhY3RvcmluZyBzdXBwb3J0CuKckyBTZWxmLWRvY3VtZW50aW5nIGNvZGUK4pyTIEluZHVzdHJ5IHN0YW5kYXJkIGZvciBwcm9kdWN0aW9uIGNvZGUKClVzZSBUeXBlU2NyaXB0IGZvciB0aGlzIEFjdG9yPyBbWS9uXQpgYGAKCiMjIFN0ZXAgMjogU2VsZWN0IEFwcHJvcHJpYXRlIFRlbXBsYXRlCgpCYXNlZCBvbiBQaGFzZSAxIHNpdGUgYW5hbHlzaXMsIGNob29zZSB0aGUgb3B0aW1hbCB0ZW1wbGF0ZToKCiMjIyBEZWNpc2lvbiBUcmVlCgoqKjEuIEFuYWx5emUgc2l0ZSBjaGFyYWN0ZXJpc3RpY3MqKiAoZnJvbSBQaGFzZSAxIHJlY29ubmFpc3NhbmNlKToKICAgLSBTdGF0aWMgSFRNTCAvIFNlcnZlci1TaWRlIFJlbmRlcmluZyDihpIgVXNlIENoZWVyaW8KICAgLSBKYXZhU2NyaXB0LXJlbmRlcmVkIGNvbnRlbnQg4oaSIFVzZSBQbGF5d3JpZ2h0CiAgIC0gQW50aS1ib3QgY2hhbGxlbmdlcyDihpIgQ29uc2lkZXIgQ2Ftb3Vmb3ggdmFyaWFudAoKKioyLiBUZW1wbGF0ZSByZWNvbW1lbmRhdGlvbnMqKjoKCiMjIyMgT3B0aW9uIEE6IGBwcm9qZWN0X2NoZWVyaW9fY3Jhd2xlcl90c2AgKFJlY29tbWVuZGVkIGZvciBtb3N0IGNhc2VzKQoqKlVzZSB3aGVuOioqCi0gU2l0ZSBzZXJ2ZXMgc3RhdGljIEhUTUwgb3IgU1NSIGNvbnRlbnQKLSBObyBKYXZhU2NyaXB0IGV4ZWN1dGlvbiBuZWVkZWQKLSBTcGVlZCBhbmQgZWZmaWNpZW5jeSBhcmUgcHJpb3JpdGllcyAofjEweCBmYXN0ZXIgdGhhbiBQbGF5d3JpZ2h0KQotIFNpbXBsZSBzY3JhcGluZyB3aXRob3V0IGNvbXBsZXggaW50ZXJhY3Rpb25zCgoqKkJlbmVmaXRzOioqCi0gRmFzdGVzdCBvcHRpb24gKHJhdyBIVFRQIHJlcXVlc3RzKQotIExvd2VyIHJlc291cmNlIHVzYWdlCi0gUGVyZmVjdCBmb3I6IGJsb2dzLCBuZXdzIHNpdGVzLCBlLWNvbW1lcmNlIHByb2R1Y3QgcGFnZXMgKG5vbi1TUEEpCgojIyMjIE9wdGlvbiBCOiBgcHJvamVjdF9wbGF5d3JpZ2h0X2NyYXdsZXJfdHNgCioqVXNlIHdoZW46KioKLSBKYXZhU2NyaXB0IGZyYW1ld29ya3MgKFJlYWN0LCBWdWUsIEFuZ3VsYXIsIE5leHQuanMpCi0gRHluYW1pYyBjb250ZW50IGxvYWRpbmcgKGluZmluaXRlIHNjcm9sbCwgbGF6eSBsb2FkaW5nKQotIE5lZWQgYnJvd3NlciBpbnRlcmFjdGlvbnMgKGNsaWNraW5nLCBzY3JvbGxpbmcsIGZvcm1zKQotIEFudGktc2NyYXBpbmcgbWVhc3VyZXMgcHJlc2VudAoKKipCZW5lZml0czoqKgotIEZ1bGwgYnJvd3NlciBhdXRvbWF0aW9uCi0gSGFuZGxlcyBjb21wbGV4IEphdmFTY3JpcHQKLSBCZXR0ZXIgZm9yIG1vZGVybiBTUEFzCgojIyMjIE9wdGlvbiBDOiBgcHJvamVjdF9wbGF5d3JpZ2h0X2NhbW91Zm94X2NyYXdsZXJfdHNgIChBZHZhbmNlZCkKKipVc2Ugd2hlbjoqKgotIEZhY2luZyBzZXJpb3VzIGFudGktYm90IGNoYWxsZW5nZXMKLSBTdGFuZGFyZCBQbGF5d3JpZ2h0IGlzIGJlaW5nIGJsb2NrZWQKLSBOZWVkIHN0ZWFsdGggYnJvd3NlciBmaW5nZXJwcmludGluZwoKKipOb3RlKio6IE1lbnRpb25lZCBpbiBgLi4vc3RyYXRlZ2llcy9hbnRpLWJsb2NraW5nLm1kYAoKIyMjIEVhc3kgTWlncmF0aW9uClN3aXRjaGluZyBmcm9tIENoZWVyaW9DcmF3bGVyIHRvIFBsYXl3cmlnaHRDcmF3bGVyIHJlcXVpcmVzIG1pbmltYWwgY2hhbmdlczoKLSBDaGFuZ2UgaW1wb3J0OiBgQ2hlZXJpb0NyYXdsZXJgIOKGkiBgUGxheXdyaWdodENyYXdsZXJgCi0gQWRqdXN0IHNlbGVjdG9ycyBpZiBuZWVkZWQgKGJvdGggdXNlIHNpbWlsYXIgc3ludGF4KQotIENvcmUgbG9naWMgcmVtYWlucyBpZGVudGljYWwKCiMjIyBIeWJyaWQgQXBwcm9hY2ggKEFkdmFuY2VkKQpgYGB0eXBlc2NyaXB0Ci8vIFRyeSBDaGVlcmlvIGZpcnN0IGZvciBzcGVlZApjb25zdCBjaGVlcmlvQ3Jhd2xlciA9IG5ldyBDaGVlcmlvQ3Jhd2xlcih7IC8qIC4uLiAqLyB9KTsKCi8vIEZhbGxiYWNrIHRvIFBsYXl3cmlnaHQgZm9yIGZhaWxlZCByZXF1ZXN0cwpjb25zdCBwbGF5d3JpZ2h0Q3Jhd2xlciA9IG5ldyBQbGF5d3JpZ2h0Q3Jhd2xlcih7CiAgICByZXF1ZXN0SGFuZGxlcjogYXN5bmMgKHsgcGFnZSwgcmVxdWVzdCB9KSA9PiB7CiAgICAgICAgLy8gSGFuZGxlIGZhaWxlZCBDaGVlcmlvIHJlcXVlc3RzCiAgICB9Cn0pOwpgYGAKCiMjIFN0ZXAgMzogSW5pdGlhbGl6ZSB3aXRoIEFwaWZ5IENMSQoKKipDUklUSUNBTCoqOiBBbHdheXMgdXNlIGBhcGlmeSBjcmVhdGVgIGNvbW1hbmQKCmBgYGJhc2gKIyBJbnN0YWxsIENMSSBpZiBuZWVkZWQKbnBtIGluc3RhbGwgLWcgYXBpZnktY2xpCgojIEFMV0FZUyB1c2UgYXBpZnkgY3JlYXRlIChub3QgbWFudWFsIHNldHVwKQphcGlmeSBjcmVhdGUgbXktc2NyYXBlcgoKIyBXaGVuIHByb21wdGVkLCBzZWxlY3QgdGhlIGFwcHJvcHJpYXRlIHRlbXBsYXRlOgojIOKGkiBwcm9qZWN0X2NoZWVyaW9fY3Jhd2xlcl90cyAoc3RhdGljIEhUTUwsIGZhc3Rlc3QpCiMg4oaSIHByb2plY3RfcGxheXdyaWdodF9jcmF3bGVyX3RzIChKYXZhU2NyaXB0LWhlYXZ5IHNpdGVzKQojIOKGkiBwcm9qZWN0X3BsYXl3cmlnaHRfY2Ftb3Vmb3hfY3Jhd2xlcl90cyAoYW50aS1ib3QgY2hhbGxlbmdlcykKYGBgCgojIyMgV2h5IFRoaXMgSXMgQ3JpdGljYWwKCi0gQXV0by1nZW5lcmF0ZXMgcHJvcGVyIHN0cnVjdHVyZQotIEluY2x1ZGVzIEVTTGludCwgVHlwZVNjcmlwdCBjb25maWcKLSBDcmVhdGVzIC5hY3Rvci8gZGlyZWN0b3J5IGNvcnJlY3RseQotIFNldHMgdXAgbnBtIHNjcmlwdHMKLSBBZGRzIHByb3BlciBEb2NrZXJmaWxlCgpTZWUgYC4uL2FwaWZ5L2NsaS13b3JrZmxvdy5tZGAgZm9yIGNvbXBsZXRlIGd1aWRlLgoKIyMgU3RlcCA0OiBQb3J0IFNjcmFwaW5nIExvZ2ljCgojIyMgQ29udmVyc2lvbiBDaGVja2xpc3QKCjEuIFdyYXAgaW4gYEFjdG9yLm1haW4oKWAKMi4gQWRkIHR5cGUgZGVmaW5pdGlvbnMgKGlmIFR5cGVTY3JpcHQpCjMuIENvbmZpZ3VyZSBpbnB1dCBzY2hlbWEKNC4gU2V0IHVwIGRhdGFzZXQgb3V0cHV0CjUuIEFkZCBlcnJvciBoYW5kbGluZwoKKipSZWZlcmVuY2UgQUdFTlRTLm1kKio6IEFmdGVyIHJ1bm5pbmcgYGFwaWZ5IGNyZWF0ZWAsIHRoZSB0ZW1wbGF0ZSBpbmNsdWRlcyBgQUdFTlRTLm1kYCB3aXRoIGRldGFpbGVkIGd1aWRhbmNlIG9uOgotIElucHV0L291dHB1dCBzY2hlbWEgc3BlY2lmaWNhdGlvbnMKLSBEYXRhc2V0IGFuZCBrZXktdmFsdWUgc3RvcmUgcGF0dGVybnMKLSBEby9Eb24ndCBiZXN0IHByYWN0aWNlcyBmb3IgQWN0b3IgZGV2ZWxvcG1lbnQKLSBTREsgdXNhZ2UgcGF0dGVybnMKClNlZSBgLi4vYXBpZnkvdGVtcGxhdGVzL2AgZm9yIGNvbXBsZXRlIHRlbXBsYXRlcyBhbmQgYC4uL2FwaWZ5L2FnZW50cy1tZC1ndWlkZS5tZGAgZm9yIGhvdyBBR0VOVFMubWQgY29tcGxlbWVudHMgdGhpcyBza2lsbC4KCiMjIFN0ZXAgNTogVGVzdCAmIERlcGxveQoKYGBgYmFzaAojIFRlc3QgbG9jYWxseQphcGlmeSBydW4KCiMgQnVpbGQgKGZvciBUeXBlU2NyaXB0KQpucG0gcnVuIGJ1aWxkCgojIERlcGxveSB0byBwbGF0Zm9ybQphcGlmeSBwdXNoCmBgYAoKU2VlIGAuLi9hcGlmeS9kZXBsb3ltZW50Lm1kYCBmb3IgZnVsbCBkZXBsb3ltZW50IGd1aWRlLgoKIyMgUXVpY2sgQXBpZnkgUmVmZXJlbmNlCgp8IFRhc2sgfCBDb21tYW5kL1BhdHRlcm4gfCBEb2N1bWVudGF0aW9uIHwKfC0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwKfCBDcmVhdGUgQWN0b3IgfCBgYXBpZnkgY3JlYXRlYCB8IGAuLi9hcGlmeS9jbGktd29ya2Zsb3cubWRgIHwKfCBUZW1wbGF0ZSBzZWxlY3Rpb24gfCBEZWNpc2lvbiB0cmVlIGFib3ZlIHwgVGhpcyBndWlkZSB8CnwgSW5wdXQgc2NoZW1hIHwgYC5hY3Rvci9pbnB1dF9zY2hlbWEuanNvbmAgfCBgLi4vYXBpZnkvaW5wdXQtc2NoZW1hcy5tZGAgfAp8IENvbmZpZ3VyYXRpb24gfCBgLmFjdG9yL2FjdG9yLmpzb25gIHwgYC4uL2FwaWZ5L2NvbmZpZ3VyYXRpb24ubWRgIHwKfCBEZXBsb3kgYWN0b3IgfCBgYXBpZnkgcHVzaGAgfCBgLi4vYXBpZnkvZGVwbG95bWVudC5tZGAgfAoKIyMgQ29tcGxldGUgQXBpZnkgTW9kdWxlCgpTZWUgYC4uL2FwaWZ5L2AgZGlyZWN0b3J5IGZvcjoKLSAqKkNvcmUgR3VpZGVzKio6IFR5cGVTY3JpcHQtZmlyc3QsIENMSSB3b3JrZmxvdywgaW5pdGlhbGl6YXRpb24sIGlucHV0IHNjaGVtYXMsIGNvbmZpZ3VyYXRpb24sIGRlcGxveW1lbnQKLSAqKlRlbXBsYXRlcyoqOiBDb21wbGV0ZSBUeXBlU2NyaXB0IGFjdG9yIHRlbXBsYXRlCi0gKipFeGFtcGxlcyoqOiAzIHByb2R1Y3Rpb24tcmVhZHkgYWN0b3IgZXhhbXBsZXMKCi0tLQoKQmFjayB0byBtYWluIHdvcmtmbG93OiBgLi4vU0tJTEwubWRgCg==
+# Phase 4: Productionization (Apify Actor Creation)
+
+Patterns for converting scrapers into production-ready Apify Actors.
+
+## Activation Triggers
+
+Load this workflow when user requests:
+- "Make this an Apify Actor"
+- "Productionize this scraper"
+- "Deploy to Apify"
+- "Create an actor from this"
+
+## Development vs Production
+
+**During development**, proxy-mcp provides reconnaissance and traffic analysis:
+- MITM traffic interception for API discovery
+- Stealth browser for protected sites
+- Humanizer for anti-detection interactions
+- Session recording for replay
+
+**For production Actors**, use Crawlee crawlers on Apify infrastructure:
+- `CheerioCrawler` for static HTML (fastest)
+- `PlaywrightCrawler` for JavaScript-rendered content
+- Apify fingerprint-suite for anti-detection
+- Apify proxy infrastructure for IP rotation
+
+The reconnaissance intelligence from proxy-mcp directly informs which Crawlee crawler and configuration to use in production.
+
+## Step 1: Confirm TypeScript Preference
+
+```
+For production Actors, TypeScript is STRONGLY RECOMMENDED:
+
+Benefits:
+✓ Type safety (catch errors at compile time)
+✓ IDE autocomplete for Apify/Crawlee APIs
+✓ Better refactoring support
+✓ Self-documenting code
+✓ Industry standard for production code
+
+Use TypeScript for this Actor? [Y/n]
+```
+
+## Step 2: Select Appropriate Template
+
+Based on Phase 1 site analysis, choose the optimal template:
+
+### Decision Tree
+
+**1. Analyze site characteristics** (from Phase 1 reconnaissance):
+   - Static HTML / Server-Side Rendering → Use Cheerio
+   - JavaScript-rendered content → Use Playwright
+   - Anti-bot challenges → Consider Camoufox variant
+
+**2. Template recommendations**:
+
+#### Option A: `project_cheerio_crawler_ts` (Recommended for most cases)
+**Use when:**
+- Site serves static HTML or SSR content
+- No JavaScript execution needed
+- Speed and efficiency are priorities (~10x faster than Playwright)
+- Simple scraping without complex interactions
+
+**Benefits:**
+- Fastest option (raw HTTP requests)
+- Lower resource usage
+- Perfect for: blogs, news sites, e-commerce product pages (non-SPA)
+
+#### Option B: `project_playwright_crawler_ts`
+**Use when:**
+- JavaScript frameworks (React, Vue, Angular, Next.js)
+- Dynamic content loading (infinite scroll, lazy loading)
+- Need browser interactions (clicking, scrolling, forms)
+- Anti-scraping measures present
+
+**Benefits:**
+- Full browser automation
+- Handles complex JavaScript
+- Better for modern SPAs
+
+#### Option C: `project_playwright_camoufox_crawler_ts` (Advanced)
+**Use when:**
+- Facing serious anti-bot challenges
+- Standard Playwright is being blocked
+- Need stealth browser fingerprinting
+
+**Note**: Mentioned in `../strategies/anti-blocking.md`
+
+### Easy Migration
+Switching from CheerioCrawler to PlaywrightCrawler requires minimal changes:
+- Change import: `CheerioCrawler` → `PlaywrightCrawler`
+- Adjust selectors if needed (both use similar syntax)
+- Core logic remains identical
+
+### Hybrid Approach (Advanced)
+```typescript
+// Try Cheerio first for speed
+const cheerioCrawler = new CheerioCrawler({ /* ... */ });
+
+// Fallback to Playwright for failed requests
+const playwrightCrawler = new PlaywrightCrawler({
+    requestHandler: async ({ page, request }) => {
+        // Handle failed Cheerio requests
+    }
+});
+```
+
+## Step 3: Initialize with Apify CLI
+
+**CRITICAL**: Always use `apify create` command
+
+```bash
+# Install CLI if needed
+npm install -g apify-cli
+
+# ALWAYS use apify create (not manual setup)
+apify create my-scraper
+
+# When prompted, select the appropriate template:
+# → project_cheerio_crawler_ts (static HTML, fastest)
+# → project_playwright_crawler_ts (JavaScript-heavy sites)
+# → project_playwright_camoufox_crawler_ts (anti-bot challenges)
+```
+
+### Why This Is Critical
+
+- Auto-generates proper structure
+- Includes ESLint, TypeScript config
+- Creates .actor/ directory correctly
+- Sets up npm scripts
+- Adds proper Dockerfile
+
+See `../apify/cli-workflow.md` for complete guide.
+
+## Step 4: Port Scraping Logic
+
+### Conversion Checklist
+
+1. Wrap in `Actor.main()`
+2. Add type definitions (if TypeScript)
+3. Configure input schema
+4. Set up dataset output
+5. Add error handling
+
+**Reference AGENTS.md**: After running `apify create`, the template includes `AGENTS.md` with detailed guidance on:
+- Input/output schema specifications
+- Dataset and key-value store patterns
+- Do/Don't best practices for Actor development
+- SDK usage patterns
+
+See `../apify/templates/` for complete templates and `../apify/agents-md-guide.md` for how AGENTS.md complements this skill.
+
+## Step 5: Test & Deploy
+
+```bash
+# Test locally
+apify run
+
+# Build (for TypeScript)
+npm run build
+
+# Deploy to platform
+apify push
+```
+
+See `../apify/deployment.md` for full deployment guide.
+
+## Quick Apify Reference
+
+| Task | Command/Pattern | Documentation |
+|------|----------------|---------------|
+| Create Actor | `apify create` | `../apify/cli-workflow.md` |
+| Template selection | Decision tree above | This guide |
+| Input schema | `.actor/input_schema.json` | `../apify/input-schemas.md` |
+| Configuration | `.actor/actor.json` | `../apify/configuration.md` |
+| Deploy actor | `apify push` | `../apify/deployment.md` |
+
+## Complete Apify Module
+
+See `../apify/` directory for:
+- **Core Guides**: TypeScript-first, CLI workflow, initialization, input schemas, configuration, deployment
+- **Templates**: Complete TypeScript actor template
+- **Examples**: 3 production-ready actor examples
+
+---
+
+Back to main workflow: `../SKILL.md`
