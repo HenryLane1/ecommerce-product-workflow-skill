@@ -1,1 +1,72 @@
-IyBQcm94eSBFc2NhbGF0aW9uICYgUHJvdGVjdGlvbiBUZXN0aW5nCgpHdWlkZSBmb3Igd2hlbiBhbmQgaG93IHRvIHRlc3QgYW50aS1ib3QgcHJvdGVjdGlvbnMgZHVyaW5nIHJlY29ubmFpc3NhbmNlLgoKIyMgT3ZlcnZpZXcKClByb3RlY3Rpb24gdGVzdGluZyAoUGhhc2UgNCkgaXMgdGhlIG1vc3QgZXhwZW5zaXZlIHJlY29ubmFpc3NhbmNlIHBoYXNlIOKAlCBpdCByZXF1aXJlcyBicm93c2VyIHNlc3Npb25zLCBtdWx0aXBsZSByZXF1ZXN0cywgYW5kIHByb3h5IGNvbmZpZ3VyYXRpb24uIFNraXAgaXQgd2hlbiB1bm5lY2Vzc2FyeSwgcnVuIGl0IHdoZW4gc2lnbmFscyB3YXJyYW50LgoKIyMgV2hlbiB0byBTa2lwIFByb3RlY3Rpb24gVGVzdGluZwoKU2tpcCBQaGFzZSA0IGFuZCBub3RlIHRoZSBza2lwIGluIHRoZSByZXBvcnQgKFNlY3Rpb24gNzogU2VsZi1Dcml0aXF1ZSkgd2hlbiAqKmFsbCoqIG9mIHRoZXNlIGFyZSB0cnVlOgoKLSAqKk5vIHByb3RlY3Rpb24gc2lnbmFscyBkZXRlY3RlZCoqOiBObyA0MDMvNDI5IHJlc3BvbnNlcywgbm8gQ2xvdWRmbGFyZS9EYXRhRG9tZSBjb29raWVzLCBubyBjaGFsbGVuZ2UgcGFnZXMgZHVyaW5nIFBoYXNlIDAtMgotICoqQWxsIGRhdGEgcG9pbnRzIGNvdmVyZWQqKjogRXZlcnkgcmVxdWVzdGVkIGRhdGEgcG9pbnQgaGFzIGEgdmFsaWRhdGVkIGV4dHJhY3Rpb24gbWV0aG9kCi0gKipVc2VyIGRpZG4ndCByZXF1ZXN0IGl0Kio6IE5vICJmdWxsIHJlY29uIiBtb2RlLCBubyBleHBsaWNpdCBwcm90ZWN0aW9uIHRlc3RpbmcgcmVxdWVzdAotICoqTG93LXZvbHVtZSB1c2UgY2FzZSoqOiBPbmUtdGltZSBleHRyYWN0aW9uIG9yIHNtYWxsIGJhdGNoLCBub3QgY29udGludW91cyBzY3JhcGluZwoKU2tpcCBhbmQgbm90ZSBhcyBsaW1pdGF0aW9uIHdoZW46Ci0gKipQcm94eSBjcmVkZW50aWFscyBub3QgY29uZmlndXJlZCoqOiBDYW5ub3QgdGVzdCBJUCByb3RhdGlvbiDigJQgbm90ZSB0aGlzIGluIHJlcG9ydCBzbyB1c2VyIGtub3dzIHByb2R1Y3Rpb24gc2NyYXBpbmcgbWF5IGhpdCBibG9ja3Mgbm90IHNlZW4gZHVyaW5nIHJlY29uCgojIyBXaGVuIHRvIEFsd2F5cyBSdW4gUHJvdGVjdGlvbiBUZXN0aW5nCgpSdW4gUGhhc2UgNCByZWdhcmRsZXNzIG9mIG90aGVyIHNpZ25hbHMgd2hlbiAqKmFueSoqIG9mIHRoZXNlIGFyZSB0cnVlOgoKLSAqKjQwMyBvciBjaGFsbGVuZ2UgcGFnZSBvYnNlcnZlZCoqOiBEdXJpbmcgYW55IHBoYXNlLCBhIHJlcXVlc3QgcmV0dXJuZWQgNDAzLCBhIENsb3VkZmxhcmUgY2hhbGxlbmdlLCBDQVBUQ0hBLCBvciAiQWNjZXNzIERlbmllZCIKLSAqKktub3duIGhpZ2gtcHJvdGVjdGlvbiBkb21haW4qKjogU2l0ZSBpcyBpbiB0aGUgaGlnaC1wcm90ZWN0aW9uIGxpc3QgKGUuZy4sIExpbmtlZEluLCBtYWpvciBhaXJsaW5lcywgdGlja2V0aW5nIHNpdGVzKQotICoqSGlnaC12b2x1bWUgaW50ZW50Kio6IFVzZXIgbWVudGlvbnMgY29udGludW91cyBzY3JhcGluZywgbW9uaXRvcmluZywgdGhvdXNhbmRzIG9mIHBhZ2VzLCBvciBwcm9kdWN0aW9uIGRlcGxveW1lbnQKLSAqKlVzZXIgZXhwbGljaXRseSByZXF1ZXN0ZWQgaXQqKjogImZ1bGwgcmVjb24iIG1vZGUgb3IgZXhwbGljaXQgbWVudGlvbiBvZiBwcm90ZWN0aW9uIHRlc3RpbmcKLSAqKkdlby1ibG9ja2luZyBkZXRlY3RlZCoqOiBEaWZmZXJlbnQgY29udGVudCByZXR1cm5lZCBiYXNlZCBvbiBJUC9yZWdpb24g4oCUIG5lZWQgdG8gdGVzdCBwcm94eSBiZWhhdmlvcgoKIyMgRXNjYWxhdGlvbiBTZXF1ZW5jZQoKV2hlbiBwcm90ZWN0aW9uIHRlc3RpbmcgaXMgd2FycmFudGVkLCBmb2xsb3cgdGhpcyBlc2NhbGF0aW9uIG9yZGVyIChzdG9wIHdoZW4gYWNjZXNzIGlzIGNvbmZpcm1lZCk6CgojIyMgTGV2ZWwgMTogUmF3IEhUVFAgKGN1cmwpClRlc3QgaWYgc2ltcGxlIEhUVFAgcmVxdWVzdHMgc3VjY2VlZCB3aXRob3V0IGJyb3dzZXIgb3ZlcmhlYWQuCmBgYApjdXJsIC1zIC1vIC9kZXYvbnVsbCAtdyAiJXtodHRwX2NvZGV9IiBodHRwczovL3RhcmdldC5jb20vcGFnZQpgYGAKLSAqKjIwMCoqOiBObyBicm93c2VyIG5lZWRlZCBmb3IgdGhpcyBlbmRwb2ludCDigJQgdXNlIENoZWVyaW8vSFRUUCBjbGllbnQKLSAqKjQwMy81MDMqKjogRXNjYWxhdGUgdG8gTGV2ZWwgMgoKIyMjIExldmVsIDI6IFN0ZWFsdGggQnJvd3NlcgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCh1cmwsIHN0ZWFsdGhNb2RlOiB0cnVlKQpgYGAKLSAqKlBhZ2UgbG9hZHMgbm9ybWFsbHkqKjogU3RlYWx0aCBicm93c2VyIHN1ZmZpY2llbnQg4oCUIHVzZSBmb3IgSlMtcmVuZGVyZWQgY29udGVudAotICoqQ2hhbGxlbmdlIHBlcnNpc3RzKio6IEVzY2FsYXRlIHRvIExldmVsIDMKCiMjIyBMZXZlbCAzOiBVcHN0cmVhbSBQcm94eQpgYGAKcHJveHlfc2V0X3Vwc3RyZWFtKCJodHRwOi8vdXNlcjpwYXNzQHByb3h5LXByb3ZpZGVyOnBvcnQiKQpgYGAKLSAqKkFjY2VzcyBncmFudGVkKio6IE5vdGUgcHJveHkgcmVxdWlyZW1lbnQgaW4gcmVwb3J0Ci0gKipTdGlsbCBibG9ja2VkKio6IEVzY2FsYXRlIHRvIExldmVsIDQKCiMjIyBMZXZlbCA0OiBUTFMgRmluZ2VycHJpbnQgU3Bvb2ZpbmcKYGBgCnByb3h5X3NldF9maW5nZXJwcmludF9zcG9vZihwcmVzZXQ6ICJjaHJvbWVfbGF0ZXN0IikKYGBgCi0gVGVzdCB3aXRoIEhUVFAgY2xpZW50IChnb3RTY3JhcGluZykgdGhyb3VnaCBwcm94eQotICoqQWNjZXNzIGdyYW50ZWQqKjogTm90ZSBmaW5nZXJwcmludCArIHByb3h5IHJlcXVpcmVtZW50Ci0gKipTdGlsbCBibG9ja2VkKio6IERvY3VtZW50IGFzIGhpZ2gtcHJvdGVjdGlvbiwgcmVjb21tZW5kIHNwZWNpYWxpemVkIGFwcHJvYWNoCgojIyBSZXBvcnRpbmcgUHJvdGVjdGlvbiBSZXN1bHRzCgpJbiB0aGUgaW50ZWxsaWdlbmNlIHJlcG9ydCAoU2VjdGlvbiA0OiBQcm90ZWN0aW9uIEFzc2Vzc21lbnQpLCBpbmNsdWRlOgoKLSAqKldoYXQgd2FzIHRlc3RlZCoqOiBXaGljaCBlc2NhbGF0aW9uIGxldmVscyB3ZXJlIGF0dGVtcHRlZAotICoqV2hhdCB3b3JrZWQqKjogTWluaW11bSBhY2Nlc3MgbGV2ZWwgZm9yIGVhY2ggZGF0YSBwb2ludAotICoqV2hhdCB3YXMgc2tpcHBlZCoqOiBXaXRoIHJlYXNvbmluZyAobGluayBiYWNrIHRvIHNraXAgY29uZGl0aW9ucyBhYm92ZSkKLSAqKlByb2R1Y3Rpb24gaW1wbGljYXRpb25zKio6IFdoYXQgdGhlIHByb2R1Y3Rpb24gc2NyYXBlciB3aWxsIG5lZWQgKHByb3hpZXMsIGJyb3dzZXIsIGZpbmdlcnByaW50aW5nKQo=
+# Proxy Escalation & Protection Testing
+
+Guide for when and how to test anti-bot protections during reconnaissance.
+
+## Overview
+
+Protection testing (Phase 4) is the most expensive reconnaissance phase — it requires browser sessions, multiple requests, and proxy configuration. Skip it when unnecessary, run it when signals warrant.
+
+## When to Skip Protection Testing
+
+Skip Phase 4 and note the skip in the report (Section 7: Self-Critique) when **all** of these are true:
+
+- **No protection signals detected**: No 403/429 responses, no Cloudflare/DataDome cookies, no challenge pages during Phase 0-2
+- **All data points covered**: Every requested data point has a validated extraction method
+- **User didn't request it**: No "full recon" mode, no explicit protection testing request
+- **Low-volume use case**: One-time extraction or small batch, not continuous scraping
+
+Skip and note as limitation when:
+- **Proxy credentials not configured**: Cannot test IP rotation — note this in report so user knows production scraping may hit blocks not seen during recon
+
+## When to Always Run Protection Testing
+
+Run Phase 4 regardless of other signals when **any** of these are true:
+
+- **403 or challenge page observed**: During any phase, a request returned 403, a Cloudflare challenge, CAPTCHA, or "Access Denied"
+- **Known high-protection domain**: Site is in the high-protection list (e.g., LinkedIn, major airlines, ticketing sites)
+- **High-volume intent**: User mentions continuous scraping, monitoring, thousands of pages, or production deployment
+- **User explicitly requested it**: "full recon" mode or explicit mention of protection testing
+- **Geo-blocking detected**: Different content returned based on IP/region — need to test proxy behavior
+
+## Escalation Sequence
+
+When protection testing is warranted, follow this escalation order (stop when access is confirmed):
+
+### Level 1: Raw HTTP (curl)
+Test if simple HTTP requests succeed without browser overhead.
+```
+curl -s -o /dev/null -w "%{http_code}" https://target.com/page
+```
+- **200**: No browser needed for this endpoint — use Cheerio/HTTP client
+- **403/503**: Escalate to Level 2
+
+### Level 2: Stealth Browser
+```
+interceptor_chrome_launch(url, stealthMode: true)
+```
+- **Page loads normally**: Stealth browser sufficient — use for JS-rendered content
+- **Challenge persists**: Escalate to Level 3
+
+### Level 3: Upstream Proxy
+```
+proxy_set_upstream("http://user:pass@proxy-provider:port")
+```
+- **Access granted**: Note proxy requirement in report
+- **Still blocked**: Escalate to Level 4
+
+### Level 4: TLS Fingerprint Spoofing
+```
+proxy_set_fingerprint_spoof(preset: "chrome_latest")
+```
+- Test with HTTP client (gotScraping) through proxy
+- **Access granted**: Note fingerprint + proxy requirement
+- **Still blocked**: Document as high-protection, recommend specialized approach
+
+## Reporting Protection Results
+
+In the intelligence report (Section 4: Protection Assessment), include:
+
+- **What was tested**: Which escalation levels were attempted
+- **What worked**: Minimum access level for each data point
+- **What was skipped**: With reasoning (link back to skip conditions above)
+- **Production implications**: What the production scraper will need (proxies, browser, fingerprinting)
