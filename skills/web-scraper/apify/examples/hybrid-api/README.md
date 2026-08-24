@@ -1,1 +1,68 @@
-IyBIeWJyaWQgU2l0ZW1hcCArIEFQSSBTY3JhcGVyIEV4YW1wbGUKCkFjdG9yIGRlbW9uc3RyYXRpbmcgdGhlIG9wdGltYWwgcGF0dGVybjogc2l0ZW1hcCBmb3IgVVJMIGRpc2NvdmVyeSwgQVBJIGZvciBkYXRhIGZldGNoaW5nLgoKIyMgV2hhdCBUaGlzIERlbW9uc3RyYXRlcwoKLSBTaXRlbWFwLWJhc2VkIFVSTCBkaXNjb3ZlcnkKLSBJRCBleHRyYWN0aW9uIGZyb20gVVJMcyAocmVnZXgpCi0gQVBJLWJhc2VkIGRhdGEgZmV0Y2hpbmcgKGZhc3QsIHJlbGlhYmxlKQotIFR5cGVTY3JpcHQgd2l0aCBnb3Qtc2NyYXBpbmcKLSBIeWJyaWQgYXBwcm9hY2ggKGJlc3Qgb2YgYm90aCB3b3JsZHMpCgojIyBGaWxlcwoKLSBgc3JjL21haW4udHNgIC0gTWFpbiBBY3RvciBjb2RlCi0gYC5hY3Rvci9hY3Rvci5qc29uYCAtIEFjdG9yIGNvbmZpZ3VyYXRpb24KLSBgLmFjdG9yL2lucHV0X3NjaGVtYS5qc29uYCAtIElucHV0IHNjaGVtYQoKIyMgVXNhZ2UKCmBgYGJhc2gKIyBSdW4gbG9jYWxseQphcGlmeSBydW4gLS1pbnB1dD0neyJzaXRlbWFwVXJsIjoiaHR0cHM6Ly9leGFtcGxlLmNvbS9zaXRlbWFwLnhtbCIsImFwaUJhc2VVcmwiOiJodHRwczovL2FwaS5leGFtcGxlLmNvbS9wcm9kdWN0cyJ9JwoKIyBEZXBsb3kKYXBpZnkgcHVzaAoKIyBSdW4gb24gcGxhdGZvcm0KYXBpZnkgY2FsbCBoeWJyaWQtYXBpLXNjcmFwZXIKYGBgCgojIyBJbnB1dAoKYGBganNvbgp7CiAgICAic2l0ZW1hcFVybCI6ICJodHRwczovL2V4YW1wbGUuY29tL3NpdGVtYXAueG1sIiwKICAgICJhcGlCYXNlVXJsIjogImh0dHBzOi8vYXBpLmV4YW1wbGUuY29tL3Byb2R1Y3RzIiwKICAgICJpZFBhdHRlcm4iOiAiL3Byb2R1Y3RzLyhbXi9dKykiLAogICAgIm1heEl0ZW1zIjogMTAwCn0KYGBgCgojIyBPdXRwdXQKCmBgYGpzb24KewogICAgImlkIjogIjEyMyIsCiAgICAidXJsIjogImh0dHBzOi8vZXhhbXBsZS5jb20vcHJvZHVjdHMvMTIzIiwKICAgICJuYW1lIjogIlByb2R1Y3QgTmFtZSIsCiAgICAicHJpY2UiOiA5OS45OSwKICAgICJpblN0b2NrIjogdHJ1ZSwKICAgICJzY3JhcGVkQXQiOiAiMjAyNS0wMS0xNVQxMDozMDowMC4wMDBaIgp9CmBgYAoKIyMgUGF0dGVybgoKMS4gUGFyc2Ugc2l0ZW1hcCB0byBnZXQgYWxsIFVSTHMgaW5zdGFudGx5CjIuIEV4dHJhY3QgSURzIGZyb20gVVJMcyB1c2luZyByZWdleAozLiBGZXRjaCBkYXRhIHZpYSBBUEkgKDEwLTEwMHggZmFzdGVyIHRoYW4gSFRNTCkKNC4gU2F2ZSBzdHJ1Y3R1cmVkIEpTT04gdG8gZGF0YXNldAoKIyMgUGVyZm9ybWFuY2UKCkZvciAxLDAwMCBwcm9kdWN0czoKLSBTaXRlbWFwIGRpc2NvdmVyeTogfjUgc2Vjb25kcwotIEFQSSBmZXRjaGluZzogfjItNSBtaW51dGVzCi0gKipUb3RhbCoqOiB+NSBtaW51dGVzIHZzIH40NSBtaW51dGVzIHdpdGggcHVyZSBQbGF5d3JpZ2h0Cg==
+# Hybrid Sitemap + API Scraper Example
+
+Actor demonstrating the optimal pattern: sitemap for URL discovery, API for data fetching.
+
+## What This Demonstrates
+
+- Sitemap-based URL discovery
+- ID extraction from URLs (regex)
+- API-based data fetching (fast, reliable)
+- TypeScript with got-scraping
+- Hybrid approach (best of both worlds)
+
+## Files
+
+- `src/main.ts` - Main Actor code
+- `.actor/actor.json` - Actor configuration
+- `.actor/input_schema.json` - Input schema
+
+## Usage
+
+```bash
+# Run locally
+apify run --input='{"sitemapUrl":"https://example.com/sitemap.xml","apiBaseUrl":"https://api.example.com/products"}'
+
+# Deploy
+apify push
+
+# Run on platform
+apify call hybrid-api-scraper
+```
+
+## Input
+
+```json
+{
+    "sitemapUrl": "https://example.com/sitemap.xml",
+    "apiBaseUrl": "https://api.example.com/products",
+    "idPattern": "/products/([^/]+)",
+    "maxItems": 100
+}
+```
+
+## Output
+
+```json
+{
+    "id": "123",
+    "url": "https://example.com/products/123",
+    "name": "Product Name",
+    "price": 99.99,
+    "inStock": true,
+    "scrapedAt": "2025-01-15T10:30:00.000Z"
+}
+```
+
+## Pattern
+
+1. Parse sitemap to get all URLs instantly
+2. Extract IDs from URLs using regex
+3. Fetch data via API (10-100x faster than HTML)
+4. Save structured JSON to dataset
+
+## Performance
+
+For 1,000 products:
+- Sitemap discovery: ~5 seconds
+- API fetching: ~2-5 minutes
+- **Total**: ~5 minutes vs ~45 minutes with pure Playwright
