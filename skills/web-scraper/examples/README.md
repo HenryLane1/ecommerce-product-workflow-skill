@@ -1,1 +1,71 @@
-IyBTY3JhcGluZyBFeGFtcGxlcwoKUnVubmFibGUgY29kZSBleGFtcGxlcyBkZW1vbnN0cmF0aW5nIGRpZmZlcmVudCBzY3JhcGluZyBwYXR0ZXJucy4KCiMjIEZpbGVzIGluIFRoaXMgRGlyZWN0b3J5CgoxLiAqKnRyYWZmaWMtaW50ZXJjZXB0aW9uLWJhc2ljLmpzKiogLSBQcm94eS1iYXNlZCByZWNvbm5haXNzYW5jZSAoTUNQIHRvb2wgc2VxdWVuY2UpCjIuICoqc2l0ZW1hcC1iYXNpYy5qcyoqIC0gR2V0IFVSTHMgZnJvbSBzaXRlbWFwLCBzY3JhcGUgd2l0aCBDaGVlcmlvQ3Jhd2xlcgozLiAqKmFwaS1zY3JhcGVyLmpzKiogLSBQdXJlIEFQSS1iYXNlZCBzY3JhcGluZyAoZmFzdGVzdCkKNC4gKipoeWJyaWQtc2l0ZW1hcC1hcGkuanMqKiAtIFNpdGVtYXAgVVJMcyArIEFQSSBkYXRhIChiZXN0IGFwcHJvYWNoKQo1LiAqKml0ZXJhdGl2ZS1mYWxsYmFjay5qcyoqIC0gVHJ5IG11bHRpcGxlIGFwcHJvYWNoZXMgYXV0b21hdGljYWxseQoKIyMgSG93IHRvIFJ1bgoKIyMjIFByZXJlcXVpc2l0ZXMKCmBgYGJhc2gKbnBtIGluc3RhbGwgY3Jhd2xlZSBnb3Qtc2NyYXBpbmcKYGBgCgojIyMgUnVuIGFuIEV4YW1wbGUKCmBgYGJhc2gKbm9kZSBzaXRlbWFwLWJhc2ljLmpzCm5vZGUgYXBpLXNjcmFwZXIuanMKbm9kZSBoeWJyaWQtc2l0ZW1hcC1hcGkuanMKbm9kZSBpdGVyYXRpdmUtZmFsbGJhY2suanMKYGBgCgpOb3RlOiBgdHJhZmZpYy1pbnRlcmNlcHRpb24tYmFzaWMuanNgIGlzIGEgcmVmZXJlbmNlIGZvciBwcm94eS1tY3AgTUNQIHRvb2wgY2FsbHMsIG5vdCBhIHN0YW5kYWxvbmUgTm9kZS5qcyBzY3JpcHQuIEl0IGRvY3VtZW50cyB0aGUgdG9vbCBjYWxsIHNlcXVlbmNlIHVzZWQgZHVyaW5nIGludGVyYWN0aXZlIHJlY29ubmFpc3NhbmNlIHdpdGggQ2xhdWRlLgoKIyMgRXhhbXBsZSBTZWxlY3Rpb24gR3VpZGUKCnwgU2NlbmFyaW8gfCBFeGFtcGxlIHRvIFVzZSB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18CnwgRmlyc3QgdGltZSBzY3JhcGluZyBhIHNpdGUgfCBgdHJhZmZpYy1pbnRlcmNlcHRpb24tYmFzaWMuanNgIChyZWNvbm5haXNzYW5jZSkgfAp8IFNpdGUgaGFzIHNpdGVtYXAsIHVua25vd24gaWYgaGFzIEFQSSB8IGBpdGVyYXRpdmUtZmFsbGJhY2suanNgIHwKfCBTaXRlIGhhcyBzaXRlbWFwLCBubyBBUEkgfCBgc2l0ZW1hcC1iYXNpYy5qc2AgfAp8IFNpdGUgaGFzIHNpdGVtYXAgKyBrbm93biBBUEkgfCBgaHlicmlkLXNpdGVtYXAtYXBpLmpzYCB8CnwgU2l0ZSBoYXMga25vd24gQVBJLCBubyBzaXRlbWFwIHwgYGFwaS1zY3JhcGVyLmpzYCB8CgojIyBNb2RpZnlpbmcgRXhhbXBsZXMKCkVhY2ggZXhhbXBsZSBpcyBmdWxseSBjb21tZW50ZWQgYW5kIGNhbiBiZSBhZGFwdGVkIHRvIHlvdXIgbmVlZHM6CgoxLiBDaGFuZ2UgdGhlIGBiYXNlVXJsYCB2YXJpYWJsZQoyLiBBZGp1c3Qgc2VsZWN0b3JzIHRvIG1hdGNoIHlvdXIgdGFyZ2V0IHNpdGUKMy4gTW9kaWZ5IGRhdGEgZXh0cmFjdGlvbiBsb2dpYwo0LiBBZGp1c3QgY29uY3VycmVuY3kvcmF0ZSBsaW1pdHMKCiMjIFBlcmZvcm1hbmNlIENvbXBhcmlzb24KClJ1bm5pbmcgdGhlc2UgZXhhbXBsZXMgb24gYSAxMDAwLXBhZ2UgZS1jb21tZXJjZSBzaXRlOgoKfCBFeGFtcGxlIHwgVGltZSB8IE1lbW9yeSB8IEJlc3QgRm9yIHwKfC0tLS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgYGh5YnJpZC1zaXRlbWFwLWFwaS5qc2AgfCA1IG1pbiB8IExvdyB8IFByb2R1Y3Rpb24gdXNlIHwKfCBgYXBpLXNjcmFwZXIuanNgIHwgOCBtaW4gfCBMb3cgfCBBUEktZmlyc3QgfAp8IGBzaXRlbWFwLWJhc2ljLmpzYCB8IDE1IG1pbiB8IExvdyB8IFNpdGVtYXAgYXZhaWxhYmxlIChDaGVlcmlvQ3Jhd2xlcikgfAp8IGBpdGVyYXRpdmUtZmFsbGJhY2suanNgIHwgVmFyaWVzIHwgVmFyaWVzIHwgVW5rbm93biBzaXRlcyB8CgojIyBOZXh0IFN0ZXBzCgpBZnRlciB1bmRlcnN0YW5kaW5nIHRoZXNlIGV4YW1wbGVzOgoxLiBSZWFkIHN0cmF0ZWd5IGd1aWRlcyBpbiBgLi4vc3RyYXRlZ2llcy9gCjIuIENoZWNrIHJlZmVyZW5jZSBtYXRlcmlhbHMgaW4gYC4uL3JlZmVyZW5jZS9gCjMuIEZvciBwcm9kdWN0aW9uIGRlcGxveW1lbnQsIHNlZSBgLi4vYXBpZnkvYAoKLS0tCgpCYWNrIHRvIG1haW4gc2tpbGw6IGAuLi9TS0lMTC5tZGAK
+# Scraping Examples
+
+Runnable code examples demonstrating different scraping patterns.
+
+## Files in This Directory
+
+1. **traffic-interception-basic.js** - Proxy-based reconnaissance (MCP tool sequence)
+2. **sitemap-basic.js** - Get URLs from sitemap, scrape with CheerioCrawler
+3. **api-scraper.js** - Pure API-based scraping (fastest)
+4. **hybrid-sitemap-api.js** - Sitemap URLs + API data (best approach)
+5. **iterative-fallback.js** - Try multiple approaches automatically
+
+## How to Run
+
+### Prerequisites
+
+```bash
+npm install crawlee got-scraping
+```
+
+### Run an Example
+
+```bash
+node sitemap-basic.js
+node api-scraper.js
+node hybrid-sitemap-api.js
+node iterative-fallback.js
+```
+
+Note: `traffic-interception-basic.js` is a reference for proxy-mcp MCP tool calls, not a standalone Node.js script. It documents the tool call sequence used during interactive reconnaissance with Claude.
+
+## Example Selection Guide
+
+| Scenario | Example to Use |
+|----------|----------------|
+| First time scraping a site | `traffic-interception-basic.js` (reconnaissance) |
+| Site has sitemap, unknown if has API | `iterative-fallback.js` |
+| Site has sitemap, no API | `sitemap-basic.js` |
+| Site has sitemap + known API | `hybrid-sitemap-api.js` |
+| Site has known API, no sitemap | `api-scraper.js` |
+
+## Modifying Examples
+
+Each example is fully commented and can be adapted to your needs:
+
+1. Change the `baseUrl` variable
+2. Adjust selectors to match your target site
+3. Modify data extraction logic
+4. Adjust concurrency/rate limits
+
+## Performance Comparison
+
+Running these examples on a 1000-page e-commerce site:
+
+| Example | Time | Memory | Best For |
+|---------|------|---------|----------|
+| `hybrid-sitemap-api.js` | 5 min | Low | Production use |
+| `api-scraper.js` | 8 min | Low | API-first |
+| `sitemap-basic.js` | 15 min | Low | Sitemap available (CheerioCrawler) |
+| `iterative-fallback.js` | Varies | Varies | Unknown sites |
+
+## Next Steps
+
+After understanding these examples:
+1. Read strategy guides in `../strategies/`
+2. Check reference materials in `../reference/`
+3. For production deployment, see `../apify/`
+
+---
+
+Back to main skill: `../SKILL.md`
