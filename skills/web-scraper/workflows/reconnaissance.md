@@ -1,1 +1,673 @@
-IyBQaGFzZSAxOiBJbnRlcmFjdGl2ZSBSZWNvbm5haXNzYW5jZQoKQ3JpdGljYWwgaW50ZWxsaWdlbmNlIGdhdGhlcmluZyBiZWZvcmUgYW55IHNjcmFwaW5nIGltcGxlbWVudGF0aW9uLgoKIyMgV2h5IFJlY29ubmFpc3NhbmNlIEZpcnN0PwoKKipUaGUgY3VycmVudCBwcm9ibGVtKio6IE1vc3Qgc2NyYXBpbmcgcHJvamVjdHMgc3RhcnQgd2l0aCBndWVzc3dvcms6Ci0gIlRyeSB0aGUgc2l0ZW1hcCIg4oaSIE1heWJlIGl0IGRvZXNuJ3QgaGF2ZSBhbGwgZGF0YQotICJTY3JhcGUgSFRNTCIg4oaSIFNsb3cgYW5kIGJyaXR0bGUKLSAiVXNlIGEgYnJvd3NlciBjcmF3bGVyIiDihpIgT3ZlcmtpbGwgaWYgQVBJcyBleGlzdAoKKipUaGUgcmVjb25uYWlzc2FuY2Ugc29sdXRpb24qKjoKLSBEaXNjb3ZlciBoaWRkZW4gQVBJcyBhdXRvbWF0aWNhbGx5IHZpYSBNSVRNIHRyYWZmaWMgY2FwdHVyZSAoMTAtMTAweCBmYXN0ZXIgdGhhbiBIVE1MKQotIFVuZGVyc3RhbmQgc2l0ZSBhcmNoaXRlY3R1cmUgYmVmb3JlIHdyaXRpbmcgY29kZQotIERldGVjdCBhbnRpLWJvdCBtZWFzdXJlcyBlYXJseSBhbmQgcGxhbiBjb3VudGVybWVhc3VyZXMKLSBGaW5kIG9wdGltYWwgZGF0YSBleHRyYWN0aW9uIHBvaW50cwotIFNhdmUgaG91cnMgb2Ygd2FzdGVkIGltcGxlbWVudGF0aW9uIGVmZm9ydAoKIyMgTUNQIFRvb2xzIFJlcXVpcmVkCgpUaGlzIHBoYXNlIHJlcXVpcmVzOgotICoqUHJveHktTUNQKio6IE1JVE0gdHJhZmZpYyBpbnRlcmNlcHRpb24gKyBzdGVhbHRoIENocm9tZSBicm93c2VyICsgRGV2VG9vbHMgYnJpZGdlICsgaHVtYW5pemVyCgpTb3VyY2UgcmVmZXJlbmNlOiBgL2hvbWUveW1zL0RvY3VtZW50cy9wcm94eS1tY3AvYAoKU2VlIGAuLi9yZWZlcmVuY2UvcHJveHktdG9vbC1yZWZlcmVuY2UubWRgIGZvciBjb21wbGV0ZSB0b29sIHJlZmVyZW5jZS4KCi0tLQoKIyMgU3RlcCAxLjE6IEluaXRpYWxpemUgQnJvd3NlciBTZXNzaW9uCgojIyMgU3RhcnQgUHJveHkgYW5kIExhdW5jaCBCcm93c2VyCgpTdGFydCB0aGUgTUlUTSBwcm94eSwgbGF1bmNoIENocm9tZSB3aXRoIHN0ZWFsdGggbW9kZSwgYW5kIGF0dGFjaCBEZXZUb29sczoKCmBgYApwcm94eV9zdGFydCgpCgppbnRlcmNlcHRvcl9jaHJvbWVfbGF1bmNoKAogICAgdXJsOiAiaHR0cHM6Ly90YXJnZXQtc2l0ZS5jb20iLAogICAgc3RlYWx0aE1vZGU6IHRydWUKKQoKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2F0dGFjaCh0YXJnZXRfaWQpCmBgYAoKU3RlYWx0aCBtb2RlIGF1dG9tYXRpY2FsbHkgcGF0Y2hlczoKLSBgbmF2aWdhdG9yLndlYmRyaXZlcmAg4oaSIGBmYWxzZWAKLSBgY2hyb21lLnJ1bnRpbWVgIOKGkiBleGlzdHMgd2l0aCBleHBlY3RlZCBzaGFwZQotIGBQZXJtaXNzaW9ucy5xdWVyeWAg4oaSIGNvcnJlY3Qgbm90aWZpY2F0aW9uIHJlc3BvbnNlCi0gYEVycm9yLnN0YWNrYCDihpIgY2xlYW5lZCBvZiBDRFAgdHJhY2VzCgojIyMgQ2FwdHVyZSBJbml0aWFsIFN0YXRlCgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX3NjcmVlbnNob3QoKQpgYGAKCiMjIyBPYnNlcnZlIExvYWRpbmcgQmVoYXZpb3IKCioqTG9vayBmb3IqKjoKLSAqKkltbWVkaWF0ZSBjb250ZW50Kio6IFBhZ2UgbG9hZHMgZnVsbHkgb24gZmlyc3QgcmVxdWVzdCDihpIgTGlrZWx5IFNTUi9zdGF0aWMKLSAqKkxvYWRpbmcgc3Bpbm5lcnMqKjogQ29udGVudCBsb2FkcyBhZnRlciBpbml0aWFsIHBhaW50IOKGkiBKYXZhU2NyaXB0LXJlbmRlcmVkCi0gKipTa2VsZXRvbiBzY3JlZW5zKio6IFBsYWNlaG9sZGVyIFVJIOKGkiBBUEktZHJpdmVuIGR5bmFtaWMgY29udGVudAotICoqUG9wdXBzL2Jhbm5lcnMqKjogQ29va2llIGNvbnNlbnQsIG5ld3NsZXR0ZXJzIOKGkiBOZWVkIHRvIGRpc21pc3MgYmVmb3JlIGV4cGxvcmF0aW9uCgoqKkRvY3VtZW50IGZpbmRpbmdzKio6CmBgYApJbml0aWFsIExvYWQgT2JzZXJ2YXRpb246Ci0gUGFnZSB0eXBlOiBbU3RhdGljL1NTUi9TUEFdCi0gTG9hZGluZyBwYXR0ZXJuOiBbSW1tZWRpYXRlL1Byb2dyZXNzaXZlL0RlbGF5ZWRdCi0gSW50ZXJzdGl0aWFsczogW0Nvb2tpZSBiYW5uZXIsIG5ld3NsZXR0ZXIgcG9wdXBdCmBgYAoKLS0tCgojIyBTdGVwIDEuMjogTmV0d29yayBUcmFmZmljIEFuYWx5c2lzCgojIyMgQW5hbHl6ZSBDYXB0dXJlZCBUcmFmZmljCgoqKkNyaXRpY2FsKio6IFRoZSBNSVRNIHByb3h5IGNhcHR1cmVzIGFsbCB0cmFmZmljIGF1dG9tYXRpY2FsbHkuIE5vIG1hbnVhbCBEZXZUb29scyBpbnNwZWN0aW9uIG5lZWRlZC4KCmBgYApwcm94eV9saXN0X3RyYWZmaWMoKQpgYGAKClRoaXMgc2hvd3MgZXZlcnkgSFRUUCBleGNoYW5nZSBmcm9tIHRoZSBwYWdlIGxvYWQuIEZpbHRlciBmb3IgaW50ZXJlc3RpbmcgcGF0dGVybnM6CgpgYGAKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICIvYXBpLyIpICAgICAgICAgIOKGkiBSRVNUIEFQSXMKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICIvZ3JhcGhxbCIpICAgICAgICDihpIgR3JhcGhRTCBlbmRwb2ludHMKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICIvX25leHQvZGF0YS8iKSAgICDihpIgTmV4dC5qcyBkYXRhIGVuZHBvaW50cwpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogIi93cC1qc29uLyIpICAgICAgIOKGkiBXb3JkUHJlc3MgUkVTVCBBUEkKcHJveHlfc2VhcmNoX3RyYWZmaWMocXVlcnk6ICJhcHBsaWNhdGlvbi9qc29uIikgICDihpIgQW55IEpTT04gcmVzcG9uc2VzCmBgYAoKQWxzbyBjaGVjayBicm93c2VyLXNpZGUgbmV0d29yayB2aWV3OgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfbmV0d29yayhyZXNvdXJjZV90eXBlczogWyJ4aHIiLCAiZmV0Y2giXSkKYGBgCgojIyMgSW5zcGVjdCBEaXNjb3ZlcmVkIEVuZHBvaW50cwoKRm9yIGVhY2ggcHJvbWlzaW5nIGVuZHBvaW50OgoKYGBgCnByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZCkKYGBgCgoqKldoYXQgdG8gRXh0cmFjdCoqOgpgYGAKRGlzY292ZXJlZCBFbmRwb2ludHM6CuKchSBHRVQgL2FwaS92Mi9wcm9kdWN0cz9wYWdlPXtufSZsaW1pdD17bX0KICAgUmVxdWVzdDogcGFnZT0xLCBsaW1pdD0yMAogICBSZXNwb25zZTogSlNPTiBhcnJheSBvZiBwcm9kdWN0cwogICBBdXRoOiBOb25lIHJlcXVpcmVkCiAgIFJhdGUgbGltaXQ6IFVua25vd24gKHRlc3QgbmVlZGVkKQoK4pyFIEdFVCAvYXBpL3YyL3Byb2R1Y3RzL3tpZH0KICAgUmVzcG9uc2U6IERldGFpbGVkIHByb2R1Y3QgSlNPTgogICBGaWVsZHM6IGlkLCBuYW1lLCBwcmljZSwgZGVzY3JpcHRpb24sIGltYWdlcywgc3RvY2sKYGBgCgojIyMgTmF2aWdhdGUgYW5kIE9ic2VydmUgVHJhZmZpYwoKQnJvd3NlIHRocm91Z2gga2V5IHBhZ2VzIHdoaWxlIHRoZSBwcm94eSBjYXB0dXJlcyBldmVyeXRoaW5nOgoKYGBgCnByb3h5X2NsZWFyX3RyYWZmaWMoKQpodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCAiLmNhdGVnb3J5LWxpbmsiKQpodW1hbml6ZXJfaWRsZSh0YXJnZXRfaWQsIDIwMDApCnByb3h5X2xpc3RfdHJhZmZpYyh1cmxfZmlsdGVyOiAicHJvZHVjdHMiKQoKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIucHJvZHVjdC1pdGVtOmZpcnN0LWNoaWxkIikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKQpwcm94eV9saXN0X3RyYWZmaWMoKQpgYGAKCioqRG9jdW1lbnQqKjoKLSBSZXF1ZXN0IG1ldGhvZCAoR0VUL1BPU1QpCi0gUmVxdWlyZWQgaGVhZGVycyAoYXV0aG9yaXphdGlvbiwgY29udGVudC10eXBlKQotIFF1ZXJ5IHBhcmFtZXRlcnMgKHBhZ2luYXRpb24sIGZpbHRlcnMpCi0gUmVzcG9uc2Ugc3RydWN0dXJlCi0gQXV0aGVudGljYXRpb24gcmVxdWlyZW1lbnRzCgotLS0KCiMjIFN0ZXAgMS4zOiBTaXRlIFN0cnVjdHVyZSBEaXNjb3ZlcnkKCiMjIyBUZXN0IFBhZ2luYXRpb24gTWVjaGFuaXNtcwoKKipQYWdpbmF0aW9uIFR5cGUgRGV0ZWN0aW9uKio6CgpgYGAKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIubmV4dC1wYWdlIikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKQpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogInBhZ2U9IikKYGBgCgpDaGVjayBpZiB0aGUgVVJMIGNoYW5nZWQ6CmBgYAppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfc25hcHNob3QoKSAgICDihpIgQ2hlY2sgY3VycmVudCBwYWdlIHN0YXRlCmBgYAoKKipQYWdpbmF0aW9uIFBhdHRlcm5zKio6CjEuICoqVVJMLWJhc2VkKio6IGA/cGFnZT0yYCBvciBgL3BhZ2UvMi9gCiAgIC0gRWFzeSB0byBpdGVyYXRlCiAgIC0gQ2FuIGRpcmVjdGx5IGNvbnN0cnVjdCBVUkxzCgoyLiAqKkFQSS1iYXNlZCoqOiBYSFIgd2l0aCBgb2Zmc2V0YC9gY3Vyc29yYCBwYXJhbWV0ZXJzCiAgIC0gVmlzaWJsZSBpbiBwcm94eSB0cmFmZmljIGNhcHR1cmUKICAgLSBFeHRyYWN0IHBhZ2luYXRpb24gcGFyYW1ldGVycyBmcm9tIGBwcm94eV9nZXRfZXhjaGFuZ2UoKWAKCjMuICoqSW5maW5pdGUgc2Nyb2xsKio6IENvbnRlbnQgYXBwZW5kcyBvbiBzY3JvbGwKICAgLSBUcmlnZ2VyIHdpdGggYGh1bWFuaXplcl9zY3JvbGwoKWAKICAgLSBXYXRjaCBmb3IgQVBJIGNhbGxzIGluIHByb3h5IHRyYWZmaWMKCioqRG9jdW1lbnQqKjoKYGBgClBhZ2luYXRpb246Ci0gVHlwZTogW1VSTC1iYXNlZCAvIEFQSS1iYXNlZCAvIEluZmluaXRlIHNjcm9sbF0KLSBQYXJhbWV0ZXI6IHBhZ2U9TiBvciBvZmZzZXQ9TiBvciBjdXJzb3I9VE9LRU4KLSBJdGVtcyBwZXIgcGFnZTogMjAKLSBUb3RhbCBwYWdlczogfjI1MCAoZXN0aW1hdGVkIGZyb20gbGFzdCBwYWdlKQpgYGAKCiMjIyBUZXN0IEZpbHRlcmluZyBhbmQgU2VhcmNoCgpgYGAKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIuZmlsdGVyLWNhdGVnb3J5IikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKQpwcm94eV9saXN0X3RyYWZmaWMoKSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDihpIgT2JzZXJ2ZSBmaWx0ZXIgQVBJIGNhbGxzCgpwcm94eV9jbGVhcl90cmFmZmljKCkKaHVtYW5pemVyX2NsaWNrKHRhcmdldF9pZCwgImlucHV0W25hbWU9J3NlYXJjaCddIikKaHVtYW5pemVyX3R5cGUodGFyZ2V0X2lkLCAidGVzdCBxdWVyeSIpCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMjAwMCkKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICJzZWFyY2giKSAgICAgICAgICAg4oaSIE9ic2VydmUgc2VhcmNoIEFQSQpgYGAKCioqTG9vayBmb3IqKjoKLSBTZWFyY2ggQVBJIGVuZHBvaW50cwotIEZpbHRlciBwYXJhbWV0ZXJzCi0gU29ydCBvcHRpb25zCi0gUXVlcnkgc3RydWN0dXJlCgojIyMgRGlzY292ZXIgRGF0YSBMb2FkaW5nIFBhdHRlcm5zCgpgYGAKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCAiZG93biIsIDEwMDApCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMjAwMCkKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICJvZmZzZXQiKSAgICAgICAgICAg4oaSIEluZmluaXRlIHNjcm9sbCBBUEkgY2FsbHMKYGBgCgotLS0KCiMjIFN0ZXAgMS40OiBBbnRpLUJvdCBBc3Nlc3NtZW50CgojIyMgQ2hlY2sgZm9yIEJvdCBQcm90ZWN0aW9uIEluZGljYXRvcnMKClJldmlldyBjYXB0dXJlZCB0cmFmZmljIGZvciBibG9ja2luZyBzaWduYWxzOgoKYGBgCnByb3h5X2xpc3RfdHJhZmZpYygpICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKGkiBMb29rIGZvciA0MDNzLCBjaGFsbGVuZ2UgcGFnZXMKYGBgCgpDaGVjayBjb29raWVzIGZvciB0cmFja2luZyBtYXJrZXJzOgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfY29va2llcyhkb21haW5fZmlsdGVyOiAiY2xvdWRmbGFyZSIpCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19saXN0X2Nvb2tpZXMoZG9tYWluX2ZpbHRlcjogImRhdGFkb21lIikKYGBgCgpDaGVjayBsb2NhbFN0b3JhZ2UgZm9yIGZpbmdlcnByaW50aW5nOgpgYGAKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3Rfc3RvcmFnZV9rZXlzKHN0b3JhZ2VfdHlwZTogImxvY2FsIikKYGBgCgojIyMgQ2hlY2sgZm9yIFByb3RlY3Rpb24gU2NyaXB0cwoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zbmFwc2hvdCgpCmBgYAoKTG9vayBpbiB0aGUgYWNjZXNzaWJpbGl0eSB0cmVlIGZvcjoKLSBDbG91ZGZsYXJlIGNoYWxsZW5nZSBlbGVtZW50cwotIENBUFRDSEEgY29udGFpbmVycwotICJBY2Nlc3MgRGVuaWVkIiB0ZXh0CgojIyMgQW5hbHl6ZSBUTFMgRmluZ2VycHJpbnRzCgpgYGAKcHJveHlfZ2V0X3Rsc19maW5nZXJwcmludHMoKQpgYGAKClRoaXMgc2hvd3MgdGhlIFRMUyBmaW5nZXJwcmludHMgb2YgY2FwdHVyZWQgdHJhZmZpYywgdXNlZnVsIGZvciB1bmRlcnN0YW5kaW5nIHdoYXQgdGhlIHNlcnZlciBzZWVzLgoKIyMjIFRlc3QgUmF0ZSBMaW1pdGluZwoKTmF2aWdhdGUgdG8gbXVsdGlwbGUgcGFnZXMgYW5kIG9ic2VydmUgcmVzcG9uc2VzOgoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19uYXZpZ2F0ZSgiaHR0cHM6Ly90YXJnZXQtc2l0ZS5jb20vcHJvZHVjdHM/cGFnZT0xIikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAxMDAwKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbmF2aWdhdGUoImh0dHBzOi8vdGFyZ2V0LXNpdGUuY29tL3Byb2R1Y3RzP3BhZ2U9MiIpCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMTAwMCkKIyAuLi4gcmVwZWF0IGFuZCBjaGVjayBmb3IgNDI5IHJlc3BvbnNlcwpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogIjQyOSIpCmBgYAoKKipEb2N1bWVudCBQcm90ZWN0aW9uIE1lY2hhbmlzbXMqKjoKYGBgClByb3RlY3Rpb24gQXNzZXNzbWVudDoK4pqg77iPICBDbG91ZGZsYXJlOiBERVRFQ1RFRCAoY2YtcmF5IGhlYWRlciBpbiBwcm94eSB0cmFmZmljKQrinJMgICBDQVBUQ0hBOiBOb3QgdHJpZ2dlcmVkIGR1cmluZyBub3JtYWwgYnJvd3NpbmcK4pyTICAgRmluZ2VycHJpbnRpbmc6IE5vdCBkZXRlY3RlZArimqDvuI8gIFJhdGUgTGltaXRpbmc6IH42MCByZXF1ZXN0cy9taW51dGUgdGhyZXNob2xkCuKckyAgIEF1dGhlbnRpY2F0aW9uOiBOb3QgcmVxdWlyZWQgZm9yIHByb2R1Y3QgcGFnZXMKCkNvdW50ZXJtZWFzdXJlcyBOZWVkZWQ6Ci0gU3RlYWx0aCBtb2RlIGFscmVhZHkgYWN0aXZlIChoYW5kbGVzIGJyb3dzZXItbGV2ZWwgZGV0ZWN0aW9uKQotIFVzZSB1cHN0cmVhbSBwcm94aWVzIGZvciBJUCByb3RhdGlvbiAocHJveHlfc2V0X3Vwc3RyZWFtKQotIFJlc3BlY3QgcmF0ZSBsaW1pdDogbWF4IDUwIHJlcXVlc3RzL21pbnV0ZQotIElmIHN3aXRjaGluZyB0byBIVFRQLW9ubHkgY2xpZW50OiBjb25zaWRlciBUTFMgc3Bvb2ZpbmcKYGBgCgoqKk5vdGUqKjogQ2hyb21lIHdpdGggc3RlYWx0aCBtb2RlIGFscmVhZHkgaGFuZGxlcyBtb3N0IGJyb3dzZXItbGV2ZWwgZGV0ZWN0aW9uLiBFc2NhbGF0aW9uIHRvIFRMUyBzcG9vZmluZyBpcyBvbmx5IG5lZWRlZCBpZiBzd2l0Y2hpbmcgdG8gSFRUUC1vbmx5IGNsaWVudHMgKGdvdFNjcmFwaW5nLCBjdXJsKSBmb3IgcHJvZHVjdGlvbi4KCi0tLQoKIyMgU3RlcCAxLjU6IEdlbmVyYXRlIEludGVsbGlnZW5jZSBSZXBvcnQKCiMjIyBDb21waWxlIEZpbmRpbmdzCgpDcmVhdGUgc3RydWN0dXJlZCByZXBvcnQgd2l0aCBhbGwgcmVjb25uYWlzc2FuY2UgZGF0YToKCmBgYG1hcmtkb3duCuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgQpJTlRFTExJR0VOQ0UgUkVQT1JUOiBleGFtcGxlLmNvbQrilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIEKR2VuZXJhdGVkOiAyMDI2LTAzLTE3IDEwOjMwIFVUQwoKIyMgMS4gU2l0ZSBBcmNoaXRlY3R1cmUKCioqRnJhbWV3b3JrKio6IE5leHQuanMgMTMgKGRldGVjdGVkIC9fbmV4dC9kYXRhLyBpbiBwcm94eSB0cmFmZmljKQoqKlJlbmRlcmluZyoqOiBIeWJyaWQgU1NSICsgQ1NSCioqUHJpbWFyeSBEYXRhIFNvdXJjZSoqOiBJbnRlcm5hbCBSRVNUIEFQSQoKIyMgMi4gRGlzY292ZXJlZCBFbmRwb2ludHMgKHZpYSBUcmFmZmljIENhcHR1cmUpCgojIyMgUHJvZHVjdHMgQVBJIChQcmltYXJ5KQoqKkVuZHBvaW50Kio6IGBHRVQgL2FwaS92Mi9wcm9kdWN0c2AKKipQYXJhbWV0ZXJzKio6CiAgLSBgcGFnZWA6IGludGVnZXIgKDEtMjUwKQogIC0gYGxpbWl0YDogaW50ZWdlciAobWF4IDEwMCwgZGVmYXVsdCAyMCkKICAtIGBjYXRlZ29yeWA6IHN0cmluZyAob3B0aW9uYWwgZmlsdGVyKQoKKipSZXNwb25zZSBTdHJ1Y3R1cmUqKjoKYGBganNvbgp7CiAgInByb2R1Y3RzIjogWy4uLl0sCiAgInRvdGFsIjogNTAwMCwKICAicGFnZSI6IDEsCiAgImhhc01vcmUiOiB0cnVlCn0KYGBgCgoqKkF1dGhlbnRpY2F0aW9uKio6IE5vbmUgcmVxdWlyZWQKKipSYXRlIExpbWl0Kio6IH42MCByZXF1ZXN0cy9taW51dGUKCiMjIyBQcm9kdWN0IERldGFpbHMgQVBJCioqRW5kcG9pbnQqKjogYEdFVCAvYXBpL3YyL3Byb2R1Y3RzL3tpZH1gCioqUmVzcG9uc2UqKjogRnVsbCBwcm9kdWN0IG9iamVjdCB3aXRoIHZhcmlhbnRzCioqQXV0aGVudGljYXRpb24qKjogTm9uZSByZXF1aXJlZAoKIyMgMy4gU2l0ZW1hcCBBbmFseXNpcwoKKipMb2NhdGlvbioqOiBgL3NpdGVtYXBfaW5kZXgueG1sYAoqKlByb2R1Y3QgVVJMcyoqOiA1LDAwMCBVUkxzCioqVXBkYXRlIEZyZXF1ZW5jeSoqOiBEYWlseQoqKkNvdmVyYWdlKio6IDEwMCUgKG1hdGNoZXMgQVBJIHRvdGFsKQoKIyMgNC4gUHJvdGVjdGlvbiBNZWNoYW5pc21zCgp8IE1lY2hhbmlzbSB8IFN0YXR1cyB8IEltcGFjdCB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLXwKfCBDbG91ZGZsYXJlIHwgQWN0aXZlIHwgTWVkaXVtIC0gdXNlIHVwc3RyZWFtIHByb3hpZXMgfAp8IENBUFRDSEEgfCBOb3QgdHJpZ2dlcmVkIHwgTm9uZSBjdXJyZW50bHkgfAp8IEZpbmdlcnByaW50aW5nIHwgTm90IGRldGVjdGVkIHwgU3RlYWx0aCBtb2RlIHN1ZmZpY2llbnQgfAp8IFJhdGUgTGltaXRpbmcgfCA2MC9taW4gfCBIaWdoIC0gbXVzdCByZXNwZWN0IHwKfCBBdXRoIFJlcXVpcmVkIHwgTm9uZSB8IE5vbmUgfAoKIyMgNS4gUGFnaW5hdGlvbiBTdHJhdGVneQoKKipUeXBlKio6IEFQSS1iYXNlZCBvZmZzZXQgcGFnaW5hdGlvbgoqKk1ldGhvZCoqOiBRdWVyeSBwYXJhbWV0ZXJzIGA/cGFnZT1OJmxpbWl0PU1gCioqTWF4IHBlciByZXF1ZXN0Kio6IDEwMCBpdGVtcwoqKlRvdGFsIHBhZ2VzKio6IDUwIChhdCBsaW1pdD0xMDApCioqRXN0aW1hdGVkIHRvdGFsIGl0ZW1zKio6IDUsMDAwCgojIyA2LiBPcHRpbWFsIFNjcmFwaW5nIFN0cmF0ZWd5CgojIyMgUmVjb21tZW5kZWQgQXBwcm9hY2g6IEh5YnJpZCAoU2l0ZW1hcCArIEFQSSkKCioqUGhhc2UgQSAtIFVSTCBEaXNjb3ZlcnkqKiAofjEgbWludXRlKToKMS4gUGFyc2Ugc2l0ZW1hcC54bWwg4oaSIEV4dHJhY3QgNSwwMDAgcHJvZHVjdCBVUkxzCjIuIEV4dHJhY3QgcHJvZHVjdCBJRHMgZnJvbSBVUkxzOiBgL3Byb2R1Y3RzLyhcZCspYAoKKipQaGFzZSBCIC0gRGF0YSBFeHRyYWN0aW9uKiogKH4zLTUgbWludXRlcyk6CjEuIFVzZSBkaXNjb3ZlcmVkIEFQSTogYC9hcGkvdjIvcHJvZHVjdHM/cGFnZT0xJmxpbWl0PTEwMGAKMi4gUmF0ZTogNTAgcmVxdWVzdHMvbWludXRlIChzYWZlIGJ1ZmZlcikKMy4gVG90YWwgcmVxdWVzdHMgbmVlZGVkOiA1MAo0LiBFeHBlY3RlZCBkdXJhdGlvbjogfjEuNSBtaW51dGVzCjUuIFVzZSB1cHN0cmVhbSBwcm94aWVzIGlmIG5lZWRlZCAoQ2xvdWRmbGFyZSBwcmVzZW50KQoKKipXaHkgVGhpcyBXb3JrcyoqOgotIEFQSSBkaXNjb3ZlcmVkIHZpYSB0cmFmZmljIGNhcHR1cmUg4oCUIGNsZWFuIEpTT04sIG5vIEhUTUwgcGFyc2luZwotIFNpdGVtYXAgdmFsaWRhdGVzIGNvbXBsZXRlbmVzcwotIFVuZGVyIHJhdGUgbGltaXQKLSBObyBhdXRoZW50aWNhdGlvbiBiYXJyaWVycwoKIyMjIEFsdGVybmF0aXZlOiBET00gU2NyYXBpbmcgKERldlRvb2xzIEJyaWRnZSkKSWYgQVBJIGJlY29tZXMgYmxvY2tlZDoKLSBVc2UgYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zbmFwc2hvdCgpYCBmb3IgYWNjZXNzaWJpbGl0eSB0cmVlIGV4dHJhY3Rpb24KLSBVc2UgaHVtYW5pemVyIGZvciBpbnRlcmFjdGlvbnMKLSBFbmFibGUgdXBzdHJlYW0gcHJveGllcyArIHN0ZWFsdGggbW9kZQotIEVzdGltYXRlZCB0aW1lOiAxNS0yMCBtaW51dGVzIChzbG93ZXIpCgojIyA3LiBJbXBsZW1lbnRhdGlvbiBDaGVja2xpc3QKCi0gWyBdIFVzZSBgZ290U2NyYXBpbmdgIG9yIGBmZXRjaGAgZm9yIEFQSSBjYWxscwotIFsgXSBJbXBsZW1lbnQgcmF0ZSBsaW1pdGluZzogNTAgcmVxdWVzdHMvbWludXRlCi0gWyBdIFVzZSB1cHN0cmVhbSBwcm94eSBpZiBuZWVkZWQgKENsb3VkZmxhcmUgcHJlc2VudCkKLSBbIF0gUGFyc2Ugc2l0ZW1hcCBmb3IgcHJvZHVjdCBJRHMKLSBbIF0gQmF0Y2ggQVBJIHJlcXVlc3RzICgxMDAgaXRlbXMgcGVyIGNhbGwpCi0gWyBdIEFkZCByZXRyeSBsb2dpYyAoMyBhdHRlbXB0cykKLSBbIF0gTG9nIGZhaWxlZCByZXF1ZXN0cwotIFsgXSBWYWxpZGF0ZSBkYXRhIGNvbXBsZXRlbmVzcwoKIyMgOC4gUmlzayBBc3Nlc3NtZW50CgoqKkxvdyBSaXNrKio6Ci0gQVBJIGlzIHN0YWJsZSBhbmQgcHVibGljbHkgYWNjZXNzaWJsZQotIE5vIGF1dGhlbnRpY2F0aW9uIHJlcXVpcmVkCi0gUmF0ZSBsaW1pdHMgYXJlIHJlYXNvbmFibGUKCioqUG90ZW50aWFsIElzc3VlcyoqOgotIEFQSSBzdHJ1Y3R1cmUgbWF5IGNoYW5nZSAobW9uaXRvciBmb3Igc2NoZW1hIGNoYW5nZXMpCi0gUmF0ZSBsaW1pdCBtYXkgdGlnaHRlbiAocmVzcGVjdCBjdXJyZW50IGxpbWl0cykKLSBDbG91ZGZsYXJlIG1heSB1cGdyYWRlIHByb3RlY3Rpb24gKGhhdmUgRE9NIHNjcmFwaW5nIGZhbGxiYWNrIHJlYWR5KQoK4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBClBST0NFRUQgVE8gUEhBU0UgMjogVkFMSURBVElPTiAmIFBIQVNFIDM6IFNUUkFURUdZIFNFTEVDVElPTgrilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIEKYGBgCgotLS0KCiMjIFN0ZXAgMS42OiBSZWNvcmQgU2Vzc2lvbiBmb3IgUmVwbGF5CgpBZnRlciBjb21wbGV0aW5nIHJlY29ubmFpc3NhbmNlLCBzYXZlIHRoZSBzZXNzaW9uIGZvciBmdXR1cmUgcmVmZXJlbmNlOgoKYGBgCnByb3h5X3Nlc3Npb25fc3RhcnQoInJlY29uLWV4YW1wbGUtY29tIikKIyAuLi4gcGVyZm9ybSBhbnkgYWRkaXRpb25hbCBleHBsb3JhdGlvbiAuLi4KcHJveHlfc2Vzc2lvbl9zdG9wKHNlc3Npb25faWQpCnByb3h5X2V4cG9ydF9oYXIoc2Vzc2lvbl9pZCwgInJlY29uLWV4YW1wbGUtY29tLmhhciIpCmBgYAoKVGhlIEhBUiBmaWxlIGNhcHR1cmVzIGFsbCB0cmFmZmljIGZvciBsYXRlciBhbmFseXNpcyBvciByZXBsYXkuIFNlZSBgLi4vc3RyYXRlZ2llcy9zZXNzaW9uLXdvcmtmbG93cy5tZGAgZm9yIGNvbXBsZXRlIHNlc3Npb24gbWFuYWdlbWVudCBndWlkZS4KCi0tLQoKIyMgUmVhbC1Xb3JsZCBFeGFtcGxlcwoKIyMjIEV4YW1wbGUgMTogRS1Db21tZXJjZSBTaXRlIHdpdGggSGlkZGVuIEFQSQoKKipVc2VyIFJlcXVlc3QqKjogIlNjcmFwZSBwcm9kdWN0cyBmcm9tIHNob3AuZXhhbXBsZS5jb20iCgoqKlJlY29ubmFpc3NhbmNlIFByb2Nlc3MqKjoKCjEuICoqQnJvd3NlciBTZXNzaW9uKio6CmBgYApwcm94eV9zdGFydCgpCmludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2goImh0dHBzOi8vc2hvcC5leGFtcGxlLmNvbSIsIHN0ZWFsdGhNb2RlOiB0cnVlKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfYXR0YWNoKHRhcmdldF9pZCkKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX3NjcmVlbnNob3QoKQpgYGAKCjIuICoqVHJhZmZpYyBBbmFseXNpcyoqOgpgYGAKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICJhcGkiKQpwcm94eV9zZWFyY2hfdHJhZmZpYyhxdWVyeTogImFwcGxpY2F0aW9uL2pzb24iKQpgYGAKICAgLSAqKkRpc2NvdmVyeSoqOiBgR0VUIC9hcGkvcHJvZHVjdHMuanNvbj9jb2xsZWN0aW9uX2lkPTEyM2AKCjMuICoqQVBJIEluc3BlY3Rpb24qKjoKYGBgCnByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZCkKYGBgCiAgIC0gUmVzdWx0OiBBUEkgcmV0dXJucyAxMDAgcHJvZHVjdHMgcGVyIHJlcXVlc3QsIG5vIGF1dGggbmVlZGVkCgo0LiAqKlByb3RlY3Rpb24gQ2hlY2sqKjoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19saXN0X2Nvb2tpZXMoZG9tYWluX2ZpbHRlcjogImNsb3VkZmxhcmUiKQpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogIjQwMyIpCmBgYAogICAtIE5vIENsb3VkZmxhcmUgZGV0ZWN0ZWQKICAgLSBObyByYXRlIGxpbWl0aW5nIGFmdGVyIGJyb3dzaW5nCiAgIC0gU2ltcGxlIEFQSSwgbm8gZmluZ2VycHJpbnRpbmcKCioqT3V0Y29tZSoqOiBTa2lwIEhUTUwgc2NyYXBpbmcgZW50aXJlbHksIHVzZSBkaXJlY3QgQVBJIGFjY2VzcyAoNTB4IGZhc3RlcikKCi0tLQoKIyMjIEV4YW1wbGUgMjogTmV3cyBTaXRlIHdpdGggSW5maW5pdGUgU2Nyb2xsCgoqKlVzZXIgUmVxdWVzdCoqOiAiU2NyYXBlIGFydGljbGVzIGZyb20gbmV3cy5leGFtcGxlLmNvbSIKCioqUmVjb25uYWlzc2FuY2UqKjoKCjEuICoqSW5pdGlhbCBMb2FkKio6IE9ubHkgMTAgYXJ0aWNsZXMgdmlzaWJsZQoKMi4gKipTY3JvbGwgVGVzdCoqOgpgYGAKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCAiZG93biIsIDIwMDApCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMjAwMCkKYGBgCgozLiAqKlRyYWZmaWMgT2JzZXJ2YXRpb24qKjoKYGBgCnByb3h5X2xpc3RfdHJhZmZpYyh1cmxfZmlsdGVyOiAib2Zmc2V0IikKcHJveHlfZ2V0X2V4Y2hhbmdlKGV4Y2hhbmdlX2lkKQpgYGAKICAgLSBYSFIgdHJpZ2dlcmVkOiBgR0VUIC9hcGkvYXJ0aWNsZXM/b2Zmc2V0PTEwYAogICAtIFBhdHRlcm4gZGlzY292ZXJlZDogb2Zmc2V0LWJhc2VkIHBhZ2luYXRpb24KCjQuICoqUGFnaW5hdGlvbiBFeHRyYWN0aW9uKio6CiAgIC0gT2Zmc2V0IGluY3JlYXNlcyBieSAxMAogICAtIFRvdGFsIGFydGljbGVzOiA1MDAgKGZyb20gQVBJIHJlc3BvbnNlKQogICAtIEFQSSBhY2Nlc3NpYmxlIGRpcmVjdGx5IHdpdGhvdXQgYnJvd3NlcgoKKipPdXRjb21lKio6IFVzZSBBUEkgd2l0aCBvZmZzZXQgcGFnaW5hdGlvbiBpbnN0ZWFkIG9mIHNjcm9sbCBhdXRvbWF0aW9uCgotLS0KCiMjIyBFeGFtcGxlIDM6IFByb3RlY3RlZCBTaXRlIHdpdGggQ2xvdWRmbGFyZQoKKipVc2VyIFJlcXVlc3QqKjogIlNjcmFwZSBkYXRhIGZyb20gcHJvdGVjdGVkLmV4YW1wbGUuY29tIgoKKipSZWNvbm5haXNzYW5jZSoqOgoKMS4gKipJbml0aWFsIExvYWQqKjogU3RlYWx0aCBtb2RlIGhhbmRsZXMgQ2xvdWRmbGFyZSBjaGFsbGVuZ2UgYXV0b21hdGljYWxseQpgYGAKcHJveHlfc3RhcnQoKQppbnRlcmNlcHRvcl9jaHJvbWVfbGF1bmNoKCJodHRwczovL3Byb3RlY3RlZC5leGFtcGxlLmNvbSIsIHN0ZWFsdGhNb2RlOiB0cnVlKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfYXR0YWNoKHRhcmdldF9pZCkKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCA1MDAwKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfc2NyZWVuc2hvdCgpCmBgYAoKMi4gKipQcm90ZWN0aW9uIEFuYWx5c2lzKio6CmBgYAppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9jb29raWVzKGRvbWFpbl9maWx0ZXI6ICJjbG91ZGZsYXJlIikKcHJveHlfbGlzdF90cmFmZmljKCkKYGBgCiAgIC0gQ29va2llcyBzZXQ6IGBjZl9jbGVhcmFuY2VgLCBgX19jZmR1aWRgCiAgIC0gQWxsIHN1YnNlcXVlbnQgcmVxdWVzdHMgcmVxdWlyZSB0aGVzZSBjb29raWVzCiAgIC0gTm8gQVBJIGZvdW5kIGluIHRyYWZmaWMg4oCUIHN0YW5kYXJkIEhUTUwgcmVuZGVyaW5nCgozLiAqKlRyYWZmaWMgQWZ0ZXIgQ2hhbGxlbmdlKio6CmBgYApwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogImFwaSIpCnByb3h5X3NlYXJjaF90cmFmZmljKHF1ZXJ5OiAianNvbiIpCmBgYAogICAtIE5vIEFQSXMgZGlzY292ZXJlZAoKKipPdXRjb21lKio6Ci0gVXNlIERPTSBzY3JhcGluZyB2aWEgRGV2VG9vbHMgYnJpZGdlIChgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX3NuYXBzaG90KClgKQotIFN0ZWFsdGggbW9kZSBhbHJlYWR5IGhhbmRsZXMgYnJvd3Nlci1sZXZlbCBkZXRlY3Rpb24KLSBVc2UgdXBzdHJlYW0gcHJveGllcyBmb3IgSVAgcm90YXRpb24gKGBwcm94eV9zZXRfdXBzdHJlYW0oKWApCi0gRm9yIHByb2R1Y3Rpb24gQWN0b3I6IHVzZSBQbGF5d3JpZ2h0Q3Jhd2xlciB3aXRoIGZpbmdlcnByaW50LXN1aXRlIG9uIEFwaWZ5IGluZnJhc3RydWN0dXJlCgotLS0KCiMjIERlY2lzaW9uIFRyZWUKCkJhc2VkIG9uIHJlY29ubmFpc3NhbmNlIGZpbmRpbmdzLCBkZXRlcm1pbmUgbmV4dCBzdGVwczoKCmBgYApSZWNvbm5haXNzYW5jZSBDb21wbGV0ZSAoVHJhZmZpYyBDYXB0dXJlZCkKICAgIOKUnOKUgCBBUEkgRGlzY292ZXJlZCBpbiBUcmFmZmljPwogICAg4pSCICAg4pSc4pSAIFlFUyDihpIgUHJlZmVyIEFQSSByb3V0ZSAoUGhhc2UgMzogQVBJIHN0cmF0ZWd5KQogICAg4pSCICAg4pSCICAgICAgICAg4pSU4pSAIEF1dGggcmVxdWlyZWQ/CiAgICDilIIgICDilIIgICAgICAgICAgICAg4pSc4pSAIE5PIOKGkiBEaXJlY3QgQVBJIGFjY2VzcyAoZmFzdGVzdCkKICAgIOKUgiAgIOKUgiAgICAgICAgICAgICDilJTilIAgWUVTIOKGkiBSZWNvcmQgYXV0aCBmbG93LCBleHRyYWN0IHRva2VucwogICAg4pSCICAg4pSU4pSAIE5PIOKGkiBET00gc2NyYXBpbmcgbmVlZGVkCiAgICDilIIgICAgICAgICAgICAg4pSU4pSAIEphdmFTY3JpcHQtcmVuZGVyZWQ/CiAgICDilIIgICAgICAgICAgICAgICAgIOKUnOKUgCBZRVMg4oaSIERldlRvb2xzIGJyaWRnZSArIGh1bWFuaXplcgogICAg4pSCICAgICAgICAgICAgICAgICDilJTilIAgTk8g4oaSIFVzZSBDaGVlcmlvICgxMHggZmFzdGVyKQogICAg4pSCCiAgICDilJzilIAgUHJvdGVjdGlvbiBEZXRlY3RlZD8KICAgIOKUgiAgIOKUnOKUgCBDbG91ZGZsYXJlL2JvdCBkZXRlY3Rpb24KICAgIOKUgiAgIOKUgiAgIOKUlOKUgCBTdGVhbHRoIG1vZGUgaGFuZGxlcyBicm93c2VyIGRldGVjdGlvbgogICAg4pSCICAg4pSCICAgICAgIOKUlOKUgCBJUCBibG9ja2VkPyDihpIgQWRkIHVwc3RyZWFtIHByb3hpZXMKICAgIOKUgiAgIOKUnOKUgCBSYXRlIGxpbWl0aW5nCiAgICDilIIgICDilIIgICDilJTilIAgUmVzcGVjdCBsaW1pdHMgaW4gaW1wbGVtZW50YXRpb24KICAgIOKUgiAgIOKUlOKUgCBDQVBUQ0hBCiAgICDilIIgICAgICAg4pSU4pSAIENvbnNpZGVyIENBUFRDSEEgc29sdmluZyBzZXJ2aWNlIG9yIG1hbnVhbCBpbnRlcnZlbnRpb24KICAgIOKUggogICAg4pSU4pSAIFNpdGVtYXAgQXZhaWxhYmxlPwogICAgICAgIOKUnOKUgCBZRVMg4oaSIFVzZSBmb3IgVVJMIGRpc2NvdmVyeSAoY29tYmluZSB3aXRoIEFQSSBpZiBmb3VuZCkKICAgICAgICDilJTilIAgTk8g4oaSIFVzZSB0cmFmZmljLWRpc2NvdmVyZWQgcGFnaW5hdGlvbiBvciBjcmF3bApgYGAKCi0tLQoKIyMgQ29tbW9uIE1pc3Rha2VzIHRvIEF2b2lkCgojIyMgU2tpcHBpbmcgUmVjb25uYWlzc2FuY2UKCioqQmFkKio6IEp1bXAgc3RyYWlnaHQgdG8gY29kaW5nIGJhc2VkIG9uIGFzc3VtcHRpb25zCmBgYGphdmFzY3JpcHQKLy8gV1JPTkc6IEFzc3VtaW5nIHN0cnVjdHVyZSwgbm8gdHJhZmZpYyBhbmFseXNpcwpjb25zdCBjcmF3bGVyID0gbmV3IFBsYXl3cmlnaHRDcmF3bGVyKHsKICBhc3luYyByZXF1ZXN0SGFuZGxlcih7IHBhZ2UgfSkgewogICAgLy8gQmxpbmRseSBzY3JhcGluZyBIVE1MIHdpdGhvdXQga25vd2luZyBpZiBBUEkgZXhpc3RzCiAgfQp9KTsKYGBgCgoqKkdvb2QqKjogUGVyZm9ybSB0cmFmZmljIGludGVyY2VwdGlvbiBmaXJzdApgYGBqYXZhc2NyaXB0Ci8vIFJJR0hUOiBBZnRlciBkaXNjb3ZlcmluZyBBUEkgdmlhIHByb3h5IHRyYWZmaWMgY2FwdHVyZQpjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICB1cmw6IGRpc2NvdmVyZWRBcGlFbmRwb2ludCwgIC8vIEZyb20gcmVjb25uYWlzc2FuY2UKICByZXNwb25zZVR5cGU6ICdqc29uJwp9KTsKYGBgCgojIyMgTGF1bmNoaW5nIENocm9tZSBXaXRob3V0IFN0ZWFsdGggTW9kZQoKKipCYWQqKjogYGludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2godXJsKWAg4oCUIG5vIHN0ZWFsdGgKKipHb29kKio6IGBpbnRlcmNlcHRvcl9jaHJvbWVfbGF1bmNoKHVybCwgc3RlYWx0aE1vZGU6IHRydWUpYCDigJQgYWx3YXlzIHVzZSBzdGVhbHRoIG9uIHByb3RlY3RlZCBzaXRlcwoKIyMjIFVzaW5nIGludGVyY2VwdG9yX2Nocm9tZV9uYXZpZ2F0ZSBJbnN0ZWFkIG9mIERldlRvb2xzIE5hdmlnYXRlCgoqKkJhZCoqOiBgaW50ZXJjZXB0b3JfY2hyb21lX25hdmlnYXRlKHVybClgIOKAlCBsb3NlcyBEZXZUb29scyBzZXNzaW9uCioqR29vZCoqOiBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX25hdmlnYXRlKHVybClgIOKAlCBwcmVzZXJ2ZXMgRGV2VG9vbHMgYXR0YWNobWVudAoKIyMjIE5vdCBDbGVhcmluZyBUcmFmZmljIEJlZm9yZSBBY3Rpb25zCgoqKkJhZCoqOiBMb29raW5nIGF0IGFsbCB0cmFmZmljIChub2lzeSwgaW5jbHVkZXMgcGFnZSBsb2FkKQoqKkdvb2QqKjogYHByb3h5X2NsZWFyX3RyYWZmaWMoKWAgYmVmb3JlIGVhY2ggYWN0aW9uIHRvIGlzb2xhdGUgc3BlY2lmaWMgQVBJIGNhbGxzCgotLS0KCiMjIFRvb2xzIFJlZmVyZW5jZQoKIyMjIFByb3h5LU1DUCBUb29scyBVc2VkIGluIFJlY29ubmFpc3NhbmNlCgoqKkluaXRpYWxpemF0aW9uKio6Ci0gYHByb3h5X3N0YXJ0KClgIOKAlCBTdGFydCBNSVRNIHByb3h5Ci0gYGludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2godXJsLCBzdGVhbHRoTW9kZSlgIOKAlCBMYXVuY2ggc3RlYWx0aCBDaHJvbWUKLSBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2F0dGFjaCh0YXJnZXRfaWQpYCDigJQgQXR0YWNoIERldlRvb2xzIGJyaWRnZQoKKipUcmFmZmljIEFuYWx5c2lzKio6Ci0gYHByb3h5X2xpc3RfdHJhZmZpYyh1cmxfZmlsdGVyLCBtZXRob2RfZmlsdGVyKWAg4oCUIExpc3QgY2FwdHVyZWQgZXhjaGFuZ2VzCi0gYHByb3h5X3NlYXJjaF90cmFmZmljKHF1ZXJ5KWAg4oCUIEZ1bGwtdGV4dCBzZWFyY2ggYWNyb3NzIHRyYWZmaWMKLSBgcHJveHlfZ2V0X2V4Y2hhbmdlKGV4Y2hhbmdlX2lkKWAg4oCUIEZ1bGwgcmVxdWVzdC9yZXNwb25zZSBkZXRhaWxzCi0gYHByb3h5X2NsZWFyX3RyYWZmaWMoKWAg4oCUIENsZWFyIGJ1ZmZlciBiZWZvcmUgYWN0aW9ucwoKKipCcm93c2VyIENvbnRyb2wgKERldlRvb2xzIEJyaWRnZSkqKjoKLSBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX25hdmlnYXRlKHVybClgIOKAlCBOYXZpZ2F0ZSAocHJlc2VydmVzIERldlRvb2xzKQotIGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfc2NyZWVuc2hvdCgpYCDigJQgQ2FwdHVyZSBzY3JlZW5zaG90Ci0gYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zbmFwc2hvdCgpYCDigJQgQWNjZXNzaWJpbGl0eSB0cmVlCi0gYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19saXN0X25ldHdvcmsocmVzb3VyY2VfdHlwZXMpYCDigJQgQnJvd3NlciBuZXR3b3JrIHZpZXcKLSBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfY29uc29sZSgpYCDigJQgQ29uc29sZSBtZXNzYWdlcwotIGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9jb29raWVzKGRvbWFpbl9maWx0ZXIpYCDigJQgQ29va2llcwotIGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9zdG9yYWdlX2tleXMoc3RvcmFnZV90eXBlKWAg4oCUIFN0b3JhZ2Uga2V5cwoKKipIdW1hbiBJbnRlcmFjdGlvbiAoSHVtYW5pemVyKSoqOgotIGBodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCBzZWxlY3RvcilgIOKAlCBDbGljayB3aXRoIGh1bWFuLWxpa2UgYmVoYXZpb3IKLSBgaHVtYW5pemVyX3R5cGUodGFyZ2V0X2lkLCB0ZXh0KWAg4oCUIFR5cGUgd2l0aCByZWFsaXN0aWMgdGltaW5nCi0gYGh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCBkaXJlY3Rpb24sIGFtb3VudClgIOKAlCBTbW9vdGggc2Nyb2xsCi0gYGh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgZHVyYXRpb25fbXMpYCDigJQgSWRsZSB3aXRoIG1pY3JvLW1vdmVtZW50cwoKKipTZXNzaW9uIE1hbmFnZW1lbnQqKjoKLSBgcHJveHlfc2Vzc2lvbl9zdGFydChuYW1lKWAg4oCUIFJlY29yZCBzZXNzaW9uCi0gYHByb3h5X3Nlc3Npb25fc3RvcChzZXNzaW9uX2lkKWAg4oCUIFN0b3AgcmVjb3JkaW5nCi0gYHByb3h5X2V4cG9ydF9oYXIoc2Vzc2lvbl9pZCwgcGF0aClgIOKAlCBFeHBvcnQgYXMgSEFSCgpTZWUgYC4uL3JlZmVyZW5jZS9wcm94eS10b29sLXJlZmVyZW5jZS5tZGAgZm9yIGNvbXBsZXRlIHRvb2wgcmVmZXJlbmNlLgoKLS0tCgojIyBOZXh0IFN0ZXBzCgpBZnRlciBjb21wbGV0aW5nIHJlY29ubmFpc3NhbmNlOgoKMS4gKipQcm9jZWVkIHRvIFBoYXNlIDIqKjogVmFsaWRhdGUgZmluZGluZ3Mgd2l0aCBhdXRvbWF0ZWQgY2hlY2tzIChzaXRlbWFwcywgcm9ib3RzLnR4dCkKMi4gKipQcm9jZWVkIHRvIFBoYXNlIDMqKjogUHJlc2VudCBzdHJhdGVneSByZWNvbW1lbmRhdGlvbnMgYmFzZWQgb24gaW50ZWxsaWdlbmNlCjMuICoqUHJvY2VlZCB0byBQaGFzZSA0Kio6IEltcGxlbWVudCBjaG9zZW4gc3RyYXRlZ3kgd2l0aCBjb25maWRlbmNlCgoqKktleSBBZHZhbnRhZ2UqKjogTm8gbW9yZSBndWVzc3dvcmsg4oCUIGV2ZXJ5IGltcGxlbWVudGF0aW9uIGRlY2lzaW9uIGlzIGJhY2tlZCBieSB0cmFmZmljIGFuYWx5c2lzIGRhdGEuCgotLS0KCkJhY2sgdG8gbWFpbiB3b3JrZmxvdzogYC4uL1NLSUxMLm1kYAo=
+# Phase 1: Interactive Reconnaissance
+
+Critical intelligence gathering before any scraping implementation.
+
+## Why Reconnaissance First?
+
+**The current problem**: Most scraping projects start with guesswork:
+- "Try the sitemap" → Maybe it doesn't have all data
+- "Scrape HTML" → Slow and brittle
+- "Use a browser crawler" → Overkill if APIs exist
+
+**The reconnaissance solution**:
+- Discover hidden APIs automatically via MITM traffic capture (10-100x faster than HTML)
+- Understand site architecture before writing code
+- Detect anti-bot measures early and plan countermeasures
+- Find optimal data extraction points
+- Save hours of wasted implementation effort
+
+## MCP Tools Required
+
+This phase requires:
+- **Proxy-MCP**: MITM traffic interception + stealth Chrome browser + DevTools bridge + humanizer
+
+Source reference: `/home/yms/Documents/proxy-mcp/`
+
+See `../reference/proxy-tool-reference.md` for complete tool reference.
+
+---
+
+## Step 1.1: Initialize Browser Session
+
+### Start Proxy and Launch Browser
+
+Start the MITM proxy, launch Chrome with stealth mode, and attach DevTools:
+
+```
+proxy_start()
+
+interceptor_chrome_launch(
+    url: "https://target-site.com",
+    stealthMode: true
+)
+
+interceptor_chrome_devtools_attach(target_id)
+```
+
+Stealth mode automatically patches:
+- `navigator.webdriver` → `false`
+- `chrome.runtime` → exists with expected shape
+- `Permissions.query` → correct notification response
+- `Error.stack` → cleaned of CDP traces
+
+### Capture Initial State
+
+```
+interceptor_chrome_devtools_screenshot()
+```
+
+### Observe Loading Behavior
+
+**Look for**:
+- **Immediate content**: Page loads fully on first request → Likely SSR/static
+- **Loading spinners**: Content loads after initial paint → JavaScript-rendered
+- **Skeleton screens**: Placeholder UI → API-driven dynamic content
+- **Popups/banners**: Cookie consent, newsletters → Need to dismiss before exploration
+
+**Document findings**:
+```
+Initial Load Observation:
+- Page type: [Static/SSR/SPA]
+- Loading pattern: [Immediate/Progressive/Delayed]
+- Interstitials: [Cookie banner, newsletter popup]
+```
+
+---
+
+## Step 1.2: Network Traffic Analysis
+
+### Analyze Captured Traffic
+
+**Critical**: The MITM proxy captures all traffic automatically. No manual DevTools inspection needed.
+
+```
+proxy_list_traffic()
+```
+
+This shows every HTTP exchange from the page load. Filter for interesting patterns:
+
+```
+proxy_list_traffic(url_filter: "/api/")          → REST APIs
+proxy_list_traffic(url_filter: "/graphql")        → GraphQL endpoints
+proxy_list_traffic(url_filter: "/_next/data/")    → Next.js data endpoints
+proxy_list_traffic(url_filter: "/wp-json/")       → WordPress REST API
+proxy_search_traffic(query: "application/json")   → Any JSON responses
+```
+
+Also check browser-side network view:
+```
+interceptor_chrome_devtools_list_network(resource_types: ["xhr", "fetch"])
+```
+
+### Inspect Discovered Endpoints
+
+For each promising endpoint:
+
+```
+proxy_get_exchange(exchange_id)
+```
+
+**What to Extract**:
+```
+Discovered Endpoints:
+✅ GET /api/v2/products?page={n}&limit={m}
+   Request: page=1, limit=20
+   Response: JSON array of products
+   Auth: None required
+   Rate limit: Unknown (test needed)
+
+✅ GET /api/v2/products/{id}
+   Response: Detailed product JSON
+   Fields: id, name, price, description, images, stock
+```
+
+### Navigate and Observe Traffic
+
+Browse through key pages while the proxy captures everything:
+
+```
+proxy_clear_traffic()
+humanizer_click(target_id, ".category-link")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "products")
+
+proxy_clear_traffic()
+humanizer_click(target_id, ".product-item:first-child")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic()
+```
+
+**Document**:
+- Request method (GET/POST)
+- Required headers (authorization, content-type)
+- Query parameters (pagination, filters)
+- Response structure
+- Authentication requirements
+
+---
+
+## Step 1.3: Site Structure Discovery
+
+### Test Pagination Mechanisms
+
+**Pagination Type Detection**:
+
+```
+proxy_clear_traffic()
+humanizer_click(target_id, ".next-page")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "page=")
+```
+
+Check if the URL changed:
+```
+interceptor_chrome_devtools_snapshot()    → Check current page state
+```
+
+**Pagination Patterns**:
+1. **URL-based**: `?page=2` or `/page/2/`
+   - Easy to iterate
+   - Can directly construct URLs
+
+2. **API-based**: XHR with `offset`/`cursor` parameters
+   - Visible in proxy traffic capture
+   - Extract pagination parameters from `proxy_get_exchange()`
+
+3. **Infinite scroll**: Content appends on scroll
+   - Trigger with `humanizer_scroll()`
+   - Watch for API calls in proxy traffic
+
+**Document**:
+```
+Pagination:
+- Type: [URL-based / API-based / Infinite scroll]
+- Parameter: page=N or offset=N or cursor=TOKEN
+- Items per page: 20
+- Total pages: ~250 (estimated from last page)
+```
+
+### Test Filtering and Search
+
+```
+proxy_clear_traffic()
+humanizer_click(target_id, ".filter-category")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic()                               → Observe filter API calls
+
+proxy_clear_traffic()
+humanizer_click(target_id, "input[name='search']")
+humanizer_type(target_id, "test query")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "search")           → Observe search API
+```
+
+**Look for**:
+- Search API endpoints
+- Filter parameters
+- Sort options
+- Query structure
+
+### Discover Data Loading Patterns
+
+```
+proxy_clear_traffic()
+humanizer_scroll(target_id, "down", 1000)
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "offset")           → Infinite scroll API calls
+```
+
+---
+
+## Step 1.4: Anti-Bot Assessment
+
+### Check for Bot Protection Indicators
+
+Review captured traffic for blocking signals:
+
+```
+proxy_list_traffic()                               → Look for 403s, challenge pages
+```
+
+Check cookies for tracking markers:
+```
+interceptor_chrome_devtools_list_cookies(domain_filter: "cloudflare")
+interceptor_chrome_devtools_list_cookies(domain_filter: "datadome")
+```
+
+Check localStorage for fingerprinting:
+```
+interceptor_chrome_devtools_list_storage_keys(storage_type: "local")
+```
+
+### Check for Protection Scripts
+
+```
+interceptor_chrome_devtools_snapshot()
+```
+
+Look in the accessibility tree for:
+- Cloudflare challenge elements
+- CAPTCHA containers
+- "Access Denied" text
+
+### Analyze TLS Fingerprints
+
+```
+proxy_get_tls_fingerprints()
+```
+
+This shows the TLS fingerprints of captured traffic, useful for understanding what the server sees.
+
+### Test Rate Limiting
+
+Navigate to multiple pages and observe responses:
+
+```
+interceptor_chrome_devtools_navigate("https://target-site.com/products?page=1")
+humanizer_idle(target_id, 1000)
+interceptor_chrome_devtools_navigate("https://target-site.com/products?page=2")
+humanizer_idle(target_id, 1000)
+# ... repeat and check for 429 responses
+proxy_list_traffic(url_filter: "429")
+```
+
+**Document Protection Mechanisms**:
+```
+Protection Assessment:
+⚠️  Cloudflare: DETECTED (cf-ray header in proxy traffic)
+✓   CAPTCHA: Not triggered during normal browsing
+✓   Fingerprinting: Not detected
+⚠️  Rate Limiting: ~60 requests/minute threshold
+✓   Authentication: Not required for product pages
+
+Countermeasures Needed:
+- Stealth mode already active (handles browser-level detection)
+- Use upstream proxies for IP rotation (proxy_set_upstream)
+- Respect rate limit: max 50 requests/minute
+- If switching to HTTP-only client: consider TLS spoofing
+```
+
+**Note**: Chrome with stealth mode already handles most browser-level detection. Escalation to TLS spoofing is only needed if switching to HTTP-only clients (gotScraping, curl) for production.
+
+---
+
+## Step 1.5: Generate Intelligence Report
+
+### Compile Findings
+
+Create structured report with all reconnaissance data:
+
+```markdown
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTELLIGENCE REPORT: example.com
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Generated: 2026-03-17 10:30 UTC
+
+## 1. Site Architecture
+
+**Framework**: Next.js 13 (detected /_next/data/ in proxy traffic)
+**Rendering**: Hybrid SSR + CSR
+**Primary Data Source**: Internal REST API
+
+## 2. Discovered Endpoints (via Traffic Capture)
+
+### Products API (Primary)
+**Endpoint**: `GET /api/v2/products`
+**Parameters**:
+  - `page`: integer (1-250)
+  - `limit`: integer (max 100, default 20)
+  - `category`: string (optional filter)
+
+**Response Structure**:
+```json
+{
+  "products": [...],
+  "total": 5000,
+  "page": 1,
+  "hasMore": true
+}
+```
+
+**Authentication**: None required
+**Rate Limit**: ~60 requests/minute
+
+### Product Details API
+**Endpoint**: `GET /api/v2/products/{id}`
+**Response**: Full product object with variants
+**Authentication**: None required
+
+## 3. Sitemap Analysis
+
+**Location**: `/sitemap_index.xml`
+**Product URLs**: 5,000 URLs
+**Update Frequency**: Daily
+**Coverage**: 100% (matches API total)
+
+## 4. Protection Mechanisms
+
+| Mechanism | Status | Impact |
+|-----------|--------|--------|
+| Cloudflare | Active | Medium - use upstream proxies |
+| CAPTCHA | Not triggered | None currently |
+| Fingerprinting | Not detected | Stealth mode sufficient |
+| Rate Limiting | 60/min | High - must respect |
+| Auth Required | None | None |
+
+## 5. Pagination Strategy
+
+**Type**: API-based offset pagination
+**Method**: Query parameters `?page=N&limit=M`
+**Max per request**: 100 items
+**Total pages**: 50 (at limit=100)
+**Estimated total items**: 5,000
+
+## 6. Optimal Scraping Strategy
+
+### Recommended Approach: Hybrid (Sitemap + API)
+
+**Phase A - URL Discovery** (~1 minute):
+1. Parse sitemap.xml → Extract 5,000 product URLs
+2. Extract product IDs from URLs: `/products/(\d+)`
+
+**Phase B - Data Extraction** (~3-5 minutes):
+1. Use discovered API: `/api/v2/products?page=1&limit=100`
+2. Rate: 50 requests/minute (safe buffer)
+3. Total requests needed: 50
+4. Expected duration: ~1.5 minutes
+5. Use upstream proxies if needed (Cloudflare present)
+
+**Why This Works**:
+- API discovered via traffic capture — clean JSON, no HTML parsing
+- Sitemap validates completeness
+- Under rate limit
+- No authentication barriers
+
+### Alternative: DOM Scraping (DevTools Bridge)
+If API becomes blocked:
+- Use `interceptor_chrome_devtools_snapshot()` for accessibility tree extraction
+- Use humanizer for interactions
+- Enable upstream proxies + stealth mode
+- Estimated time: 15-20 minutes (slower)
+
+## 7. Implementation Checklist
+
+- [ ] Use `gotScraping` or `fetch` for API calls
+- [ ] Implement rate limiting: 50 requests/minute
+- [ ] Use upstream proxy if needed (Cloudflare present)
+- [ ] Parse sitemap for product IDs
+- [ ] Batch API requests (100 items per call)
+- [ ] Add retry logic (3 attempts)
+- [ ] Log failed requests
+- [ ] Validate data completeness
+
+## 8. Risk Assessment
+
+**Low Risk**:
+- API is stable and publicly accessible
+- No authentication required
+- Rate limits are reasonable
+
+**Potential Issues**:
+- API structure may change (monitor for schema changes)
+- Rate limit may tighten (respect current limits)
+- Cloudflare may upgrade protection (have DOM scraping fallback ready)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROCEED TO PHASE 2: VALIDATION & PHASE 3: STRATEGY SELECTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+---
+
+## Step 1.6: Record Session for Replay
+
+After completing reconnaissance, save the session for future reference:
+
+```
+proxy_session_start("recon-example-com")
+# ... perform any additional exploration ...
+proxy_session_stop(session_id)
+proxy_export_har(session_id, "recon-example-com.har")
+```
+
+The HAR file captures all traffic for later analysis or replay. See `../strategies/session-workflows.md` for complete session management guide.
+
+---
+
+## Real-World Examples
+
+### Example 1: E-Commerce Site with Hidden API
+
+**User Request**: "Scrape products from shop.example.com"
+
+**Reconnaissance Process**:
+
+1. **Browser Session**:
+```
+proxy_start()
+interceptor_chrome_launch("https://shop.example.com", stealthMode: true)
+interceptor_chrome_devtools_attach(target_id)
+interceptor_chrome_devtools_screenshot()
+```
+
+2. **Traffic Analysis**:
+```
+proxy_list_traffic(url_filter: "api")
+proxy_search_traffic(query: "application/json")
+```
+   - **Discovery**: `GET /api/products.json?collection_id=123`
+
+3. **API Inspection**:
+```
+proxy_get_exchange(exchange_id)
+```
+   - Result: API returns 100 products per request, no auth needed
+
+4. **Protection Check**:
+```
+interceptor_chrome_devtools_list_cookies(domain_filter: "cloudflare")
+proxy_list_traffic(url_filter: "403")
+```
+   - No Cloudflare detected
+   - No rate limiting after browsing
+   - Simple API, no fingerprinting
+
+**Outcome**: Skip HTML scraping entirely, use direct API access (50x faster)
+
+---
+
+### Example 2: News Site with Infinite Scroll
+
+**User Request**: "Scrape articles from news.example.com"
+
+**Reconnaissance**:
+
+1. **Initial Load**: Only 10 articles visible
+
+2. **Scroll Test**:
+```
+proxy_clear_traffic()
+humanizer_scroll(target_id, "down", 2000)
+humanizer_idle(target_id, 2000)
+```
+
+3. **Traffic Observation**:
+```
+proxy_list_traffic(url_filter: "offset")
+proxy_get_exchange(exchange_id)
+```
+   - XHR triggered: `GET /api/articles?offset=10`
+   - Pattern discovered: offset-based pagination
+
+4. **Pagination Extraction**:
+   - Offset increases by 10
+   - Total articles: 500 (from API response)
+   - API accessible directly without browser
+
+**Outcome**: Use API with offset pagination instead of scroll automation
+
+---
+
+### Example 3: Protected Site with Cloudflare
+
+**User Request**: "Scrape data from protected.example.com"
+
+**Reconnaissance**:
+
+1. **Initial Load**: Stealth mode handles Cloudflare challenge automatically
+```
+proxy_start()
+interceptor_chrome_launch("https://protected.example.com", stealthMode: true)
+interceptor_chrome_devtools_attach(target_id)
+humanizer_idle(target_id, 5000)
+interceptor_chrome_devtools_screenshot()
+```
+
+2. **Protection Analysis**:
+```
+interceptor_chrome_devtools_list_cookies(domain_filter: "cloudflare")
+proxy_list_traffic()
+```
+   - Cookies set: `cf_clearance`, `__cfduid`
+   - All subsequent requests require these cookies
+   - No API found in traffic — standard HTML rendering
+
+3. **Traffic After Challenge**:
+```
+proxy_list_traffic(url_filter: "api")
+proxy_search_traffic(query: "json")
+```
+   - No APIs discovered
+
+**Outcome**:
+- Use DOM scraping via DevTools bridge (`interceptor_chrome_devtools_snapshot()`)
+- Stealth mode already handles browser-level detection
+- Use upstream proxies for IP rotation (`proxy_set_upstream()`)
+- For production Actor: use PlaywrightCrawler with fingerprint-suite on Apify infrastructure
+
+---
+
+## Decision Tree
+
+Based on reconnaissance findings, determine next steps:
+
+```
+Reconnaissance Complete (Traffic Captured)
+    ├─ API Discovered in Traffic?
+    │   ├─ YES → Prefer API route (Phase 3: API strategy)
+    │   │         └─ Auth required?
+    │   │             ├─ NO → Direct API access (fastest)
+    │   │             └─ YES → Record auth flow, extract tokens
+    │   └─ NO → DOM scraping needed
+    │             └─ JavaScript-rendered?
+    │                 ├─ YES → DevTools bridge + humanizer
+    │                 └─ NO → Use Cheerio (10x faster)
+    │
+    ├─ Protection Detected?
+    │   ├─ Cloudflare/bot detection
+    │   │   └─ Stealth mode handles browser detection
+    │   │       └─ IP blocked? → Add upstream proxies
+    │   ├─ Rate limiting
+    │   │   └─ Respect limits in implementation
+    │   └─ CAPTCHA
+    │       └─ Consider CAPTCHA solving service or manual intervention
+    │
+    └─ Sitemap Available?
+        ├─ YES → Use for URL discovery (combine with API if found)
+        └─ NO → Use traffic-discovered pagination or crawl
+```
+
+---
+
+## Common Mistakes to Avoid
+
+### Skipping Reconnaissance
+
+**Bad**: Jump straight to coding based on assumptions
+```javascript
+// WRONG: Assuming structure, no traffic analysis
+const crawler = new PlaywrightCrawler({
+  async requestHandler({ page }) {
+    // Blindly scraping HTML without knowing if API exists
+  }
+});
+```
+
+**Good**: Perform traffic interception first
+```javascript
+// RIGHT: After discovering API via proxy traffic capture
+const response = await gotScraping({
+  url: discoveredApiEndpoint,  // From reconnaissance
+  responseType: 'json'
+});
+```
+
+### Launching Chrome Without Stealth Mode
+
+**Bad**: `interceptor_chrome_launch(url)` — no stealth
+**Good**: `interceptor_chrome_launch(url, stealthMode: true)` — always use stealth on protected sites
+
+### Using interceptor_chrome_navigate Instead of DevTools Navigate
+
+**Bad**: `interceptor_chrome_navigate(url)` — loses DevTools session
+**Good**: `interceptor_chrome_devtools_navigate(url)` — preserves DevTools attachment
+
+### Not Clearing Traffic Before Actions
+
+**Bad**: Looking at all traffic (noisy, includes page load)
+**Good**: `proxy_clear_traffic()` before each action to isolate specific API calls
+
+---
+
+## Tools Reference
+
+### Proxy-MCP Tools Used in Reconnaissance
+
+**Initialization**:
+- `proxy_start()` — Start MITM proxy
+- `interceptor_chrome_launch(url, stealthMode)` — Launch stealth Chrome
+- `interceptor_chrome_devtools_attach(target_id)` — Attach DevTools bridge
+
+**Traffic Analysis**:
+- `proxy_list_traffic(url_filter, method_filter)` — List captured exchanges
+- `proxy_search_traffic(query)` — Full-text search across traffic
+- `proxy_get_exchange(exchange_id)` — Full request/response details
+- `proxy_clear_traffic()` — Clear buffer before actions
+
+**Browser Control (DevTools Bridge)**:
+- `interceptor_chrome_devtools_navigate(url)` — Navigate (preserves DevTools)
+- `interceptor_chrome_devtools_screenshot()` — Capture screenshot
+- `interceptor_chrome_devtools_snapshot()` — Accessibility tree
+- `interceptor_chrome_devtools_list_network(resource_types)` — Browser network view
+- `interceptor_chrome_devtools_list_console()` — Console messages
+- `interceptor_chrome_devtools_list_cookies(domain_filter)` — Cookies
+- `interceptor_chrome_devtools_list_storage_keys(storage_type)` — Storage keys
+
+**Human Interaction (Humanizer)**:
+- `humanizer_click(target_id, selector)` — Click with human-like behavior
+- `humanizer_type(target_id, text)` — Type with realistic timing
+- `humanizer_scroll(target_id, direction, amount)` — Smooth scroll
+- `humanizer_idle(target_id, duration_ms)` — Idle with micro-movements
+
+**Session Management**:
+- `proxy_session_start(name)` — Record session
+- `proxy_session_stop(session_id)` — Stop recording
+- `proxy_export_har(session_id, path)` — Export as HAR
+
+See `../reference/proxy-tool-reference.md` for complete tool reference.
+
+---
+
+## Next Steps
+
+After completing reconnaissance:
+
+1. **Proceed to Phase 2**: Validate findings with automated checks (sitemaps, robots.txt)
+2. **Proceed to Phase 3**: Present strategy recommendations based on intelligence
+3. **Proceed to Phase 4**: Implement chosen strategy with confidence
+
+**Key Advantage**: No more guesswork — every implementation decision is backed by traffic analysis data.
+
+---
+
+Back to main workflow: `../SKILL.md`
