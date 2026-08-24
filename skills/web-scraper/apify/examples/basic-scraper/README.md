@@ -1,1 +1,58 @@
-IyBCYXNpYyBTaXRlbWFwIFNjcmFwZXIgRXhhbXBsZQoKU2ltcGxlIEFjdG9yIHRoYXQgc2NyYXBlcyBVUkxzIGZyb20gYSBzaXRlbWFwIHVzaW5nIFBsYXl3cmlnaHQuCgojIyBXaGF0IFRoaXMgRGVtb25zdHJhdGVzCgotIFNpdGVtYXAtYmFzZWQgVVJMIGRpc2NvdmVyeSB3aXRoIGBSb2JvdHNGaWxlYAotIFR5cGVTY3JpcHQgQWN0b3Igc3RydWN0dXJlCi0gQmFzaWMgUGxheXdyaWdodCBzY3JhcGluZwotIFR5cGVkIGlucHV0L291dHB1dAotIEVycm9yIGhhbmRsaW5nCgojIyBGaWxlcwoKLSBgc3JjL21haW4udHNgIC0gTWFpbiBBY3RvciBjb2RlCi0gYC5hY3Rvci9hY3Rvci5qc29uYCAtIEFjdG9yIGNvbmZpZ3VyYXRpb24KLSBgLmFjdG9yL2lucHV0X3NjaGVtYS5qc29uYCAtIElucHV0IHNjaGVtYQoKIyMgVXNhZ2UKCmBgYGJhc2gKIyBSdW4gbG9jYWxseQphcGlmeSBydW4gLS1pbnB1dD0neyJzaXRlbWFwVXJsIjoiaHR0cHM6Ly9leGFtcGxlLmNvbS9zaXRlbWFwLnhtbCIsIm1heEl0ZW1zIjoxMH0nCgojIERlcGxveQphcGlmeSBwdXNoCgojIFJ1biBvbiBwbGF0Zm9ybQphcGlmeSBjYWxsIGJhc2ljLXNjcmFwZXIKYGBgCgojIyBJbnB1dAoKYGBganNvbgp7CiAgICAic2l0ZW1hcFVybCI6ICJodHRwczovL2V4YW1wbGUuY29tL3NpdGVtYXAueG1sIiwKICAgICJ1cmxQYXR0ZXJuIjogIi9wcm9kdWN0cy8uKiIsCiAgICAibWF4SXRlbXMiOiAxMDAKfQpgYGAKCiMjIE91dHB1dAoKYGBganNvbgp7CiAgICAidXJsIjogImh0dHBzOi8vZXhhbXBsZS5jb20vcHJvZHVjdC8xIiwKICAgICJ0aXRsZSI6ICJQcm9kdWN0IE5hbWUiLAogICAgImRlc2NyaXB0aW9uIjogIlByb2R1Y3QgZGVzY3JpcHRpb24iLAogICAgInNjcmFwZWRBdCI6ICIyMDI1LTAxLTE1VDEwOjMwOjAwLjAwMFoiCn0KYGBgCgojIyBQYXR0ZXJuCgoxLiBQYXJzZSBzaXRlbWFwIFVSTHMKMi4gRmlsdGVyIGJ5IHJlZ2V4IHBhdHRlcm4KMy4gU2NyYXBlIGVhY2ggVVJMIHdpdGggUGxheXdyaWdodAo0LiBTYXZlIHRvIGRhdGFzZXQK
+# Basic Sitemap Scraper Example
+
+Simple Actor that scrapes URLs from a sitemap using Playwright.
+
+## What This Demonstrates
+
+- Sitemap-based URL discovery with `RobotsFile`
+- TypeScript Actor structure
+- Basic Playwright scraping
+- Typed input/output
+- Error handling
+
+## Files
+
+- `src/main.ts` - Main Actor code
+- `.actor/actor.json` - Actor configuration
+- `.actor/input_schema.json` - Input schema
+
+## Usage
+
+```bash
+# Run locally
+apify run --input='{"sitemapUrl":"https://example.com/sitemap.xml","maxItems":10}'
+
+# Deploy
+apify push
+
+# Run on platform
+apify call basic-scraper
+```
+
+## Input
+
+```json
+{
+    "sitemapUrl": "https://example.com/sitemap.xml",
+    "urlPattern": "/products/.*",
+    "maxItems": 100
+}
+```
+
+## Output
+
+```json
+{
+    "url": "https://example.com/product/1",
+    "title": "Product Name",
+    "description": "Product description",
+    "scrapedAt": "2025-01-15T10:30:00.000Z"
+}
+```
+
+## Pattern
+
+1. Parse sitemap URLs
+2. Filter by regex pattern
+3. Scrape each URL with Playwright
+4. Save to dataset
