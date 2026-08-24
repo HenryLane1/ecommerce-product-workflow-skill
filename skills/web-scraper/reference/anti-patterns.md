@@ -1,1 +1,136 @@
-IyBBbnRpLVBhdHRlcm5zIHRvIEF2b2lkCgpDb21tb24gbWlzdGFrZXMgYW5kIGhvdyB0byBmaXggdGhlbS4KCiMjIElnbm9yaW5nIFNpdGVtYXBzCgpgYGBqYXZhc2NyaXB0Ci8vIEJBRDogQ3Jhd2xpbmcgd2hlbiBzaXRlbWFwIGV4aXN0cwpjb25zdCBjcmF3bGVyID0gbmV3IENoZWVyaW9DcmF3bGVyKHsKICAgIGFzeW5jIHJlcXVlc3RIYW5kbGVyKHsgZW5xdWV1ZUxpbmtzIH0pIHsKICAgICAgICBhd2FpdCBlbnF1ZXVlTGlua3MoKTsgLy8gU2xvdyEKICAgIH0sCn0pOwpgYGAKCmBgYGphdmFzY3JpcHQKLy8gR09PRDogVXNlIHNpdGVtYXAKY29uc3Qgcm9ib3RzID0gYXdhaXQgUm9ib3RzRmlsZS5maW5kKHVybCk7CmNvbnN0IHVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CmF3YWl0IGNyYXdsZXIuYWRkUmVxdWVzdHModXJscyk7IC8vIEZhc3QhCmBgYAoKIyMgU2NyYXBpbmcgRE9NIFdoZW4gVHJhZmZpYyBDYXB0dXJlIEZvdW5kIHRoZSBBUEkKCmBgYAovLyBCQUQ6IFNjcmFwaW5nIEhUTUwgd2hlbiB0cmFmZmljIGNhcHR1cmUgcmV2ZWFsZWQgYW4gQVBJCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zbmFwc2hvdCgpICAgIOKGkiBQYXJzaW5nIGFjY2Vzc2liaWxpdHkgdHJlZSBmb3IgZGF0YQpgYGAKCmBgYGphdmFzY3JpcHQKLy8gR09PRDogVXNlIHRoZSBBUEkgZGlzY292ZXJlZCB2aWEgcHJveHkgdHJhZmZpYyBjYXB0dXJlCmNvbnN0IGRhdGEgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICB1cmw6ICdodHRwczovL2FwaS5zaG9wLmNvbS9wcm9kdWN0cy8xMjMnLCAgLy8gRm91bmQgdmlhIHByb3h5X2xpc3RfdHJhZmZpYygpCiAgICByZXNwb25zZVR5cGU6ICdqc29uJywKfSk7CmBgYAoKIyMgVXNpbmcgQXJiaXRyYXJ5IFdhaXRzCgpgYGAKLy8gQkFEOiBTbGVlcGluZyB3aXRob3V0IGFudGktZGV0ZWN0aW9uCi8vIChubyBtaWNyby1tb3ZlbWVudHMsIHRyaWdnZXJzIGlkbGUgZGV0ZWN0aW9uKQpzbGVlcCg1MDAwKQpgYGAKCmBgYAovLyBHT09EOiBVc2UgaHVtYW5pemVyX2lkbGUgKGluY2x1ZGVzIG1pY3JvLWppdHRlciBhbmQgbWljcm8tc2Nyb2xscykKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCA1MDAwKQpgYGAKCiMjIE5vdCBVc2luZyBgYXBpZnkgY3JlYXRlYAoKYGBgamF2YXNjcmlwdAovLyBCQUQ6IE1hbnVhbCBzZXR1cApta2RpciBteS1hY3RvciAmJiBjZCBteS1hY3RvcgpucG0gaW5pdCAteQovLyBNaXNzaW5nIEVTTGludCwgVHlwZVNjcmlwdCwgcHJvcGVyIHN0cnVjdHVyZQpgYGAKCmBgYGJhc2gKIyBHT09EOiBVc2UgQ0xJCmFwaWZ5IGNyZWF0ZSBteS1hY3RvciAtLXRlbXBsYXRlIHByb2plY3RfY2hlZXJpb19jcmF3bGVyX3RzCmBgYAoKIyMgVXNpbmcgcHJveHlfc2V0X2ZpbmdlcnByaW50X3Nwb29mIGZvciBDaHJvbWUgQnJvd3NlciBTZXNzaW9ucwoKYGBgCi8vIEJBRDogVExTIHNwb29maW5nIGZvciBDaHJvbWUgKENocm9tZSBhbHJlYWR5IGhhcyBhIHJlYWwgVExTIGZpbmdlcnByaW50KQpwcm94eV9zZXRfZmluZ2VycHJpbnRfc3Bvb2YocHJlc2V0OiAiY2hyb21lXzEzNiIpCmludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2goImh0dHBzOi8vc2l0ZS5jb20iLCBzdGVhbHRoTW9kZTogdHJ1ZSkKYGBgCgpgYGAKLy8gR09PRDogU3RlYWx0aCBtb2RlIGlzIHN1ZmZpY2llbnQgZm9yIENocm9tZSBicm93c2VyIHNlc3Npb25zCmludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2goImh0dHBzOi8vc2l0ZS5jb20iLCBzdGVhbHRoTW9kZTogdHJ1ZSkKLy8gVExTIHNwb29maW5nIGlzIG9ubHkgZm9yIEhUVFAtb25seSBjbGllbnRzIChnb3RTY3JhcGluZywgY3VybCwgZmV0Y2gpCmBgYAoKIyMgVXNpbmcgaW50ZXJjZXB0b3JfY2hyb21lX25hdmlnYXRlIEluc3RlYWQgb2YgRGV2VG9vbHMgTmF2aWdhdGUKCmBgYAovLyBCQUQ6IExvc2VzIERldlRvb2xzIHNlc3Npb24KaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2F0dGFjaCh0YXJnZXRfaWQpCmludGVyY2VwdG9yX2Nocm9tZV9uYXZpZ2F0ZSgiaHR0cHM6Ly9zaXRlLmNvbS9wYWdlMiIpICAgIC8vIERldlRvb2xzIGRldGFjaGVkIQpgYGAKCmBgYAovLyBHT09EOiBQcmVzZXJ2ZXMgRGV2VG9vbHMgYXR0YWNobWVudAppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfYXR0YWNoKHRhcmdldF9pZCkKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX25hdmlnYXRlKCJodHRwczovL3NpdGUuY29tL3BhZ2UyIikgICAvLyBEZXZUb29scyBzdGlsbCBhdHRhY2hlZApgYGAKCiMjIExhdW5jaGluZyBDaHJvbWUgV2l0aG91dCBTdGVhbHRoIE1vZGUgb24gUHJvdGVjdGVkIFNpdGVzCgpgYGAKLy8gQkFEOiBObyBzdGVhbHRoIG1vZGUg4oCUIGJvdCBkZXRlY3Rpb24gd2lsbCBmbGFnIHRoaXMKaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCgiaHR0cHM6Ly9wcm90ZWN0ZWQtc2l0ZS5jb20iKQpgYGAKCmBgYAovLyBHT09EOiBBbHdheXMgdXNlIHN0ZWFsdGggbW9kZSBvbiBwcm90ZWN0ZWQgc2l0ZXMKaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCgiaHR0cHM6Ly9wcm90ZWN0ZWQtc2l0ZS5jb20iLCBzdGVhbHRoTW9kZTogdHJ1ZSkKYGBgCgojIyBObyBFcnJvciBIYW5kbGluZwoKYGBgamF2YXNjcmlwdAovLyBCQUQ6IENyYXNoZXMgb24gZXJyb3IKY29uc3QgcHJpY2UgPSBhd2FpdCBwYWdlLiRldmFsKCcucHJpY2UnLCBlbCA9PiBlbC50ZXh0Q29udGVudCk7CmBgYAoKYGBgamF2YXNjcmlwdAovLyBHT09EOiBHcmFjZWZ1bCBoYW5kbGluZwp0cnkgewogICAgY29uc3QgcHJpY2UgPSBhd2FpdCBwYWdlLiRldmFsKCcucHJpY2UnLCBlbCA9PiBlbC50ZXh0Q29udGVudCk7Cn0gY2F0Y2ggKGVycm9yKSB7CiAgICBsb2cud2FybmluZygnUHJpY2Ugbm90IGZvdW5kJyk7CiAgICByZXR1cm4gbnVsbDsKfQpgYGAKCiMjIE5vdCBDbGVhcmluZyBUcmFmZmljIEJlZm9yZSBBY3Rpb25zCgpgYGAKLy8gQkFEOiBOb2lzeSB0cmFmZmljIGZyb20gcGFnZSBsb2FkIG1peGVkIHdpdGggYWN0aW9uIHRyYWZmaWMKaHVtYW5pemVyX2NsaWNrKHRhcmdldF9pZCwgIi5uZXh0LXBhZ2UiKQpwcm94eV9saXN0X3RyYWZmaWMoKSAgICAvLyBTaG93cyBldmVyeXRoaW5nIHNpbmNlIHBhZ2UgbG9hZCDigJQgaGFyZCB0byBmaW5kIHRoZSByZWxldmFudCBBUEkgY2FsbApgYGAKCmBgYAovLyBHT09EOiBDbGVhciB0cmFmZmljIGJlZm9yZSBhY3Rpb24gdG8gaXNvbGF0ZSBBUEkgY2FsbHMKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIubmV4dC1wYWdlIikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKQpwcm94eV9saXN0X3RyYWZmaWMoKSAgICAvLyBPbmx5IHNob3dzIHRyYWZmaWMgdHJpZ2dlcmVkIGJ5IHRoZSBjbGljawpgYGAK
+# Anti-Patterns to Avoid
+
+Common mistakes and how to fix them.
+
+## Ignoring Sitemaps
+
+```javascript
+// BAD: Crawling when sitemap exists
+const crawler = new CheerioCrawler({
+    async requestHandler({ enqueueLinks }) {
+        await enqueueLinks(); // Slow!
+    },
+});
+```
+
+```javascript
+// GOOD: Use sitemap
+const robots = await RobotsFile.find(url);
+const urls = await robots.parseUrlsFromSitemaps();
+await crawler.addRequests(urls); // Fast!
+```
+
+## Scraping DOM When Traffic Capture Found the API
+
+```
+// BAD: Scraping HTML when traffic capture revealed an API
+interceptor_chrome_devtools_snapshot()    → Parsing accessibility tree for data
+```
+
+```javascript
+// GOOD: Use the API discovered via proxy traffic capture
+const data = await gotScraping({
+    url: 'https://api.shop.com/products/123',  // Found via proxy_list_traffic()
+    responseType: 'json',
+});
+```
+
+## Using Arbitrary Waits
+
+```
+// BAD: Sleeping without anti-detection
+// (no micro-movements, triggers idle detection)
+sleep(5000)
+```
+
+```
+// GOOD: Use humanizer_idle (includes micro-jitter and micro-scrolls)
+humanizer_idle(target_id, 5000)
+```
+
+## Not Using `apify create`
+
+```javascript
+// BAD: Manual setup
+mkdir my-actor && cd my-actor
+npm init -y
+// Missing ESLint, TypeScript, proper structure
+```
+
+```bash
+# GOOD: Use CLI
+apify create my-actor --template project_cheerio_crawler_ts
+```
+
+## Using proxy_set_fingerprint_spoof for Chrome Browser Sessions
+
+```
+// BAD: TLS spoofing for Chrome (Chrome already has a real TLS fingerprint)
+proxy_set_fingerprint_spoof(preset: "chrome_136")
+interceptor_chrome_launch("https://site.com", stealthMode: true)
+```
+
+```
+// GOOD: Stealth mode is sufficient for Chrome browser sessions
+interceptor_chrome_launch("https://site.com", stealthMode: true)
+// TLS spoofing is only for HTTP-only clients (gotScraping, curl, fetch)
+```
+
+## Using interceptor_chrome_navigate Instead of DevTools Navigate
+
+```
+// BAD: Loses DevTools session
+interceptor_chrome_devtools_attach(target_id)
+interceptor_chrome_navigate("https://site.com/page2")    // DevTools detached!
+```
+
+```
+// GOOD: Preserves DevTools attachment
+interceptor_chrome_devtools_attach(target_id)
+interceptor_chrome_devtools_navigate("https://site.com/page2")   // DevTools still attached
+```
+
+## Launching Chrome Without Stealth Mode on Protected Sites
+
+```
+// BAD: No stealth mode — bot detection will flag this
+interceptor_chrome_launch("https://protected-site.com")
+```
+
+```
+// GOOD: Always use stealth mode on protected sites
+interceptor_chrome_launch("https://protected-site.com", stealthMode: true)
+```
+
+## No Error Handling
+
+```javascript
+// BAD: Crashes on error
+const price = await page.$eval('.price', el => el.textContent);
+```
+
+```javascript
+// GOOD: Graceful handling
+try {
+    const price = await page.$eval('.price', el => el.textContent);
+} catch (error) {
+    log.warning('Price not found');
+    return null;
+}
+```
+
+## Not Clearing Traffic Before Actions
+
+```
+// BAD: Noisy traffic from page load mixed with action traffic
+humanizer_click(target_id, ".next-page")
+proxy_list_traffic()    // Shows everything since page load — hard to find the relevant API call
+```
+
+```
+// GOOD: Clear traffic before action to isolate API calls
+proxy_clear_traffic()
+humanizer_click(target_id, ".next-page")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic()    // Only shows traffic triggered by the click
+```
