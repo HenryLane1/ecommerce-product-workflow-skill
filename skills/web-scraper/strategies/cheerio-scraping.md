@@ -1,1 +1,257 @@
-IyBDaGVlcmlvIChIVFRQLU9ubHkpIFNjcmFwaW5nCgojIyBPdmVydmlldwoKQ2hlZXJpbyBpcyBhIGZhc3QsIGxpZ2h0d2VpZ2h0IGxpYnJhcnkgZm9yIHBhcnNpbmcgSFRNTCB1c2luZyBqUXVlcnktbGlrZSBzeW50YXguIEl0J3MgcGVyZmVjdCBmb3Igc3RhdGljIEhUTUwgc2l0ZXMgdGhhdCBkb24ndCByZXF1aXJlIEphdmFTY3JpcHQgcmVuZGVyaW5nLgoKIyMgV2hlbiB0byBVc2UgQ2hlZXJpbwoKIyMjIOKchSBVU0UgQ2hlZXJpbyB3aGVuOgotIFdlYnNpdGUgc2VydmVzIHN0YXRpYyBIVE1MIChzZXJ2ZXItc2lkZSByZW5kZXJlZCkKLSBObyBKYXZhU2NyaXB0IHJlbmRlcmluZyBuZWVkZWQKLSBTaW1wbGUgSFRNTCBzdHJ1Y3R1cmUKLSBIaWdoLXZvbHVtZSBzY3JhcGluZyAoNXggZmFzdGVyIHRoYW4gUGxheXdyaWdodCkKLSBMb3cgbWVtb3J5IHJlcXVpcmVtZW50cwotIEFQSSBkb2Vzbid0IGV4aXN0IGJ1dCBIVE1MIGlzIHNpbXBsZQoKIyMjIOKdjCBET04nVCB1c2UgQ2hlZXJpbyB3aGVuOgotIFNpdGUgcmVxdWlyZXMgSmF2YVNjcmlwdCAoUmVhY3QsIFZ1ZSwgQW5ndWxhcikKLSBDb250ZW50IGxvYWRzIGR5bmFtaWNhbGx5IHZpYSBBSkFYCi0gTmVlZCB0byBpbnRlcmFjdCB3aXRoIHBhZ2UgKGNsaWNrcywgZm9ybXMpCi0gTmVlZCB0byBleGVjdXRlIEphdmFTY3JpcHQKLSBTaW5nbGUtcGFnZSBhcHBsaWNhdGlvbiAoU1BBKQoKIyMgUXVpY2sgRXhhbXBsZQoKYGBgamF2YXNjcmlwdAppbXBvcnQgeyBDaGVlcmlvQ3Jhd2xlciwgRGF0YXNldCB9IGZyb20gJ2NyYXdsZWUnOwoKY29uc3QgY3Jhd2xlciA9IG5ldyBDaGVlciBpb0NyYXdsZXIoewogICAgYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyAkLCByZXF1ZXN0LCBsb2cgfSkgewogICAgICAgIGxvZy5pbmZvKGBTY3JhcGluZzogJHtyZXF1ZXN0LnVybH1gKTsKCiAgICAgICAgLy8gVXNlIGpRdWVyeS1saWtlIHNlbGVjdG9ycwogICAgICAgIGNvbnN0IHRpdGxlID0gJCgnaDEnKS50ZXh0KCkudHJpbSgpOwogICAgICAgIGNvbnN0IHByaWNlID0gJCgnLnByaWNlJykudGV4dCgpLnRyaW0oKTsKICAgICAgICBjb25zdCBkZXNjcmlwdGlvbiA9ICQoJy5kZXNjcmlwdGlvbicpLnRleHQoKS50cmltKCk7CgogICAgICAgIC8vIEV4dHJhY3QgbXVsdGlwbGUgaXRlbXMKICAgICAgICBjb25zdCBwcm9kdWN0cyA9IFtdOwogICAgICAgICQoJy5wcm9kdWN0JykuZWFjaCgoaW5kZXgsIGVsZW1lbnQpID0+IHsKICAgICAgICAgICAgcHJvZHVjdHMucHVzaCh7CiAgICAgICAgICAgICAgICBuYW1lOiAkKGVsZW1lbnQpLmZpbmQoJy5uYW1lJykudGV4dCgpLAogICAgICAgICAgICAgICAgcHJpY2U6ICQoZWxlbWVudCkuZmluZCgnLnByaWNlJykudGV4dCgpLAogICAgICAgICAgICB9KTsKICAgICAgICB9KTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YSh7CiAgICAgICAgICAgIHRpdGxlLAogICAgICAgICAgICBwcmljZSwKICAgICAgICAgICAgZGVzY3JpcHRpb24sCiAgICAgICAgICAgIHByb2R1Y3RzLAogICAgICAgIH0pOwogICAgfSwKfSk7Cgphd2FpdCBjcmF3bGVyLnJ1bihbJ2h0dHBzOi8vZXhhbXBsZS5jb20nXSk7CmBgYAoKIyMgalF1ZXJ5IFNlbGVjdG9ycwoKQ2hlZXJpbyB1c2VzIHRoZSBzYW1lIHNlbGVjdG9yIHN5bnRheCBhcyBqUXVlcnk6CgpgYGBqYXZhc2NyaXB0Ci8vIEJhc2ljIHNlbGVjdG9ycwokKCdoMScpICAgICAgICAgICAgICAgICAgICAgICAgICAvLyBUYWcKJCgnLmNsYXNzLW5hbWUnKSAgICAgICAgICAgICAgICAgLy8gQ2xhc3MKJCgnI2lkJykgICAgICAgICAgICAgICAgICAgICAgICAgLy8gSUQKJCgnZGl2LnByb2R1Y3QnKSAgICAgICAgICAgICAgICAgLy8gVGFnICsgY2xhc3MKJCgnYVtocmVmXScpICAgICAgICAgICAgICAgICAgICAgLy8gQXR0cmlidXRlIGV4aXN0cwokKCdhW2hyZWY9Imh0dHBzOi8vLi4uIl0nKSAgICAgICAvLyBBdHRyaWJ1dGUgdmFsdWUKCi8vIEhpZXJhcmNoeQokKCdkaXYgPiBwJykgICAgICAgICAgICAgICAgICAgICAvLyBEaXJlY3QgY2hpbGQKJCgnZGl2IHAnKSAgICAgICAgICAgICAgICAgICAgICAgLy8gRGVzY2VuZGFudAokKCdkaXYgKyBwJykgICAgICAgICAgICAgICAgICAgICAvLyBOZXh0IHNpYmxpbmcKCi8vIFRyYXZlcnNhbAokKCdoMScpLnBhcmVudCgpICAgICAgICAgICAgICAgICAvLyBQYXJlbnQgZWxlbWVudAokKCdkaXYnKS5maW5kKCcucHJpY2UnKSAgICAgICAgICAvLyBGaW5kIGRlc2NlbmRhbnQKJCgnbGknKS5maXJzdCgpICAgICAgICAgICAgICAgICAgLy8gRmlyc3QgZWxlbWVudAokKCdsaScpLmxhc3QoKSAgICAgICAgICAgICAgICAgICAvLyBMYXN0IGVsZW1lbnQKJCgnbGknKS5lcSgyKSAgICAgICAgICAgICAgICAgICAgLy8gRWxlbWVudCBhdCBpbmRleAoKLy8gRXh0cmFjdGlvbgokKCdoMScpLnRleHQoKSAgICAgICAgICAgICAgICAgICAvLyBUZXh0IGNvbnRlbnQKJCgnaW1nJykuYXR0cignc3JjJykgICAgICAgICAgICAgLy8gQXR0cmlidXRlIHZhbHVlCiQoJ2RpdicpLmh0bWwoKSAgICAgICAgICAgICAgICAgIC8vIElubmVyIEhUTUwKYGBgCgojIyBDb21tb24gUGF0dGVybnMKCiMjIyBQYXR0ZXJuIDE6IEV4dHJhY3QgU2luZ2xlIFZhbHVlcwoKYGBgamF2YXNjcmlwdAphc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QgfSkgewogICAgY29uc3QgZGF0YSA9IHsKICAgICAgICB0aXRsZTogJCgnaDEudGl0bGUnKS50ZXh0KCkudHJpbSgpLAogICAgICAgIHByaWNlOiAkKCcucHJpY2UnKS5maXJzdCgpLnRleHQoKS50cmltKCksCiAgICAgICAgaW1hZ2U6ICQoJ2ltZy5tYWluLWltYWdlJykuYXR0cignc3JjJyksCiAgICAgICAgZGVzY3JpcHRpb246ICQoJy5kZXNjcmlwdGlvbicpLnRleHQoKS50cmltKCksCiAgICAgICAgcmF0aW5nOiAkKCdbZGF0YS1yYXRpbmddJykuYXR0cignZGF0YS1yYXRpbmcnKSwKICAgIH07CgogICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YShkYXRhKTsKfQpgYGAKCiMjIyBQYXR0ZXJuIDI6IEV4dHJhY3QgTGlzdHMKCmBgYGphdmFzY3JpcHQKYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyAkLCByZXF1ZXN0IH0pIHsKICAgIGNvbnN0IHByb2R1Y3RzID0gW107CgogICAgJCgnLnByb2R1Y3QtaXRlbScpLmVhY2goKGluZGV4LCBlbGVtZW50KSA9PiB7CiAgICAgICAgY29uc3QgJGVsID0gJChlbGVtZW50KTsKCiAgICAgICAgcHJvZHVjdHMucHVzaCh7CiAgICAgICAgICAgIG5hbWU6ICRlbC5maW5kKCcubmFtZScpLnRleHQoKS50cmltKCksCiAgICAgICAgICAgIHByaWNlOiAkZWwuZmluZCgnLnByaWNlJykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgdXJsOiAkZWwuZmluZCgnYScpLmF0dHIoJ2hyZWYnKSwKICAgICAgICAgICAgaW1hZ2U6ICRlbC5maW5kKCdpbWcnKS5hdHRyKCdzcmMnKSwKICAgICAgICB9KTsKICAgIH0pOwoKICAgIGF3YWl0IERhdGFzZXQucHVzaERhdGEocHJvZHVjdHMpOwp9CmBgYAoKIyMjIFBhdHRlcm4gMzogRm9sbG93IExpbmtzIChDcmF3bGluZykKCmBgYGphdmFzY3JpcHQKY29uc3QgY3Jhd2xlciA9IG5ldyBDaGVlcmlvQ3Jhd2xlcih7CiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGVucXVldWVMaW5rcyB9KSB7CiAgICAgICAgLy8gRXh0cmFjdCBkYXRhIGZyb20gY3VycmVudCBwYWdlCiAgICAgICAgY29uc3QgcHJvZHVjdHMgPSBbXTsKICAgICAgICAkKCcucHJvZHVjdCcpLmVhY2goKGksIGVsKSA9PiB7CiAgICAgICAgICAgIHByb2R1Y3RzLnB1c2goewogICAgICAgICAgICAgICAgbmFtZTogJChlbCkuZmluZCgnLm5hbWUnKS50ZXh0KCksCiAgICAgICAgICAgICAgICBwcmljZTogJChlbCkuZmluZCgnLnByaWNlJykudGV4dCgpLAogICAgICAgICAgICB9KTsKICAgICAgICB9KTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YShwcm9kdWN0cyk7CgogICAgICAgIC8vIEVucXVldWUgbGlua3MgdG8gb3RoZXIgcGFnZXMKICAgICAgICBhd2FpdCBlbnF1ZXVlTGlua3MoewogICAgICAgICAgICBzZWxlY3RvcjogJ2EucHJvZHVjdC1saW5rJywKICAgICAgICAgICAgc3RyYXRlZ3k6ICdzYW1lLWRvbWFpbicsCiAgICAgICAgfSk7CiAgICB9LAogICAgbWF4UmVxdWVzdHNQZXJDcmF3bDogMTAwLAp9KTsKCmF3YWl0IGNyYXdsZXIucnVuKFsnaHR0cHM6Ly9leGFtcGxlLmNvbSddKTsKYGBgCgojIyBQZXJmb3JtYW5jZSBDb21wYXJpc29uCgp8IE1ldHJpYyB8IENoZWVyaW8gfCBQbGF5d3JpZ2h0IHwgRGlmZmVyZW5jZSB8CnwtLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tfAp8ICoqU3BlZWQqKiB8IFZlcnkgZmFzdCB8IFNsb3cgfCA1LTEweCBmYXN0ZXIgfAp8ICoqTWVtb3J5KiogfCBMb3cgKH41MCBNQikgfCBIaWdoICh+NTAwIE1CKSB8IDEweCBsZXNzIHwKfCAqKkNQVSoqIHwgTG93IHwgSGlnaCB8IDUtMTB4IGxlc3MgfAp8ICoqQ29uY3VycmVuY3kqKiB8IEhpZ2ggKDUwKykgfCBMb3cgKDUtMTApIHwgQ2FuIHJ1biBtb3JlIGluIHBhcmFsbGVsIHwKCioqV2hlbiBzY3JhcGluZyAxMDAwIHBhZ2VzKio6Ci0gQ2hlZXJpbzogNS0xMCBtaW51dGVzCi0gUGxheXdyaWdodDogMzAtNjAgbWludXRlcwoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86CgotICoqVXNlIGZvciBzdGF0aWMgSFRNTCBzaXRlcyoqCi0gKipIaWdoIGNvbmN1cnJlbmN5KiogKDMwLTUwIHBhcmFsbGVsIHJlcXVlc3RzKQotICoqQ2hhaW4gc2VsZWN0b3JzKiogZm9yIGNvbXBsZXggcXVlcmllcwotICoqVHJpbSB0ZXh0IGNvbnRlbnQqKiAoYC50ZXh0KCkudHJpbSgpYCkKLSAqKkhhbmRsZSBtaXNzaW5nIGVsZW1lbnRzKiogKGA/LmApCi0gKipDb21iaW5lIHdpdGggc2l0ZW1hcHMqKiBmb3IgVVJMIGRpc2NvdmVyeQoKIyMjIOKdjCBET04nVDoKCi0gKipVc2UgZm9yIEphdmFTY3JpcHQtaGVhdnkgc2l0ZXMqKiAodXNlIFBsYXl3cmlnaHQpCi0gKipFeHBlY3QgSmF2YVNjcmlwdCBleGVjdXRpb24qKgotICoqRm9yZ2V0IHRvIGhhbmRsZSBtaXNzaW5nIGVsZW1lbnRzKioKLSAqKlNraXAgcmF0ZSBsaW1pdGluZyoqIChyZXNwZWN0IHJvYm90cy50eHQpCgojIyBDb21wbGV0ZSBFeGFtcGxlCgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IENoZWVyaW9DcmF3bGVyLCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7Cgpjb25zdCBjcmF3bGVyID0gbmV3IENoZWVyaW9DcmF3bGVyKHsKICAgIG1heENvbmN1cnJlbmN5OiAzMCwgLy8gSGlnaCBjb25jdXJyZW5jeSBmb3IgQ2hlZXJpbwogICAgbWF4UmVxdWVzdHNQZXJNaW51dGU6IDEyMCwKCiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgbG9nLmluZm8oYFNjcmFwaW5nOiAke3JlcXVlc3QudXJsfWApOwoKICAgICAgICB0cnkgewogICAgICAgICAgICBjb25zdCBkYXRhID0gewogICAgICAgICAgICAgICAgdXJsOiByZXF1ZXN0LnVybCwKICAgICAgICAgICAgICAgIHRpdGxlOiAkKCdoMScpLnRleHQoKS50cmltKCksCiAgICAgICAgICAgICAgICBwcmljZTogJCgnLnByaWNlJykuZmlyc3QoKS50ZXh0KCkudHJpbSgpLAogICAgICAgICAgICAgICAgaW1hZ2VzOiAkKCdpbWcucHJvZHVjdC1pbWFnZScpCiAgICAgICAgICAgICAgICAgICAgLm1hcCgoaSwgZWwpID0+ICQoZWwpLmF0dHIoJ3NyYycpKQogICAgICAgICAgICAgICAgICAgIC5nZXQoKSwKICAgICAgICAgICAgICAgIHNwZWNzOiB7fSwKICAgICAgICAgICAgfTsKCiAgICAgICAgICAgIC8vIEV4dHJhY3Qgc3BlY2lmaWNhdGlvbnMKICAgICAgICAgICAgJCgnLnNwZWMtcm93JykuZWFjaCgoaSwgZWwpID0+IHsKICAgICAgICAgICAgICAgIGNvbnN0IGtleSA9ICQoZWwpLmZpbmQoJy5zcGVjLW5hbWUnKS50ZXh0KCkudHJpbSgpOwogICAgICAgICAgICAgICAgY29uc3QgdmFsdWUgPSAkKGVsKS5maW5kKCcuc3BlYy12YWx1ZScpLnRleHQoKS50cmltKCk7CiAgICAgICAgICAgICAgICBkYXRhLnNwZWNzW2tleV0gPSB2YWx1ZTsKICAgICAgICAgICAgfSk7CgogICAgICAgICAgICBhd2FpdCBEYXRhc2V0LnB1c2hEYXRhKGRhdGEpOwoKICAgICAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICAgICBsb2cuZXJyb3IoYEVycm9yIHNjcmFwaW5nICR7cmVxdWVzdC51cmx9OiAke2Vycm9yLm1lc3NhZ2V9YCk7CiAgICAgICAgfQogICAgfSwKCiAgICBmYWlsZWRSZXF1ZXN0SGFuZGxlcih7IHJlcXVlc3QgfSwgeyBsb2cgfSkgewogICAgICAgIGxvZy5lcnJvcihgUmVxdWVzdCBmYWlsZWQ6ICR7cmVxdWVzdC51cmx9YCk7CiAgICB9LAp9KTsKCmF3YWl0IGNyYXdsZXIucnVuKFsnaHR0cHM6Ly9leGFtcGxlLmNvbSddKTsKYGBgCgojIyBXaGVuIHRvIFVzZSBQbGF5d3JpZ2h0IEluc3RlYWQKClN3aXRjaCB0byBQbGF5d3JpZ2h0IGlmIHlvdSBzZWU6Ci0gRW1wdHkgY29udGVudCAoSmF2YVNjcmlwdC1yZW5kZXJlZCkKLSBJbmZpbml0ZSBzY3JvbGwKLSAiTG9hZCBNb3JlIiBidXR0b25zCi0gQ29udGVudCBhcHBlYXJzIGFmdGVyIGRlbGF5Ci0gUmVhY3QvVnVlL0FuZ3VsYXIgaW5kaWNhdG9ycwoKIyMgUmVsYXRlZCBSZXNvdXJjZXMKCi0gKipGb3IgSmF2YVNjcmlwdCBzaXRlcyoqOiBTZWUgYGRvbS1zY3JhcGluZy5tZGAKLSAqKkZvciBBUElzKio6IFNlZSBgYXBpLWRpc2NvdmVyeS5tZGAKLSAqKlRyYWZmaWMgaW50ZXJjZXB0aW9uKio6IFNlZSBgdHJhZmZpYy1pbnRlcmNlcHRpb24ubWRgCgojIyBTdW1tYXJ5CgoqKkNoZWVyaW8gaXMgNS0xMHggZmFzdGVyIHRoYW4gUGxheXdyaWdodCoqIGZvciBzdGF0aWMgSFRNTCEKCioqS2V5IHRha2Vhd2F5cyoqOgoxLiBVc2UgZm9yIHN0YXRpYyBIVE1MIHNpdGVzIG9ubHkKMi4gNS0xMHggZmFzdGVyIHRoYW4gUGxheXdyaWdodAozLiBIaWdoIGNvbmN1cnJlbmN5IHBvc3NpYmxlICgzMC01MCBwYXJhbGxlbCkKNC4galF1ZXJ5LWxpa2Ugc3ludGF4IChlYXN5IHRvIHVzZSkKNS4gRmFsbHMgYmFjayB0byBQbGF5d3JpZ2h0IGZvciBKYXZhU2NyaXB0IHNpdGVzCg==
+# Cheerio (HTTP-Only) Scraping
+
+## Overview
+
+Cheerio is a fast, lightweight library for parsing HTML using jQuery-like syntax. It's perfect for static HTML sites that don't require JavaScript rendering.
+
+## When to Use Cheerio
+
+### ✅ USE Cheerio when:
+- Website serves static HTML (server-side rendered)
+- No JavaScript rendering needed
+- Simple HTML structure
+- High-volume scraping (5x faster than Playwright)
+- Low memory requirements
+- API doesn't exist but HTML is simple
+
+### ❌ DON'T use Cheerio when:
+- Site requires JavaScript (React, Vue, Angular)
+- Content loads dynamically via AJAX
+- Need to interact with page (clicks, forms)
+- Need to execute JavaScript
+- Single-page application (SPA)
+
+## Quick Example
+
+```javascript
+import { CheerioCrawler, Dataset } from 'crawlee';
+
+const crawler = new Cheer ioCrawler({
+    async requestHandler({ $, request, log }) {
+        log.info(`Scraping: ${request.url}`);
+
+        // Use jQuery-like selectors
+        const title = $('h1').text().trim();
+        const price = $('.price').text().trim();
+        const description = $('.description').text().trim();
+
+        // Extract multiple items
+        const products = [];
+        $('.product').each((index, element) => {
+            products.push({
+                name: $(element).find('.name').text(),
+                price: $(element).find('.price').text(),
+            });
+        });
+
+        await Dataset.pushData({
+            title,
+            price,
+            description,
+            products,
+        });
+    },
+});
+
+await crawler.run(['https://example.com']);
+```
+
+## jQuery Selectors
+
+Cheerio uses the same selector syntax as jQuery:
+
+```javascript
+// Basic selectors
+$('h1')                          // Tag
+$('.class-name')                 // Class
+$('#id')                         // ID
+$('div.product')                 // Tag + class
+$('a[href]')                     // Attribute exists
+$('a[href="https://..."]')       // Attribute value
+
+// Hierarchy
+$('div > p')                     // Direct child
+$('div p')                       // Descendant
+$('div + p')                     // Next sibling
+
+// Traversal
+$('h1').parent()                 // Parent element
+$('div').find('.price')          // Find descendant
+$('li').first()                  // First element
+$('li').last()                   // Last element
+$('li').eq(2)                    // Element at index
+
+// Extraction
+$('h1').text()                   // Text content
+$('img').attr('src')             // Attribute value
+$('div').html()                  // Inner HTML
+```
+
+## Common Patterns
+
+### Pattern 1: Extract Single Values
+
+```javascript
+async requestHandler({ $, request }) {
+    const data = {
+        title: $('h1.title').text().trim(),
+        price: $('.price').first().text().trim(),
+        image: $('img.main-image').attr('src'),
+        description: $('.description').text().trim(),
+        rating: $('[data-rating]').attr('data-rating'),
+    };
+
+    await Dataset.pushData(data);
+}
+```
+
+### Pattern 2: Extract Lists
+
+```javascript
+async requestHandler({ $, request }) {
+    const products = [];
+
+    $('.product-item').each((index, element) => {
+        const $el = $(element);
+
+        products.push({
+            name: $el.find('.name').text().trim(),
+            price: $el.find('.price').text().trim(),
+            url: $el.find('a').attr('href'),
+            image: $el.find('img').attr('src'),
+        });
+    });
+
+    await Dataset.pushData(products);
+}
+```
+
+### Pattern 3: Follow Links (Crawling)
+
+```javascript
+const crawler = new CheerioCrawler({
+    async requestHandler({ $, request, enqueueLinks }) {
+        // Extract data from current page
+        const products = [];
+        $('.product').each((i, el) => {
+            products.push({
+                name: $(el).find('.name').text(),
+                price: $(el).find('.price').text(),
+            });
+        });
+
+        await Dataset.pushData(products);
+
+        // Enqueue links to other pages
+        await enqueueLinks({
+            selector: 'a.product-link',
+            strategy: 'same-domain',
+        });
+    },
+    maxRequestsPerCrawl: 100,
+});
+
+await crawler.run(['https://example.com']);
+```
+
+## Performance Comparison
+
+| Metric | Cheerio | Playwright | Difference |
+|--------|---------|-----------|------------|
+| **Speed** | Very fast | Slow | 5-10x faster |
+| **Memory** | Low (~50 MB) | High (~500 MB) | 10x less |
+| **CPU** | Low | High | 5-10x less |
+| **Concurrency** | High (50+) | Low (5-10) | Can run more in parallel |
+
+**When scraping 1000 pages**:
+- Cheerio: 5-10 minutes
+- Playwright: 30-60 minutes
+
+## Best Practices
+
+### ✅ DO:
+
+- **Use for static HTML sites**
+- **High concurrency** (30-50 parallel requests)
+- **Chain selectors** for complex queries
+- **Trim text content** (`.text().trim()`)
+- **Handle missing elements** (`?.`)
+- **Combine with sitemaps** for URL discovery
+
+### ❌ DON'T:
+
+- **Use for JavaScript-heavy sites** (use Playwright)
+- **Expect JavaScript execution**
+- **Forget to handle missing elements**
+- **Skip rate limiting** (respect robots.txt)
+
+## Complete Example
+
+```javascript
+import { CheerioCrawler, Dataset } from 'crawlee';
+
+const crawler = new CheerioCrawler({
+    maxConcurrency: 30, // High concurrency for Cheerio
+    maxRequestsPerMinute: 120,
+
+    async requestHandler({ $, request, log }) {
+        log.info(`Scraping: ${request.url}`);
+
+        try {
+            const data = {
+                url: request.url,
+                title: $('h1').text().trim(),
+                price: $('.price').first().text().trim(),
+                images: $('img.product-image')
+                    .map((i, el) => $(el).attr('src'))
+                    .get(),
+                specs: {},
+            };
+
+            // Extract specifications
+            $('.spec-row').each((i, el) => {
+                const key = $(el).find('.spec-name').text().trim();
+                const value = $(el).find('.spec-value').text().trim();
+                data.specs[key] = value;
+            });
+
+            await Dataset.pushData(data);
+
+        } catch (error) {
+            log.error(`Error scraping ${request.url}: ${error.message}`);
+        }
+    },
+
+    failedRequestHandler({ request }, { log }) {
+        log.error(`Request failed: ${request.url}`);
+    },
+});
+
+await crawler.run(['https://example.com']);
+```
+
+## When to Use Playwright Instead
+
+Switch to Playwright if you see:
+- Empty content (JavaScript-rendered)
+- Infinite scroll
+- "Load More" buttons
+- Content appears after delay
+- React/Vue/Angular indicators
+
+## Related Resources
+
+- **For JavaScript sites**: See `dom-scraping.md`
+- **For APIs**: See `api-discovery.md`
+- **Traffic interception**: See `traffic-interception.md`
+
+## Summary
+
+**Cheerio is 5-10x faster than Playwright** for static HTML!
+
+**Key takeaways**:
+1. Use for static HTML sites only
+2. 5-10x faster than Playwright
+3. High concurrency possible (30-50 parallel)
+4. jQuery-like syntax (easy to use)
+5. Falls back to Playwright for JavaScript sites
