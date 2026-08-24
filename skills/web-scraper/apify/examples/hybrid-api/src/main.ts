@@ -1,1 +1,115 @@
-LyoqCiAqIEh5YnJpZCBTaXRlbWFwICsgQVBJIFNjcmFwZXIKICoKICogRGVtb25zdHJhdGVzOgogKiAtIFNpdGVtYXAgVVJMIGRpc2NvdmVyeSAoZmFzdCkKICogLSBJRCBleHRyYWN0aW9uIGZyb20gVVJMcwogKiAtIEFQSS1iYXNlZCBkYXRhIGZldGNoaW5nIChyZWxpYWJsZSkKICogLSBPcHRpbWFsIGh5YnJpZCBhcHByb2FjaAogKi8KCmltcG9ydCB7IEFjdG9yIH0gZnJvbSAnYXBpZnknOwppbXBvcnQgeyBEYXRhc2V0LCBSb2JvdHNGaWxlIH0gZnJvbSAnY3Jhd2xlZSc7CmltcG9ydCB7IGdvdFNjcmFwaW5nIH0gZnJvbSAnZ290LXNjcmFwaW5nJzsKCi8vIElucHV0IGludGVyZmFjZQppbnRlcmZhY2UgSW5wdXQgewogICAgc2l0ZW1hcFVybDogc3RyaW5nOwogICAgYXBpQmFzZVVybDogc3RyaW5nOwogICAgaWRQYXR0ZXJuPzogc3RyaW5nOwogICAgbWF4SXRlbXM/OiBudW1iZXI7Cn0KCi8vIE91dHB1dCBpbnRlcmZhY2UKaW50ZXJmYWNlIFByb2R1Y3REYXRhIHsKICAgIGlkOiBzdHJpbmc7CiAgICB1cmw6IHN0cmluZzsKICAgIG5hbWU6IHN0cmluZzsKICAgIHByaWNlPzogbnVtYmVyOwogICAgaW5TdG9jaz86IGJvb2xlYW47CiAgICBzY3JhcGVkQXQ6IHN0cmluZzsKfQoKYXdhaXQgQWN0b3IubWFpbihhc3luYyAoKSA9PiB7CiAgICAvLyBHZXQgdHlwZWQgaW5wdXQKICAgIGNvbnN0IGlucHV0ID0gYXdhaXQgQWN0b3IuZ2V0SW5wdXQ8SW5wdXQ+KCk7CgogICAgaWYgKCFpbnB1dD8uc2l0ZW1hcFVybCB8fCAhaW5wdXQ/LmFwaUJhc2VVcmwpIHsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ3NpdGVtYXBVcmwgYW5kIGFwaUJhc2VVcmwgYXJlIHJlcXVpcmVkJyk7CiAgICB9CgogICAgY29uc29sZS5sb2coJ0lucHV0OicsIGlucHV0KTsKCiAgICAvLyBTdGVwIDE6IFBhcnNlIHNpdGVtYXAgdG8gZ2V0IFVSTHMKICAgIGNvbnNvbGUubG9nKGBGZXRjaGluZyBzaXRlbWFwOiAke2lucHV0LnNpdGVtYXBVcmx9YCk7CiAgICBjb25zdCByb2JvdHMgPSBhd2FpdCBSb2JvdHNGaWxlLmZpbmQoaW5wdXQuc2l0ZW1hcFVybCk7CiAgICBsZXQgdXJscyA9IGF3YWl0IHJvYm90cy5wYXJzZVVybHNGcm9tU2l0ZW1hcHMoKTsKCiAgICBjb25zb2xlLmxvZyhg4pyTIEZvdW5kICR7dXJscy5sZW5ndGh9IFVSTHMgaW4gc2l0ZW1hcGApOwoKICAgIC8vIFN0ZXAgMjogRXh0cmFjdCBJRHMgZnJvbSBVUkxzCiAgICBjb25zdCBpZFBhdHRlcm4gPSBuZXcgUmVnRXhwKGlucHV0LmlkUGF0dGVybiB8fCAnL3Byb2R1Y3RzLyhbXi9dKyknKTsKICAgIGNvbnN0IGlkczogc3RyaW5nW10gPSBbXTsKCiAgICBmb3IgKGNvbnN0IHVybCBvZiB1cmxzKSB7CiAgICAgICAgY29uc3QgbWF0Y2ggPSB1cmwubWF0Y2goaWRQYXR0ZXJuKTsKICAgICAgICBpZiAobWF0Y2ggJiYgbWF0Y2hbMV0pIHsKICAgICAgICAgICAgaWRzLnB1c2gobWF0Y2hbMV0pOwogICAgICAgIH0KICAgIH0KCiAgICBjb25zb2xlLmxvZyhg4pyTIEV4dHJhY3RlZCAke2lkcy5sZW5ndGh9IElEcyBmcm9tIFVSTHNgKTsKCiAgICAvLyBMaW1pdCBJRHMgaWYgbWF4SXRlbXMgc3BlY2lmaWVkCiAgICBjb25zdCBsaW1pdGVkSWRzID0gaW5wdXQubWF4SXRlbXMgPyBpZHMuc2xpY2UoMCwgaW5wdXQubWF4SXRlbXMpIDogaWRzOwogICAgY29uc29sZS5sb2coYFByb2Nlc3NpbmcgJHtsaW1pdGVkSWRzLmxlbmd0aH0gcHJvZHVjdHNgKTsKCiAgICAvLyBTdGVwIDM6IEZldGNoIGRhdGEgdmlhIEFQSQogICAgbGV0IHN1Y2Nlc3NDb3VudCA9IDA7CiAgICBsZXQgZXJyb3JDb3VudCA9IDA7CgogICAgZm9yIChjb25zdCBpZCBvZiBsaW1pdGVkSWRzKSB7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgY29uc3QgYXBpVXJsID0gYCR7aW5wdXQuYXBpQmFzZVVybH0vJHtpZH1gOwogICAgICAgICAgICBjb25zb2xlLmxvZyhgRmV0Y2hpbmc6ICR7YXBpVXJsfWApOwoKICAgICAgICAgICAgLy8gRmV0Y2ggZnJvbSBBUEkKICAgICAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICAgICAgICAgICAgICB1cmw6IGFwaVVybCwKICAgICAgICAgICAgICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAogICAgICAgICAgICAgICAgdGltZW91dDogewogICAgICAgICAgICAgICAgICAgIHJlcXVlc3Q6IDMwMDAwLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSk7CgogICAgICAgICAgICBjb25zdCBhcGlEYXRhID0gcmVzcG9uc2UuYm9keSBhcyBSZWNvcmQ8c3RyaW5nLCB1bmtub3duPjsKCiAgICAgICAgICAgIC8vIE1hcCBBUEkgcmVzcG9uc2UgdG8gb3V0cHV0IGZvcm1hdAogICAgICAgICAgICBjb25zdCBkYXRhOiBQcm9kdWN0RGF0YSA9IHsKICAgICAgICAgICAgICAgIGlkLAogICAgICAgICAgICAgICAgdXJsOiBgJHtpbnB1dC5zaXRlbWFwVXJsLnJlcGxhY2UoJy9zaXRlbWFwLnhtbCcsICcnKX0vcHJvZHVjdHMvJHtpZH1gLAogICAgICAgICAgICAgICAgbmFtZTogU3RyaW5nKGFwaURhdGEubmFtZSB8fCBhcGlEYXRhLnRpdGxlIHx8ICdVbmtub3duJyksCiAgICAgICAgICAgICAgICBwcmljZTogYXBpRGF0YS5wcmljZSA/IE51bWJlcihhcGlEYXRhLnByaWNlKSA6IHVuZGVmaW5lZCwKICAgICAgICAgICAgICAgIGluU3RvY2s6IGFwaURhdGEuaW5TdG9jayAhPT0gdW5kZWZpbmVkID8gQm9vbGVhbihhcGlEYXRhLmluU3RvY2spIDogdW5kZWZpbmVkLAogICAgICAgICAgICAgICAgc2NyYXBlZEF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksCiAgICAgICAgICAgIH07CgogICAgICAgICAgICAvLyBTYXZlIHRvIGRhdGFzZXQKICAgICAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YTxQcm9kdWN0RGF0YT4oZGF0YSk7CgogICAgICAgICAgICBzdWNjZXNzQ291bnQrKzsKICAgICAgICAgICAgY29uc29sZS5sb2coYOKckyBbJHtzdWNjZXNzQ291bnR9LyR7bGltaXRlZElkcy5sZW5ndGh9XSAke2RhdGEubmFtZX1gKTsKCiAgICAgICAgICAgIC8vIFJhdGUgbGltaXRpbmcKICAgICAgICAgICAgYXdhaXQgbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHNldFRpbWVvdXQocmVzb2x2ZSwgMTAwKSk7CiAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICAgICAgZXJyb3JDb3VudCsrOwogICAgICAgICAgICBjb25zb2xlLmVycm9yKGDinJcgRXJyb3IgZmV0Y2hpbmcgSUQgJHtpZH06ICR7KGVycm9yIGFzIEVycm9yKS5tZXNzYWdlfWApOwogICAgICAgIH0KICAgIH0KCiAgICBjb25zb2xlLmxvZyhgXG7inJMgU2NyYXBpbmcgY29tcGxldGVkOmApOwogICAgY29uc29sZS5sb2coYCAgLSBTdWNjZXNzOiAke3N1Y2Nlc3NDb3VudH1gKTsKICAgIGNvbnNvbGUubG9nKGAgIC0gRXJyb3JzOiAke2Vycm9yQ291bnR9YCk7CiAgICBjb25zb2xlLmxvZyhgICAtIFRvdGFsOiAke2xpbWl0ZWRJZHMubGVuZ3RofWApOwp9KTsK
+/**
+ * Hybrid Sitemap + API Scraper
+ *
+ * Demonstrates:
+ * - Sitemap URL discovery (fast)
+ * - ID extraction from URLs
+ * - API-based data fetching (reliable)
+ * - Optimal hybrid approach
+ */
+
+import { Actor } from 'apify';
+import { Dataset, RobotsFile } from 'crawlee';
+import { gotScraping } from 'got-scraping';
+
+// Input interface
+interface Input {
+    sitemapUrl: string;
+    apiBaseUrl: string;
+    idPattern?: string;
+    maxItems?: number;
+}
+
+// Output interface
+interface ProductData {
+    id: string;
+    url: string;
+    name: string;
+    price?: number;
+    inStock?: boolean;
+    scrapedAt: string;
+}
+
+await Actor.main(async () => {
+    // Get typed input
+    const input = await Actor.getInput<Input>();
+
+    if (!input?.sitemapUrl || !input?.apiBaseUrl) {
+        throw new Error('sitemapUrl and apiBaseUrl are required');
+    }
+
+    console.log('Input:', input);
+
+    // Step 1: Parse sitemap to get URLs
+    console.log(`Fetching sitemap: ${input.sitemapUrl}`);
+    const robots = await RobotsFile.find(input.sitemapUrl);
+    let urls = await robots.parseUrlsFromSitemaps();
+
+    console.log(`✓ Found ${urls.length} URLs in sitemap`);
+
+    // Step 2: Extract IDs from URLs
+    const idPattern = new RegExp(input.idPattern || '/products/([^/]+)');
+    const ids: string[] = [];
+
+    for (const url of urls) {
+        const match = url.match(idPattern);
+        if (match && match[1]) {
+            ids.push(match[1]);
+        }
+    }
+
+    console.log(`✓ Extracted ${ids.length} IDs from URLs`);
+
+    // Limit IDs if maxItems specified
+    const limitedIds = input.maxItems ? ids.slice(0, input.maxItems) : ids;
+    console.log(`Processing ${limitedIds.length} products`);
+
+    // Step 3: Fetch data via API
+    let successCount = 0;
+    let errorCount = 0;
+
+    for (const id of limitedIds) {
+        try {
+            const apiUrl = `${input.apiBaseUrl}/${id}`;
+            console.log(`Fetching: ${apiUrl}`);
+
+            // Fetch from API
+            const response = await gotScraping({
+                url: apiUrl,
+                responseType: 'json',
+                timeout: {
+                    request: 30000,
+                },
+            });
+
+            const apiData = response.body as Record<string, unknown>;
+
+            // Map API response to output format
+            const data: ProductData = {
+                id,
+                url: `${input.sitemapUrl.replace('/sitemap.xml', '')}/products/${id}`,
+                name: String(apiData.name || apiData.title || 'Unknown'),
+                price: apiData.price ? Number(apiData.price) : undefined,
+                inStock: apiData.inStock !== undefined ? Boolean(apiData.inStock) : undefined,
+                scrapedAt: new Date().toISOString(),
+            };
+
+            // Save to dataset
+            await Dataset.pushData<ProductData>(data);
+
+            successCount++;
+            console.log(`✓ [${successCount}/${limitedIds.length}] ${data.name}`);
+
+            // Rate limiting
+            await new Promise((resolve) => setTimeout(resolve, 100));
+        } catch (error) {
+            errorCount++;
+            console.error(`✗ Error fetching ID ${id}: ${(error as Error).message}`);
+        }
+    }
+
+    console.log(`\n✓ Scraping completed:`);
+    console.log(`  - Success: ${successCount}`);
+    console.log(`  - Errors: ${errorCount}`);
+    console.log(`  - Total: ${limitedIds.length}`);
+});
