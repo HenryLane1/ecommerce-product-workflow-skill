@@ -1,1 +1,35 @@
-ewogICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAibmFtZSI6ICJteS1hY3RvciIsCiAgICAidGl0bGUiOiAiTXkgQWN0b3IiLAogICAgImRlc2NyaXB0aW9uIjogIkFjdG9yIGRlc2NyaXB0aW9uIGhlcmUiLAogICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgIm1ldGEiOiB7CiAgICAgICAgInRlbXBsYXRlSWQiOiAicGxheXdyaWdodC10cyIKICAgIH0sCiAgICAiaW5wdXQiOiAiLi9pbnB1dF9zY2hlbWEuanNvbiIsCiAgICAiZG9ja2VyZmlsZSI6ICIuL0RvY2tlcmZpbGUiLAogICAgInJlYWRtZSI6ICIuL1JFQURNRS5tZCIsCiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgImJ1aWxkIjogImxhdGVzdCIsCiAgICAgICAgInRpbWVvdXRTZWNzIjogMzYwMCwKICAgICAgICAibWVtb3J5TWJ5dGVzIjogMjA0OAogICAgfSwKICAgICJzdG9yYWdlcyI6IHsKICAgICAgICAiZGF0YXNldCI6IHsKICAgICAgICAgICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAgICAgICAgICJ0aXRsZSI6ICJTY3JhcGVkIGRhdGEiLAogICAgICAgICAgICAidmlld3MiOiB7CiAgICAgICAgICAgICAgICAib3ZlcnZpZXciOiB7CiAgICAgICAgICAgICAgICAgICAgInRpdGxlIjogIk92ZXJ2aWV3IiwKICAgICAgICAgICAgICAgICAgICAidHJhbnNmb3JtYXRpb24iOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJmaWVsZHMiOiBbInRpdGxlIiwgInByaWNlIiwgInVybCIsICJzY3JhcGVkQXQiXQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgImRpc3BsYXkiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJjb21wb25lbnQiOiAidGFibGUiCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg==
+{
+    "actorSpecification": 1,
+    "name": "my-actor",
+    "title": "My Actor",
+    "description": "Actor description here",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "playwright-ts"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 3600,
+        "memoryMbytes": 2048
+    },
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Scraped data",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": ["title", "price", "url", "scrapedAt"]
+                    },
+                    "display": {
+                        "component": "table"
+                    }
+                }
+            }
+        }
+    }
+}
