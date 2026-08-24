@@ -1,1 +1,463 @@
-IyBBUEkgRGlzY292ZXJ5IGFuZCBVc2FnZQoKIyMgT3ZlcnZpZXcKCk1hbnkgd2Vic2l0ZXMgZXhwb3NlIGhpZGRlbiBBUElzIHRoYXQgYXJlICoqMTAtMTAweCBmYXN0ZXIgYW5kIG1vcmUgcmVsaWFibGUqKiB0aGFuIHNjcmFwaW5nIEhUTUwuIEFsd2F5cyBsb29rIGZvciBBUElzIGJlZm9yZSB3cml0aW5nIHNjcmFwaW5nIGNvZGUhCgojIyBXaHkgQVBJcyBhcmUgQmV0dGVyIFRoYW4gU2NyYXBpbmcKCnwgQXNwZWN0IHwgQVBJIHwgSFRNTCBTY3JhcGluZyB8CnwtLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tLS0tLS18CnwgKipTcGVlZCoqIHwgVmVyeSBmYXN0IChKU09OIHJlc3BvbnNlcykgfCBTbG93IChyZW5kZXIgZnVsbCBwYWdlcykgfAp8ICoqUmVsaWFiaWxpdHkqKiB8IFN0YWJsZSBzdHJ1Y3R1cmUgfCBCcmVha3Mgd2hlbiBIVE1MIGNoYW5nZXMgfAp8ICoqRGF0YSBRdWFsaXR5KiogfCBDbGVhbiwgc3RydWN0dXJlZCBKU09OIHwgTWVzc3ksIHJlcXVpcmVzIHBhcnNpbmcgfAp8ICoqQmFuZHdpZHRoKiogfCBMb3cgKG9ubHkgZGF0YSkgfCBIaWdoIChpbWFnZXMsIENTUywgSlMpIHwKfCAqKk1haW50ZW5hbmNlKiogfCBMb3cgKHN0YWJsZSBjb250cmFjdHMpIHwgSGlnaCAoZnJhZ2lsZSBzZWxlY3RvcnMpIHwKfCAqKlJhdGUgTGltaXRpbmcqKiB8IENsZWFyIGxpbWl0cyB8IEFtYmlndW91cyB8CgoqKkV4YW1wbGUqKjoKLSBTY3JhcGluZyBIVE1MOiBMb2FkIGVudGlyZSBwYWdlICh+NTAwIEtCKSwgcGFyc2UgSFRNTCwgZXh0cmFjdCBkYXRhCi0gVXNpbmcgQVBJOiBHRVQgYC9hcGkvcHJvZHVjdC8xMjNgIHJldHVybnMgY2xlYW4gSlNPTiAofjUgS0IpCgoqKlJlc3VsdCoqOiAxMDB4IGxlc3MgYmFuZHdpZHRoLCAxMHggZmFzdGVyLCAwIEhUTUwgcGFyc2luZwoKIyMgSG93IHRvIEZpbmQgQVBJcwoKIyMjIFZpYSBQcm94eS1NQ1AgVHJhZmZpYyBDYXB0dXJlIChSZWNvbW1lbmRlZCkKClRoZSBNSVRNIHByb3h5IGNhcHR1cmVzIGFsbCB0cmFmZmljIGF1dG9tYXRpY2FsbHkgZHVyaW5nIHJlY29ubmFpc3NhbmNlOgoKYGBgCnByb3h5X3N0YXJ0KCkKaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCgiaHR0cHM6Ly90YXJnZXQtc2l0ZS5jb20iLCBzdGVhbHRoTW9kZTogdHJ1ZSkKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2F0dGFjaCh0YXJnZXRfaWQpCgojIEJyb3dzZSB0aGUgc2l0ZSB3aXRoIGh1bWFuaXplcgpodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCAiLmNhdGVnb3J5LWxpbmsiKQpodW1hbml6ZXJfaWRsZSh0YXJnZXRfaWQsIDIwMDApCgojIERpc2NvdmVyIEFQSXMgaW4gY2FwdHVyZWQgdHJhZmZpYwpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogImFwaSIpCnByb3h5X2xpc3RfdHJhZmZpYyh1cmxfZmlsdGVyOiAiL2dyYXBocWwiKQpwcm94eV9zZWFyY2hfdHJhZmZpYyhxdWVyeTogImFwcGxpY2F0aW9uL2pzb24iKQoKIyBJbnNwZWN0IGRpc2NvdmVyZWQgZW5kcG9pbnRzCnByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZCkKYGBgCgojIyMgV2hhdCB0byBMb29rIEZvcgoKRmlsdGVyIHRyYWZmaWMgZm9yIHRoZXNlIGNvbW1vbiBBUEkgcGF0dGVybnM6CmBgYAovYXBpLy4uLgovdjEvLi4uCi92Mi8uLi4KL2dyYXBocWwKL19uZXh0L2RhdGEvLi4uCi93cC1qc29uLy4uLgovcmVzdC8uLi4KYGBgCgojIyMgQW5hbHl6ZSBFYWNoIEVuZHBvaW50CgpGb3IgZWFjaCBwcm9taXNpbmcgcmVxdWVzdCBmb3VuZCBpbiB0cmFmZmljLCB1c2UgYHByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZClgIHRvIGNoZWNrOgotICoqVVJMIHBhdHRlcm4qKjogQ2FuIHlvdSBjb25zdHJ1Y3Qgc2ltaWxhciBVUkxzPwotICoqTWV0aG9kKio6IEdFVCwgUE9TVCwgZXRjLgotICoqSGVhZGVycyoqOiBBdXRoZW50aWNhdGlvbj8gQ29udGVudC1UeXBlPwotICoqUXVlcnkgcGFyYW1ldGVycyoqOiBQYWdpbmF0aW9uPyBGaWx0ZXJzPwotICoqUmVzcG9uc2UgZm9ybWF0Kio6IEpTT04/IEdyYXBoUUw/IFhNTD8KCiMjIENvbW1vbiBBUEkgUGF0dGVybnMKCiMjIyBSRVNUIEFQSXMKCioqUGF0dGVybioqOiBgaHR0cHM6Ly9hcGkuZXhhbXBsZS5jb20vdjEvcmVzb3VyY2VzL3tpZH1gCgoqKkV4YW1wbGUqKjoKYGBgCkdFVCBodHRwczovL3Nob3AuY29tL2FwaS9wcm9kdWN0cy8xMjM0NQpHRVQgaHR0cHM6Ly9zaG9wLmNvbS9hcGkvcHJvZHVjdHM/Y2F0ZWdvcnk9ZWxlY3Ryb25pY3MmbGltaXQ9NTAKYGBgCgoqKkhvdyB0byB1c2UqKjoKYGBgamF2YXNjcmlwdAppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7Cgpjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgIHVybDogJ2h0dHBzOi8vc2hvcC5jb20vYXBpL3Byb2R1Y3RzLzEyMzQ1JywKICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAp9KTsKCmNvbnNvbGUubG9nKHJlc3BvbnNlLmJvZHkpOyAvLyBDbGVhbiBKU09OIG9iamVjdApgYGAKCiMjIyBHcmFwaFFMIEFQSXMKCioqUGF0dGVybioqOiBQT1NUIHRvIGAvZ3JhcGhxbGAgd2l0aCBxdWVyeSBpbiBib2R5CgoqKkV4YW1wbGUqKjoKYGBgZ3JhcGhxbApQT1NUIGh0dHBzOi8vZXhhbXBsZS5jb20vZ3JhcGhxbAoKewogICJxdWVyeSI6ICJ7IHByb2R1Y3RzKGxpbWl0OiAxMCkgeyBpZCBuYW1lIHByaWNlIH0gfSIKfQpgYGAKCioqSG93IHRvIHVzZSoqOgpgYGBqYXZhc2NyaXB0CmNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZ290U2NyYXBpbmcoewogICAgdXJsOiAnaHR0cHM6Ly9leGFtcGxlLmNvbS9ncmFwaHFsJywKICAgIG1ldGhvZDogJ1BPU1QnLAogICAganNvbjogewogICAgICAgIHF1ZXJ5OiBgewogICAgICAgICAgICBwcm9kdWN0cyhsaW1pdDogMTApIHsKICAgICAgICAgICAgICAgIGlkCiAgICAgICAgICAgICAgICBuYW1lCiAgICAgICAgICAgICAgICBwcmljZQogICAgICAgICAgICAgICAgaW5TdG9jawogICAgICAgICAgICB9CiAgICAgICAgfWAKICAgIH0sCiAgICByZXNwb25zZVR5cGU6ICdqc29uJywKfSk7Cgpjb25zb2xlLmxvZyhyZXNwb25zZS5ib2R5LmRhdGEucHJvZHVjdHMpOwpgYGAKCiMjIyBQYWdpbmF0ZWQgQVBJcwoKKipQYXR0ZXJuKio6IGA/cGFnZT0xJmxpbWl0PTUwYCBvciBjdXJzb3ItYmFzZWQKCioqRXhhbXBsZSoqOgpgYGBqYXZhc2NyaXB0CmFzeW5jIGZ1bmN0aW9uIGZldGNoQWxsUHJvZHVjdHMoKSB7CiAgICBjb25zdCBhbGxQcm9kdWN0cyA9IFtdOwogICAgbGV0IHBhZ2UgPSAxOwogICAgbGV0IGhhc01vcmUgPSB0cnVlOwoKICAgIHdoaWxlIChoYXNNb3JlKSB7CiAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICAgICAgICAgIHVybDogYGh0dHBzOi8vYXBpLnNob3AuY29tL3Byb2R1Y3RzP3BhZ2U9JHtwYWdlfSZsaW1pdD01MGAsCiAgICAgICAgICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAogICAgICAgIH0pOwoKICAgICAgICBhbGxQcm9kdWN0cy5wdXNoKC4uLnJlc3BvbnNlLmJvZHkucHJvZHVjdHMpOwoKICAgICAgICBoYXNNb3JlID0gcmVzcG9uc2UuYm9keS5oYXNOZXh0UGFnZTsKICAgICAgICBwYWdlKys7CiAgICB9CgogICAgcmV0dXJuIGFsbFByb2R1Y3RzOwp9CmBgYAoKIyMgQXV0aGVudGljYXRpb24gSGFuZGxpbmcKCiMjIyBDb29raWVzCgpFeHRyYWN0IGZyb20gYnJvd3NlciBzZXNzaW9uIHZpYSBEZXZUb29scyBicmlkZ2U6CgpgYGAKIyBHZXQgY29va2llcyBmcm9tIGJyb3dzZXIKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfY29va2llcygpCgojIFVzZSBleHRyYWN0ZWQgY29va2llcyBpbiBBUEkgcmVxdWVzdHMKYGBgCgpgYGBqYXZhc2NyaXB0CmF3YWl0IGdvdFNjcmFwaW5nKHsKICAgIHVybDogJ2h0dHBzOi8vYXBpLmV4YW1wbGUuY29tL2RhdGEnLAogICAgaGVhZGVyczogewogICAgICAgICdDb29raWUnOiAnc2Vzc2lvbj1hYmMxMjM7IGNmX2NsZWFyYW5jZT14eXonLAogICAgfSwKfSk7CmBgYAoKIyMjIEJlYXJlciBUb2tlbnMKCkV4dHJhY3QgZnJvbSBsb2NhbFN0b3JhZ2UgdmlhIERldlRvb2xzIGJyaWRnZToKCmBgYAojIEdldCB0b2tlbiBmcm9tIGJyb3dzZXIgc3RvcmFnZQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9zdG9yYWdlX2tleXMoc3RvcmFnZV90eXBlOiAibG9jYWwiKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfZ2V0X3N0b3JhZ2VfdmFsdWUoImF1dGhfdG9rZW4iLCBzdG9yYWdlX3R5cGU6ICJsb2NhbCIpCmBgYAoKYGBgamF2YXNjcmlwdAovLyBVc2UgaW4gQVBJIHJlcXVlc3RzCmF3YWl0IGdvdFNjcmFwaW5nKHsKICAgIHVybDogJ2h0dHBzOi8vYXBpLmV4YW1wbGUuY29tL2RhdGEnLAogICAgaGVhZGVyczogewogICAgICAgICdBdXRob3JpemF0aW9uJzogYEJlYXJlciAke2V4dHJhY3RlZFRva2VufWAsCiAgICB9LAp9KTsKYGBgCgojIyMgQVBJIEtleXMKCk9mdGVuIHZpc2libGUgaW4gY2FwdHVyZWQgdHJhZmZpYyBoZWFkZXJzIOKAlCBpbnNwZWN0IHdpdGggYHByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZClgOgoKYGBgamF2YXNjcmlwdAphd2FpdCBnb3RTY3JhcGluZyh7CiAgICB1cmw6ICdodHRwczovL2FwaS5leGFtcGxlLmNvbS9kYXRhJywKICAgIGhlYWRlcnM6IHsKICAgICAgICAnWC1BUEktS2V5JzogJ2FiYzEyMy4uLicsCiAgICAgICAgJ1gtQ2xpZW50LUlEJzogJ3dlYi1hcHAnLAogICAgfSwKfSk7CmBgYAoKIyMgSHlicmlkIEFwcHJvYWNoOiBTaXRlbWFwIFVSTHMgKyBBUEkgRGF0YQoKKipCZXN0IG9mIGJvdGggd29ybGRzKio6IFVzZSBzaXRlbWFwIGZvciBVUkxzLCBBUEkgZm9yIGRhdGEKCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgUm9ib3RzRmlsZSB9IGZyb20gJ2NyYXdsZWUnOwppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7CgovLyBHZXQgYWxsIHByb2R1Y3QgVVJMcyBmcm9tIHNpdGVtYXAKY29uc3Qgcm9ib3RzID0gYXdhaXQgUm9ib3RzRmlsZS5maW5kKCdodHRwczovL3Nob3AuY29tJyk7CmNvbnN0IHVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CgovLyBFeHRyYWN0IHByb2R1Y3QgSURzIGZyb20gVVJMcwpjb25zdCBwcm9kdWN0SWRzID0gdXJscwogICAgLm1hcCh1cmwgPT4gdXJsLm1hdGNoKC9cL3Byb2R1Y3RzXC8oXGQrKS8pPy5bMV0pCiAgICAuZmlsdGVyKEJvb2xlYW4pOwoKY29uc29sZS5sb2coYEZvdW5kICR7cHJvZHVjdElkcy5sZW5ndGh9IHByb2R1Y3RzYCk7CgovLyBGZXRjaCBkYXRhIGZyb20gQVBJIChtdWNoIGZhc3RlciB0aGFuIHNjcmFwaW5nIHBhZ2VzKQpmb3IgKGNvbnN0IGlkIG9mIHByb2R1Y3RJZHMpIHsKICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZ290U2NyYXBpbmcoewogICAgICAgIHVybDogYGh0dHBzOi8vYXBpLnNob3AuY29tL3YxL3Byb2R1Y3RzLyR7aWR9YCwKICAgICAgICByZXNwb25zZVR5cGU6ICdqc29uJywKICAgIH0pOwoKICAgIGNvbnNvbGUubG9nKHJlc3BvbnNlLmJvZHkpOwogICAgLy8gQ2xlYW4sIHN0cnVjdHVyZWQgZGF0YSEKfQpgYGAKClNlZSBgLi4vZXhhbXBsZXMvaHlicmlkLXNpdGVtYXAtYXBpLmpzYCBmb3IgY29tcGxldGUgZXhhbXBsZS4KCiMjIGdvdC1zY3JhcGluZyB2cyBmZXRjaAoKIyMjIFVzZSBgZ290LXNjcmFwaW5nYCAoUmVjb21tZW5kZWQpCgoqKkJlbmVmaXRzKio6Ci0gQXV0b21hdGljIHJldHJpZXMKLSBCcm93c2VyLWxpa2UgaGVhZGVycwotIFByb3h5IHN1cHBvcnQKLSBDb29raWUgaGFuZGxpbmcKLSBSZXNwb25zZSB0eXBlIGNvbnZlcnNpb24KCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgZ290U2NyYXBpbmcgfSBmcm9tICdnb3Qtc2NyYXBpbmcnOwoKY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICB1cmw6ICdodHRwczovL2FwaS5leGFtcGxlLmNvbS9kYXRhJywKICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLCAvLyBBdXRvLXBhcnNlcyBKU09OCiAgICByZXRyeTogewogICAgICAgIGxpbWl0OiAzLAogICAgfSwKfSk7Cgpjb25zb2xlLmxvZyhyZXNwb25zZS5ib2R5KTsgLy8gQWxyZWFkeSBwYXJzZWQgSlNPTgpgYGAKCiMjIyBVc2UgYGZldGNoYCAoU2ltcGxlIGNhc2VzKQoKRm9yIHNpbXBsZSByZXF1ZXN0czoKCmBgYGphdmFzY3JpcHQKY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9hcGkuZXhhbXBsZS5jb20vZGF0YScpOwpjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwpgYGAKCiMjIENvbW1vbiBBUEkgUGF0dGVybnMgdG8gTG9vayBGb3IKCiMjIyAxLiBOZXh0LmpzIERhdGEKCmBgYAovX25leHQvZGF0YS9CVUlMRF9JRC9wcm9kdWN0cy8xMjMuanNvbgpgYGAKCiMjIyAyLiBXb3JkUHJlc3MgUkVTVCBBUEkKCmBgYAovd3AtanNvbi93cC92Mi9wb3N0cwovd3AtanNvbi93cC92Mi9wYWdlcwpgYGAKCiMjIyAzLiBTaG9waWZ5IEFQSQoKYGBgCi9wcm9kdWN0cy5qc29uCi9jb2xsZWN0aW9ucy5qc29uCi9wcm9kdWN0cy9IQU5ETEUuanNvbgpgYGAKCiMjIyA0LiBJbnRlcm5hbCBBUElzCgpgYGAKL2FwaS92MS8uLi4KL2ludGVybmFsL2FwaS8uLi4KL19hcGkvLi4uCmBgYAoKIyMgUmF0ZSBMaW1pdGluZwoKUmVzcGVjdCBBUEkgcmF0ZSBsaW1pdHM6CgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IHNldFRpbWVvdXQgfSBmcm9tICd0aW1lcnMvcHJvbWlzZXMnOwoKZm9yIChjb25zdCBpZCBvZiBwcm9kdWN0SWRzKSB7CiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgICAgICB1cmw6IGBodHRwczovL2FwaS5leGFtcGxlLmNvbS9wcm9kdWN0cy8ke2lkfWAsCiAgICAgICAgcmVzcG9uc2VUeXBlOiAnanNvbicsCiAgICB9KTsKCiAgICBjb25zb2xlLmxvZyhyZXNwb25zZS5ib2R5KTsKCiAgICAvLyBSZXNwZWN0IHJhdGUgbGltaXRzIChlLmcuLCAxMCByZXF1ZXN0cy9zZWNvbmQpCiAgICBhd2FpdCBzZXRUaW1lb3V0KDEwMCk7IC8vIDEwMG1zIGRlbGF5Cn0KYGBgCgpCZXR0ZXI6IFVzZSBDcmF3bGVlJ3MgYnVpbHQtaW4gcmF0ZSBsaW1pdGluZzoKCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgSHR0cENyYXdsZXIgfSBmcm9tICdjcmF3bGVlJzsKCmNvbnN0IGNyYXdsZXIgPSBuZXcgSHR0cENyYXdsZXIoewogICAgbWF4UmVxdWVzdHNQZXJNaW51dGU6IDYwLAogICAgYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyBqc29uIH0pIHsKICAgICAgICBjb25zb2xlLmxvZyhqc29uKTsKICAgIH0sCn0pOwpgYGAKCiMjIEVycm9yIEhhbmRsaW5nCgpBbHdheXMgaGFuZGxlIEFQSSBlcnJvcnM6CgpgYGBqYXZhc2NyaXB0CnRyeSB7CiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgICAgICB1cmw6IGBodHRwczovL2FwaS5leGFtcGxlLmNvbS9wcm9kdWN0cy8ke2lkfWAsCiAgICAgICAgcmVzcG9uc2VUeXBlOiAnanNvbicsCiAgICAgICAgdGltZW91dDogewogICAgICAgICAgICByZXF1ZXN0OiAxMDAwMCwgLy8gMTAgc2Vjb25kIHRpbWVvdXQKICAgICAgICB9LAogICAgfSk7CgogICAgLy8gQ2hlY2sgZm9yIEFQSS1sZXZlbCBlcnJvcnMKICAgIGlmIChyZXNwb25zZS5ib2R5LmVycm9yKSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBBUEkgZXJyb3I6ICR7cmVzcG9uc2UuYm9keS5lcnJvcn1gKTsKICAgIH0KCiAgICByZXR1cm4gcmVzcG9uc2UuYm9keTsKCn0gY2F0Y2ggKGVycm9yKSB7CiAgICBpZiAoZXJyb3IucmVzcG9uc2U/LnN0YXR1c0NvZGUgPT09IDQwNCkgewogICAgICAgIGNvbnNvbGUubG9nKGBQcm9kdWN0ICR7aWR9IG5vdCBmb3VuZGApOwogICAgICAgIHJldHVybiBudWxsOwogICAgfSBlbHNlIGlmIChlcnJvci5yZXNwb25zZT8uc3RhdHVzQ29kZSA9PT0gNDI5KSB7CiAgICAgICAgY29uc29sZS5sb2coJ1JhdGUgbGltaXRlZCwgd2FpdGluZy4uLicpOwogICAgICAgIGF3YWl0IHNldFRpbWVvdXQoNTAwMCk7CiAgICAgICAgLy8gUmV0cnkKICAgIH0gZWxzZSB7CiAgICAgICAgdGhyb3cgZXJyb3I7CiAgICB9Cn0KYGBgCgojIyBCZXN0IFByYWN0aWNlcwoKIyMjIOKchSBETzoKCi0gKipBbHdheXMgY2hlY2sgZm9yIEFQSXMgZmlyc3QqKiBiZWZvcmUgc2NyYXBpbmcgSFRNTAotICoqQW5hbHl6ZSBOZXR3b3JrIHRhYioqIG9uIGV2ZXJ5IHNjcmFwaW5nIHByb2plY3QKLSAqKlVzZSBnb3Qtc2NyYXBpbmcqKiBmb3IgYmV0dGVyIHJlbGlhYmlsaXR5Ci0gKipSZXNwZWN0IHJhdGUgbGltaXRzKiogKGFkZCBkZWxheXMgb3IgdXNlIENyYXdsZWUpCi0gKipIYW5kbGUgYXV0aGVudGljYXRpb24qKiBwcm9wZXJseSAoY29va2llcywgdG9rZW5zKQotICoqQ2FjaGUgQVBJIHJlc3BvbnNlcyoqIHRvIGF2b2lkIHJlZHVuZGFudCByZXF1ZXN0cwotICoqTG9nIEFQSSBjYWxscyoqIGZvciBkZWJ1Z2dpbmcKLSAqKlVzZSBUeXBlU2NyaXB0KiogZm9yIHR5cGUtc2FmZSBBUEkgcmVzcG9uc2VzCgojIyMg4p2MIERPTidUOgoKLSAqKlNraXAgQVBJIGRpc2NvdmVyeSoqIC0gYWx3YXlzIGNoZWNrIGZpcnN0IQotICoqSWdub3JlIHJhdGUgbGltaXRzKiogLSB5b3UnbGwgZ2V0IGJsb2NrZWQKLSAqKkhhcmRjb2RlIGNyZWRlbnRpYWxzKiogLSB1c2UgZW52aXJvbm1lbnQgdmFyaWFibGVzCi0gKipUcnVzdCBBUEkgcmVzcG9uc2VzKiogLSB2YWxpZGF0ZSBkYXRhCi0gKipGb3JnZXQgZXJyb3IgaGFuZGxpbmcqKiAtIEFQSXMgZmFpbCB0b28KLSAqKk1ha2UgcmVkdW5kYW50IHJlcXVlc3RzKiogLSBjYWNoZSB3aGVuIHBvc3NpYmxlCgojIyBDb21wbGV0ZSBFeGFtcGxlOiBBUEktRmlyc3QgU2NyYXBlcgoKYGBgamF2YXNjcmlwdAppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7CmltcG9ydCB7IHNldFRpbWVvdXQgfSBmcm9tICd0aW1lcnMvcHJvbWlzZXMnOwoKYXN5bmMgZnVuY3Rpb24gc2NyYXBlUHJvZHVjdHMocHJvZHVjdElkcykgewogICAgY29uc3QgcmVzdWx0cyA9IFtdOwoKICAgIGZvciAoY29uc3QgaWQgb2YgcHJvZHVjdElkcykgewogICAgICAgIHRyeSB7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKGBGZXRjaGluZyBwcm9kdWN0ICR7aWR9Li4uYCk7CgogICAgICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgICAgICAgICAgICAgIHVybDogYGh0dHBzOi8vYXBpLnNob3AuY29tL3YxL3Byb2R1Y3RzLyR7aWR9YCwKICAgICAgICAgICAgICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAogICAgICAgICAgICAgICAgaGVhZGVyczogewogICAgICAgICAgICAgICAgICAgICdVc2VyLUFnZW50JzogJ01vemlsbGEvNS4wLi4uJywKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICB0aW1lb3V0OiB7CiAgICAgICAgICAgICAgICAgICAgcmVxdWVzdDogMTAwMDAsCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgcmV0cnk6IHsKICAgICAgICAgICAgICAgICAgICBsaW1pdDogMywKICAgICAgICAgICAgICAgICAgICBtZXRob2RzOiBbJ0dFVCddLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgfSk7CgogICAgICAgICAgICByZXN1bHRzLnB1c2gocmVzcG9uc2UuYm9keSk7CgogICAgICAgICAgICAvLyBSYXRlIGxpbWl0aW5nICgxMCByZXEvc2VjIG1heCkKICAgICAgICAgICAgYXdhaXQgc2V0VGltZW91dCgxMDApOwoKICAgICAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICAgICBjb25zb2xlLmVycm9yKGBGYWlsZWQgdG8gZmV0Y2ggcHJvZHVjdCAke2lkfTpgLCBlcnJvci5tZXNzYWdlKTsKICAgICAgICB9CiAgICB9CgogICAgcmV0dXJuIHJlc3VsdHM7Cn0KCi8vIFVzYWdlCmNvbnN0IHByb2R1Y3RJZHMgPSBbMTIzLCA0NTYsIDc4OV07CmNvbnN0IHByb2R1Y3RzID0gYXdhaXQgc2NyYXBlUHJvZHVjdHMocHJvZHVjdElkcyk7CmNvbnNvbGUubG9nKGBTY3JhcGVkICR7cHJvZHVjdHMubGVuZ3RofSBwcm9kdWN0c2ApOwpgYGAKCiMjIFJlbGF0ZWQgUmVzb3VyY2VzCgotICoqU2l0ZW1hcCBkaXNjb3ZlcnkqKjogU2VlIGBzaXRlbWFwLWRpc2NvdmVyeS5tZGAgKGdldCBJRHMgZnJvbSBVUkxzKQotICoqSHlicmlkIGFwcHJvYWNoKio6IFNlZSBgaHlicmlkLWFwcHJvYWNoZXMubWRgCi0gKipFeGFtcGxlcyoqOiBTZWUgYC4uL2V4YW1wbGVzL2FwaS1zY3JhcGVyLmpzYAotICoqRXhhbXBsZXMqKjogU2VlIGAuLi9leGFtcGxlcy9oeWJyaWQtc2l0ZW1hcC1hcGkuanNgCgojIyBTdW1tYXJ5CgoqKkFQSXMgYXJlIHRoZSBCRVNUIHdheSB0byBnZXQgZGF0YSoqIC0gYWx3YXlzIGxvb2sgZm9yIHRoZW0gZmlyc3QhCgoqKktleSB0YWtlYXdheXMqKjoKMS4gVXNlIHByb3h5LW1jcCB0cmFmZmljIGNhcHR1cmUgdG8gZGlzY292ZXIgQVBJcyBhdXRvbWF0aWNhbGx5CjIuIExvb2sgZm9yIGAvYXBpL2AsIGAvdjEvYCwgYC9ncmFwaHFsYCBlbmRwb2ludHMgaW4gY2FwdHVyZWQgdHJhZmZpYwozLiBVc2UgZ290LXNjcmFwaW5nIGZvciBwcm9kdWN0aW9uIGRhdGEgZXh0cmFjdGlvbgo0LiBDb21iaW5lIHdpdGggc2l0ZW1hcHMgZm9yIGNvbXBsZXRlIGNvdmVyYWdlCjUuIFJlc3BlY3QgcmF0ZSBsaW1pdHMgYW5kIGF1dGhlbnRpY2F0aW9uCjYuIDEwLTEwMHggZmFzdGVyIHRoYW4gSFRNTCBzY3JhcGluZyEK
+# API Discovery and Usage
+
+## Overview
+
+Many websites expose hidden APIs that are **10-100x faster and more reliable** than scraping HTML. Always look for APIs before writing scraping code!
+
+## Why APIs are Better Than Scraping
+
+| Aspect | API | HTML Scraping |
+|--------|-----|---------------|
+| **Speed** | Very fast (JSON responses) | Slow (render full pages) |
+| **Reliability** | Stable structure | Breaks when HTML changes |
+| **Data Quality** | Clean, structured JSON | Messy, requires parsing |
+| **Bandwidth** | Low (only data) | High (images, CSS, JS) |
+| **Maintenance** | Low (stable contracts) | High (fragile selectors) |
+| **Rate Limiting** | Clear limits | Ambiguous |
+
+**Example**:
+- Scraping HTML: Load entire page (~500 KB), parse HTML, extract data
+- Using API: GET `/api/product/123` returns clean JSON (~5 KB)
+
+**Result**: 100x less bandwidth, 10x faster, 0 HTML parsing
+
+## How to Find APIs
+
+### Via Proxy-MCP Traffic Capture (Recommended)
+
+The MITM proxy captures all traffic automatically during reconnaissance:
+
+```
+proxy_start()
+interceptor_chrome_launch("https://target-site.com", stealthMode: true)
+interceptor_chrome_devtools_attach(target_id)
+
+# Browse the site with humanizer
+humanizer_click(target_id, ".category-link")
+humanizer_idle(target_id, 2000)
+
+# Discover APIs in captured traffic
+proxy_list_traffic(url_filter: "api")
+proxy_list_traffic(url_filter: "/graphql")
+proxy_search_traffic(query: "application/json")
+
+# Inspect discovered endpoints
+proxy_get_exchange(exchange_id)
+```
+
+### What to Look For
+
+Filter traffic for these common API patterns:
+```
+/api/...
+/v1/...
+/v2/...
+/graphql
+/_next/data/...
+/wp-json/...
+/rest/...
+```
+
+### Analyze Each Endpoint
+
+For each promising request found in traffic, use `proxy_get_exchange(exchange_id)` to check:
+- **URL pattern**: Can you construct similar URLs?
+- **Method**: GET, POST, etc.
+- **Headers**: Authentication? Content-Type?
+- **Query parameters**: Pagination? Filters?
+- **Response format**: JSON? GraphQL? XML?
+
+## Common API Patterns
+
+### REST APIs
+
+**Pattern**: `https://api.example.com/v1/resources/{id}`
+
+**Example**:
+```
+GET https://shop.com/api/products/12345
+GET https://shop.com/api/products?category=electronics&limit=50
+```
+
+**How to use**:
+```javascript
+import { gotScraping } from 'got-scraping';
+
+const response = await gotScraping({
+    url: 'https://shop.com/api/products/12345',
+    responseType: 'json',
+});
+
+console.log(response.body); // Clean JSON object
+```
+
+### GraphQL APIs
+
+**Pattern**: POST to `/graphql` with query in body
+
+**Example**:
+```graphql
+POST https://example.com/graphql
+
+{
+  "query": "{ products(limit: 10) { id name price } }"
+}
+```
+
+**How to use**:
+```javascript
+const response = await gotScraping({
+    url: 'https://example.com/graphql',
+    method: 'POST',
+    json: {
+        query: `{
+            products(limit: 10) {
+                id
+                name
+                price
+                inStock
+            }
+        }`
+    },
+    responseType: 'json',
+});
+
+console.log(response.body.data.products);
+```
+
+### Paginated APIs
+
+**Pattern**: `?page=1&limit=50` or cursor-based
+
+**Example**:
+```javascript
+async function fetchAllProducts() {
+    const allProducts = [];
+    let page = 1;
+    let hasMore = true;
+
+    while (hasMore) {
+        const response = await gotScraping({
+            url: `https://api.shop.com/products?page=${page}&limit=50`,
+            responseType: 'json',
+        });
+
+        allProducts.push(...response.body.products);
+
+        hasMore = response.body.hasNextPage;
+        page++;
+    }
+
+    return allProducts;
+}
+```
+
+## Authentication Handling
+
+### Cookies
+
+Extract from browser session via DevTools bridge:
+
+```
+# Get cookies from browser
+interceptor_chrome_devtools_list_cookies()
+
+# Use extracted cookies in API requests
+```
+
+```javascript
+await gotScraping({
+    url: 'https://api.example.com/data',
+    headers: {
+        'Cookie': 'session=abc123; cf_clearance=xyz',
+    },
+});
+```
+
+### Bearer Tokens
+
+Extract from localStorage via DevTools bridge:
+
+```
+# Get token from browser storage
+interceptor_chrome_devtools_list_storage_keys(storage_type: "local")
+interceptor_chrome_devtools_get_storage_value("auth_token", storage_type: "local")
+```
+
+```javascript
+// Use in API requests
+await gotScraping({
+    url: 'https://api.example.com/data',
+    headers: {
+        'Authorization': `Bearer ${extractedToken}`,
+    },
+});
+```
+
+### API Keys
+
+Often visible in captured traffic headers — inspect with `proxy_get_exchange(exchange_id)`:
+
+```javascript
+await gotScraping({
+    url: 'https://api.example.com/data',
+    headers: {
+        'X-API-Key': 'abc123...',
+        'X-Client-ID': 'web-app',
+    },
+});
+```
+
+## Hybrid Approach: Sitemap URLs + API Data
+
+**Best of both worlds**: Use sitemap for URLs, API for data
+
+```javascript
+import { RobotsFile } from 'crawlee';
+import { gotScraping } from 'got-scraping';
+
+// Get all product URLs from sitemap
+const robots = await RobotsFile.find('https://shop.com');
+const urls = await robots.parseUrlsFromSitemaps();
+
+// Extract product IDs from URLs
+const productIds = urls
+    .map(url => url.match(/\/products\/(\d+)/)?.[1])
+    .filter(Boolean);
+
+console.log(`Found ${productIds.length} products`);
+
+// Fetch data from API (much faster than scraping pages)
+for (const id of productIds) {
+    const response = await gotScraping({
+        url: `https://api.shop.com/v1/products/${id}`,
+        responseType: 'json',
+    });
+
+    console.log(response.body);
+    // Clean, structured data!
+}
+```
+
+See `../examples/hybrid-sitemap-api.js` for complete example.
+
+## got-scraping vs fetch
+
+### Use `got-scraping` (Recommended)
+
+**Benefits**:
+- Automatic retries
+- Browser-like headers
+- Proxy support
+- Cookie handling
+- Response type conversion
+
+```javascript
+import { gotScraping } from 'got-scraping';
+
+const response = await gotScraping({
+    url: 'https://api.example.com/data',
+    responseType: 'json', // Auto-parses JSON
+    retry: {
+        limit: 3,
+    },
+});
+
+console.log(response.body); // Already parsed JSON
+```
+
+### Use `fetch` (Simple cases)
+
+For simple requests:
+
+```javascript
+const response = await fetch('https://api.example.com/data');
+const data = await response.json();
+```
+
+## Common API Patterns to Look For
+
+### 1. Next.js Data
+
+```
+/_next/data/BUILD_ID/products/123.json
+```
+
+### 2. WordPress REST API
+
+```
+/wp-json/wp/v2/posts
+/wp-json/wp/v2/pages
+```
+
+### 3. Shopify API
+
+```
+/products.json
+/collections.json
+/products/HANDLE.json
+```
+
+### 4. Internal APIs
+
+```
+/api/v1/...
+/internal/api/...
+/_api/...
+```
+
+## Rate Limiting
+
+Respect API rate limits:
+
+```javascript
+import { setTimeout } from 'timers/promises';
+
+for (const id of productIds) {
+    const response = await gotScraping({
+        url: `https://api.example.com/products/${id}`,
+        responseType: 'json',
+    });
+
+    console.log(response.body);
+
+    // Respect rate limits (e.g., 10 requests/second)
+    await setTimeout(100); // 100ms delay
+}
+```
+
+Better: Use Crawlee's built-in rate limiting:
+
+```javascript
+import { HttpCrawler } from 'crawlee';
+
+const crawler = new HttpCrawler({
+    maxRequestsPerMinute: 60,
+    async requestHandler({ json }) {
+        console.log(json);
+    },
+});
+```
+
+## Error Handling
+
+Always handle API errors:
+
+```javascript
+try {
+    const response = await gotScraping({
+        url: `https://api.example.com/products/${id}`,
+        responseType: 'json',
+        timeout: {
+            request: 10000, // 10 second timeout
+        },
+    });
+
+    // Check for API-level errors
+    if (response.body.error) {
+        throw new Error(`API error: ${response.body.error}`);
+    }
+
+    return response.body;
+
+} catch (error) {
+    if (error.response?.statusCode === 404) {
+        console.log(`Product ${id} not found`);
+        return null;
+    } else if (error.response?.statusCode === 429) {
+        console.log('Rate limited, waiting...');
+        await setTimeout(5000);
+        // Retry
+    } else {
+        throw error;
+    }
+}
+```
+
+## Best Practices
+
+### ✅ DO:
+
+- **Always check for APIs first** before scraping HTML
+- **Analyze Network tab** on every scraping project
+- **Use got-scraping** for better reliability
+- **Respect rate limits** (add delays or use Crawlee)
+- **Handle authentication** properly (cookies, tokens)
+- **Cache API responses** to avoid redundant requests
+- **Log API calls** for debugging
+- **Use TypeScript** for type-safe API responses
+
+### ❌ DON'T:
+
+- **Skip API discovery** - always check first!
+- **Ignore rate limits** - you'll get blocked
+- **Hardcode credentials** - use environment variables
+- **Trust API responses** - validate data
+- **Forget error handling** - APIs fail too
+- **Make redundant requests** - cache when possible
+
+## Complete Example: API-First Scraper
+
+```javascript
+import { gotScraping } from 'got-scraping';
+import { setTimeout } from 'timers/promises';
+
+async function scrapeProducts(productIds) {
+    const results = [];
+
+    for (const id of productIds) {
+        try {
+            console.log(`Fetching product ${id}...`);
+
+            const response = await gotScraping({
+                url: `https://api.shop.com/v1/products/${id}`,
+                responseType: 'json',
+                headers: {
+                    'User-Agent': 'Mozilla/5.0...',
+                },
+                timeout: {
+                    request: 10000,
+                },
+                retry: {
+                    limit: 3,
+                    methods: ['GET'],
+                },
+            });
+
+            results.push(response.body);
+
+            // Rate limiting (10 req/sec max)
+            await setTimeout(100);
+
+        } catch (error) {
+            console.error(`Failed to fetch product ${id}:`, error.message);
+        }
+    }
+
+    return results;
+}
+
+// Usage
+const productIds = [123, 456, 789];
+const products = await scrapeProducts(productIds);
+console.log(`Scraped ${products.length} products`);
+```
+
+## Related Resources
+
+- **Sitemap discovery**: See `sitemap-discovery.md` (get IDs from URLs)
+- **Hybrid approach**: See `hybrid-approaches.md`
+- **Examples**: See `../examples/api-scraper.js`
+- **Examples**: See `../examples/hybrid-sitemap-api.js`
+
+## Summary
+
+**APIs are the BEST way to get data** - always look for them first!
+
+**Key takeaways**:
+1. Use proxy-mcp traffic capture to discover APIs automatically
+2. Look for `/api/`, `/v1/`, `/graphql` endpoints in captured traffic
+3. Use got-scraping for production data extraction
+4. Combine with sitemaps for complete coverage
+5. Respect rate limits and authentication
+6. 10-100x faster than HTML scraping!
