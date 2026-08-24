@@ -1,1 +1,209 @@
-IyBVbmRlcnN0YW5kaW5nIEFHRU5UUy5tZCBpbiBBcGlmeSBUZW1wbGF0ZXMKCiMjIFdoYXQgaXMgQUdFTlRTLm1kPwoKYEFHRU5UUy5tZGAgaXMgKipvZmZpY2lhbCBBcGlmeSBkb2N1bWVudGF0aW9uKiogaW5jbHVkZWQgaW4gQWN0b3IgdGVtcGxhdGVzIChnZW5lcmF0ZWQgYnkgYGFwaWZ5IGNyZWF0ZWApLiBJdCBwcm92aWRlcyBBSSBhZ2VudC1zcGVjaWZpYyBndWlkYW5jZSBmb3IgQWN0b3IgZGV2ZWxvcG1lbnQsIG1haW50YWluZWQgYnkgQXBpZnkuCgojIyBMb2NhdGlvbgoKQWZ0ZXIgcnVubmluZyBgYXBpZnkgY3JlYXRlIG15LXNjcmFwZXJgLCB5b3UnbGwgZmluZDoKCmBgYApteS1zY3JhcGVyLwrilJzilIDilIAgQUdFTlRTLm1kICAgICAgICAgIOKGkCBPZmZpY2lhbCBBcGlmeSBBSSBhZ2VudCBndWlkYW5jZQrilJzilIDilIAgLmFjdG9yLwrilJzilIDilIAgc3JjLwrilJTilIDilIAgLi4uCmBgYAoKIyMgU2NvcGUgRGl2aXNpb24KCiMjIyBUaGlzIFNraWxsIFByb3ZpZGVzOiBTdHJhdGVneSAmIFdvcmtmbG93CgoqKldoZW4gYW5kIHdoeSoqOgotIFBoYXNlIDE6IEludGVyYWN0aXZlIHJlY29ubmFpc3NhbmNlIChQcm94eS1NQ1AgdHJhZmZpYyBpbnRlcmNlcHRpb24gKyBzdGVhbHRoIGJyb3dzZXIpCi0gUGhhc2UgMjogU3RyYXRlZ3kgZGlzY292ZXJ5IChzaXRlbWFwcywgQVBJcykKLSBQaGFzZSAzOiBTdHJhdGVneSByZWNvbW1lbmRhdGlvbiAod2hpY2ggYXBwcm9hY2ggdG8gdXNlKQotIFBoYXNlIDQ6IEl0ZXJhdGl2ZSBpbXBsZW1lbnRhdGlvbgotIFBoYXNlIDU6IEFjdG9yIHByb2R1Y3Rpb25pemF0aW9uIHdvcmtmbG93CgoqKlRlbXBsYXRlIHNlbGVjdGlvbioqOgotIERlY2lzaW9uIHRyZWU6IENoZWVyaW8gdnMgUGxheXdyaWdodCB2cyBDYW1vdWZveAotIFdoZW4gdG8gdXNlIGVhY2ggdGVtcGxhdGUgYmFzZWQgb24gc2l0ZSBjaGFyYWN0ZXJpc3RpY3MKLSBQZXJmb3JtYW5jZSB0cmFkZS1vZmZzCgoqKkludGVncmF0aW9uKio6Ci0gSG93IHRvIGNvbnZlcnQgc2NyYXBlciB0byBBY3RvcgotIFdoZW4gdG8gcHJvZHVjdGlvbml6ZQotIERlcGxveW1lbnQgd29ya2Zsb3cKCiMjIyBBR0VOVFMubWQgUHJvdmlkZXM6IEltcGxlbWVudGF0aW9uIERldGFpbHMKCioqSG93IHRvIGltcGxlbWVudCoqOgotIERvL0Rvbid0IHBhdHRlcm5zIGZvciBBY3RvciBjb2RlCi0gU0RLIHVzYWdlIGJlc3QgcHJhY3RpY2VzCi0gQ29uY3VycmVuY3kgc2V0dGluZ3MgKEhUVFA6IDEwLTUwLCBCcm93c2VyOiAxLTUpCi0gRXJyb3IgaGFuZGxpbmcgcGF0dGVybnMKLSBTYWZldHkgYW5kIHBlcm1pc3Npb24gZ3VpZGVsaW5lcwoKKipTY2hlbWEgc3BlY2lmaWNhdGlvbnMqKjoKLSBJbnB1dCBzY2hlbWEgZGV0YWlsZWQgc3RydWN0dXJlIGFuZCBleGFtcGxlcwotIE91dHB1dCBzY2hlbWEgd2l0aCB0ZW1wbGF0ZSB2YXJpYWJsZXMKLSBEYXRhc2V0IHNjaGVtYSB3aXRoIHZpZXdzIGFuZCB0cmFuc2Zvcm1hdGlvbnMKLSBLZXktdmFsdWUgc3RvcmUgc2NoZW1hIHdpdGggY29sbGVjdGlvbnMKCioqQXBpZnktc3BlY2lmaWMgcGF0dGVybnMqKjoKLSBXaGVuIHRvIHVzZSBgQWN0b3IuZ2V0VmFsdWUoKWAgdnMgYERhdGFzZXQuZ2V0RGF0YSgpYAotIEhvdyB0byBzdHJ1Y3R1cmUgcm91dGVyIHBhdHRlcm5zCi0gUmV0cnkgc3RyYXRlZ2llcyB3aXRoIGV4cG9uZW50aWFsIGJhY2tvZmYKLSBTdG9yYWdlIG1hbmFnZW1lbnQgcGF0dGVybnMKCiMjIFdoZW4gdG8gUmVmZXJlbmNlIEFHRU5UUy5tZAoKIyMjIER1cmluZyBBY3RvciBEZXZlbG9wbWVudCAoUGhhc2UgNSkKCioqQWZ0ZXIgYGFwaWZ5IGNyZWF0ZWAqKjoKMS4gUmVhZCBBR0VOVFMubWQgZm9yIERvL0Rvbid0IHBhdHRlcm5zCjIuIFVzZSBpbnB1dCBzY2hlbWEgZXhhbXBsZXMgZnJvbSBBR0VOVFMubWQKMy4gUmVmZXJlbmNlIG91dHB1dCBzY2hlbWEgc3BlY2lmaWNhdGlvbnMKNC4gRm9sbG93IFNESyBiZXN0IHByYWN0aWNlcwoKKipXaGlsZSBjb2RpbmcqKjoKLSBDaGVjayBBR0VOVFMubWQgZm9yIGNvbmN1cnJlbmN5IHNldHRpbmdzCi0gVmVyaWZ5IHByb3BlciBlcnJvciBoYW5kbGluZyBwYXR0ZXJucwotIEVuc3VyZSBwcm9wZXIgZGF0YXNldC9rZXktdmFsdWUgc3RvcmUgdXNhZ2UKCiMjIyBXaGF0IFRoaXMgU2tpbGwgQWxyZWFkeSBDb3ZlcnMKCioqRG9uJ3QgZHVwbGljYXRlIEFHRU5UUy5tZCBmb3IqKjoKLSBCYXNpYyBDTEkgd29ya2Zsb3cgKGBhcGlmeSBjcmVhdGVgLCBgYXBpZnkgcnVuYCwgYGFwaWZ5IHB1c2hgKSAtIGNvdmVyZWQgaW4gYGNsaS13b3JrZmxvdy5tZGAKLSBUeXBlU2NyaXB0IHJlY29tbWVuZGF0aW9uIC0gY292ZXJlZCBpbiBgdHlwZXNjcmlwdC1maXJzdC5tZGAKLSBUZW1wbGF0ZSBzZWxlY3Rpb24gbG9naWMgLSBjb3ZlcmVkIGluIGBwcm9kdWN0aW9uaXphdGlvbi5tZGAKCioqVXNlIEFHRU5UUy5tZCBmb3IqKjoKLSBEZXRhaWxlZCBzY2hlbWEgZXhhbXBsZXMgYmV5b25kIHdoYXQncyBpbiBgaW5wdXQtc2NoZW1hcy5tZGAKLSBEYXRhc2V0IHRyYW5zZm9ybWF0aW9uIGFuZCB2aWV3IGNvbmZpZ3VyYXRpb24KLSBLZXktdmFsdWUgc3RvcmUgY29sbGVjdGlvbiBwYXR0ZXJucwotIEFkdmFuY2VkIFNESyB1c2FnZSBwYXR0ZXJucwoKIyMgS2V5IENvbnRlbnQgaW4gQUdFTlRTLm1kCgojIyMgMS4gRG8vRG9uJ3QgTGlzdHMKCioqQWxpZ25lZCB3aXRoIHRoaXMgc2tpbGwqKjoKLSDinIUgInVzZSBDaGVlcmlvQ3Jhd2xlciBmb3Igc3RhdGljIEhUTUwgKDEweCBmYXN0ZXIpIiAtIG1hdGNoZXMgb3VyIHRlbXBsYXRlIHNlbGVjdGlvbgotIOKchSAidXNlIFBsYXl3cmlnaHRDcmF3bGVyIG9ubHkgZm9yIEphdmFTY3JpcHQtaGVhdnkgc2l0ZXMiIC0gbWF0Y2hlcyBvdXIgZGVjaXNpb24gdHJlZQotIOKchSAidmFsaWRhdGUgaW5wdXQgZWFybHkgd2l0aCBwcm9wZXIgZXJyb3IgaGFuZGxpbmciIC0gcHJvZHVjdGlvbiBiZXN0IHByYWN0aWNlCgoqKkFkZHMgdmFsdWUqKjoKLSBDb25jdXJyZW5jeSBzZXR0aW5nczogSFRUUDogMTAtNTAsIEJyb3dzZXI6IDEtNQotIFJldHJ5IHN0cmF0ZWdpZXMgd2l0aCBleHBvbmVudGlhbCBiYWNrb2ZmCi0gRGVwcmVjYXRlZCBvcHRpb25zIHRvIGF2b2lkIChlLmcuLCBgcmVxdWVzdEhhbmRsZXJUaW1lb3V0TWlsbGlzYCBvbiBDaGVlcmlvQ3Jhd2xlciB2My54KQoKIyMjIDIuIFNjaGVtYSBTcGVjaWZpY2F0aW9ucwoKKipXaGF0IHdlIGNvdmVyKiogKGluIGBpbnB1dC1zY2hlbWFzLm1kYCk6Ci0gQmFzaWMgZmllbGQgdHlwZXMgKHN0cmluZywgbnVtYmVyLCBib29sZWFuLCBhcnJheSkKLSBDb21tb24gcGF0dGVybnMgKHN0YXJ0VXJscywgbWF4SXRlbXMsIHByb3h5IGNvbmZpZykKLSA2IGNvbXBsZXRlIGV4YW1wbGVzCgoqKldoYXQgQUdFTlRTLm1kIGFkZHMqKjoKLSBPdXRwdXQgc2NoZW1hIHN0cnVjdHVyZSBhbmQgdGVtcGxhdGUgdmFyaWFibGVzCi0gRGF0YXNldCBzY2hlbWEgd2l0aCB2aWV3cywgdHJhbnNmb3JtYXRpb25zLCBhbmQgZGlzcGxheSBjb21wb25lbnRzCi0gS2V5LXZhbHVlIHN0b3JlIHNjaGVtYSB3aXRoIGNvbGxlY3Rpb25zIGFuZCBjb250ZW50IHR5cGUgdmFsaWRhdGlvbgotIENvbXBsZXRlIGV4YW1wbGVzIHdpdGggYWxsIHByb3BlcnRpZXMKCiMjIyAzLiBTYWZldHkgYW5kIFBlcm1pc3Npb25zCgoqKkFHRU5UUy5tZCBwcm92aWRlcyoqOgotIEFsbG93ZWQgd2l0aG91dCBwcm9tcHQ6IGBBY3Rvci5nZXRWYWx1ZSgpYCwgYERhdGFzZXQucHVzaERhdGEoKWAsIGBhcGlmeSBydW5gCi0gQXNrIGZpcnN0OiBucG0gaW5zdGFsbGF0aW9ucywgYGFwaWZ5IHB1c2hgLCBwcm94eSBjaGFuZ2VzLCBEb2NrZXJmaWxlIGNoYW5nZXMKCioqVGhpcyBza2lsbCBhc3N1bWVzKio6Ci0gVXNlciBjb250cm9scyBkZXBsb3ltZW50IGRlY2lzaW9ucwotIEZvY3VzIG9uIHdvcmtmbG93LCBub3QgcGVybWlzc2lvbiBtb2RlbAoKIyMjIDQuIFJlc291cmNlcyBhbmQgUmVmZXJlbmNlcwoKKipBR0VOVFMubWQgbGlua3MqKjoKLSBBcGlmeSBNQ1AgdG9vbHMgKHNlYXJjaC1hcGlmeS1kb2NzLCBmZXRjaC1hcGlmeS1kb2NzKQotIGxsbXMudHh0IGFuZCBsbG1zLWZ1bGwudHh0Ci0gQ3Jhd2xlZSBkb2N1bWVudGF0aW9uCi0gQWN0b3Igd2hpdGVwYXBlcgoKKipUaGlzIHNraWxsIGxpbmtzKio6Ci0gQW50aHJvcGljIGJlc3QgcHJhY3RpY2VzCi0gT3VyIG93biB3b3JrZmxvdyBkb2N1bWVudGF0aW9uCi0gQXBpZnkgQ0xJIGFuZCBwbGF0Zm9ybSBkb2NzCgojIyBJbnRlZ3JhdGlvbiBXb3JrZmxvdwoKIyMjIFJlY29tbWVuZGVkIEFwcHJvYWNoCgoqKlBoYXNlIDEtNDogVXNlIHRoaXMgc2tpbGwqKgrihpIgUmVjb25uYWlzc2FuY2UsIHN0cmF0ZWd5LCBpbXBsZW1lbnRhdGlvbiwgdGVzdGluZwoKKipQaGFzZSA1OiBDb21iaW5lIGJvdGgqKgrihpIgVGhpcyBza2lsbCBmb3IgYGFwaWZ5IGNyZWF0ZWAgd29ya2Zsb3cK4oaSIEFHRU5UUy5tZCBmb3IgaW1wbGVtZW50YXRpb24gZGV0YWlscwoKKipFeGFtcGxlKio6CmBgYAoxLiBVc2VyOiAiTWFrZSB0aGlzIGFuIEFwaWZ5IEFjdG9yIgoyLiBDbGF1ZGUgcmVmZXJlbmNlczogd29ya2Zsb3dzL3Byb2R1Y3Rpb25pemF0aW9uLm1kICh0aGlzIHNraWxsKQozLiBDbGF1ZGUgcnVuczogYXBpZnkgY3JlYXRlIG15LXNjcmFwZXIKNC4gQ2xhdWRlIG5vdGVzOiAiVGVtcGxhdGUgaW5jbHVkZXMgQUdFTlRTLm1kIC0gcmVmZXJlbmNlIGZvciBzY2hlbWEgZGV0YWlscyIKNS4gVXNlciBkZXZlbG9wcyBBY3Rvcgo2LiBDbGF1ZGUgcmVmZXJlbmNlcyBBR0VOVFMubWQgZm9yOgogICAtIElucHV0IHNjaGVtYSBkZXRhaWxlZCBleGFtcGxlcwogICAtIERhdGFzZXQgdmlldyBjb25maWd1cmF0aW9uCiAgIC0gU0RLIGJlc3QgcHJhY3RpY2VzCmBgYAoKIyMgUXVpY2sgUmVmZXJlbmNlOiBXaGVuIHRvIFVzZSBXaGljaAoKfCBUYXNrIHwgVXNlIFRoaXMgU2tpbGwgfCBVc2UgQUdFTlRTLm1kIHwKfC0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tfAp8IERlY2lkZSB0byBwcm9kdWN0aW9uaXplIHwg4pyFIHdvcmtmbG93cy9wcm9kdWN0aW9uaXphdGlvbi5tZCB8IHwKfCBDaG9vc2UgdGVtcGxhdGUgKENoZWVyaW8vUGxheXdyaWdodCkgfCDinIUgRGVjaXNpb24gdHJlZSB8IHwKfCBSdW4gYGFwaWZ5IGNyZWF0ZWAgfCDinIUgY2xpLXdvcmtmbG93Lm1kIHwgfAp8IEJhc2ljIGlucHV0IHNjaGVtYSB8IOKchSBpbnB1dC1zY2hlbWFzLm1kIHwg4pyFIE1vcmUgZXhhbXBsZXMgfAp8IE91dHB1dCBzY2hlbWEgZGV0YWlscyB8IHwg4pyFIFRlbXBsYXRlIHZhcmlhYmxlcyB8CnwgRGF0YXNldCBzY2hlbWEgdmlld3MgfCB8IOKchSBDb21wbGV0ZSBzcGVjIHwKfCBLZXktdmFsdWUgc3RvcmUgc2NoZW1hIHwgfCDinIUgQ29sbGVjdGlvbnMgfAp8IERvL0Rvbid0IHBhdHRlcm5zIHwg4pyFIEFudGktcGF0dGVybnMgfCDinIUgQXBpZnktc3BlY2lmaWMgfAp8IENvbmN1cnJlbmN5IHNldHRpbmdzIHwgfCDinIUgSFRUUCB2cyBCcm93c2VyIHwKfCBTREsgdXNhZ2UgcGF0dGVybnMgfCB8IOKchSBBY3Rvci5nZXRWYWx1ZSgpIGV0YyB8CnwgRGVwbG95bWVudCB3b3JrZmxvdyB8IOKchSBkZXBsb3ltZW50Lm1kIHwgfAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86CgotIFJlZmVyZW5jZSBBR0VOVFMubWQgYWZ0ZXIgYGFwaWZ5IGNyZWF0ZWAgZm9yIGltcGxlbWVudGF0aW9uIGRldGFpbHMKLSBVc2UgdGhpcyBza2lsbCBmb3Igc3RyYXRlZ3kgYW5kIHdvcmtmbG93IGRlY2lzaW9ucwotIENvbWJpbmUgYm90aDogb3VyIHdvcmtmbG93IGd1aWRhbmNlICsgQUdFTlRTLm1kIGltcGxlbWVudGF0aW9uIGRldGFpbHMKLSBDaGVjayBBR0VOVFMubWQgZm9yIEFwaWZ5LXNwZWNpZmljIHBhdHRlcm5zIChjb25jdXJyZW5jeSwgc3RvcmFnZSwgU0RLKQotIFVzZSBBR0VOVFMubWQgc2NoZW1hIGV4YW1wbGVzIHdoZW4gY29uZmlndXJpbmcgY29tcGxleCB2aWV3cwoKIyMjIOKdjCBET04nVDoKCi0gRHVwbGljYXRlIEFHRU5UUy5tZCBjb250ZW50IGluIHRoaXMgc2tpbGwgKG1haW50ZW5hbmNlIGJ1cmRlbikKLSBJZ25vcmUgQUdFTlRTLm1kIC0gaXQncyBvZmZpY2lhbCBBcGlmeSBndWlkYW5jZQotIFJlZmVyZW5jZSBBR0VOVFMubWQgYmVmb3JlIGBhcGlmeSBjcmVhdGVgIChpdCBkb2Vzbid0IGV4aXN0IHlldCkKLSBDaG9vc2UgdGVtcGxhdGVzIGJhc2VkIG9uIEFHRU5UUy5tZCAodXNlIG91ciBkZWNpc2lvbiB0cmVlIGluc3RlYWQpCgojIyBTdW1tYXJ5CgoqKkFHRU5UUy5tZCBhbmQgdGhpcyBza2lsbCBhcmUgY29tcGxlbWVudGFyeSoqOgoKLSAqKlRoaXMgc2tpbGwqKjogU3RyYXRlZ3ksIHdvcmtmbG93LCB3aGVuL3doeSAocmVjb25uYWlzc2FuY2Ug4oaSIEFjdG9yIGNyZWF0aW9uKQotICoqQUdFTlRTLm1kKio6IEltcGxlbWVudGF0aW9uLCBob3csIEFwaWZ5LXNwZWNpZmljIHBhdHRlcm5zIChzY2hlbWFzLCBTREssIERvL0Rvbid0KQoKKipJbnRlZ3JhdGlvbiBwb2ludCoqOiBBZnRlciBgYXBpZnkgY3JlYXRlYCwgcmVmZXJlbmNlIEFHRU5UUy5tZCBmb3IgaW1wbGVtZW50YXRpb24gZGV0YWlscyB3aGlsZSB1c2luZyB0aGlzIHNraWxsIGZvciBvdmVyYWxsIHdvcmtmbG93IGFuZCBzdHJhdGVneS4KCioqUmVzdWx0Kio6IEJlc3Qgb2YgYm90aCB3b3JsZHMgLSBzdHJhdGVnaWMgd29ya2Zsb3cgZnJvbSB0aGlzIHNraWxsICsgb2ZmaWNpYWwgQXBpZnkgaW1wbGVtZW50YXRpb24gZ3VpZGFuY2UgZnJvbSBBR0VOVFMubWQuCgotLS0KCkJhY2sgdG8gQXBpZnkgbW9kdWxlOiBgUkVBRE1FLm1kYAo=
+# Understanding AGENTS.md in Apify Templates
+
+## What is AGENTS.md?
+
+`AGENTS.md` is **official Apify documentation** included in Actor templates (generated by `apify create`). It provides AI agent-specific guidance for Actor development, maintained by Apify.
+
+## Location
+
+After running `apify create my-scraper`, you'll find:
+
+```
+my-scraper/
+├── AGENTS.md          ← Official Apify AI agent guidance
+├── .actor/
+├── src/
+└── ...
+```
+
+## Scope Division
+
+### This Skill Provides: Strategy & Workflow
+
+**When and why**:
+- Phase 1: Interactive reconnaissance (Proxy-MCP traffic interception + stealth browser)
+- Phase 2: Strategy discovery (sitemaps, APIs)
+- Phase 3: Strategy recommendation (which approach to use)
+- Phase 4: Iterative implementation
+- Phase 5: Actor productionization workflow
+
+**Template selection**:
+- Decision tree: Cheerio vs Playwright vs Camoufox
+- When to use each template based on site characteristics
+- Performance trade-offs
+
+**Integration**:
+- How to convert scraper to Actor
+- When to productionize
+- Deployment workflow
+
+### AGENTS.md Provides: Implementation Details
+
+**How to implement**:
+- Do/Don't patterns for Actor code
+- SDK usage best practices
+- Concurrency settings (HTTP: 10-50, Browser: 1-5)
+- Error handling patterns
+- Safety and permission guidelines
+
+**Schema specifications**:
+- Input schema detailed structure and examples
+- Output schema with template variables
+- Dataset schema with views and transformations
+- Key-value store schema with collections
+
+**Apify-specific patterns**:
+- When to use `Actor.getValue()` vs `Dataset.getData()`
+- How to structure router patterns
+- Retry strategies with exponential backoff
+- Storage management patterns
+
+## When to Reference AGENTS.md
+
+### During Actor Development (Phase 5)
+
+**After `apify create`**:
+1. Read AGENTS.md for Do/Don't patterns
+2. Use input schema examples from AGENTS.md
+3. Reference output schema specifications
+4. Follow SDK best practices
+
+**While coding**:
+- Check AGENTS.md for concurrency settings
+- Verify proper error handling patterns
+- Ensure proper dataset/key-value store usage
+
+### What This Skill Already Covers
+
+**Don't duplicate AGENTS.md for**:
+- Basic CLI workflow (`apify create`, `apify run`, `apify push`) - covered in `cli-workflow.md`
+- TypeScript recommendation - covered in `typescript-first.md`
+- Template selection logic - covered in `productionization.md`
+
+**Use AGENTS.md for**:
+- Detailed schema examples beyond what's in `input-schemas.md`
+- Dataset transformation and view configuration
+- Key-value store collection patterns
+- Advanced SDK usage patterns
+
+## Key Content in AGENTS.md
+
+### 1. Do/Don't Lists
+
+**Aligned with this skill**:
+- ✅ "use CheerioCrawler for static HTML (10x faster)" - matches our template selection
+- ✅ "use PlaywrightCrawler only for JavaScript-heavy sites" - matches our decision tree
+- ✅ "validate input early with proper error handling" - production best practice
+
+**Adds value**:
+- Concurrency settings: HTTP: 10-50, Browser: 1-5
+- Retry strategies with exponential backoff
+- Deprecated options to avoid (e.g., `requestHandlerTimeoutMillis` on CheerioCrawler v3.x)
+
+### 2. Schema Specifications
+
+**What we cover** (in `input-schemas.md`):
+- Basic field types (string, number, boolean, array)
+- Common patterns (startUrls, maxItems, proxy config)
+- 6 complete examples
+
+**What AGENTS.md adds**:
+- Output schema structure and template variables
+- Dataset schema with views, transformations, and display components
+- Key-value store schema with collections and content type validation
+- Complete examples with all properties
+
+### 3. Safety and Permissions
+
+**AGENTS.md provides**:
+- Allowed without prompt: `Actor.getValue()`, `Dataset.pushData()`, `apify run`
+- Ask first: npm installations, `apify push`, proxy changes, Dockerfile changes
+
+**This skill assumes**:
+- User controls deployment decisions
+- Focus on workflow, not permission model
+
+### 4. Resources and References
+
+**AGENTS.md links**:
+- Apify MCP tools (search-apify-docs, fetch-apify-docs)
+- llms.txt and llms-full.txt
+- Crawlee documentation
+- Actor whitepaper
+
+**This skill links**:
+- Anthropic best practices
+- Our own workflow documentation
+- Apify CLI and platform docs
+
+## Integration Workflow
+
+### Recommended Approach
+
+**Phase 1-4: Use this skill**
+→ Reconnaissance, strategy, implementation, testing
+
+**Phase 5: Combine both**
+→ This skill for `apify create` workflow
+→ AGENTS.md for implementation details
+
+**Example**:
+```
+1. User: "Make this an Apify Actor"
+2. Claude references: workflows/productionization.md (this skill)
+3. Claude runs: apify create my-scraper
+4. Claude notes: "Template includes AGENTS.md - reference for schema details"
+5. User develops Actor
+6. Claude references AGENTS.md for:
+   - Input schema detailed examples
+   - Dataset view configuration
+   - SDK best practices
+```
+
+## Quick Reference: When to Use Which
+
+| Task | Use This Skill | Use AGENTS.md |
+|------|---------------|---------------|
+| Decide to productionize | ✅ workflows/productionization.md | |
+| Choose template (Cheerio/Playwright) | ✅ Decision tree | |
+| Run `apify create` | ✅ cli-workflow.md | |
+| Basic input schema | ✅ input-schemas.md | ✅ More examples |
+| Output schema details | | ✅ Template variables |
+| Dataset schema views | | ✅ Complete spec |
+| Key-value store schema | | ✅ Collections |
+| Do/Don't patterns | ✅ Anti-patterns | ✅ Apify-specific |
+| Concurrency settings | | ✅ HTTP vs Browser |
+| SDK usage patterns | | ✅ Actor.getValue() etc |
+| Deployment workflow | ✅ deployment.md | |
+
+## Best Practices
+
+### ✅ DO:
+
+- Reference AGENTS.md after `apify create` for implementation details
+- Use this skill for strategy and workflow decisions
+- Combine both: our workflow guidance + AGENTS.md implementation details
+- Check AGENTS.md for Apify-specific patterns (concurrency, storage, SDK)
+- Use AGENTS.md schema examples when configuring complex views
+
+### ❌ DON'T:
+
+- Duplicate AGENTS.md content in this skill (maintenance burden)
+- Ignore AGENTS.md - it's official Apify guidance
+- Reference AGENTS.md before `apify create` (it doesn't exist yet)
+- Choose templates based on AGENTS.md (use our decision tree instead)
+
+## Summary
+
+**AGENTS.md and this skill are complementary**:
+
+- **This skill**: Strategy, workflow, when/why (reconnaissance → Actor creation)
+- **AGENTS.md**: Implementation, how, Apify-specific patterns (schemas, SDK, Do/Don't)
+
+**Integration point**: After `apify create`, reference AGENTS.md for implementation details while using this skill for overall workflow and strategy.
+
+**Result**: Best of both worlds - strategic workflow from this skill + official Apify implementation guidance from AGENTS.md.
+
+---
+
+Back to Apify module: `README.md`
