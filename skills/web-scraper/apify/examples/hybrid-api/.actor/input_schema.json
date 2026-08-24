@@ -1,1 +1,41 @@
-ewogICAgInRpdGxlIjogIkh5YnJpZCBBUEkgU2NyYXBlciBJbnB1dCIsCiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInNjaGVtYVZlcnNpb24iOiAxLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgInNpdGVtYXBVcmwiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJTaXRlbWFwIFVSTCIsCiAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJVUkwgdG8gc2l0ZW1hcC54bWwgZmlsZSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAidGV4dGZpZWxkIiwKICAgICAgICAgICAgInBhdHRlcm4iOiAiaHR0cHM/Oi8vLisiLAogICAgICAgICAgICAiZXhhbXBsZSI6ICJodHRwczovL2V4YW1wbGUuY29tL3NpdGVtYXAueG1sIgogICAgICAgIH0sCiAgICAgICAgImFwaUJhc2VVcmwiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJBUEkgQmFzZSBVUkwiLAogICAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQVBJIGVuZHBvaW50IGJhc2UgVVJMICh3aXRob3V0IElEKSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAidGV4dGZpZWxkIiwKICAgICAgICAgICAgInBhdHRlcm4iOiAiaHR0cHM/Oi8vLisiLAogICAgICAgICAgICAiZXhhbXBsZSI6ICJodHRwczovL2FwaS5leGFtcGxlLmNvbS9wcm9kdWN0cyIKICAgICAgICB9LAogICAgICAgICJpZFBhdHRlcm4iOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJJRCBQYXR0ZXJuIChyZWdleCkiLAogICAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiUmVnZXggdG8gZXh0cmFjdCBJRCBmcm9tIFVSTCAodXNlIGNhcHR1cmUgZ3JvdXApIiwKICAgICAgICAgICAgImVkaXRvciI6ICJ0ZXh0ZmllbGQiLAogICAgICAgICAgICAiZGVmYXVsdCI6ICIvcHJvZHVjdHMvKFteL10rKSIsCiAgICAgICAgICAgICJleGFtcGxlIjogIi9wcm9kdWN0cy8oW14vXSspIgogICAgICAgIH0sCiAgICAgICAgIm1heEl0ZW1zIjogewogICAgICAgICAgICAidGl0bGUiOiAiTWF4aW11bSBpdGVtcyIsCiAgICAgICAgICAgICJ0eXBlIjogImludGVnZXIiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTWF4aW11bSBudW1iZXIgb2YgcHJvZHVjdHMgdG8gZmV0Y2giLAogICAgICAgICAgICAiZWRpdG9yIjogIm51bWJlciIsCiAgICAgICAgICAgICJkZWZhdWx0IjogMTAwMCwKICAgICAgICAgICAgIm1pbmltdW0iOiAxLAogICAgICAgICAgICAibWF4aW11bSI6IDEwMDAwMAogICAgICAgIH0KICAgIH0sCiAgICAicmVxdWlyZWQiOiBbInNpdGVtYXBVcmwiLCAiYXBpQmFzZVVybCJdCn0K
+{
+    "title": "Hybrid API Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "sitemapUrl": {
+            "title": "Sitemap URL",
+            "type": "string",
+            "description": "URL to sitemap.xml file",
+            "editor": "textfield",
+            "pattern": "https?://.+",
+            "example": "https://example.com/sitemap.xml"
+        },
+        "apiBaseUrl": {
+            "title": "API Base URL",
+            "type": "string",
+            "description": "API endpoint base URL (without ID)",
+            "editor": "textfield",
+            "pattern": "https?://.+",
+            "example": "https://api.example.com/products"
+        },
+        "idPattern": {
+            "title": "ID Pattern (regex)",
+            "type": "string",
+            "description": "Regex to extract ID from URL (use capture group)",
+            "editor": "textfield",
+            "default": "/products/([^/]+)",
+            "example": "/products/([^/]+)"
+        },
+        "maxItems": {
+            "title": "Maximum items",
+            "type": "integer",
+            "description": "Maximum number of products to fetch",
+            "editor": "number",
+            "default": 1000,
+            "minimum": 1,
+            "maximum": 100000
+        }
+    },
+    "required": ["sitemapUrl", "apiBaseUrl"]
+}
