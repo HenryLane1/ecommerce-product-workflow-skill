@@ -1,1 +1,267 @@
-IyBTZXNzaW9uIFdvcmtmbG93cwoKUmVjb3JkLCByZXBsYXksIGFuZCBhbmFseXplIGJyb3dzaW5nIHNlc3Npb25zIHdpdGggcHJveHktbWNwJ3Mgc2Vzc2lvbiBtYW5hZ2VtZW50LgoKIyMgT3ZlcnZpZXcKClNlc3Npb24gbWFuYWdlbWVudCBpcyBhIHVuaXF1ZSBjYXBhYmlsaXR5IG9mIHByb3h5LW1jcCB3aXRoIG5vIGVxdWl2YWxlbnQgaW4gdHJhZGl0aW9uYWwgYnJvd3NlciBhdXRvbWF0aW9uLiBTZXNzaW9ucyBjYXB0dXJlIGFsbCBIVFRQIHRyYWZmaWMgYXMgTkRKU09OIG9uIGRpc2ssIGVuYWJsaW5nOgoKLSAqKlJlY29yZGluZyoqIHJlY29ubmFpc3NhbmNlIGZvciBsYXRlciByZXZpZXcKLSAqKlJlcGxheWluZyoqIHJlY29yZGVkIHNlc3Npb25zIHRvIHZlcmlmeSBiZWhhdmlvcgotICoqRXhwb3J0aW5nKiogc2Vzc2lvbnMgYXMgSEFSIGZpbGVzIGZvciBhbmFseXNpcwotICoqUXVlcnlpbmcqKiBzZXNzaW9uIGRhdGEgZm9yIHNwZWNpZmljIHBhdHRlcm5zCi0gKipSZWNvdmVyaW5nKiogaW50ZXJydXB0ZWQgc2Vzc2lvbnMKCiMjIFNlc3Npb24gUmVjb3JkaW5nCgojIyMgU3RhcnQgUmVjb3JkaW5nCgpgYGAKcHJveHlfc2Vzc2lvbl9zdGFydCgicmVjb24tc2hvcGNvbSIpCmBgYAoKUGFyYW1ldGVyczoKLSBgbmFtZWA6IEh1bWFuLXJlYWRhYmxlIHNlc3Npb24gbmFtZQotIGBjYXB0dXJlX3Byb2ZpbGVgOiBPcHRpb25hbCDigJQgYCJwcmV2aWV3ImAgKDRLQiBib2R5IHByZXZpZXdzLCBkZWZhdWx0KSBvciBgImZ1bGwiYCAoY29tcGxldGUgYm9kaWVzKQoKIyMjIFBlcmZvcm0gQWN0aW9ucwoKV2hpbGUgcmVjb3JkaW5nLCBhbGwgSFRUUCB0cmFmZmljIGlzIGNhcHR1cmVkOgoKYGBgCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19uYXZpZ2F0ZSgiaHR0cHM6Ly9zaG9wLmNvbS9wcm9kdWN0cyIpCmh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCAiZG93biIsIDEwMDApCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIuY2F0ZWdvcnktbGluayIpCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMjAwMCkKYGBgCgojIyMgU3RvcCBSZWNvcmRpbmcKCmBgYApwcm94eV9zZXNzaW9uX3N0b3Aoc2Vzc2lvbl9pZCkKYGBgCgojIyMgQ2hlY2sgU2Vzc2lvbiBTdGF0dXMKCmBgYApwcm94eV9zZXNzaW9uX3N0YXR1cyhzZXNzaW9uX2lkKQpgYGAKCiMjIEhBUiBFeHBvcnQgYW5kIEltcG9ydAoKIyMjIEV4cG9ydCBTZXNzaW9uIGFzIEhBUgoKYGBgCnByb3h5X2V4cG9ydF9oYXIoc2Vzc2lvbl9pZCwgInJlY29uLXNob3Bjb20uaGFyIikKYGBgCgpIQVIgKEhUVFAgQXJjaGl2ZSkgaXMgYSBzdGFuZGFyZCBmb3JtYXQgdW5kZXJzdG9vZCBieToKLSBDaHJvbWUgRGV2VG9vbHMgKGltcG9ydCBpbiBOZXR3b3JrIHRhYikKLSBQb3N0bWFuCi0gQ2hhcmxlcyBQcm94eQotIE1vc3QgbmV0d29yayBhbmFseXNpcyB0b29scwoKIyMjIEltcG9ydCBIQVIgZm9yIEFuYWx5c2lzCgpgYGAKcHJveHlfaW1wb3J0X2hhcigiY2FwdHVyZWQtdHJhZmZpYy5oYXIiKQpgYGAKClVzZSBpbXBvcnRlZCBIQVIgZGF0YSBmb3I6Ci0gQW5hbHl6aW5nIHRyYWZmaWMgY2FwdHVyZWQgYnkgb3RoZXIgdG9vbHMKLSBSZXBsYXlpbmcgcHJldmlvdXNseSByZWNvcmRlZCBzZXNzaW9ucwotIFNoYXJpbmcgcmVjb25uYWlzc2FuY2UgZGF0YSBiZXR3ZWVuIHRlYW0gbWVtYmVycwoKIyMgU2Vzc2lvbiBSZXBsYXkKCiMjIyBEcnkgUnVuIChQcmV2aWV3KQoKYGBgCnByb3h5X3JlcGxheV9zZXNzaW9uKHNlc3Npb25faWQsIG1vZGU6ICJkcnlfcnVuIikKYGBgCgpTaG93cyB3aGF0IHJlcXVlc3RzIHdvdWxkIGJlIG1hZGUgd2l0aG91dCBleGVjdXRpbmcgdGhlbS4gVXNlIHRoaXMgdG86Ci0gVmVyaWZ5IHRoZSBzZXNzaW9uIGNhcHR1cmVkIHRoZSByaWdodCB0cmFmZmljCi0gVW5kZXJzdGFuZCB0aGUgcmVxdWVzdCBzZXF1ZW5jZSBiZWZvcmUgcmVwbGF5aW5nCi0gSWRlbnRpZnkgcmVxdWVzdHMgdGhhdCBtYXkgbmVlZCBtb2RpZmljYXRpb24KCiMjIyBFeGVjdXRlIFJlcGxheQoKYGBgCnByb3h5X3JlcGxheV9zZXNzaW9uKHNlc3Npb25faWQsIG1vZGU6ICJleGVjdXRlIikKYGBgCgpSZS1zZW5kcyBhbGwgY2FwdHVyZWQgcmVxdWVzdHMuIFVzZWZ1bCBmb3I6Ci0gVmVyaWZ5aW5nIEFQSSByZXNwb25zZXMgaGF2ZW4ndCBjaGFuZ2VkCi0gUmUtY29sbGVjdGluZyBkYXRhIGZyb20ga25vd24tZ29vZCBlbmRwb2ludHMKLSBUZXN0aW5nIGlmIGFudGktYm90IG1lYXN1cmVzIGhhdmUgY2hhbmdlZAoKIyMgVG9rZW4gYW5kIENvb2tpZSBQZXJzaXN0ZW5jZQoKIyMjIEV4dHJhY3QgQXV0aGVudGljYXRpb24gRGF0YQoKQWZ0ZXIgbmF2aWdhdGluZyB0aHJvdWdoIGEgbG9naW4gZmxvdzoKCmBgYAppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbGlzdF9jb29raWVzKCkKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3Rfc3RvcmFnZV9rZXlzKHN0b3JhZ2VfdHlwZTogImxvY2FsIikKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2dldF9zdG9yYWdlX3ZhbHVlKCJhdXRoX3Rva2VuIiwgc3RvcmFnZV90eXBlOiAibG9jYWwiKQpgYGAKCiMjIyBQZXJzaXN0IEFjcm9zcyBTZXNzaW9ucwoKUmVjb3JkIHRoZSBhdXRoZW50aWNhdGlvbiBmbG93OgoKYGBgCnByb3h5X3Nlc3Npb25fc3RhcnQoImF1dGgtZmxvdyIpCiMgLi4uIHBlcmZvcm0gbG9naW4gLi4uCnByb3h5X3Nlc3Npb25fc3RvcChzZXNzaW9uX2lkKQpgYGAKCkxhdGVyLCByZXBsYXkgdGhlIGF1dGggZmxvdyB0byBnZXQgZnJlc2ggdG9rZW5zOgoKYGBgCnByb3h5X3JlcGxheV9zZXNzaW9uKHNlc3Npb25faWQsIG1vZGU6ICJleGVjdXRlIikKYGBgCgojIyBRdWVyeSBhbmQgRmlsdGVyCgojIyMgU2VhcmNoIFdpdGhpbiBhIFNlc3Npb24KCmBgYApwcm94eV9xdWVyeV9zZXNzaW9uKHNlc3Npb25faWQsIHF1ZXJ5OiAicHJvZHVjdHMiKQpgYGAKCkZpbmQgc3BlY2lmaWMgcmVxdWVzdHMgd2l0aGluIGEgcmVjb3JkZWQgc2Vzc2lvbiBieSBVUkwsIGhlYWRlciwgb3IgYm9keSBjb250ZW50LgoKIyMjIExpc3QgQWxsIFNlc3Npb25zCgpgYGAKcHJveHlfbGlzdF9zZXNzaW9ucygpCmBgYAoKIyMjIEdldCBTZXNzaW9uIERldGFpbHMKCmBgYApwcm94eV9nZXRfc2Vzc2lvbihzZXNzaW9uX2lkKQpgYGAKCiMjIyBSZWNvdmVyIEludGVycnVwdGVkIFNlc3Npb24KCklmIGEgc2Vzc2lvbiB3YXMgaW50ZXJydXB0ZWQgKGNyYXNoLCBkaXNjb25uZWN0KToKCmBgYApwcm94eV9zZXNzaW9uX3JlY292ZXIoc2Vzc2lvbl9pZCkKYGBgCgpSZWNvdmVycyBOREpTT04gZGF0YSBmcm9tIHRoZSBvbi1kaXNrIHJlY29yZGluZy4KCiMjIyBEZWxldGUgU2Vzc2lvbgoKYGBgCnByb3h5X2RlbGV0ZV9zZXNzaW9uKHNlc3Npb25faWQpCmBgYAoKIyMgUHJhY3RpY2FsIFdvcmtmbG93cwoKIyMjIFdvcmtmbG93IDE6IFJlY29yZCBSZWNvbm5haXNzYW5jZSBmb3IgUmVwbGF5CgpgYGAKIyBTdGFydCByZWNvcmRpbmcKcHJveHlfc2Vzc2lvbl9zdGFydCgicmVjb24tZXhhbXBsZS1jb20iKQoKIyBQZXJmb3JtIHJlY29ubmFpc3NhbmNlCnByb3h5X3N0YXJ0KCkKaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCgiaHR0cHM6Ly9leGFtcGxlLmNvbSIsIHN0ZWFsdGhNb2RlOiB0cnVlKQppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfYXR0YWNoKHRhcmdldF9pZCkKCiMgQnJvd3NlIGFuZCBkaXNjb3ZlciBBUElzCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICIucHJvZHVjdHMtbGluayIpCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMjAwMCkKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICJhcGkiKQoKIyBTdG9wIHJlY29yZGluZwpwcm94eV9zZXNzaW9uX3N0b3Aoc2Vzc2lvbl9pZCkKCiMgRXhwb3J0IGZvciB0ZWFtIHJldmlldwpwcm94eV9leHBvcnRfaGFyKHNlc3Npb25faWQsICJyZWNvbi1leGFtcGxlLWNvbS5oYXIiKQpgYGAKCiMjIyBXb3JrZmxvdyAyOiBDYXB0dXJlIEF1dGhlbnRpY2F0aW9uIEZsb3cKCmBgYAojIFN0YXJ0IHJlY29yZGluZwpwcm94eV9zZXNzaW9uX3N0YXJ0KCJhdXRoLWV4YW1wbGUtY29tIikKCiMgTmF2aWdhdGUgdG8gbG9naW4KaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX25hdmlnYXRlKCJodHRwczovL2V4YW1wbGUuY29tL2xvZ2luIikKCiMgRmlsbCBjcmVkZW50aWFscwpodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCAiaW5wdXRbbmFtZT0nZW1haWwnXSIpCmh1bWFuaXplcl90eXBlKHRhcmdldF9pZCwgInVzZXJAZXhhbXBsZS5jb20iKQpodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCAiaW5wdXRbbmFtZT0ncGFzc3dvcmQnXSIpCmh1bWFuaXplcl90eXBlKHRhcmdldF9pZCwgInBhc3N3b3JkMTIzIikKaHVtYW5pemVyX2NsaWNrKHRhcmdldF9pZCwgImJ1dHRvblt0eXBlPSdzdWJtaXQnXSIpCmh1bWFuaXplcl9pZGxlKHRhcmdldF9pZCwgMzAwMCkKCiMgRXh0cmFjdCB0b2tlbnMKaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfY29va2llcygpCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19nZXRfc3RvcmFnZV92YWx1ZSgiYXV0aF90b2tlbiIsICJsb2NhbCIpCgojIFN0b3AgcmVjb3JkaW5nCnByb3h5X3Nlc3Npb25fc3RvcChzZXNzaW9uX2lkKQpgYGAKCiMjIyBXb3JrZmxvdyAzOiBJbXBvcnQgSEFSIGZvciBBbmFseXNpcwoKYGBgCiMgSW1wb3J0IEhBUiBjYXB0dXJlZCBieSBhbm90aGVyIHRvb2wKcHJveHlfaW1wb3J0X2hhcigiZXh0ZXJuYWwtY2FwdHVyZS5oYXIiKQoKIyBRdWVyeSBmb3IgQVBJIGVuZHBvaW50cwpwcm94eV9xdWVyeV9zZXNzaW9uKHNlc3Npb25faWQsIHF1ZXJ5OiAiYXBpIikKCiMgQW5hbHl6ZSBzcGVjaWZpYyBleGNoYW5nZXMKcHJveHlfZ2V0X2V4Y2hhbmdlKGV4Y2hhbmdlX2lkKQpgYGAKCiMjIyBXb3JrZmxvdyA0OiBDb21wYXJlIEJlZm9yZS9BZnRlcgoKYGBgCiMgUmVjb3JkIGJhc2VsaW5lCnByb3h5X3Nlc3Npb25fc3RhcnQoImJhc2VsaW5lIikKIyAuLi4gYnJvd3NlIHNpdGUgLi4uCnByb3h5X3Nlc3Npb25fc3RvcChzZXNzaW9uX2lkX2Jhc2VsaW5lKQoKIyBNYWtlIGNoYW5nZXMgKGRlcGxveSBuZXcgdmVyc2lvbiwgZXRjLikKCiMgUmVjb3JkIG5ldyBzdGF0ZQpwcm94eV9zZXNzaW9uX3N0YXJ0KCJhZnRlci1jaGFuZ2UiKQojIC4uLiBicm93c2Ugc2FtZSBwYWdlcyAuLi4KcHJveHlfc2Vzc2lvbl9zdG9wKHNlc3Npb25faWRfYWZ0ZXIpCgojIFF1ZXJ5IGJvdGggc2Vzc2lvbnMgdG8gY29tcGFyZQpwcm94eV9xdWVyeV9zZXNzaW9uKHNlc3Npb25faWRfYmFzZWxpbmUsIHF1ZXJ5OiAicHJvZHVjdHMiKQpwcm94eV9xdWVyeV9zZXNzaW9uKHNlc3Npb25faWRfYWZ0ZXIsIHF1ZXJ5OiAicHJvZHVjdHMiKQpgYGAKCiMjIEJlc3QgUHJhY3RpY2VzCgojIyMgRE86Ci0gKipOYW1lIHNlc3Npb25zIGRlc2NyaXB0aXZlbHkqKiDigJQgaW5jbHVkZSBzaXRlIG5hbWUgYW5kIHB1cnBvc2UKLSAqKlVzZSBgY2FwdHVyZV9wcm9maWxlOiAiZnVsbCJgKiogd2hlbiB5b3UgbmVlZCBjb21wbGV0ZSByZXNwb25zZSBib2RpZXMKLSAqKkV4cG9ydCBIQVIgZmlsZXMqKiBmb3IgYXJjaGl2YWwgYW5kIHNoYXJpbmcKLSAqKlVzZSBkcnlfcnVuKiogYmVmb3JlIGV4ZWN1dGluZyBhIHJlcGxheQotICoqUmVjb3JkIGF1dGggZmxvd3MqKiBmb3IgZWFzeSB0b2tlbiByZWZyZXNoCgojIyMgRE9OJ1Q6Ci0gKipSZWNvcmQgdW5uZWNlc3NhcmlseSBsb25nIHNlc3Npb25zKiog4oCUIHRoZXkgY29uc3VtZSBkaXNrIHNwYWNlCi0gKipSZXBsYXkgd2l0aG91dCByZXZpZXdpbmcqKiDigJQgQVBJcyBtYXkgaGF2ZSBjaGFuZ2VkCi0gKipTdG9yZSBzZXNzaW9ucyB3aXRoIHNlbnNpdGl2ZSBjcmVkZW50aWFscyoqIGluZGVmaW5pdGVseSDigJQgZGVsZXRlIHdoZW4gZG9uZQotICoqRm9yZ2V0IHRvIHN0b3AgcmVjb3JkaW5nKiog4oCUIHVzZSBgcHJveHlfc2Vzc2lvbl9zdGF0dXMoKWAgdG8gY2hlY2sKCiMjIFJlbGF0ZWQKCi0gKipUcmFmZmljIGludGVyY2VwdGlvbioqOiBTZWUgYHRyYWZmaWMtaW50ZXJjZXB0aW9uLm1kYAotICoqVG9vbCByZWZlcmVuY2UqKjogU2VlIGAuLi9yZWZlcmVuY2UvcHJveHktdG9vbC1yZWZlcmVuY2UubWRgCi0gKipSZWNvbm5haXNzYW5jZSB3b3JrZmxvdyoqOiBTZWUgYC4uL3dvcmtmbG93cy9yZWNvbm5haXNzYW5jZS5tZGAK
+# Session Workflows
+
+Record, replay, and analyze browsing sessions with proxy-mcp's session management.
+
+## Overview
+
+Session management is a unique capability of proxy-mcp with no equivalent in traditional browser automation. Sessions capture all HTTP traffic as NDJSON on disk, enabling:
+
+- **Recording** reconnaissance for later review
+- **Replaying** recorded sessions to verify behavior
+- **Exporting** sessions as HAR files for analysis
+- **Querying** session data for specific patterns
+- **Recovering** interrupted sessions
+
+## Session Recording
+
+### Start Recording
+
+```
+proxy_session_start("recon-shopcom")
+```
+
+Parameters:
+- `name`: Human-readable session name
+- `capture_profile`: Optional — `"preview"` (4KB body previews, default) or `"full"` (complete bodies)
+
+### Perform Actions
+
+While recording, all HTTP traffic is captured:
+
+```
+interceptor_chrome_devtools_navigate("https://shop.com/products")
+humanizer_scroll(target_id, "down", 1000)
+humanizer_click(target_id, ".category-link")
+humanizer_idle(target_id, 2000)
+```
+
+### Stop Recording
+
+```
+proxy_session_stop(session_id)
+```
+
+### Check Session Status
+
+```
+proxy_session_status(session_id)
+```
+
+## HAR Export and Import
+
+### Export Session as HAR
+
+```
+proxy_export_har(session_id, "recon-shopcom.har")
+```
+
+HAR (HTTP Archive) is a standard format understood by:
+- Chrome DevTools (import in Network tab)
+- Postman
+- Charles Proxy
+- Most network analysis tools
+
+### Import HAR for Analysis
+
+```
+proxy_import_har("captured-traffic.har")
+```
+
+Use imported HAR data for:
+- Analyzing traffic captured by other tools
+- Replaying previously recorded sessions
+- Sharing reconnaissance data between team members
+
+## Session Replay
+
+### Dry Run (Preview)
+
+```
+proxy_replay_session(session_id, mode: "dry_run")
+```
+
+Shows what requests would be made without executing them. Use this to:
+- Verify the session captured the right traffic
+- Understand the request sequence before replaying
+- Identify requests that may need modification
+
+### Execute Replay
+
+```
+proxy_replay_session(session_id, mode: "execute")
+```
+
+Re-sends all captured requests. Useful for:
+- Verifying API responses haven't changed
+- Re-collecting data from known-good endpoints
+- Testing if anti-bot measures have changed
+
+## Token and Cookie Persistence
+
+### Extract Authentication Data
+
+After navigating through a login flow:
+
+```
+interceptor_chrome_devtools_list_cookies()
+interceptor_chrome_devtools_list_storage_keys(storage_type: "local")
+interceptor_chrome_devtools_get_storage_value("auth_token", storage_type: "local")
+```
+
+### Persist Across Sessions
+
+Record the authentication flow:
+
+```
+proxy_session_start("auth-flow")
+# ... perform login ...
+proxy_session_stop(session_id)
+```
+
+Later, replay the auth flow to get fresh tokens:
+
+```
+proxy_replay_session(session_id, mode: "execute")
+```
+
+## Query and Filter
+
+### Search Within a Session
+
+```
+proxy_query_session(session_id, query: "products")
+```
+
+Find specific requests within a recorded session by URL, header, or body content.
+
+### List All Sessions
+
+```
+proxy_list_sessions()
+```
+
+### Get Session Details
+
+```
+proxy_get_session(session_id)
+```
+
+### Recover Interrupted Session
+
+If a session was interrupted (crash, disconnect):
+
+```
+proxy_session_recover(session_id)
+```
+
+Recovers NDJSON data from the on-disk recording.
+
+### Delete Session
+
+```
+proxy_delete_session(session_id)
+```
+
+## Practical Workflows
+
+### Workflow 1: Record Reconnaissance for Replay
+
+```
+# Start recording
+proxy_session_start("recon-example-com")
+
+# Perform reconnaissance
+proxy_start()
+interceptor_chrome_launch("https://example.com", stealthMode: true)
+interceptor_chrome_devtools_attach(target_id)
+
+# Browse and discover APIs
+humanizer_click(target_id, ".products-link")
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "api")
+
+# Stop recording
+proxy_session_stop(session_id)
+
+# Export for team review
+proxy_export_har(session_id, "recon-example-com.har")
+```
+
+### Workflow 2: Capture Authentication Flow
+
+```
+# Start recording
+proxy_session_start("auth-example-com")
+
+# Navigate to login
+interceptor_chrome_devtools_navigate("https://example.com/login")
+
+# Fill credentials
+humanizer_click(target_id, "input[name='email']")
+humanizer_type(target_id, "user@example.com")
+humanizer_click(target_id, "input[name='password']")
+humanizer_type(target_id, "password123")
+humanizer_click(target_id, "button[type='submit']")
+humanizer_idle(target_id, 3000)
+
+# Extract tokens
+interceptor_chrome_devtools_list_cookies()
+interceptor_chrome_devtools_get_storage_value("auth_token", "local")
+
+# Stop recording
+proxy_session_stop(session_id)
+```
+
+### Workflow 3: Import HAR for Analysis
+
+```
+# Import HAR captured by another tool
+proxy_import_har("external-capture.har")
+
+# Query for API endpoints
+proxy_query_session(session_id, query: "api")
+
+# Analyze specific exchanges
+proxy_get_exchange(exchange_id)
+```
+
+### Workflow 4: Compare Before/After
+
+```
+# Record baseline
+proxy_session_start("baseline")
+# ... browse site ...
+proxy_session_stop(session_id_baseline)
+
+# Make changes (deploy new version, etc.)
+
+# Record new state
+proxy_session_start("after-change")
+# ... browse same pages ...
+proxy_session_stop(session_id_after)
+
+# Query both sessions to compare
+proxy_query_session(session_id_baseline, query: "products")
+proxy_query_session(session_id_after, query: "products")
+```
+
+## Best Practices
+
+### DO:
+- **Name sessions descriptively** — include site name and purpose
+- **Use `capture_profile: "full"`** when you need complete response bodies
+- **Export HAR files** for archival and sharing
+- **Use dry_run** before executing a replay
+- **Record auth flows** for easy token refresh
+
+### DON'T:
+- **Record unnecessarily long sessions** — they consume disk space
+- **Replay without reviewing** — APIs may have changed
+- **Store sessions with sensitive credentials** indefinitely — delete when done
+- **Forget to stop recording** — use `proxy_session_status()` to check
+
+## Related
+
+- **Traffic interception**: See `traffic-interception.md`
+- **Tool reference**: See `../reference/proxy-tool-reference.md`
+- **Reconnaissance workflow**: See `../workflows/reconnaissance.md`
