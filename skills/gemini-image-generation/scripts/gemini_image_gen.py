@@ -1,1 +1,120 @@
-IyAtKi0gY29kaW5nOiB1dGYtOCAtKi0KIiIiCkdlbWluaSBOYW5vIEJhbmFuYSDlm77lg4/nlJ/miJDmqKHlnZfvvIjnlLXllYYgc2tpbGwg55Sf5Zu+IEwxIOiDveWKm++8iQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CuW6leWxguaooeWei++8mkdvb2dsZSBHZW1pbmkgMi41IEZsYXNoIEltYWdl77yITmFubyBCYW5hbmHvvIkKQVBJIEtleSDvvJrku47njq/looPlj5jph48gR09PR0xFX0FQSV9LRVkg6K+75Y+W77ybc2tpbGwg5paH5Lu25YaF5LiA5b6L5L2/55So5Y2g5L2N56ymICR7R09PR0xFX0FQSV9LRVl9CiAgICAgICAgICDkuKXnpoHmiormmI7mlocgS2V5IOWGmei/m+S7u+S9lSBza2lsbCAvIOiEmuacrCAvIOmFjee9ruaWh+S7tuS4reOAggoK55So5rOV56S65L6L77yaCiAgICBweXRob24gZ2VtaW5pX2ltYWdlX2dlbi5weSAtLXByb21wdCAiLi4uIiAtLW91dHB1dCAiRDovb3V0L21haW4ucG5nIiBbLS1hc3BlY3QgMToxXSBbLS1tb2RlbCBnZW1pbmktMi41LWZsYXNoLWltYWdlXQoiIiIKaW1wb3J0IGFyZ3BhcnNlCmltcG9ydCBiYXNlNjQKaW1wb3J0IGpzb24KaW1wb3J0IG9zCmltcG9ydCBzeXMKaW1wb3J0IHVybGxpYi5yZXF1ZXN0CmltcG9ydCB1cmxsaWIuZXJyb3IKCkRFRkFVTFRfTU9ERUwgPSAiZ2VtaW5pLTIuNS1mbGFzaC1pbWFnZSIgICMgTmFubyBCYW5hbmEKQVBJX0JBU0UgPSAiaHR0cHM6Ly9nZW5lcmF0aXZlbGFuZ3VhZ2UuZ29vZ2xlYXBpcy5jb20vdjFiZXRhL21vZGVscy97bW9kZWx9OmdlbmVyYXRlQ29udGVudCIKCiMg5pSv5oyB55qE5a696auY5q+UIC0+IEdlbWluaSBBUEkgYXNwZWN0UmF0aW8g5Y+C5pWwCkFTUEVDVF9NQVAgPSB7CiAgICAiMToxIjogIjE6MSIsCiAgICAiMTY6OSI6ICIxNjo5IiwKICAgICI5OjE2IjogIjk6MTYiLAogICAgIjQ6MyI6ICI0OjMiLAogICAgIjM6NCI6ICIzOjQiLAp9CgoKZGVmIGdldF9hcGlfa2V5KCk6CiAgICBrZXkgPSBvcy5lbnZpcm9uLmdldCgiR09PR0xFX0FQSV9LRVkiLCAiIikuc3RyaXAoKQogICAgaWYgbm90IGtleSBvciBrZXkuc3RhcnRzd2l0aCgiJHsiKToKICAgICAgICBzeXMuc3RkZXJyLndyaXRlKAogICAgICAgICAgICAiW0VSUk9SXSDmnKrmo4DmtYvliLDmnInmlYjnmoQgR09PR0xFX0FQSV9LRVnjgIJcbiIKICAgICAgICAgICAgIuivt+WcqOeOr+Wig+WPmOmHj+S4remFjee9riBHb29nbGUgQUkgU3R1ZGlvIOWFjei0uSBLZXnvvIhodHRwczovL2Fpc3R1ZGlvLmdvb2dsZS5jb20vYXBpa2V577yJ77yMIgogICAgICAgICAgICAi5oiW55So5Y2g5L2N56ymICR7R09PR0xFX0FQSV9LRVl9IOeUsei/kOihjOaXtuazqOWFpeOAglxuIgogICAgICAgICkKICAgICAgICBzeXMuZXhpdCgyKQogICAgcmV0dXJuIGtleQoKCmRlZiBnZW5lcmF0ZShwcm9tcHQsIG91dHB1dF9wYXRoLCBhc3BlY3RfcmF0aW89IjE6MSIsIG1vZGVsPURFRkFVTFRfTU9ERUwsIHRpbWVvdXQ9MTIwKToKICAgIGtleSA9IGdldF9hcGlfa2V5KCkKICAgIHJhdGlvID0gQVNQRUNUX01BUC5nZXQoYXNwZWN0X3JhdGlvLCAiMToxIikKICAgIHVybCA9IEFQSV9CQVNFLmZvcm1hdChtb2RlbD1tb2RlbCkgKyAiP2tleT0iICsga2V5CgogICAgcGF5bG9hZCA9IHsKICAgICAgICAiY29udGVudHMiOiBbeyJwYXJ0cyI6IFt7InRleHQiOiBwcm9tcHR9XX1dLAogICAgICAgICJnZW5lcmF0aW9uQ29uZmlnIjogewogICAgICAgICAgICAicmVzcG9uc2VNb2RhbGl0aWVzIjogWyJURVhUIiwgIklNQUdFIl0sCiAgICAgICAgICAgICJpbWFnZUNvbmZpZyI6IHsiYXNwZWN0UmF0aW8iOiByYXRpb30sCiAgICAgICAgfSwKICAgIH0KICAgIHJlcSA9IHVybGxpYi5yZXF1ZXN0LlJlcXVlc3QoCiAgICAgICAgdXJsLAogICAgICAgIGRhdGE9anNvbi5kdW1wcyhwYXlsb2FkKS5lbmNvZGUoInV0Zi04IiksCiAgICAgICAgaGVhZGVycz17IkNvbnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIn0sCiAgICAgICAgbWV0aG9kPSJQT1NUIiwKICAgICkKICAgIHRyeToKICAgICAgICB3aXRoIHVybGxpYi5yZXF1ZXN0LnVybG9wZW4ocmVxLCB0aW1lb3V0PXRpbWVvdXQpIGFzIHJlc3A6CiAgICAgICAgICAgIGRhdGEgPSBqc29uLmxvYWRzKHJlc3AucmVhZCgpLmRlY29kZSgidXRmLTgiKSkKICAgIGV4Y2VwdCB1cmxsaWIuZXJyb3IuSFRUUEVycm9yIGFzIGU6CiAgICAgICAgYm9keSA9IGUucmVhZCgpLmRlY29kZSgidXRmLTgiLCBlcnJvcnM9InJlcGxhY2UiKQogICAgICAgIHN5cy5zdGRlcnIud3JpdGUoZiJbRVJST1JdIEdlbWluaSBBUEkgSFRUUCB7ZS5jb2RlfToge2JvZHl9XG4iKQogICAgICAgIHN5cy5leGl0KDEpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgc3lzLnN0ZGVyci53cml0ZShmIltFUlJPUl0g6K+35rGC5aSx6LSlOiB7ZX1cbiIpCiAgICAgICAgc3lzLmV4aXQoMSkKCiAgICAjIOaPkOWPlueUn+aIkOeahOWbvueJh++8iGlubGluZURhdGHvvIkKICAgIGltYWdlX2J5dGVzID0gTm9uZQogICAgbWltZSA9ICJpbWFnZS9wbmciCiAgICB0cnk6CiAgICAgICAgZm9yIHBhcnQgaW4gZGF0YVsiY2FuZGlkYXRlcyJdWzBdWyJjb250ZW50Il1bInBhcnRzIl06CiAgICAgICAgICAgIGlmICJpbmxpbmVEYXRhIiBpbiBwYXJ0OgogICAgICAgICAgICAgICAgaW1hZ2VfYnl0ZXMgPSBiYXNlNjQuYjY0ZGVjb2RlKHBhcnRbImlubGluZURhdGEiXVsiZGF0YSJdKQogICAgICAgICAgICAgICAgbWltZSA9IHBhcnRbImlubGluZURhdGEiXS5nZXQoIm1pbWVUeXBlIiwgImltYWdlL3BuZyIpCiAgICAgICAgICAgICAgICBicmVhawogICAgZXhjZXB0IChLZXlFcnJvciwgSW5kZXhFcnJvciwgVHlwZUVycm9yKToKICAgICAgICBwYXNzCgogICAgaWYgaW1hZ2VfYnl0ZXMgaXMgTm9uZToKICAgICAgICAjIOajgOafpeaYr+WQpuaciemYu+Whni/plJnor6/kv6Hmga8KICAgICAgICB0cnk6CiAgICAgICAgICAgIGZpbmlzaCA9IGRhdGFbImNhbmRpZGF0ZXMiXVswXS5nZXQoImZpbmlzaFJlYXNvbiIsICIiKQogICAgICAgICAgICBtc2cgPSBkYXRhLmdldCgicHJvbXB0RmVlZGJhY2siLCB7fSkuZ2V0KCJibG9ja1JlYXNvbiIsICIiKQogICAgICAgIGV4Y2VwdCAoS2V5RXJyb3IsIEluZGV4RXJyb3IpOgogICAgICAgICAgICBmaW5pc2gsIG1zZyA9ICIiLCAiIgogICAgICAgIHN5cy5zdGRlcnIud3JpdGUoCiAgICAgICAgICAgIGYiW0VSUk9SXSDmnKrov5Tlm57lm77niYfjgIJmaW5pc2hSZWFzb249e2ZpbmlzaH0sIGJsb2NrUmVhc29uPXttc2d9XG4iCiAgICAgICAgICAgIGYi5Y6f5aeL6L+U5ZueOiB7anNvbi5kdW1wcyhkYXRhLCBlbnN1cmVfYXNjaWk9RmFsc2UpWzo4MDBdfVxuIgogICAgICAgICkKICAgICAgICBzeXMuZXhpdCgxKQoKICAgICMg5qC55o2uIG1pbWUg56Gu5a6a5omp5bGV5ZCNCiAgICBleHRfbWFwID0geyJpbWFnZS9wbmciOiAiLnBuZyIsICJpbWFnZS9qcGVnIjogIi5qcGciLCAiaW1hZ2Uvd2VicCI6ICIud2VicCJ9CiAgICBvdXQgPSBvdXRwdXRfcGF0aAogICAgaWYgbm90IG9zLnBhdGguc3BsaXRleHQob3V0KVsxXToKICAgICAgICBvdXQgKz0gZXh0X21hcC5nZXQobWltZSwgIi5wbmciKQoKICAgIG9zLm1ha2VkaXJzKG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmFic3BhdGgob3V0KSksIGV4aXN0X29rPVRydWUpCiAgICB3aXRoIG9wZW4ob3V0LCAid2IiKSBhcyBmaDoKICAgICAgICBmaC53cml0ZShpbWFnZV9ieXRlcykKICAgIHByaW50KGYiW09LXSDlm77niYflt7Lkv53lrZg6IHtvdXR9ICh7bGVuKGltYWdlX2J5dGVzKX0gYnl0ZXMsIHttaW1lfSkiKQogICAgcmV0dXJuIG91dAoKCmlmIF9fbmFtZV9fID09ICJfX21haW5fXyI6CiAgICBhcCA9IGFyZ3BhcnNlLkFyZ3VtZW50UGFyc2VyKGRlc2NyaXB0aW9uPSJHZW1pbmkgTmFubyBCYW5hbmEg55Sf5Zu+IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1wcm9tcHQiLCByZXF1aXJlZD1UcnVlLCBoZWxwPSLlm77lg4/mj4/ov7DvvIjoi7HmlofmlYjmnpzmm7TkvbPvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLW91dHB1dCIsIHJlcXVpcmVkPVRydWUsIGhlbHA9Iui+k+WHuuaWh+S7tui3r+W+hO+8iOWmgiBEOi9vdXQvbWFpbi5wbmfvvIkiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLWFzcGVjdCIsIGRlZmF1bHQ9IjE6MSIsIGhlbHA9IuWuvemrmOavlO+8mjE6MSAvIDE2OjkgLyA5OjE2IC8gNDozIC8gMzo0IikKICAgIGFwLmFkZF9hcmd1bWVudCgiLS1tb2RlbCIsIGRlZmF1bHQ9REVGQVVMVF9NT0RFTCwgaGVscD0i5qih5Z6L5ZCN77yM6buY6K6kIGdlbWluaS0yLjUtZmxhc2gtaW1hZ2UiKQogICAgYXAuYWRkX2FyZ3VtZW50KCItLXRpbWVvdXQiLCB0eXBlPWludCwgZGVmYXVsdD0xMjAsIGhlbHA9Iuivt+axgui2heaXtu+8iOenku+8iSIpCiAgICBhcmdzID0gYXAucGFyc2VfYXJncygpCiAgICBnZW5lcmF0ZShhcmdzLnByb21wdCwgYXJncy5vdXRwdXQsIGFyZ3MuYXNwZWN0LCBhcmdzLm1vZGVsLCBhcmdzLnRpbWVvdXQpCg==
+# -*- coding: utf-8 -*-
+"""
+Gemini Nano Banana 图像生成模块（电商 skill 生图 L1 能力）
+================================================================
+底层模型：Google Gemini 2.5 Flash Image（Nano Banana）
+API Key ：从环境变量 GOOGLE_API_KEY 读取；skill 文件内一律使用占位符 ${GOOGLE_API_KEY}
+          严禁把明文 Key 写进任何 skill / 脚本 / 配置文件中。
+
+用法示例：
+    python gemini_image_gen.py --prompt "..." --output "D:/out/main.png" [--aspect 1:1] [--model gemini-2.5-flash-image]
+"""
+import argparse
+import base64
+import json
+import os
+import sys
+import urllib.request
+import urllib.error
+
+DEFAULT_MODEL = "gemini-2.5-flash-image"  # Nano Banana
+API_BASE = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+
+# 支持的宽高比 -> Gemini API aspectRatio 参数
+ASPECT_MAP = {
+    "1:1": "1:1",
+    "16:9": "16:9",
+    "9:16": "9:16",
+    "4:3": "4:3",
+    "3:4": "3:4",
+}
+
+
+def get_api_key():
+    key = os.environ.get("GOOGLE_API_KEY", "").strip()
+    if not key or key.startswith("${"):
+        sys.stderr.write(
+            "[ERROR] 未检测到有效的 GOOGLE_API_KEY。\n"
+            "请在环境变量中配置 Google AI Studio 免费 Key（https://aistudio.google.com/apikey），"
+            "或用占位符 ${GOOGLE_API_KEY} 由运行时注入。\n"
+        )
+        sys.exit(2)
+    return key
+
+
+def generate(prompt, output_path, aspect_ratio="1:1", model=DEFAULT_MODEL, timeout=120):
+    key = get_api_key()
+    ratio = ASPECT_MAP.get(aspect_ratio, "1:1")
+    url = API_BASE.format(model=model) + "?key=" + key
+
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseModalities": ["TEXT", "IMAGE"],
+            "imageConfig": {"aspectRatio": ratio},
+        },
+    }
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        sys.stderr.write(f"[ERROR] Gemini API HTTP {e.code}: {body}\n")
+        sys.exit(1)
+    except Exception as e:
+        sys.stderr.write(f"[ERROR] 请求失败: {e}\n")
+        sys.exit(1)
+
+    # 提取生成的图片（inlineData）
+    image_bytes = None
+    mime = "image/png"
+    try:
+        for part in data["candidates"][0]["content"]["parts"]:
+            if "inlineData" in part:
+                image_bytes = base64.b64decode(part["inlineData"]["data"])
+                mime = part["inlineData"].get("mimeType", "image/png")
+                break
+    except (KeyError, IndexError, TypeError):
+        pass
+
+    if image_bytes is None:
+        # 检查是否有阻塞/错误信息
+        try:
+            finish = data["candidates"][0].get("finishReason", "")
+            msg = data.get("promptFeedback", {}).get("blockReason", "")
+        except (KeyError, IndexError):
+            finish, msg = "", ""
+        sys.stderr.write(
+            f"[ERROR] 未返回图片。finishReason={finish}, blockReason={msg}\n"
+            f"原始返回: {json.dumps(data, ensure_ascii=False)[:800]}\n"
+        )
+        sys.exit(1)
+
+    # 根据 mime 确定扩展名
+    ext_map = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp"}
+    out = output_path
+    if not os.path.splitext(out)[1]:
+        out += ext_map.get(mime, ".png")
+
+    os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
+    with open(out, "wb") as fh:
+        fh.write(image_bytes)
+    print(f"[OK] 图片已保存: {out} ({len(image_bytes)} bytes, {mime})")
+    return out
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Gemini Nano Banana 生图")
+    ap.add_argument("--prompt", required=True, help="图像描述（英文效果更佳）")
+    ap.add_argument("--output", required=True, help="输出文件路径（如 D:/out/main.png）")
+    ap.add_argument("--aspect", default="1:1", help="宽高比：1:1 / 16:9 / 9:16 / 4:3 / 3:4")
+    ap.add_argument("--model", default=DEFAULT_MODEL, help="模型名，默认 gemini-2.5-flash-image")
+    ap.add_argument("--timeout", type=int, default=120, help="请求超时（秒）")
+    args = ap.parse_args()
+    generate(args.prompt, args.output, args.aspect, args.model, args.timeout)
