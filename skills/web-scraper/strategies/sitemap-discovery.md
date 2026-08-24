@@ -1,1 +1,400 @@
-IyBTaXRlbWFwLUJhc2VkIFVSTCBEaXNjb3ZlcnkKCiMjIE92ZXJ2aWV3CgpTaXRlbWFwcyBhcmUgWE1MIGZpbGVzIHRoYXQgbGlzdCBhbGwgVVJMcyBvbiBhIHdlYnNpdGUsIHByb3ZpZGluZyB0aGUgZmFzdGVzdCBhbmQgbW9zdCBlZmZpY2llbnQgd2F5IHRvIGRpc2NvdmVyIHBhZ2VzIHRvIHNjcmFwZS4gSW5zdGVhZCBvZiBjcmF3bGluZyBwYWdlLWJ5LXBhZ2UsIHlvdSBjYW4gZ2V0IGFsbCBVUkxzIGluc3RhbnRseS4KCiMjIFdoZW4gdG8gVXNlIFNpdGVtYXBzCgojIyMg4pyFIFVTRSBzaXRlbWFwcyB3aGVuOgotIFdlYnNpdGUgaGFzIGEgc2l0ZW1hcCAoY2hlY2sgYC9zaXRlbWFwLnhtbGAgb3IgYHJvYm90cy50eHRgKQotIExhcmdlIHdlYnNpdGVzIHdpdGggMTAwKyBwYWdlcwotIFByb2R1Y3QgY2F0YWxvZ3MsIGJsb2dzLCBuZXdzIHNpdGVzCi0gTmVlZCBjb21wbGV0ZSBzaXRlIGNvdmVyYWdlCi0gVVJMcyBmb2xsb3cgcHJlZGljdGFibGUgcGF0dGVybnMKLSBFLWNvbW1lcmNlIHNpdGVzIChwcm9kdWN0cywgY2F0ZWdvcmllcykKLSBUaW1lLXNlbnNpdGl2ZSBzY3JhcGluZyAobmVlZCBmYXN0IHJlc3VsdHMpCgojIyMg4p2MIERPTidUIHVzZSBzaXRlbWFwcyB3aGVuOgotIFNpdGUgZG9lc24ndCBoYXZlIGEgc2l0ZW1hcAotIFNpbmdsZS1wYWdlIGFwcGxpY2F0aW9ucyB3aXRoIGR5bmFtaWMgY29udGVudAotIE5lZWQgdG8gZm9sbG93IHVzZXIgZmxvd3MgKGxvZ2luLCBuYXZpZ2F0aW9uLCBzaG9wcGluZyBjYXJ0KQotIFNpdGVtYXAgaXMgb3V0ZGF0ZWQgb3IgaW5jb21wbGV0ZQotIENyYXdsaW5nIGxvZ2ljIGRlcGVuZHMgb24gcGFnZSBjb250ZW50Ci0gU2l0ZSB1c2VzIGhlYXZ5IEphdmFTY3JpcHQgZm9yIG5hdmlnYXRpb24KCiMjIEZpbmRpbmcgU2l0ZW1hcHMKClNpdGVtYXBzIGFyZSB0eXBpY2FsbHkgZm91bmQgYXQgdGhlc2UgbG9jYXRpb25zOgoKYGBgCmh0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcC54bWwgICAgICAgICAgICAgIOKGkCBNb3N0IGNvbW1vbgpodHRwczovL2V4YW1wbGUuY29tL3JvYm90cy50eHQgICAgICAgICAgICAgICDihpAgTGlzdHMgc2l0ZW1hcCBVUkxzCmh0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcF9pbmRleC54bWwgICAgICAgIOKGkCBTaXRlbWFwIG9mIHNpdGVtYXBzCmh0dHBzOi8vZXhhbXBsZS5jb20vcHJvZHVjdC1zaXRlbWFwLnhtbCAgICAgIOKGkCBQcm9kdWN0LXNwZWNpZmljCmh0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcC54bWwuZ3ogICAgICAgICAgIOKGkCBDb21wcmVzc2VkCmh0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcHMvc2l0ZW1hcC54bWwgICAgIOKGkCBJbiBzdWJkaXJlY3RvcnkKYGBgCgojIyMgQWx3YXlzIENoZWNrIHJvYm90cy50eHQgRmlyc3QKCmBgYGJhc2gKY3VybCBodHRwczovL2V4YW1wbGUuY29tL3JvYm90cy50eHQKYGBgCgpFeGFtcGxlIHJvYm90cy50eHQ6CmBgYApVc2VyLWFnZW50OiAqClNpdGVtYXA6IGh0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcF9pbmRleC54bWwKU2l0ZW1hcDogaHR0cHM6Ly9leGFtcGxlLmNvbS9wcm9kdWN0cy1zaXRlbWFwLnhtbApTaXRlbWFwOiBodHRwczovL2V4YW1wbGUuY29tL2Jsb2ctc2l0ZW1hcC54bWwKYGBgCgojIyBJbXBsZW1lbnRhdGlvbiBQYXR0ZXJucwoKIyMjIFBhdHRlcm4gMTogQXV0b21hdGljIERpc2NvdmVyeSAoUmVjb21tZW5kZWQpCgpVc2UgYFJvYm90c0ZpbGVgIHRvIGF1dG9tYXRpY2FsbHkgZmluZCBhbmQgcGFyc2UgYWxsIHNpdGVtYXBzOgoKYGBgamF2YXNjcmlwdAppbXBvcnQgeyBDaGVlcmlvQ3Jhd2xlciwgUm9ib3RzRmlsZSwgRGF0YXNldCB9IGZyb20gJ2NyYXdsZWUnOwoKLy8gQXV0b21hdGljYWxseSBmaW5kcyByb2JvdHMudHh0IGFuZCBwYXJzZXMgQUxMIHNpdGVtYXBzCmNvbnN0IHJvYm90cyA9IGF3YWl0IFJvYm90c0ZpbGUuZmluZCgnaHR0cHM6Ly9leGFtcGxlLmNvbScpOwpjb25zdCBhbGxVcmxzID0gYXdhaXQgcm9ib3RzLnBhcnNlVXJsc0Zyb21TaXRlbWFwcygpOwoKY29uc29sZS5sb2coYEZvdW5kICR7YWxsVXJscy5sZW5ndGh9IFVSTHMgZnJvbSBzaXRlbWFwc2ApOwoKLy8gQ3JlYXRlIGNyYXdsZXIKY29uc3QgY3Jhd2xlciA9IG5ldyBDaGVlcmlvQ3Jhd2xlcih7CiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgbG9nLmluZm8oYFNjcmFwaW5nOiAke3JlcXVlc3QudXJsfWApOwoKICAgICAgICBjb25zdCBkYXRhID0gewogICAgICAgICAgICB0aXRsZTogJCgndGl0bGUnKS50ZXh0KCkudHJpbSgpLAogICAgICAgICAgICBwcmljZTogJCgnLnByaWNlJykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgZGVzY3JpcHRpb246ICQoJy5kZXNjcmlwdGlvbicpLnRleHQoKS50cmltKCksCiAgICAgICAgfTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YShkYXRhKTsKICAgIH0sCn0pOwoKLy8gQWRkIGFsbCBzaXRlbWFwIFVSTHMKYXdhaXQgY3Jhd2xlci5hZGRSZXF1ZXN0cyhhbGxVcmxzKTsKYXdhaXQgY3Jhd2xlci5ydW4oKTsKYGBgCgoqKkJlbmVmaXRzKio6Ci0gSGFuZGxlcyBzaXRlbWFwIGluZGV4ZXMgKG5lc3RlZCBzaXRlbWFwcykKLSBIYW5kbGVzIGNvbXByZXNzZWQgc2l0ZW1hcHMgKC5neikKLSBSZXNwZWN0cyByb2JvdHMudHh0IHJ1bGVzCi0gTm8gbmVlZCB0byBrbm93IHNpdGVtYXAgVVJMcyB1cGZyb250CgojIyMgUGF0dGVybiAyOiBGaWx0ZXJlZCBVUkxzIHdpdGggUmVnZXgKClVzZSBgUmVxdWVzdExpc3RgIHRvIGZpbHRlciBvbmx5IHNwZWNpZmljIFVSTCBwYXR0ZXJuczoKCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgQ2hlZXJpb0NyYXdsZXIsIFJlcXVlc3RMaXN0LCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7CgovLyBMb2FkIHNpdGVtYXAgYW5kIGZpbHRlciBVUkxzIHdpdGggcmVnZXgKY29uc3QgcmVxdWVzdExpc3QgPSBhd2FpdCBSZXF1ZXN0TGlzdC5vcGVuKG51bGwsIFt7CiAgICByZXF1ZXN0c0Zyb21Vcmw6ICdodHRwczovL3Nob3AuY29tL3NpdGVtYXAueG1sJywKICAgIC8vIE9ubHkgcHJvZHVjdCBwYWdlcyAobm90IGNhdGVnb3JpZXMsIGhlbHAgcGFnZXMsIGV0Yy4pCiAgICByZWdleDogL1wvcHJvZHVjdHNcL1thLXowLTktXSskL2ksCn1dKTsKCmNvbnN0IGNyYXdsZXIgPSBuZXcgQ2hlZXJpb0NyYXdsZXIoewogICAgcmVxdWVzdExpc3QsCiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgbG9nLmluZm8oYFNjcmFwaW5nIHByb2R1Y3Q6ICR7cmVxdWVzdC51cmx9YCk7CgogICAgICAgIGNvbnN0IHByb2R1Y3QgPSB7CiAgICAgICAgICAgIG5hbWU6ICQoJ2gxJykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgcHJpY2U6ICQoJ1tkYXRhLXRlc3RpZD0icHJpY2UiXScpLnRleHQoKS50cmltKCksCiAgICAgICAgICAgIHNrdTogJCgnW2RhdGEtc2t1XScpLmF0dHIoJ2RhdGEtc2t1JyksCiAgICAgICAgfTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YShwcm9kdWN0KTsKICAgIH0sCn0pOwoKYXdhaXQgY3Jhd2xlci5ydW4oKTsKYGBgCgoqKkNvbW1vbiBSZWdleCBQYXR0ZXJucyoqOgoKYGBgamF2YXNjcmlwdAovLyBQcm9kdWN0cyBvbmx5CnJlZ2V4OiAvXC9wcm9kdWN0c1wvW2EtejAtOS1dKyQvaQoKLy8gQmxvZyBwb3N0cyAod2l0aCBkYXRlIHBhdHRlcm4pCnJlZ2V4OiAvXC9ibG9nXC9cZHs0fVwvXGR7Mn1cL1thLXowLTktXSsvaQoKLy8gRXhjbHVkZSBjYXRlZ29yaWVzLCBvbmx5IHByb2R1Y3RzCnJlZ2V4OiAvXC9wcm9kdWN0c1wvW14vPF0rJC8KCi8vIE11bHRpcGxlIHBhdHRlcm5zIChwcm9kdWN0cyBPUiBkZWFscykKcmVnZXg6IC8oXC9wcm9kdWN0c1wvW14vPF0rfFwvZGVhbHNcL1teLzxdKykvCgovLyBTcGVjaWZpYyBjYXRlZ29yeQpyZWdleDogL1wvcHJvZHVjdHNcL2VsZWN0cm9uaWNzXC9bXi88XSskLwpgYGAKClNlZSBgLi4vcmVmZXJlbmNlL3JlZ2V4LXBhdHRlcm5zLm1kYCBmb3IgbW9yZSBwYXR0ZXJucy4KCiMjIyBQYXR0ZXJuIDM6IE11bHRpcGxlIFNwZWNpZmljIFNpdGVtYXBzCgpMb2FkIHNwZWNpZmljIHNpdGVtYXAgVVJMcyBkaXJlY3RseToKCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgQ2hlZXJpb0NyYXdsZXIsIFNpdGVtYXAsIERhdGFzZXQgfSBmcm9tICdjcmF3bGVlJzsKCi8vIExvYWQgbXVsdGlwbGUgc2l0ZW1hcHMKY29uc3Qgc2l0ZW1hcCA9IGF3YWl0IFNpdGVtYXAubG9hZChbCiAgICAnaHR0cHM6Ly9leGFtcGxlLmNvbS9wcm9kdWN0LXNpdGVtYXAueG1sJywKICAgICdodHRwczovL2V4YW1wbGUuY29tL2Jsb2ctc2l0ZW1hcC54bWwuZ3onLCAvLyBIYW5kbGVzIC5neiBhdXRvbWF0aWNhbGx5Cl0pOwoKY29uc29sZS5sb2coYEZvdW5kICR7c2l0ZW1hcC51cmxzLmxlbmd0aH0gVVJMc2ApOwoKY29uc3QgY3Jhd2xlciA9IG5ldyBDaGVlcmlvQ3Jhd2xlcih7CiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgLy8gSGFuZGxlIGJvdGggcHJvZHVjdHMgYW5kIGJsb2cgcG9zdHMKICAgICAgICBpZiAocmVxdWVzdC51cmwuaW5jbHVkZXMoJy9wcm9kdWN0cy8nKSkgewogICAgICAgICAgICAvLyBTY3JhcGUgcHJvZHVjdAogICAgICAgICAgICBjb25zdCBwcm9kdWN0ID0gewogICAgICAgICAgICAgICAgbmFtZTogJCgnaDEnKS50ZXh0KCkudHJpbSgpLAogICAgICAgICAgICAgICAgcHJpY2U6ICQoJy5wcmljZScpLnRleHQoKS50cmltKCksCiAgICAgICAgICAgIH07CiAgICAgICAgICAgIGF3YWl0IERhdGFzZXQucHVzaERhdGEoeyB0eXBlOiAncHJvZHVjdCcsIC4uLnByb2R1Y3QgfSk7CiAgICAgICAgfSBlbHNlIGlmIChyZXF1ZXN0LnVybC5pbmNsdWRlcygnL2Jsb2cvJykpIHsKICAgICAgICAgICAgLy8gU2NyYXBlIGJsb2cgcG9zdAogICAgICAgICAgICBjb25zdCBwb3N0ID0gewogICAgICAgICAgICAgICAgdGl0bGU6ICQoJ2gxJykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgICAgIGNvbnRlbnQ6ICQoJy5jb250ZW50JykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgfTsKICAgICAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YSh7IHR5cGU6ICdwb3N0JywgLi4ucG9zdCB9KTsKICAgICAgICB9CiAgICB9LAp9KTsKCmF3YWl0IGNyYXdsZXIuYWRkUmVxdWVzdHMoc2l0ZW1hcC51cmxzKTsKYXdhaXQgY3Jhd2xlci5ydW4oKTsKYGBgCgojIyMgUGF0dGVybiA0OiBIeWJyaWQgKFNpdGVtYXAgKyBDcmF3bGluZykKClN0YXJ0IHdpdGggc2l0ZW1hcCwgdGhlbiBhbHNvIGNyYXdsIGRpc2NvdmVyZWQgbGlua3M6CgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IENoZWVyaW9DcmF3bGVyLCBSb2JvdHNGaWxlLCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7CgovLyBTdGFydCB3aXRoIHNpdGVtYXAgVVJMcwpjb25zdCByb2JvdHMgPSBhd2FpdCBSb2JvdHNGaWxlLmZpbmQoJ2h0dHBzOi8vZXhhbXBsZS5jb20nKTsKY29uc3Qgc2l0ZW1hcFVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7Cgpjb25zdCBjcmF3bGVyID0gbmV3IENoZWVyaW9DcmF3bGVyKHsKICAgIG1heFJlcXVlc3RzUGVyQ3Jhd2w6IDUwMDAsCiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIGVucXVldWVMaW5rcywgcmVxdWVzdCwgbG9nIH0pIHsKICAgICAgICBsb2cuaW5mbyhgUHJvY2Vzc2luZzogJHtyZXF1ZXN0LnVybH1gKTsKCiAgICAgICAgLy8gU2NyYXBlIGRhdGEKICAgICAgICBjb25zdCBkYXRhID0gewogICAgICAgICAgICB0aXRsZTogJCgndGl0bGUnKS50ZXh0KCkudHJpbSgpLAogICAgICAgICAgICBsaW5rczogJCgnYScpLm1hcCgoXywgZWwpID0+ICQoZWwpLmF0dHIoJ2hyZWYnKSkuZ2V0KCksCiAgICAgICAgfTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YShkYXRhKTsKCiAgICAgICAgLy8gQUxTTyBjcmF3bCBkaXNjb3ZlcmVkIGxpbmtzIChvcHRpb25hbCkKICAgICAgICBhd2FpdCBlbnF1ZXVlTGlua3MoewogICAgICAgICAgICBzZWxlY3RvcjogJ2FbaHJlZio9Ii9wcm9kdWN0cy8iXScsCiAgICAgICAgICAgIHN0cmF0ZWd5OiAnc2FtZS1kb21haW4nLAogICAgICAgIH0pOwogICAgfSwKfSk7CgovLyBTdGFydCB3aXRoIGFsbCBzaXRlbWFwIFVSTHMKYXdhaXQgY3Jhd2xlci5hZGRSZXF1ZXN0cyhzaXRlbWFwVXJscyk7CmF3YWl0IGNyYXdsZXIucnVuKCk7CmBgYAoKIyMgVVJMIEZpbHRlcmluZyBUZWNobmlxdWVzCgojIyMgVXNpbmcgbGFzdG1vZCBEYXRlcwoKRmlsdGVyIFVSTHMgYnkgbGFzdCBtb2RpZmljYXRpb24gZGF0ZToKCmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgU2l0ZW1hcCB9IGZyb20gJ2NyYXdsZWUnOwoKY29uc3Qgc2l0ZW1hcCA9IGF3YWl0IFNpdGVtYXAubG9hZChbJ2h0dHBzOi8vc2l0ZS5jb20vc2l0ZW1hcC54bWwnXSk7CgovLyBGaWx0ZXIgdG8gcmVjZW50bHkgdXBkYXRlZCBVUkxzIChsYXN0IDMwIGRheXMpCmNvbnN0IHJlY2VudFVybHMgPSBzaXRlbWFwLnVybHMuZmlsdGVyKHVybE9iaiA9PiB7CiAgICBjb25zdCBsYXN0TW9kID0gbmV3IERhdGUodXJsT2JqLmxhc3Rtb2QpOwogICAgY29uc3QgbW9udGhBZ28gPSBuZXcgRGF0ZShEYXRlLm5vdygpIC0gMzAgKiAyNCAqIDYwICogNjAgKiAxMDAwKTsKICAgIHJldHVybiBsYXN0TW9kID4gbW9udGhBZ287Cn0pLm1hcCh1cmxPYmogPT4gdXJsT2JqLmxvYyk7Cgpjb25zb2xlLmxvZyhgRm91bmQgJHtyZWNlbnRVcmxzLmxlbmd0aH0gcmVjZW50bHkgdXBkYXRlZCBVUkxzYCk7CmBgYAoKIyMjIFVzaW5nIFByaW9yaXR5CgpGaWx0ZXIgYnkgc2l0ZW1hcCBwcmlvcml0eSAoMC4wIHRvIDEuMCk6CgpgYGBqYXZhc2NyaXB0Ci8vIEdldCBvbmx5IGhpZ2gtcHJpb3JpdHkgcGFnZXMKY29uc3QgaGlnaFByaW9yaXR5VXJscyA9IHNpdGVtYXAudXJscy5maWx0ZXIodXJsT2JqID0+IHsKICAgIHJldHVybiBwYXJzZUZsb2F0KHVybE9iai5wcmlvcml0eSkgPj0gMC44Owp9KS5tYXAodXJsT2JqID0+IHVybE9iai5sb2MpOwpgYGAKCiMjIEVycm9yIEhhbmRsaW5nCgpBbHdheXMgaGFuZGxlIGNhc2VzIHdoZXJlIHNpdGVtYXBzIG1pZ2h0IG5vdCBleGlzdCBvciBiZSBtYWxmb3JtZWQ6CgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IENoZWVyaW9DcmF3bGVyLCBSb2JvdHNGaWxlLCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7Cgp0cnkgewogICAgLy8gVHJ5IHRvIGZpbmQgYW5kIHBhcnNlIHNpdGVtYXBzCiAgICBjb25zdCByb2JvdHMgPSBhd2FpdCBSb2JvdHNGaWxlLmZpbmQoJ2h0dHBzOi8vZXhhbXBsZS5jb20nKTsKICAgIGNvbnN0IHVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CgogICAgaWYgKHVybHMubGVuZ3RoID09PSAwKSB7CiAgICAgICAgY29uc29sZS5sb2coJ+KaoCBObyBVUkxzIGZvdW5kIGluIHNpdGVtYXBzLCBmYWxsaW5nIGJhY2sgdG8gY3Jhd2xpbmcnKTsKICAgICAgICAvLyBGYWxsIGJhY2sgdG8gdHJhZGl0aW9uYWwgY3Jhd2xpbmcKICAgICAgICBhd2FpdCBjcmF3bGVyLnJ1bihbJ2h0dHBzOi8vZXhhbXBsZS5jb20nXSk7CiAgICB9IGVsc2UgewogICAgICAgIGNvbnNvbGUubG9nKGDinJMgRm91bmQgJHt1cmxzLmxlbmd0aH0gVVJMcywgc3RhcnRpbmcgc2NyYXBlYCk7CgogICAgICAgIGNvbnN0IGNyYXdsZXIgPSBuZXcgQ2hlZXJpb0NyYXdsZXIoewogICAgICAgICAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7IHBhZ2UsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgICAgICAgICAvLyBTY3JhcGUgbG9naWMKICAgICAgICAgICAgfSwKICAgICAgICAgICAgZmFpbGVkUmVxdWVzdEhhbmRsZXIoeyByZXF1ZXN0LCBlcnJvciB9LCB7IGxvZyB9KSB7CiAgICAgICAgICAgICAgICBsb2cuZXJyb3IoYFJlcXVlc3QgJHtyZXF1ZXN0LnVybH0gZmFpbGVkOiAke2Vycm9yLm1lc3NhZ2V9YCk7CiAgICAgICAgICAgIH0sCiAgICAgICAgfSk7CgogICAgICAgIGF3YWl0IGNyYXdsZXIuYWRkUmVxdWVzdHModXJscyk7CiAgICAgICAgYXdhaXQgY3Jhd2xlci5ydW4oKTsKICAgIH0KfSBjYXRjaCAoZXJyb3IpIHsKICAgIGNvbnNvbGUuZXJyb3IoYOKclyBTaXRlbWFwIGRpc2NvdmVyeSBmYWlsZWQ6ICR7ZXJyb3IubWVzc2FnZX1gKTsKICAgIGNvbnNvbGUubG9nKCdGYWxsaW5nIGJhY2sgdG8gdHJhZGl0aW9uYWwgY3Jhd2xpbmcnKTsKICAgIC8vIEltcGxlbWVudCBmYWxsYmFjayBzdHJhdGVneQp9CmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86CgotICoqQ2hlY2sgcm9ib3RzLnR4dCBmaXJzdCoqIGZvciBzaXRlbWFwIGxvY2F0aW9ucwotICoqVXNlIGBSb2JvdHNGaWxlLmZpbmQoKWAqKiBmb3IgYXV0b21hdGljIGRpc2NvdmVyeQotICoqRmlsdGVyIFVSTHMgd2l0aCByZWdleCoqIHdoZW4geW91IG9ubHkgbmVlZCBzcGVjaWZpYyBwYWdlIHR5cGVzCi0gKipWZXJpZnkgc2l0ZW1hcCBpcyBjdXJyZW50KiogYmVmb3JlIHJlbHlpbmcgb24gaXQgKGNoZWNrIGxhc3Rtb2QgZGF0ZXMpCi0gKipVc2UgYGxhc3Rtb2RgIGRhdGVzKiogdG8gYXZvaWQgcmUtc2NyYXBpbmcgdW5jaGFuZ2VkIGNvbnRlbnQKLSAqKkhhbmRsZSBjb21wcmVzc2VkIHNpdGVtYXBzKiogKC5neiBmaWxlcykgLSBDcmF3bGVlIGRvZXMgdGhpcyBhdXRvbWF0aWNhbGx5Ci0gKipDb21iaW5lIHdpdGggY3Jhd2xpbmcqKiBmb3IgY29tcGxldGVuZXNzIGlmIG5lZWRlZAotICoqVGVzdCBzaXRlbWFwIFVSTHMqKiBiZWZvcmUgcnVubmluZyBmdWxsIHNjcmFwZSAoc2FtcGxlIDUtMTAgZmlyc3QpCi0gKipMb2cgcHJvZ3Jlc3MqKiBjbGVhcmx5IChVUkxzIGZvdW5kLCBmaWx0ZXJlZCwgc2NyYXBlZCkKCiMjIyDinYwgRE9OJ1Q6CgotICoqQXNzdW1lIGFsbCBzaXRlcyBoYXZlIHNpdGVtYXBzKiogLSBhbHdheXMgaGF2ZSBhIGZhbGxiYWNrCi0gKipUcnVzdCBzaXRlbWFwcyB0byBiZSBjb21wbGV0ZSoqIC0gc29tZSBwYWdlcyBtYXkgYmUgbWlzc2luZwotICoqVXNlIHNpdGVtYXBzIGZvciBkeW5hbWljL1NQQSBjb250ZW50KiogLSBjcmF3bGluZyBpcyBiZXR0ZXIKLSAqKkZvcmdldCB0byBmaWx0ZXIgVVJMcyoqIC0gc2l0ZW1hcHMgb2Z0ZW4gaW5jbHVkZSBwYWdlcyB5b3UgZG9uJ3QgbmVlZAotICoqSWdub3JlIHJvYm90cy50eHQgcnVsZXMqKiAtIHJlc3BlY3QgY3Jhd2wgZGlyZWN0aXZlcwotICoqU2NyYXBlIGxvZ2luLXByb3RlY3RlZCBwYWdlcyoqIGZyb20gc2l0ZW1hcHMgLSB3b24ndCB3b3JrCi0gKipTa2lwIGVycm9yIGhhbmRsaW5nKiogLSBzb21lIHNpdGVtYXAgVVJMcyBtYXkgYmUgYnJva2VuCi0gKipJZ25vcmUgcmF0ZSBsaW1pdHMqKiAtIGV2ZW4gd2l0aCBzaXRlbWFwcywgcmVzcGVjdCByb2JvdHMudHh0IGNyYXdsLWRlbGF5CgojIyBQZXJmb3JtYW5jZSBDb21wYXJpc29uCgp8IE1ldHJpYyB8IFNpdGVtYXAgfCBUcmFkaXRpb25hbCBDcmF3bGluZyB8IEltcHJvdmVtZW50IHwKfC0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgKipVUkwgRGlzY292ZXJ5KiogfCA1LTEwIHNlY29uZHMgfCA1LTEwIG1pbnV0ZXMgfCDimqEgNjB4IGZhc3RlciB8CnwgKipCYW5kd2lkdGgqKiB8IH4yIE1CIHwgfjIwMCBNQiB8IPCfkr4gMTAweCBsZXNzIHwKfCAqKkNvdmVyYWdlKiogfCAxMDAlIChpZiBjdXJyZW50KSB8IDgwLTkwJSB8IOKchSBCZXR0ZXIgfAp8ICoqVGltZSB0byBGaXJzdCBEYXRhKiogfCAxMC0yMCBzZWNvbmRzIHwgNS0xMCBtaW51dGVzIHwg4o+x77iPIDMweCBmYXN0ZXIgfAoKIyMgVHJvdWJsZXNob290aW5nCgojIyMgUHJvYmxlbTogTm8gVVJMcyBmb3VuZCBpbiBzaXRlbWFwCgoqKlNvbHV0aW9ucyoqOgpgYGBqYXZhc2NyaXB0Ci8vIDEuIENoZWNrIGlmIHNpdGVtYXAgZXhpc3RzIG1hbnVhbGx5CmNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goJ2h0dHBzOi8vZXhhbXBsZS5jb20vc2l0ZW1hcC54bWwnKTsKaWYgKCFyZXNwb25zZS5vaykgewogICAgY29uc29sZS5sb2coJ05vIHNpdGVtYXAgZm91bmQgYXQgL3NpdGVtYXAueG1sJyk7Cn0KCi8vIDIuIENoZWNrIHJvYm90cy50eHQKY29uc3Qgcm9ib3RzUmVzcG9uc2UgPSBhd2FpdCBmZXRjaCgnaHR0cHM6Ly9leGFtcGxlLmNvbS9yb2JvdHMudHh0Jyk7CmNvbnN0IHJvYm90c1RleHQgPSBhd2FpdCByb2JvdHNSZXNwb25zZS50ZXh0KCk7CmNvbnNvbGUubG9nKCdTaXRlbWFwIGRpcmVjdGl2ZXM6Jywgcm9ib3RzVGV4dC5tYXRjaCgvU2l0ZW1hcDouKy9naSkpOwoKLy8gMy4gRmFsbCBiYWNrIHRvIGNyYXdsaW5nCmNvbnNvbGUubG9nKCdGYWxsaW5nIGJhY2sgdG8gdHJhZGl0aW9uYWwgY3Jhd2xpbmcnKTsKYGBgCgojIyMgUHJvYmxlbTogU2l0ZW1hcCBoYXMgdG9vIG1hbnkgaXJyZWxldmFudCBVUkxzCgoqKlNvbHV0aW9uKio6IFVzZSByZWdleCBmaWx0ZXJpbmcKYGBgamF2YXNjcmlwdApjb25zdCByZXF1ZXN0TGlzdCA9IGF3YWl0IFJlcXVlc3RMaXN0Lm9wZW4obnVsbCwgW3sKICAgIHJlcXVlc3RzRnJvbVVybDogJ2h0dHBzOi8vc2l0ZS5jb20vc2l0ZW1hcC54bWwnLAogICAgcmVnZXg6IC9cL3Byb2R1Y3RzXC9bXi88XSskLywgLy8gT25seSBwcm9kdWN0IHBhZ2VzCn1dKTsKYGBgCgojIyMgUHJvYmxlbTogU2l0ZW1hcCBVUkxzIHJldHVybiA0MDQKCioqU29sdXRpb24qKjogQWRkIGVycm9yIGhhbmRsaW5nCmBgYGphdmFzY3JpcHQKY29uc3QgY3Jhd2xlciA9IG5ldyBDaGVlcmlvQ3Jhd2xlcih7CiAgICBmYWlsZWRSZXF1ZXN0SGFuZGxlcih7IHJlcXVlc3QsIGVycm9yIH0sIHsgbG9nIH0pIHsKICAgICAgICBsb2cud2FybmluZyhgVVJMIGZyb20gc2l0ZW1hcCByZXR1cm5lZCBlcnJvcjogJHtyZXF1ZXN0LnVybH1gKTsKICAgICAgICAvLyBEb24ndCBjcmFzaCwganVzdCBsb2cgYW5kIGNvbnRpbnVlCiAgICB9LAp9KTsKYGBgCgojIyBWYWxpZGF0aW5nIFNpdGVtYXAgd2l0aCBUcmFmZmljIENhcHR1cmUKCkFmdGVyIGRpc2NvdmVyaW5nIGEgc2l0ZW1hcCwgdmFsaWRhdGUgaXRzIGNvdmVyYWdlIGFnYWluc3QgcHJveHkgdHJhZmZpYyBjYXB0dXJlOgoKYGBgCiMgRHVyaW5nIHJlY29ubmFpc3NhbmNlLCBjb21wYXJlIHNpdGVtYXAgVVJMIGNvdW50IHdpdGggQVBJIHBhZ2luYXRpb24gbWV0YWRhdGEKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICJwcm9kdWN0cyIpCnByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZCkgICAg4oaSIENoZWNrICJ0b3RhbCIgZmllbGQgaW4gQVBJIHJlc3BvbnNlCmBgYAoKSWYgdGhlIEFQSSByZXBvcnRzIDUsMDAwIHByb2R1Y3RzIGJ1dCB0aGUgc2l0ZW1hcCBvbmx5IGhhcyAzLDAwMCBVUkxzLCB0aGUgc2l0ZW1hcCBtYXkgYmUgaW5jb21wbGV0ZSDigJQgdXNlIHRoZSBBUEkgZm9yIGZ1bGwgY292ZXJhZ2UuCgojIyBSZWxhdGVkIFJlc291cmNlcwoKLSAqKlRyYWZmaWMgaW50ZXJjZXB0aW9uKio6IFNlZSBgdHJhZmZpYy1pbnRlcmNlcHRpb24ubWRgCi0gKipSZWdleCBwYXR0ZXJucyoqOiBTZWUgYC4uL3JlZmVyZW5jZS9yZWdleC1wYXR0ZXJucy5tZGAKLSAqKkh5YnJpZCBhcHByb2FjaGVzKio6IFNlZSBgaHlicmlkLWFwcHJvYWNoZXMubWRgCi0gKipBUEkgZGlzY292ZXJ5Kio6IFNlZSBgYXBpLWRpc2NvdmVyeS5tZGAgKG9mdGVuIGJldHRlciB0aGFuIHNjcmFwaW5nKQotICoqRXhhbXBsZXMqKjogU2VlIGAuLi9leGFtcGxlcy9zaXRlbWFwLWJhc2ljLmpzYAoKIyMgU3VtbWFyeQoKKipTaXRlbWFwcyBhcmUgdGhlIEZBU1RFU1Qgd2F5IHRvIGRpc2NvdmVyIFVSTHMqKiAtIHVzZSB0aGVtIHdoZW5ldmVyIHBvc3NpYmxlIQoKKipLZXkgdGFrZWF3YXlzKio6CjEuIEFsd2F5cyBjaGVjayBmb3Igc2l0ZW1hcHMgZmlyc3QgKDYweCBmYXN0ZXIgdGhhbiBjcmF3bGluZykKMi4gVXNlIGBSb2JvdHNGaWxlLmZpbmQoKWAgZm9yIGF1dG9tYXRpYyBkaXNjb3ZlcnkKMy4gRmlsdGVyIHdpdGggcmVnZXggdG8gZ2V0IG9ubHkgcmVsZXZhbnQgVVJMcwo0LiBBbHdheXMgaGF2ZSBhIGZhbGxiYWNrIHRvIGNyYXdsaW5nCjUuIENvbWJpbmUgd2l0aCBBUEkgZGlzY292ZXJ5IGZvciBiZXN0IHJlc3VsdHMK
+# Sitemap-Based URL Discovery
+
+## Overview
+
+Sitemaps are XML files that list all URLs on a website, providing the fastest and most efficient way to discover pages to scrape. Instead of crawling page-by-page, you can get all URLs instantly.
+
+## When to Use Sitemaps
+
+### ✅ USE sitemaps when:
+- Website has a sitemap (check `/sitemap.xml` or `robots.txt`)
+- Large websites with 100+ pages
+- Product catalogs, blogs, news sites
+- Need complete site coverage
+- URLs follow predictable patterns
+- E-commerce sites (products, categories)
+- Time-sensitive scraping (need fast results)
+
+### ❌ DON'T use sitemaps when:
+- Site doesn't have a sitemap
+- Single-page applications with dynamic content
+- Need to follow user flows (login, navigation, shopping cart)
+- Sitemap is outdated or incomplete
+- Crawling logic depends on page content
+- Site uses heavy JavaScript for navigation
+
+## Finding Sitemaps
+
+Sitemaps are typically found at these locations:
+
+```
+https://example.com/sitemap.xml              ← Most common
+https://example.com/robots.txt               ← Lists sitemap URLs
+https://example.com/sitemap_index.xml        ← Sitemap of sitemaps
+https://example.com/product-sitemap.xml      ← Product-specific
+https://example.com/sitemap.xml.gz           ← Compressed
+https://example.com/sitemaps/sitemap.xml     ← In subdirectory
+```
+
+### Always Check robots.txt First
+
+```bash
+curl https://example.com/robots.txt
+```
+
+Example robots.txt:
+```
+User-agent: *
+Sitemap: https://example.com/sitemap_index.xml
+Sitemap: https://example.com/products-sitemap.xml
+Sitemap: https://example.com/blog-sitemap.xml
+```
+
+## Implementation Patterns
+
+### Pattern 1: Automatic Discovery (Recommended)
+
+Use `RobotsFile` to automatically find and parse all sitemaps:
+
+```javascript
+import { CheerioCrawler, RobotsFile, Dataset } from 'crawlee';
+
+// Automatically finds robots.txt and parses ALL sitemaps
+const robots = await RobotsFile.find('https://example.com');
+const allUrls = await robots.parseUrlsFromSitemaps();
+
+console.log(`Found ${allUrls.length} URLs from sitemaps`);
+
+// Create crawler
+const crawler = new CheerioCrawler({
+    async requestHandler({ $, request, log }) {
+        log.info(`Scraping: ${request.url}`);
+
+        const data = {
+            title: $('title').text().trim(),
+            price: $('.price').text().trim(),
+            description: $('.description').text().trim(),
+        };
+
+        await Dataset.pushData(data);
+    },
+});
+
+// Add all sitemap URLs
+await crawler.addRequests(allUrls);
+await crawler.run();
+```
+
+**Benefits**:
+- Handles sitemap indexes (nested sitemaps)
+- Handles compressed sitemaps (.gz)
+- Respects robots.txt rules
+- No need to know sitemap URLs upfront
+
+### Pattern 2: Filtered URLs with Regex
+
+Use `RequestList` to filter only specific URL patterns:
+
+```javascript
+import { CheerioCrawler, RequestList, Dataset } from 'crawlee';
+
+// Load sitemap and filter URLs with regex
+const requestList = await RequestList.open(null, [{
+    requestsFromUrl: 'https://shop.com/sitemap.xml',
+    // Only product pages (not categories, help pages, etc.)
+    regex: /\/products\/[a-z0-9-]+$/i,
+}]);
+
+const crawler = new CheerioCrawler({
+    requestList,
+    async requestHandler({ $, request, log }) {
+        log.info(`Scraping product: ${request.url}`);
+
+        const product = {
+            name: $('h1').text().trim(),
+            price: $('[data-testid="price"]').text().trim(),
+            sku: $('[data-sku]').attr('data-sku'),
+        };
+
+        await Dataset.pushData(product);
+    },
+});
+
+await crawler.run();
+```
+
+**Common Regex Patterns**:
+
+```javascript
+// Products only
+regex: /\/products\/[a-z0-9-]+$/i
+
+// Blog posts (with date pattern)
+regex: /\/blog\/\d{4}\/\d{2}\/[a-z0-9-]+/i
+
+// Exclude categories, only products
+regex: /\/products\/[^/<]+$/
+
+// Multiple patterns (products OR deals)
+regex: /(\/products\/[^/<]+|\/deals\/[^/<]+)/
+
+// Specific category
+regex: /\/products\/electronics\/[^/<]+$/
+```
+
+See `../reference/regex-patterns.md` for more patterns.
+
+### Pattern 3: Multiple Specific Sitemaps
+
+Load specific sitemap URLs directly:
+
+```javascript
+import { CheerioCrawler, Sitemap, Dataset } from 'crawlee';
+
+// Load multiple sitemaps
+const sitemap = await Sitemap.load([
+    'https://example.com/product-sitemap.xml',
+    'https://example.com/blog-sitemap.xml.gz', // Handles .gz automatically
+]);
+
+console.log(`Found ${sitemap.urls.length} URLs`);
+
+const crawler = new CheerioCrawler({
+    async requestHandler({ $, request, log }) {
+        // Handle both products and blog posts
+        if (request.url.includes('/products/')) {
+            // Scrape product
+            const product = {
+                name: $('h1').text().trim(),
+                price: $('.price').text().trim(),
+            };
+            await Dataset.pushData({ type: 'product', ...product });
+        } else if (request.url.includes('/blog/')) {
+            // Scrape blog post
+            const post = {
+                title: $('h1').text().trim(),
+                content: $('.content').text().trim(),
+            };
+            await Dataset.pushData({ type: 'post', ...post });
+        }
+    },
+});
+
+await crawler.addRequests(sitemap.urls);
+await crawler.run();
+```
+
+### Pattern 4: Hybrid (Sitemap + Crawling)
+
+Start with sitemap, then also crawl discovered links:
+
+```javascript
+import { CheerioCrawler, RobotsFile, Dataset } from 'crawlee';
+
+// Start with sitemap URLs
+const robots = await RobotsFile.find('https://example.com');
+const sitemapUrls = await robots.parseUrlsFromSitemaps();
+
+const crawler = new CheerioCrawler({
+    maxRequestsPerCrawl: 5000,
+    async requestHandler({ $, enqueueLinks, request, log }) {
+        log.info(`Processing: ${request.url}`);
+
+        // Scrape data
+        const data = {
+            title: $('title').text().trim(),
+            links: $('a').map((_, el) => $(el).attr('href')).get(),
+        };
+
+        await Dataset.pushData(data);
+
+        // ALSO crawl discovered links (optional)
+        await enqueueLinks({
+            selector: 'a[href*="/products/"]',
+            strategy: 'same-domain',
+        });
+    },
+});
+
+// Start with all sitemap URLs
+await crawler.addRequests(sitemapUrls);
+await crawler.run();
+```
+
+## URL Filtering Techniques
+
+### Using lastmod Dates
+
+Filter URLs by last modification date:
+
+```javascript
+import { Sitemap } from 'crawlee';
+
+const sitemap = await Sitemap.load(['https://site.com/sitemap.xml']);
+
+// Filter to recently updated URLs (last 30 days)
+const recentUrls = sitemap.urls.filter(urlObj => {
+    const lastMod = new Date(urlObj.lastmod);
+    const monthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+    return lastMod > monthAgo;
+}).map(urlObj => urlObj.loc);
+
+console.log(`Found ${recentUrls.length} recently updated URLs`);
+```
+
+### Using Priority
+
+Filter by sitemap priority (0.0 to 1.0):
+
+```javascript
+// Get only high-priority pages
+const highPriorityUrls = sitemap.urls.filter(urlObj => {
+    return parseFloat(urlObj.priority) >= 0.8;
+}).map(urlObj => urlObj.loc);
+```
+
+## Error Handling
+
+Always handle cases where sitemaps might not exist or be malformed:
+
+```javascript
+import { CheerioCrawler, RobotsFile, Dataset } from 'crawlee';
+
+try {
+    // Try to find and parse sitemaps
+    const robots = await RobotsFile.find('https://example.com');
+    const urls = await robots.parseUrlsFromSitemaps();
+
+    if (urls.length === 0) {
+        console.log('⚠ No URLs found in sitemaps, falling back to crawling');
+        // Fall back to traditional crawling
+        await crawler.run(['https://example.com']);
+    } else {
+        console.log(`✓ Found ${urls.length} URLs, starting scrape`);
+
+        const crawler = new CheerioCrawler({
+            async requestHandler({ page, request, log }) {
+                // Scrape logic
+            },
+            failedRequestHandler({ request, error }, { log }) {
+                log.error(`Request ${request.url} failed: ${error.message}`);
+            },
+        });
+
+        await crawler.addRequests(urls);
+        await crawler.run();
+    }
+} catch (error) {
+    console.error(`✗ Sitemap discovery failed: ${error.message}`);
+    console.log('Falling back to traditional crawling');
+    // Implement fallback strategy
+}
+```
+
+## Best Practices
+
+### ✅ DO:
+
+- **Check robots.txt first** for sitemap locations
+- **Use `RobotsFile.find()`** for automatic discovery
+- **Filter URLs with regex** when you only need specific page types
+- **Verify sitemap is current** before relying on it (check lastmod dates)
+- **Use `lastmod` dates** to avoid re-scraping unchanged content
+- **Handle compressed sitemaps** (.gz files) - Crawlee does this automatically
+- **Combine with crawling** for completeness if needed
+- **Test sitemap URLs** before running full scrape (sample 5-10 first)
+- **Log progress** clearly (URLs found, filtered, scraped)
+
+### ❌ DON'T:
+
+- **Assume all sites have sitemaps** - always have a fallback
+- **Trust sitemaps to be complete** - some pages may be missing
+- **Use sitemaps for dynamic/SPA content** - crawling is better
+- **Forget to filter URLs** - sitemaps often include pages you don't need
+- **Ignore robots.txt rules** - respect crawl directives
+- **Scrape login-protected pages** from sitemaps - won't work
+- **Skip error handling** - some sitemap URLs may be broken
+- **Ignore rate limits** - even with sitemaps, respect robots.txt crawl-delay
+
+## Performance Comparison
+
+| Metric | Sitemap | Traditional Crawling | Improvement |
+|--------|---------|----------------------|-------------|
+| **URL Discovery** | 5-10 seconds | 5-10 minutes | ⚡ 60x faster |
+| **Bandwidth** | ~2 MB | ~200 MB | 💾 100x less |
+| **Coverage** | 100% (if current) | 80-90% | ✅ Better |
+| **Time to First Data** | 10-20 seconds | 5-10 minutes | ⏱️ 30x faster |
+
+## Troubleshooting
+
+### Problem: No URLs found in sitemap
+
+**Solutions**:
+```javascript
+// 1. Check if sitemap exists manually
+const response = await fetch('https://example.com/sitemap.xml');
+if (!response.ok) {
+    console.log('No sitemap found at /sitemap.xml');
+}
+
+// 2. Check robots.txt
+const robotsResponse = await fetch('https://example.com/robots.txt');
+const robotsText = await robotsResponse.text();
+console.log('Sitemap directives:', robotsText.match(/Sitemap:.+/gi));
+
+// 3. Fall back to crawling
+console.log('Falling back to traditional crawling');
+```
+
+### Problem: Sitemap has too many irrelevant URLs
+
+**Solution**: Use regex filtering
+```javascript
+const requestList = await RequestList.open(null, [{
+    requestsFromUrl: 'https://site.com/sitemap.xml',
+    regex: /\/products\/[^/<]+$/, // Only product pages
+}]);
+```
+
+### Problem: Sitemap URLs return 404
+
+**Solution**: Add error handling
+```javascript
+const crawler = new CheerioCrawler({
+    failedRequestHandler({ request, error }, { log }) {
+        log.warning(`URL from sitemap returned error: ${request.url}`);
+        // Don't crash, just log and continue
+    },
+});
+```
+
+## Validating Sitemap with Traffic Capture
+
+After discovering a sitemap, validate its coverage against proxy traffic capture:
+
+```
+# During reconnaissance, compare sitemap URL count with API pagination metadata
+proxy_list_traffic(url_filter: "products")
+proxy_get_exchange(exchange_id)    → Check "total" field in API response
+```
+
+If the API reports 5,000 products but the sitemap only has 3,000 URLs, the sitemap may be incomplete — use the API for full coverage.
+
+## Related Resources
+
+- **Traffic interception**: See `traffic-interception.md`
+- **Regex patterns**: See `../reference/regex-patterns.md`
+- **Hybrid approaches**: See `hybrid-approaches.md`
+- **API discovery**: See `api-discovery.md` (often better than scraping)
+- **Examples**: See `../examples/sitemap-basic.js`
+
+## Summary
+
+**Sitemaps are the FASTEST way to discover URLs** - use them whenever possible!
+
+**Key takeaways**:
+1. Always check for sitemaps first (60x faster than crawling)
+2. Use `RobotsFile.find()` for automatic discovery
+3. Filter with regex to get only relevant URLs
+4. Always have a fallback to crawling
+5. Combine with API discovery for best results
