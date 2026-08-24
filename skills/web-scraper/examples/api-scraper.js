@@ -1,1 +1,79 @@
-LyoqCiAqIEFQSS1CYXNlZCBTY3JhcGVyCiAqCiAqIFRoaXMgZXhhbXBsZSBzaG93cyBob3cgdG86CiAqIDEuIFVzZSBBUElzIGluc3RlYWQgb2Ygc2NyYXBpbmcgSFRNTAogKiAyLiBIYW5kbGUgYXV0aGVudGljYXRpb24gKGNvb2tpZXMsIHRva2VucykKICogMy4gUHJvY2VzcyBKU09OIHJlc3BvbnNlcwogKgogKiBVc2UgdGhpcyBwYXR0ZXJuIGZvcjogQW55IHNpdGUgd2l0aCBhIGRpc2NvdmVyYWJsZSBBUEkKICovCgppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7CmltcG9ydCB7IHNldFRpbWVvdXQgfSBmcm9tICd0aW1lcnMvcHJvbWlzZXMnOwoKYXN5bmMgZnVuY3Rpb24gbWFpbigpIHsKICAgIC8vIEV4YW1wbGU6IFNjcmFwZSBwcm9kdWN0cyB2aWEgQVBJCiAgICBjb25zdCBiYXNlQXBpVXJsID0gJ2h0dHBzOi8vYXBpLmV4YW1wbGUuY29tL3YxJzsKICAgIGNvbnN0IHByb2R1Y3RJZHMgPSBbMTIzLCA0NTYsIDc4OV07IC8vIEdldCB0aGVzZSBmcm9tIHNpdGVtYXAgb3IgZXhwbG9yYXRpb24KCiAgICBjb25zdCByZXN1bHRzID0gW107CgogICAgY29uc29sZS5sb2coYPCflI0gRmV0Y2hpbmcgJHtwcm9kdWN0SWRzLmxlbmd0aH0gcHJvZHVjdHMgdmlhIEFQSS4uLmApOwoKICAgIGZvciAoY29uc3QgaWQgb2YgcHJvZHVjdElkcykgewogICAgICAgIHRyeSB7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKGBGZXRjaGluZyBwcm9kdWN0ICR7aWR9Li4uYCk7CgogICAgICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgICAgICAgICAgICAgIHVybDogYCR7YmFzZUFwaVVybH0vcHJvZHVjdHMvJHtpZH1gLAogICAgICAgICAgICAgICAgcmVzcG9uc2VUeXBlOiAnanNvbicsCiAgICAgICAgICAgICAgICBoZWFkZXJzOiB7CiAgICAgICAgICAgICAgICAgICAgJ1VzZXItQWdlbnQnOiAnTW96aWxsYS81LjAgKGNvbXBhdGlibGU7IFNjcmFwZXIvMS4wKScsCiAgICAgICAgICAgICAgICAgICAgLy8gQWRkIGF1dGhlbnRpY2F0aW9uIGlmIG5lZWRlZDoKICAgICAgICAgICAgICAgICAgICAvLyAnQXV0aG9yaXphdGlvbic6ICdCZWFyZXIgWU9VUl9UT0tFTicsCiAgICAgICAgICAgICAgICAgICAgLy8gJ1gtQVBJLUtleSc6ICdZT1VSX0FQSV9LRVknLAogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgIHRpbWVvdXQ6IHsKICAgICAgICAgICAgICAgICAgICByZXF1ZXN0OiAxMDAwMCwgLy8gMTAgc2Vjb25kIHRpbWVvdXQKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICByZXRyeTogewogICAgICAgICAgICAgICAgICAgIGxpbWl0OiAzLAogICAgICAgICAgICAgICAgICAgIG1ldGhvZHM6IFsnR0VUJ10sCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICB9KTsKCiAgICAgICAgICAgIC8vIEFQSSByZXR1cm5zIGNsZWFuIEpTT04KICAgICAgICAgICAgY29uc3QgcHJvZHVjdCA9IHJlc3BvbnNlLmJvZHk7CgogICAgICAgICAgICByZXN1bHRzLnB1c2goewogICAgICAgICAgICAgICAgaWQ6IHByb2R1Y3QuaWQsCiAgICAgICAgICAgICAgICBuYW1lOiBwcm9kdWN0Lm5hbWUsCiAgICAgICAgICAgICAgICBwcmljZTogcHJvZHVjdC5wcmljZSwKICAgICAgICAgICAgICAgIGluU3RvY2s6IHByb2R1Y3QuaW5fc3RvY2ssCiAgICAgICAgICAgICAgICBzY3JhcGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSwKICAgICAgICAgICAgfSk7CgogICAgICAgICAgICBjb25zb2xlLmxvZyhg4pyTIEZldGNoZWQ6ICR7cHJvZHVjdC5uYW1lfWApOwoKICAgICAgICAgICAgLy8gUmF0ZSBsaW1pdGluZyAocmVzcGVjdCBBUEkgbGltaXRzKQogICAgICAgICAgICBhd2FpdCBzZXRUaW1lb3V0KDEwMCk7IC8vIDEwMG1zIGRlbGF5ID0gMTAgcmVxdWVzdHMvc2Vjb25kCgogICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgICAgIGlmIChlcnJvci5yZXNwb25zZT8uc3RhdHVzQ29kZSA9PT0gNDA0KSB7CiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhg4pyXIFByb2R1Y3QgJHtpZH0gbm90IGZvdW5kYCk7CiAgICAgICAgICAgIH0gZWxzZSBpZiAoZXJyb3IucmVzcG9uc2U/LnN0YXR1c0NvZGUgPT09IDQyOSkgewogICAgICAgICAgICAgICAgY29uc29sZS5sb2coYOKaoCBSYXRlIGxpbWl0ZWQsIHdhaXRpbmcgNSBzZWNvbmRzLi4uYCk7CiAgICAgICAgICAgICAgICBhd2FpdCBzZXRUaW1lb3V0KDUwMDApOwogICAgICAgICAgICAgICAgLy8gUmV0cnkgdGhpcyBwcm9kdWN0CiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgICBjb25zb2xlLmVycm9yKGDinJcgRXJyb3IgZmV0Y2hpbmcgcHJvZHVjdCAke2lkfTpgLCBlcnJvci5tZXNzYWdlKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBjb25zb2xlLmxvZyhg4pyTIEZldGNoZWQgJHtyZXN1bHRzLmxlbmd0aH0vJHtwcm9kdWN0SWRzLmxlbmd0aH0gcHJvZHVjdHNgKTsKICAgIGNvbnNvbGUubG9nKEpTT04uc3RyaW5naWZ5KHJlc3VsdHMsIG51bGwsIDIpKTsKfQoKbWFpbigpOwo=
+/**
+ * API-Based Scraper
+ *
+ * This example shows how to:
+ * 1. Use APIs instead of scraping HTML
+ * 2. Handle authentication (cookies, tokens)
+ * 3. Process JSON responses
+ *
+ * Use this pattern for: Any site with a discoverable API
+ */
+
+import { gotScraping } from 'got-scraping';
+import { setTimeout } from 'timers/promises';
+
+async function main() {
+    // Example: Scrape products via API
+    const baseApiUrl = 'https://api.example.com/v1';
+    const productIds = [123, 456, 789]; // Get these from sitemap or exploration
+
+    const results = [];
+
+    console.log(`🔍 Fetching ${productIds.length} products via API...`);
+
+    for (const id of productIds) {
+        try {
+            console.log(`Fetching product ${id}...`);
+
+            const response = await gotScraping({
+                url: `${baseApiUrl}/products/${id}`,
+                responseType: 'json',
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (compatible; Scraper/1.0)',
+                    // Add authentication if needed:
+                    // 'Authorization': 'Bearer YOUR_TOKEN',
+                    // 'X-API-Key': 'YOUR_API_KEY',
+                },
+                timeout: {
+                    request: 10000, // 10 second timeout
+                },
+                retry: {
+                    limit: 3,
+                    methods: ['GET'],
+                },
+            });
+
+            // API returns clean JSON
+            const product = response.body;
+
+            results.push({
+                id: product.id,
+                name: product.name,
+                price: product.price,
+                inStock: product.in_stock,
+                scrapedAt: new Date().toISOString(),
+            });
+
+            console.log(`✓ Fetched: ${product.name}`);
+
+            // Rate limiting (respect API limits)
+            await setTimeout(100); // 100ms delay = 10 requests/second
+
+        } catch (error) {
+            if (error.response?.statusCode === 404) {
+                console.log(`✗ Product ${id} not found`);
+            } else if (error.response?.statusCode === 429) {
+                console.log(`⚠ Rate limited, waiting 5 seconds...`);
+                await setTimeout(5000);
+                // Retry this product
+            } else {
+                console.error(`✗ Error fetching product ${id}:`, error.message);
+            }
+        }
+    }
+
+    console.log(`✓ Fetched ${results.length}/${productIds.length} products`);
+    console.log(JSON.stringify(results, null, 2));
+}
+
+main();
