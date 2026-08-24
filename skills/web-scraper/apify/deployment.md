@@ -1,1 +1,466 @@
-IyBBY3RvciBEZXBsb3ltZW50IFBhdHRlcm5zCgpUZXN0aW5nIGFuZCBkZXBsb3ltZW50IHdvcmtmbG93cyBmb3IgQXBpZnkgQWN0b3JzLgoKIyMgTG9jYWwgVGVzdGluZwoKIyMjIEJhc2ljIFJ1bgoKYGBgYmFzaAojIFJ1biB3aXRoIGRlZmF1bHQgaW5wdXQKYXBpZnkgcnVuCgojIE91dHB1dCBzaG93czoKIyAtIEFjdG9yIGluaXRpYWxpemF0aW9uCiMgLSBMb2dzCiMgLSBSZXN1bHRzIHNhdmVkIHRvIC4vc3RvcmFnZS9kYXRhc2V0cy9kZWZhdWx0LwpgYGAKCiMjIyBXaXRoIEN1c3RvbSBJbnB1dAoKYGBgYmFzaAojIElubGluZSBKU09OCmFwaWZ5IHJ1biAtLWlucHV0PSd7InN0YXJ0VXJscyI6W3sidXJsIjoiaHR0cHM6Ly9leGFtcGxlLmNvbSJ9XX0nCgojIEZyb20gZmlsZQphcGlmeSBydW4gLS1pbnB1dC1maWxlPS4vdGVzdC1pbnB1dC5qc29uCgojIERpZmZlcmVudCBpbnB1dCBmaWxlCmFwaWZ5IHJ1biAtLWlucHV0LWZpbGU9Li9pbnB1dHMvcHJvZHVjdGlvbi5qc29uCmBgYAoKIyMjIENsZWFuIFJ1bgoKYGBgYmFzaAojIFB1cmdlIHN0b3JhZ2UgYmVmb3JlIHJ1bm5pbmcKYXBpZnkgcnVuIC0tcHVyZ2UKCiMgRnJlc2ggc3RhcnQsIG5vIGNhY2hlZCBkYXRhCmBgYAoKIyMjIERlYnVnIE1vZGUKCmBgYGJhc2gKIyBFbmFibGUgZGVidWcgbG9nZ2luZwpERUJVRz1jcmF3bGVlOiogYXBpZnkgcnVuCgojIE11bHRpcGxlIGRlYnVnIG5hbWVzcGFjZXMKREVCVUc9Y3Jhd2xlZToqLGFwaWZ5OiogYXBpZnkgcnVuCgojIFBsYXl3cmlnaHQgZGVidWcKREVCVUc9cHc6YXBpIGFwaWZ5IHJ1bgpgYGAKCiMjIFR5cGVTY3JpcHQgQnVpbGQKCiMjIyBCdWlsZCBCZWZvcmUgUnVuCgpgYGBiYXNoCiMgQ29tcGlsZSBUeXBlU2NyaXB0Cm5wbSBydW4gYnVpbGQKCiMgT3V0cHV0OiBkaXN0L21haW4uanMKCiMgVGhlbiBydW4KbnBtIHN0YXJ0CiMgT3IKbm9kZSBkaXN0L21haW4uanMKYGBgCgojIyMgV2F0Y2ggTW9kZSAoRGV2ZWxvcG1lbnQpCgpgYGBiYXNoCiMgQXV0by1yZWJ1aWxkIG9uIGNoYW5nZXMKbnBtIHJ1biBidWlsZCAtLSAtLXdhdGNoCgojIEluIGFub3RoZXIgdGVybWluYWwKbnBtIHN0YXJ0CmBgYAoKIyMjIEJ1aWxkIEVycm9ycwoKYGBgYmFzaAojIENoZWNrIFR5cGVTY3JpcHQgZXJyb3JzCm5wbSBydW4gYnVpbGQKCiMgRml4IGVycm9ycywgdGhlbiByZXRyeQojIENvbW1vbiBpc3N1ZXM6CiMgLSBUeXBlIG1pc21hdGNoZXMKIyAtIE1pc3NpbmcgaW1wb3J0cwojIC0gU3ludGF4IGVycm9ycwpgYGAKCiMjIERlcGxveW1lbnQgdG8gUGxhdGZvcm0KCiMjIyBGaXJzdCBEZXBsb3ltZW50CgpgYGBiYXNoCiMgUHVzaCB0byBBcGlmeSBwbGF0Zm9ybQphcGlmeSBwdXNoCgojIFByb2Nlc3M6CiMgMS4gVXBsb2FkcyBzb3VyY2UgY29kZQojIDIuIEJ1aWxkcyBEb2NrZXIgaW1hZ2UKIyAzLiBDcmVhdGVzIG5ldyBBY3RvciB2ZXJzaW9uCiMgNC4gU2V0cyBhcyBsYXRlc3QKYGBgCgojIyMgV2l0aCBCdWlsZCBUYWcKCmBgYGJhc2gKIyBEZXBsb3kgdG8gc3BlY2lmaWMgdGFnCmFwaWZ5IHB1c2ggLS1idWlsZC10YWcgYmV0YQoKIyBEZXBsb3kgdG8gZGV2CmFwaWZ5IHB1c2ggLS1idWlsZC10YWcgZGV2CgojIFByb2R1Y3Rpb24gcmVsZWFzZQphcGlmeSBwdXNoIC0tYnVpbGQtdGFnIGxhdGVzdApgYGAKCiMjIyBXaXRoIFZlcnNpb24KCmBgYGJhc2gKIyBTZXQgdmVyc2lvbiBudW1iZXIKYXBpZnkgcHVzaCAtLXZlcnNpb24tbnVtYmVyIDEuMi4zCgojIFVwZGF0ZXMgLmFjdG9yL2FjdG9yLmpzb24gdmVyc2lvbiBmaWVsZApgYGAKCiMjIyBXYWl0IGZvciBCdWlsZAoKYGBgYmFzaAojIFdhaXQgdW50aWwgYnVpbGQgY29tcGxldGVzCmFwaWZ5IHB1c2ggLS13YWl0LWZvci1maW5pc2gKCiMgVXNlZnVsIGluIENJL0NEIHBpcGVsaW5lcwpgYGAKCiMjIyBGb3JjZSBSZWJ1aWxkCgpgYGBiYXNoCiMgRm9yY2UgcmVidWlsZCBldmVuIGlmIG5vIGNoYW5nZXMKYXBpZnkgcHVzaCAtLWZvcmNlCgojIFVzZSB3aGVuOgojIC0gRGVwZW5kZW5jaWVzIHVwZGF0ZWQKIyAtIERvY2tlcmZpbGUgY2hhbmdlZAojIC0gQnVpbGQgY2FjaGUgaXNzdWVzCmBgYAoKIyMgVGVzdGluZyBvbiBQbGF0Zm9ybQoKIyMjIFJ1biBBY3RvcgoKYGBgYmFzaAojIFJ1biBsYXRlc3QgdmVyc2lvbgphcGlmeSBjYWxsIG15LWFjdG9yCgojIFJ1biBzcGVjaWZpYyBidWlsZAphcGlmeSBjYWxsIG15LWFjdG9yIC0tYnVpbGQ9YmV0YQoKIyBXaXRoIGlucHV0CmFwaWZ5IGNhbGwgbXktYWN0b3IgLS1pbnB1dD0neyJtYXhJdGVtcyI6MTB9JwoKIyBXaXRoIGlucHV0IGZpbGUKYXBpZnkgY2FsbCBteS1hY3RvciAtLWlucHV0LWZpbGU9Li9pbnB1dC5qc29uCmBgYAoKIyMjIE1vbml0b3IgUnVuCgpgYGBiYXNoCiMgR2V0IHJ1biBpbmZvCmFwaWZ5IGNhbGwgbXktYWN0b3IgLS13YWl0LWZvci1maW5pc2gKCiMgU2hvd3M6CiMgLSBSdW4gSUQKIyAtIFN0YXR1cwojIC0gRHVyYXRpb24KIyAtIFJlc3VsdHMKYGBgCgojIyBWZXJzaW9uIE1hbmFnZW1lbnQKCiMjIyBTZW1hbnRpYyBWZXJzaW9uaW5nCgpgYGBiYXNoCiMgTWFqb3IgdmVyc2lvbiAoYnJlYWtpbmcgY2hhbmdlcykKYXBpZnkgcHVzaCAtLXZlcnNpb24tbnVtYmVyIDIuMC4wCgojIE1pbm9yIHZlcnNpb24gKG5ldyBmZWF0dXJlcykKYXBpZnkgcHVzaCAtLXZlcnNpb24tbnVtYmVyIDEuMS4wCgojIFBhdGNoIHZlcnNpb24gKGJ1ZyBmaXhlcykKYXBpZnkgcHVzaCAtLXZlcnNpb24tbnVtYmVyIDEuMC4xCmBgYAoKIyMjIEJ1aWxkIFRhZ3MKCmBgYGJhc2gKIyBEZXZlbG9wbWVudAphcGlmeSBwdXNoIC0tYnVpbGQtdGFnIGRldgoKIyBTdGFnaW5nL3Rlc3RpbmcKYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBiZXRhCgojIFByb2R1Y3Rpb24KYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBsYXRlc3QKYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyB2MS4wLjAKYGBgCgojIyMgVGFnIFN0cmF0ZWd5CgpgYGAKbWFpbiBicmFuY2ggICAg4oaSIC0tYnVpbGQtdGFnIGxhdGVzdApkZXZlbG9wIGJyYW5jaCDihpIgLS1idWlsZC10YWcgZGV2CnJlbGVhc2UvYmV0YSAgIOKGkiAtLWJ1aWxkLXRhZyBiZXRhCmZlYXR1cmUvKiAgICAgIOKGkiAtLWJ1aWxkLXRhZyBmZWF0dXJlLW5hbWUKYGBgCgojIyBDb21wbGV0ZSBXb3JrZmxvdyBQYXR0ZXJucwoKIyMjIFBhdHRlcm4gMTogRGV2ZWxvcG1lbnQgQ3ljbGUKCmBgYGJhc2gKIyAxLiBNYWtlIGNoYW5nZXMKdmltIHNyYy9tYWluLnRzCgojIDIuIEJ1aWxkCm5wbSBydW4gYnVpbGQKCiMgMy4gVGVzdCBsb2NhbGx5CmFwaWZ5IHJ1biAtLXB1cmdlCgojIDQuIEZpeCBpc3N1ZXMsIHJlcGVhdCAyLTMKCiMgNS4gTGludCBjb2RlCm5wbSBydW4gbGludDpmaXgKCiMgNi4gRGVwbG95IHRvIGRldgphcGlmeSBwdXNoIC0tYnVpbGQtdGFnIGRldgoKIyA3LiBUZXN0IG9uIHBsYXRmb3JtCmFwaWZ5IGNhbGwgbXktYWN0b3IgLS1idWlsZD1kZXYKCiMgOC4gRGVwbG95IHRvIHByb2R1Y3Rpb24KYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBsYXRlc3QgLS12ZXJzaW9uLW51bWJlciAxLjAuMQpgYGAKCiMjIyBQYXR0ZXJuIDI6IFF1aWNrIFRlc3QKCmBgYGJhc2gKIyBRdWljayB0ZXN0IHdpdGhvdXQgYnVpbGQKYXBpZnkgcnVuIC0taW5wdXQ9J3sic3RhcnRVcmxzIjpbeyJ1cmwiOiJodHRwczovL2V4YW1wbGUuY29tIn1dLCJtYXhJdGVtcyI6NX0nCgojIENoZWNrIC4vc3RvcmFnZS9kYXRhc2V0cy9kZWZhdWx0LwpjYXQgc3RvcmFnZS9kYXRhc2V0cy9kZWZhdWx0LyouanNvbgpgYGAKCiMjIyBQYXR0ZXJuIDM6IENJL0NEIERlcGxveW1lbnQKCmBgYGJhc2gKIyEvYmluL2Jhc2gKIyBkZXBsb3kuc2gKCiMgQnVpbGQgVHlwZVNjcmlwdApucG0gcnVuIGJ1aWxkCgojIFJ1biB0ZXN0cwpucG0gdGVzdAoKIyBMaW50Cm5wbSBydW4gbGludAoKIyBQdXNoIHRvIHBsYXRmb3JtCmFwaWZ5IHB1c2ggLS1idWlsZC10YWcgJHtCVUlMRF9UQUd9IC0td2FpdC1mb3ItZmluaXNoCgojIFRlc3QgZGVwbG95bWVudAphcGlmeSBjYWxsICR7QUNUT1JfSUR9IC0tYnVpbGQ9JHtCVUlMRF9UQUd9IC0td2FpdC1mb3ItZmluaXNoCmBgYAoKIyMjIFBhdHRlcm4gNDogU3RhZ2VkIFJlbGVhc2UKCmBgYGJhc2gKIyAxLiBEZXBsb3kgdG8gYmV0YQphcGlmeSBwdXNoIC0tYnVpbGQtdGFnIGJldGEgLS12ZXJzaW9uLW51bWJlciAxLjEuMAoKIyAyLiBUZXN0IGJldGEKYXBpZnkgY2FsbCBteS1hY3RvciAtLWJ1aWxkPWJldGEKCiMgMy4gTW9uaXRvciBmb3IgaXNzdWVzCiMgLi4uIHdhaXQgMjQgaG91cnMgLi4uCgojIDQuIFByb21vdGUgdG8gcHJvZHVjdGlvbgphcGlmeSBwdXNoIC0tYnVpbGQtdGFnIGxhdGVzdCAtLXZlcnNpb24tbnVtYmVyIDEuMS4wCmBgYAoKIyMgU3RvcmFnZSBJbnNwZWN0aW9uCgojIyMgVmlldyBSZXN1bHRzCgpgYGBiYXNoCiMgTG9jYWwgZGF0YXNldHMKbHMgc3RvcmFnZS9kYXRhc2V0cy9kZWZhdWx0LwpjYXQgc3RvcmFnZS9kYXRhc2V0cy9kZWZhdWx0LzAwMDAwMDAwMS5qc29uCgojIFByZXR0eSBwcmludCBKU09OCmNhdCBzdG9yYWdlL2RhdGFzZXRzL2RlZmF1bHQvKi5qc29uIHwganEgJy4nCmBgYAoKIyMjIEtleS1WYWx1ZSBTdG9yZQoKYGBgYmFzaAojIFZpZXcgS1Ygc3RvcmUKbHMgc3RvcmFnZS9rZXlfdmFsdWVfc3RvcmVzL2RlZmF1bHQvCmNhdCBzdG9yYWdlL2tleV92YWx1ZV9zdG9yZXMvZGVmYXVsdC9JTlBVVC5qc29uCmBgYAoKIyMjIFJlcXVlc3QgUXVldWUKCmBgYGJhc2gKIyBWaWV3IHF1ZXVlCmxzIHN0b3JhZ2UvcmVxdWVzdF9xdWV1ZXMvZGVmYXVsdC8KYGBgCgojIyBUcm91Ymxlc2hvb3RpbmcgRGVwbG95bWVudAoKIyMjIEJ1aWxkIEZhaWxzCgpgYGBiYXNoCiMgQ2hlY2sgYnVpbGQgbG9nCmFwaWZ5IHB1c2gKCiMgQ29tbW9uIGlzc3VlczoKIyAtIFR5cGVTY3JpcHQgZXJyb3JzIOKGkiBydW4gbnBtIHJ1biBidWlsZCBsb2NhbGx5CiMgLSBNaXNzaW5nIGRlcGVuZGVuY2llcyDihpIgY2hlY2sgcGFja2FnZS5qc29uCiMgLSBEb2NrZXJmaWxlIGVycm9ycyDihpIgdGVzdCBkb2NrZXIgYnVpbGQgbG9jYWxseQpgYGAKCiMjIyBBY3RvciBXb24ndCBTdGFydAoKYGBgYmFzaAojIENoZWNrIGxvZ3MgaW4gQXBpZnkgQ29uc29sZQojIE9yIHZpYSBDTEk6CmFwaWZ5IGNhbGwgbXktYWN0b3IgLS13YWl0LWZvci1maW5pc2gKCiMgQ29tbW9uIGlzc3VlczoKIyAtIE1lbW9yeSB0b28gbG93IOKGkiBpbmNyZWFzZSBpbiBhY3Rvci5qc29uCiMgLSBUaW1lb3V0IOKGkiBpbmNyZWFzZSB0aW1lb3V0U2VjcwojIC0gTWlzc2luZyBlbnZpcm9ubWVudCB2YXJpYWJsZXMKYGBgCgojIyMgQnVpbGQgVG9vIFNsb3cKCmBgYGJhc2gKIyBVc2UgZmFzdGVyIGJhc2UgaW1hZ2UKIyBJbiBEb2NrZXJmaWxlOgpGUk9NIGFwaWZ5L2FjdG9yLW5vZGUtcGxheXdyaWdodC1jaHJvbWU6MjAtYm9va3dvcm0tc2xpbQoKIyBTa2lwIG9wdGlvbmFsIGRlcGVuZGVuY2llcwpSVU4gbnBtIGluc3RhbGwgLS1wcm9kdWN0aW9uIC0tbm8tb3B0aW9uYWwKYGBgCgojIyMgRGVwbG95bWVudCBGYWlscwoKYGBgYmFzaAojIENoZWNrIGF1dGgKYXBpZnkgaW5mbwoKIyBSZS1sb2dpbiBpZiBuZWVkZWQKYXBpZnkgbG9nb3V0CmFwaWZ5IGxvZ2luCgojIFJldHJ5IHdpdGggZm9yY2UKYXBpZnkgcHVzaCAtLWZvcmNlCmBgYAoKIyMgUGxhdGZvcm0gQ29tbWFuZHMKCiMjIyBWaWV3IERhdGFzZXRzCgpgYGBiYXNoCiMgTGlzdCBkYXRhc2V0cwphcGlmeSBkYXRhc2V0IGxzCgojIEdldCBkYXRhc2V0CmFwaWZ5IGRhdGFzZXQgZ2V0IDxkYXRhc2V0LWlkPgoKIyBEb3dubG9hZCBDU1YKYXBpZnkgZGF0YXNldCBnZXQgPGRhdGFzZXQtaWQ+IC0tZm9ybWF0IGNzdiA+IGRhdGEuY3N2CmBgYAoKIyMjIFZpZXcgUnVucwoKYGBgYmFzaAojIExpc3QgcmVjZW50IHJ1bnMKYXBpZnkgYWN0b3IgY2FsbHMgbXktYWN0b3IKCiMgR2V0IHNwZWNpZmljIHJ1bgphcGlmeSBydW4gZ2V0IDxydW4taWQ+CgojIEFib3J0IHJ1bgphcGlmeSBydW4gYWJvcnQgPHJ1bi1pZD4KYGBgCgojIyMgTWFuYWdlIEFjdG9yCgpgYGBiYXNoCiMgR2V0IGFjdG9yIGluZm8KYXBpZnkgYWN0b3IgZ2V0IG15LWFjdG9yCgojIFVwZGF0ZSBhY3RvcgphcGlmeSBwdXNoCgojIERlbGV0ZSBhY3RvciAoY2FyZWZ1bCEpCiMgTXVzdCBiZSBkb25lIHZpYSBDb25zb2xlCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86Ci0gVGVzdCBsb2NhbGx5IGJlZm9yZSBwdXNoaW5nCi0gVXNlIHNlbWFudGljIHZlcnNpb25pbmcKLSBUYWcgZGV2L2JldGEvbGF0ZXN0IGFwcHJvcHJpYXRlbHkKLSBSdW4gYG5wbSBydW4gYnVpbGRgIGJlZm9yZSB0ZXN0aW5nIFR5cGVTY3JpcHQKLSBVc2UgYC0tcHVyZ2VgIGZvciBjbGVhbiB0ZXN0cwotIFdhaXQgZm9yIGJ1aWxkIHRvIGNvbXBsZXRlIGluIENJL0NECi0gTW9uaXRvciBmaXJzdCBydW5zIGFmdGVyIGRlcGxveW1lbnQKCiMjIyDinYwgRE9OJ1Q6Ci0gRG9uJ3QgcHVzaCB1bnRlc3RlZCBjb2RlCi0gRG9uJ3Qgc2tpcCB2ZXJzaW9uIG51bWJlcnMKLSBEb24ndCB1c2UgYC0tZm9yY2VgIHVubmVjZXNzYXJpbHkKLSBEb24ndCBkZXBsb3kgZGlyZWN0bHkgdG8gYGxhdGVzdGAgd2l0aG91dCB0ZXN0aW5nCi0gRG9uJ3QgaWdub3JlIGJ1aWxkIHdhcm5pbmdzCi0gRG9uJ3QgY29tbWl0IHNlY3JldHMgdG8gZ2l0CgojIyBRdWljayBSZWZlcmVuY2UKCmBgYGJhc2gKIyBMb2NhbCBkZXZlbG9wbWVudAphcGlmeSBydW4gICAgICAgICAgICAgICAgICAgICAgICAjIFJ1biBsb2NhbGx5CmFwaWZ5IHJ1biAtLXB1cmdlICAgICAgICAgICAgICAgIyBDbGVhbiBydW4KYXBpZnkgcnVuIC0taW5wdXQtZmlsZT1pbnB1dC5qc29uICMgQ3VzdG9tIGlucHV0Cm5wbSBydW4gYnVpbGQgICAgICAgICAgICAgICAgICAgICMgQnVpbGQgVHlwZVNjcmlwdApucG0gc3RhcnQgICAgICAgICAgICAgICAgICAgICAgICAjIFJ1biBidWlsdCBjb2RlCgojIERlcGxveW1lbnQKYXBpZnkgcHVzaCAgICAgICAgICAgICAgICAgICAgICAgIyBEZXBsb3kKYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBiZXRhICAgICAjIERlcGxveSB0byBiZXRhCmFwaWZ5IHB1c2ggLS12ZXJzaW9uLW51bWJlciAxLjAuMCAjIFNldCB2ZXJzaW9uCmFwaWZ5IHB1c2ggLS13YWl0LWZvci1maW5pc2ggICAgIyBXYWl0IGZvciBidWlsZAoKIyBUZXN0aW5nCmFwaWZ5IGNhbGwgbXktYWN0b3IgICAgICAgICAgICAgIyBSdW4gb24gcGxhdGZvcm0KYXBpZnkgY2FsbCBteS1hY3RvciAtLWJ1aWxkPWJldGEgIyBSdW4gc3BlY2lmaWMgYnVpbGQKCiMgSW5zcGVjdGlvbgphcGlmeSBkYXRhc2V0IGxzICAgICAgICAgICAgICAgICMgTGlzdCBkYXRhc2V0cwphcGlmeSBkYXRhc2V0IGdldCA8aWQ+ICAgICAgICAgICMgR2V0IGRhdGFzZXQKYGBgCgojIyBSZXNvdXJjZXMKCi0gW0RlcGxveW1lbnQgRG9jc10oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9wbGF0Zm9ybS9hY3RvcnMvZGV2ZWxvcG1lbnQvZGVwbG95bWVudCkKLSBbQnVpbGQgUHJvY2Vzc10oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9wbGF0Zm9ybS9hY3RvcnMvZGV2ZWxvcG1lbnQvYnVpbGRzLWFuZC1ydW5zL2J1aWxkcykKLSBbQ0xJIFJlZmVyZW5jZV0oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9jbGkvZG9jcy9yZWZlcmVuY2UpCg==
+# Actor Deployment Patterns
+
+Testing and deployment workflows for Apify Actors.
+
+## Local Testing
+
+### Basic Run
+
+```bash
+# Run with default input
+apify run
+
+# Output shows:
+# - Actor initialization
+# - Logs
+# - Results saved to ./storage/datasets/default/
+```
+
+### With Custom Input
+
+```bash
+# Inline JSON
+apify run --input='{"startUrls":[{"url":"https://example.com"}]}'
+
+# From file
+apify run --input-file=./test-input.json
+
+# Different input file
+apify run --input-file=./inputs/production.json
+```
+
+### Clean Run
+
+```bash
+# Purge storage before running
+apify run --purge
+
+# Fresh start, no cached data
+```
+
+### Debug Mode
+
+```bash
+# Enable debug logging
+DEBUG=crawlee:* apify run
+
+# Multiple debug namespaces
+DEBUG=crawlee:*,apify:* apify run
+
+# Playwright debug
+DEBUG=pw:api apify run
+```
+
+## TypeScript Build
+
+### Build Before Run
+
+```bash
+# Compile TypeScript
+npm run build
+
+# Output: dist/main.js
+
+# Then run
+npm start
+# Or
+node dist/main.js
+```
+
+### Watch Mode (Development)
+
+```bash
+# Auto-rebuild on changes
+npm run build -- --watch
+
+# In another terminal
+npm start
+```
+
+### Build Errors
+
+```bash
+# Check TypeScript errors
+npm run build
+
+# Fix errors, then retry
+# Common issues:
+# - Type mismatches
+# - Missing imports
+# - Syntax errors
+```
+
+## Deployment to Platform
+
+### First Deployment
+
+```bash
+# Push to Apify platform
+apify push
+
+# Process:
+# 1. Uploads source code
+# 2. Builds Docker image
+# 3. Creates new Actor version
+# 4. Sets as latest
+```
+
+### With Build Tag
+
+```bash
+# Deploy to specific tag
+apify push --build-tag beta
+
+# Deploy to dev
+apify push --build-tag dev
+
+# Production release
+apify push --build-tag latest
+```
+
+### With Version
+
+```bash
+# Set version number
+apify push --version-number 1.2.3
+
+# Updates .actor/actor.json version field
+```
+
+### Wait for Build
+
+```bash
+# Wait until build completes
+apify push --wait-for-finish
+
+# Useful in CI/CD pipelines
+```
+
+### Force Rebuild
+
+```bash
+# Force rebuild even if no changes
+apify push --force
+
+# Use when:
+# - Dependencies updated
+# - Dockerfile changed
+# - Build cache issues
+```
+
+## Testing on Platform
+
+### Run Actor
+
+```bash
+# Run latest version
+apify call my-actor
+
+# Run specific build
+apify call my-actor --build=beta
+
+# With input
+apify call my-actor --input='{"maxItems":10}'
+
+# With input file
+apify call my-actor --input-file=./input.json
+```
+
+### Monitor Run
+
+```bash
+# Get run info
+apify call my-actor --wait-for-finish
+
+# Shows:
+# - Run ID
+# - Status
+# - Duration
+# - Results
+```
+
+## Version Management
+
+### Semantic Versioning
+
+```bash
+# Major version (breaking changes)
+apify push --version-number 2.0.0
+
+# Minor version (new features)
+apify push --version-number 1.1.0
+
+# Patch version (bug fixes)
+apify push --version-number 1.0.1
+```
+
+### Build Tags
+
+```bash
+# Development
+apify push --build-tag dev
+
+# Staging/testing
+apify push --build-tag beta
+
+# Production
+apify push --build-tag latest
+apify push --build-tag v1.0.0
+```
+
+### Tag Strategy
+
+```
+main branch    → --build-tag latest
+develop branch → --build-tag dev
+release/beta   → --build-tag beta
+feature/*      → --build-tag feature-name
+```
+
+## Complete Workflow Patterns
+
+### Pattern 1: Development Cycle
+
+```bash
+# 1. Make changes
+vim src/main.ts
+
+# 2. Build
+npm run build
+
+# 3. Test locally
+apify run --purge
+
+# 4. Fix issues, repeat 2-3
+
+# 5. Lint code
+npm run lint:fix
+
+# 6. Deploy to dev
+apify push --build-tag dev
+
+# 7. Test on platform
+apify call my-actor --build=dev
+
+# 8. Deploy to production
+apify push --build-tag latest --version-number 1.0.1
+```
+
+### Pattern 2: Quick Test
+
+```bash
+# Quick test without build
+apify run --input='{"startUrls":[{"url":"https://example.com"}],"maxItems":5}'
+
+# Check ./storage/datasets/default/
+cat storage/datasets/default/*.json
+```
+
+### Pattern 3: CI/CD Deployment
+
+```bash
+#!/bin/bash
+# deploy.sh
+
+# Build TypeScript
+npm run build
+
+# Run tests
+npm test
+
+# Lint
+npm run lint
+
+# Push to platform
+apify push --build-tag ${BUILD_TAG} --wait-for-finish
+
+# Test deployment
+apify call ${ACTOR_ID} --build=${BUILD_TAG} --wait-for-finish
+```
+
+### Pattern 4: Staged Release
+
+```bash
+# 1. Deploy to beta
+apify push --build-tag beta --version-number 1.1.0
+
+# 2. Test beta
+apify call my-actor --build=beta
+
+# 3. Monitor for issues
+# ... wait 24 hours ...
+
+# 4. Promote to production
+apify push --build-tag latest --version-number 1.1.0
+```
+
+## Storage Inspection
+
+### View Results
+
+```bash
+# Local datasets
+ls storage/datasets/default/
+cat storage/datasets/default/000000001.json
+
+# Pretty print JSON
+cat storage/datasets/default/*.json | jq '.'
+```
+
+### Key-Value Store
+
+```bash
+# View KV store
+ls storage/key_value_stores/default/
+cat storage/key_value_stores/default/INPUT.json
+```
+
+### Request Queue
+
+```bash
+# View queue
+ls storage/request_queues/default/
+```
+
+## Troubleshooting Deployment
+
+### Build Fails
+
+```bash
+# Check build log
+apify push
+
+# Common issues:
+# - TypeScript errors → run npm run build locally
+# - Missing dependencies → check package.json
+# - Dockerfile errors → test docker build locally
+```
+
+### Actor Won't Start
+
+```bash
+# Check logs in Apify Console
+# Or via CLI:
+apify call my-actor --wait-for-finish
+
+# Common issues:
+# - Memory too low → increase in actor.json
+# - Timeout → increase timeoutSecs
+# - Missing environment variables
+```
+
+### Build Too Slow
+
+```bash
+# Use faster base image
+# In Dockerfile:
+FROM apify/actor-node-playwright-chrome:20-bookworm-slim
+
+# Skip optional dependencies
+RUN npm install --production --no-optional
+```
+
+### Deployment Fails
+
+```bash
+# Check auth
+apify info
+
+# Re-login if needed
+apify logout
+apify login
+
+# Retry with force
+apify push --force
+```
+
+## Platform Commands
+
+### View Datasets
+
+```bash
+# List datasets
+apify dataset ls
+
+# Get dataset
+apify dataset get <dataset-id>
+
+# Download CSV
+apify dataset get <dataset-id> --format csv > data.csv
+```
+
+### View Runs
+
+```bash
+# List recent runs
+apify actor calls my-actor
+
+# Get specific run
+apify run get <run-id>
+
+# Abort run
+apify run abort <run-id>
+```
+
+### Manage Actor
+
+```bash
+# Get actor info
+apify actor get my-actor
+
+# Update actor
+apify push
+
+# Delete actor (careful!)
+# Must be done via Console
+```
+
+## Best Practices
+
+### ✅ DO:
+- Test locally before pushing
+- Use semantic versioning
+- Tag dev/beta/latest appropriately
+- Run `npm run build` before testing TypeScript
+- Use `--purge` for clean tests
+- Wait for build to complete in CI/CD
+- Monitor first runs after deployment
+
+### ❌ DON'T:
+- Don't push untested code
+- Don't skip version numbers
+- Don't use `--force` unnecessarily
+- Don't deploy directly to `latest` without testing
+- Don't ignore build warnings
+- Don't commit secrets to git
+
+## Quick Reference
+
+```bash
+# Local development
+apify run                        # Run locally
+apify run --purge               # Clean run
+apify run --input-file=input.json # Custom input
+npm run build                    # Build TypeScript
+npm start                        # Run built code
+
+# Deployment
+apify push                       # Deploy
+apify push --build-tag beta     # Deploy to beta
+apify push --version-number 1.0.0 # Set version
+apify push --wait-for-finish    # Wait for build
+
+# Testing
+apify call my-actor             # Run on platform
+apify call my-actor --build=beta # Run specific build
+
+# Inspection
+apify dataset ls                # List datasets
+apify dataset get <id>          # Get dataset
+```
+
+## Resources
+
+- [Deployment Docs](https://docs.apify.com/platform/actors/development/deployment)
+- [Build Process](https://docs.apify.com/platform/actors/development/builds-and-runs/builds)
+- [CLI Reference](https://docs.apify.com/cli/docs/reference)
