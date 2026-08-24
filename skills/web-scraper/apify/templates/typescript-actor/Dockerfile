@@ -1,1 +1,17 @@
-IyBVc2UgQXBpZnkncyBvZmZpY2lhbCBQbGF5d3JpZ2h0IGltYWdlCkZST00gYXBpZnkvYWN0b3Itbm9kZS1wbGF5d3JpZ2h0LWNocm9tZToyMAoKIyBDb3B5IHBhY2thZ2UgZmlsZXMKQ09QWSBwYWNrYWdlKi5qc29uIC4vCgojIEluc3RhbGwgZGVwZW5kZW5jaWVzClJVTiBucG0gaW5zdGFsbCAtLXByb2R1Y3Rpb24KCiMgQ29weSBzb3VyY2UgY29kZQpDT1BZIC4gLi8KCiMgQnVpbGQgVHlwZVNjcmlwdApSVU4gbnBtIHJ1biBidWlsZAoKIyBTdGFydCBjb21tYW5kCkNNRCBucG0gc3RhcnQK
+# Use Apify's official Playwright image
+FROM apify/actor-node-playwright-chrome:20
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --production
+
+# Copy source code
+COPY . ./
+
+# Build TypeScript
+RUN npm run build
+
+# Start command
+CMD npm start
