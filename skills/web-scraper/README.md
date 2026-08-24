@@ -1,1 +1,347 @@
-IyBXZWIgU2NyYXBpbmcgU2tpbGwKCkludGVsbGlnZW50IHdlYiBzY3JhcGluZyB3aXRoIGF1dG9tYXRpYyBzdHJhdGVneSBzZWxlY3Rpb24gYW5kIFR5cGVTY3JpcHQtZmlyc3QgQXBpZnkgQWN0b3IgZGV2ZWxvcG1lbnQuCgojIyBPdmVydmlldwoKVGhpcyBza2lsbCBwcm92aWRlczoKLSAqKkFkYXB0aXZlIHJlY29ubmFpc3NhbmNlKiogLSBQaGFzZXMgMC01IHdpdGggcXVhbGl0eSBnYXRlcyB0aGF0IHNraXAgdW5uZWNlc3Nhcnkgd29yayAoY3VybCBmaXJzdCwgYnJvd3NlciBvbmx5IGlmIG5lZWRlZCkKLSAqKkZyYW1ld29yay1hd2FyZSBkZXRlY3Rpb24qKiAtIElkZW50aWZpZXMgc2l0ZSBmcmFtZXdvcmsgYmVmb3JlIHNlYXJjaGluZywgc2tpcHMgaXJyZWxldmFudCBwYXR0ZXJucwotICoqVmFsaWRhdGVkIGZpbmRpbmdzKiogLSBFdmVyeSBjbGFpbWVkIHNlbGVjdG9yL3BhdGgvQVBJIGlzIHRlc3RlZCBiZWZvcmUgcmVwb3J0aW5nCi0gKipTZWxmLWNyaXRpcXVpbmcgcmVwb3J0cyoqIC0gSW50ZWxsaWdlbmNlIHJlcG9ydHMgaW5jbHVkZSBnYXAgYW5hbHlzaXMgYW5kIHN0YWxlbmVzcyB3YXJuaW5ncwotICoqSXRlcmF0aXZlIGltcGxlbWVudGF0aW9uKiogLSBTdGFydHMgc2ltcGxlLCBhZGRzIGNvbXBsZXhpdHkgb25seSBpZiBuZWVkZWQKLSAqKlByb2R1Y3Rpb24tcmVhZHkgZ3VpZGFuY2UqKiAtIFR5cGVTY3JpcHQtZmlyc3QgQXBpZnkgQWN0b3IgZGV2ZWxvcG1lbnQKCiMjIEluc3RhbGxhdGlvbgoKQWRkIHRoaXMgc2tpbGwgdG8gQ2xhdWRlIENvZGUgYnkgcGxhY2luZyB0aGlzIGRpcmVjdG9yeSBpbiB0aGUgc2tpbGxzIGZvbGRlci4KCiMjIFF1aWNrIFN0YXJ0CgojIyMgU2NlbmFyaW8gMTogU2NyYXBlIGEgV2Vic2l0ZQoKYGBgClVzZXI6ICJTY3JhcGUgaHR0cHM6Ly9leGFtcGxlLmNvbSIKCkNsYXVkZSB3aWxsIGF1dG9tYXRpY2FsbHk6CjEuIFBoYXNlIDA6IGN1cmwgcmF3IEhUTUwg4oCUIGRldGVjdCBmcmFtZXdvcmssIHNlYXJjaCBmb3IgZGF0YSBwb2ludHMsIGNoZWNrIHNpdGVtYXBzCjIuIFFVQUxJVFkgR0FURTogQWxsIGRhdGEgaW4gSFRNTD8g4oaSIFNraXAgYnJvd3NlciwgZ28gdG8gdmFsaWRhdGlvbgozLiBQaGFzZSAxOiBMYXVuY2ggc3RlYWx0aCBicm93c2VyIChvbmx5IGlmIG5lZWRlZCkg4oCUIGNhcHR1cmUgdHJhZmZpYywgcmVuZGVyZWQgRE9NCjQuIFBoYXNlIDI6IERlZXAgc2NhbiAob25seSBmb3IgbWlzc2luZyBkYXRhKSDigJQgdGVzdCBpbnRlcmFjdGlvbnMsIHNuaWZmIEFQSXMKNS4gUGhhc2UgMzogVmFsaWRhdGUgZXZlcnkgZmluZGluZyDigJQgdGVzdCBzZWxlY3RvcnMsIHJlcGxheSBBUElzLCBjb25maXJtIHBhdGhzCjYuIFBoYXNlIDQ6IFByb3RlY3Rpb24gdGVzdGluZyAob25seSBpZiBzaWduYWxzIGRldGVjdGVkIG9yIHVzZXIgcmVxdWVzdGVkKQo3LiBQaGFzZSA1OiBHZW5lcmF0ZSBpbnRlbGxpZ2VuY2UgcmVwb3J0IHdpdGggc2VsZi1jcml0aXF1ZQo4LiBJbXBsZW1lbnQgcmVjb21tZW5kZWQgYXBwcm9hY2ggaXRlcmF0aXZlbHkKOS4gVGVzdCB3aXRoIHNtYWxsIGJhdGNoLCB0aGVuIHNjYWxlCmBgYAoKIyMjIFNjZW5hcmlvIDI6IENyZWF0ZSBBcGlmeSBBY3RvcgoKYGBgClVzZXI6ICJNYWtlIHRoaXMgYW4gQXBpZnkgQWN0b3IiCgpDbGF1ZGUgd2lsbDoKMS4gUmVjb21tZW5kIFR5cGVTY3JpcHQgKHN0cm9uZ2x5KQoyLiBHdWlkZSB0aHJvdWdoIGBhcGlmeSBjcmVhdGVgIGNvbW1hbmQKMy4gSGVscCBjaG9vc2UgYXBwcm9wcmlhdGUgdGVtcGxhdGUgKENoZWVyaW8gdnMgUGxheXdyaWdodCkKNC4gUG9ydCBzY3JhcGluZyBsb2dpYyB0byBBY3RvciBmb3JtYXQKNS4gQ29uZmlndXJlIGlucHV0IHNjaGVtYQo2LiBUZXN0IGFuZCBkZXBsb3kKYGBgCgojIyBEaXJlY3RvcnkgU3RydWN0dXJlCgpgYGAKd2ViLXNjcmFwaW5nLwrilJzilIDilIAgU0tJTEwubWQgICAgICAgICAgICAgICAgICAgICMgTWFpbiBlbnRyeSBwb2ludCAocHJvYWN0aXZlIHdvcmtmbG93KQrilJzilIDilIAgd29ya2Zsb3dzLyAgICAgICAgICAgICAgICAgICMgSW1wbGVtZW50YXRpb24gcGF0dGVybnMK4pSCICAg4pSc4pSA4pSAIHJlY29ubmFpc3NhbmNlLm1kICAgICAgICMgUGhhc2UgMSBpbnRlcmFjdGl2ZSByZWNvbm5haXNzYW5jZSAoQ1JJVElDQUwpCuKUgiAgIOKUnOKUgOKUgCBpbXBsZW1lbnRhdGlvbi5tZCAgICAgICAjIFBoYXNlIDQgaXRlcmF0aXZlIGltcGxlbWVudGF0aW9uCuKUgiAgIOKUlOKUgOKUgCBwcm9kdWN0aW9uaXphdGlvbi5tZCAgICAjIFBoYXNlIDUgQWN0b3IgY3JlYXRpb24K4pSc4pSA4pSAIHN0cmF0ZWdpZXMvICAgICAgICAgICAgICAgICAjIERlZXAtZGl2ZSBndWlkZXMK4pSCICAg4pSc4pSA4pSAIGZyYW1ld29yay1zaWduYXR1cmVzLm1kICMgRnJhbWV3b3JrIGRldGVjdGlvbiBsb29rdXAgdGFibGVzCuKUgiAgIOKUnOKUgOKUgCBjaGVlcmlvLXZzLWJyb3dzZXItdGVzdC5tZCAjIENoZWVyaW8gdnMgQnJvd3NlciBkZWNpc2lvbiArIGVhcmx5IGV4aXQK4pSCICAg4pSc4pSA4pSAIHByb3h5LWVzY2FsYXRpb24ubWQgICAgIyBQcm90ZWN0aW9uIHRlc3Rpbmcgc2tpcC9ydW4gY29uZGl0aW9ucwrilIIgICDilJzilIDilIAgdHJhZmZpYy1pbnRlcmNlcHRpb24ubWQgIyBNSVRNIHByb3h5IHRyYWZmaWMgY2FwdHVyZQrilIIgICDilJzilIDilIAgc2l0ZW1hcC1kaXNjb3ZlcnkubWQgICAjIDYweCBmYXN0ZXIgVVJMIGRpc2NvdmVyeQrilIIgICDilJzilIDilIAgYXBpLWRpc2NvdmVyeS5tZCAgICAgICAjIDEwLTEwMHggZmFzdGVyIHRoYW4gc2NyYXBpbmcK4pSCICAg4pSc4pSA4pSAIGRvbS1zY3JhcGluZy5tZCAgICAgICAgIyBEZXZUb29scyBicmlkZ2UgKyBodW1hbml6ZXIK4pSCICAg4pSc4pSA4pSAIGNoZWVyaW8tc2NyYXBpbmcubWQgICAgIyBIVFRQLW9ubHkgKDV4IGZhc3RlcikK4pSCICAg4pSc4pSA4pSAIGh5YnJpZC1hcHByb2FjaGVzLm1kICAgIyBDb21iaW5pbmcgc3RyYXRlZ2llcwrilIIgICDilJzilIDilIAgYW50aS1ibG9ja2luZy5tZCAgICAgICAjIE11bHRpLWxheWVyIGFudGktZGV0ZWN0aW9uCuKUgiAgIOKUlOKUgOKUgCBzZXNzaW9uLXdvcmtmbG93cy5tZCAgICMgU2Vzc2lvbiByZWNvcmRpbmcsIEhBUiwgcmVwbGF5CuKUnOKUgOKUgCBleGFtcGxlcy8gICAgICAgICAgICAgICAgICAgIyBSdW5uYWJsZSBjb2RlCuKUgiAgIOKUnOKUgOKUgCB0cmFmZmljLWludGVyY2VwdGlvbi1iYXNpYy5qcwrilIIgICDilJzilIDilIAgc2l0ZW1hcC1iYXNpYy5qcwrilIIgICDilJzilIDilIAgYXBpLXNjcmFwZXIuanMK4pSCICAg4pSc4pSA4pSAIGh5YnJpZC1zaXRlbWFwLWFwaS5qcwrilIIgICDilJTilIDilIAgaXRlcmF0aXZlLWZhbGxiYWNrLmpzCuKUnOKUgOKUgCByZWZlcmVuY2UvICAgICAgICAgICAgICAgICAgIyBRdWljayBsb29rdXAK4pSCICAg4pSc4pSA4pSAIHJlcG9ydC1zY2hlbWEubWQgICAgICAgIyBJbnRlbGxpZ2VuY2UgcmVwb3J0IGZvcm1hdCAoU2VjdGlvbnMgMS03KQrilIIgICDilJzilIDilIAgcHJveHktdG9vbC1yZWZlcmVuY2UubWQgIyBQcm94eS1NQ1AgdG9vbHMgKDgwKykK4pSCICAg4pSc4pSA4pSAIHJlZ2V4LXBhdHRlcm5zLm1kCuKUgiAgIOKUnOKUgOKUgCBmaW5nZXJwcmludC1wYXR0ZXJucy5tZArilIIgICDilJTilIDilIAgYW50aS1wYXR0ZXJucy5tZArilJzilIDilIAgYXBpZnkvICAgICAgICAgICAgICAgICAgICAgICMgUHJvZHVjdGlvbiBkZXBsb3ltZW50CuKUgiAgIOKUnOKUgOKUgCB0eXBlc2NyaXB0LWZpcnN0Lm1kICAgICMgV2h5IFR5cGVTY3JpcHQK4pSCICAg4pSc4pSA4pSAIGNsaS13b3JrZmxvdy5tZCAgICAgICAgIyBhcGlmeSBjcmVhdGUgKENSSVRJQ0FMKQrilIIgICDilJzilIDilIAgdGVtcGxhdGVzLyAgICAgICAgICAgICAjIFR5cGVTY3JpcHQgYm9pbGVycGxhdGUK4pSCICAg4pSU4pSA4pSAIGV4YW1wbGVzLyAgICAgICAgICAgICAgIyBXb3JraW5nIGFjdG9ycwrilJTilIDilIAgUkVBRE1FLm1kICAgICAgICAgICAgICAgICAgICMgVGhpcyBmaWxlCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMgQXBwbGllZAoKVGhpcyBza2lsbCBmb2xsb3dzIEFudGhyb3BpYydzIG9mZmljaWFsIGJlc3QgcHJhY3RpY2VzIGZvciBza2lsbCBkZXZlbG9wbWVudDoKCiMjIyAxLiBQcm9ncmVzc2l2ZSBEaXNjbG9zdXJlIEFyY2hpdGVjdHVyZSDinJMKCioqUGF0dGVybioqOiBUaHJlZS1sZXZlbCBsb2FkaW5nIHN5c3RlbSB0byBtYW5hZ2UgY29udGV4dCBlZmZpY2llbnRseQotICoqTGV2ZWwgMSoqOiBZQU1MIGZyb250bWF0dGVyICh+ODUgdG9rZW5zKSAtIEFsd2F5cyBsb2FkZWQKLSAqKkxldmVsIDIqKjogTWFpbiBTS0lMTC5tZCAofjM1NiBsaW5lcykgLSBMb2FkZWQgd2hlbiBza2lsbCBpbnZva2VkCi0gKipMZXZlbCAzKio6IFN1YmRpcmVjdG9yaWVzIC0gTG9hZGVkIG9uLWRlbWFuZCBhcyBuZWVkZWQKCioqUmVzdWx0Kio6IDcwLTgwJSB0b2tlbiByZWR1Y3Rpb24gdnMgbW9ub2xpdGhpYyBkb2N1bWVudGF0aW9uCgoqKlNvdXJjZSoqOiBbc2tpbGwtY3JlYXRvci9TS0lMTC5tZF0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzL2Jsb2IvbWFpbi9za2lsbC1jcmVhdG9yL1NLSUxMLm1kI3Byb2dyZXNzaXZlLWRpc2Nsb3N1cmUtZGVzaWduLXByaW5jaXBsZSkKCiMjIyAyLiBJbXBlcmF0aXZlL0luZmluaXRpdmUgRm9ybSBXcml0aW5nIFN0eWxlIOKckwoKKipQYXR0ZXJuKio6IFdyaXRlIGluc3RydWN0aW9ucyB1c2luZyB2ZXJiLWZpcnN0IGNvbW1hbmRzLCBub3Qgc2Vjb25kLXBlcnNvbiBsYW5ndWFnZQoKKipFeGFtcGxlcyoqOgotIOKchSAiTG9hZCB0aGlzIHdvcmtmbG93IHdoZW4gdXNlciByZXF1ZXN0cyIKLSDinIUgIkNoZWNrIGZvciBzaXRlbWFwcyBhdXRvbWF0aWNhbGx5IgotIOKdjCAiWW91IHNob3VsZCBsb2FkIHRoaXMgd29ya2Zsb3ciCi0g4p2MICJZb3UgbmVlZCB0byBjaGVjayBmb3Igc2l0ZW1hcHMiCgoqKkV4Y2VwdGlvbioqOiBTZWNvbmQtcGVyc29uIGlzIGFjY2VwdGFibGUgaW4gdXNlci1mYWNpbmcgcHJvbXB0cywgY29kZSBjb21tZW50cywgYW5kIHR1dG9yaWFsIGV4YW1wbGVzCgoqKlNvdXJjZSoqOiBbc2tpbGwtY3JlYXRvci9TS0lMTC5tZF0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzL2Jsb2IvbWFpbi9za2lsbC1jcmVhdG9yL1NLSUxMLm1kI3VwZGF0ZS1za2lsbG1kKQoKIyMjIDMuIENsZWFyIFlBTUwgRnJvbnRtYXR0ZXIg4pyTCgoqKlBhdHRlcm4qKjogQ29uY2lzZSwgc3BlY2lmaWMgbmFtZSBhbmQgZGVzY3JpcHRpb24gdGhhdCBkZXRlcm1pbmUgd2hlbiBDbGF1ZGUgaW52b2tlcyB0aGUgc2tpbGwKCioqQXBwbGllZCoqOgotIGBuYW1lOiB3ZWItc2NyYXBpbmdgIC0gQ2xlYXIsIGh5cGhlbi1jYXNlIGlkZW50aWZpZXIKLSBgZGVzY3JpcHRpb246YCAtIFNwZWNpZmljIGFib3V0IGFjdGl2YXRpb24gdHJpZ2dlcnMgYW5kIGNhcGFiaWxpdGllcyAoMTg5IGNoYXJzLCBvcHRpbWl6ZWQgZnJvbSAyNDQpCgoqKlNvdXJjZSoqOiBbYWdlbnRfc2tpbGxzX3NwZWMubWRdKGh0dHBzOi8vZ2l0aHViLmNvbS9hbnRocm9waWNzL3NraWxscy9ibG9iL21haW4vYWdlbnRfc2tpbGxzX3NwZWMubWQjeWFtbC1mcm9udG1hdHRlcikKCiMjIyA0LiBMZWFuIFNLSUxMLm1kIHdpdGggUmVmZXJlbmNlIEZpbGVzIOKckwoKKipQYXR0ZXJuKio6IEtlZXAgb25seSBlc3NlbnRpYWwgcHJvY2VkdXJhbCBpbnN0cnVjdGlvbnMgaW4gU0tJTEwubWQ7IG1vdmUgZGV0YWlsZWQgaW5mb3JtYXRpb24gdG8gc3ViZGlyZWN0b3JpZXMKCioqQXBwbGllZCoqOgotIFNLSUxMLm1kOiBDb3JlIDQtcGhhc2Ugd29ya2Zsb3cgKH4zNTYgbGluZXMpCi0gYHdvcmtmbG93cy9gOiBEZXRhaWxlZCBpbXBsZW1lbnRhdGlvbiBwYXR0ZXJucwotIGBzdHJhdGVnaWVzL2A6IERlZXAtZGl2ZSBndWlkZXMKLSBgZXhhbXBsZXMvYDogUnVubmFibGUgY29kZQotIGByZWZlcmVuY2UvYDogUXVpY2sgbG9va3VwIHBhdHRlcm5zCi0gYGFwaWZ5L2A6IFByb2R1Y3Rpb24gZGVwbG95bWVudCBndWlkZXMKCioqU291cmNlKio6IFtza2lsbC1jcmVhdG9yL1NLSUxMLm1kXShodHRwczovL2dpdGh1Yi5jb20vYW50aHJvcGljcy9za2lsbHMvYmxvYi9tYWluL3NraWxsLWNyZWF0b3IvU0tJTEwubWQjcmVmZXJlbmNlcy1yZWZlcmVuY2VzKQoKIyMjIDUuIFNjcmlwdHMsIFJlZmVyZW5jZXMsIGFuZCBBc3NldHMgT3JnYW5pemF0aW9uIOKckwoKKipQYXR0ZXJuKio6IFNlcGFyYXRlIGV4ZWN1dGFibGUgY29kZSwgZG9jdW1lbnRhdGlvbiwgYW5kIG91dHB1dCByZXNvdXJjZXMKCioqQXBwbGllZCoqOgotIGBleGFtcGxlcy9gIC0gRXhlY3V0YWJsZSBKYXZhU2NyaXB0IGxlYXJuaW5nIGV4YW1wbGVzIChsaWtlIHNjcmlwdHMvKQotIGB3b3JrZmxvd3MvYCwgYHN0cmF0ZWdpZXMvYCwgYHJlZmVyZW5jZS9gLCBgYXBpZnkvYCAtIERvY3VtZW50YXRpb24gbG9hZGVkIGFzIG5lZWRlZCAobGlrZSByZWZlcmVuY2VzLykKLSBgYXBpZnkvdGVtcGxhdGVzL2AsIGBhcGlmeS9leGFtcGxlcy9gIC0gQm9pbGVycGxhdGUgY29kZSBhbmQgdGVtcGxhdGVzIChsaWtlIGFzc2V0cy8pCgoqKlNvdXJjZSoqOiBbc2tpbGwtY3JlYXRvci9TS0lMTC5tZF0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzL2Jsb2IvbWFpbi9za2lsbC1jcmVhdG9yL1NLSUxMLm1kI2J1bmRsZWQtcmVzb3VyY2VzLW9wdGlvbmFsKQoKIyMjIDYuIFB1cnBvc2UtRHJpdmVuIFNraWxsIFNjb3BlIOKckwoKKipQYXR0ZXJuKio6IENyZWF0ZSBmb2N1c2VkIHNraWxscyBmb3Igc3BlY2lmaWMgcHVycG9zZXMgcmF0aGVyIHRoYW4gb25lIHNraWxsIHRoYXQgZG9lcyBldmVyeXRoaW5nCgoqKkFwcGxpZWQqKjogVGhpcyBza2lsbCBmb2N1c2VzIHNwZWNpZmljYWxseSBvbiB3ZWIgc2NyYXBpbmcgYW5kIEFwaWZ5IEFjdG9yIGRldmVsb3BtZW50LCBub3QgZ2VuZXJhbCB3ZWIgZGV2ZWxvcG1lbnQKCioqU291cmNlKio6IFtBbnRocm9waWMgU2tpbGxzIEJlc3QgUHJhY3RpY2VzXShodHRwczovL3d3dy5hbnRocm9waWMuY29tL25ld3Mvc2tpbGxzKQoKIyMjIDcuIE9iamVjdGl2ZSwgSW5zdHJ1Y3Rpb25hbCBMYW5ndWFnZSDinJMKCioqUGF0dGVybioqOiBVc2UgY2xlYXIsIHRlY2huaWNhbCBsYW5ndWFnZSBmb2N1c2VkIG9uICJ3aGF0IiBhbmQgImhvdyIgcmF0aGVyIHRoYW4gcGVyc3Vhc2l2ZSBvciBwcm9tb3Rpb25hbCB0b25lCgoqKkFwcGxpZWQqKjogRGlyZWN0IHRlY2huaWNhbCBndWlkYW5jZSB0aHJvdWdob3V0ICgiQ2hlY2sgZm9yIHNpdGVtYXBzIiwgIkltcGxlbWVudCBpdGVyYXRpdmVseSIpIHZzLiBtYXJrZXRpbmcgbGFuZ3VhZ2UKCioqU291cmNlKio6IFtza2lsbC1jcmVhdG9yL1NLSUxMLm1kXShodHRwczovL2dpdGh1Yi5jb20vYW50aHJvcGljcy9za2lsbHMvYmxvYi9tYWluL3NraWxsLWNyZWF0b3IvU0tJTEwubWQjdXBkYXRlLXNraWxsbWQpCgojIyBLZXkgRmVhdHVyZXMKCiMjIyAxLiBBZGFwdGl2ZSBSZWNvbm5haXNzYW5jZSAoUGhhc2VzIDAtNSkKClF1YWxpdHktZ2F0ZWQgd29ya2Zsb3cgdGhhdCBza2lwcyB1bm5lY2Vzc2FyeSBwaGFzZXM6Ci0gKipQaGFzZSAwKio6IGN1cmwtYmFzZWQgYXNzZXNzbWVudCDigJQgZGV0ZWN0IGZyYW1ld29yaywgc2VhcmNoIGZvciBkYXRhLCBjaGVjayBwcm90ZWN0aW9ucwotICoqUGhhc2UgMSoqOiBCcm93c2VyIG9ubHkgaWYgbmVlZGVkIOKAlCBzdGVhbHRoIENocm9tZSwgdHJhZmZpYyBjYXB0dXJlLCByZW5kZXJlZCBET00KLSAqKlBoYXNlIDIqKjogRGVlcCBzY2FuIG9ubHkgZm9yIG1pc3NpbmcgZGF0YSDigJQgdGFyZ2V0ZWQgaW50ZXJhY3Rpb25zLCBmcmFtZXdvcmstYXdhcmUgQVBJIHNuaWZmaW5nCi0gKipQaGFzZSAzKio6IFZhbGlkYXRlIGV2ZXJ5IGZpbmRpbmcg4oCUIHRlc3Qgc2VsZWN0b3JzLCByZXBsYXkgQVBJcywgY29uZmlybSBKU09OIHBhdGhzCi0gKipQaGFzZSA0Kio6IFByb3RlY3Rpb24gdGVzdGluZyBvbmx5IGlmIHNpZ25hbHMgd2FycmFudCDigJQgY29uZGl0aW9uYWwgZXNjYWxhdGlvbgotICoqUGhhc2UgNSoqOiBTZWxmLWNyaXRpcXVpbmcgcmVwb3J0IOKAlCBnYXBzLCBhc3N1bXB0aW9ucywgc3RhbGVuZXNzIHdhcm5pbmdzCgojIyMgMi4gRnJhbWV3b3JrLUF3YXJlIERldGVjdGlvbgoKVXNlcyBgc3RyYXRlZ2llcy9mcmFtZXdvcmstc2lnbmF0dXJlcy5tZGAgbG9va3VwIHRhYmxlczoKLSBSZXNwb25zZSBoZWFkZXJzIOKGkiBmcmFtZXdvcmsgaWRlbnRpZmljYXRpb24KLSBIVE1MIHNpZ25hdHVyZXMg4oaSIGRhdGEgbG9jYXRpb24gbWFwcGluZwotIEtub3duIG1ham9yIHNpdGVzIOKGkiBkaXJlY3Qgc3RyYXRlZ3kgKGUuZy4sIEFtYXpvbjogY3VzdG9tIFNTUiwgbm8gSlNPTi1MRCkKLSBEZXRlY3QgZmlyc3QsIHRoZW4gc2VhcmNoIG9ubHkgcmVsZXZhbnQgcGF0dGVybnMKCiMjIyAzLiBWYWxpZGF0ZWQgSW50ZWxsaWdlbmNlIFJlcG9ydHMKClJlcG9ydHMgZm9sbG93IGByZWZlcmVuY2UvcmVwb3J0LXNjaGVtYS5tZGAgd2l0aDoKLSBgVmFsaWRhdGVkP2AgY29sdW1uIGZvciBldmVyeSBleHRyYWN0aW9uIHN0cmF0ZWd5IChZRVMgLyBQQVJUSUFMIC8gTk8pCi0gU2VsZi1Dcml0aXF1ZSBzZWN0aW9uOiBnYXBzLCBza2lwcGVkIHN0ZXBzLCBhc3N1bXB0aW9ucywgc3RhbGVuZXNzIHJpc2sKLSBUYXJnZXRlZCByZS1pbnZlc3RpZ2F0aW9uIGZvciBmaXhhYmxlIGdhcHMKCiMjIyA0LiBJdGVyYXRpdmUgSW1wbGVtZW50YXRpb24gKFBoYXNlIDQpCgotIFN0YXJ0IHdpdGggc2ltcGxlc3QgYXBwcm9hY2gKLSBUZXN0IHNtYWxsIGJhdGNoICg1LTEwIGl0ZW1zKQotIFNjYWxlIG9yIGZhbGxiYWNrIGJhc2VkIG9uIHJlc3VsdHMKLSBBZGQgcm9idXN0bmVzcyBsYXN0CgojIyMgNS4gVHlwZVNjcmlwdC1GaXJzdCBBcGlmeSAoUGhhc2UgNSkKCkZvciBwcm9kdWN0aW9uIGFjdG9yczoKLSAqKlN0cm9uZ2x5IHJlY29tbWVuZCoqIFR5cGVTY3JpcHQKLSAqKkFsd2F5cyB1c2UqKiBgYXBpZnkgY3JlYXRlYCBjb21tYW5kCi0gKipDaG9vc2UgdGVtcGxhdGUqKiBiYXNlZCBvbiBzaXRlIHR5cGUgKENoZWVyaW8gZm9yIHN0YXRpYywgUGxheXdyaWdodCBmb3IgSlMtaGVhdnkpCi0gVHlwZS1zYWZlIGlucHV0L291dHB1dAoKIyMgRXhhbXBsZSBXb3JrZmxvd3MKCiMjIyBXb3JrZmxvdyAxOiBVbmtub3duIFNpdGUKCmBgYAoxLiBVc2VyOiAiU2NyYXBlIGV4YW1wbGUuY29tIgoyLiBQaGFzZSAwOiBjdXJsIHJhdyBIVE1MIOKGkiBkZXRlY3QgTmV4dC5qcyAoX19ORVhUX0RBVEFfXyksIGZpbmQgcHJvZHVjdCBkYXRhIGluIEpTT04KMy4gR0FURSBBOiBBbGwgZGF0YSBpbiBfX05FWFRfREFUQV9fPyDihpIgWUVTIOKGkiBTa2lwIGJyb3dzZXIKNC4gUGhhc2UgMzogVmFsaWRhdGUgSlNPTiBwYXRocyByZXNvbHZlIHRvIGV4cGVjdGVkIHZhbHVlcwo1LiBQaGFzZSA1OiBHZW5lcmF0ZSByZXBvcnQgd2l0aCBzZWxmLWNyaXRpcXVlCjYuIFJlc3VsdDogTm8gYnJvd3NlciBuZWVkZWQsIENoZWVyaW8gKyBKU09OIHBhcnNpbmcgc3VmZmljaWVudApgYGAKCiMjIyBXb3JrZmxvdyAxYjogU2l0ZSBOZWVkaW5nIEJyb3dzZXIKCmBgYAoxLiBVc2VyOiAiU2NyYXBlIHByb3RlY3RlZC1zaG9wLmNvbSIKMi4gUGhhc2UgMDogY3VybCByZXR1cm5zIDQwMyDihpIgcHJvdGVjdGlvbiBkZXRlY3RlZCwgbm8gZGF0YSBpbiBIVE1MCjMuIEdBVEUgQTogTk8g4oaSIENvbnRpbnVlIHRvIFBoYXNlIDEKNC4gUGhhc2UgMTogU3RlYWx0aCBicm93c2VyIGxvYWRzIHBhZ2UsIHRyYWZmaWMgcmV2ZWFscyBBUEkgZW5kcG9pbnQKNS4gR0FURSBCOiBBbGwgZGF0YSBjb3ZlcmVkIHZpYSBBUEkg4oaSIFNraXAgUGhhc2UgMgo2LiBQaGFzZSAzOiBSZXBsYXkgQVBJIHJlcXVlc3QsIHZhbGlkYXRlIHJlc3BvbnNlIHN0cnVjdHVyZQo3LiBQaGFzZSA0OiBQcm90ZWN0aW9uIHRlc3RpbmcgKDQwMyB3YXMgZGV0ZWN0ZWQpIOKGkiBzdGVhbHRoIGJyb3dzZXIgKyBwcm94eSBuZWVkZWQKOC4gUGhhc2UgNTogUmVwb3J0ICsgc2VsZi1jcml0aXF1ZQo5LiBJbXBsZW1lbnRzIHdpdGggZGlzY292ZXJlZCBBUEkgKyB1cHN0cmVhbSBwcm94aWVzCjEwLiBUZXN0cyB3aXRoIDEwIGl0ZW1zLCBzY2FsZXMgdG8gZnVsbCBkYXRhc2V0CmBgYAoKIyMjIFdvcmtmbG93IDI6IE1ha2UgaXQgYW4gQWN0b3IKCmBgYAoxLiBVc2VyOiAiTWFrZSB0aGlzIGFuIEFwaWZ5IEFjdG9yIgoyLiBDbGF1ZGUgbG9hZHMgYXBpZnkvIG1vZHVsZQozLiBSZWNvbW1lbmRzIFR5cGVTY3JpcHQ/IChZZXMpCjQuIEd1aWRlcyB0aHJvdWdoOiBhcGlmeSBjcmVhdGUKNS4gQW5hbHl6ZXMgc2l0ZTogU3RhdGljIEhUTUwg4oaSIFNlbGVjdHMgQ2hlZXJpbyB0ZW1wbGF0ZQo2LiBQb3J0cyBzY3JhcGluZyBsb2dpYyB0byBUeXBlU2NyaXB0CjcuIEFkZHMgaW5wdXQgc2NoZW1hCjguIFRlc3RzOiBhcGlmeSBydW4KOS4gRGVwbG95czogYXBpZnkgcHVzaAoxMC4gUmVzdWx0OiBQcm9kdWN0aW9uLXJlYWR5IGFjdG9yCmBgYAoKIyMgUGVyZm9ybWFuY2UgQmVuZWZpdHMKCnwgQXBwcm9hY2ggfCBUaW1lICgxMDAwIHBhZ2VzKSB8IHZzIENyYXdsaW5nIHwKfC0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IFNpdGVtYXAgKyBBUEkgfCA1IG1pbnV0ZXMgfCA2MHggZmFzdGVyIHwKfCBTaXRlbWFwICsgUGxheXdyaWdodCB8IDIwIG1pbnV0ZXMgfCAxNXggZmFzdGVyIHwKfCBBUEkgb25seSB8IDggbWludXRlcyB8IDQweCBmYXN0ZXIgfAp8IFBsYXl3cmlnaHQgY3Jhd2wgfCA0NSBtaW51dGVzIHwgQmFzZWxpbmUgfAoKIyMgQmVzdCBQcmFjdGljZXMgU3VtbWFyeQoKIyMjIFJlY29ubmFpc3NhbmNlIChQaGFzZXMgMC01KQotIFN0YXJ0IHdpdGggY3VybCAoUGhhc2UgMCkgYmVmb3JlIGxhdW5jaGluZyBicm93c2VyCi0gRGV0ZWN0IGZyYW1ld29yayBmaXJzdCwgdGhlbiBzZWFyY2ggcmVsZXZhbnQgcGF0dGVybnMgb25seQotIFF1YWxpdHkgZ2F0ZXMgc2tpcCBwaGFzZXMgd2hlbiBkYXRhIGlzIHN1ZmZpY2llbnQKLSBWYWxpZGF0ZSBldmVyeSBzZWxlY3Rvci9wYXRoL0FQSSBiZWZvcmUgcmVwb3J0aW5nCi0gU2VsZi1jcml0aXF1ZTogY2hlY2sgZm9yIGdhcHMsIGFzc3VtcHRpb25zLCBzdGFsZW5lc3MKLSBQcm90ZWN0aW9uIHRlc3Rpbmcgb25seSB3aGVuIHNpZ25hbHMgd2FycmFudCBpdAoKIyMjIEltcGxlbWVudGF0aW9uIFBoYXNlIChQaGFzZSA0KQotIFN0YXJ0IHNpbXBsZSAodHJhZmZpYyBpbnRlcmNlcHRpb24g4oaSIHNpdGVtYXAg4oaSIEFQSSDihpIgRE9NIHNjcmFwaW5nKQotIFRlc3Qgc21hbGwgYmF0Y2ggZmlyc3QKLSBIYW5kbGUgZXJyb3JzIGdyYWNlZnVsbHkKLSBSZXNwZWN0IHJhdGUgbGltaXRzCgojIyMgUHJvZHVjdGlvbiBQaGFzZSAoUGhhc2UgNSkKLSBVc2UgVHlwZVNjcmlwdCBmb3IgQXBpZnkgQWN0b3JzCi0gQWx3YXlzIHVzZSBgYXBpZnkgY3JlYXRlYCBjb21tYW5kCi0gQ2hvb3NlIHRlbXBsYXRlIGJhc2VkIG9uIFBoYXNlIDEgZmluZGluZ3MgKENoZWVyaW8gdnMgUGxheXdyaWdodCkKLSBUZXN0IGxvY2FsbHkgd2l0aCBgYXBpZnkgcnVuYAotIERlcGxveSB3aXRoIGBhcGlmeSBwdXNoYAoKIyMgVHJvdWJsZXNob290aW5nCgojIyMgIk5vIFVSTHMgZm91bmQgaW4gc2l0ZW1hcCIK4oaSIFNlZSBgc3RyYXRlZ2llcy9zaXRlbWFwLWRpc2NvdmVyeS5tZGAgdHJvdWJsZXNob290aW5nIHNlY3Rpb24KCiMjIyAiQVBJIHJlcXVpcmVzIGF1dGhlbnRpY2F0aW9uIgrihpIgU2VlIGBzdHJhdGVnaWVzL2FwaS1kaXNjb3ZlcnkubWRgIGF1dGhlbnRpY2F0aW9uIHNlY3Rpb24KCiMjIyAiRE9NIHNjcmFwaW5nIHRvbyBzbG93IgrihpIgU2VlIGBzdHJhdGVnaWVzL2RvbS1zY3JhcGluZy5tZGAgYW5kIGNvbnNpZGVyIEFQSSBkaXNjb3ZlcmVkIHZpYSB0cmFmZmljIGNhcHR1cmUKCiMjIyAiQWN0b3IgZGVwbG95bWVudCBmYWlscyIK4oaSIFNlZSBgYXBpZnkvY2xpLXdvcmtmbG93Lm1kYCBjb21tb24gaXNzdWVzIHNlY3Rpb24KCiMjIFJlc291cmNlcwoKLSAqKk1haW4gc2tpbGwqKjogUmVhZCBgU0tJTEwubWRgIGZvciBjb21wbGV0ZSB3b3JrZmxvdwotICoqV29ya2Zsb3dzKio6IEltcGxlbWVudGF0aW9uIHBhdHRlcm5zIGluIGB3b3JrZmxvd3MvYAotICoqU3RyYXRlZ2llcyoqOiBCcm93c2UgYHN0cmF0ZWdpZXMvYCBmb3IgZGV0YWlsZWQgZ3VpZGVzCi0gKipFeGFtcGxlcyoqOiBSdW4gY29kZSBpbiBgZXhhbXBsZXMvYCBkaXJlY3RvcnkKLSAqKlJlZmVyZW5jZSoqOiBRdWljayBsb29rdXBzIGluIGByZWZlcmVuY2UvYAotICoqQXBpZnkqKjogUHJvZHVjdGlvbiBkZXBsb3ltZW50IGluIGBhcGlmeS9gCgojIyBQaGlsb3NvcGh5CgoqKkludGVsbGlnZW5jZSBmaXJzdCwgaW1wbGVtZW50YXRpb24gc2Vjb25kISoqCgpUaGlzIHNraWxsIHByaW9yaXRpemVzOgoxLiAqKlJlY29ubmFpc3NhbmNlKiogLSBVbmRlcnN0YW5kIGJlZm9yZSBjb2RpbmcgKEFQSXMgPiBTaXRlbWFwcyA+IFNjcmFwaW5nKQoyLiAqKlNwZWVkKiogLSBGYXN0ZXN0IGFwcHJvYWNoIHRoYXQgd29ya3MgKEFQSSAxMC0xMDB4IGZhc3RlciB0aGFuIEhUTUwpCjMuICoqUmVsaWFiaWxpdHkqKiAtIFN0cnVjdHVyZWQgZGF0YSA+IEhUTUwgcGFyc2luZwo0LiAqKk1haW50YWluYWJpbGl0eSoqIC0gVHlwZVNjcmlwdCwgcHJvcGVyIHRvb2xpbmcKNS4gKipCZXN0IHByYWN0aWNlcyoqIC0gSW5kdXN0cnkgc3RhbmRhcmRzCgojIyBWZXJzaW9uCgoqKjUuMC4wKiogLSBUcmFmZmljLWludGVyY2VwdGlvbi1maXJzdCBzY3JhcGluZzoKLSAqKk5FVyoqOiBQcm94eS1NQ1AgaW50ZWdyYXRpb24gKE1JVE0gdHJhZmZpYyBpbnRlcmNlcHRpb24gKyBzdGVhbHRoIGJyb3dzZXIgKyBodW1hbml6ZXIpCi0gKipORVcqKjogQXV0b21hdGljIEFQSSBkaXNjb3ZlcnkgdmlhIHRyYWZmaWMgY2FwdHVyZQotICoqTkVXKio6IE11bHRpLWxheWVyIGFudGktZGV0ZWN0aW9uIChzdGVhbHRoIG1vZGUsIGh1bWFuaXplciwgdXBzdHJlYW0gcHJveGllcywgVExTIHNwb29maW5nKQotICoqTkVXKio6IFNlc3Npb24gcmVjb3JkaW5nIGFuZCBIQVIgZXhwb3J0L3JlcGxheQotIFByb2dyZXNzaXZlIGRpc2Nsb3N1cmUgYXJjaGl0ZWN0dXJlCi0gUHJvYWN0aXZlIHN0cmF0ZWd5IGRpc2NvdmVyeQotIFR5cGVTY3JpcHQtZmlyc3QgQXBpZnkgZ3VpZGFuY2UKLSBDb21wcmVoZW5zaXZlIGV4YW1wbGVzCi0gTW9kdWxhciBvcmdhbml6YXRpb24KCiMjIFJlZmVyZW5jZXMKCkFsbCBiZXN0IHByYWN0aWNlcyBzb3VyY2VkIGZyb20gb2ZmaWNpYWwgQW50aHJvcGljIGRvY3VtZW50YXRpb246Ci0gW0FudGhyb3BpYyBTa2lsbHMgUmVwb3NpdG9yeV0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzKQotIFtBZ2VudCBTa2lsbHMgU3BlY2lmaWNhdGlvbl0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzL2Jsb2IvbWFpbi9hZ2VudF9za2lsbHNfc3BlYy5tZCkKLSBbc2tpbGwtY3JlYXRvci9TS0lMTC5tZF0oaHR0cHM6Ly9naXRodWIuY29tL2FudGhyb3BpY3Mvc2tpbGxzL2Jsb2IvbWFpbi9za2lsbC1jcmVhdG9yL1NLSUxMLm1kKQotIFtBbnRocm9waWMgU2tpbGxzIEFubm91bmNlbWVudF0oaHR0cHM6Ly93d3cuYW50aHJvcGljLmNvbS9uZXdzL3NraWxscykKCi0tLQoKKipTdGFydCBoZXJlKio6IFJlYWQgYFNLSUxMLm1kYCBmb3IgdGhlIGNvbXBsZXRlIHByb2FjdGl2ZSB3b3JrZmxvdy4K
+# Web Scraping Skill
+
+Intelligent web scraping with automatic strategy selection and TypeScript-first Apify Actor development.
+
+## Overview
+
+This skill provides:
+- **Adaptive reconnaissance** - Phases 0-5 with quality gates that skip unnecessary work (curl first, browser only if needed)
+- **Framework-aware detection** - Identifies site framework before searching, skips irrelevant patterns
+- **Validated findings** - Every claimed selector/path/API is tested before reporting
+- **Self-critiquing reports** - Intelligence reports include gap analysis and staleness warnings
+- **Iterative implementation** - Starts simple, adds complexity only if needed
+- **Production-ready guidance** - TypeScript-first Apify Actor development
+
+## Installation
+
+Add this skill to Claude Code by placing this directory in the skills folder.
+
+## Quick Start
+
+### Scenario 1: Scrape a Website
+
+```
+User: "Scrape https://example.com"
+
+Claude will automatically:
+1. Phase 0: curl raw HTML — detect framework, search for data points, check sitemaps
+2. QUALITY GATE: All data in HTML? → Skip browser, go to validation
+3. Phase 1: Launch stealth browser (only if needed) — capture traffic, rendered DOM
+4. Phase 2: Deep scan (only for missing data) — test interactions, sniff APIs
+5. Phase 3: Validate every finding — test selectors, replay APIs, confirm paths
+6. Phase 4: Protection testing (only if signals detected or user requested)
+7. Phase 5: Generate intelligence report with self-critique
+8. Implement recommended approach iteratively
+9. Test with small batch, then scale
+```
+
+### Scenario 2: Create Apify Actor
+
+```
+User: "Make this an Apify Actor"
+
+Claude will:
+1. Recommend TypeScript (strongly)
+2. Guide through `apify create` command
+3. Help choose appropriate template (Cheerio vs Playwright)
+4. Port scraping logic to Actor format
+5. Configure input schema
+6. Test and deploy
+```
+
+## Directory Structure
+
+```
+web-scraping/
+├── SKILL.md                    # Main entry point (proactive workflow)
+├── workflows/                  # Implementation patterns
+│   ├── reconnaissance.md       # Phase 1 interactive reconnaissance (CRITICAL)
+│   ├── implementation.md       # Phase 4 iterative implementation
+│   └── productionization.md    # Phase 5 Actor creation
+├── strategies/                 # Deep-dive guides
+│   ├── framework-signatures.md # Framework detection lookup tables
+│   ├── cheerio-vs-browser-test.md # Cheerio vs Browser decision + early exit
+│   ├── proxy-escalation.md    # Protection testing skip/run conditions
+│   ├── traffic-interception.md # MITM proxy traffic capture
+│   ├── sitemap-discovery.md   # 60x faster URL discovery
+│   ├── api-discovery.md       # 10-100x faster than scraping
+│   ├── dom-scraping.md        # DevTools bridge + humanizer
+│   ├── cheerio-scraping.md    # HTTP-only (5x faster)
+│   ├── hybrid-approaches.md   # Combining strategies
+│   ├── anti-blocking.md       # Multi-layer anti-detection
+│   └── session-workflows.md   # Session recording, HAR, replay
+├── examples/                   # Runnable code
+│   ├── traffic-interception-basic.js
+│   ├── sitemap-basic.js
+│   ├── api-scraper.js
+│   ├── hybrid-sitemap-api.js
+│   └── iterative-fallback.js
+├── reference/                  # Quick lookup
+│   ├── report-schema.md       # Intelligence report format (Sections 1-7)
+│   ├── proxy-tool-reference.md # Proxy-MCP tools (80+)
+│   ├── regex-patterns.md
+│   ├── fingerprint-patterns.md
+│   └── anti-patterns.md
+├── apify/                      # Production deployment
+│   ├── typescript-first.md    # Why TypeScript
+│   ├── cli-workflow.md        # apify create (CRITICAL)
+│   ├── templates/             # TypeScript boilerplate
+│   └── examples/              # Working actors
+└── README.md                   # This file
+```
+
+## Best Practices Applied
+
+This skill follows Anthropic's official best practices for skill development:
+
+### 1. Progressive Disclosure Architecture ✓
+
+**Pattern**: Three-level loading system to manage context efficiently
+- **Level 1**: YAML frontmatter (~85 tokens) - Always loaded
+- **Level 2**: Main SKILL.md (~356 lines) - Loaded when skill invoked
+- **Level 3**: Subdirectories - Loaded on-demand as needed
+
+**Result**: 70-80% token reduction vs monolithic documentation
+
+**Source**: [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md#progressive-disclosure-design-principle)
+
+### 2. Imperative/Infinitive Form Writing Style ✓
+
+**Pattern**: Write instructions using verb-first commands, not second-person language
+
+**Examples**:
+- ✅ "Load this workflow when user requests"
+- ✅ "Check for sitemaps automatically"
+- ❌ "You should load this workflow"
+- ❌ "You need to check for sitemaps"
+
+**Exception**: Second-person is acceptable in user-facing prompts, code comments, and tutorial examples
+
+**Source**: [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md#update-skillmd)
+
+### 3. Clear YAML Frontmatter ✓
+
+**Pattern**: Concise, specific name and description that determine when Claude invokes the skill
+
+**Applied**:
+- `name: web-scraping` - Clear, hyphen-case identifier
+- `description:` - Specific about activation triggers and capabilities (189 chars, optimized from 244)
+
+**Source**: [agent_skills_spec.md](https://github.com/anthropics/skills/blob/main/agent_skills_spec.md#yaml-frontmatter)
+
+### 4. Lean SKILL.md with Reference Files ✓
+
+**Pattern**: Keep only essential procedural instructions in SKILL.md; move detailed information to subdirectories
+
+**Applied**:
+- SKILL.md: Core 4-phase workflow (~356 lines)
+- `workflows/`: Detailed implementation patterns
+- `strategies/`: Deep-dive guides
+- `examples/`: Runnable code
+- `reference/`: Quick lookup patterns
+- `apify/`: Production deployment guides
+
+**Source**: [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md#references-references)
+
+### 5. Scripts, References, and Assets Organization ✓
+
+**Pattern**: Separate executable code, documentation, and output resources
+
+**Applied**:
+- `examples/` - Executable JavaScript learning examples (like scripts/)
+- `workflows/`, `strategies/`, `reference/`, `apify/` - Documentation loaded as needed (like references/)
+- `apify/templates/`, `apify/examples/` - Boilerplate code and templates (like assets/)
+
+**Source**: [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md#bundled-resources-optional)
+
+### 6. Purpose-Driven Skill Scope ✓
+
+**Pattern**: Create focused skills for specific purposes rather than one skill that does everything
+
+**Applied**: This skill focuses specifically on web scraping and Apify Actor development, not general web development
+
+**Source**: [Anthropic Skills Best Practices](https://www.anthropic.com/news/skills)
+
+### 7. Objective, Instructional Language ✓
+
+**Pattern**: Use clear, technical language focused on "what" and "how" rather than persuasive or promotional tone
+
+**Applied**: Direct technical guidance throughout ("Check for sitemaps", "Implement iteratively") vs. marketing language
+
+**Source**: [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md#update-skillmd)
+
+## Key Features
+
+### 1. Adaptive Reconnaissance (Phases 0-5)
+
+Quality-gated workflow that skips unnecessary phases:
+- **Phase 0**: curl-based assessment — detect framework, search for data, check protections
+- **Phase 1**: Browser only if needed — stealth Chrome, traffic capture, rendered DOM
+- **Phase 2**: Deep scan only for missing data — targeted interactions, framework-aware API sniffing
+- **Phase 3**: Validate every finding — test selectors, replay APIs, confirm JSON paths
+- **Phase 4**: Protection testing only if signals warrant — conditional escalation
+- **Phase 5**: Self-critiquing report — gaps, assumptions, staleness warnings
+
+### 2. Framework-Aware Detection
+
+Uses `strategies/framework-signatures.md` lookup tables:
+- Response headers → framework identification
+- HTML signatures → data location mapping
+- Known major sites → direct strategy (e.g., Amazon: custom SSR, no JSON-LD)
+- Detect first, then search only relevant patterns
+
+### 3. Validated Intelligence Reports
+
+Reports follow `reference/report-schema.md` with:
+- `Validated?` column for every extraction strategy (YES / PARTIAL / NO)
+- Self-Critique section: gaps, skipped steps, assumptions, staleness risk
+- Targeted re-investigation for fixable gaps
+
+### 4. Iterative Implementation (Phase 4)
+
+- Start with simplest approach
+- Test small batch (5-10 items)
+- Scale or fallback based on results
+- Add robustness last
+
+### 5. TypeScript-First Apify (Phase 5)
+
+For production actors:
+- **Strongly recommend** TypeScript
+- **Always use** `apify create` command
+- **Choose template** based on site type (Cheerio for static, Playwright for JS-heavy)
+- Type-safe input/output
+
+## Example Workflows
+
+### Workflow 1: Unknown Site
+
+```
+1. User: "Scrape example.com"
+2. Phase 0: curl raw HTML → detect Next.js (__NEXT_DATA__), find product data in JSON
+3. GATE A: All data in __NEXT_DATA__? → YES → Skip browser
+4. Phase 3: Validate JSON paths resolve to expected values
+5. Phase 5: Generate report with self-critique
+6. Result: No browser needed, Cheerio + JSON parsing sufficient
+```
+
+### Workflow 1b: Site Needing Browser
+
+```
+1. User: "Scrape protected-shop.com"
+2. Phase 0: curl returns 403 → protection detected, no data in HTML
+3. GATE A: NO → Continue to Phase 1
+4. Phase 1: Stealth browser loads page, traffic reveals API endpoint
+5. GATE B: All data covered via API → Skip Phase 2
+6. Phase 3: Replay API request, validate response structure
+7. Phase 4: Protection testing (403 was detected) → stealth browser + proxy needed
+8. Phase 5: Report + self-critique
+9. Implements with discovered API + upstream proxies
+10. Tests with 10 items, scales to full dataset
+```
+
+### Workflow 2: Make it an Actor
+
+```
+1. User: "Make this an Apify Actor"
+2. Claude loads apify/ module
+3. Recommends TypeScript? (Yes)
+4. Guides through: apify create
+5. Analyzes site: Static HTML → Selects Cheerio template
+6. Ports scraping logic to TypeScript
+7. Adds input schema
+8. Tests: apify run
+9. Deploys: apify push
+10. Result: Production-ready actor
+```
+
+## Performance Benefits
+
+| Approach | Time (1000 pages) | vs Crawling |
+|----------|-------------------|-------------|
+| Sitemap + API | 5 minutes | 60x faster |
+| Sitemap + Playwright | 20 minutes | 15x faster |
+| API only | 8 minutes | 40x faster |
+| Playwright crawl | 45 minutes | Baseline |
+
+## Best Practices Summary
+
+### Reconnaissance (Phases 0-5)
+- Start with curl (Phase 0) before launching browser
+- Detect framework first, then search relevant patterns only
+- Quality gates skip phases when data is sufficient
+- Validate every selector/path/API before reporting
+- Self-critique: check for gaps, assumptions, staleness
+- Protection testing only when signals warrant it
+
+### Implementation Phase (Phase 4)
+- Start simple (traffic interception → sitemap → API → DOM scraping)
+- Test small batch first
+- Handle errors gracefully
+- Respect rate limits
+
+### Production Phase (Phase 5)
+- Use TypeScript for Apify Actors
+- Always use `apify create` command
+- Choose template based on Phase 1 findings (Cheerio vs Playwright)
+- Test locally with `apify run`
+- Deploy with `apify push`
+
+## Troubleshooting
+
+### "No URLs found in sitemap"
+→ See `strategies/sitemap-discovery.md` troubleshooting section
+
+### "API requires authentication"
+→ See `strategies/api-discovery.md` authentication section
+
+### "DOM scraping too slow"
+→ See `strategies/dom-scraping.md` and consider API discovered via traffic capture
+
+### "Actor deployment fails"
+→ See `apify/cli-workflow.md` common issues section
+
+## Resources
+
+- **Main skill**: Read `SKILL.md` for complete workflow
+- **Workflows**: Implementation patterns in `workflows/`
+- **Strategies**: Browse `strategies/` for detailed guides
+- **Examples**: Run code in `examples/` directory
+- **Reference**: Quick lookups in `reference/`
+- **Apify**: Production deployment in `apify/`
+
+## Philosophy
+
+**Intelligence first, implementation second!**
+
+This skill prioritizes:
+1. **Reconnaissance** - Understand before coding (APIs > Sitemaps > Scraping)
+2. **Speed** - Fastest approach that works (API 10-100x faster than HTML)
+3. **Reliability** - Structured data > HTML parsing
+4. **Maintainability** - TypeScript, proper tooling
+5. **Best practices** - Industry standards
+
+## Version
+
+**5.0.0** - Traffic-interception-first scraping:
+- **NEW**: Proxy-MCP integration (MITM traffic interception + stealth browser + humanizer)
+- **NEW**: Automatic API discovery via traffic capture
+- **NEW**: Multi-layer anti-detection (stealth mode, humanizer, upstream proxies, TLS spoofing)
+- **NEW**: Session recording and HAR export/replay
+- Progressive disclosure architecture
+- Proactive strategy discovery
+- TypeScript-first Apify guidance
+- Comprehensive examples
+- Modular organization
+
+## References
+
+All best practices sourced from official Anthropic documentation:
+- [Anthropic Skills Repository](https://github.com/anthropics/skills)
+- [Agent Skills Specification](https://github.com/anthropics/skills/blob/main/agent_skills_spec.md)
+- [skill-creator/SKILL.md](https://github.com/anthropics/skills/blob/main/skill-creator/SKILL.md)
+- [Anthropic Skills Announcement](https://www.anthropic.com/news/skills)
+
+---
+
+**Start here**: Read `SKILL.md` for the complete proactive workflow.
