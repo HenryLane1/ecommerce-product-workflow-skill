@@ -1,1 +1,38 @@
-LyoqCiAqIFR5cGUgZGVmaW5pdGlvbnMgZm9yIEFjdG9yCiAqCiAqIENlbnRyYWxpemVkIHR5cGUgZGVmaW5pdGlvbnMgZm9yIGJldHRlciBjb2RlIG9yZ2FuaXphdGlvbgogKi8KCi8vIEFjdG9yIElucHV0CmV4cG9ydCBpbnRlcmZhY2UgQWN0b3JJbnB1dCB7CiAgICBzdGFydFVybHM6IHsgdXJsOiBzdHJpbmcgfVtdOwogICAgbWF4SXRlbXM/OiBudW1iZXI7CiAgICBwcm94eUNvbmZpZ3VyYXRpb24/OiBQcm94eUNvbmZpZ3VyYXRpb247Cn0KCi8vIFByb3h5IENvbmZpZ3VyYXRpb24KZXhwb3J0IGludGVyZmFjZSBQcm94eUNvbmZpZ3VyYXRpb24gewogICAgdXNlQXBpZnlQcm94eT86IGJvb2xlYW47CiAgICBwcm94eVVybHM/OiBzdHJpbmdbXTsKICAgIGdyb3Vwcz86IHN0cmluZ1tdOwp9CgovLyBTY3JhcGVkIERhdGEgT3V0cHV0CmV4cG9ydCBpbnRlcmZhY2UgU2NyYXBlZERhdGEgewogICAgdXJsOiBzdHJpbmc7CiAgICB0aXRsZTogc3RyaW5nOwogICAgcHJpY2U/OiBudW1iZXI7CiAgICBkZXNjcmlwdGlvbj86IHN0cmluZzsKICAgIG1ldGFkYXRhPzogU2NyYXBlZE1ldGFkYXRhOwogICAgc2NyYXBlZEF0OiBzdHJpbmc7Cn0KCi8vIE9wdGlvbmFsIE1ldGFkYXRhCmV4cG9ydCBpbnRlcmZhY2UgU2NyYXBlZE1ldGFkYXRhIHsKICAgIHByb2R1Y3RJZD86IHN0cmluZzsKICAgIGNhdGVnb3J5Pzogc3RyaW5nOwogICAgYnJhbmQ/OiBzdHJpbmc7CiAgICByYXRpbmc/OiBudW1iZXI7CiAgICByZXZpZXdDb3VudD86IG51bWJlcjsKfQo=
+/**
+ * Type definitions for Actor
+ *
+ * Centralized type definitions for better code organization
+ */
+
+// Actor Input
+export interface ActorInput {
+    startUrls: { url: string }[];
+    maxItems?: number;
+    proxyConfiguration?: ProxyConfiguration;
+}
+
+// Proxy Configuration
+export interface ProxyConfiguration {
+    useApifyProxy?: boolean;
+    proxyUrls?: string[];
+    groups?: string[];
+}
+
+// Scraped Data Output
+export interface ScrapedData {
+    url: string;
+    title: string;
+    price?: number;
+    description?: string;
+    metadata?: ScrapedMetadata;
+    scrapedAt: string;
+}
+
+// Optional Metadata
+export interface ScrapedMetadata {
+    productId?: string;
+    category?: string;
+    brand?: string;
+    rating?: number;
+    reviewCount?: number;
+}
