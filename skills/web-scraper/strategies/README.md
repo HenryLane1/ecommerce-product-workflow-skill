@@ -1,1 +1,62 @@
-IyBTY3JhcGluZyBTdHJhdGVnaWVzCgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBkZXRhaWxlZCBndWlkZXMgZm9yIGVhY2ggd2ViIHNjcmFwaW5nIGFwcHJvYWNoLgoKIyMgU3RyYXRlZ3kgU2VsZWN0aW9uIEd1aWRlCgpDaG9vc2UgeW91ciBzdHJhdGVneSBiYXNlZCBvbiBzaXRlIGNoYXJhY3RlcmlzdGljczoKCmBgYApTdGFydCB3aXRoIHRyYWZmaWMgaW50ZXJjZXB0aW9uIOKGkiB0cmFmZmljLWludGVyY2VwdGlvbi5tZCAoQUxXQVlTIEZJUlNUKQogICAg4oaTCkRvZXMgc2l0ZSBoYXZlIHNpdGVtYXA/IOKGkiBzaXRlbWFwLWRpc2NvdmVyeS5tZAogICAg4oaTCkRvZXMgc2l0ZSBoYXZlIEFQST8g4oaSIGFwaS1kaXNjb3ZlcnkubWQgKEZBU1RFU1QpCiAgICDihpMKSXMgc2l0ZSBzdGF0aWMgSFRNTD8g4oaSIGNoZWVyaW8tc2NyYXBpbmcubWQgKEZBU1QpCiAgICDihpMKUmVxdWlyZXMgSmF2YVNjcmlwdD8g4oaSIGRvbS1zY3JhcGluZy5tZCAoRGV2VG9vbHMgYnJpZGdlKQogICAg4oaTCldhbnQgdG8gY29tYmluZT8g4oaSIGh5YnJpZC1hcHByb2FjaGVzLm1kIChPUFRJTUFMKQogICAg4oaTCkdldHRpbmcgYmxvY2tlZD8g4oaSIGFudGktYmxvY2tpbmcubWQgKE1VTFRJLUxBWUVSIEFOVEktREVURUNUSU9OKQogICAg4oaTCk5lZWQgc2Vzc2lvbiByZWNvcmRpbmc/IOKGkiBzZXNzaW9uLXdvcmtmbG93cy5tZCAoSEFSIEVYUE9SVC9SRVBMQVkpCmBgYAoKIyMgRmlsZXMgaW4gVGhpcyBEaXJlY3RvcnkKCjEuICoqdHJhZmZpYy1pbnRlcmNlcHRpb24ubWQqKiAtIE1JVE0gcHJveHkgdHJhZmZpYyBjYXB0dXJlIChwcmltYXJ5IHN0cmF0ZWd5KQoyLiAqKnNpdGVtYXAtZGlzY292ZXJ5Lm1kKiogLSBGYXN0ZXN0IFVSTCBkaXNjb3ZlcnkgKDYweCBmYXN0ZXIgdGhhbiBjcmF3bGluZykKMy4gKiphcGktZGlzY292ZXJ5Lm1kKiogLSBCZXN0IGRhdGEgcXVhbGl0eSAoMTAtMTAweCBmYXN0ZXIgdGhhbiBzY3JhcGluZykKNC4gKipkb20tc2NyYXBpbmcubWQqKiAtIERPTSBzY3JhcGluZyB2aWEgRGV2VG9vbHMgYnJpZGdlICsgaHVtYW5pemVyCjUuICoqY2hlZXJpby1zY3JhcGluZy5tZCoqIC0gSFRUUC1vbmx5IHNjcmFwaW5nIGZvciBzdGF0aWMgSFRNTCAoNXggZmFzdGVyKQo2LiAqKmh5YnJpZC1hcHByb2FjaGVzLm1kKiogLSBDb21iaW5pbmcgc3RyYXRlZ2llcyBmb3Igb3B0aW1hbCByZXN1bHRzCjcuICoqYW50aS1ibG9ja2luZy5tZCoqIC0gTXVsdGktbGF5ZXIgYW50aS1kZXRlY3Rpb24gKHN0ZWFsdGgsIGh1bWFuaXplciwgcHJveGllcywgVExTKQo4LiAqKnNlc3Npb24td29ya2Zsb3dzLm1kKiogLSBTZXNzaW9uIHJlY29yZGluZywgSEFSIGV4cG9ydCwgcmVwbGF5CgojIyBRdWljayBDb21wYXJpc29uCgp8IFN0cmF0ZWd5IHwgU3BlZWQgfCBDb21wbGV4aXR5IHwgQmVzdCBGb3IgfAp8LS0tLS0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgVHJhZmZpYyBJbnRlcmNlcHRpb24gKyBBUEkgfCDimqHimqHimqHimqHimqEgfCBMb3cgfCBBUEkgZGlzY292ZXJ5LCBhbGwgc2l0ZXMgfAp8IFNpdGVtYXAgKyBBUEkgfCDimqHimqHimqHimqHimqEgfCBMb3cgfCBFLWNvbW1lcmNlLCBsYXJnZSBjYXRhbG9ncyB8CnwgQVBJIG9ubHkgfCDimqHimqHimqHimqEgfCBNZWRpdW0gfCBTdHJ1Y3R1cmVkIGRhdGEgbmVlZHMgfAp8IFNpdGVtYXAgKyBDaGVlcmlvIHwg4pqh4pqh4pqh4pqhIHwgTG93IHwgU3RhdGljIHNpdGVzIHdpdGggc2l0ZW1hcHMgfAp8IENoZWVyaW8gfCDimqHimqHimqEgfCBMb3cgfCBTbWFsbCBzdGF0aWMgc2l0ZXMgfAp8IERPTSBTY3JhcGluZyAoRGV2VG9vbHMpIHwg4pqh4pqhIHwgTWVkaXVtIHwgSmF2YVNjcmlwdC1oZWF2eSBzaXRlcyB8CnwgQW50aS1ibG9ja2luZyB8IOKaoeKaoSB8IEhpZ2ggfCBTaXRlcyB3aXRoIGJvdCBkZXRlY3Rpb24gfAoKIyMgUmVjb21tZW5kZWQgUmVhZGluZyBPcmRlcgoKMS4gU3RhcnQgd2l0aCBgdHJhZmZpYy1pbnRlcmNlcHRpb24ubWRgIChhbHdheXMgY2FwdHVyZSB0cmFmZmljIGZpcnN0KQoyLiBSZWFkIGBzaXRlbWFwLWRpc2NvdmVyeS5tZGAgKGNoZWNrIGZvciBzaXRlbWFwcykKMy4gUmVhZCBgYXBpLWRpc2NvdmVyeS5tZGAgKEFQSXMgYXJlIGJlc3Qgd2hlbiBhdmFpbGFibGUpCjQuIFJlYWQgYGRvbS1zY3JhcGluZy5tZGAgT1IgYGNoZWVyaW8tc2NyYXBpbmcubWRgIChiYXNlZCBvbiBzaXRlIHR5cGUpCjUuIFJlYWQgYGh5YnJpZC1hcHByb2FjaGVzLm1kYCAobGVhcm4gdG8gY29tYmluZSBzdHJhdGVnaWVzKQo2LiBSZWFkIGBhbnRpLWJsb2NraW5nLm1kYCAod2hlbiBlbmNvdW50ZXJpbmcgNDAzL2JvdCBkZXRlY3Rpb24pCjcuIFJlYWQgYHNlc3Npb24td29ya2Zsb3dzLm1kYCAoZm9yIHJlY29yZGluZyBhbmQgcmVwbGF5KQoKLS0tCgpCYWNrIHRvIG1haW4gc2tpbGw6IGAuLi9TS0lMTC5tZGAK
+# Scraping Strategies
+
+This directory contains detailed guides for each web scraping approach.
+
+## Strategy Selection Guide
+
+Choose your strategy based on site characteristics:
+
+```
+Start with traffic interception → traffic-interception.md (ALWAYS FIRST)
+    ↓
+Does site have sitemap? → sitemap-discovery.md
+    ↓
+Does site have API? → api-discovery.md (FASTEST)
+    ↓
+Is site static HTML? → cheerio-scraping.md (FAST)
+    ↓
+Requires JavaScript? → dom-scraping.md (DevTools bridge)
+    ↓
+Want to combine? → hybrid-approaches.md (OPTIMAL)
+    ↓
+Getting blocked? → anti-blocking.md (MULTI-LAYER ANTI-DETECTION)
+    ↓
+Need session recording? → session-workflows.md (HAR EXPORT/REPLAY)
+```
+
+## Files in This Directory
+
+1. **traffic-interception.md** - MITM proxy traffic capture (primary strategy)
+2. **sitemap-discovery.md** - Fastest URL discovery (60x faster than crawling)
+3. **api-discovery.md** - Best data quality (10-100x faster than scraping)
+4. **dom-scraping.md** - DOM scraping via DevTools bridge + humanizer
+5. **cheerio-scraping.md** - HTTP-only scraping for static HTML (5x faster)
+6. **hybrid-approaches.md** - Combining strategies for optimal results
+7. **anti-blocking.md** - Multi-layer anti-detection (stealth, humanizer, proxies, TLS)
+8. **session-workflows.md** - Session recording, HAR export, replay
+
+## Quick Comparison
+
+| Strategy | Speed | Complexity | Best For |
+|----------|-------|-----------|----------|
+| Traffic Interception + API | ⚡⚡⚡⚡⚡ | Low | API discovery, all sites |
+| Sitemap + API | ⚡⚡⚡⚡⚡ | Low | E-commerce, large catalogs |
+| API only | ⚡⚡⚡⚡ | Medium | Structured data needs |
+| Sitemap + Cheerio | ⚡⚡⚡⚡ | Low | Static sites with sitemaps |
+| Cheerio | ⚡⚡⚡ | Low | Small static sites |
+| DOM Scraping (DevTools) | ⚡⚡ | Medium | JavaScript-heavy sites |
+| Anti-blocking | ⚡⚡ | High | Sites with bot detection |
+
+## Recommended Reading Order
+
+1. Start with `traffic-interception.md` (always capture traffic first)
+2. Read `sitemap-discovery.md` (check for sitemaps)
+3. Read `api-discovery.md` (APIs are best when available)
+4. Read `dom-scraping.md` OR `cheerio-scraping.md` (based on site type)
+5. Read `hybrid-approaches.md` (learn to combine strategies)
+6. Read `anti-blocking.md` (when encountering 403/bot detection)
+7. Read `session-workflows.md` (for recording and replay)
+
+---
+
+Back to main skill: `../SKILL.md`
