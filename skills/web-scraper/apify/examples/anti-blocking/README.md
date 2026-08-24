@@ -1,1 +1,61 @@
-IyBBbnRpLUJsb2NraW5nIFNjcmFwZXIgRXhhbXBsZQoKQWN0b3IgZGVtb25zdHJhdGluZyBmaW5nZXJwcmludGluZyBhbmQgcHJveHkgdXNhZ2UgZm9yIGJsb2NrZWQgc2l0ZXMuCgojIyBXaGF0IFRoaXMgRGVtb25zdHJhdGVzCgotIEJyb3dzZXIgZmluZ2VycHJpbnRpbmcgd2l0aCBgZmluZ2VycHJpbnRPcHRpb25zYAotIFByb3h5IGNvbmZpZ3VyYXRpb24gKHJlc2lkZW50aWFsIHByb3hpZXMpCi0gU2Vzc2lvbiBtYW5hZ2VtZW50IGFuZCByb3RhdGlvbgotIEJsb2NraW5nIGRldGVjdGlvbgotIEVycm9yIGhhbmRsaW5nIGZvciBibG9ja2VkIHJlcXVlc3RzCgojIyBGaWxlcwoKLSBgc3JjL21haW4udHNgIC0gTWFpbiBBY3RvciBjb2RlIHdpdGggYW50aS1ibG9ja2luZwotIGAuYWN0b3IvYWN0b3IuanNvbmAgLSBBY3RvciBjb25maWd1cmF0aW9uCi0gYC5hY3Rvci9pbnB1dF9zY2hlbWEuanNvbmAgLSBJbnB1dCBzY2hlbWEKCiMjIFVzYWdlCgpgYGBiYXNoCiMgUnVuIGxvY2FsbHkgKHJlcXVpcmVzIEFwaWZ5IHByb3hpZXMpCmFwaWZ5IHJ1biAtLWlucHV0PSd7InN0YXJ0VXJscyI6W3sidXJsIjoiaHR0cHM6Ly9leGFtcGxlLmNvbSJ9XSwidXNlRmluZ2VycHJpbnRpbmciOnRydWV9JwoKIyBEZXBsb3kKYXBpZnkgcHVzaAoKIyBSdW4gb24gcGxhdGZvcm0KYXBpZnkgY2FsbCBhbnRpLWJsb2NraW5nLXNjcmFwZXIKYGBgCgojIyBJbnB1dAoKYGBganNvbgp7CiAgICAic3RhcnRVcmxzIjogW3sidXJsIjogImh0dHBzOi8vZXhhbXBsZS5jb20ifV0sCiAgICAibWF4SXRlbXMiOiAxMDAsCiAgICAidXNlRmluZ2VycHJpbnRpbmciOiB0cnVlLAogICAgInByb3h5R3JvdXAiOiAiUkVTSURFTlRJQUwiCn0KYGBgCgojIyBPdXRwdXQKCmBgYGpzb24KewogICAgInVybCI6ICJodHRwczovL2V4YW1wbGUuY29tL3BhZ2UiLAogICAgInRpdGxlIjogIlBhZ2UgVGl0bGUiLAogICAgImNvbnRlbnQiOiAiLi4uIiwKICAgICJzZXNzaW9uSWQiOiAic2Vzc2lvbl9hYmMxMjMiLAogICAgInNjcmFwZWRBdCI6ICIyMDI1LTAxLTE1VDEwOjMwOjAwLjAwMFoiCn0KYGBgCgojIyBQYXR0ZXJuCgoxLiBFbmFibGUgZmluZ2VycHJpbnRpbmcgZm9yIHJlYWxpc3RpYyBicm93c2VyIHByb2ZpbGUKMi4gVXNlIHJlc2lkZW50aWFsIHByb3hpZXMgZm9yIElQIHJvdGF0aW9uCjMuIE1hbmFnZSBzZXNzaW9ucyAocm90YXRlIGFmdGVyIGVycm9ycykKNC4gRGV0ZWN0IGJsb2NraW5nIChDbG91ZGZsYXJlLCBDQVBUQ0hBcykKNS4gUmV0cnkgd2l0aCBuZXcgc2Vzc2lvbiBpZiBibG9ja2VkCg==
+# Anti-Blocking Scraper Example
+
+Actor demonstrating fingerprinting and proxy usage for blocked sites.
+
+## What This Demonstrates
+
+- Browser fingerprinting with `fingerprintOptions`
+- Proxy configuration (residential proxies)
+- Session management and rotation
+- Blocking detection
+- Error handling for blocked requests
+
+## Files
+
+- `src/main.ts` - Main Actor code with anti-blocking
+- `.actor/actor.json` - Actor configuration
+- `.actor/input_schema.json` - Input schema
+
+## Usage
+
+```bash
+# Run locally (requires Apify proxies)
+apify run --input='{"startUrls":[{"url":"https://example.com"}],"useFingerprinting":true}'
+
+# Deploy
+apify push
+
+# Run on platform
+apify call anti-blocking-scraper
+```
+
+## Input
+
+```json
+{
+    "startUrls": [{"url": "https://example.com"}],
+    "maxItems": 100,
+    "useFingerprinting": true,
+    "proxyGroup": "RESIDENTIAL"
+}
+```
+
+## Output
+
+```json
+{
+    "url": "https://example.com/page",
+    "title": "Page Title",
+    "content": "...",
+    "sessionId": "session_abc123",
+    "scrapedAt": "2025-01-15T10:30:00.000Z"
+}
+```
+
+## Pattern
+
+1. Enable fingerprinting for realistic browser profile
+2. Use residential proxies for IP rotation
+3. Manage sessions (rotate after errors)
+4. Detect blocking (Cloudflare, CAPTCHAs)
+5. Retry with new session if blocked
