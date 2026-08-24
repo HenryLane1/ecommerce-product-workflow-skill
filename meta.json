@@ -1,7 +1,7 @@
 {
   "name": "ecommerce-product-workflow",
   "version": "1.0.0",
-  "scope": "skill",
+  "scope": ["main", "file-agent"],
   "display_name": "电商商品全链路优化工作流",
   "type": "skill",
   "use_cases": [
