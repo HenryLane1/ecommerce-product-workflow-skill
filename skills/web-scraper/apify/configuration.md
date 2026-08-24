@@ -1,1 +1,460 @@
-IyBBY3RvciBDb25maWd1cmF0aW9uIFBhdHRlcm5zCgpQYXR0ZXJucyBmb3IgYC5hY3Rvci9hY3Rvci5qc29uYCBjb25maWd1cmF0aW9uLgoKIyMgQmFzaWMgU3RydWN0dXJlCgpgYGBqc29uCnsKICAgICJhY3RvclNwZWNpZmljYXRpb24iOiAxLAogICAgIm5hbWUiOiAibXktYWN0b3IiLAogICAgInRpdGxlIjogIk15IEFjdG9yIiwKICAgICJkZXNjcmlwdGlvbiI6ICJTaG9ydCBkZXNjcmlwdGlvbiIsCiAgICAidmVyc2lvbiI6ICIxLjAiLAogICAgIm1ldGEiOiB7CiAgICAgICAgInRlbXBsYXRlSWQiOiAicHJvamVjdF9wbGF5d3JpZ2h0X2NyYXdsZXJfdHMiCiAgICB9LAogICAgImlucHV0IjogIi4vaW5wdXRfc2NoZW1hLmpzb24iLAogICAgImRvY2tlcmZpbGUiOiAiLi9Eb2NrZXJmaWxlIgp9CmBgYAoKIyMgRXNzZW50aWFsIEZpZWxkcwoKIyMjIEFjdG9yIElkZW50aXR5CgpgYGBqc29uCnsKICAgICJuYW1lIjogIm15LXNjcmFwZXIiLAogICAgInRpdGxlIjogIk15IFNjcmFwZXIiLAogICAgImRlc2NyaXB0aW9uIjogIlNjcmFwZXMgZGF0YSBmcm9tIGV4YW1wbGUuY29tIiwKICAgICJ2ZXJzaW9uIjogIjEuMC4wIgp9CmBgYAoKIyMjIERvY3VtZW50YXRpb24KCmBgYGpzb24KewogICAgInJlYWRtZSI6ICIuL1JFQURNRS5tZCIsCiAgICAiY2hhbmdlbG9nIjogIi4vQ0hBTkdFTE9HLm1kIgp9CmBgYAoKIyMjIElucHV0L091dHB1dAoKYGBganNvbgp7CiAgICAiaW5wdXQiOiAiLi9pbnB1dF9zY2hlbWEuanNvbiIsCiAgICAic3RvcmFnZXMiOiB7CiAgICAgICAgImRhdGFzZXQiOiB7CiAgICAgICAgICAgICJhY3RvclNwZWNpZmljYXRpb24iOiAxLAogICAgICAgICAgICAidGl0bGUiOiAiU2NyYXBlZCBkYXRhIiwKICAgICAgICAgICAgInZpZXdzIjogewogICAgICAgICAgICAgICAgIm92ZXJ2aWV3IjogewogICAgICAgICAgICAgICAgICAgICJ0aXRsZSI6ICJPdmVydmlldyIsCiAgICAgICAgICAgICAgICAgICAgInRyYW5zZm9ybWF0aW9uIjogewogICAgICAgICAgICAgICAgICAgICAgICAiZmllbGRzIjogWyJ0aXRsZSIsICJwcmljZSIsICJ1cmwiXQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgImRpc3BsYXkiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJjb21wb25lbnQiOiAidGFibGUiCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9CmBgYAoKIyMgUmVzb3VyY2UgQ29uZmlndXJhdGlvbgoKIyMjIE1lbW9yeSBTZXR0aW5ncwoKYGBganNvbgp7CiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgImJ1aWxkIjogImxhdGVzdCIsCiAgICAgICAgInRpbWVvdXRTZWNzIjogMzYwMCwKICAgICAgICAibWVtb3J5TWJ5dGVzIjogNDA5NgogICAgfQp9CmBgYAoKTWVtb3J5IHJlY29tbWVuZGF0aW9uczoKLSAqKjI1Ni01MTIgTUIqKjogU2ltcGxlIEhUVFAgc2NyYXBlcnMKLSAqKjEwMjQgTUIqKjogQmFzaWMgUGxheXdyaWdodCBzY3JhcGVycwotICoqMjA0OCBNQioqOiBNZWRpdW0tc2NhbGUgUGxheXdyaWdodAotICoqNDA5NiBNQioqOiBMYXJnZS1zY2FsZSBvciBtdWx0aXBsZSBicm93c2VycwotICoqODE5MisgTUIqKjogVmVyeSBsYXJnZSBkYXRhc2V0cwoKIyMjIEJ1aWxkIENvbmZpZ3VyYXRpb24KCmBgYGpzb24KewogICAgImRvY2tlcmZpbGUiOiAiLi9Eb2NrZXJmaWxlIiwKICAgICJkb2NrZXJDb250ZXh0RGlyIjogIi4vIiwKICAgICJidWlsZFRhZyI6ICJsYXRlc3QiCn0KYGBgCgojIyBFbnZpcm9ubWVudCBWYXJpYWJsZXMKCiMjIyBQYXR0ZXJuIDE6IFB1YmxpYyBWYXJpYWJsZXMKCmBgYGpzb24KewogICAgImVudmlyb25tZW50VmFyaWFibGVzIjogewogICAgICAgICJMT0dfTEVWRUwiOiAiaW5mbyIsCiAgICAgICAgIk1BWF9SRVRSWSI6ICIzIgogICAgfQp9CmBgYAoKIyMjIFBhdHRlcm4gMjogV2l0aCBEZXNjcmlwdGlvbnMKCmBgYGpzb24KewogICAgImVudmlyb25tZW50VmFyaWFibGVzIjogewogICAgICAgICJBUElfRU5EUE9JTlQiOiB7CiAgICAgICAgICAgICJ2YWx1ZSI6ICJodHRwczovL2FwaS5leGFtcGxlLmNvbSIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgYmFzZSBVUkwiCiAgICAgICAgfSwKICAgICAgICAiUkFURV9MSU1JVCI6IHsKICAgICAgICAgICAgInZhbHVlIjogIjYwIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlJlcXVlc3RzIHBlciBtaW51dGUiCiAgICAgICAgfQogICAgfQp9CmBgYAoKIyMgQ29tcGxldGUgRXhhbXBsZXMKCiMjIyBQYXR0ZXJuIDE6IFNpbXBsZSBTY3JhcGVyCgpgYGBqc29uCnsKICAgICJhY3RvclNwZWNpZmljYXRpb24iOiAxLAogICAgIm5hbWUiOiAic2ltcGxlLXNjcmFwZXIiLAogICAgInRpdGxlIjogIlNpbXBsZSBXZWIgU2NyYXBlciIsCiAgICAiZGVzY3JpcHRpb24iOiAiU2NyYXBlcyBwcm9kdWN0IGRhdGEgZnJvbSBlLWNvbW1lcmNlIHNpdGVzIiwKICAgICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAgICJtZXRhIjogewogICAgICAgICJ0ZW1wbGF0ZUlkIjogInByb2plY3RfcGxheXdyaWdodF9jcmF3bGVyX3RzIgogICAgfSwKICAgICJpbnB1dCI6ICIuL2lucHV0X3NjaGVtYS5qc29uIiwKICAgICJkb2NrZXJmaWxlIjogIi4vRG9ja2VyZmlsZSIsCiAgICAicmVhZG1lIjogIi4vUkVBRE1FLm1kIiwKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAiYnVpbGQiOiAibGF0ZXN0IiwKICAgICAgICAidGltZW91dFNlY3MiOiAzNjAwLAogICAgICAgICJtZW1vcnlNYnl0ZXMiOiAyMDQ4CiAgICB9LAogICAgInN0b3JhZ2VzIjogewogICAgICAgICJkYXRhc2V0IjogewogICAgICAgICAgICAiYWN0b3JTcGVjaWZpY2F0aW9uIjogMSwKICAgICAgICAgICAgInRpdGxlIjogIlNjcmFwZWQgcHJvZHVjdHMiLAogICAgICAgICAgICAidmlld3MiOiB7CiAgICAgICAgICAgICAgICAib3ZlcnZpZXciOiB7CiAgICAgICAgICAgICAgICAgICAgInRpdGxlIjogIlByb2R1Y3Qgb3ZlcnZpZXciLAogICAgICAgICAgICAgICAgICAgICJ0cmFuc2Zvcm1hdGlvbiI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImZpZWxkcyI6IFsibmFtZSIsICJwcmljZSIsICJpblN0b2NrIiwgInVybCJdCiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAiZGlzcGxheSI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImNvbXBvbmVudCI6ICJ0YWJsZSIKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0KYGBgCgojIyMgUGF0dGVybiAyOiBIaWdoLVBlcmZvcm1hbmNlIFNjcmFwZXIKCmBgYGpzb24KewogICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAibmFtZSI6ICJmYXN0LXNjcmFwZXIiLAogICAgInRpdGxlIjogIkhpZ2gtUGVyZm9ybWFuY2UgU2NyYXBlciIsCiAgICAiZGVzY3JpcHRpb24iOiAiRmFzdCBzY3JhcGluZyB3aXRoIGNvbmN1cnJlbnQgcmVxdWVzdHMiLAogICAgInZlcnNpb24iOiAiMi4wLjAiLAogICAgImlucHV0IjogIi4vaW5wdXRfc2NoZW1hLmpzb24iLAogICAgImRvY2tlcmZpbGUiOiAiLi9Eb2NrZXJmaWxlIiwKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAiYnVpbGQiOiAibGF0ZXN0IiwKICAgICAgICAidGltZW91dFNlY3MiOiA3MjAwLAogICAgICAgICJtZW1vcnlNYnl0ZXMiOiA0MDk2CiAgICB9LAogICAgImVudmlyb25tZW50VmFyaWFibGVzIjogewogICAgICAgICJNQVhfQ09OQ1VSUkVOQ1kiOiAiMTAiLAogICAgICAgICJNQVhfUkVRVUVTVFNfUEVSX01JTlVURSI6ICIxMjAiCiAgICB9Cn0KYGBgCgojIyMgUGF0dGVybiAzOiBXaXRoIEFudGktQmxvY2tpbmcKCmBgYGpzb24KewogICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAibmFtZSI6ICJzdGVhbHRoLXNjcmFwZXIiLAogICAgInRpdGxlIjogIkFudGktQmxvY2tpbmcgU2NyYXBlciIsCiAgICAiZGVzY3JpcHRpb24iOiAiU2NyYXBlciB3aXRoIGZpbmdlcnByaW50aW5nIGFuZCBwcm94aWVzIiwKICAgICJ2ZXJzaW9uIjogIjEuNS4wIiwKICAgICJpbnB1dCI6ICIuL2lucHV0X3NjaGVtYS5qc29uIiwKICAgICJkb2NrZXJmaWxlIjogIi4vRG9ja2VyZmlsZSIsCiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgImJ1aWxkIjogImxhdGVzdCIsCiAgICAgICAgInRpbWVvdXRTZWNzIjogMzYwMCwKICAgICAgICAibWVtb3J5TWJ5dGVzIjogNDA5NgogICAgfSwKICAgICJlbnZpcm9ubWVudFZhcmlhYmxlcyI6IHsKICAgICAgICAiVVNFX0ZJTkdFUlBSSU5USU5HIjogInRydWUiLAogICAgICAgICJQUk9YWV9HUk9VUCI6ICJSRVNJREVOVElBTCIKICAgIH0KfQpgYGAKCiMjIyBQYXR0ZXJuIDQ6IEFQSS1CYXNlZCBTY3JhcGVyCgpgYGBqc29uCnsKICAgICJhY3RvclNwZWNpZmljYXRpb24iOiAxLAogICAgIm5hbWUiOiAiYXBpLXNjcmFwZXIiLAogICAgInRpdGxlIjogIkFQSSBEYXRhIFNjcmFwZXIiLAogICAgImRlc2NyaXB0aW9uIjogIkZldGNoZXMgZGF0YSB2aWEgUkVTVCBBUEkiLAogICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgImlucHV0IjogIi4vaW5wdXRfc2NoZW1hLmpzb24iLAogICAgImRvY2tlcmZpbGUiOiAiLi9Eb2NrZXJmaWxlIiwKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAiYnVpbGQiOiAibGF0ZXN0IiwKICAgICAgICAidGltZW91dFNlY3MiOiAxODAwLAogICAgICAgICJtZW1vcnlNYnl0ZXMiOiAxMDI0CiAgICB9LAogICAgImVudmlyb25tZW50VmFyaWFibGVzIjogewogICAgICAgICJBUElfVElNRU9VVCI6ICIzMDAwMCIsCiAgICAgICAgIlJBVEVfTElNSVQiOiAiNjAiCiAgICB9Cn0KYGBgCgojIyBEYXRhc2V0IFNjaGVtYSBDb25maWd1cmF0aW9uCgojIyMgQmFzaWMgVGFibGUgVmlldwoKYGBganNvbgp7CiAgICAic3RvcmFnZXMiOiB7CiAgICAgICAgImRhdGFzZXQiOiB7CiAgICAgICAgICAgICJhY3RvclNwZWNpZmljYXRpb24iOiAxLAogICAgICAgICAgICAidGl0bGUiOiAiU2NyYXBlZCBkYXRhIiwKICAgICAgICAgICAgInZpZXdzIjogewogICAgICAgICAgICAgICAgIm92ZXJ2aWV3IjogewogICAgICAgICAgICAgICAgICAgICJ0aXRsZSI6ICJPdmVydmlldyIsCiAgICAgICAgICAgICAgICAgICAgInRyYW5zZm9ybWF0aW9uIjogewogICAgICAgICAgICAgICAgICAgICAgICAiZmllbGRzIjogWyJ0aXRsZSIsICJwcmljZSIsICJ1cmwiXQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgImRpc3BsYXkiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJjb21wb25lbnQiOiAidGFibGUiLAogICAgICAgICAgICAgICAgICAgICAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ0aXRsZSI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibGFiZWwiOiAiUHJvZHVjdCBOYW1lIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICJwcmljZSI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAibGFiZWwiOiAiUHJpY2UgKCQpIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9CmBgYAoKIyMjIE11bHRpcGxlIFZpZXdzCgpgYGBqc29uCnsKICAgICJzdG9yYWdlcyI6IHsKICAgICAgICAiZGF0YXNldCI6IHsKICAgICAgICAgICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAgICAgICAgICJ0aXRsZSI6ICJQcm9kdWN0IGRhdGEiLAogICAgICAgICAgICAidmlld3MiOiB7CiAgICAgICAgICAgICAgICAib3ZlcnZpZXciOiB7CiAgICAgICAgICAgICAgICAgICAgInRpdGxlIjogIlByb2R1Y3QgTGlzdCIsCiAgICAgICAgICAgICAgICAgICAgInRyYW5zZm9ybWF0aW9uIjogewogICAgICAgICAgICAgICAgICAgICAgICAiZmllbGRzIjogWyJuYW1lIiwgInByaWNlIiwgInVybCJdCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICJkZXRhaWxlZCI6IHsKICAgICAgICAgICAgICAgICAgICAidGl0bGUiOiAiRGV0YWlsZWQgVmlldyIsCiAgICAgICAgICAgICAgICAgICAgInRyYW5zZm9ybWF0aW9uIjogewogICAgICAgICAgICAgICAgICAgICAgICAiZmllbGRzIjogWyJuYW1lIiwgInByaWNlIiwgImRlc2NyaXB0aW9uIiwgInJldmlld3MiLCAidXJsIl0KICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0KYGBgCgojIyBCdWlsZCBUYWdzIGFuZCBWZXJzaW9ucwoKIyMjIFZlcnNpb24gVGFnZ2luZwoKYGBganNvbgp7CiAgICAidmVyc2lvbiI6ICIxLjIuMyIsCiAgICAiYnVpbGRUYWciOiAibGF0ZXN0Igp9CmBgYAoKVmVyc2lvbmluZyBwYXR0ZXJuOgotIGAxLjAuMGAgLSBNYWpvciB2ZXJzaW9uIChicmVha2luZyBjaGFuZ2VzKQotIGAxLjEuMGAgLSBNaW5vciB2ZXJzaW9uIChuZXcgZmVhdHVyZXMpCi0gYDEuMS4xYCAtIFBhdGNoIHZlcnNpb24gKGJ1ZyBmaXhlcykKCiMjIyBCdWlsZCBUYWdzCgpgYGBiYXNoCiMgRGVwbG95IHdpdGggc3BlY2lmaWMgdGFnCmFwaWZ5IHB1c2ggLS1idWlsZC10YWcgYmV0YQoKIyBVc2UgaW4gY29uZmlndXJhdGlvbgp7CiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgImJ1aWxkIjogImJldGEiCiAgICB9Cn0KYGBgCgpDb21tb24gdGFnczoKLSBgbGF0ZXN0YCAtIFByb2R1Y3Rpb24gcmVsZWFzZQotIGBiZXRhYCAtIFRlc3RpbmcgdmVyc2lvbgotIGBkZXZgIC0gRGV2ZWxvcG1lbnQgdmVyc2lvbgoKIyMgRG9ja2VyZmlsZSBDb25maWd1cmF0aW9uCgojIyMgU3RhbmRhcmQgUGxheXdyaWdodAoKYGBgZG9ja2VyZmlsZQpGUk9NIGFwaWZ5L2FjdG9yLW5vZGUtcGxheXdyaWdodC1jaHJvbWU6MjAKCkNPUFkgcGFja2FnZSouanNvbiAuLwpSVU4gbnBtIGluc3RhbGwgLS1wcm9kdWN0aW9uCgpDT1BZIC4gLi8KClJVTiBucG0gcnVuIGJ1aWxkCgpDTUQgbnBtIHN0YXJ0CmBgYAoKIyMjIFdpdGggQ3VzdG9tIERlcGVuZGVuY2llcwoKYGBgZG9ja2VyZmlsZQpGUk9NIGFwaWZ5L2FjdG9yLW5vZGUtcGxheXdyaWdodC1jaHJvbWU6MjAKCiMgSW5zdGFsbCBzeXN0ZW0gZGVwZW5kZW5jaWVzClJVTiBhcHQtZ2V0IHVwZGF0ZSAmJiBhcHQtZ2V0IGluc3RhbGwgLXkgXAogICAgaW1hZ2VtYWdpY2sgXAogICAgJiYgcm0gLXJmIC92YXIvbGliL2FwdC9saXN0cy8qCgpDT1BZIHBhY2thZ2UqLmpzb24gLi8KUlVOIG5wbSBpbnN0YWxsIC0tcHJvZHVjdGlvbgoKQ09QWSAuIC4vClJVTiBucG0gcnVuIGJ1aWxkCgpDTUQgbnBtIHN0YXJ0CmBgYAoKIyMgVGltZW91dCBDb25maWd1cmF0aW9uCgpgYGBqc29uCnsKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAidGltZW91dFNlY3MiOiAzNjAwCiAgICB9Cn0KYGBgCgpUaW1lb3V0IHJlY29tbWVuZGF0aW9uczoKLSAqKjMwMHMgKDUgbWluKSoqOiBRdWljayBzY3JhcGVycwotICoqMTgwMHMgKDMwIG1pbikqKjogTWVkaXVtIGRhdGFzZXRzCi0gKiozNjAwcyAoMSBob3VyKSoqOiBMYXJnZSBkYXRhc2V0cwotICoqNzIwMHMgKDIgaG91cnMpKio6IFZlcnkgbGFyZ2UgZGF0YXNldHMKLSAqKjg2NDAwcyAoMjQgaG91cnMpKio6IE1heGltdW0gYWxsb3dlZAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86Ci0gU2V0IGFwcHJvcHJpYXRlIG1lbW9yeSBmb3IgdGFzawotIFVzZSBzZW1hbnRpYyB2ZXJzaW9uaW5nCi0gQ29uZmlndXJlIGRhdGFzZXQgdmlld3MKLSBTZXQgcmVhc29uYWJsZSB0aW1lb3V0cwotIERvY3VtZW50IGVudmlyb25tZW50IHZhcmlhYmxlcwotIFVzZSBidWlsZCB0YWdzIGZvciBzdGFnaW5nCgojIyMg4p2MIERPTidUOgotIERvbid0IHNldCB0b28gbGl0dGxlIG1lbW9yeSAoY2F1c2VzIE9PTSkKLSBEb24ndCBzZXQgZXhjZXNzaXZlIHRpbWVvdXRzCi0gRG9uJ3QgaGFyZGNvZGUgc2VjcmV0cyBpbiBjb25maWcKLSBEb24ndCBza2lwIHZlcnNpb24gbnVtYmVycwotIERvbid0IHVzZSBgbGF0ZXN0YCBmb3IgZGVwZW5kZW5jaWVzCgojIyBDb21tb24gUGF0dGVybnMKCiMjIyBMb3cgTWVtb3J5IChIVFRQIE9ubHkpCgpgYGBqc29uCnsKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAibWVtb3J5TWJ5dGVzIjogNTEyLAogICAgICAgICJ0aW1lb3V0U2VjcyI6IDE4MDAKICAgIH0KfQpgYGAKCiMjIyBTdGFuZGFyZCBQbGF5d3JpZ2h0CgpgYGBqc29uCnsKICAgICJkZWZhdWx0UnVuT3B0aW9ucyI6IHsKICAgICAgICAibWVtb3J5TWJ5dGVzIjogMjA0OCwKICAgICAgICAidGltZW91dFNlY3MiOiAzNjAwCiAgICB9Cn0KYGBgCgojIyMgSGlnaCBQZXJmb3JtYW5jZQoKYGBganNvbgp7CiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgIm1lbW9yeU1ieXRlcyI6IDQwOTYsCiAgICAgICAgInRpbWVvdXRTZWNzIjogNzIwMAogICAgfSwKICAgICJlbnZpcm9ubWVudFZhcmlhYmxlcyI6IHsKICAgICAgICAiTUFYX0NPTkNVUlJFTkNZIjogIjEwIgogICAgfQp9CmBgYAoKIyMjIEFQSSBTY3JhcGluZwoKYGBganNvbgp7CiAgICAiZGVmYXVsdFJ1bk9wdGlvbnMiOiB7CiAgICAgICAgIm1lbW9yeU1ieXRlcyI6IDEwMjQsCiAgICAgICAgInRpbWVvdXRTZWNzIjogMTgwMAogICAgfQp9CmBgYAoKIyMgUmVzb3VyY2VzCgotIFthY3Rvci5qc29uIERvY3NdKGh0dHBzOi8vZG9jcy5hcGlmeS5jb20vcGxhdGZvcm0vYWN0b3JzL2RldmVsb3BtZW50L2FjdG9yLWRlZmluaXRpb24vYWN0b3ItanNvbikKLSBbRGF0YXNldCBTY2hlbWFdKGh0dHBzOi8vZG9jcy5hcGlmeS5jb20vcGxhdGZvcm0vYWN0b3JzL2RldmVsb3BtZW50L2FjdG9yLWRlZmluaXRpb24vZGF0YXNldC1zY2hlbWEpCi0gW0RvY2tlciBJbWFnZXNdKGh0dHBzOi8vZG9jcy5hcGlmeS5jb20vcGxhdGZvcm0vYWN0b3JzL2RldmVsb3BtZW50L2FjdG9yLWRlZmluaXRpb24vZG9ja2VyZmlsZSkK
+# Actor Configuration Patterns
+
+Patterns for `.actor/actor.json` configuration.
+
+## Basic Structure
+
+```json
+{
+    "actorSpecification": 1,
+    "name": "my-actor",
+    "title": "My Actor",
+    "description": "Short description",
+    "version": "1.0",
+    "meta": {
+        "templateId": "project_playwright_crawler_ts"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}
+```
+
+## Essential Fields
+
+### Actor Identity
+
+```json
+{
+    "name": "my-scraper",
+    "title": "My Scraper",
+    "description": "Scrapes data from example.com",
+    "version": "1.0.0"
+}
+```
+
+### Documentation
+
+```json
+{
+    "readme": "./README.md",
+    "changelog": "./CHANGELOG.md"
+}
+```
+
+### Input/Output
+
+```json
+{
+    "input": "./input_schema.json",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Scraped data",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": ["title", "price", "url"]
+                    },
+                    "display": {
+                        "component": "table"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## Resource Configuration
+
+### Memory Settings
+
+```json
+{
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 3600,
+        "memoryMbytes": 4096
+    }
+}
+```
+
+Memory recommendations:
+- **256-512 MB**: Simple HTTP scrapers
+- **1024 MB**: Basic Playwright scrapers
+- **2048 MB**: Medium-scale Playwright
+- **4096 MB**: Large-scale or multiple browsers
+- **8192+ MB**: Very large datasets
+
+### Build Configuration
+
+```json
+{
+    "dockerfile": "./Dockerfile",
+    "dockerContextDir": "./",
+    "buildTag": "latest"
+}
+```
+
+## Environment Variables
+
+### Pattern 1: Public Variables
+
+```json
+{
+    "environmentVariables": {
+        "LOG_LEVEL": "info",
+        "MAX_RETRY": "3"
+    }
+}
+```
+
+### Pattern 2: With Descriptions
+
+```json
+{
+    "environmentVariables": {
+        "API_ENDPOINT": {
+            "value": "https://api.example.com",
+            "description": "API base URL"
+        },
+        "RATE_LIMIT": {
+            "value": "60",
+            "description": "Requests per minute"
+        }
+    }
+}
+```
+
+## Complete Examples
+
+### Pattern 1: Simple Scraper
+
+```json
+{
+    "actorSpecification": 1,
+    "name": "simple-scraper",
+    "title": "Simple Web Scraper",
+    "description": "Scrapes product data from e-commerce sites",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "project_playwright_crawler_ts"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 3600,
+        "memoryMbytes": 2048
+    },
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Scraped products",
+            "views": {
+                "overview": {
+                    "title": "Product overview",
+                    "transformation": {
+                        "fields": ["name", "price", "inStock", "url"]
+                    },
+                    "display": {
+                        "component": "table"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### Pattern 2: High-Performance Scraper
+
+```json
+{
+    "actorSpecification": 1,
+    "name": "fast-scraper",
+    "title": "High-Performance Scraper",
+    "description": "Fast scraping with concurrent requests",
+    "version": "2.0.0",
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 7200,
+        "memoryMbytes": 4096
+    },
+    "environmentVariables": {
+        "MAX_CONCURRENCY": "10",
+        "MAX_REQUESTS_PER_MINUTE": "120"
+    }
+}
+```
+
+### Pattern 3: With Anti-Blocking
+
+```json
+{
+    "actorSpecification": 1,
+    "name": "stealth-scraper",
+    "title": "Anti-Blocking Scraper",
+    "description": "Scraper with fingerprinting and proxies",
+    "version": "1.5.0",
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 3600,
+        "memoryMbytes": 4096
+    },
+    "environmentVariables": {
+        "USE_FINGERPRINTING": "true",
+        "PROXY_GROUP": "RESIDENTIAL"
+    }
+}
+```
+
+### Pattern 4: API-Based Scraper
+
+```json
+{
+    "actorSpecification": 1,
+    "name": "api-scraper",
+    "title": "API Data Scraper",
+    "description": "Fetches data via REST API",
+    "version": "1.0.0",
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 1800,
+        "memoryMbytes": 1024
+    },
+    "environmentVariables": {
+        "API_TIMEOUT": "30000",
+        "RATE_LIMIT": "60"
+    }
+}
+```
+
+## Dataset Schema Configuration
+
+### Basic Table View
+
+```json
+{
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Scraped data",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": ["title", "price", "url"]
+                    },
+                    "display": {
+                        "component": "table",
+                        "properties": {
+                            "title": {
+                                "label": "Product Name"
+                            },
+                            "price": {
+                                "label": "Price ($)"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+### Multiple Views
+
+```json
+{
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Product data",
+            "views": {
+                "overview": {
+                    "title": "Product List",
+                    "transformation": {
+                        "fields": ["name", "price", "url"]
+                    }
+                },
+                "detailed": {
+                    "title": "Detailed View",
+                    "transformation": {
+                        "fields": ["name", "price", "description", "reviews", "url"]
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+## Build Tags and Versions
+
+### Version Tagging
+
+```json
+{
+    "version": "1.2.3",
+    "buildTag": "latest"
+}
+```
+
+Versioning pattern:
+- `1.0.0` - Major version (breaking changes)
+- `1.1.0` - Minor version (new features)
+- `1.1.1` - Patch version (bug fixes)
+
+### Build Tags
+
+```bash
+# Deploy with specific tag
+apify push --build-tag beta
+
+# Use in configuration
+{
+    "defaultRunOptions": {
+        "build": "beta"
+    }
+}
+```
+
+Common tags:
+- `latest` - Production release
+- `beta` - Testing version
+- `dev` - Development version
+
+## Dockerfile Configuration
+
+### Standard Playwright
+
+```dockerfile
+FROM apify/actor-node-playwright-chrome:20
+
+COPY package*.json ./
+RUN npm install --production
+
+COPY . ./
+
+RUN npm run build
+
+CMD npm start
+```
+
+### With Custom Dependencies
+
+```dockerfile
+FROM apify/actor-node-playwright-chrome:20
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    imagemagick \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY package*.json ./
+RUN npm install --production
+
+COPY . ./
+RUN npm run build
+
+CMD npm start
+```
+
+## Timeout Configuration
+
+```json
+{
+    "defaultRunOptions": {
+        "timeoutSecs": 3600
+    }
+}
+```
+
+Timeout recommendations:
+- **300s (5 min)**: Quick scrapers
+- **1800s (30 min)**: Medium datasets
+- **3600s (1 hour)**: Large datasets
+- **7200s (2 hours)**: Very large datasets
+- **86400s (24 hours)**: Maximum allowed
+
+## Best Practices
+
+### ✅ DO:
+- Set appropriate memory for task
+- Use semantic versioning
+- Configure dataset views
+- Set reasonable timeouts
+- Document environment variables
+- Use build tags for staging
+
+### ❌ DON'T:
+- Don't set too little memory (causes OOM)
+- Don't set excessive timeouts
+- Don't hardcode secrets in config
+- Don't skip version numbers
+- Don't use `latest` for dependencies
+
+## Common Patterns
+
+### Low Memory (HTTP Only)
+
+```json
+{
+    "defaultRunOptions": {
+        "memoryMbytes": 512,
+        "timeoutSecs": 1800
+    }
+}
+```
+
+### Standard Playwright
+
+```json
+{
+    "defaultRunOptions": {
+        "memoryMbytes": 2048,
+        "timeoutSecs": 3600
+    }
+}
+```
+
+### High Performance
+
+```json
+{
+    "defaultRunOptions": {
+        "memoryMbytes": 4096,
+        "timeoutSecs": 7200
+    },
+    "environmentVariables": {
+        "MAX_CONCURRENCY": "10"
+    }
+}
+```
+
+### API Scraping
+
+```json
+{
+    "defaultRunOptions": {
+        "memoryMbytes": 1024,
+        "timeoutSecs": 1800
+    }
+}
+```
+
+## Resources
+
+- [actor.json Docs](https://docs.apify.com/platform/actors/development/actor-definition/actor-json)
+- [Dataset Schema](https://docs.apify.com/platform/actors/development/actor-definition/dataset-schema)
+- [Docker Images](https://docs.apify.com/platform/actors/development/actor-definition/dockerfile)
