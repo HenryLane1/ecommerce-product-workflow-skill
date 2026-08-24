@@ -1,1 +1,427 @@
-IyBBcGlmeSBDTEkgV29ya2Zsb3cKCiMjIE92ZXJ2aWV3CgoqKkNSSVRJQ0FMOiBBbHdheXMgdXNlIGBhcGlmeSBjcmVhdGVgIGNvbW1hbmQgd2hlbiBzdGFydGluZyBhIG5ldyBBY3Rvci4qKgoKVGhpcyBpcyBUSEUgcmVjb21tZW5kZWQgYW5kIE9OTFkgcHJvcGVyIHdheSB0byBpbml0aWFsaXplIEFwaWZ5IEFjdG9ycy4KCiMjIFdoeSBhcGlmeSBjcmVhdGUgaXMgQ1JJVElDQUwKCiMjIyDinIUgQXV0by1HZW5lcmF0ZWQgRmlsZXMKClRoZSBgYXBpZnkgY3JlYXRlYCBjb21tYW5kIGdlbmVyYXRlczoKCi0g4pyFIGBwYWNrYWdlLmpzb25gIHdpdGggY29ycmVjdCBkZXBlbmRlbmNpZXMgYW5kIHNjcmlwdHMKLSDinIUgYC5hY3Rvci9hY3Rvci5qc29uYCB3aXRoIHByb3BlciBzdHJ1Y3R1cmUKLSDinIUgYC5hY3Rvci9pbnB1dF9zY2hlbWEuanNvbmAgdGVtcGxhdGUKLSDinIUgYERvY2tlcmZpbGVgIHdpdGggY29ycmVjdCBiYXNlIGltYWdlCi0g4pyFIGB0c2NvbmZpZy5qc29uYCAoZm9yIFR5cGVTY3JpcHQgdGVtcGxhdGVzKQotIOKchSBgZXNsaW50LmNvbmZpZy5qc2AgZm9yIGNvZGUgcXVhbGl0eQotIOKchSBgLmdpdGlnbm9yZWAgd2l0aCBBcGlmeS1zcGVjaWZpYyBlbnRyaWVzCi0g4pyFIGBzdG9yYWdlL2AgZGlyZWN0b3J5IHN0cnVjdHVyZQotIOKchSBgUkVBRE1FLm1kYCB0ZW1wbGF0ZQotIOKchSBFeGFtcGxlIHNvdXJjZSBjb2RlCgojIyMg4pyFIFByb3BlciBUb29saW5nIFNldHVwCgpBdXRvbWF0aWNhbGx5IGNvbmZpZ3VyZXM6CgotIEVTTGludCBmb3IgY29kZSBxdWFsaXR5Ci0gVHlwZVNjcmlwdCBjb21waWxhdGlvbiAoZm9yIFRTIHRlbXBsYXRlcykKLSBucG0gc2NyaXB0cyAoYHN0YXJ0YCwgYGJ1aWxkYCwgYHRlc3RgKQotIEFwaWZ5IFNESyB3aXRoIGNvcnJlY3QgdmVyc2lvbgotIENyYXdsZWUgd2l0aCBjb3JyZWN0IHZlcnNpb24KCiMjIyDinYwgV2hhdCBIYXBwZW5zIFdpdGhvdXQgYXBpZnkgY3JlYXRlCgpNYW51YWwgc2V0dXAgbGVhZHMgdG86CgotIOKdjCBNaXNzaW5nIEVTTGludCBjb25maWd1cmF0aW9uCi0g4p2MIEluY29ycmVjdCBkZXBlbmRlbmNpZXMvdmVyc2lvbnMKLSDinYwgUG9vciBwcm9qZWN0IHN0cnVjdHVyZQotIOKdjCBNaXNzaW5nIGAuYWN0b3IvYCBkaXJlY3RvcnkKLSDinYwgSW5jb3JyZWN0IERvY2tlcmZpbGUKLSDinYwgTW9yZSBkZWJ1Z2dpbmcgdGltZQotIOKdjCBEZXBsb3ltZW50IGZhaWx1cmVzCgojIyBTdGVwLWJ5LVN0ZXAgV29ya2Zsb3cKCiMjIyBTdGVwIDE6IEluc3RhbGwgQXBpZnkgQ0xJCgpgYGBiYXNoCiMgQ2hlY2sgaWYgYWxyZWFkeSBpbnN0YWxsZWQKYXBpZnkgLS12ZXJzaW9uCgojIElmIG5vdCBpbnN0YWxsZWQKbnBtIGluc3RhbGwgLWcgYXBpZnktY2xpCgojIFZlcmlmeSBpbnN0YWxsYXRpb24KYXBpZnkgLS12ZXJzaW9uCmBgYAoKIyMjIFN0ZXAgMjogTG9naW4gdG8gQXBpZnkKCmBgYGJhc2gKIyBMb2dpbiAocmVxdWlyZWQgZm9yIHB1c2gvZGVwbG95bWVudCkKYXBpZnkgbG9naW4KCiMgVGhpcyBvcGVucyBicm93c2VyIGZvciBhdXRoZW50aWNhdGlvbgpgYGAKCiMjIyBTdGVwIDM6IENyZWF0ZSBOZXcgQWN0b3IKCmBgYGJhc2gKIyBDcmVhdGUgYWN0b3IKYXBpZnkgY3JlYXRlIG15LXNjcmFwZXIKCiMgWW91J2xsIGJlIHByb21wdGVkOgojIOKGkiBXaGF0IHR5cGUgb2YgQWN0b3IgZG8geW91IHdhbnQgdG8gY3JlYXRlPwpgYGAKCiMjIyBTdGVwIDQ6IENob29zZSBUZW1wbGF0ZQoKKipDaG9vc2UgYmFzZWQgb24gc2l0ZSB0eXBlKiogKHNlZSBgLi4vd29ya2Zsb3dzL3Byb2R1Y3Rpb25pemF0aW9uLm1kYCBmb3IgZGVjaXNpb24gdHJlZSk6CgpBdmFpbGFibGUgVHlwZVNjcmlwdCB0ZW1wbGF0ZXM6Cgp8IFRlbXBsYXRlIHwgQmVzdCBGb3IgfCBTcGVlZCB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS18LS0tLS0tLXwKfCAqKnByb2plY3RfY2hlZXJpb19jcmF3bGVyX3RzKiogfCBTdGF0aWMgSFRNTC9TU1IgKFJFQ09NTUVOREVEKSB8IH4xMHggZmFzdGVyIHwKfCAqKnByb2plY3RfcGxheXdyaWdodF9jcmF3bGVyX3RzKiogfCBKYXZhU2NyaXB0LWhlYXZ5IHNpdGVzIHwgU3RhbmRhcmQgfAp8ICoqcHJvamVjdF9wbGF5d3JpZ2h0X2NhbW91Zm94X2NyYXdsZXJfdHMqKiB8IEFudGktYm90IGNoYWxsZW5nZXMgfCBTdGFuZGFyZCB8CgoqKlNlbGVjdGlvbiBndWlkZSoqOgotIFN0YXRpYyBIVE1MIOKGkiBgcHJvamVjdF9jaGVlcmlvX2NyYXdsZXJfdHNgIChmYXN0ZXN0KQotIEphdmFTY3JpcHQvU1BBIOKGkiBgcHJvamVjdF9wbGF5d3JpZ2h0X2NyYXdsZXJfdHNgCi0gQmVpbmcgYmxvY2tlZCDihpIgYHByb2plY3RfcGxheXdyaWdodF9jYW1vdWZveF9jcmF3bGVyX3RzYAoKYGBgCj8gV2hhdCB0eXBlIG9mIEFjdG9yIGRvIHlvdSB3YW50IHRvIGNyZWF0ZT8K4p2vIHByb2plY3RfY2hlZXJpb19jcmF3bGVyX3RzIChUeXBlU2NyaXB0ICsgQ2hlZXJpbykKICBwcm9qZWN0X3BsYXl3cmlnaHRfY3Jhd2xlcl90cyAoVHlwZVNjcmlwdCArIFBsYXl3cmlnaHQpCiAgcHJvamVjdF9wbGF5d3JpZ2h0X2NhbW91Zm94X2NyYXdsZXJfdHMgKFR5cGVTY3JpcHQgKyBDYW1vdWZveCkKICBwcm9qZWN0X3B1cHBldGVlcl9jcmF3bGVyX3RzIChUeXBlU2NyaXB0ICsgUHVwcGV0ZWVyKQpgYGAKCiMjIyBTdGVwIDU6IE5hdmlnYXRlIHRvIFByb2plY3QKCmBgYGJhc2gKY2QgbXktc2NyYXBlcgoKIyBWaWV3IGdlbmVyYXRlZCBzdHJ1Y3R1cmUKbHMgLWxhCmBgYAoKIyMjIFN0ZXAgNjogUmV2aWV3IEdlbmVyYXRlZCBGaWxlcwoKYGBgCm15LXNjcmFwZXIvCuKUnOKUgOKUgCAuYWN0b3IvCuKUgiAgIOKUnOKUgOKUgCBhY3Rvci5qc29uICAgICAgICAgICAgICAgICDihpAgQWN0b3IgY29uZmlndXJhdGlvbgrilIIgICDilJTilIDilIAgaW5wdXRfc2NoZW1hLmpzb24gICAgICAgICAg4oaQIElucHV0IHZhbGlkYXRpb24K4pSc4pSA4pSAIHNyYy8K4pSCICAg4pSU4pSA4pSAIG1haW4udHMgICAgICAgICAgICAgICAgICAgIOKGkCBZb3VyIGNvZGUgaGVyZQrilJzilIDilIAgc3RvcmFnZS8gICAgICAgICAgICAgICAgICAgICAgIOKGkCBMb2NhbCBzdG9yYWdlCuKUnOKUgOKUgCAuZG9ja2VyaWdub3JlCuKUnOKUgOKUgCAuZ2l0aWdub3JlCuKUnOKUgOKUgCAucHJldHRpZXJyYwrilJzilIDilIAgQUdFTlRTLm1kICAgICAgICAgICAgICAgICAgICAgIOKGkCBBSSBhZ2VudCBndWlkYW5jZSAoQXBpZnktbWFpbnRhaW5lZCkK4pSc4pSA4pSAIERvY2tlcmZpbGUgICAgICAgICAgICAgICAgICAgICDihpAgUHJvZHVjdGlvbiBidWlsZArilJzilIDilIAgZXNsaW50LmNvbmZpZy5qcyAgICAgICAgICAgICAgIOKGkCBDb2RlIHF1YWxpdHkK4pSc4pSA4pSAIHBhY2thZ2UuanNvbiAgICAgICAgICAgICAgICAgICDihpAgRGVwZW5kZW5jaWVzICYgc2NyaXB0cwrilJzilIDilIAgdHNjb25maWcuanNvbiAgICAgICAgICAgICAgICAgIOKGkCBUeXBlU2NyaXB0IGNvbmZpZwrilJTilIDilIAgUkVBRE1FLm1kICAgICAgICAgICAgICAgICAgICAgIOKGkCBEb2N1bWVudGF0aW9uCmBgYAoKKipJbXBvcnRhbnQqKjogVGhlIHRlbXBsYXRlIGluY2x1ZGVzIGBBR0VOVFMubWRgLCBvZmZpY2lhbCBBcGlmeSBkb2N1bWVudGF0aW9uIGZvciBBSSBhZ2VudHMgd29ya2luZyB3aXRoIEFjdG9ycy4gVGhpcyBmaWxlIHByb3ZpZGVzOgotIERvL0Rvbid0IHBhdHRlcm5zIGZvciBBY3RvciBkZXZlbG9wbWVudAotIElucHV0L291dHB1dCBzY2hlbWEgZGV0YWlsZWQgc3BlY2lmaWNhdGlvbnMKLSBEYXRhc2V0IGFuZCBrZXktdmFsdWUgc3RvcmUgc2NoZW1hIHBhdHRlcm5zCi0gU2FmZXR5IGFuZCBwZXJtaXNzaW9uIGd1aWRlbGluZXMKLSBBcGlmeSBTREsgYmVzdCBwcmFjdGljZXMKClNlZSBgYWdlbnRzLW1kLWd1aWRlLm1kYCBpbiB0aGlzIGRpcmVjdG9yeSBmb3IgaG93IEFHRU5UUy5tZCBjb21wbGVtZW50cyB0aGlzIHNraWxsLgoKIyMjIFN0ZXAgNzogSW5zdGFsbCBEZXBlbmRlbmNpZXMKCmBgYGJhc2gKbnBtIGluc3RhbGwKYGBgCgojIyMgU3RlcCA4OiBEZXZlbG9wIFlvdXIgQWN0b3IKCkVkaXQgYHNyYy9tYWluLnRzYDoKCmBgYHR5cGVzY3JpcHQKaW1wb3J0IHsgQWN0b3IgfSBmcm9tICdhcGlmeSc7CmltcG9ydCB7IFBsYXl3cmlnaHRDcmF3bGVyLCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7Cgphd2FpdCBBY3Rvci5tYWluKGFzeW5jICgpID0+IHsKICAgIGNvbnN0IGlucHV0ID0gYXdhaXQgQWN0b3IuZ2V0SW5wdXQoKTsKCiAgICBjb25zdCBjcmF3bGVyID0gbmV3IFBsYXl3cmlnaHRDcmF3bGVyKHsKICAgICAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7IHBhZ2UsIHJlcXVlc3QgfSkgewogICAgICAgICAgICAvLyBZb3VyIHNjcmFwaW5nIGxvZ2ljIGhlcmUKICAgICAgICB9LAogICAgfSk7CgogICAgYXdhaXQgY3Jhd2xlci5ydW4oaW5wdXQuc3RhcnRVcmxzKTsKfSk7CmBgYAoKIyMjIFN0ZXAgOTogVGVzdCBMb2NhbGx5CgpgYGBiYXNoCiMgUnVuIGFjdG9yIGxvY2FsbHkKYXBpZnkgcnVuCgojIFdpdGggc3BlY2lmaWMgaW5wdXQKYXBpZnkgcnVuIC0taW5wdXQ9J3sic3RhcnRVcmxzIjpbeyJ1cmwiOiJodHRwczovL2V4YW1wbGUuY29tIn1dfScKCiMgRGVidWcgbW9kZQpERUJVRz1jcmF3bGVlOiogYXBpZnkgcnVuCmBgYAoKIyMjIFN0ZXAgMTA6IEJ1aWxkIChUeXBlU2NyaXB0IE9ubHkpCgpgYGBiYXNoCiMgQ29tcGlsZSBUeXBlU2NyaXB0Cm5wbSBydW4gYnVpbGQKCiMgT3V0cHV0IGluIGRpc3QvIGRpcmVjdG9yeQpgYGAKCiMjIyBTdGVwIDExOiBQdXNoIHRvIEFwaWZ5IFBsYXRmb3JtCgpgYGBiYXNoCiMgRGVwbG95IHRvIEFwaWZ5CmFwaWZ5IHB1c2gKCiMgV2l0aCBzcGVjaWZpYyBidWlsZCB0YWcKYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBiZXRhCgojIEZvcmNlIHJlYnVpbGQKYXBpZnkgcHVzaCAtLWZvcmNlCmBgYAoKIyMjIFN0ZXAgMTI6IENhbGwgWW91ciBBY3RvcgoKYGBgYmFzaAojIFJ1biBhY3RvciBvbiBBcGlmeSBwbGF0Zm9ybQphcGlmeSBjYWxsIG15LXNjcmFwZXIKCiMgV2l0aCBpbnB1dAphcGlmeSBjYWxsIG15LXNjcmFwZXIgLS1pbnB1dD0neyJzdGFydFVybHMiOlt7InVybCI6Imh0dHBzOi8vZXhhbXBsZS5jb20ifV19JwpgYGAKCiMjIENvbXBsZXRlIENMSSBDb21tYW5kIFJlZmVyZW5jZQoKIyMjIFByb2plY3QgTWFuYWdlbWVudAoKYGBgYmFzaAojIENyZWF0ZSBuZXcgYWN0b3IKYXBpZnkgY3JlYXRlIFtuYW1lXQoKIyBJbml0aWFsaXplIGluIGV4aXN0aW5nIGRpcmVjdG9yeQphcGlmeSBpbml0CgojIExvZ2luL2xvZ291dAphcGlmeSBsb2dpbgphcGlmeSBsb2dvdXQKCiMgQ2hlY2sgbG9naW4gc3RhdHVzCmFwaWZ5IGluZm8KYGBgCgojIyMgRGV2ZWxvcG1lbnQKCmBgYGJhc2gKIyBSdW4gbG9jYWxseQphcGlmeSBydW4KYXBpZnkgcnVuIC0tcHVyZ2UgICAgICAgICAgICMgQ2xlYXIgc3RvcmFnZSBmaXJzdAphcGlmeSBydW4gLS1pbnB1dC1maWxlPWlucHV0Lmpzb24KCiMgUnVuIHNwZWNpZmljIGFjdG9yCmFwaWZ5IGNhbGwgW2FjdG9yLWlkXQphcGlmeSBjYWxsIFthY3Rvci1pZF0gLS1idWlsZD1iZXRhCmBgYAoKIyMjIERlcGxveW1lbnQKCmBgYGJhc2gKIyBQdXNoIHRvIHBsYXRmb3JtCmFwaWZ5IHB1c2gKYXBpZnkgcHVzaCAtLWJ1aWxkLXRhZyBbdGFnXQphcGlmeSBwdXNoIC0tdmVyc2lvbi1udW1iZXIgW3ZlcnNpb25dCmFwaWZ5IHB1c2ggLS13YWl0LWZvci1maW5pc2gKCiMgUHVsbCBhY3RvciBmcm9tIHBsYXRmb3JtCmFwaWZ5IHB1bGwgW2FjdG9yLWlkXQpgYGAKCiMjIyBTdG9yYWdlIE1hbmFnZW1lbnQKCmBgYGJhc2gKIyBNYW5hZ2UgZGF0YXNldHMKYXBpZnkgZGF0YXNldCBscwphcGlmeSBkYXRhc2V0IGdldCBbaWRdCgojIE1hbmFnZSBrZXktdmFsdWUgc3RvcmVzCmFwaWZ5IGt2LXN0b3JlIGxzCmFwaWZ5IGt2LXN0b3JlIGdldCBbaWRdCmBgYAoKIyMgbnBtIFNjcmlwdHMgKEdlbmVyYXRlZCBieSBhcGlmeSBjcmVhdGUpCgpUaGUgQ0xJIGdlbmVyYXRlcyB0aGVzZSB1c2VmdWwgc2NyaXB0czoKCmBgYGpzb24KewogICAgInNjcmlwdHMiOiB7CiAgICAgICAgInN0YXJ0IjogIm5wbSBydW4gYnVpbGQgJiYgbm9kZSBkaXN0L21haW4uanMiLAogICAgICAgICJidWlsZCI6ICJ0c2MiLAogICAgICAgICJ0ZXN0IjogImVjaG8gXCJObyB0ZXN0cyB5ZXRcIiIsCiAgICAgICAgImxpbnQiOiAiZXNsaW50IHNyYyIsCiAgICAgICAgImxpbnQ6Zml4IjogImVzbGludCBzcmMgLS1maXgiCiAgICB9Cn0KYGBgCgpVc2FnZToKCmBgYGJhc2gKbnBtIHN0YXJ0ICAgICAgICAgICMgQnVpbGQgYW5kIHJ1bgpucG0gcnVuIGJ1aWxkICAgICAgIyBDb21waWxlIFR5cGVTY3JpcHQKbnBtIHRlc3QgICAgICAgICAgICMgUnVuIHRlc3RzCm5wbSBydW4gbGludCAgICAgICAjIENoZWNrIGNvZGUgcXVhbGl0eQpucG0gcnVuIGxpbnQ6Zml4ICAgIyBBdXRvLWZpeCBsaW50aW5nIGlzc3VlcwpgYGAKCiMjIERldmVsb3BtZW50IFdvcmtmbG93CgojIyMgVHlwaWNhbCBEZXZlbG9wbWVudCBDeWNsZQoKYGBgYmFzaAojIDEuIENyZWF0ZSBhY3RvcgphcGlmeSBjcmVhdGUgbXktc2NyYXBlcgpjZCBteS1zY3JhcGVyCgojIDIuIERldmVsb3AKIyBFZGl0IHNyYy9tYWluLnRzCgojIDMuIFRlc3QgbG9jYWxseQphcGlmeSBydW4KCiMgNC4gRml4IGlzc3VlcywgcmVwZWF0IHN0ZXAgMwoKIyA1LiBMaW50IGNvZGUKbnBtIHJ1biBsaW50OmZpeAoKIyA2LiBQdXNoIHRvIHBsYXRmb3JtCmFwaWZ5IHB1c2gKCiMgNy4gVGVzdCBvbiBwbGF0Zm9ybQphcGlmeSBjYWxsIG15LXNjcmFwZXIKCiMgOC4gSXRlcmF0ZQojIEVkaXQgY29kZSwgcmVwZWF0IGZyb20gc3RlcCAzCmBgYAoKIyMgQ29tbW9uIElzc3VlcwoKIyMjIElzc3VlOiAiQ29tbWFuZCBub3QgZm91bmQ6IGFwaWZ5IgoKKipTb2x1dGlvbioqOgpgYGBiYXNoCm5wbSBpbnN0YWxsIC1nIGFwaWZ5LWNsaQpgYGAKCiMjIyBJc3N1ZTogIk5vdCBsb2dnZWQgaW4iCgoqKlNvbHV0aW9uKio6CmBgYGJhc2gKYXBpZnkgbG9naW4KYGBgCgojIyMgSXNzdWU6IEJ1aWxkIGZhaWxzCgoqKlNvbHV0aW9uKio6CmBgYGJhc2gKIyBDaGVjayBUeXBlU2NyaXB0IGVycm9ycwpucG0gcnVuIGJ1aWxkCgojIEZpeCBlcnJvcnMgaW4gc3JjLwojIFRoZW4gdHJ5IGFnYWluOgphcGlmeSBwdXNoCmBgYAoKIyMgQW50aS1QYXR0ZXJuOiBNYW51YWwgQ3JlYXRpb24KCiMjIyDinYwgRE9OJ1QgRG8gVGhpcwoKYGBgYmFzaAojIEJBRDogTWFudWFsIHNldHVwCm1rZGlyIG15LWFjdG9yCmNkIG15LWFjdG9yCm5wbSBpbml0IC15Cm5wbSBpbnN0YWxsIGFwaWZ5IGNyYXdsZWUKIyAuLi4gbWlzc2luZyB0b25zIG9mIGNvbmZpZ3VyYXRpb24KYGBgCgoqKldoeSB0aGlzIGlzIHdyb25nKio6Ci0gTWlzc2luZyBgLmFjdG9yL2AgZGlyZWN0b3J5Ci0gTm8gaW5wdXQgc2NoZW1hCi0gSW5jb3JyZWN0IERvY2tlcmZpbGUKLSBObyBFU0xpbnQgY29uZmlnCi0gTm8gVHlwZVNjcmlwdCBzZXR1cAotIE1pc3NpbmcgbnBtIHNjcmlwdHMKLSBXaWxsIGZhaWwgZGVwbG95bWVudAoKIyMjIOKchSBETyBUaGlzIEluc3RlYWQKCmBgYGJhc2gKIyBHT09EOiBVc2UgQ0xJCmFwaWZ5IGNyZWF0ZSBteS1hY3RvcgpjZCBteS1hY3RvcgojIEV2ZXJ5dGhpbmcgY29uZmlndXJlZCBjb3JyZWN0bHkhCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86CgotICoqQWx3YXlzIHVzZSBgYXBpZnkgY3JlYXRlYCoqIChub3QgbWFudWFsIHNldHVwKQotICoqQ2hvb3NlIGFwcHJvcHJpYXRlIHRlbXBsYXRlKiogYmFzZWQgb24gc2l0ZSB0eXBlIChzZWUgZGVjaXNpb24gdHJlZSBpbiBwcm9kdWN0aW9uaXphdGlvbiBndWlkZSkKLSAqKlRlc3QgbG9jYWxseSBmaXJzdCoqIHdpdGggYGFwaWZ5IHJ1bmAKLSAqKlVzZSBidWlsZCB0YWdzKiogZm9yIHN0YWdpbmcgKGAtLWJ1aWxkLXRhZyBiZXRhYCkKLSAqKktlZXAgQ0xJIHVwZGF0ZWQqKiAoYG5wbSB1cGRhdGUgLWcgYXBpZnktY2xpYCkKLSAqKlVzZSBgLmVudmAgZmlsZSoqIGZvciBsb2NhbCBzZWNyZXRzCi0gKipDb21taXQgdG8gZ2l0KiogKGV4Y2VwdCBzdG9yYWdlLywgZGlzdC8pCgojIyMg4p2MIERPTidUOgoKLSAqKkNyZWF0ZSBhY3RvcnMgbWFudWFsbHkqKiAtIHVzZSBDTEkhCi0gKipTa2lwIGxvY2FsIHRlc3RpbmcqKiAtIHRlc3QgYmVmb3JlIHB1c2gKLSAqKkhhcmRjb2RlIHNlY3JldHMqKiAtIHVzZSBlbnZpcm9ubWVudCB2YXJpYWJsZXMKLSAqKlB1c2ggd2l0aG91dCBidWlsZGluZyoqIChUeXBlU2NyaXB0IGFjdG9ycykKLSAqKklnbm9yZSBsaW50aW5nIGVycm9ycyoqIC0gZml4IHRoZW0KLSAqKlNraXAgdmVyc2lvbiB0YWdzKiogLSB1c2Ugc2VtYW50aWMgdmVyc2lvbmluZwoKIyMgUmVzb3VyY2VzCgotIFtBcGlmeSBDTEkgRG9jc10oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9jbGkpCi0gW0NMSSBSZWZlcmVuY2VdKGh0dHBzOi8vZG9jcy5hcGlmeS5jb20vY2xpL2RvY3MvcmVmZXJlbmNlKQotIFtBY3RvciBEZXZlbG9wbWVudF0oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9wbGF0Zm9ybS9hY3RvcnMpCgojIyBTdW1tYXJ5CgoqKlRoZSBBcGlmeSBDTEkgaXMgVEhFIHdheSB0byBjcmVhdGUgQWN0b3JzKioKCioqS2V5IGNvbW1hbmRzKio6CjEuIGBhcGlmeSBjcmVhdGVgIC0gQ3JlYXRlIG5ldyBhY3RvciAoQ1JJVElDQUwpCjIuIGBhcGlmeSBydW5gIC0gVGVzdCBsb2NhbGx5CjMuIGBhcGlmeSBwdXNoYCAtIERlcGxveSB0byBwbGF0Zm9ybQo0LiBgYXBpZnkgY2FsbGAgLSBSdW4gb24gcGxhdGZvcm0KCioqUmVtZW1iZXIqKjogQWx3YXlzIHVzZSBgYXBpZnkgY3JlYXRlYCwgbmV2ZXIgbWFudWFsIHNldHVwIQo=
+# Apify CLI Workflow
+
+## Overview
+
+**CRITICAL: Always use `apify create` command when starting a new Actor.**
+
+This is THE recommended and ONLY proper way to initialize Apify Actors.
+
+## Why apify create is CRITICAL
+
+### ✅ Auto-Generated Files
+
+The `apify create` command generates:
+
+- ✅ `package.json` with correct dependencies and scripts
+- ✅ `.actor/actor.json` with proper structure
+- ✅ `.actor/input_schema.json` template
+- ✅ `Dockerfile` with correct base image
+- ✅ `tsconfig.json` (for TypeScript templates)
+- ✅ `eslint.config.js` for code quality
+- ✅ `.gitignore` with Apify-specific entries
+- ✅ `storage/` directory structure
+- ✅ `README.md` template
+- ✅ Example source code
+
+### ✅ Proper Tooling Setup
+
+Automatically configures:
+
+- ESLint for code quality
+- TypeScript compilation (for TS templates)
+- npm scripts (`start`, `build`, `test`)
+- Apify SDK with correct version
+- Crawlee with correct version
+
+### ❌ What Happens Without apify create
+
+Manual setup leads to:
+
+- ❌ Missing ESLint configuration
+- ❌ Incorrect dependencies/versions
+- ❌ Poor project structure
+- ❌ Missing `.actor/` directory
+- ❌ Incorrect Dockerfile
+- ❌ More debugging time
+- ❌ Deployment failures
+
+## Step-by-Step Workflow
+
+### Step 1: Install Apify CLI
+
+```bash
+# Check if already installed
+apify --version
+
+# If not installed
+npm install -g apify-cli
+
+# Verify installation
+apify --version
+```
+
+### Step 2: Login to Apify
+
+```bash
+# Login (required for push/deployment)
+apify login
+
+# This opens browser for authentication
+```
+
+### Step 3: Create New Actor
+
+```bash
+# Create actor
+apify create my-scraper
+
+# You'll be prompted:
+# → What type of Actor do you want to create?
+```
+
+### Step 4: Choose Template
+
+**Choose based on site type** (see `../workflows/productionization.md` for decision tree):
+
+Available TypeScript templates:
+
+| Template | Best For | Speed |
+|----------|----------|-------|
+| **project_cheerio_crawler_ts** | Static HTML/SSR (RECOMMENDED) | ~10x faster |
+| **project_playwright_crawler_ts** | JavaScript-heavy sites | Standard |
+| **project_playwright_camoufox_crawler_ts** | Anti-bot challenges | Standard |
+
+**Selection guide**:
+- Static HTML → `project_cheerio_crawler_ts` (fastest)
+- JavaScript/SPA → `project_playwright_crawler_ts`
+- Being blocked → `project_playwright_camoufox_crawler_ts`
+
+```
+? What type of Actor do you want to create?
+❯ project_cheerio_crawler_ts (TypeScript + Cheerio)
+  project_playwright_crawler_ts (TypeScript + Playwright)
+  project_playwright_camoufox_crawler_ts (TypeScript + Camoufox)
+  project_puppeteer_crawler_ts (TypeScript + Puppeteer)
+```
+
+### Step 5: Navigate to Project
+
+```bash
+cd my-scraper
+
+# View generated structure
+ls -la
+```
+
+### Step 6: Review Generated Files
+
+```
+my-scraper/
+├── .actor/
+│   ├── actor.json                 ← Actor configuration
+│   └── input_schema.json          ← Input validation
+├── src/
+│   └── main.ts                    ← Your code here
+├── storage/                       ← Local storage
+├── .dockerignore
+├── .gitignore
+├── .prettierrc
+├── AGENTS.md                      ← AI agent guidance (Apify-maintained)
+├── Dockerfile                     ← Production build
+├── eslint.config.js               ← Code quality
+├── package.json                   ← Dependencies & scripts
+├── tsconfig.json                  ← TypeScript config
+└── README.md                      ← Documentation
+```
+
+**Important**: The template includes `AGENTS.md`, official Apify documentation for AI agents working with Actors. This file provides:
+- Do/Don't patterns for Actor development
+- Input/output schema detailed specifications
+- Dataset and key-value store schema patterns
+- Safety and permission guidelines
+- Apify SDK best practices
+
+See `agents-md-guide.md` in this directory for how AGENTS.md complements this skill.
+
+### Step 7: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 8: Develop Your Actor
+
+Edit `src/main.ts`:
+
+```typescript
+import { Actor } from 'apify';
+import { PlaywrightCrawler, Dataset } from 'crawlee';
+
+await Actor.main(async () => {
+    const input = await Actor.getInput();
+
+    const crawler = new PlaywrightCrawler({
+        async requestHandler({ page, request }) {
+            // Your scraping logic here
+        },
+    });
+
+    await crawler.run(input.startUrls);
+});
+```
+
+### Step 9: Test Locally
+
+```bash
+# Run actor locally
+apify run
+
+# With specific input
+apify run --input='{"startUrls":[{"url":"https://example.com"}]}'
+
+# Debug mode
+DEBUG=crawlee:* apify run
+```
+
+### Step 10: Build (TypeScript Only)
+
+```bash
+# Compile TypeScript
+npm run build
+
+# Output in dist/ directory
+```
+
+### Step 11: Push to Apify Platform
+
+```bash
+# Deploy to Apify
+apify push
+
+# With specific build tag
+apify push --build-tag beta
+
+# Force rebuild
+apify push --force
+```
+
+### Step 12: Call Your Actor
+
+```bash
+# Run actor on Apify platform
+apify call my-scraper
+
+# With input
+apify call my-scraper --input='{"startUrls":[{"url":"https://example.com"}]}'
+```
+
+## Complete CLI Command Reference
+
+### Project Management
+
+```bash
+# Create new actor
+apify create [name]
+
+# Initialize in existing directory
+apify init
+
+# Login/logout
+apify login
+apify logout
+
+# Check login status
+apify info
+```
+
+### Development
+
+```bash
+# Run locally
+apify run
+apify run --purge           # Clear storage first
+apify run --input-file=input.json
+
+# Run specific actor
+apify call [actor-id]
+apify call [actor-id] --build=beta
+```
+
+### Deployment
+
+```bash
+# Push to platform
+apify push
+apify push --build-tag [tag]
+apify push --version-number [version]
+apify push --wait-for-finish
+
+# Pull actor from platform
+apify pull [actor-id]
+```
+
+### Storage Management
+
+```bash
+# Manage datasets
+apify dataset ls
+apify dataset get [id]
+
+# Manage key-value stores
+apify kv-store ls
+apify kv-store get [id]
+```
+
+## npm Scripts (Generated by apify create)
+
+The CLI generates these useful scripts:
+
+```json
+{
+    "scripts": {
+        "start": "npm run build && node dist/main.js",
+        "build": "tsc",
+        "test": "echo \"No tests yet\"",
+        "lint": "eslint src",
+        "lint:fix": "eslint src --fix"
+    }
+}
+```
+
+Usage:
+
+```bash
+npm start          # Build and run
+npm run build      # Compile TypeScript
+npm test           # Run tests
+npm run lint       # Check code quality
+npm run lint:fix   # Auto-fix linting issues
+```
+
+## Development Workflow
+
+### Typical Development Cycle
+
+```bash
+# 1. Create actor
+apify create my-scraper
+cd my-scraper
+
+# 2. Develop
+# Edit src/main.ts
+
+# 3. Test locally
+apify run
+
+# 4. Fix issues, repeat step 3
+
+# 5. Lint code
+npm run lint:fix
+
+# 6. Push to platform
+apify push
+
+# 7. Test on platform
+apify call my-scraper
+
+# 8. Iterate
+# Edit code, repeat from step 3
+```
+
+## Common Issues
+
+### Issue: "Command not found: apify"
+
+**Solution**:
+```bash
+npm install -g apify-cli
+```
+
+### Issue: "Not logged in"
+
+**Solution**:
+```bash
+apify login
+```
+
+### Issue: Build fails
+
+**Solution**:
+```bash
+# Check TypeScript errors
+npm run build
+
+# Fix errors in src/
+# Then try again:
+apify push
+```
+
+## Anti-Pattern: Manual Creation
+
+### ❌ DON'T Do This
+
+```bash
+# BAD: Manual setup
+mkdir my-actor
+cd my-actor
+npm init -y
+npm install apify crawlee
+# ... missing tons of configuration
+```
+
+**Why this is wrong**:
+- Missing `.actor/` directory
+- No input schema
+- Incorrect Dockerfile
+- No ESLint config
+- No TypeScript setup
+- Missing npm scripts
+- Will fail deployment
+
+### ✅ DO This Instead
+
+```bash
+# GOOD: Use CLI
+apify create my-actor
+cd my-actor
+# Everything configured correctly!
+```
+
+## Best Practices
+
+### ✅ DO:
+
+- **Always use `apify create`** (not manual setup)
+- **Choose appropriate template** based on site type (see decision tree in productionization guide)
+- **Test locally first** with `apify run`
+- **Use build tags** for staging (`--build-tag beta`)
+- **Keep CLI updated** (`npm update -g apify-cli`)
+- **Use `.env` file** for local secrets
+- **Commit to git** (except storage/, dist/)
+
+### ❌ DON'T:
+
+- **Create actors manually** - use CLI!
+- **Skip local testing** - test before push
+- **Hardcode secrets** - use environment variables
+- **Push without building** (TypeScript actors)
+- **Ignore linting errors** - fix them
+- **Skip version tags** - use semantic versioning
+
+## Resources
+
+- [Apify CLI Docs](https://docs.apify.com/cli)
+- [CLI Reference](https://docs.apify.com/cli/docs/reference)
+- [Actor Development](https://docs.apify.com/platform/actors)
+
+## Summary
+
+**The Apify CLI is THE way to create Actors**
+
+**Key commands**:
+1. `apify create` - Create new actor (CRITICAL)
+2. `apify run` - Test locally
+3. `apify push` - Deploy to platform
+4. `apify call` - Run on platform
+
+**Remember**: Always use `apify create`, never manual setup!
