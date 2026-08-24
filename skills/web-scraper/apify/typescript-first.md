@@ -1,1 +1,364 @@
-IyBUeXBlU2NyaXB0LUZpcnN0IEFjdG9yIERldmVsb3BtZW50CgojIyBPdmVydmlldwoKRm9yIHByb2R1Y3Rpb24gQXBpZnkgQWN0b3JzLCAqKlR5cGVTY3JpcHQgaXMgU1RST05HTFkgUkVDT01NRU5ERUQqKiBvdmVyIEphdmFTY3JpcHQuCgojIyBXaHkgVHlwZVNjcmlwdD8KCiMjIyAxLiBUeXBlIFNhZmV0eQoKKipDYXRjaCBlcnJvcnMgYXQgY29tcGlsZSB0aW1lLCBub3QgcnVudGltZSoqOgoKYGBgdHlwZXNjcmlwdAovLyBUeXBlU2NyaXB0IGNhdGNoZXMgdGhpcyBlcnJvciBCRUZPUkUgZGVwbG95bWVudAppbnRlcmZhY2UgSW5wdXQgewogICAgc3RhcnRVcmxzOiB7IHVybDogc3RyaW5nIH1bXTsKICAgIG1heEl0ZW1zOiBudW1iZXI7IC8vIEV4cGVjdHMgbnVtYmVyCn0KCmNvbnN0IGlucHV0ID0gYXdhaXQgQWN0b3IuZ2V0SW5wdXQ8SW5wdXQ+KCk7CmlucHV0Lm1heEl0ZW1zID0gIjEwMCI7IC8vIOKdjCBUeXBlU2NyaXB0IGVycm9yOiBUeXBlICdzdHJpbmcnIGlzIG5vdCBhc3NpZ25hYmxlIHRvIHR5cGUgJ251bWJlcicKYGBgCgpgYGBqYXZhc2NyaXB0Ci8vIEphdmFTY3JpcHQgZmFpbHMgQVQgUlVOVElNRSBpbiBwcm9kdWN0aW9uCmNvbnN0IGlucHV0ID0gYXdhaXQgQWN0b3IuZ2V0SW5wdXQoKTsKaW5wdXQubWF4SXRlbXMgPSAiMTAwIjsgLy8g4p2MIFJ1bnRpbWUgZXJyb3Igd2hlbiB1c2VkIGluIG1hdGggb3BlcmF0aW9uCmBgYAoKIyMjIDIuIElERSBBdXRvY29tcGxldGUKClR5cGVTY3JpcHQgcHJvdmlkZXMgSW50ZWxsaVNlbnNlIGZvciBhbGwgQXBpZnkvQ3Jhd2xlZSBBUElzOgoKYGBgdHlwZXNjcmlwdAppbXBvcnQgeyBBY3RvciB9IGZyb20gJ2FwaWZ5JzsKaW1wb3J0IHsgUGxheXdyaWdodENyYXdsZXIgfSBmcm9tICdjcmF3bGVlJzsKCi8vIElERSBzaG93cyBhbGwgYXZhaWxhYmxlIG1ldGhvZHMgYW5kIHRoZWlyIHBhcmFtZXRlcnMKYXdhaXQgQWN0b3IubWFpbihhc3luYyAoKSA9PiB7CiAgICBjb25zdCBpbnB1dCA9IGF3YWl0IEFjdG9yLmdldElucHV0KCk7IC8vIEF1dG9jb21wbGV0ZSBmb3IgQWN0b3IgbWV0aG9kcwoKICAgIGNvbnN0IGNyYXdsZXIgPSBuZXcgUGxheXdyaWdodENyYXdsZXIoewogICAgICAgIC8vIEF1dG9jb21wbGV0ZSBzaG93cyBhbGwgY29uZmlnIG9wdGlvbnMKICAgICAgICBtYXhDb25jdXJyZW5jeTogNSwKICAgICAgICBtYXhSZXF1ZXN0c1Blck1pbnV0ZTogNjAsCiAgICAgICAgLy8gSURFIHdhcm5zIGlmIHlvdSB1c2UgaW52YWxpZCBvcHRpb25zCiAgICB9KTsKfSk7CmBgYAoKIyMjIDMuIFNlbGYtRG9jdW1lbnRpbmcgQ29kZQoKVHlwZXMgc2VydmUgYXMgaW5saW5lIGRvY3VtZW50YXRpb246CgpgYGB0eXBlc2NyaXB0Ci8vIENsZWFyIGludGVyZmFjZSA9IGluc3RhbnQgdW5kZXJzdGFuZGluZwppbnRlcmZhY2UgUHJvZHVjdCB7CiAgICBpZDogbnVtYmVyOwogICAgbmFtZTogc3RyaW5nOwogICAgcHJpY2U6IG51bWJlcjsKICAgIGluU3RvY2s6IGJvb2xlYW47CiAgICBpbWFnZXM6IHN0cmluZ1tdOwogICAgbWV0YWRhdGE/OiB7CiAgICAgICAgYnJhbmQ6IHN0cmluZzsKICAgICAgICBjYXRlZ29yeTogc3RyaW5nOwogICAgfTsKfQoKLy8gRnVuY3Rpb24gc2lnbmF0dXJlIGlzIHNlbGYtZG9jdW1lbnRpbmcKYXN5bmMgZnVuY3Rpb24gc2NyYXBlUHJvZHVjdCh1cmw6IHN0cmluZyk6IFByb21pc2U8UHJvZHVjdD4gewogICAgLy8gSW1wbGVtZW50YXRpb24KfQpgYGAKCiMjIyA0LiBCZXR0ZXIgUmVmYWN0b3JpbmcKClJlbmFtZSB2YXJpYWJsZXMvZnVuY3Rpb25zIHdpdGggY29uZmlkZW5jZToKCmBgYHR5cGVzY3JpcHQKLy8gUmVuYW1lICdtYXhJdGVtcycgdG8gJ2xpbWl0JwovLyBUeXBlU2NyaXB0IHVwZGF0ZXMgQUxMIHVzYWdlcyBhdXRvbWF0aWNhbGx5Ci8vIEphdmFTY3JpcHQgbWlnaHQgbWlzcyBzb21lIHJlZmVyZW5jZXMKYGBgCgojIyMgNS4gVGVhbSBDb2xsYWJvcmF0aW9uCgpOZXcgdGVhbSBtZW1iZXJzIHVuZGVyc3RhbmQgY29kZSBmYXN0ZXI6CgpgYGB0eXBlc2NyaXB0Ci8vIENsZWFyIHR5cGVzID0gbGVzcyBkb2N1bWVudGF0aW9uIG5lZWRlZAppbnRlcmZhY2UgQWN0b3JJbnB1dCB7CiAgICBzdGFydFVybHM6IHsgdXJsOiBzdHJpbmcgfVtdOwogICAgbWF4SXRlbXM/OiBudW1iZXI7IC8vIE9wdGlvbmFsCiAgICBwcm94eUNvbmZpZ3VyYXRpb24/OiBvYmplY3Q7Cn0KCi8vIEFueW9uZSByZWFkaW5nIHRoaXMga25vd3MgZXhhY3RseSB3aGF0IHRvIGV4cGVjdApgYGAKCiMjIFNldHRpbmcgVXAgVHlwZVNjcmlwdCBBY3RvcgoKIyMjIFVzZSBhcGlmeSBjcmVhdGUgKFJlY29tbWVuZGVkKQoKYGBgYmFzaAojIENyZWF0ZSBuZXcgYWN0b3Igd2l0aCBUeXBlU2NyaXB0IHRlbXBsYXRlCmFwaWZ5IGNyZWF0ZSBteS1zY3JhcGVyCgojIFNlbGVjdCBhcHByb3ByaWF0ZSBUeXBlU2NyaXB0IHRlbXBsYXRlOgojIC0gcHJvamVjdF9jaGVlcmlvX2NyYXdsZXJfdHMgKHN0YXRpYyBIVE1MLCBmYXN0ZXN0KQojIC0gcHJvamVjdF9wbGF5d3JpZ2h0X2NyYXdsZXJfdHMgKEphdmFTY3JpcHQtaGVhdnkgc2l0ZXMpCmBgYAoKVGhpcyBhdXRvLWdlbmVyYXRlczoKLSBgdHNjb25maWcuanNvbmAgLSBUeXBlU2NyaXB0IGNvbmZpZ3VyYXRpb24KLSBgc3JjL21haW4udHNgIC0gVHlwZVNjcmlwdCBzb3VyY2UKLSBgcGFja2FnZS5qc29uYCAtIEJ1aWxkIHNjcmlwdHMKLSBUeXBlIGRlZmluaXRpb25zIGZvciBBcGlmeS9DcmF3bGVlCgojIyMgR2VuZXJhdGVkIFN0cnVjdHVyZQoKYGBgCm15LXNjcmFwZXIvCuKUnOKUgOKUgCBzcmMvCuKUgiAgIOKUnOKUgOKUgCBtYWluLnRzICAgICAgICAgIOKGkCBUeXBlU2NyaXB0IHNvdXJjZQrilIIgICDilJTilIDilIAgdHlwZXMudHMgICAgICAgICDihpAgQ3VzdG9tIHR5cGUgZGVmaW5pdGlvbnMK4pSc4pSA4pSAIC5hY3Rvci8K4pSCICAg4pSc4pSA4pSAIGFjdG9yLmpzb24K4pSCICAg4pSU4pSA4pSAIGlucHV0X3NjaGVtYS5qc29uCuKUnOKUgOKUgCB0c2NvbmZpZy5qc29uICAgICAgICDihpAgVHlwZVNjcmlwdCBjb25maWcK4pSc4pSA4pSAIHBhY2thZ2UuanNvbiAgICAgICAgIOKGkCBCdWlsZCBzY3JpcHRzCuKUnOKUgOKUgCBEb2NrZXJmaWxlCuKUlOKUgOKUgCBSRUFETUUubWQKYGBgCgojIyBUeXBlU2NyaXB0IFBhdHRlcm5zIGZvciBBY3RvcnMKCiMjIyBQYXR0ZXJuIDE6IFR5cGVkIElucHV0CgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IEFjdG9yIH0gZnJvbSAnYXBpZnknOwoKLy8gRGVmaW5lIGlucHV0IGludGVyZmFjZQppbnRlcmZhY2UgSW5wdXQgewogICAgc3RhcnRVcmxzOiB7IHVybDogc3RyaW5nIH1bXTsKICAgIG1heEl0ZW1zPzogbnVtYmVyOwogICAgcHJveHlDb25maWd1cmF0aW9uPzogb2JqZWN0Owp9Cgphd2FpdCBBY3Rvci5tYWluKGFzeW5jICgpID0+IHsKICAgIC8vIEdldCB0eXBlZCBpbnB1dAogICAgY29uc3QgaW5wdXQgPSBhd2FpdCBBY3Rvci5nZXRJbnB1dDxJbnB1dD4oKTsKCiAgICBpZiAoIWlucHV0KSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdJbnB1dCBpcyByZXF1aXJlZCcpOwogICAgfQoKICAgIC8vIFR5cGVTY3JpcHQga25vd3MgaW5wdXQuc3RhcnRVcmxzIGV4aXN0cyBhbmQgaXMgYW4gYXJyYXkKICAgIGNvbnNvbGUubG9nKGBQcm9jZXNzaW5nICR7aW5wdXQuc3RhcnRVcmxzLmxlbmd0aH0gVVJMc2ApOwoKICAgIC8vIE9wdGlvbmFsIGNoYWluaW5nIHdpdGggdHlwZSBzYWZldHkKICAgIGNvbnN0IGxpbWl0ID0gaW5wdXQubWF4SXRlbXMgPz8gMTAwOwp9KTsKYGBgCgojIyMgUGF0dGVybiAyOiBUeXBlZCBEYXRhc2V0IE91dHB1dAoKYGBgdHlwZXNjcmlwdAppbXBvcnQgeyBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7CgovLyBEZWZpbmUgb3V0cHV0IGludGVyZmFjZQppbnRlcmZhY2UgUHJvZHVjdCB7CiAgICB1cmw6IHN0cmluZzsKICAgIG5hbWU6IHN0cmluZzsKICAgIHByaWNlOiBudW1iZXI7CiAgICBpblN0b2NrOiBib29sZWFuOwp9CgovLyBUeXBlU2NyaXB0IGVuc3VyZXMgY29ycmVjdCBzaGFwZQphd2FpdCBEYXRhc2V0LnB1c2hEYXRhPFByb2R1Y3Q+KHsKICAgIHVybDogJ2h0dHBzOi8vLi4uJywKICAgIG5hbWU6ICdQcm9kdWN0IE5hbWUnLAogICAgcHJpY2U6IDk5Ljk5LAogICAgaW5TdG9jazogdHJ1ZSwKICAgIC8vIGV4dHJhRmllbGQ6ICd2YWx1ZScgLy8g4p2MIFR5cGVTY3JpcHQgZXJyb3IKfSk7CmBgYAoKIyMjIFBhdHRlcm4gMzogVHlwZWQgUmVxdWVzdCBIYW5kbGVyCgpgYGB0eXBlc2NyaXB0CmltcG9ydCB7IFBsYXl3cmlnaHRDcmF3bGVyLCBEYXRhc2V0IH0gZnJvbSAnY3Jhd2xlZSc7CgppbnRlcmZhY2UgUHJvZHVjdCB7CiAgICBuYW1lOiBzdHJpbmc7CiAgICBwcmljZTogbnVtYmVyOwp9Cgpjb25zdCBjcmF3bGVyID0gbmV3IFBsYXl3cmlnaHRDcmF3bGVyKHsKICAgIGFzeW5jIHJlcXVlc3RIYW5kbGVyKHsgcGFnZSwgcmVxdWVzdCwgbG9nIH0pIHsKICAgICAgICAvLyBFeHRyYWN0IHdpdGggdHlwZSBzYWZldHkKICAgICAgICBjb25zdCBwcm9kdWN0OiBQcm9kdWN0ID0gYXdhaXQgcGFnZS5ldmFsdWF0ZSgoKSA9PiAoewogICAgICAgICAgICBuYW1lOiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdoMScpPy50ZXh0Q29udGVudCA/PyAnJywKICAgICAgICAgICAgcHJpY2U6IHBhcnNlRmxvYXQoZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLnByaWNlJyk/LnRleHRDb250ZW50ID8/ICcwJyksCiAgICAgICAgfSkpOwoKICAgICAgICBhd2FpdCBEYXRhc2V0LnB1c2hEYXRhPFByb2R1Y3Q+KHByb2R1Y3QpOwogICAgfSwKfSk7CmBgYAoKIyMjIFBhdHRlcm4gNDogQ3VzdG9tIFR5cGVzCgpgYGB0eXBlc2NyaXB0Ci8vIHR5cGVzLnRzCmV4cG9ydCBpbnRlcmZhY2UgU2NyYXBlZFByb2R1Y3QgewogICAgaWQ6IG51bWJlcjsKICAgIG5hbWU6IHN0cmluZzsKICAgIHByaWNlOiBudW1iZXI7CiAgICB1cmw6IHN0cmluZzsKfQoKZXhwb3J0IGludGVyZmFjZSBTY3JhcGVyQ29uZmlnIHsKICAgIG1heENvbmN1cnJlbmN5OiBudW1iZXI7CiAgICByZXF1ZXN0c1Blck1pbnV0ZTogbnVtYmVyOwp9CgovLyBtYWluLnRzCmltcG9ydCB7IFNjcmFwZWRQcm9kdWN0LCBTY3JhcGVyQ29uZmlnIH0gZnJvbSAnLi90eXBlcyc7Cgpjb25zdCBjb25maWc6IFNjcmFwZXJDb25maWcgPSB7CiAgICBtYXhDb25jdXJyZW5jeTogNSwKICAgIHJlcXVlc3RzUGVyTWludXRlOiA2MCwKfTsKYGBgCgojIyBCdWlsZCBQcm9jZXNzCgpUeXBlU2NyaXB0IGFjdG9ycyByZXF1aXJlIGNvbXBpbGF0aW9uOgoKYGBgYmFzaAojIEJ1aWxkIFR5cGVTY3JpcHQgdG8gSmF2YVNjcmlwdApucG0gcnVuIGJ1aWxkCgojIE91dHB1dCBnb2VzIHRvIGRpc3QvIGRpcmVjdG9yeQpgYGAKClRoZSBidWlsZCBwcm9jZXNzIGlzIGF1dG9tYXRpYyB3aGVuIHVzaW5nIGBhcGlmeSBwdXNoYC4KCiMjIFR5cGVTY3JpcHQgQ29uZmlndXJhdGlvbgoKRXhhbXBsZSBgdHNjb25maWcuanNvbmA6CgpgYGBqc29uCnsKICAgICJjb21waWxlck9wdGlvbnMiOiB7CiAgICAgICAgInRhcmdldCI6ICJFUzIwMjIiLAogICAgICAgICJtb2R1bGUiOiAiTm9kZU5leHQiLAogICAgICAgICJtb2R1bGVSZXNvbHV0aW9uIjogIk5vZGVOZXh0IiwKICAgICAgICAib3V0RGlyIjogImRpc3QiLAogICAgICAgICJzdHJpY3QiOiB0cnVlLAogICAgICAgICJlc01vZHVsZUludGVyb3AiOiB0cnVlLAogICAgICAgICJza2lwTGliQ2hlY2siOiB0cnVlLAogICAgICAgICJyZXNvbHZlSnNvbk1vZHVsZSI6IHRydWUKICAgIH0sCiAgICAiaW5jbHVkZSI6IFsic3JjLyoqLyoiXSwKICAgICJleGNsdWRlIjogWyJub2RlX21vZHVsZXMiLCAiZGlzdCJdCn0KYGBgCgojIyBDb21tb24gVHlwZVNjcmlwdCBQYXR0ZXJucwoKIyMjIE51bGwgU2FmZXR5CgpgYGB0eXBlc2NyaXB0Ci8vIEhhbmRsZSBwb3RlbnRpYWxseSBudWxsIHZhbHVlcyBzYWZlbHkKY29uc3QgcHJpY2UgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcucHJpY2UnKT8udGV4dENvbnRlbnQgPz8gJ04vQSc7CgovLyBUeXBlU2NyaXB0IGVuZm9yY2VzIG51bGwgY2hlY2tzCmlmIChlbGVtZW50KSB7CiAgICBjb25zdCB0ZXh0ID0gZWxlbWVudC50ZXh0Q29udGVudDsgLy8gU2FmZQp9CmBgYAoKIyMjIEVudW0gZm9yIENvbnN0YW50cwoKYGBgdHlwZXNjcmlwdAplbnVtIFNjcmFwZXJNb2RlIHsKICAgIEZBU1QgPSAnZmFzdCcsCiAgICBUSE9ST1VHSCA9ICd0aG9yb3VnaCcsCiAgICBCQUxBTkNFRCA9ICdiYWxhbmNlZCcsCn0KCmNvbnN0IG1vZGU6IFNjcmFwZXJNb2RlID0gU2NyYXBlck1vZGUuQkFMQU5DRUQ7CmBgYAoKIyMjIFR5cGUgR3VhcmRzCgpgYGB0eXBlc2NyaXB0CmZ1bmN0aW9uIGlzVmFsaWRQcm9kdWN0KGRhdGE6IGFueSk6IGRhdGEgaXMgUHJvZHVjdCB7CiAgICByZXR1cm4gKAogICAgICAgIHR5cGVvZiBkYXRhLm5hbWUgPT09ICdzdHJpbmcnICYmCiAgICAgICAgdHlwZW9mIGRhdGEucHJpY2UgPT09ICdudW1iZXInICYmCiAgICAgICAgdHlwZW9mIGRhdGEuaW5TdG9jayA9PT0gJ2Jvb2xlYW4nCiAgICApOwp9Cgpjb25zdCBzY3JhcGVkID0gYXdhaXQgcGFnZS5ldmFsdWF0ZSgvKiAuLi4gKi8pOwppZiAoaXNWYWxpZFByb2R1Y3Qoc2NyYXBlZCkpIHsKICAgIGF3YWl0IERhdGFzZXQucHVzaERhdGEoc2NyYXBlZCk7IC8vIFR5cGUtc2FmZQp9CmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86CgotICoqVXNlIFR5cGVTY3JpcHQgZm9yIGFsbCBwcm9kdWN0aW9uIEFjdG9ycyoqCi0gKipEZWZpbmUgaW50ZXJmYWNlcyBmb3IgaW5wdXQvb3V0cHV0KioKLSAqKkVuYWJsZSBzdHJpY3QgbW9kZSoqIGluIHRzY29uZmlnLmpzb24KLSAqKlVzZSB0eXBlIGltcG9ydHMqKiBmcm9tIEFwaWZ5L0NyYXdsZWUKLSAqKkRvY3VtZW50IGNvbXBsZXggdHlwZXMqKiB3aXRoIEpTRG9jCi0gKipVc2UgZW51bXMqKiBmb3IgY29uc3RhbnQgdmFsdWVzCi0gKipMZXZlcmFnZSBJREUgYXV0b2NvbXBsZXRlKioKCiMjIyDinYwgRE9OJ1Q6CgotICoqVXNlIGBhbnlgIHR5cGUqKiAoZGVmZWF0cyBwdXJwb3NlIG9mIFR5cGVTY3JpcHQpCi0gKipEaXNhYmxlIHN0cmljdCBjaGVja3MqKiAobG9zZXMgdHlwZSBzYWZldHkpCi0gKipTa2lwIHR5cGUgZGVmaW5pdGlvbnMqKiBmb3IgY3VzdG9tIGRhdGEKLSAqKkZvcmdldCB0byBjb21waWxlKiogYmVmb3JlIHRlc3RpbmcgbG9jYWxseQotICoqSWdub3JlIFR5cGVTY3JpcHQgZXJyb3JzKiogKGZpeCB0aGVtISkKCiMjIE1pZ3JhdGlvbiBmcm9tIEphdmFTY3JpcHQKCklmIHlvdSBoYXZlIGV4aXN0aW5nIEphdmFTY3JpcHQgYWN0b3I6CgoxLiBSZW5hbWUgYC5qc2AgZmlsZXMgdG8gYC50c2AKMi4gQWRkIHR5cGUgYW5ub3RhdGlvbnMgZ3JhZHVhbGx5CjMuIEZpeCBUeXBlU2NyaXB0IGVycm9ycwo0LiBBZGQgYHRzY29uZmlnLmpzb25gCjUuIFVwZGF0ZSBidWlsZCBzY3JpcHRzCjYuIFRlc3QgdGhvcm91Z2hseQoKT3IgYmV0dGVyOiBDcmVhdGUgbmV3IFR5cGVTY3JpcHQgYWN0b3Igd2l0aCBgYXBpZnkgY3JlYXRlYCBhbmQgcG9ydCBsb2dpYy4KCiMjIFJlc291cmNlcwoKLSBbQXBpZnkgVHlwZVNjcmlwdCBEb2NzXShodHRwczovL2RvY3MuYXBpZnkuY29tL3Nkay9qcy9kb2NzL2d1aWRlcy90eXBlLXNjcmlwdC1hY3RvcikKLSBbVHlwZVNjcmlwdCBIYW5kYm9va10oaHR0cHM6Ly93d3cudHlwZXNjcmlwdGxhbmcub3JnL2RvY3MvaGFuZGJvb2svaW50cm8uaHRtbCkKLSBbQ3Jhd2xlZSBUeXBlU2NyaXB0IEV4YW1wbGVzXShodHRwczovL2NyYXdsZWUuZGV2L2RvY3MvZXhhbXBsZXMpCgojIyBTdW1tYXJ5CgoqKlR5cGVTY3JpcHQgPSBCZXR0ZXIgQWN0b3JzKioKCioqS2V5IGJlbmVmaXRzKio6CjEuIENhdGNoIGVycm9ycyBiZWZvcmUgZGVwbG95bWVudAoyLiBJREUgYXV0b2NvbXBsZXRlIGZvciBhbGwgQVBJcwozLiBTZWxmLWRvY3VtZW50aW5nIGNvZGUKNC4gRWFzaWVyIHJlZmFjdG9yaW5nCjUuIEJldHRlciB0ZWFtIGNvbGxhYm9yYXRpb24KNi4gSW5kdXN0cnkgc3RhbmRhcmQKCioqQWx3YXlzIHVzZSBUeXBlU2NyaXB0IHRlbXBsYXRlcyB3aGVuIGNyZWF0aW5nIG5ldyBhY3RvcnMhKiogKENob29zZSBDaGVlcmlvIGZvciBzdGF0aWMgSFRNTCwgUGxheXdyaWdodCBmb3IgSlMtaGVhdnkgc2l0ZXMpCg==
+# TypeScript-First Actor Development
+
+## Overview
+
+For production Apify Actors, **TypeScript is STRONGLY RECOMMENDED** over JavaScript.
+
+## Why TypeScript?
+
+### 1. Type Safety
+
+**Catch errors at compile time, not runtime**:
+
+```typescript
+// TypeScript catches this error BEFORE deployment
+interface Input {
+    startUrls: { url: string }[];
+    maxItems: number; // Expects number
+}
+
+const input = await Actor.getInput<Input>();
+input.maxItems = "100"; // ❌ TypeScript error: Type 'string' is not assignable to type 'number'
+```
+
+```javascript
+// JavaScript fails AT RUNTIME in production
+const input = await Actor.getInput();
+input.maxItems = "100"; // ❌ Runtime error when used in math operation
+```
+
+### 2. IDE Autocomplete
+
+TypeScript provides IntelliSense for all Apify/Crawlee APIs:
+
+```typescript
+import { Actor } from 'apify';
+import { PlaywrightCrawler } from 'crawlee';
+
+// IDE shows all available methods and their parameters
+await Actor.main(async () => {
+    const input = await Actor.getInput(); // Autocomplete for Actor methods
+
+    const crawler = new PlaywrightCrawler({
+        // Autocomplete shows all config options
+        maxConcurrency: 5,
+        maxRequestsPerMinute: 60,
+        // IDE warns if you use invalid options
+    });
+});
+```
+
+### 3. Self-Documenting Code
+
+Types serve as inline documentation:
+
+```typescript
+// Clear interface = instant understanding
+interface Product {
+    id: number;
+    name: string;
+    price: number;
+    inStock: boolean;
+    images: string[];
+    metadata?: {
+        brand: string;
+        category: string;
+    };
+}
+
+// Function signature is self-documenting
+async function scrapeProduct(url: string): Promise<Product> {
+    // Implementation
+}
+```
+
+### 4. Better Refactoring
+
+Rename variables/functions with confidence:
+
+```typescript
+// Rename 'maxItems' to 'limit'
+// TypeScript updates ALL usages automatically
+// JavaScript might miss some references
+```
+
+### 5. Team Collaboration
+
+New team members understand code faster:
+
+```typescript
+// Clear types = less documentation needed
+interface ActorInput {
+    startUrls: { url: string }[];
+    maxItems?: number; // Optional
+    proxyConfiguration?: object;
+}
+
+// Anyone reading this knows exactly what to expect
+```
+
+## Setting Up TypeScript Actor
+
+### Use apify create (Recommended)
+
+```bash
+# Create new actor with TypeScript template
+apify create my-scraper
+
+# Select appropriate TypeScript template:
+# - project_cheerio_crawler_ts (static HTML, fastest)
+# - project_playwright_crawler_ts (JavaScript-heavy sites)
+```
+
+This auto-generates:
+- `tsconfig.json` - TypeScript configuration
+- `src/main.ts` - TypeScript source
+- `package.json` - Build scripts
+- Type definitions for Apify/Crawlee
+
+### Generated Structure
+
+```
+my-scraper/
+├── src/
+│   ├── main.ts          ← TypeScript source
+│   └── types.ts         ← Custom type definitions
+├── .actor/
+│   ├── actor.json
+│   └── input_schema.json
+├── tsconfig.json        ← TypeScript config
+├── package.json         ← Build scripts
+├── Dockerfile
+└── README.md
+```
+
+## TypeScript Patterns for Actors
+
+### Pattern 1: Typed Input
+
+```typescript
+import { Actor } from 'apify';
+
+// Define input interface
+interface Input {
+    startUrls: { url: string }[];
+    maxItems?: number;
+    proxyConfiguration?: object;
+}
+
+await Actor.main(async () => {
+    // Get typed input
+    const input = await Actor.getInput<Input>();
+
+    if (!input) {
+        throw new Error('Input is required');
+    }
+
+    // TypeScript knows input.startUrls exists and is an array
+    console.log(`Processing ${input.startUrls.length} URLs`);
+
+    // Optional chaining with type safety
+    const limit = input.maxItems ?? 100;
+});
+```
+
+### Pattern 2: Typed Dataset Output
+
+```typescript
+import { Dataset } from 'crawlee';
+
+// Define output interface
+interface Product {
+    url: string;
+    name: string;
+    price: number;
+    inStock: boolean;
+}
+
+// TypeScript ensures correct shape
+await Dataset.pushData<Product>({
+    url: 'https://...',
+    name: 'Product Name',
+    price: 99.99,
+    inStock: true,
+    // extraField: 'value' // ❌ TypeScript error
+});
+```
+
+### Pattern 3: Typed Request Handler
+
+```typescript
+import { PlaywrightCrawler, Dataset } from 'crawlee';
+
+interface Product {
+    name: string;
+    price: number;
+}
+
+const crawler = new PlaywrightCrawler({
+    async requestHandler({ page, request, log }) {
+        // Extract with type safety
+        const product: Product = await page.evaluate(() => ({
+            name: document.querySelector('h1')?.textContent ?? '',
+            price: parseFloat(document.querySelector('.price')?.textContent ?? '0'),
+        }));
+
+        await Dataset.pushData<Product>(product);
+    },
+});
+```
+
+### Pattern 4: Custom Types
+
+```typescript
+// types.ts
+export interface ScrapedProduct {
+    id: number;
+    name: string;
+    price: number;
+    url: string;
+}
+
+export interface ScraperConfig {
+    maxConcurrency: number;
+    requestsPerMinute: number;
+}
+
+// main.ts
+import { ScrapedProduct, ScraperConfig } from './types';
+
+const config: ScraperConfig = {
+    maxConcurrency: 5,
+    requestsPerMinute: 60,
+};
+```
+
+## Build Process
+
+TypeScript actors require compilation:
+
+```bash
+# Build TypeScript to JavaScript
+npm run build
+
+# Output goes to dist/ directory
+```
+
+The build process is automatic when using `apify push`.
+
+## TypeScript Configuration
+
+Example `tsconfig.json`:
+
+```json
+{
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist"]
+}
+```
+
+## Common TypeScript Patterns
+
+### Null Safety
+
+```typescript
+// Handle potentially null values safely
+const price = document.querySelector('.price')?.textContent ?? 'N/A';
+
+// TypeScript enforces null checks
+if (element) {
+    const text = element.textContent; // Safe
+}
+```
+
+### Enum for Constants
+
+```typescript
+enum ScraperMode {
+    FAST = 'fast',
+    THOROUGH = 'thorough',
+    BALANCED = 'balanced',
+}
+
+const mode: ScraperMode = ScraperMode.BALANCED;
+```
+
+### Type Guards
+
+```typescript
+function isValidProduct(data: any): data is Product {
+    return (
+        typeof data.name === 'string' &&
+        typeof data.price === 'number' &&
+        typeof data.inStock === 'boolean'
+    );
+}
+
+const scraped = await page.evaluate(/* ... */);
+if (isValidProduct(scraped)) {
+    await Dataset.pushData(scraped); // Type-safe
+}
+```
+
+## Best Practices
+
+### ✅ DO:
+
+- **Use TypeScript for all production Actors**
+- **Define interfaces for input/output**
+- **Enable strict mode** in tsconfig.json
+- **Use type imports** from Apify/Crawlee
+- **Document complex types** with JSDoc
+- **Use enums** for constant values
+- **Leverage IDE autocomplete**
+
+### ❌ DON'T:
+
+- **Use `any` type** (defeats purpose of TypeScript)
+- **Disable strict checks** (loses type safety)
+- **Skip type definitions** for custom data
+- **Forget to compile** before testing locally
+- **Ignore TypeScript errors** (fix them!)
+
+## Migration from JavaScript
+
+If you have existing JavaScript actor:
+
+1. Rename `.js` files to `.ts`
+2. Add type annotations gradually
+3. Fix TypeScript errors
+4. Add `tsconfig.json`
+5. Update build scripts
+6. Test thoroughly
+
+Or better: Create new TypeScript actor with `apify create` and port logic.
+
+## Resources
+
+- [Apify TypeScript Docs](https://docs.apify.com/sdk/js/docs/guides/type-script-actor)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [Crawlee TypeScript Examples](https://crawlee.dev/docs/examples)
+
+## Summary
+
+**TypeScript = Better Actors**
+
+**Key benefits**:
+1. Catch errors before deployment
+2. IDE autocomplete for all APIs
+3. Self-documenting code
+4. Easier refactoring
+5. Better team collaboration
+6. Industry standard
+
+**Always use TypeScript templates when creating new actors!** (Choose Cheerio for static HTML, Playwright for JS-heavy sites)
