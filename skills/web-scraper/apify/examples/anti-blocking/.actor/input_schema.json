@@ -1,1 +1,40 @@
-ewogICAgInRpdGxlIjogIkFudGktQmxvY2tpbmcgU2NyYXBlciBJbnB1dCIsCiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInNjaGVtYVZlcnNpb24iOiAxLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgInN0YXJ0VXJscyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlN0YXJ0IFVSTHMiLAogICAgICAgICAgICAidHlwZSI6ICJhcnJheSIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJVUkxzIHRvIHNjcmFwZSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAicmVxdWVzdExpc3RTb3VyY2VzIiwKICAgICAgICAgICAgIm1pbkl0ZW1zIjogMQogICAgICAgIH0sCiAgICAgICAgIm1heEl0ZW1zIjogewogICAgICAgICAgICAidGl0bGUiOiAiTWF4aW11bSBpdGVtcyIsCiAgICAgICAgICAgICJ0eXBlIjogImludGVnZXIiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiTWF4aW11bSBudW1iZXIgb2YgVVJMcyB0byBzY3JhcGUiLAogICAgICAgICAgICAiZWRpdG9yIjogIm51bWJlciIsCiAgICAgICAgICAgICJkZWZhdWx0IjogMTAwLAogICAgICAgICAgICAibWluaW11bSI6IDEsCiAgICAgICAgICAgICJtYXhpbXVtIjogMTAwMDAKICAgICAgICB9LAogICAgICAgICJ1c2VGaW5nZXJwcmludGluZyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlVzZSBmaW5nZXJwcmludGluZyIsCiAgICAgICAgICAgICJ0eXBlIjogImJvb2xlYW4iLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiRW5hYmxlIGJyb3dzZXIgZmluZ2VycHJpbnRpbmcgZm9yIGFudGktYmxvY2tpbmciLAogICAgICAgICAgICAiZWRpdG9yIjogImNoZWNrYm94IiwKICAgICAgICAgICAgImRlZmF1bHQiOiB0cnVlCiAgICAgICAgfSwKICAgICAgICAicHJveHlHcm91cCI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlByb3h5IGdyb3VwIiwKICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkFwaWZ5IHByb3h5IGdyb3VwIHRvIHVzZSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAic2VsZWN0IiwKICAgICAgICAgICAgImVudW0iOiBbIlJFU0lERU5USUFMIiwgIlNIQURFUiJdLAogICAgICAgICAgICAiZW51bVRpdGxlcyI6IFsiUmVzaWRlbnRpYWwgKEJldHRlcikiLCAiRGF0YWNlbnRlciAoRmFzdGVyKSJdLAogICAgICAgICAgICAiZGVmYXVsdCI6ICJSRVNJREVOVElBTCIKICAgICAgICB9CiAgICB9LAogICAgInJlcXVpcmVkIjogWyJzdGFydFVybHMiXQp9Cg==
+{
+    "title": "Anti-Blocking Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "URLs to scrape",
+            "editor": "requestListSources",
+            "minItems": 1
+        },
+        "maxItems": {
+            "title": "Maximum items",
+            "type": "integer",
+            "description": "Maximum number of URLs to scrape",
+            "editor": "number",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 10000
+        },
+        "useFingerprinting": {
+            "title": "Use fingerprinting",
+            "type": "boolean",
+            "description": "Enable browser fingerprinting for anti-blocking",
+            "editor": "checkbox",
+            "default": true
+        },
+        "proxyGroup": {
+            "title": "Proxy group",
+            "type": "string",
+            "description": "Apify proxy group to use",
+            "editor": "select",
+            "enum": ["RESIDENTIAL", "SHADER"],
+            "enumTitles": ["Residential (Better)", "Datacenter (Faster)"],
+            "default": "RESIDENTIAL"
+        }
+    },
+    "required": ["startUrls"]
+}
