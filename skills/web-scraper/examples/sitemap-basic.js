@@ -1,1 +1,67 @@
-LyoqCiAqIEJhc2ljIFNpdGVtYXAtQmFzZWQgU2NyYXBlcgogKgogKiBUaGlzIGV4YW1wbGUgc2hvd3MgaG93IHRvOgogKiAxLiBBdXRvbWF0aWNhbGx5IGRpc2NvdmVyIHNpdGVtYXBzIHVzaW5nIFJvYm90c0ZpbGUKICogMi4gR2V0IGFsbCBVUkxzIGZyb20gc2l0ZW1hcHMKICogMy4gU2NyYXBlIHBhZ2VzIHVzaW5nIENoZWVyaW9DcmF3bGVyIChmYXN0LCBIVFRQLW9ubHkpCiAqCiAqIFVzZSB0aGlzIHBhdHRlcm4gZm9yOiBFLWNvbW1lcmNlIHNpdGVzLCBibG9ncywgbmV3cyBzaXRlcyB3aXRoIHNpdGVtYXBzCiAqIE5vdGU6IFNpdGVtYXAgVVJMcyBhcmUgc3RhdGljIEhUTUwg4oCUIHVzZSBDaGVlcmlvQ3Jhd2xlciAobm90IFBsYXl3cmlnaHQpCiAqLwoKaW1wb3J0IHsgQ2hlZXJpb0NyYXdsZXIsIFJvYm90c0ZpbGUsIERhdGFzZXQgfSBmcm9tICdjcmF3bGVlJzsKCmFzeW5jIGZ1bmN0aW9uIG1haW4oKSB7CiAgICBjb25zdCBiYXNlVXJsID0gJ2h0dHBzOi8vZXhhbXBsZS5jb20nOwoKICAgIGNvbnNvbGUubG9nKGBEaXNjb3ZlcmluZyBzaXRlbWFwcyBmb3IgJHtiYXNlVXJsfS4uLmApOwoKICAgIC8vIFN0ZXAgMTogQXV0b21hdGljYWxseSBmaW5kIGFuZCBwYXJzZSBhbGwgc2l0ZW1hcHMKICAgIGNvbnN0IHJvYm90cyA9IGF3YWl0IFJvYm90c0ZpbGUuZmluZChiYXNlVXJsKTsKICAgIGNvbnN0IHVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CgogICAgY29uc29sZS5sb2coYEZvdW5kICR7dXJscy5sZW5ndGh9IFVSTHMgZnJvbSBzaXRlbWFwc2ApOwoKICAgIC8vIE9wdGlvbmFsOiBGaWx0ZXIgVVJMcyAoZS5nLiwgb25seSBwcm9kdWN0IHBhZ2VzKQogICAgY29uc3QgcHJvZHVjdFVybHMgPSB1cmxzLmZpbHRlcih1cmwgPT4gdXJsLmluY2x1ZGVzKCcvcHJvZHVjdHMvJykpOwogICAgY29uc29sZS5sb2coYEZpbHRlcmVkIHRvICR7cHJvZHVjdFVybHMubGVuZ3RofSBwcm9kdWN0IFVSTHNgKTsKCiAgICAvLyBTdGVwIDI6IENyZWF0ZSBjcmF3bGVyIChDaGVlcmlvQ3Jhd2xlciBmb3Igc3RhdGljIEhUTUwg4oCUIGZhc3RlciB0aGFuIFBsYXl3cmlnaHQpCiAgICBjb25zdCBjcmF3bGVyID0gbmV3IENoZWVyaW9DcmF3bGVyKHsKICAgICAgICBtYXhDb25jdXJyZW5jeTogMTAsCiAgICAgICAgbWF4UmVxdWVzdHNQZXJNaW51dGU6IDYwLAoKICAgICAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgICAgIGxvZy5pbmZvKGBTY3JhcGluZzogJHtyZXF1ZXN0LnVybH1gKTsKCiAgICAgICAgICAgIC8vIEV4dHJhY3QgZGF0YSB1c2luZyBDaGVlcmlvIChqUXVlcnktbGlrZSBzeW50YXgpCiAgICAgICAgICAgIGNvbnN0IGRhdGEgPSB7CiAgICAgICAgICAgICAgICB0aXRsZTogJCgnaDEnKS50ZXh0KCkudHJpbSgpLAogICAgICAgICAgICAgICAgcHJpY2U6ICQoJy5wcmljZScpLnRleHQoKS50cmltKCksCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogJCgnLmRlc2NyaXB0aW9uJykudGV4dCgpLnRyaW0oKSwKICAgICAgICAgICAgICAgIGltYWdlOiAkKCdpbWcubWFpbi1pbWFnZScpLmF0dHIoJ3NyYycpLAogICAgICAgICAgICAgICAgaW5TdG9jazogJCgnLmluLXN0b2NrJykubGVuZ3RoID4gMCwKICAgICAgICAgICAgfTsKCiAgICAgICAgICAgIC8vIFNhdmUgdG8gZGF0YXNldAogICAgICAgICAgICBhd2FpdCBEYXRhc2V0LnB1c2hEYXRhKHsKICAgICAgICAgICAgICAgIHVybDogcmVxdWVzdC51cmwsCiAgICAgICAgICAgICAgICAuLi5kYXRhLAogICAgICAgICAgICAgICAgc2NyYXBlZEF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCksCiAgICAgICAgICAgIH0pOwogICAgICAgIH0sCgogICAgICAgIGZhaWxlZFJlcXVlc3RIYW5kbGVyKHsgcmVxdWVzdCwgZXJyb3IgfSwgeyBsb2cgfSkgewogICAgICAgICAgICBsb2cuZXJyb3IoYEZhaWxlZCB0byBzY3JhcGUgJHtyZXF1ZXN0LnVybH06ICR7ZXJyb3IubWVzc2FnZX1gKTsKICAgICAgICB9LAogICAgfSk7CgogICAgLy8gU3RlcCAzOiBBZGQgVVJMcyBhbmQgcnVuCiAgICBhd2FpdCBjcmF3bGVyLmFkZFJlcXVlc3RzKHByb2R1Y3RVcmxzLnNsaWNlKDAsIDEwKSk7IC8vIFRlc3Qgd2l0aCBmaXJzdCAxMAogICAgYXdhaXQgY3Jhd2xlci5ydW4oKTsKCiAgICBjb25zb2xlLmxvZygnU2NyYXBpbmcgY29tcGxldGVkJyk7Cn0KCm1haW4oKTsK
+/**
+ * Basic Sitemap-Based Scraper
+ *
+ * This example shows how to:
+ * 1. Automatically discover sitemaps using RobotsFile
+ * 2. Get all URLs from sitemaps
+ * 3. Scrape pages using CheerioCrawler (fast, HTTP-only)
+ *
+ * Use this pattern for: E-commerce sites, blogs, news sites with sitemaps
+ * Note: Sitemap URLs are static HTML — use CheerioCrawler (not Playwright)
+ */
+
+import { CheerioCrawler, RobotsFile, Dataset } from 'crawlee';
+
+async function main() {
+    const baseUrl = 'https://example.com';
+
+    console.log(`Discovering sitemaps for ${baseUrl}...`);
+
+    // Step 1: Automatically find and parse all sitemaps
+    const robots = await RobotsFile.find(baseUrl);
+    const urls = await robots.parseUrlsFromSitemaps();
+
+    console.log(`Found ${urls.length} URLs from sitemaps`);
+
+    // Optional: Filter URLs (e.g., only product pages)
+    const productUrls = urls.filter(url => url.includes('/products/'));
+    console.log(`Filtered to ${productUrls.length} product URLs`);
+
+    // Step 2: Create crawler (CheerioCrawler for static HTML — faster than Playwright)
+    const crawler = new CheerioCrawler({
+        maxConcurrency: 10,
+        maxRequestsPerMinute: 60,
+
+        async requestHandler({ $, request, log }) {
+            log.info(`Scraping: ${request.url}`);
+
+            // Extract data using Cheerio (jQuery-like syntax)
+            const data = {
+                title: $('h1').text().trim(),
+                price: $('.price').text().trim(),
+                description: $('.description').text().trim(),
+                image: $('img.main-image').attr('src'),
+                inStock: $('.in-stock').length > 0,
+            };
+
+            // Save to dataset
+            await Dataset.pushData({
+                url: request.url,
+                ...data,
+                scrapedAt: new Date().toISOString(),
+            });
+        },
+
+        failedRequestHandler({ request, error }, { log }) {
+            log.error(`Failed to scrape ${request.url}: ${error.message}`);
+        },
+    });
+
+    // Step 3: Add URLs and run
+    await crawler.addRequests(productUrls.slice(0, 10)); // Test with first 10
+    await crawler.run();
+
+    console.log('Scraping completed');
+}
+
+main();
