@@ -1,1 +1,495 @@
-IyBJbnB1dCBTY2hlbWEgUGF0dGVybnMKClBhdHRlcm5zIGZvciBkZWZpbmluZyBBY3RvciBpbnB1dCB2YWxpZGF0aW9uIGluIGAuYWN0b3IvaW5wdXRfc2NoZW1hLmpzb25gLgoKIyMgU2NoZW1hIFN0cnVjdHVyZQoKYGBganNvbgp7CiAgICAidGl0bGUiOiAiQWN0b3IgSW5wdXQiLAogICAgInR5cGUiOiAib2JqZWN0IiwKICAgICJzY2hlbWFWZXJzaW9uIjogMSwKICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJmaWVsZE5hbWUiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJGaWVsZCBMYWJlbCIsCiAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJIZWxwIHRleHQiLAogICAgICAgICAgICAiZWRpdG9yIjogInRleHRmaWVsZCIKICAgICAgICB9CiAgICB9LAogICAgInJlcXVpcmVkIjogWyJmaWVsZE5hbWUiXQp9CmBgYAoKIyMgQ29tbW9uIEZpZWxkIFR5cGVzCgojIyMgU3RyaW5nIEZpZWxkCgpgYGBqc29uCnsKICAgICJ1cmwiOiB7CiAgICAgICAgInRpdGxlIjogIlVSTCIsCiAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiV2Vic2l0ZSBVUkwgdG8gc2NyYXBlIiwKICAgICAgICAiZWRpdG9yIjogInRleHRmaWVsZCIsCiAgICAgICAgInBhdHRlcm4iOiAiaHR0cHM/Oi8vLisiLAogICAgICAgICJleGFtcGxlIjogImh0dHBzOi8vZXhhbXBsZS5jb20iCiAgICB9Cn0KYGBgCgojIyMgTnVtYmVyIEZpZWxkCgpgYGBqc29uCnsKICAgICJtYXhJdGVtcyI6IHsKICAgICAgICAidGl0bGUiOiAiTWF4aW11bSBpdGVtcyIsCiAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIk1heCBudW1iZXIgb2YgaXRlbXMgdG8gc2NyYXBlIiwKICAgICAgICAiZWRpdG9yIjogIm51bWJlciIsCiAgICAgICAgImRlZmF1bHQiOiAxMDAsCiAgICAgICAgIm1pbmltdW0iOiAxLAogICAgICAgICJtYXhpbXVtIjogMTAwMDAKICAgIH0KfQpgYGAKCiMjIyBCb29sZWFuIEZpZWxkCgpgYGBqc29uCnsKICAgICJzYXZlSHRtbCI6IHsKICAgICAgICAidGl0bGUiOiAiU2F2ZSBIVE1MIiwKICAgICAgICAidHlwZSI6ICJib29sZWFuIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiU2F2ZSByYXcgSFRNTCIsCiAgICAgICAgImVkaXRvciI6ICJjaGVja2JveCIsCiAgICAgICAgImRlZmF1bHQiOiBmYWxzZQogICAgfQp9CmBgYAoKIyMjIEFycmF5IG9mIFVSTHMKCmBgYGpzb24KewogICAgInN0YXJ0VXJscyI6IHsKICAgICAgICAidGl0bGUiOiAiU3RhcnQgVVJMcyIsCiAgICAgICAgInR5cGUiOiAiYXJyYXkiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJMaXN0IG9mIFVSTHMgdG8gc2NyYXBlIiwKICAgICAgICAiZWRpdG9yIjogInJlcXVlc3RMaXN0U291cmNlcyIsCiAgICAgICAgInBsYWNlaG9sZGVyVmFsdWUiOiBbeyJ1cmwiOiAiaHR0cHM6Ly9leGFtcGxlLmNvbSJ9XSwKICAgICAgICAibWluSXRlbXMiOiAxCiAgICB9Cn0KYGBgCgojIyMgU2VsZWN0IERyb3Bkb3duCgpgYGBqc29uCnsKICAgICJtb2RlIjogewogICAgICAgICJ0aXRsZSI6ICJTY3JhcGluZyBtb2RlIiwKICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaG9vc2Ugc2NyYXBpbmcgc3RyYXRlZ3kiLAogICAgICAgICJlZGl0b3IiOiAic2VsZWN0IiwKICAgICAgICAiZW51bSI6IFsiZmFzdCIsICJ0aG9yb3VnaCIsICJiYWxhbmNlZCJdLAogICAgICAgICJlbnVtVGl0bGVzIjogWyJGYXN0IiwgIlRob3JvdWdoIiwgIkJhbGFuY2VkIl0sCiAgICAgICAgImRlZmF1bHQiOiAiYmFsYW5jZWQiCiAgICB9Cn0KYGBgCgojIyMgT2JqZWN0IEZpZWxkCgpgYGBqc29uCnsKICAgICJwcm94eUNvbmZpZ3VyYXRpb24iOiB7CiAgICAgICAgInRpdGxlIjogIlByb3h5IGNvbmZpZ3VyYXRpb24iLAogICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlByb3h5IHNldHRpbmdzIiwKICAgICAgICAiZWRpdG9yIjogInByb3h5IiwKICAgICAgICAiZGVmYXVsdCI6IHsidXNlQXBpZnlQcm94eSI6IHRydWV9CiAgICB9Cn0KYGBgCgojIyMgVGV4dCBBcmVhCgpgYGBqc29uCnsKICAgICJjdXN0b21KcyI6IHsKICAgICAgICAidGl0bGUiOiAiQ3VzdG9tIEphdmFTY3JpcHQiLAogICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkN1c3RvbSBwYWdlIGZ1bmN0aW9uIiwKICAgICAgICAiZWRpdG9yIjogImphdmFzY3JpcHQiLAogICAgICAgICJwcmVmaWxsIjogImFzeW5jICh7IHBhZ2UgfSkgPT4ge1xuICAgIC8vIFlvdXIgY29kZVxufSIKICAgIH0KfQpgYGAKCiMjIyBIaWRkZW4gRmllbGQKCmBgYGpzb24KewogICAgInZlcnNpb24iOiB7CiAgICAgICAgInRpdGxlIjogIlZlcnNpb24iLAogICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkludGVybmFsIHZlcnNpb24iLAogICAgICAgICJlZGl0b3IiOiAiaGlkZGVuIiwKICAgICAgICAiZGVmYXVsdCI6ICIxLjAuMCIKICAgIH0KfQpgYGAKCiMjIENvbXBsZXRlIEV4YW1wbGVzCgojIyMgUGF0dGVybiAxOiBCYXNpYyBTY3JhcGVyCgpgYGBqc29uCnsKICAgICJ0aXRsZSI6ICJCYXNpYyBTY3JhcGVyIElucHV0IiwKICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAic2NoZW1hVmVyc2lvbiI6IDEsCiAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAic3RhcnRVcmxzIjogewogICAgICAgICAgICAidGl0bGUiOiAiU3RhcnQgVVJMcyIsCiAgICAgICAgICAgICJ0eXBlIjogImFycmF5IiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlVSTHMgdG8gc2NyYXBlIiwKICAgICAgICAgICAgImVkaXRvciI6ICJyZXF1ZXN0TGlzdFNvdXJjZXMiLAogICAgICAgICAgICAibWluSXRlbXMiOiAxCiAgICAgICAgfSwKICAgICAgICAibWF4SXRlbXMiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJNYXhpbXVtIGl0ZW1zIiwKICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJNYXggcmVzdWx0cyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAibnVtYmVyIiwKICAgICAgICAgICAgImRlZmF1bHQiOiAxMDAsCiAgICAgICAgICAgICJtaW5pbXVtIjogMQogICAgICAgIH0KICAgIH0sCiAgICAicmVxdWlyZWQiOiBbInN0YXJ0VXJscyJdCn0KYGBgCgojIyMgUGF0dGVybiAyOiBFLWNvbW1lcmNlIFNjcmFwZXIKCmBgYGpzb24KewogICAgInRpdGxlIjogIkUtY29tbWVyY2UgU2NyYXBlciBJbnB1dCIsCiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInNjaGVtYVZlcnNpb24iOiAxLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgInN0YXJ0VXJscyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlByb2R1Y3QgVVJMcyIsCiAgICAgICAgICAgICJ0eXBlIjogImFycmF5IiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlByb2R1Y3QgcGFnZXMgdG8gc2NyYXBlIiwKICAgICAgICAgICAgImVkaXRvciI6ICJyZXF1ZXN0TGlzdFNvdXJjZXMiCiAgICAgICAgfSwKICAgICAgICAibWF4SXRlbXMiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJNYXggcHJvZHVjdHMiLAogICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIk1heGltdW0gcHJvZHVjdHMgdG8gc2NyYXBlIiwKICAgICAgICAgICAgImVkaXRvciI6ICJudW1iZXIiLAogICAgICAgICAgICAiZGVmYXVsdCI6IDEwMDAKICAgICAgICB9LAogICAgICAgICJpbmNsdWRlUmV2aWV3cyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIkluY2x1ZGUgcmV2aWV3cyIsCiAgICAgICAgICAgICJ0eXBlIjogImJvb2xlYW4iLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiU2NyYXBlIHByb2R1Y3QgcmV2aWV3cyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAiY2hlY2tib3giLAogICAgICAgICAgICAiZGVmYXVsdCI6IGZhbHNlCiAgICAgICAgfSwKICAgICAgICAibWluUHJpY2UiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJNaW5pbXVtIHByaWNlIiwKICAgICAgICAgICAgInR5cGUiOiAibnVtYmVyIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkZpbHRlciBieSBtaW5pbXVtIHByaWNlIiwKICAgICAgICAgICAgImVkaXRvciI6ICJudW1iZXIiLAogICAgICAgICAgICAibWluaW11bSI6IDAKICAgICAgICB9LAogICAgICAgICJwcm94eUNvbmZpZ3VyYXRpb24iOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJQcm94eSBjb25maWd1cmF0aW9uIiwKICAgICAgICAgICAgInR5cGUiOiAib2JqZWN0IiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlByb3h5IHNldHRpbmdzIiwKICAgICAgICAgICAgImVkaXRvciI6ICJwcm94eSIKICAgICAgICB9CiAgICB9LAogICAgInJlcXVpcmVkIjogWyJzdGFydFVybHMiXQp9CmBgYAoKIyMjIFBhdHRlcm4gMzogQWR2YW5jZWQgU2NyYXBlciB3aXRoIE9wdGlvbnMKCmBgYGpzb24KewogICAgInRpdGxlIjogIkFkdmFuY2VkIFNjcmFwZXIgSW5wdXQiLAogICAgInR5cGUiOiAib2JqZWN0IiwKICAgICJzY2hlbWFWZXJzaW9uIjogMSwKICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJzdGFydFVybHMiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJTdGFydCBVUkxzIiwKICAgICAgICAgICAgInR5cGUiOiAiYXJyYXkiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiVVJMcyB0byBzY3JhcGUiLAogICAgICAgICAgICAiZWRpdG9yIjogInJlcXVlc3RMaXN0U291cmNlcyIKICAgICAgICB9LAogICAgICAgICJtb2RlIjogewogICAgICAgICAgICAidGl0bGUiOiAiU2NyYXBpbmcgbW9kZSIsCiAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDaG9vc2Ugc3RyYXRlZ3kiLAogICAgICAgICAgICAiZWRpdG9yIjogInNlbGVjdCIsCiAgICAgICAgICAgICJlbnVtIjogWyJzaXRlbWFwIiwgImFwaSIsICJwbGF5d3JpZ2h0IiwgImh5YnJpZCJdLAogICAgICAgICAgICAiZW51bVRpdGxlcyI6IFsiU2l0ZW1hcCIsICJBUEkiLCAiUGxheXdyaWdodCIsICJIeWJyaWQiXSwKICAgICAgICAgICAgImRlZmF1bHQiOiAiaHlicmlkIgogICAgICAgIH0sCiAgICAgICAgIm1heENvbmN1cnJlbmN5IjogewogICAgICAgICAgICAidGl0bGUiOiAiTWF4IGNvbmN1cnJlbmN5IiwKICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJQYXJhbGxlbCByZXF1ZXN0cyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAibnVtYmVyIiwKICAgICAgICAgICAgImRlZmF1bHQiOiA1LAogICAgICAgICAgICAibWluaW11bSI6IDEsCiAgICAgICAgICAgICJtYXhpbXVtIjogNTAKICAgICAgICB9LAogICAgICAgICJtYXhSZXF1ZXN0c1Blck1pbnV0ZSI6IHsKICAgICAgICAgICAgInRpdGxlIjogIk1heCByZXF1ZXN0cy9taW4iLAogICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlJhdGUgbGltaXQiLAogICAgICAgICAgICAiZWRpdG9yIjogIm51bWJlciIsCiAgICAgICAgICAgICJkZWZhdWx0IjogNjAKICAgICAgICB9LAogICAgICAgICJ1c2VGaW5nZXJwcmludGluZyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlVzZSBmaW5nZXJwcmludGluZyIsCiAgICAgICAgICAgICJ0eXBlIjogImJvb2xlYW4iLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQW50aS1ibG9ja2luZyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAiY2hlY2tib3giLAogICAgICAgICAgICAiZGVmYXVsdCI6IGZhbHNlCiAgICAgICAgfSwKICAgICAgICAicHJveHlDb25maWd1cmF0aW9uIjogewogICAgICAgICAgICAidGl0bGUiOiAiUHJveHkgY29uZmlndXJhdGlvbiIsCiAgICAgICAgICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJQcm94eSBzZXR0aW5ncyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAicHJveHkiCiAgICAgICAgfQogICAgfSwKICAgICJyZXF1aXJlZCI6IFsic3RhcnRVcmxzIiwgIm1vZGUiXQp9CmBgYAoKIyMjIFBhdHRlcm4gNDogQVBJLWJhc2VkIFNjcmFwZXIKCmBgYGpzb24KewogICAgInRpdGxlIjogIkFQSSBTY3JhcGVyIElucHV0IiwKICAgICJ0eXBlIjogIm9iamVjdCIsCiAgICAic2NoZW1hVmVyc2lvbiI6IDEsCiAgICAicHJvcGVydGllcyI6IHsKICAgICAgICAiYXBpVXJsIjogewogICAgICAgICAgICAidGl0bGUiOiAiQVBJIFVSTCIsCiAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgZW5kcG9pbnQiLAogICAgICAgICAgICAiZWRpdG9yIjogInRleHRmaWVsZCIsCiAgICAgICAgICAgICJwYXR0ZXJuIjogImh0dHBzPzovLy4rIgogICAgICAgIH0sCiAgICAgICAgImFwaUtleSI6IHsKICAgICAgICAgICAgInRpdGxlIjogIkFQSSBLZXkiLAogICAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQXV0aGVudGljYXRpb24ga2V5IiwKICAgICAgICAgICAgImVkaXRvciI6ICJ0ZXh0ZmllbGQiLAogICAgICAgICAgICAiaXNTZWNyZXQiOiB0cnVlCiAgICAgICAgfSwKICAgICAgICAicGFnZVNpemUiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJQYWdlIHNpemUiLAogICAgICAgICAgICAidHlwZSI6ICJpbnRlZ2VyIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkl0ZW1zIHBlciBwYWdlIiwKICAgICAgICAgICAgImVkaXRvciI6ICJudW1iZXIiLAogICAgICAgICAgICAiZGVmYXVsdCI6IDEwMAogICAgICAgIH0sCiAgICAgICAgIm1heFBhZ2VzIjogewogICAgICAgICAgICAidGl0bGUiOiAiTWF4IHBhZ2VzIiwKICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJNYXhpbXVtIHBhZ2VzIHRvIGZldGNoIiwKICAgICAgICAgICAgImVkaXRvciI6ICJudW1iZXIiLAogICAgICAgICAgICAiZGVmYXVsdCI6IDEwCiAgICAgICAgfQogICAgfSwKICAgICJyZXF1aXJlZCI6IFsiYXBpVXJsIl0KfQpgYGAKCiMjIyBQYXR0ZXJuIDU6IFNpdGVtYXAgKyBQbGF5d3JpZ2h0CgpgYGBqc29uCnsKICAgICJ0aXRsZSI6ICJTaXRlbWFwIFNjcmFwZXIgSW5wdXQiLAogICAgInR5cGUiOiAib2JqZWN0IiwKICAgICJzY2hlbWFWZXJzaW9uIjogMSwKICAgICJwcm9wZXJ0aWVzIjogewogICAgICAgICJzaXRlbWFwVXJsIjogewogICAgICAgICAgICAidGl0bGUiOiAiU2l0ZW1hcCBVUkwiLAogICAgICAgICAgICAidHlwZSI6ICJzdHJpbmciLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiVVJMIHRvIHNpdGVtYXAueG1sIiwKICAgICAgICAgICAgImVkaXRvciI6ICJ0ZXh0ZmllbGQiLAogICAgICAgICAgICAiZXhhbXBsZSI6ICJodHRwczovL2V4YW1wbGUuY29tL3NpdGVtYXAueG1sIgogICAgICAgIH0sCiAgICAgICAgInVybFBhdHRlcm4iOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJVUkwgcGF0dGVybiAocmVnZXgpIiwKICAgICAgICAgICAgInR5cGUiOiAic3RyaW5nIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIkZpbHRlciBVUkxzIGJ5IHJlZ2V4IiwKICAgICAgICAgICAgImVkaXRvciI6ICJ0ZXh0ZmllbGQiLAogICAgICAgICAgICAiZXhhbXBsZSI6ICIvcHJvZHVjdHMvLioiCiAgICAgICAgfSwKICAgICAgICAibWF4SXRlbXMiOiB7CiAgICAgICAgICAgICJ0aXRsZSI6ICJNYXhpbXVtIGl0ZW1zIiwKICAgICAgICAgICAgInR5cGUiOiAiaW50ZWdlciIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJNYXggVVJMcyB0byBzY3JhcGUiLAogICAgICAgICAgICAiZWRpdG9yIjogIm51bWJlciIsCiAgICAgICAgICAgICJkZWZhdWx0IjogMTAwMAogICAgICAgIH0sCiAgICAgICAgInByb3h5Q29uZmlndXJhdGlvbiI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlByb3h5IGNvbmZpZ3VyYXRpb24iLAogICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAgICAgICAiZWRpdG9yIjogInByb3h5IgogICAgICAgIH0KICAgIH0sCiAgICAicmVxdWlyZWQiOiBbInNpdGVtYXBVcmwiXQp9CmBgYAoKIyMjIFBhdHRlcm4gNjogV2l0aCBDdXN0b20gRmllbGRzCgpgYGBqc29uCnsKICAgICJ0aXRsZSI6ICJDdXN0b20gU2NyYXBlciBJbnB1dCIsCiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInNjaGVtYVZlcnNpb24iOiAxLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgInN0YXJ0VXJscyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIlN0YXJ0IFVSTHMiLAogICAgICAgICAgICAidHlwZSI6ICJhcnJheSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAicmVxdWVzdExpc3RTb3VyY2VzIgogICAgICAgIH0sCiAgICAgICAgInNlbGVjdG9ycyI6IHsKICAgICAgICAgICAgInRpdGxlIjogIkN1c3RvbSBzZWxlY3RvcnMiLAogICAgICAgICAgICAidHlwZSI6ICJvYmplY3QiLAogICAgICAgICAgICAiZGVzY3JpcHRpb24iOiAiQ1NTIHNlbGVjdG9ycyBmb3IgZGF0YSIsCiAgICAgICAgICAgICJlZGl0b3IiOiAianNvbiIsCiAgICAgICAgICAgICJwcmVmaWxsIjogIntcbiAgXCJ0aXRsZVwiOiBcImgxXCIsXG4gIFwicHJpY2VcIjogXCIucHJpY2VcIlxufSIKICAgICAgICB9LAogICAgICAgICJjdXN0b21GdW5jdGlvbiI6IHsKICAgICAgICAgICAgInRpdGxlIjogIkN1c3RvbSBmdW5jdGlvbiIsCiAgICAgICAgICAgICJ0eXBlIjogInN0cmluZyIsCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJDdXN0b20gZXh0cmFjdGlvbiBsb2dpYyIsCiAgICAgICAgICAgICJlZGl0b3IiOiAiamF2YXNjcmlwdCIsCiAgICAgICAgICAgICJwcmVmaWxsIjogImFzeW5jICh7IHBhZ2UgfSkgPT4ge1xuICAgIHJldHVybiB7IHRpdGxlOiBhd2FpdCBwYWdlLnRpdGxlKCkgfTtcbn0iCiAgICAgICAgfQogICAgfSwKICAgICJyZXF1aXJlZCI6IFsic3RhcnRVcmxzIl0KfQpgYGAKCiMjIEZpZWxkIEVkaXRvcnMKCkF2YWlsYWJsZSBlZGl0b3IgdHlwZXM6Cgp8IEVkaXRvciB8IFVzZSBGb3IgfCBUeXBlIHwKfC0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS18CnwgYHRleHRmaWVsZGAgfCBTaG9ydCB0ZXh0IHwgc3RyaW5nIHwKfCBgdGV4dGFyZWFgIHwgTG9uZyB0ZXh0IHwgc3RyaW5nIHwKfCBgbnVtYmVyYCB8IE51bWJlcnMgfCBpbnRlZ2VyL251bWJlciB8CnwgYGNoZWNrYm94YCB8IEJvb2xlYW4gfCBib29sZWFuIHwKfCBgc2VsZWN0YCB8IERyb3Bkb3duIHwgc3RyaW5nIHwKfCBganNvbmAgfCBKU09OIG9iamVjdCB8IG9iamVjdCB8CnwgYGphdmFzY3JpcHRgIHwgQ29kZSB8IHN0cmluZyB8CnwgYHByb3h5YCB8IFByb3h5IGNvbmZpZyB8IG9iamVjdCB8CnwgYHJlcXVlc3RMaXN0U291cmNlc2AgfCBVUkwgYXJyYXlzIHwgYXJyYXkgfAp8IGBoaWRkZW5gIHwgSGlkZGVuIGZpZWxkIHwgYW55IHwKCiMjIFZhbGlkYXRpb24gUGF0dGVybnMKCiMjIyBVUkwgVmFsaWRhdGlvbgoKYGBganNvbgp7CiAgICAicGF0dGVybiI6ICJeaHR0cHM/Oi8vLioiLAogICAgImV4YW1wbGUiOiAiaHR0cHM6Ly9leGFtcGxlLmNvbSIKfQpgYGAKCiMjIyBFbWFpbCBWYWxpZGF0aW9uCgpgYGBqc29uCnsKICAgICJwYXR0ZXJuIjogIl5bXkBdK0BbXkBdK1xcLlteQF0rJCIsCiAgICAiZXhhbXBsZSI6ICJ1c2VyQGV4YW1wbGUuY29tIgp9CmBgYAoKIyMjIE51bWJlciBSYW5nZQoKYGBganNvbgp7CiAgICAibWluaW11bSI6IDEsCiAgICAibWF4aW11bSI6IDEwMDAsCiAgICAiZGVmYXVsdCI6IDEwMAp9CmBgYAoKIyMjIFJlcXVpcmVkIEFycmF5CgpgYGBqc29uCnsKICAgICJ0eXBlIjogImFycmF5IiwKICAgICJtaW5JdGVtcyI6IDEKfQpgYGAKCiMjIyBTZWNyZXQgRmllbGQKCmBgYGpzb24KewogICAgImlzU2VjcmV0IjogdHJ1ZSwKICAgICJlZGl0b3IiOiAidGV4dGZpZWxkIgp9CmBgYAoKIyMgVHlwZVNjcmlwdCBVc2FnZQoKYGBgdHlwZXNjcmlwdAovLyBEZWZpbmUgbWF0Y2hpbmcgaW50ZXJmYWNlCmludGVyZmFjZSBJbnB1dCB7CiAgICBzdGFydFVybHM6IHsgdXJsOiBzdHJpbmcgfVtdOwogICAgbWF4SXRlbXM/OiBudW1iZXI7CiAgICBwcm94eUNvbmZpZ3VyYXRpb24/OiBvYmplY3Q7Cn0KCi8vIFVzZSBpbiBBY3Rvcgphd2FpdCBBY3Rvci5tYWluKGFzeW5jICgpID0+IHsKICAgIGNvbnN0IGlucHV0ID0gYXdhaXQgQWN0b3IuZ2V0SW5wdXQ8SW5wdXQ+KCk7CgogICAgaWYgKCFpbnB1dD8uc3RhcnRVcmxzKSB7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCdzdGFydFVybHMgaXMgcmVxdWlyZWQnKTsKICAgIH0KfSk7CmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyDinIUgRE86Ci0gUHJvdmlkZSBjbGVhciBgZGVzY3JpcHRpb25gIGZvciBlYWNoIGZpZWxkCi0gU2V0IHNlbnNpYmxlIGBkZWZhdWx0YCB2YWx1ZXMKLSBVc2UgYXBwcm9wcmlhdGUgYGVkaXRvcmAgdHlwZXMKLSBBZGQgYGV4YW1wbGVgIHZhbHVlcwotIFZhbGlkYXRlIHdpdGggYHBhdHRlcm5gLCBgbWluaW11bWAsIGBtYXhpbXVtYAotIE1hcmsgc2VjcmV0cyB3aXRoIGBpc1NlY3JldDogdHJ1ZWAKCiMjIyDinYwgRE9OJ1Q6Ci0gRG9uJ3QgdXNlIGBhbnlgIHR5cGUKLSBEb24ndCBza2lwIGRlc2NyaXB0aW9ucwotIERvbid0IGhhcmRjb2RlIGxhcmdlIGRlZmF1bHRzCi0gRG9uJ3QgZm9yZ2V0IGByZXF1aXJlZGAgZmllbGRzCi0gRG9uJ3QgZXhwb3NlIHNlY3JldHMgaW4gcHJlZmlsbAoKIyMgUmVzb3VyY2VzCgotIFtJbnB1dCBTY2hlbWEgRG9jc10oaHR0cHM6Ly9kb2NzLmFwaWZ5LmNvbS9wbGF0Zm9ybS9hY3RvcnMvZGV2ZWxvcG1lbnQvYWN0b3ItZGVmaW5pdGlvbi9pbnB1dC1zY2hlbWEpCi0gW0pTT04gU2NoZW1hIFNwZWNdKGh0dHBzOi8vanNvbi1zY2hlbWEub3JnLykKLSBbQXBpZnkgRWRpdG9yIFR5cGVzXShodHRwczovL2RvY3MuYXBpZnkuY29tL3BsYXRmb3JtL2FjdG9ycy9kZXZlbG9wbWVudC9hY3Rvci1kZWZpbml0aW9uL2lucHV0LXNjaGVtYS9zcGVjaWZpY2F0aW9uL3YxI2VkaXRvci10eXBlcykK
+# Input Schema Patterns
+
+Patterns for defining Actor input validation in `.actor/input_schema.json`.
+
+## Schema Structure
+
+```json
+{
+    "title": "Actor Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "fieldName": {
+            "title": "Field Label",
+            "type": "string",
+            "description": "Help text",
+            "editor": "textfield"
+        }
+    },
+    "required": ["fieldName"]
+}
+```
+
+## Common Field Types
+
+### String Field
+
+```json
+{
+    "url": {
+        "title": "URL",
+        "type": "string",
+        "description": "Website URL to scrape",
+        "editor": "textfield",
+        "pattern": "https?://.+",
+        "example": "https://example.com"
+    }
+}
+```
+
+### Number Field
+
+```json
+{
+    "maxItems": {
+        "title": "Maximum items",
+        "type": "integer",
+        "description": "Max number of items to scrape",
+        "editor": "number",
+        "default": 100,
+        "minimum": 1,
+        "maximum": 10000
+    }
+}
+```
+
+### Boolean Field
+
+```json
+{
+    "saveHtml": {
+        "title": "Save HTML",
+        "type": "boolean",
+        "description": "Save raw HTML",
+        "editor": "checkbox",
+        "default": false
+    }
+}
+```
+
+### Array of URLs
+
+```json
+{
+    "startUrls": {
+        "title": "Start URLs",
+        "type": "array",
+        "description": "List of URLs to scrape",
+        "editor": "requestListSources",
+        "placeholderValue": [{"url": "https://example.com"}],
+        "minItems": 1
+    }
+}
+```
+
+### Select Dropdown
+
+```json
+{
+    "mode": {
+        "title": "Scraping mode",
+        "type": "string",
+        "description": "Choose scraping strategy",
+        "editor": "select",
+        "enum": ["fast", "thorough", "balanced"],
+        "enumTitles": ["Fast", "Thorough", "Balanced"],
+        "default": "balanced"
+    }
+}
+```
+
+### Object Field
+
+```json
+{
+    "proxyConfiguration": {
+        "title": "Proxy configuration",
+        "type": "object",
+        "description": "Proxy settings",
+        "editor": "proxy",
+        "default": {"useApifyProxy": true}
+    }
+}
+```
+
+### Text Area
+
+```json
+{
+    "customJs": {
+        "title": "Custom JavaScript",
+        "type": "string",
+        "description": "Custom page function",
+        "editor": "javascript",
+        "prefill": "async ({ page }) => {\n    // Your code\n}"
+    }
+}
+```
+
+### Hidden Field
+
+```json
+{
+    "version": {
+        "title": "Version",
+        "type": "string",
+        "description": "Internal version",
+        "editor": "hidden",
+        "default": "1.0.0"
+    }
+}
+```
+
+## Complete Examples
+
+### Pattern 1: Basic Scraper
+
+```json
+{
+    "title": "Basic Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "URLs to scrape",
+            "editor": "requestListSources",
+            "minItems": 1
+        },
+        "maxItems": {
+            "title": "Maximum items",
+            "type": "integer",
+            "description": "Max results",
+            "editor": "number",
+            "default": 100,
+            "minimum": 1
+        }
+    },
+    "required": ["startUrls"]
+}
+```
+
+### Pattern 2: E-commerce Scraper
+
+```json
+{
+    "title": "E-commerce Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Product URLs",
+            "type": "array",
+            "description": "Product pages to scrape",
+            "editor": "requestListSources"
+        },
+        "maxItems": {
+            "title": "Max products",
+            "type": "integer",
+            "description": "Maximum products to scrape",
+            "editor": "number",
+            "default": 1000
+        },
+        "includeReviews": {
+            "title": "Include reviews",
+            "type": "boolean",
+            "description": "Scrape product reviews",
+            "editor": "checkbox",
+            "default": false
+        },
+        "minPrice": {
+            "title": "Minimum price",
+            "type": "number",
+            "description": "Filter by minimum price",
+            "editor": "number",
+            "minimum": 0
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Proxy settings",
+            "editor": "proxy"
+        }
+    },
+    "required": ["startUrls"]
+}
+```
+
+### Pattern 3: Advanced Scraper with Options
+
+```json
+{
+    "title": "Advanced Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "URLs to scrape",
+            "editor": "requestListSources"
+        },
+        "mode": {
+            "title": "Scraping mode",
+            "type": "string",
+            "description": "Choose strategy",
+            "editor": "select",
+            "enum": ["sitemap", "api", "playwright", "hybrid"],
+            "enumTitles": ["Sitemap", "API", "Playwright", "Hybrid"],
+            "default": "hybrid"
+        },
+        "maxConcurrency": {
+            "title": "Max concurrency",
+            "type": "integer",
+            "description": "Parallel requests",
+            "editor": "number",
+            "default": 5,
+            "minimum": 1,
+            "maximum": 50
+        },
+        "maxRequestsPerMinute": {
+            "title": "Max requests/min",
+            "type": "integer",
+            "description": "Rate limit",
+            "editor": "number",
+            "default": 60
+        },
+        "useFingerprinting": {
+            "title": "Use fingerprinting",
+            "type": "boolean",
+            "description": "Anti-blocking",
+            "editor": "checkbox",
+            "default": false
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Proxy settings",
+            "editor": "proxy"
+        }
+    },
+    "required": ["startUrls", "mode"]
+}
+```
+
+### Pattern 4: API-based Scraper
+
+```json
+{
+    "title": "API Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "apiUrl": {
+            "title": "API URL",
+            "type": "string",
+            "description": "API endpoint",
+            "editor": "textfield",
+            "pattern": "https?://.+"
+        },
+        "apiKey": {
+            "title": "API Key",
+            "type": "string",
+            "description": "Authentication key",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "pageSize": {
+            "title": "Page size",
+            "type": "integer",
+            "description": "Items per page",
+            "editor": "number",
+            "default": 100
+        },
+        "maxPages": {
+            "title": "Max pages",
+            "type": "integer",
+            "description": "Maximum pages to fetch",
+            "editor": "number",
+            "default": 10
+        }
+    },
+    "required": ["apiUrl"]
+}
+```
+
+### Pattern 5: Sitemap + Playwright
+
+```json
+{
+    "title": "Sitemap Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "sitemapUrl": {
+            "title": "Sitemap URL",
+            "type": "string",
+            "description": "URL to sitemap.xml",
+            "editor": "textfield",
+            "example": "https://example.com/sitemap.xml"
+        },
+        "urlPattern": {
+            "title": "URL pattern (regex)",
+            "type": "string",
+            "description": "Filter URLs by regex",
+            "editor": "textfield",
+            "example": "/products/.*"
+        },
+        "maxItems": {
+            "title": "Maximum items",
+            "type": "integer",
+            "description": "Max URLs to scrape",
+            "editor": "number",
+            "default": 1000
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "editor": "proxy"
+        }
+    },
+    "required": ["sitemapUrl"]
+}
+```
+
+### Pattern 6: With Custom Fields
+
+```json
+{
+    "title": "Custom Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "editor": "requestListSources"
+        },
+        "selectors": {
+            "title": "Custom selectors",
+            "type": "object",
+            "description": "CSS selectors for data",
+            "editor": "json",
+            "prefill": "{\n  \"title\": \"h1\",\n  \"price\": \".price\"\n}"
+        },
+        "customFunction": {
+            "title": "Custom function",
+            "type": "string",
+            "description": "Custom extraction logic",
+            "editor": "javascript",
+            "prefill": "async ({ page }) => {\n    return { title: await page.title() };\n}"
+        }
+    },
+    "required": ["startUrls"]
+}
+```
+
+## Field Editors
+
+Available editor types:
+
+| Editor | Use For | Type |
+|--------|---------|------|
+| `textfield` | Short text | string |
+| `textarea` | Long text | string |
+| `number` | Numbers | integer/number |
+| `checkbox` | Boolean | boolean |
+| `select` | Dropdown | string |
+| `json` | JSON object | object |
+| `javascript` | Code | string |
+| `proxy` | Proxy config | object |
+| `requestListSources` | URL arrays | array |
+| `hidden` | Hidden field | any |
+
+## Validation Patterns
+
+### URL Validation
+
+```json
+{
+    "pattern": "^https?://.*",
+    "example": "https://example.com"
+}
+```
+
+### Email Validation
+
+```json
+{
+    "pattern": "^[^@]+@[^@]+\\.[^@]+$",
+    "example": "user@example.com"
+}
+```
+
+### Number Range
+
+```json
+{
+    "minimum": 1,
+    "maximum": 1000,
+    "default": 100
+}
+```
+
+### Required Array
+
+```json
+{
+    "type": "array",
+    "minItems": 1
+}
+```
+
+### Secret Field
+
+```json
+{
+    "isSecret": true,
+    "editor": "textfield"
+}
+```
+
+## TypeScript Usage
+
+```typescript
+// Define matching interface
+interface Input {
+    startUrls: { url: string }[];
+    maxItems?: number;
+    proxyConfiguration?: object;
+}
+
+// Use in Actor
+await Actor.main(async () => {
+    const input = await Actor.getInput<Input>();
+
+    if (!input?.startUrls) {
+        throw new Error('startUrls is required');
+    }
+});
+```
+
+## Best Practices
+
+### ✅ DO:
+- Provide clear `description` for each field
+- Set sensible `default` values
+- Use appropriate `editor` types
+- Add `example` values
+- Validate with `pattern`, `minimum`, `maximum`
+- Mark secrets with `isSecret: true`
+
+### ❌ DON'T:
+- Don't use `any` type
+- Don't skip descriptions
+- Don't hardcode large defaults
+- Don't forget `required` fields
+- Don't expose secrets in prefill
+
+## Resources
+
+- [Input Schema Docs](https://docs.apify.com/platform/actors/development/actor-definition/input-schema)
+- [JSON Schema Spec](https://json-schema.org/)
+- [Apify Editor Types](https://docs.apify.com/platform/actors/development/actor-definition/input-schema/specification/v1#editor-types)
