@@ -1,1 +1,9 @@
-ewogICJuYW1lIjogImltYWdlX2dlbmVyYXRpb24iLAogICJyZXBvIjogImh4azYyMi9Ub2tlbkRhbmNlIiwKICAicGF0aCI6ICJiYWNrZW5kL2FwcC9za2lsbHMvYnVpbHRpbi9pbWFnZV9nZW5lcmF0aW9uL1NLSUxMLm1kIiwKICAic291cmNlIjogImdpdGh1Yi5jb20vaHhrNjIyL1Rva2VuRGFuY2UiLAogICJkb3dubG9hZGVkX2F0IjogIjIwMjYtMDEtMjdUMDE6MTI6NTUuNjg2NTkwWiIsCiAgImRpcl9uYW1lIjogImltYWdlLWdlbmVyYXRpb24iLAogICJjYXRlZ29yeSI6ICJkYXRhIgp9
+{
+  "name": "image_generation",
+  "repo": "hxk622/TokenDance",
+  "path": "backend/app/skills/builtin/image_generation/SKILL.md",
+  "source": "github.com/hxk622/TokenDance",
+  "downloaded_at": "2026-01-27T01:12:55.686590Z",
+  "dir_name": "image-generation",
+  "category": "data"
+}
