@@ -1,1 +1,67 @@
-IyBGcmFtZXdvcmsgU2lnbmF0dXJlcwoKTG9va3VwIHRhYmxlIGZvciBmcmFtZXdvcmsgZGV0ZWN0aW9uLiBVc2VkIGluIFBoYXNlIDAgKFF1aWNrIEFzc2Vzc21lbnQpIGFuZCBQaGFzZSAxIChCcm93c2VyIFJlY29ubmFpc3NhbmNlKSB0byBmb2N1cyBzZWFyY2hlcyBvbiByZWxldmFudCBkYXRhIGxvY2F0aW9ucyBhbmQgc2tpcCBwYXR0ZXJucyB0aGF0IGRvbid0IGFwcGx5LgoKIyMgUmVzcG9uc2UgSGVhZGVyIFNpZ25hdHVyZXMKCnwgSGVhZGVyIHwgVmFsdWUgQ29udGFpbnMgfCBGcmFtZXdvcmsgfCBEYXRhIExvY2F0aW9ucyB0byBTZWFyY2ggfAp8LS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfAp8IGBYLVBvd2VyZWQtQnlgIHwgYE5leHQuanNgIHwgTmV4dC5qcyB8IGBfX05FWFRfREFUQV9fYCBzY3JpcHQgdGFnLCBgL19uZXh0L2RhdGEvYCBBUEkgfAp8IGBYLVBvd2VyZWQtQnlgIHwgYE51eHRgIHwgTnV4dC5qcyB8IGBfX05VWFRfX2AgLyBgX19OVVhUX0RBVEFfX2Agc2NyaXB0IHRhZyB8CnwgYFgtUG93ZXJlZC1CeWAgfCBgRXhwcmVzc2AgfCBFeHByZXNzL05vZGUgfCBKU09OIEFQSXMsIGNoZWNrIGAvYXBpL2AgcGF0aHMgfAp8IGBTZXJ2ZXJgIHwgYGNsb3VkZmxhcmVgIHwgQ2xvdWRmbGFyZSAoQ0ROKSB8IE5vdCBhIGZyYW1ld29yayDigJQgbm90ZSBwcm90ZWN0aW9uIGxheWVyIHwKfCBgTGlua2AgfCBgPC93cC1jb250ZW50L2AgfCBXb3JkUHJlc3MgfCBgL3dwLWpzb24vd3AvdjIvYCBSRVNUIEFQSSwgYGxkK2pzb25gIHwKfCBgWC1TaG9waWZ5LVN0YWdlYCB8IGFueSB8IFNob3BpZnkgfCBgbGQranNvbmAsIGAvcHJvZHVjdHMuanNvbmAsIGAvY29sbGVjdGlvbnMuanNvbmAgfAp8IGBYLURydXBhbC1DYWNoZWAgfCBhbnkgfCBEcnVwYWwgfCBgL2pzb25hcGkvYCwgYGxkK2pzb25gIHwKCiMjIEhUTUwgU2lnbmF0dXJlcwoKRGV0ZWN0IHRoZXNlIHBhdHRlcm5zIGluIHJhdyBIVE1MIChjdXJsIG91dHB1dCkgdG8gaWRlbnRpZnkgZnJhbWV3b3JrIGFuZCBkYXRhIHNvdXJjZXMuCgp8IFBhdHRlcm4gfCBGcmFtZXdvcmsgfCBXaGF0IHRvIFNlYXJjaCB8IFdoYXQgdG8gU2tpcCB8CnwtLS0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tfAp8IGA8c2NyaXB0IGlkPSJfX05FWFRfREFUQV9fImAgfCBOZXh0LmpzIHwgUGFyc2UgSlNPTiBmcm9tIHRoYXQgc2NyaXB0IHRhZyB8IERvbid0IHNlYXJjaCBmb3IgYF9fTlVYVF9fYCBvciBgX19JTklUSUFMX1NUQVRFX19gIHwKfCBgd2luZG93Ll9fTlVYVF9fYCBvciBgX19OVVhUX0RBVEFfX2AgfCBOdXh0LmpzIHwgUGFyc2UgZW1iZWRkZWQgc3RhdGUgb2JqZWN0IHwgRG9uJ3Qgc2VhcmNoIGZvciBgX19ORVhUX0RBVEFfX2AgfAp8IGB3aW5kb3cuX19JTklUSUFMX1NUQVRFX19gIHwgVnVlL1JlZHV4IFNTUiB8IFBhcnNlIGVtYmVkZGVkIHN0YXRlIEpTT04gfCBTa2lwIEFQSSBzbmlmZmluZyBpZiBzdGF0ZSBoYXMgYWxsIGRhdGEgfAp8IGAvd3AtY29udGVudC9gIGluIGA8bGluaz5gIHRhZ3MgfCBXb3JkUHJlc3MgfCBgL3dwLWpzb24vd3AvdjIvYCBBUEksIGBsZCtqc29uYCBibG9ja3MgfCBEb24ndCBzZWFyY2ggZm9yIFNQQSBzdGF0ZSBvYmplY3RzIHwKfCBgbmctdmVyc2lvbj1gIHwgQW5ndWxhciB8IExvb2sgZm9yIFhIUi9mZXRjaCBBUEkgY2FsbHMgfCBTa2lwIFNTUiBkYXRhIGV4dHJhY3Rpb24gfAp8IGBkYXRhLXJlYWN0cm9vdGAgfCBSZWFjdCAoQ1NSKSB8IExvb2sgZm9yIFhIUi9mZXRjaCBBUEkgY2FsbHMgfCBTa2lwIFNTUiBkYXRhIG9iamVjdHMgKG5vbmUgZXhpc3QpIHwKfCBgPHNjcmlwdCB0eXBlPSJhcHBsaWNhdGlvbi9sZCtqc29uImAgfCBBbnkgKHN0cnVjdHVyZWQgZGF0YSkgfCBQYXJzZSBKU09OLUxEIGZvciBwcm9kdWN0L2FydGljbGUgZGF0YSB8IE1heSBiZSBwYXJ0aWFsIOKAlCB2ZXJpZnkgY29tcGxldGVuZXNzIHwKfCBgZGF0YS10dXJiby1gIHwgUmFpbHMvVHVyYm8gfCBTdGFuZGFyZCBIVE1MIHNlbGVjdG9ycywgbm8gU1BBIHN0YXRlIHwgU2tpcCBTUEEgZnJhbWV3b3JrIHBhdHRlcm5zIHwKfCBgX3N2ZWx0ZWtpdGAgfCBTdmVsdGVLaXQgfCBFbWJlZGRlZCBkYXRhIGluIGBfX2RhdGFgIG5vZGVzIHwgRG9uJ3Qgc2VhcmNoIGZvciBSZWFjdC9WdWUgcGF0dGVybnMgfAoKIyMgS25vd24gTWFqb3IgU2l0ZXMKClNpdGVzIHdpdGggd2VsbC1rbm93biBzdHJ1Y3R1cmVzLiBTa2lwIGdlbmVyaWMgZGV0ZWN0aW9uIHdoZW4gVVJMIG1hdGNoZXMuCgp8IERvbWFpbiBQYXR0ZXJuIHwgQXJjaGl0ZWN0dXJlIHwgRGF0YSBTdHJhdGVneSB8IE5vdGVzIHwKfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBgYW1hem9uLmNvbWAsIGBhbWF6b24uKmAgfCBDdXN0b20gU1NSIChubyBmcmFtZXdvcmspIHwgSFRNTCBzZWxlY3RvcnMgKGBzcGFuLmEtcHJpY2VgLCBgI3Byb2R1Y3RUaXRsZWApIHwgKipObyBKU09OLUxEKiosIG5vIGBfX05FWFRfREFUQV9fYCwgcHJpY2VzIGFyZSBnZW8tbG9ja2VkIHwKfCBgKi5zaG9waWZ5LmNvbWAsIFNob3BpZnkgc3RvcmVzIHwgU2hvcGlmeSBMaXF1aWQgfCBgbGQranNvbmAgKyBgL3Byb2R1Y3RzLmpzb25gIGVuZHBvaW50IHwgQXBwZW5kIGAuanNvbmAgdG8gcHJvZHVjdCBVUkxzIHwKfCBgKi53b3JkcHJlc3MuY29tYCwgV1Agc2l0ZXMgfCBXb3JkUHJlc3MgfCBgL3dwLWpzb24vd3AvdjIvYCBSRVNUIEFQSSB8IENoZWNrIGByb2JvdHMudHh0YCBmb3IgQVBJIGFjY2VzcyB8CnwgYCoubWVkaXVtLmNvbWAgfCBSZWFjdCBTU1IgfCBgd2luZG93Ll9fQVBPTExPX1NUQVRFX19gIHwgR3JhcGhRTC1iYWNrZWQgfAp8IGBsaW5rZWRpbi5jb21gIHwgRW1iZXIg4oaSIFJlYWN0IHwgSGVhdnkgcHJvdGVjdGlvbiwgYGxkK2pzb25gIGZvciBwdWJsaWMgcHJvZmlsZXMgfCBSZXF1aXJlcyBhdXRoZW50aWNhdGlvbiBmb3IgbW9zdCBkYXRhIHwKfCBgKi53aXhzaXRlLmNvbWAgfCBXaXggfCBgd2luZG93Lndhcm11cERhdGFgIG9yIGB3aW5kb3cud2l4RW1iZWRzQVBJYCB8IENvbXBsZXggc3RhdGUgc3RydWN0dXJlIHwKCiMjIEZyYW1ld29yayDihpIgU2VhcmNoIFN0cmF0ZWd5CgpBZnRlciBkZXRlY3RpbmcgZnJhbWV3b3JrLCB1c2UgdGhpcyB0YWJsZSB0byBkZWNpZGUgd2hhdCB0byBzZWFyY2ggYW5kIHdoYXQgdG8gc2tpcC4KCnwgRGV0ZWN0ZWQgRnJhbWV3b3JrIHwgU2VhcmNoIEZpcnN0IHwgU2VhcmNoIElmIE5lZWRlZCB8IFNraXAgRW50aXJlbHkgfAp8LS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwKfCAqKk5leHQuanMqKiB8IGBfX05FWFRfREFUQV9fYCBKU09OIHwgYC9fbmV4dC9kYXRhL2AgQVBJIHJvdXRlcyB8IGBfX05VWFRfX2AsIGBfX0lOSVRJQUxfU1RBVEVfX2AsIGAvd3AtanNvbi9gIHwKfCAqKk51eHQuanMqKiB8IGBfX05VWFRfX2AgLyBgX19OVVhUX0RBVEFfX2AgfCBYSFIvZmV0Y2ggQVBJIGNhbGxzIHwgYF9fTkVYVF9EQVRBX19gLCBgL3dwLWpzb24vYCB8CnwgKipXb3JkUHJlc3MqKiB8IGAvd3AtanNvbi93cC92Mi9gIEFQSSB8IGBsZCtqc29uYCwgSFRNTCBzZWxlY3RvcnMgfCBTUEEgc3RhdGUgb2JqZWN0cyB8CnwgKipTaG9waWZ5KiogfCBgbGQranNvbmAgKyBgLmpzb25gIFVSTCBzdWZmaXggfCBgL3Byb2R1Y3RzLmpzb25gIGNvbGxlY3Rpb24gZW5kcG9pbnQgfCBTUEEgc3RhdGUgb2JqZWN0cywgYC93cC1qc29uL2AgfAp8ICoqUmVhY3QgQ1NSKiogfCBYSFIvZmV0Y2ggQVBJIGNhbGxzIChicm93c2VyIHJlcXVpcmVkKSB8IERPTSBzZWxlY3RvcnMgZnJvbSByZW5kZXJlZCBwYWdlIHwgU1NSIGRhdGEgb2JqZWN0cyB8CnwgKipBbmd1bGFyKiogfCBYSFIvZmV0Y2ggQVBJIGNhbGxzIChicm93c2VyIHJlcXVpcmVkKSB8IERPTSBzZWxlY3RvcnMgZnJvbSByZW5kZXJlZCBwYWdlIHwgU1NSIGRhdGEgb2JqZWN0cyB8CnwgKipDdXN0b20gU1NSKiogKG5vIGZyYW1ld29yayBkZXRlY3RlZCkgfCBIVE1MIHNlbGVjdG9ycywgYGxkK2pzb25gIHwgQVBJIGVuZHBvaW50cyBpbiB0cmFmZmljIHwgU1BBIHN0YXRlIG9iamVjdHMgfAp8ICoqU3RhdGljIEhUTUwqKiB8IEhUTUwgc2VsZWN0b3JzIHwgU2l0ZW1hcHMgZm9yIFVSTCBkaXNjb3ZlcnkgfCBBUElzLCBTUEEgc3RhdGUsIGZyYW1ld29yayBwYXR0ZXJucyB8CgojIyBVc2FnZQoKKipQaGFzZSAwKiogKGN1cmwtYmFzZWQpOiBDaGVjayByZXNwb25zZSBoZWFkZXJzLCB0aGVuIHNlYXJjaCBIVE1MIGJvZHkgZm9yIHNpZ25hdHVyZXMuIE1hdGNoIGFnYWluc3QgS25vd24gTWFqb3IgU2l0ZXMgZmlyc3QgKGJ5IGRvbWFpbiksIHRoZW4gZmFsbCBiYWNrIHRvIEhUTUwgU2lnbmF0dXJlcyB0YWJsZS4KCioqUGhhc2UgMSoqIChicm93c2VyKTogSWYgUGhhc2UgMCBjb3VsZG4ndCBkZXRlcm1pbmUgZnJhbWV3b3JrLCBjaGVjayByZW5kZXJlZCBET00gYW5kIG5ldHdvcmsgdHJhZmZpYyBhZ2FpbnN0IHRoZXNlIHBhdHRlcm5zLiBVc2UgdGhlIEZyYW1ld29yayDihpIgU2VhcmNoIFN0cmF0ZWd5IHRhYmxlIHRvIGZvY3VzIGJyb3dzZXIgcmVjb25uYWlzc2FuY2UuCgoqKktleSBwcmluY2lwbGUqKjogRGV0ZWN0IGZpcnN0LCB0aGVuIHNlYXJjaCBvbmx5IHJlbGV2YW50IHBhdHRlcm5zLiBOZXZlciBzaG90Z3VuLXNlYXJjaCBhbGwgcGF0dGVybnMgb24gZXZlcnkgc2l0ZS4K
+# Framework Signatures
+
+Lookup table for framework detection. Used in Phase 0 (Quick Assessment) and Phase 1 (Browser Reconnaissance) to focus searches on relevant data locations and skip patterns that don't apply.
+
+## Response Header Signatures
+
+| Header | Value Contains | Framework | Data Locations to Search |
+|--------|---------------|-----------|--------------------------|
+| `X-Powered-By` | `Next.js` | Next.js | `__NEXT_DATA__` script tag, `/_next/data/` API |
+| `X-Powered-By` | `Nuxt` | Nuxt.js | `__NUXT__` / `__NUXT_DATA__` script tag |
+| `X-Powered-By` | `Express` | Express/Node | JSON APIs, check `/api/` paths |
+| `Server` | `cloudflare` | Cloudflare (CDN) | Not a framework — note protection layer |
+| `Link` | `</wp-content/` | WordPress | `/wp-json/wp/v2/` REST API, `ld+json` |
+| `X-Shopify-Stage` | any | Shopify | `ld+json`, `/products.json`, `/collections.json` |
+| `X-Drupal-Cache` | any | Drupal | `/jsonapi/`, `ld+json` |
+
+## HTML Signatures
+
+Detect these patterns in raw HTML (curl output) to identify framework and data sources.
+
+| Pattern | Framework | What to Search | What to Skip |
+|---------|-----------|---------------|--------------|
+| `<script id="__NEXT_DATA__"` | Next.js | Parse JSON from that script tag | Don't search for `__NUXT__` or `__INITIAL_STATE__` |
+| `window.__NUXT__` or `__NUXT_DATA__` | Nuxt.js | Parse embedded state object | Don't search for `__NEXT_DATA__` |
+| `window.__INITIAL_STATE__` | Vue/Redux SSR | Parse embedded state JSON | Skip API sniffing if state has all data |
+| `/wp-content/` in `<link>` tags | WordPress | `/wp-json/wp/v2/` API, `ld+json` blocks | Don't search for SPA state objects |
+| `ng-version=` | Angular | Look for XHR/fetch API calls | Skip SSR data extraction |
+| `data-reactroot` | React (CSR) | Look for XHR/fetch API calls | Skip SSR data objects (none exist) |
+| `<script type="application/ld+json"` | Any (structured data) | Parse JSON-LD for product/article data | May be partial — verify completeness |
+| `data-turbo-` | Rails/Turbo | Standard HTML selectors, no SPA state | Skip SPA framework patterns |
+| `_sveltekit` | SvelteKit | Embedded data in `__data` nodes | Don't search for React/Vue patterns |
+
+## Known Major Sites
+
+Sites with well-known structures. Skip generic detection when URL matches.
+
+| Domain Pattern | Architecture | Data Strategy | Notes |
+|----------------|-------------|---------------|-------|
+| `amazon.com`, `amazon.*` | Custom SSR (no framework) | HTML selectors (`span.a-price`, `#productTitle`) | **No JSON-LD**, no `__NEXT_DATA__`, prices are geo-locked |
+| `*.shopify.com`, Shopify stores | Shopify Liquid | `ld+json` + `/products.json` endpoint | Append `.json` to product URLs |
+| `*.wordpress.com`, WP sites | WordPress | `/wp-json/wp/v2/` REST API | Check `robots.txt` for API access |
+| `*.medium.com` | React SSR | `window.__APOLLO_STATE__` | GraphQL-backed |
+| `linkedin.com` | Ember → React | Heavy protection, `ld+json` for public profiles | Requires authentication for most data |
+| `*.wixsite.com` | Wix | `window.warmupData` or `window.wixEmbedsAPI` | Complex state structure |
+
+## Framework → Search Strategy
+
+After detecting framework, use this table to decide what to search and what to skip.
+
+| Detected Framework | Search First | Search If Needed | Skip Entirely |
+|-------------------|-------------|-----------------|---------------|
+| **Next.js** | `__NEXT_DATA__` JSON | `/_next/data/` API routes | `__NUXT__`, `__INITIAL_STATE__`, `/wp-json/` |
+| **Nuxt.js** | `__NUXT__` / `__NUXT_DATA__` | XHR/fetch API calls | `__NEXT_DATA__`, `/wp-json/` |
+| **WordPress** | `/wp-json/wp/v2/` API | `ld+json`, HTML selectors | SPA state objects |
+| **Shopify** | `ld+json` + `.json` URL suffix | `/products.json` collection endpoint | SPA state objects, `/wp-json/` |
+| **React CSR** | XHR/fetch API calls (browser required) | DOM selectors from rendered page | SSR data objects |
+| **Angular** | XHR/fetch API calls (browser required) | DOM selectors from rendered page | SSR data objects |
+| **Custom SSR** (no framework detected) | HTML selectors, `ld+json` | API endpoints in traffic | SPA state objects |
+| **Static HTML** | HTML selectors | Sitemaps for URL discovery | APIs, SPA state, framework patterns |
+
+## Usage
+
+**Phase 0** (curl-based): Check response headers, then search HTML body for signatures. Match against Known Major Sites first (by domain), then fall back to HTML Signatures table.
+
+**Phase 1** (browser): If Phase 0 couldn't determine framework, check rendered DOM and network traffic against these patterns. Use the Framework → Search Strategy table to focus browser reconnaissance.
+
+**Key principle**: Detect first, then search only relevant patterns. Never shotgun-search all patterns on every site.
