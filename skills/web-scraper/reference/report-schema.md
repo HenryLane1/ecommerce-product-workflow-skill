@@ -1,1 +1,144 @@
-IyBJbnRlbGxpZ2VuY2UgUmVwb3J0IFNjaGVtYQoKU3RhbmRhcmQgZm9ybWF0IGZvciByZWNvbm5haXNzYW5jZSByZXBvcnRzIGdlbmVyYXRlZCBpbiBQaGFzZSA1IChSZXBvcnQgKyBTZWxmLUNyaXRpcXVlKS4KCiMjIFJlcG9ydCBTdHJ1Y3R1cmUKCmBgYArilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIEKSU5URUxMSUdFTkNFIFJFUE9SVDoge2RvbWFpbn0K4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBCgpTZWN0aW9uIDE6IFNJVEUgQVJDSElURUNUVVJFClNlY3Rpb24gMjogREFUQSBQT0lOVFMgUkVRVUVTVEVEClNlY3Rpb24gMzogRElTQ09WRVJFRCBFTkRQT0lOVFMKU2VjdGlvbiA0OiBQUk9URUNUSU9OIEFTU0VTU01FTlQKU2VjdGlvbiA1OiBFWFRSQUNUSU9OIFNUUkFURUdJRVMKU2VjdGlvbiA2OiBJTVBMRU1FTlRBVElPTiBDSEVDS0xJU1QKU2VjdGlvbiA3OiBTRUxGLUNSSVRJUVVFCgrilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIEKRU5EIE9GIFJFUE9SVArilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIEKYGBgCgojIyBTZWN0aW9uIERldGFpbHMKCiMjIyBTZWN0aW9uIDE6IFNJVEUgQVJDSElURUNUVVJFCgp8IEZpZWxkIHwgRGVzY3JpcHRpb24gfAp8LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IEZyYW1ld29yayB8IERldGVjdGVkIGZyYW1ld29yayBvciAiQ3VzdG9tIFNTUiIgLyAiU3RhdGljIEhUTUwiIChmcm9tIGBzdHJhdGVnaWVzL2ZyYW1ld29yay1zaWduYXR1cmVzLm1kYCkgfAp8IFJlbmRlcmluZyB8IFNTUiAvIENTUiAvIEh5YnJpZCAvIFN0YXRpYyB8CnwgRGV0ZWN0aW9uIE1ldGhvZCB8IEhvdyBmcmFtZXdvcmsgd2FzIGlkZW50aWZpZWQgKGhlYWRlciwgSFRNTCBzaWduYXR1cmUsIGtub3duIHNpdGUpIHwKCiMjIyBTZWN0aW9uIDI6IERBVEEgUE9JTlRTIFJFUVVFU1RFRAoKTGlzdCBlYWNoIGRhdGEgcG9pbnQgdGhlIHVzZXIgd2FudHMgZXh0cmFjdGVkLCB3aXRoIHN0YXR1czoKCnwgRGF0YSBQb2ludCB8IEZvdW5kIEluIHwgUGhhc2UgRm91bmQgfCBFeHRyYWN0aW9uIE1ldGhvZCB8IFZhbGlkYXRlZD8gfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tfAp8IFByb2R1Y3QgbmFtZSB8IFJhdyBIVE1MIHwgUGhhc2UgMCB8IGAjcHJvZHVjdFRpdGxlYCBzZWxlY3RvciB8IFlFUyB8CnwgUHJpY2UgfCBSZW5kZXJlZCBET00gfCBQaGFzZSAxIHwgYHNwYW4uYS1wcmljZSAuYS1vZmZzY3JlZW5gIHwgUEFSVElBTCB8CnwgUmV2aWV3cyB8IEFQSSB8IFBoYXNlIDIgfCBgL2FwaS9yZXZpZXdzP2FzaW49e2lkfWAgfCBZRVMgfAp8IFN0b2NrIHN0YXR1cyB8IE5vdCBmb3VuZCB8IOKAlCB8IOKAlCB8IE5PIHwKCiMjIyBTZWN0aW9uIDM6IERJU0NPVkVSRUQgRU5EUE9JTlRTCgpGb3IgZWFjaCBkaXNjb3ZlcmVkIEFQSSBvciBkYXRhIHNvdXJjZToKCnwgRmllbGQgfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgRW5kcG9pbnQgfCBGdWxsIFVSTCBwYXR0ZXJuIHdpdGggcGFyYW1ldGVycyB8CnwgTWV0aG9kIHwgR0VUIC8gUE9TVCB8CnwgQXV0aGVudGljYXRpb24gfCBOb25lIC8gQ29va2llIC8gVG9rZW4gLyBBUEkgS2V5IHwKfCBSZXNwb25zZSBGb3JtYXQgfCBKU09OIC8gSFRNTCAvIFhNTCB8CnwgUGFnaW5hdGlvbiB8IFR5cGUgYW5kIHBhcmFtZXRlcnMgfAp8IFJhdGUgTGltaXQgfCBPYnNlcnZlZCBvciBlc3RpbWF0ZWQgfAp8IFZhbGlkYXRlZD8gfCBZRVMgaWYgcmVwbGF5ZWQgc3VjY2Vzc2Z1bGx5LCBOTyBpZiB1bnRlc3RlZCB8CgojIyMgU2VjdGlvbiA0OiBQUk9URUNUSU9OIEFTU0VTU01FTlQKCnwgTWVjaGFuaXNtIHwgU3RhdHVzIHwgRXZpZGVuY2UgfCBJbXBhY3QgfAp8LS0tLS0tLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLXwtLS0tLS0tLXwKfCBDbG91ZGZsYXJlIHwgQWN0aXZlIC8gTm90IGRldGVjdGVkIHwgSGVhZGVyLCBjb29raWVzLCBjaGFsbGVuZ2UgfCBEZXNjcmlwdGlvbiBvZiBpbXBhY3QgfAp8IFJhdGUgTGltaXRpbmcgfCBUaHJlc2hvbGQgLyBOb3QgZGV0ZWN0ZWQgfCA0MjkgcmVzcG9uc2VzLCBoZWFkZXIgaGludHMgfCBSZXF1ZXN0cy9taW51dGUgbGltaXQgfAp8IENBUFRDSEEgfCBUcmlnZ2VyZWQgLyBOb3QgdHJpZ2dlcmVkIHwgRWxlbWVudCBkZXRlY3RlZCwgY2hhbGxlbmdlIHBhZ2UgfCBCbG9jayByaXNrIHwKfCBHZW8tYmxvY2tpbmcgfCBEZXRlY3RlZCAvIE5vdCBkZXRlY3RlZCB8IERpZmZlcmVudCBjb250ZW50IGJ5IHJlZ2lvbiB8IERhdGEgYWNjdXJhY3kgaW1wYWN0IHwKfCBBdXRoZW50aWNhdGlvbiB8IFJlcXVpcmVkIC8gTm90IHJlcXVpcmVkIHwgTG9naW4gd2FsbCwgYXV0aCB0b2tlbnMgfCBBY2Nlc3MgbGltaXRhdGlvbiB8CgojIyMgU2VjdGlvbiA1OiBFWFRSQUNUSU9OIFNUUkFURUdJRVMKClJhbmtlZCBsaXN0IG9mIHJlY29tbWVuZGVkIGFwcHJvYWNoZXM6Cgp8IFJhbmsgfCBTdHJhdGVneSB8IERhdGEgUG9pbnRzIENvdmVyZWQgfCBWYWxpZGF0ZWQ/IHwgQ29tcGxleGl0eSB8IFNwZWVkIHwKfC0tLS0tLXwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IDEgfCBDaGVlcmlvICsgQ1NTIHNlbGVjdG9ycyB8IG5hbWUsIHByaWNlLCBkZXNjcmlwdGlvbiB8IFlFUyB8IExvdyB8IEZhc3QgfAp8IDIgfCBBUEkgZW5kcG9pbnQgfCByZXZpZXdzLCByYXRpbmdzIHwgWUVTIHwgTG93IHwgVmVyeSBGYXN0IHwKfCAzIHwgQnJvd3NlciArIERPTSB8IHN0b2NrIHN0YXR1cyAoSlMtcmVuZGVyZWQpIHwgUEFSVElBTCB8IE1lZGl1bSB8IFNsb3cgfAoKKipWYWxpZGF0ZWQ/IGNvbHVtbiB2YWx1ZXMqKjoKLSAqKllFUyoqOiBFeHRyYWN0aW9uIG1ldGhvZCB0ZXN0ZWQgYW5kIGNvbmZpcm1lZCB3b3JraW5nIChzZWxlY3RvciBtYXRjaGVzLCBBUEkgcmV0dXJucyBleHBlY3RlZCBkYXRhKQotICoqUEFSVElBTCoqOiBNZXRob2QgaWRlbnRpZmllZCBidXQgbm90IGZ1bGx5IHZlcmlmaWVkIChlLmcuLCBzZWxlY3RvciBmb3VuZCBpbiBIVE1MIGJ1dCBub3QgdGVzdGVkIHdpdGggcGFyc2VyLCBvciBBUEkgZm91bmQgYnV0IHBhZ2luYXRpb24gdW50ZXN0ZWQpCi0gKipOTyoqOiBUaGVvcmV0aWNhbCAvIGFzc3VtZWQg4oCUIG5vdCB0ZXN0ZWQgYXQgYWxsCgojIyMgU2VjdGlvbiA2OiBJTVBMRU1FTlRBVElPTiBDSEVDS0xJU1QKCkFjdGlvbmFibGUgc3RlcHMgZGVyaXZlZCBmcm9tIGZpbmRpbmdzOgoKYGBgCi0gWyBdIFN0ZXAgMTogLi4uCi0gWyBdIFN0ZXAgMjogLi4uCmBgYAoKIyMjIFNlY3Rpb24gNzogU0VMRi1DUklUSVFVRQoKKipSZXF1aXJlZCoqIGF0IHRoZSBlbmQgb2YgZXZlcnkgcmVwb3J0LiBDb3ZlcnM6Cgp8IEl0ZW0gfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS18LS0tLS0tLS0tLS0tLXwKfCAqKkdhcHMqKiB8IERhdGEgcG9pbnRzIG5vdCBmb3VuZCBvciBub3QgZnVsbHkgY292ZXJlZC4gV2h5LCBhbmQgd2hhdCB3b3VsZCBiZSBuZWVkZWQgdG8gZmluZCB0aGVtLiB8CnwgKipTa2lwcGVkIFN0ZXBzKiogfCBXaGljaCBwaGFzZXMgd2VyZSBza2lwcGVkIGFuZCB3aHkgKHdpdGggcXVhbGl0eSBnYXRlIHJlYXNvbmluZykuIHwKfCAqKlVudmFsaWRhdGVkIENsYWltcyoqIHwgQW55IHN0cmF0ZWd5IG1hcmtlZCBQQVJUSUFMIG9yIE5PIGluIFZhbGlkYXRlZD8gY29sdW1uLiBXaGF0IHdvdWxkIGZ1bGwgdmFsaWRhdGlvbiByZXF1aXJlLiB8CnwgKipBc3N1bXB0aW9ucyoqIHwgVGhpbmdzIGFzc3VtZWQgYnV0IG5vdCB2ZXJpZmllZCAoZS5nLiwgInBhZ2luYXRpb24gZm9sbG93cyBzdGFuZGFyZCBwYXR0ZXJuIiB3aXRob3V0IHRlc3RpbmcgcGFnZSAyKykuIHwKfCAqKlN0YWxlbmVzcyBSaXNrKiogfCBGaW5kaW5ncyB0aGF0IG1heSBjaGFuZ2UgKGdlby1kZXBlbmRlbnQgcHJpY2VzLCBzZXNzaW9uLWRlcGVuZGVudCBjb250ZW50LCBBL0IgdGVzdGVkIGxheW91dHMpLiB8CnwgKipSZWNvbW1lbmRhdGlvbnMqKiB8IFNwZWNpZmljIG5leHQgc3RlcHMgZm9yIGRlZXBlciBpbnZlc3RpZ2F0aW9uIGlmIG5lZWRlZC4gfAoKRXhhbXBsZToKYGBgCiMjIDcuIFNFTEYtQ1JJVElRVUUKCioqR2FwcyoqOiBTdG9jayBzdGF0dXMgbm90IGZvdW5kIGluIHJhdyBIVE1MIG9yIHJlbmRlcmVkIERPTS4gTWF5IHJlcXVpcmUKYXV0aGVudGljYXRlZCBzZXNzaW9uIG9yIHNwZWNpZmljIHByb2R1Y3QgdmFyaWFudCBzZWxlY3Rpb24uCgoqKlNraXBwZWQgU3RlcHMqKjogUGhhc2UgMiAoRGVlcCBTY2FuKSBza2lwcGVkIOKAlCBhbGwgcmVxdWVzdGVkIGRhdGEgcG9pbnRzCmV4Y2VwdCBzdG9jayBzdGF0dXMgZm91bmQgaW4gUGhhc2UgMC8xLiBQaGFzZSA0IChQcm90ZWN0aW9uIFRlc3RpbmcpIHNraXBwZWQg4oCUCm5vIHByb3RlY3Rpb24gc2lnbmFscyBkZXRlY3RlZCwgY3VybCByZXF1ZXN0cyBzdWNjZWVkZWQgd2l0aG91dCBibG9ja3MuCgoqKlVudmFsaWRhdGVkIENsYWltcyoqOiBQcmljZSBzZWxlY3RvciBgc3Bhbi5hLXByaWNlIC5hLW9mZnNjcmVlbmAgZm91bmQgaW4KcmVuZGVyZWQgRE9NIGJ1dCBub3QgdGVzdGVkIHdpdGggQ2hlZXJpbyBhZ2FpbnN0IHJhdyBIVE1MIChwcmljZSBtYXkgYmUKSlMtcmVuZGVyZWQpLiBNYXJrZWQgUEFSVElBTC4KCioqQXNzdW1wdGlvbnMqKjogUHJvZHVjdCBwYWdlIHN0cnVjdHVyZSBpcyBjb25zaXN0ZW50IGFjcm9zcyBjYXRlZ29yaWVzLgpPbmx5IHRlc3RlZCAxIHByb2R1Y3QgcGFnZSDigJQgcmVjb21tZW5kIHZhbGlkYXRpbmcgYWdhaW5zdCAzLTUgZGlmZmVyZW50CmNhdGVnb3JpZXMgYmVmb3JlIGltcGxlbWVudGF0aW9uLgoKKipTdGFsZW5lc3MgUmlzayoqOiBBbWF6b24gcHJpY2VzIHZhcnkgYnkgZ2VvLWxvY2F0aW9uIGFuZCBsb2dpbiBzdGF0dXMuClJlcG9ydGVkIHByaWNlIHJlZmxlY3RzIGFub255bW91cyBVUyBhY2Nlc3MuIFByb2R1Y3Rpb24gc2NyYXBlciBzaG91bGQKYWNjb3VudCBmb3IgbG9jYWxlIGhlYWRlcnMuCgoqKlJlY29tbWVuZGF0aW9ucyoqOgotIFRlc3QgcHJpY2UgZXh0cmFjdGlvbiB3aXRoIGBBY2NlcHQtTGFuZ3VhZ2VgIGFuZCBnZW8gaGVhZGVycwotIEludmVzdGlnYXRlIGF1dGhlbnRpY2F0ZWQgc2Vzc2lvbiBmb3Igc3RvY2sgc3RhdHVzCi0gVmFsaWRhdGUgc2VsZWN0b3JzIGFjcm9zcyBwcm9kdWN0IGNhdGVnb3JpZXMgYmVmb3JlIHNjYWxpbmcKYGBgCgojIyBGaWVsZCBEZWZpbml0aW9ucwoKfCBUZXJtIHwgRGVmaW5pdGlvbiB8CnwtLS0tLS18LS0tLS0tLS0tLS18CnwgKipEYXRhIFBvaW50KiogfCBBIHNwZWNpZmljIHBpZWNlIG9mIGluZm9ybWF0aW9uIHRoZSB1c2VyIHdhbnRzIHRvIGV4dHJhY3QgKGUuZy4sICJwcm9kdWN0IHByaWNlIikgfAp8ICoqRXh0cmFjdGlvbiBNZXRob2QqKiB8IFRoZSB0ZWNobmljYWwgYXBwcm9hY2g6IENTUyBzZWxlY3RvciwgSlNPTiBwYXRoLCBBUEkgZW5kcG9pbnQsIG9yIFhQYXRoIHwKfCAqKlZhbGlkYXRlZD8qKiB8IFdoZXRoZXIgdGhlIGV4dHJhY3Rpb24gbWV0aG9kIHdhcyBhY3R1YWxseSB0ZXN0ZWQgKG5vdCBqdXN0IHRoZW9yaXplZCkg4oCUIFlFUyAvIFBBUlRJQUwgLyBOTyB8CnwgKipQaGFzZSBGb3VuZCoqIHwgV2hpY2ggcmVjb25uYWlzc2FuY2UgcGhhc2UgZGlzY292ZXJlZCB0aGlzIGRhdGEgcG9pbnQgKDAtMikgfAp8ICoqUXVhbGl0eSBHYXRlKiogfCBEZWNpc2lvbiBwb2ludCB3aGVyZSB0aGUgd29ya2Zsb3cgY2hlY2tzIGlmIGVub3VnaCBkYXRhIGhhcyBiZWVuIGdhdGhlcmVkIHRvIHNraXAgcmVtYWluaW5nIHBoYXNlcyB8Cg==
+# Intelligence Report Schema
+
+Standard format for reconnaissance reports generated in Phase 5 (Report + Self-Critique).
+
+## Report Structure
+
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTELLIGENCE REPORT: {domain}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Section 1: SITE ARCHITECTURE
+Section 2: DATA POINTS REQUESTED
+Section 3: DISCOVERED ENDPOINTS
+Section 4: PROTECTION ASSESSMENT
+Section 5: EXTRACTION STRATEGIES
+Section 6: IMPLEMENTATION CHECKLIST
+Section 7: SELF-CRITIQUE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+## Section Details
+
+### Section 1: SITE ARCHITECTURE
+
+| Field | Description |
+|-------|-------------|
+| Framework | Detected framework or "Custom SSR" / "Static HTML" (from `strategies/framework-signatures.md`) |
+| Rendering | SSR / CSR / Hybrid / Static |
+| Detection Method | How framework was identified (header, HTML signature, known site) |
+
+### Section 2: DATA POINTS REQUESTED
+
+List each data point the user wants extracted, with status:
+
+| Data Point | Found In | Phase Found | Extraction Method | Validated? |
+|-----------|----------|-------------|-------------------|------------|
+| Product name | Raw HTML | Phase 0 | `#productTitle` selector | YES |
+| Price | Rendered DOM | Phase 1 | `span.a-price .a-offscreen` | PARTIAL |
+| Reviews | API | Phase 2 | `/api/reviews?asin={id}` | YES |
+| Stock status | Not found | — | — | NO |
+
+### Section 3: DISCOVERED ENDPOINTS
+
+For each discovered API or data source:
+
+| Field | Description |
+|-------|-------------|
+| Endpoint | Full URL pattern with parameters |
+| Method | GET / POST |
+| Authentication | None / Cookie / Token / API Key |
+| Response Format | JSON / HTML / XML |
+| Pagination | Type and parameters |
+| Rate Limit | Observed or estimated |
+| Validated? | YES if replayed successfully, NO if untested |
+
+### Section 4: PROTECTION ASSESSMENT
+
+| Mechanism | Status | Evidence | Impact |
+|-----------|--------|----------|--------|
+| Cloudflare | Active / Not detected | Header, cookies, challenge | Description of impact |
+| Rate Limiting | Threshold / Not detected | 429 responses, header hints | Requests/minute limit |
+| CAPTCHA | Triggered / Not triggered | Element detected, challenge page | Block risk |
+| Geo-blocking | Detected / Not detected | Different content by region | Data accuracy impact |
+| Authentication | Required / Not required | Login wall, auth tokens | Access limitation |
+
+### Section 5: EXTRACTION STRATEGIES
+
+Ranked list of recommended approaches:
+
+| Rank | Strategy | Data Points Covered | Validated? | Complexity | Speed |
+|------|----------|-------------------|------------|------------|-------|
+| 1 | Cheerio + CSS selectors | name, price, description | YES | Low | Fast |
+| 2 | API endpoint | reviews, ratings | YES | Low | Very Fast |
+| 3 | Browser + DOM | stock status (JS-rendered) | PARTIAL | Medium | Slow |
+
+**Validated? column values**:
+- **YES**: Extraction method tested and confirmed working (selector matches, API returns expected data)
+- **PARTIAL**: Method identified but not fully verified (e.g., selector found in HTML but not tested with parser, or API found but pagination untested)
+- **NO**: Theoretical / assumed — not tested at all
+
+### Section 6: IMPLEMENTATION CHECKLIST
+
+Actionable steps derived from findings:
+
+```
+- [ ] Step 1: ...
+- [ ] Step 2: ...
+```
+
+### Section 7: SELF-CRITIQUE
+
+**Required** at the end of every report. Covers:
+
+| Item | Description |
+|------|-------------|
+| **Gaps** | Data points not found or not fully covered. Why, and what would be needed to find them. |
+| **Skipped Steps** | Which phases were skipped and why (with quality gate reasoning). |
+| **Unvalidated Claims** | Any strategy marked PARTIAL or NO in Validated? column. What would full validation require. |
+| **Assumptions** | Things assumed but not verified (e.g., "pagination follows standard pattern" without testing page 2+). |
+| **Staleness Risk** | Findings that may change (geo-dependent prices, session-dependent content, A/B tested layouts). |
+| **Recommendations** | Specific next steps for deeper investigation if needed. |
+
+Example:
+```
+## 7. SELF-CRITIQUE
+
+**Gaps**: Stock status not found in raw HTML or rendered DOM. May require
+authenticated session or specific product variant selection.
+
+**Skipped Steps**: Phase 2 (Deep Scan) skipped — all requested data points
+except stock status found in Phase 0/1. Phase 4 (Protection Testing) skipped —
+no protection signals detected, curl requests succeeded without blocks.
+
+**Unvalidated Claims**: Price selector `span.a-price .a-offscreen` found in
+rendered DOM but not tested with Cheerio against raw HTML (price may be
+JS-rendered). Marked PARTIAL.
+
+**Assumptions**: Product page structure is consistent across categories.
+Only tested 1 product page — recommend validating against 3-5 different
+categories before implementation.
+
+**Staleness Risk**: Amazon prices vary by geo-location and login status.
+Reported price reflects anonymous US access. Production scraper should
+account for locale headers.
+
+**Recommendations**:
+- Test price extraction with `Accept-Language` and geo headers
+- Investigate authenticated session for stock status
+- Validate selectors across product categories before scaling
+```
+
+## Field Definitions
+
+| Term | Definition |
+|------|-----------|
+| **Data Point** | A specific piece of information the user wants to extract (e.g., "product price") |
+| **Extraction Method** | The technical approach: CSS selector, JSON path, API endpoint, or XPath |
+| **Validated?** | Whether the extraction method was actually tested (not just theorized) — YES / PARTIAL / NO |
+| **Phase Found** | Which reconnaissance phase discovered this data point (0-2) |
+| **Quality Gate** | Decision point where the workflow checks if enough data has been gathered to skip remaining phases |
