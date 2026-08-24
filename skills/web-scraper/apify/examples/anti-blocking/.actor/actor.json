@@ -1,1 +1,39 @@
-ewogICAgImFjdG9yU3BlY2lmaWNhdGlvbiI6IDEsCiAgICAibmFtZSI6ICJhbnRpLWJsb2NraW5nLXNjcmFwZXIiLAogICAgInRpdGxlIjogIkFudGktQmxvY2tpbmcgU2NyYXBlciIsCiAgICAiZGVzY3JpcHRpb24iOiAiU2NyYXBlciB3aXRoIGZpbmdlcnByaW50aW5nIGFuZCBwcm94eSBzdXBwb3J0IGZvciBibG9ja2VkIHNpdGVzIiwKICAgICJ2ZXJzaW9uIjogIjEuMC4wIiwKICAgICJtZXRhIjogewogICAgICAgICJ0ZW1wbGF0ZUlkIjogInBsYXl3cmlnaHQtdHMiCiAgICB9LAogICAgImlucHV0IjogIi4vaW5wdXRfc2NoZW1hLmpzb24iLAogICAgImRvY2tlcmZpbGUiOiAiLi9Eb2NrZXJmaWxlIiwKICAgICJyZWFkbWUiOiAiLi9SRUFETUUubWQiLAogICAgImRlZmF1bHRSdW5PcHRpb25zIjogewogICAgICAgICJidWlsZCI6ICJsYXRlc3QiLAogICAgICAgICJ0aW1lb3V0U2VjcyI6IDM2MDAsCiAgICAgICAgIm1lbW9yeU1ieXRlcyI6IDQwOTYKICAgIH0sCiAgICAiZW52aXJvbm1lbnRWYXJpYWJsZXMiOiB7CiAgICAgICAgIlVTRV9GSU5HRVJQUklOVElORyI6ICJ0cnVlIiwKICAgICAgICAiUFJPWFlfR1JPVVAiOiAiUkVTSURFTlRJQUwiCiAgICB9LAogICAgInN0b3JhZ2VzIjogewogICAgICAgICJkYXRhc2V0IjogewogICAgICAgICAgICAiYWN0b3JTcGVjaWZpY2F0aW9uIjogMSwKICAgICAgICAgICAgInRpdGxlIjogIlNjcmFwZWQgZGF0YSIsCiAgICAgICAgICAgICJ2aWV3cyI6IHsKICAgICAgICAgICAgICAgICJvdmVydmlldyI6IHsKICAgICAgICAgICAgICAgICAgICAidGl0bGUiOiAiT3ZlcnZpZXciLAogICAgICAgICAgICAgICAgICAgICJ0cmFuc2Zvcm1hdGlvbiI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImZpZWxkcyI6IFsidGl0bGUiLCAidXJsIiwgInNlc3Npb25JZCIsICJzY3JhcGVkQXQiXQogICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgImRpc3BsYXkiOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJjb21wb25lbnQiOiAidGFibGUiCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQp9Cg==
+{
+    "actorSpecification": 1,
+    "name": "anti-blocking-scraper",
+    "title": "Anti-Blocking Scraper",
+    "description": "Scraper with fingerprinting and proxy support for blocked sites",
+    "version": "1.0.0",
+    "meta": {
+        "templateId": "playwright-ts"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "readme": "./README.md",
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 3600,
+        "memoryMbytes": 4096
+    },
+    "environmentVariables": {
+        "USE_FINGERPRINTING": "true",
+        "PROXY_GROUP": "RESIDENTIAL"
+    },
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Scraped data",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "transformation": {
+                        "fields": ["title", "url", "sessionId", "scrapedAt"]
+                    },
+                    "display": {
+                        "component": "table"
+                    }
+                }
+            }
+        }
+    }
+}
