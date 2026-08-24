@@ -1,1 +1,57 @@
-LS0tCm5hbWU6IGdwdC1pbWFnZS0yLXN0eWxlLWxpYnJhcnkKZGVzY3JpcHRpb246IENob29zZSBHUFQtSW1hZ2UyIC8gZ3B0LWltYWdlLTIgdmlzdWFsIHN0eWxlcyBhbmQgaW5kdXN0cmlhbCBwcm9tcHQgdGVtcGxhdGVzIGZyb20gdGhlIGF3ZXNvbWUtZ3B0LWltYWdlLTIgc3R5bGUgbGlicmFyeS4gVXNlIHdoZW4gYW4gYWdlbnQgbmVlZHMgdG8gY3JlYXRlLCByZXdyaXRlLCBjbGFzc2lmeSwgb3IgaW1wcm92ZSBpbWFnZS1nZW5lcmF0aW9uIHByb21wdHMgd2l0aCByZXBvc2l0b3J5LWJhY2tlZCB0ZW1wbGF0ZXMsIGNhdGVnb3JpZXMsIHN0eWxlIHRhZ3MsIHNjZW5lIHRhZ3MsIHBpdGZhbGxzLCBhbmQgZXhhbXBsZSBjYXNlcy4KLS0tCgojIEdQVC1JbWFnZTIgU3R5bGUgTGlicmFyeQoKVXNlIHRoaXMgc2tpbGwgdG8gdHVybiBhIHVzZXIncyBpbWFnZS1nZW5lcmF0aW9uIGludGVudCBpbnRvIGEgcHJvZHVjdGlvbi1yZWFkeSBHUFQtSW1hZ2UyIHByb21wdCB1c2luZyB0aGUgYXdlc29tZS1ncHQtaW1hZ2UtMiBzdHlsZSBsaWJyYXJ5LgoKIyMgRXhhbXBsZSBPdXRwdXQKCiFbQ2l0eSBsaWZlIHN5c3RlbSBtYXAgZXhhbXBsZV0oYXNzZXRzL2NpdHktbGlmZS1zeXN0ZW0tbWFwLnBuZykKCkV4YW1wbGUgcmVxdWVzdDogYOeUqCBncHQtaW1hZ2UtMi1zdHlsZS1saWJyYXJ5IOaKgOiDveeUn+aIkOWfjuW4gueUn+WRveezu+e7n+WbvuiwsWAKCiMjIFJlZmVyZW5jZQoKLSBSZWFkIGByZWZlcmVuY2VzL3N0eWxlLWxpYnJhcnkubWRgIGJlZm9yZSBjaG9vc2luZyBhIHRlbXBsYXRlIG9yIHN0eWxlLgotIFRoZSByZWZlcmVuY2UgaXMgZ2VuZXJhdGVkIGZyb20gYGRhdGEvc3R5bGUtbGlicmFyeS5qc29uYCBpbiB0aGUgcmVwb3NpdG9yeS4KLSBQcmVmZXIgdGhlIHJlZmVyZW5jZSBvdmVyIG1lbW9yeSB3aGVuIHRlbXBsYXRlIG5hbWVzLCBjYXRlZ29yaWVzLCBjb3ZlcnMsIG9yIHN0eWxlIHRhZ3MgbWF0dGVyLgoKIyMgV29ya2Zsb3cKCjEuIERldGVjdCB0aGUgdXNlcidzIGxhbmd1YWdlIGFuZCBhbnN3ZXIgaW4gdGhhdCBsYW5ndWFnZS4KMi4gSWRlbnRpZnkgdGhlIHVzZXIncyB0YXJnZXQgb3V0cHV0OiBwcm9kdWN0LCBwb3N0ZXIsIFVJLCBpbmZvZ3JhcGhpYywgYnJhbmQsIHBob3RvLCBpbGx1c3RyYXRpb24sIGNoYXJhY3Rlciwgc2NlbmUsIGhpc3RvcnksIGRvY3VtZW50LCBvciBzcGVjaWFsIHRhc2suCjMuIE1hdGNoIHRoZSByZXF1ZXN0IGluIHRoaXMgb3JkZXI6IHRlbXBsYXRlIGNhdGVnb3J5LCB2aXN1YWwgc3R5bGUgdGFnLCBzY2VuZSB0YWcsIHRoZW4gbmVhcmVzdCBleGFtcGxlIGNhc2VzLgo0LiBJZiBvbmUgdGVtcGxhdGUgaXMgY2xlYXJseSBzdHJvbmdlc3QsIHVzZSBpdCBkaXJlY3RseS4gSWYgc2V2ZXJhbCBhcmUgcGxhdXNpYmxlLCBwcmVzZW50IDItMyBvcHRpb25zIHdpdGggc2hvcnQgcmVhc29ucyBhbmQgYXNrIHRoZSB1c2VyIHRvIGNob29zZS4KNS4gQnVpbGQgdGhlIGZpbmFsIHByb21wdCB3aXRoIHRoZXNlIGJsb2NrczoKICAgLSBzdWJqZWN0IGFuZCB0YXNrCiAgIC0gY29tcG9zaXRpb24gYW5kIGxheW91dAogICAtIHZpc3VhbCBzdHlsZSBhbmQgbWF0ZXJpYWxzCiAgIC0gdGV4dCBhbmQgbGFiZWwgcmVxdWlyZW1lbnRzCiAgIC0gYXNwZWN0IHJhdGlvIGFuZCBvdXRwdXQgZm9ybWF0CiAgIC0gY29uc3RyYWludHMgYW5kIG5lZ2F0aXZlIGRldGFpbHMKNi4gSW5jbHVkZSB0aGUgc2VsZWN0ZWQgdGVtcGxhdGUgbmFtZSBhbmQgYW55IHVzZWZ1bCBleGFtcGxlIGNhc2UgSURzLgoKIyMgT3V0cHV0IERlZmF1bHRzCgotIFByb3ZpZGUgYSBjb3B5YWJsZSBwcm9tcHQgZmlyc3QuCi0gS2VlcCBjb25zdHJhaW50cyBjb25jcmV0ZTogZXhhY3QgdGV4dCwgYXNwZWN0IHJhdGlvLCByZWFkYWJsZSBsYWJlbHMsIGxheW91dCBoaWVyYXJjaHksIGFuZCBhdm9pZGVkIGFydGlmYWN0cy4KLSBGb3IgQ2hpbmVzZSByZXF1ZXN0cywgd3JpdGUgdGhlIGZpbmFsIHByb21wdCBpbiBDaGluZXNlIHVubGVzcyB0aGUgdXNlciBhc2tzIGZvciBFbmdsaXNoLgotIEZvciBFbmdsaXNoIHJlcXVlc3RzLCB3cml0ZSB0aGUgZmluYWwgcHJvbXB0IGluIEVuZ2xpc2ggdW5sZXNzIHRoZSB1c2VyIGFza3MgZm9yIENoaW5lc2UuCi0gV2hlbiB0aGUgdXNlciBhc2tzIGZvciBtdWx0aXBsZSBjb25jZXB0cywgcmV1c2Ugb25lIHRlbXBsYXRlIGFuZCB2YXJ5IHN1YmplY3QsIGNvbXBvc2l0aW9uLCBwYWxldHRlLCBhbmQgc2NlbmUuCgojIyBNYWludGVuYW5jZQoKV2hlbiB0aGUgc291cmNlIHJlcG9zaXRvcnkgY2hhbmdlcywgcnVuOgoKYGBgYmFzaApucG0gcnVuIGdlbmVyYXRlOnN0eWxlLXNraWxsCmBgYAoKVG8gaW5zdGFsbCB0aGUgc2tpbGwgaW50byB0aGUgbG9jYWwgQ29kZXggc2tpbGwgZm9sZGVyLCBydW46CgpgYGBiYXNoCm5wbSBydW4gaW5zdGFsbDpza2lsbApgYGAK
+---
+name: gpt-image-2-style-library
+description: Choose GPT-Image2 / gpt-image-2 visual styles and industrial prompt templates from the awesome-gpt-image-2 style library. Use when an agent needs to create, rewrite, classify, or improve image-generation prompts with repository-backed templates, categories, style tags, scene tags, pitfalls, and example cases.
+---
+
+# GPT-Image2 Style Library
+
+Use this skill to turn a user's image-generation intent into a production-ready GPT-Image2 prompt using the awesome-gpt-image-2 style library.
+
+## Example Output
+
+![City life system map example](assets/city-life-system-map.png)
+
+Example request: `用 gpt-image-2-style-library 技能生成城市生命系统图谱`
+
+## Reference
+
+- Read `references/style-library.md` before choosing a template or style.
+- The reference is generated from `data/style-library.json` in the repository.
+- Prefer the reference over memory when template names, categories, covers, or style tags matter.
+
+## Workflow
+
+1. Detect the user's language and answer in that language.
+2. Identify the user's target output: product, poster, UI, infographic, brand, photo, illustration, character, scene, history, document, or special task.
+3. Match the request in this order: template category, visual style tag, scene tag, then nearest example cases.
+4. If one template is clearly strongest, use it directly. If several are plausible, present 2-3 options with short reasons and ask the user to choose.
+5. Build the final prompt with these blocks:
+   - subject and task
+   - composition and layout
+   - visual style and materials
+   - text and label requirements
+   - aspect ratio and output format
+   - constraints and negative details
+6. Include the selected template name and any useful example case IDs.
+
+## Output Defaults
+
+- Provide a copyable prompt first.
+- Keep constraints concrete: exact text, aspect ratio, readable labels, layout hierarchy, and avoided artifacts.
+- For Chinese requests, write the final prompt in Chinese unless the user asks for English.
+- For English requests, write the final prompt in English unless the user asks for Chinese.
+- When the user asks for multiple concepts, reuse one template and vary subject, composition, palette, and scene.
+
+## Maintenance
+
+When the source repository changes, run:
+
+```bash
+npm run generate:style-skill
+```
+
+To install the skill into the local Codex skill folder, run:
+
+```bash
+npm run install:skill
+```
