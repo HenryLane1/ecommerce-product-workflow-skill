@@ -1,1 +1,391 @@
-IyBIeWJyaWQgU2NyYXBpbmcgQXBwcm9hY2hlcwoKIyMgT3ZlcnZpZXcKCkNvbWJpbmUgbXVsdGlwbGUgc3RyYXRlZ2llcyBmb3Igb3B0aW1hbCBzcGVlZCwgcmVsaWFiaWxpdHksIGFuZCBkYXRhIHF1YWxpdHkuIEh5YnJpZCBhcHByb2FjaGVzIGxldmVyYWdlIHRoZSBzdHJlbmd0aHMgb2YgZWFjaCBtZXRob2QuCgojIyBDb21tb24gSHlicmlkIFBhdHRlcm5zCgojIyMgUGF0dGVybiAxOiBTaXRlbWFwICsgQVBJIChCZXN0IFBlcmZvcm1hbmNlKQoKKipVc2UgY2FzZSoqOiBTaXRlIGhhcyBzaXRlbWFwICsgaGlkZGVuIEFQSQoKKipBZHZhbnRhZ2VzKio6Ci0gSW5zdGFudCBVUkwgZGlzY292ZXJ5IChzaXRlbWFwKQotIENsZWFuIHN0cnVjdHVyZWQgZGF0YSAoQVBJKQotIDYweCBmYXN0ZXIgdGhhbiBjcmF3bGluZyArIHNjcmFwaW5nCi0gTW9zdCByZWxpYWJsZSBkYXRhIGZvcm1hdAoKKipFeGFtcGxlKio6CmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgUm9ib3RzRmlsZSB9IGZyb20gJ2NyYXdsZWUnOwppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7CgovLyAxLiBHZXQgYWxsIFVSTHMgZnJvbSBzaXRlbWFwCmNvbnN0IHJvYm90cyA9IGF3YWl0IFJvYm90c0ZpbGUuZmluZCgnaHR0cHM6Ly9zaG9wLmNvbScpOwpjb25zdCB1cmxzID0gYXdhaXQgcm9ib3RzLnBhcnNlVXJsc0Zyb21TaXRlbWFwcygpOwoKLy8gMi4gRXh0cmFjdCBJRHMgZnJvbSBVUkxzCmNvbnN0IHByb2R1Y3RJZHMgPSB1cmxzCiAgICAubWFwKHVybCA9PiB1cmwubWF0Y2goL1wvcHJvZHVjdHNcLyhcZCspLyk/LlsxXSkKICAgIC5maWx0ZXIoQm9vbGVhbik7Cgpjb25zb2xlLmxvZyhgRm91bmQgJHtwcm9kdWN0SWRzLmxlbmd0aH0gcHJvZHVjdHNgKTsKCi8vIDMuIEZldGNoIGRhdGEgdmlhIEFQSSAoY2xlYW4gSlNPTikKZm9yIChjb25zdCBpZCBvZiBwcm9kdWN0SWRzKSB7CiAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdvdFNjcmFwaW5nKHsKICAgICAgICB1cmw6IGBodHRwczovL2FwaS5zaG9wLmNvbS92MS9wcm9kdWN0cy8ke2lkfWAsCiAgICAgICAgcmVzcG9uc2VUeXBlOiAnanNvbicsCiAgICB9KTsKCiAgICBjb25zb2xlLmxvZyhyZXNwb25zZS5ib2R5KTsgLy8gQ2xlYW4sIHN0cnVjdHVyZWQgZGF0YQp9CmBgYAoKKipQZXJmb3JtYW5jZSoqOgotIFVSTCBkaXNjb3Zlcnk6IDUtMTAgc2Vjb25kcyAoc2l0ZW1hcCkKLSBEYXRhIGZldGNoaW5nOiAyLTUgbWludXRlcyAoQVBJKQotIFRvdGFsOiB+NSBtaW51dGVzIGZvciAxMDAwIHByb2R1Y3RzCgojIyMgUGF0dGVybiAyOiBTaXRlbWFwICsgRE9NIFNjcmFwaW5nCgoqKlVzZSBjYXNlKio6IFNpdGUgaGFzIHNpdGVtYXAgYnV0IG5vIEFQSQoKKipBZHZhbnRhZ2VzKio6Ci0gRmFzdCBVUkwgZGlzY292ZXJ5IChzaXRlbWFwKQotIENhbiBoYW5kbGUgSmF2YVNjcmlwdC1yZW5kZXJlZCBjb250ZW50Ci0gTm8gbmVlZCB0byBjcmF3bCBmb3IgVVJMcwoKKipEZXZlbG9wbWVudCoqIChEZXZUb29scyBicmlkZ2UpOgpgYGAKIyBHZXQgVVJMcyBmcm9tIHNpdGVtYXAsIHRoZW4gZm9yIGVhY2ggVVJMOgppbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbmF2aWdhdGUodXJsKQpodW1hbml6ZXJfaWRsZSh0YXJnZXRfaWQsIDIwMDApCmludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19zbmFwc2hvdCgpICAgIOKGkiBFeHRyYWN0IGRhdGEgZnJvbSBhY2Nlc3NpYmlsaXR5IHRyZWUKYGBgCgoqKlByb2R1Y3Rpb24qKiAoQ3Jhd2xlZSk6CmBgYGphdmFzY3JpcHQKaW1wb3J0IHsgUGxheXdyaWdodENyYXdsZXIsIFJvYm90c0ZpbGUsIERhdGFzZXQgfSBmcm9tICdjcmF3bGVlJzsKCi8vIDEuIEdldCBVUkxzIGZyb20gc2l0ZW1hcApjb25zdCByb2JvdHMgPSBhd2FpdCBSb2JvdHNGaWxlLmZpbmQoJ2h0dHBzOi8vZXhhbXBsZS5jb20nKTsKY29uc3QgdXJscyA9IGF3YWl0IHJvYm90cy5wYXJzZVVybHNGcm9tU2l0ZW1hcHMoKTsKCi8vIDIuIFNjcmFwZSBwYWdlcyB3aXRoIFBsYXl3cmlnaHRDcmF3bGVyCmNvbnN0IGNyYXdsZXIgPSBuZXcgUGxheXdyaWdodENyYXdsZXIoewogICAgbWF4Q29uY3VycmVuY3k6IDUsCgogICAgYXN5bmMgcmVxdWVzdEhhbmRsZXIoeyBwYWdlLCByZXF1ZXN0LCBsb2cgfSkgewogICAgICAgIGxvZy5pbmZvKGBTY3JhcGluZzogJHtyZXF1ZXN0LnVybH1gKTsKCiAgICAgICAgY29uc3QgZGF0YSA9IGF3YWl0IHBhZ2UuZXZhbHVhdGUoKCkgPT4gKHsKICAgICAgICAgICAgdGl0bGU6IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ2gxJyk/LnRleHRDb250ZW50LAogICAgICAgICAgICBwcmljZTogZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLnByaWNlJyk/LnRleHRDb250ZW50LAogICAgICAgIH0pKTsKCiAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YSh7IHVybDogcmVxdWVzdC51cmwsIC4uLmRhdGEgfSk7CiAgICB9LAp9KTsKCmF3YWl0IGNyYXdsZXIuYWRkUmVxdWVzdHModXJscyk7CmF3YWl0IGNyYXdsZXIucnVuKCk7CmBgYAoKKipQZXJmb3JtYW5jZSoqOgotIFVSTCBkaXNjb3Zlcnk6IDUtMTAgc2Vjb25kcwotIFNjcmFwaW5nOiAxMC0yMCBtaW51dGVzIChmb3IgMTAwMCBwYWdlcykKLSBUb3RhbDogfjIwIG1pbnV0ZXMKCiMjIyBQYXR0ZXJuIDM6IEl0ZXJhdGl2ZSBGYWxsYmFjawoKKipVc2UgY2FzZSoqOiBVbmtub3duIHNpdGUsIHRyeSBzaW1wbGVzdCBmaXJzdAoKKipBZHZhbnRhZ2VzKio6Ci0gU3RhcnQgd2l0aCBmYXN0ZXN0IGFwcHJvYWNoCi0gQXV0b21hdGljYWxseSBmYWxsYmFjayBpZiBmYWlscwotIE9wdGltYWwgZm9yIHVua25vd24gc2l0ZXMKCioqRmFsbGJhY2sgY2hhaW4qKjogVHJhZmZpYyBJbnRlcmNlcHRpb24g4oaSIFNpdGVtYXAgKyBBUEkg4oaSIFNpdGVtYXAgKyBET00g4oaSIFB1cmUgRE9NCgoqKkV4YW1wbGUqKjoKYGBgamF2YXNjcmlwdAphc3luYyBmdW5jdGlvbiBzY3JhcGVXaXRoRmFsbGJhY2sodXJsKSB7CiAgICAvLyBUcnkgMTogVHJhZmZpYyBJbnRlcmNlcHRpb24g4oaSIGRpc2NvdmVyIEFQSSBhdXRvbWF0aWNhbGx5CiAgICAvLyAoRG9uZSBkdXJpbmcgUGhhc2UgMSByZWNvbm5haXNzYW5jZSB3aXRoIHByb3h5LW1jcCkKICAgIC8vIHByb3h5X3N0YXJ0KCkg4oaSIGludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2godXJsLCBzdGVhbHRoTW9kZTogdHJ1ZSkKICAgIC8vIOKGkiBwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogImFwaSIpIOKGkiBwcm94eV9nZXRfZXhjaGFuZ2UoKQoKICAgIC8vIFRyeSAyOiBTaXRlbWFwICsgQVBJCiAgICB0cnkgewogICAgICAgIGNvbnNvbGUubG9nKCdBdHRlbXB0aW5nOiBTaXRlbWFwICsgQVBJLi4uJyk7CiAgICAgICAgY29uc3Qgcm9ib3RzID0gYXdhaXQgUm9ib3RzRmlsZS5maW5kKHVybCk7CiAgICAgICAgY29uc3QgdXJscyA9IGF3YWl0IHJvYm90cy5wYXJzZVVybHNGcm9tU2l0ZW1hcHMoKTsKCiAgICAgICAgaWYgKHVybHMubGVuZ3RoID4gMCkgewogICAgICAgICAgICBjb25zdCBhcGlVcmwgPSBhd2FpdCBkaXNjb3ZlckFQSSh1cmwpOwogICAgICAgICAgICBpZiAoYXBpVXJsKSB7CiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygn4pyTIFVzaW5nIFNpdGVtYXAgKyBBUEkgKGZhc3Rlc3QpJyk7CiAgICAgICAgICAgICAgICByZXR1cm4gYXdhaXQgc2NyYXBlU2l0ZW1hcEFQSSh1cmxzLCBhcGlVcmwpOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICBjb25zb2xlLmxvZygn4pyXIFNpdGVtYXAgKyBBUEkgZmFpbGVkJyk7CiAgICB9CgogICAgLy8gVHJ5IDM6IFNpdGVtYXAgKyBET00gU2NyYXBpbmcKICAgIHRyeSB7CiAgICAgICAgY29uc29sZS5sb2coJ0F0dGVtcHRpbmc6IFNpdGVtYXAgKyBET00gU2NyYXBpbmcuLi4nKTsKICAgICAgICBjb25zdCByb2JvdHMgPSBhd2FpdCBSb2JvdHNGaWxlLmZpbmQodXJsKTsKICAgICAgICBjb25zdCB1cmxzID0gYXdhaXQgcm9ib3RzLnBhcnNlVXJsc0Zyb21TaXRlbWFwcygpOwoKICAgICAgICBpZiAodXJscy5sZW5ndGggPiAwKSB7CiAgICAgICAgICAgIGNvbnNvbGUubG9nKCfinJMgVXNpbmcgU2l0ZW1hcCArIERPTSBTY3JhcGluZycpOwogICAgICAgICAgICByZXR1cm4gYXdhaXQgc2NyYXBlU2l0ZW1hcERPTSh1cmxzKTsKICAgICAgICB9CiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgIGNvbnNvbGUubG9nKCfinJcgU2l0ZW1hcCArIERPTSBTY3JhcGluZyBmYWlsZWQnKTsKICAgIH0KCiAgICAvLyBUcnkgNDogUHVyZSBET00gY3Jhd2xpbmcgKGZhbGxiYWNrKQogICAgdHJ5IHsKICAgICAgICBjb25zb2xlLmxvZygnQXR0ZW1wdGluZzogRE9NIGNyYXdsaW5nIChmYWxsYmFjaykuLi4nKTsKICAgICAgICBjb25zb2xlLmxvZygn4pyTIFVzaW5nIERPTSBjcmF3bGluZycpOwogICAgICAgIHJldHVybiBhd2FpdCBzY3JhcGVET01DcmF3bCh1cmwpOwogICAgfSBjYXRjaCAoZXJyb3IpIHsKICAgICAgICBjb25zb2xlLmxvZygn4pyXIEFsbCBtZXRob2RzIGZhaWxlZCcpOwogICAgICAgIHRocm93IGVycm9yOwogICAgfQp9CmBgYAoKIyMjIFBhdHRlcm4gNDogQVBJICsgUGxheXdyaWdodCBGYWxsYmFjawoKKipVc2UgY2FzZSoqOiBBUEkgZm9yIG1vc3QgZGF0YSwgUGxheXdyaWdodCBmb3IgbWlzc2luZyBmaWVsZHMKCioqQWR2YW50YWdlcyoqOgotIEZhc3QgQVBJIGZvciBjb3JlIGRhdGEKLSBQbGF5d3JpZ2h0IGZvciBjb21wbGV4IGZpZWxkcyAocmV2aWV3cywgZHluYW1pYyBjb250ZW50KQotIEJlc3QgZGF0YSBxdWFsaXR5CgoqKkV4YW1wbGUqKjoKYGBgamF2YXNjcmlwdAppbXBvcnQgeyBnb3RTY3JhcGluZyB9IGZyb20gJ2dvdC1zY3JhcGluZyc7CmltcG9ydCB7IGNocm9taXVtIH0gZnJvbSAncGxheXdyaWdodCc7Cgphc3luYyBmdW5jdGlvbiBzY3JhcGVQcm9kdWN0KHByb2R1Y3RJZCkgewogICAgLy8gMS4gR2V0IGNvcmUgZGF0YSBmcm9tIEFQSSAoZmFzdCkKICAgIGNvbnN0IGFwaURhdGEgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICAgICAgdXJsOiBgaHR0cHM6Ly9hcGkuc2hvcC5jb20vcHJvZHVjdHMvJHtwcm9kdWN0SWR9YCwKICAgICAgICByZXNwb25zZVR5cGU6ICdqc29uJywKICAgIH0pOwoKICAgIC8vIDIuIEdldCBjb21wbGV4IGRhdGEgd2l0aCBQbGF5d3JpZ2h0CiAgICBjb25zdCBicm93c2VyID0gYXdhaXQgY2hyb21pdW0ubGF1bmNoKCk7CiAgICBjb25zdCBwYWdlID0gYXdhaXQgYnJvd3Nlci5uZXdQYWdlKCk7CgogICAgYXdhaXQgcGFnZS5nb3RvKGBodHRwczovL3Nob3AuY29tL3Byb2R1Y3RzLyR7cHJvZHVjdElkfWApOwoKICAgIC8vIFNjcmFwZSByZXZpZXdzIChkeW5hbWljIGNvbnRlbnQpCiAgICBjb25zdCByZXZpZXdzID0gYXdhaXQgcGFnZS5ldmFsdWF0ZSgoKSA9PiB7CiAgICAgICAgcmV0dXJuIEFycmF5LmZyb20oZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnLnJldmlldycpKS5tYXAoZWwgPT4gKHsKICAgICAgICAgICAgcmF0aW5nOiBlbC5xdWVyeVNlbGVjdG9yKCcucmF0aW5nJyk/LnRleHRDb250ZW50LAogICAgICAgICAgICB0ZXh0OiBlbC5xdWVyeVNlbGVjdG9yKCcudGV4dCcpPy50ZXh0Q29udGVudCwKICAgICAgICB9KSk7CiAgICB9KTsKCiAgICBhd2FpdCBicm93c2VyLmNsb3NlKCk7CgogICAgLy8gMy4gQ29tYmluZSBkYXRhCiAgICByZXR1cm4gewogICAgICAgIC4uLmFwaURhdGEuYm9keSwKICAgICAgICByZXZpZXdzLAogICAgfTsKfQpgYGAKCiMjIyBQYXR0ZXJuIDU6IENoZWVyaW8gKyBQbGF5d3JpZ2h0IEh5YnJpZAoKKipVc2UgY2FzZSoqOiBNb3N0IHBhZ2VzIHN0YXRpYywgc29tZSBkeW5hbWljCgoqKkFkdmFudGFnZXMqKjoKLSBGYXN0IENoZWVyaW8gZm9yIHN0YXRpYyBwYWdlcwotIFBsYXl3cmlnaHQgb25seSB3aGVuIG5lZWRlZAotIE9wdGltYWwgcmVzb3VyY2UgdXNhZ2UKCioqRXhhbXBsZSoqOgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IENoZWVyaW9DcmF3bGVyLCBQbGF5d3JpZ2h0Q3Jhd2xlciwgRGF0YXNldCB9IGZyb20gJ2NyYXdsZWUnOwoKYXN5bmMgZnVuY3Rpb24gc2NyYXBlSHlicmlkKHVybHMpIHsKICAgIC8vIFRyeSBDaGVlcmlvIGZpcnN0IChmYXN0KQogICAgY29uc3QgY2hlZXJpb0NyYXdsZXIgPSBuZXcgQ2hlZXJpb0NyYXdsZXIoewogICAgICAgIG1heENvbmN1cnJlbmN5OiAzMCwKICAgICAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7ICQsIHJlcXVlc3QgfSkgewogICAgICAgICAgICAvLyBDaGVjayBpZiBjb250ZW50IGlzIHByZXNlbnQKICAgICAgICAgICAgY29uc3QgdGl0bGUgPSAkKCdoMScpLnRleHQoKTsKCiAgICAgICAgICAgIGlmICghdGl0bGUpIHsKICAgICAgICAgICAgICAgIC8vIENvbnRlbnQgbWlzc2luZyAoSmF2YVNjcmlwdC1yZW5kZXJlZCkKICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKGBDaGVlcmlvIGZhaWxlZCBmb3IgJHtyZXF1ZXN0LnVybH0sIHVzaW5nIFBsYXl3cmlnaHQuLi5gKTsKICAgICAgICAgICAgICAgIGF3YWl0IHBsYXl3cmlnaHRDcmF3bGVyLmFkZFJlcXVlc3RzKFtyZXF1ZXN0LnVybF0pOwogICAgICAgICAgICAgICAgcmV0dXJuOwogICAgICAgICAgICB9CgogICAgICAgICAgICAvLyBFeHRyYWN0IHdpdGggQ2hlZXJpbyAoZmFzdCkKICAgICAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YSh7CiAgICAgICAgICAgICAgICB1cmw6IHJlcXVlc3QudXJsLAogICAgICAgICAgICAgICAgdGl0bGU6IHRpdGxlLAogICAgICAgICAgICAgICAgcHJpY2U6ICQoJy5wcmljZScpLnRleHQoKSwKICAgICAgICAgICAgfSk7CiAgICAgICAgfSwKICAgIH0pOwoKICAgIC8vIFBsYXl3cmlnaHQgZm9yIEphdmFTY3JpcHQgcGFnZXMKICAgIGNvbnN0IHBsYXl3cmlnaHRDcmF3bGVyID0gbmV3IFBsYXl3cmlnaHRDcmF3bGVyKHsKICAgICAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7IHBhZ2UsIHJlcXVlc3QgfSkgewogICAgICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcGFnZS5ldmFsdWF0ZSgoKSA9PiAoewogICAgICAgICAgICAgICAgdGl0bGU6IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ2gxJyk/LnRleHRDb250ZW50LAogICAgICAgICAgICAgICAgcHJpY2U6IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5wcmljZScpPy50ZXh0Q29udGVudCwKICAgICAgICAgICAgfSkpOwoKICAgICAgICAgICAgYXdhaXQgRGF0YXNldC5wdXNoRGF0YSh7IHVybDogcmVxdWVzdC51cmwsIC4uLmRhdGEgfSk7CiAgICAgICAgfSwKICAgIH0pOwoKICAgIGF3YWl0IGNoZWVyaW9DcmF3bGVyLnJ1bih1cmxzKTsKfQpgYGAKCiMjIERlY2lzaW9uIE1hdHJpeAoKfCBTY2VuYXJpbyB8IEJlc3QgQXBwcm9hY2ggfCBTcGVlZCB8IERhdGEgUXVhbGl0eSB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS0tfAp8IEFQSSBmb3VuZCB2aWEgdHJhZmZpYyBjYXB0dXJlIHwgVHJhZmZpYyBJbnRlcmNlcHRpb24gKyBBUEkgfCDimqHimqHimqHimqHimqEgfCDirZDirZDirZDirZDirZAgfAp8IFNpdGVtYXAgKyBBUEkgZXhpc3QgfCBTaXRlbWFwICsgQVBJIHwg4pqh4pqh4pqh4pqh4pqhIHwg4q2Q4q2Q4q2Q4q2Q4q2QIHwKfCBTaXRlbWFwICsgTm8gQVBJICsgU3RhdGljIHwgU2l0ZW1hcCArIENoZWVyaW8gfCDimqHimqHimqHimqEgfCDirZDirZDirZDirZAgfAp8IFNpdGVtYXAgKyBObyBBUEkgKyBEeW5hbWljIHwgU2l0ZW1hcCArIERPTSBTY3JhcGluZyB8IOKaoeKaoeKaoSB8IOKtkOKtkOKtkOKtkCB8CnwgTm8gU2l0ZW1hcCArIEFQSSB8IEFQSSBEaXNjb3ZlcnkgfCDimqHimqHimqHirZAgfCDirZDirZDirZDirZDirZAgfAp8IFVua25vd24gU2l0ZSB8IEl0ZXJhdGl2ZSBGYWxsYmFjayB8IOKaoeKaoeKaoSB8IOKtkOKtkOKtkOKtkCB8CnwgTWl4ZWQgU3RhdGljL0R5bmFtaWMgfCBDaGVlcmlvICsgUGxheXdyaWdodCB8IOKaoeKaoeKaoeKaoSB8IOKtkOKtkOKtkOKtkCB8CgojIyBCZXN0IFByYWN0aWNlcwoKIyMjIOKchSBETzoKCi0gKipTdGFydCB3aXRoIHNpbXBsZXN0IGFwcHJvYWNoKiogKHNpdGVtYXAvQVBJKQotICoqRmFsbGJhY2sgdG8gY29tcGxleCBtZXRob2RzKiogaWYgc2ltcGxlIGZhaWxzCi0gKipUZXN0IHNtYWxsIGJhdGNoIGZpcnN0KiogKDUtMTAgaXRlbXMpCi0gKipMb2cgd2hpY2ggbWV0aG9kIHN1Y2NlZWRlZCoqIGZvciBkZWJ1Z2dpbmcKLSAqKkNvbWJpbmUgc3RyZW5ndGhzKiogKHNpdGVtYXAgVVJMcyArIEFQSSBkYXRhKQotICoqVXNlIENoZWVyaW8gZm9yIHN0YXRpYyBjb250ZW50KiogKDV4IGZhc3RlcikKLSAqKlJlc2VydmUgUGxheXdyaWdodCBmb3Igd2hlbiBuZWVkZWQqKiAocmVzb3VyY2UtaW50ZW5zaXZlKQoKIyMjIOKdjCBET04nVDoKCi0gKipVc2UgUGxheXdyaWdodCBpZiBDaGVlcmlvIHdvcmtzKiogKHdhc3RlIG9mIHJlc291cmNlcykKLSAqKlNraXAgQVBJIGRpc2NvdmVyeSoqIChhbHdheXMgY2hlY2sgZmlyc3QhKQotICoqRm9yZ2V0IGZhbGxiYWNrIHN0cmF0ZWdpZXMqKiAoc2l0ZXMgY2hhbmdlKQotICoqTWl4IGFwcHJvYWNoZXMgcmFuZG9tbHkqKiAoYmUgc3lzdGVtYXRpYykKCiMjIENvbXBsZXRlIEV4YW1wbGU6IEZ1bGwgSHlicmlkCgpgYGBqYXZhc2NyaXB0CmltcG9ydCB7IFJvYm90c0ZpbGUgfSBmcm9tICdjcmF3bGVlJzsKaW1wb3J0IHsgZ290U2NyYXBpbmcgfSBmcm9tICdnb3Qtc2NyYXBpbmcnOwppbXBvcnQgeyBjaHJvbWl1bSB9IGZyb20gJ3BsYXl3cmlnaHQnOwoKYXN5bmMgZnVuY3Rpb24gc2NyYXBlV2Vic2l0ZShiYXNlVXJsKSB7CiAgICBjb25zb2xlLmxvZygn8J+UjSBQaGFzZSAxOiBEaXNjb3ZlcnknKTsKCiAgICAvLyBDaGVjayBmb3Igc2l0ZW1hcAogICAgY29uc3Qgcm9ib3RzID0gYXdhaXQgUm9ib3RzRmlsZS5maW5kKGJhc2VVcmwpOwogICAgY29uc3Qgc2l0ZW1hcFVybHMgPSBhd2FpdCByb2JvdHMucGFyc2VVcmxzRnJvbVNpdGVtYXBzKCk7CgogICAgY29uc29sZS5sb2coYEZvdW5kICR7c2l0ZW1hcFVybHMubGVuZ3RofSBVUkxzIGluIHNpdGVtYXBgKTsKCiAgICAvLyBFeHRyYWN0IHByb2R1Y3QgSURzCiAgICBjb25zdCBwcm9kdWN0SWRzID0gc2l0ZW1hcFVybHMKICAgICAgICAubWFwKHVybCA9PiB1cmwubWF0Y2goL1wvcHJvZHVjdHNcLyhcZCspLyk/LlsxXSkKICAgICAgICAuZmlsdGVyKEJvb2xlYW4pOwoKICAgIGNvbnNvbGUubG9nKGBFeHRyYWN0ZWQgJHtwcm9kdWN0SWRzLmxlbmd0aH0gcHJvZHVjdCBJRHNgKTsKCiAgICBjb25zb2xlLmxvZygn8J+UjSBQaGFzZSAyOiBBUEkgRGlzY292ZXJ5Jyk7CgogICAgLy8gVHJ5IEFQSSBmaXJzdAogICAgdHJ5IHsKICAgICAgICBjb25zdCB0ZXN0SWQgPSBwcm9kdWN0SWRzWzBdOwogICAgICAgIGNvbnN0IGFwaVJlc3BvbnNlID0gYXdhaXQgZ290U2NyYXBpbmcoewogICAgICAgICAgICB1cmw6IGBodHRwczovL2FwaS4ke2Jhc2VVcmwucmVwbGFjZSgnaHR0cHM6Ly8nLCAnJyl9L3Byb2R1Y3RzLyR7dGVzdElkfWAsCiAgICAgICAgICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAogICAgICAgICAgICB0aW1lb3V0OiB7IHJlcXVlc3Q6IDUwMDAgfSwKICAgICAgICB9KTsKCiAgICAgICAgY29uc29sZS5sb2coJ+KckyBBUEkgZm91bmQhIFVzaW5nIEFQSSBmb3IgZGF0YScpOwoKICAgICAgICAvLyBVc2UgQVBJIGZvciBhbGwgcHJvZHVjdHMKICAgICAgICBjb25zdCByZXN1bHRzID0gW107CiAgICAgICAgZm9yIChjb25zdCBpZCBvZiBwcm9kdWN0SWRzKSB7CiAgICAgICAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCBnb3RTY3JhcGluZyh7CiAgICAgICAgICAgICAgICB1cmw6IGBodHRwczovL2FwaS4ke2Jhc2VVcmwucmVwbGFjZSgnaHR0cHM6Ly8nLCAnJyl9L3Byb2R1Y3RzLyR7aWR9YCwKICAgICAgICAgICAgICAgIHJlc3BvbnNlVHlwZTogJ2pzb24nLAogICAgICAgICAgICB9KTsKICAgICAgICAgICAgcmVzdWx0cy5wdXNoKGRhdGEuYm9keSk7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gcmVzdWx0czsKCiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgIGNvbnNvbGUubG9nKCfinJcgTm8gQVBJIGZvdW5kLCB1c2luZyBQbGF5d3JpZ2h0Jyk7CiAgICB9CgogICAgY29uc29sZS5sb2coJ/CflI0gUGhhc2UgMzogUGxheXdyaWdodCBTY3JhcGluZycpOwoKICAgIC8vIEZhbGxiYWNrIHRvIFBsYXl3cmlnaHQKICAgIGNvbnN0IGJyb3dzZXIgPSBhd2FpdCBjaHJvbWl1bS5sYXVuY2goKTsKICAgIGNvbnN0IHJlc3VsdHMgPSBbXTsKCiAgICBmb3IgKGNvbnN0IHVybCBvZiBzaXRlbWFwVXJscy5zbGljZSgwLCAxMCkpIHsgLy8gVGVzdCB3aXRoIDEwIGZpcnN0CiAgICAgICAgY29uc3QgcGFnZSA9IGF3YWl0IGJyb3dzZXIubmV3UGFnZSgpOwogICAgICAgIGF3YWl0IHBhZ2UuZ290byh1cmwpOwoKICAgICAgICBjb25zdCBkYXRhID0gYXdhaXQgcGFnZS5ldmFsdWF0ZSgoKSA9PiAoewogICAgICAgICAgICB0aXRsZTogZG9jdW1lbnQucXVlcnlTZWxlY3RvcignaDEnKT8udGV4dENvbnRlbnQsCiAgICAgICAgICAgIHByaWNlOiBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcucHJpY2UnKT8udGV4dENvbnRlbnQsCiAgICAgICAgfSkpOwoKICAgICAgICByZXN1bHRzLnB1c2goeyB1cmwsIC4uLmRhdGEgfSk7CiAgICAgICAgYXdhaXQgcGFnZS5jbG9zZSgpOwogICAgfQoKICAgIGF3YWl0IGJyb3dzZXIuY2xvc2UoKTsKICAgIHJldHVybiByZXN1bHRzOwp9CgovLyBVc2FnZQpjb25zdCBkYXRhID0gYXdhaXQgc2NyYXBlV2Vic2l0ZSgnaHR0cHM6Ly9leGFtcGxlLmNvbScpOwpjb25zb2xlLmxvZyhgU2NyYXBlZCAke2RhdGEubGVuZ3RofSBwcm9kdWN0c2ApOwpgYGAKCiMjIFJlbGF0ZWQgUmVzb3VyY2VzCgotICoqVHJhZmZpYyBpbnRlcmNlcHRpb24qKjogU2VlIGB0cmFmZmljLWludGVyY2VwdGlvbi5tZGAKLSAqKlNpdGVtYXAqKjogU2VlIGBzaXRlbWFwLWRpc2NvdmVyeS5tZGAKLSAqKkFQSSoqOiBTZWUgYGFwaS1kaXNjb3ZlcnkubWRgCi0gKipET00gc2NyYXBpbmcqKjogU2VlIGBkb20tc2NyYXBpbmcubWRgCi0gKipDaGVlcmlvKio6IFNlZSBgY2hlZXJpby1zY3JhcGluZy5tZGAKLSAqKkV4YW1wbGVzKio6IFNlZSBgLi4vZXhhbXBsZXMvaHlicmlkLXNpdGVtYXAtYXBpLmpzYAotICoqRXhhbXBsZXMqKjogU2VlIGAuLi9leGFtcGxlcy9pdGVyYXRpdmUtZmFsbGJhY2suanNgCgojIyBTdW1tYXJ5CgoqKkh5YnJpZCBhcHByb2FjaGVzIGNvbWJpbmUgdGhlIGJlc3Qgb2YgZWFjaCBtZXRob2QhKioKCioqS2V5IHRha2Vhd2F5cyoqOgoxLiBTaXRlbWFwICsgQVBJID0gZmFzdGVzdCAoNjB4IGZhc3RlciB0aGFuIGNyYXdsaW5nKQoyLiBTdGFydCBzaW1wbGUsIGZhbGxiYWNrIHRvIGNvbXBsZXgKMy4gVGVzdCBzbWFsbCBiYXRjaCBmaXJzdAo0LiBMb2cgd2hpY2ggbWV0aG9kIHN1Y2NlZWRlZAo1LiBDb21iaW5lIHN0cmVuZ3RocyBmb3Igb3B0aW1hbCByZXN1bHRzCg==
+# Hybrid Scraping Approaches
+
+## Overview
+
+Combine multiple strategies for optimal speed, reliability, and data quality. Hybrid approaches leverage the strengths of each method.
+
+## Common Hybrid Patterns
+
+### Pattern 1: Sitemap + API (Best Performance)
+
+**Use case**: Site has sitemap + hidden API
+
+**Advantages**:
+- Instant URL discovery (sitemap)
+- Clean structured data (API)
+- 60x faster than crawling + scraping
+- Most reliable data format
+
+**Example**:
+```javascript
+import { RobotsFile } from 'crawlee';
+import { gotScraping } from 'got-scraping';
+
+// 1. Get all URLs from sitemap
+const robots = await RobotsFile.find('https://shop.com');
+const urls = await robots.parseUrlsFromSitemaps();
+
+// 2. Extract IDs from URLs
+const productIds = urls
+    .map(url => url.match(/\/products\/(\d+)/)?.[1])
+    .filter(Boolean);
+
+console.log(`Found ${productIds.length} products`);
+
+// 3. Fetch data via API (clean JSON)
+for (const id of productIds) {
+    const response = await gotScraping({
+        url: `https://api.shop.com/v1/products/${id}`,
+        responseType: 'json',
+    });
+
+    console.log(response.body); // Clean, structured data
+}
+```
+
+**Performance**:
+- URL discovery: 5-10 seconds (sitemap)
+- Data fetching: 2-5 minutes (API)
+- Total: ~5 minutes for 1000 products
+
+### Pattern 2: Sitemap + DOM Scraping
+
+**Use case**: Site has sitemap but no API
+
+**Advantages**:
+- Fast URL discovery (sitemap)
+- Can handle JavaScript-rendered content
+- No need to crawl for URLs
+
+**Development** (DevTools bridge):
+```
+# Get URLs from sitemap, then for each URL:
+interceptor_chrome_devtools_navigate(url)
+humanizer_idle(target_id, 2000)
+interceptor_chrome_devtools_snapshot()    → Extract data from accessibility tree
+```
+
+**Production** (Crawlee):
+```javascript
+import { PlaywrightCrawler, RobotsFile, Dataset } from 'crawlee';
+
+// 1. Get URLs from sitemap
+const robots = await RobotsFile.find('https://example.com');
+const urls = await robots.parseUrlsFromSitemaps();
+
+// 2. Scrape pages with PlaywrightCrawler
+const crawler = new PlaywrightCrawler({
+    maxConcurrency: 5,
+
+    async requestHandler({ page, request, log }) {
+        log.info(`Scraping: ${request.url}`);
+
+        const data = await page.evaluate(() => ({
+            title: document.querySelector('h1')?.textContent,
+            price: document.querySelector('.price')?.textContent,
+        }));
+
+        await Dataset.pushData({ url: request.url, ...data });
+    },
+});
+
+await crawler.addRequests(urls);
+await crawler.run();
+```
+
+**Performance**:
+- URL discovery: 5-10 seconds
+- Scraping: 10-20 minutes (for 1000 pages)
+- Total: ~20 minutes
+
+### Pattern 3: Iterative Fallback
+
+**Use case**: Unknown site, try simplest first
+
+**Advantages**:
+- Start with fastest approach
+- Automatically fallback if fails
+- Optimal for unknown sites
+
+**Fallback chain**: Traffic Interception → Sitemap + API → Sitemap + DOM → Pure DOM
+
+**Example**:
+```javascript
+async function scrapeWithFallback(url) {
+    // Try 1: Traffic Interception → discover API automatically
+    // (Done during Phase 1 reconnaissance with proxy-mcp)
+    // proxy_start() → interceptor_chrome_launch(url, stealthMode: true)
+    // → proxy_list_traffic(url_filter: "api") → proxy_get_exchange()
+
+    // Try 2: Sitemap + API
+    try {
+        console.log('Attempting: Sitemap + API...');
+        const robots = await RobotsFile.find(url);
+        const urls = await robots.parseUrlsFromSitemaps();
+
+        if (urls.length > 0) {
+            const apiUrl = await discoverAPI(url);
+            if (apiUrl) {
+                console.log('✓ Using Sitemap + API (fastest)');
+                return await scrapeSitemapAPI(urls, apiUrl);
+            }
+        }
+    } catch (error) {
+        console.log('✗ Sitemap + API failed');
+    }
+
+    // Try 3: Sitemap + DOM Scraping
+    try {
+        console.log('Attempting: Sitemap + DOM Scraping...');
+        const robots = await RobotsFile.find(url);
+        const urls = await robots.parseUrlsFromSitemaps();
+
+        if (urls.length > 0) {
+            console.log('✓ Using Sitemap + DOM Scraping');
+            return await scrapeSitemapDOM(urls);
+        }
+    } catch (error) {
+        console.log('✗ Sitemap + DOM Scraping failed');
+    }
+
+    // Try 4: Pure DOM crawling (fallback)
+    try {
+        console.log('Attempting: DOM crawling (fallback)...');
+        console.log('✓ Using DOM crawling');
+        return await scrapeDOMCrawl(url);
+    } catch (error) {
+        console.log('✗ All methods failed');
+        throw error;
+    }
+}
+```
+
+### Pattern 4: API + Playwright Fallback
+
+**Use case**: API for most data, Playwright for missing fields
+
+**Advantages**:
+- Fast API for core data
+- Playwright for complex fields (reviews, dynamic content)
+- Best data quality
+
+**Example**:
+```javascript
+import { gotScraping } from 'got-scraping';
+import { chromium } from 'playwright';
+
+async function scrapeProduct(productId) {
+    // 1. Get core data from API (fast)
+    const apiData = await gotScraping({
+        url: `https://api.shop.com/products/${productId}`,
+        responseType: 'json',
+    });
+
+    // 2. Get complex data with Playwright
+    const browser = await chromium.launch();
+    const page = await browser.newPage();
+
+    await page.goto(`https://shop.com/products/${productId}`);
+
+    // Scrape reviews (dynamic content)
+    const reviews = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll('.review')).map(el => ({
+            rating: el.querySelector('.rating')?.textContent,
+            text: el.querySelector('.text')?.textContent,
+        }));
+    });
+
+    await browser.close();
+
+    // 3. Combine data
+    return {
+        ...apiData.body,
+        reviews,
+    };
+}
+```
+
+### Pattern 5: Cheerio + Playwright Hybrid
+
+**Use case**: Most pages static, some dynamic
+
+**Advantages**:
+- Fast Cheerio for static pages
+- Playwright only when needed
+- Optimal resource usage
+
+**Example**:
+```javascript
+import { CheerioCrawler, PlaywrightCrawler, Dataset } from 'crawlee';
+
+async function scrapeHybrid(urls) {
+    // Try Cheerio first (fast)
+    const cheerioCrawler = new CheerioCrawler({
+        maxConcurrency: 30,
+        async requestHandler({ $, request }) {
+            // Check if content is present
+            const title = $('h1').text();
+
+            if (!title) {
+                // Content missing (JavaScript-rendered)
+                console.log(`Cheerio failed for ${request.url}, using Playwright...`);
+                await playwrightCrawler.addRequests([request.url]);
+                return;
+            }
+
+            // Extract with Cheerio (fast)
+            await Dataset.pushData({
+                url: request.url,
+                title: title,
+                price: $('.price').text(),
+            });
+        },
+    });
+
+    // Playwright for JavaScript pages
+    const playwrightCrawler = new PlaywrightCrawler({
+        async requestHandler({ page, request }) {
+            const data = await page.evaluate(() => ({
+                title: document.querySelector('h1')?.textContent,
+                price: document.querySelector('.price')?.textContent,
+            }));
+
+            await Dataset.pushData({ url: request.url, ...data });
+        },
+    });
+
+    await cheerioCrawler.run(urls);
+}
+```
+
+## Decision Matrix
+
+| Scenario | Best Approach | Speed | Data Quality |
+|----------|---------------|-------|--------------|
+| API found via traffic capture | Traffic Interception + API | ⚡⚡⚡⚡⚡ | ⭐⭐⭐⭐⭐ |
+| Sitemap + API exist | Sitemap + API | ⚡⚡⚡⚡⚡ | ⭐⭐⭐⭐⭐ |
+| Sitemap + No API + Static | Sitemap + Cheerio | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ |
+| Sitemap + No API + Dynamic | Sitemap + DOM Scraping | ⚡⚡⚡ | ⭐⭐⭐⭐ |
+| No Sitemap + API | API Discovery | ⚡⚡⚡⭐ | ⭐⭐⭐⭐⭐ |
+| Unknown Site | Iterative Fallback | ⚡⚡⚡ | ⭐⭐⭐⭐ |
+| Mixed Static/Dynamic | Cheerio + Playwright | ⚡⚡⚡⚡ | ⭐⭐⭐⭐ |
+
+## Best Practices
+
+### ✅ DO:
+
+- **Start with simplest approach** (sitemap/API)
+- **Fallback to complex methods** if simple fails
+- **Test small batch first** (5-10 items)
+- **Log which method succeeded** for debugging
+- **Combine strengths** (sitemap URLs + API data)
+- **Use Cheerio for static content** (5x faster)
+- **Reserve Playwright for when needed** (resource-intensive)
+
+### ❌ DON'T:
+
+- **Use Playwright if Cheerio works** (waste of resources)
+- **Skip API discovery** (always check first!)
+- **Forget fallback strategies** (sites change)
+- **Mix approaches randomly** (be systematic)
+
+## Complete Example: Full Hybrid
+
+```javascript
+import { RobotsFile } from 'crawlee';
+import { gotScraping } from 'got-scraping';
+import { chromium } from 'playwright';
+
+async function scrapeWebsite(baseUrl) {
+    console.log('🔍 Phase 1: Discovery');
+
+    // Check for sitemap
+    const robots = await RobotsFile.find(baseUrl);
+    const sitemapUrls = await robots.parseUrlsFromSitemaps();
+
+    console.log(`Found ${sitemapUrls.length} URLs in sitemap`);
+
+    // Extract product IDs
+    const productIds = sitemapUrls
+        .map(url => url.match(/\/products\/(\d+)/)?.[1])
+        .filter(Boolean);
+
+    console.log(`Extracted ${productIds.length} product IDs`);
+
+    console.log('🔍 Phase 2: API Discovery');
+
+    // Try API first
+    try {
+        const testId = productIds[0];
+        const apiResponse = await gotScraping({
+            url: `https://api.${baseUrl.replace('https://', '')}/products/${testId}`,
+            responseType: 'json',
+            timeout: { request: 5000 },
+        });
+
+        console.log('✓ API found! Using API for data');
+
+        // Use API for all products
+        const results = [];
+        for (const id of productIds) {
+            const data = await gotScraping({
+                url: `https://api.${baseUrl.replace('https://', '')}/products/${id}`,
+                responseType: 'json',
+            });
+            results.push(data.body);
+        }
+
+        return results;
+
+    } catch (error) {
+        console.log('✗ No API found, using Playwright');
+    }
+
+    console.log('🔍 Phase 3: Playwright Scraping');
+
+    // Fallback to Playwright
+    const browser = await chromium.launch();
+    const results = [];
+
+    for (const url of sitemapUrls.slice(0, 10)) { // Test with 10 first
+        const page = await browser.newPage();
+        await page.goto(url);
+
+        const data = await page.evaluate(() => ({
+            title: document.querySelector('h1')?.textContent,
+            price: document.querySelector('.price')?.textContent,
+        }));
+
+        results.push({ url, ...data });
+        await page.close();
+    }
+
+    await browser.close();
+    return results;
+}
+
+// Usage
+const data = await scrapeWebsite('https://example.com');
+console.log(`Scraped ${data.length} products`);
+```
+
+## Related Resources
+
+- **Traffic interception**: See `traffic-interception.md`
+- **Sitemap**: See `sitemap-discovery.md`
+- **API**: See `api-discovery.md`
+- **DOM scraping**: See `dom-scraping.md`
+- **Cheerio**: See `cheerio-scraping.md`
+- **Examples**: See `../examples/hybrid-sitemap-api.js`
+- **Examples**: See `../examples/iterative-fallback.js`
+
+## Summary
+
+**Hybrid approaches combine the best of each method!**
+
+**Key takeaways**:
+1. Sitemap + API = fastest (60x faster than crawling)
+2. Start simple, fallback to complex
+3. Test small batch first
+4. Log which method succeeded
+5. Combine strengths for optimal results
