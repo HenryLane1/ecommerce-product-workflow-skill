@@ -1,1 +1,234 @@
-IyBQcm94eS1NQ1AgVG9vbCBSZWZlcmVuY2UKClF1aWNrIHJlZmVyZW5jZSBjYXJkIGZvciBhbGwgcHJveHktbWNwIHRvb2xzIG9yZ2FuaXplZCBieSBmdW5jdGlvbmFsIGxheWVyLgoKKipTb3VyY2UqKjogYC9ob21lL3ltcy9Eb2N1bWVudHMvcHJveHktbWNwL2AKCi0tLQoKIyMgSW5pdGlhbGl6YXRpb24gU2VxdWVuY2UKCkV2ZXJ5IHByb3h5LW1jcCBzZXNzaW9uIGZvbGxvd3MgdGhpcyBzdGFydHVwIHNlcXVlbmNlOgoKYGBgCjEuIHByb3h5X3N0YXJ0KCkgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDihpIgU3RhcnQgTUlUTSBwcm94eQoyLiBpbnRlcmNlcHRvcl9jaHJvbWVfbGF1bmNoKHVybCwgc3RlYWx0aE1vZGU6IHRydWUpICAgICAg4oaSIExhdW5jaCBDaHJvbWUgdGhyb3VnaCBwcm94eSB3aXRoIGFudGktZGV0ZWN0aW9uCjMuIGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19hdHRhY2godGFyZ2V0X2lkKSAgICAgICAgICAg4oaSIEF0dGFjaCBEZXZUb29scyBicmlkZ2UgdG8gYnJvd3NlciB0YWIKYGBgCgpBZnRlciBpbml0aWFsaXphdGlvbiwgYWxsIEhUVFAvSFRUUFMgdHJhZmZpYyBmbG93cyB0aHJvdWdoIHRoZSBwcm94eSBhbmQgaXMgYXV0b21hdGljYWxseSBjYXB0dXJlZC4gVGhlIERldlRvb2xzIGJyaWRnZSBwcm92aWRlcyBET00gYWNjZXNzIGFuZCB0aGUgaHVtYW5pemVyIHByb3ZpZGVzIGFudGktZGV0ZWN0aW9uIGludGVyYWN0aW9ucy4KCi0tLQoKIyMgVHJhZmZpYyBBbmFseXNpcwoKVGhlIE1JVE0gcHJveHkgYXV0b21hdGljYWxseSBjYXB0dXJlcyBhbGwgdHJhZmZpYy4gVGhlc2UgdG9vbHMgcXVlcnkgdGhlIGNhcHR1cmVkIGRhdGEuCgp8IFRvb2wgfCBQdXJwb3NlIHwgS2V5IFBhcmFtZXRlcnMgfAp8LS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfAp8IGBwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlciwgbWV0aG9kX2ZpbHRlcilgIHwgTGlzdCBjYXB0dXJlZCBIVFRQIGV4Y2hhbmdlcyB8IGB1cmxfZmlsdGVyYDogc3Vic3RyaW5nIG1hdGNoIG9uIFVSTDsgYG1ldGhvZF9maWx0ZXJgOiBHRVQvUE9TVC9ldGMuIHwKfCBgcHJveHlfc2VhcmNoX3RyYWZmaWMocXVlcnkpYCB8IEZ1bGwtdGV4dCBzZWFyY2ggYWNyb3NzIHRyYWZmaWMgfCBTZWFyY2hlcyBVUkxzLCBoZWFkZXJzLCBhbmQgYm9keSBwcmV2aWV3cyB8CnwgYHByb3h5X2dldF9leGNoYW5nZShleGNoYW5nZV9pZClgIHwgR2V0IGZ1bGwgcmVxdWVzdC9yZXNwb25zZSBkZXRhaWxzIHwgUmV0dXJucyBoZWFkZXJzLCBib2R5LCB0aW1pbmcgZm9yIGEgc3BlY2lmaWMgZXhjaGFuZ2UgfAp8IGBwcm94eV9jbGVhcl90cmFmZmljKClgIHwgQ2xlYXIgY2FwdHVyZWQgdHJhZmZpYyBidWZmZXIgfCBVc2UgYmVmb3JlIG5hdmlnYXRpbmcgdG8gaXNvbGF0ZSB0cmFmZmljIGZyb20gYSBzcGVjaWZpYyBhY3Rpb24gfAoKIyMjIFRyYWZmaWMgQW5hbHlzaXMgV29ya2Zsb3cKCmBgYAoxLiBwcm94eV9jbGVhcl90cmFmZmljKCkgICAgICAgICAgICAgICAgICAgIOKGkiBDbGVhciBidWZmZXIKMi4gaHVtYW5pemVyX2NsaWNrKHRhcmdldF9pZCwgc2VsZWN0b3IpICAgICDihpIgVHJpZ2dlciBhbiBhY3Rpb24KMy4gaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKSAgICAgICAgICDihpIgV2FpdCBmb3IgbmV0d29yawo0LiBwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogImFwaSIpICAgIOKGkiBTZWUgd2hhdCBBUEkgY2FsbHMgdGhlIGFjdGlvbiB0cmlnZ2VyZWQKNS4gcHJveHlfZ2V0X2V4Y2hhbmdlKGV4Y2hhbmdlX2lkKSAgICAgICAgICDihpIgSW5zcGVjdCBmdWxsIHJlcXVlc3QvcmVzcG9uc2UKYGBgCgojIyMgQVBJIERpc2NvdmVyeSBGaWx0ZXJzCgpgYGAKcHJveHlfbGlzdF90cmFmZmljKHVybF9maWx0ZXI6ICIvYXBpLyIpICAgICAgICAgICDihpIgUkVTVCBBUElzCnByb3h5X2xpc3RfdHJhZmZpYyh1cmxfZmlsdGVyOiAiL2dyYXBocWwiKSAgICAgICAgIOKGkiBHcmFwaFFMIGVuZHBvaW50cwpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogIi9fbmV4dC9kYXRhLyIpICAgICDihpIgTmV4dC5qcyBkYXRhIGVuZHBvaW50cwpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogIi93cC1qc29uLyIpICAgICAgICDihpIgV29yZFByZXNzIFJFU1QgQVBJCnByb3h5X3NlYXJjaF90cmFmZmljKHF1ZXJ5OiAiYXBwbGljYXRpb24vanNvbiIpICAgIOKGkiBBbnkgSlNPTiByZXNwb25zZXMKYGBgCgotLS0KCiMjIEJyb3dzZXIgQ29udHJvbCAoRGV2VG9vbHMgQnJpZGdlKQoKQWZ0ZXIgYXR0YWNoaW5nIHdpdGggYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19hdHRhY2godGFyZ2V0X2lkKWAsIHRoZXNlIHRvb2xzIHByb3ZpZGUgRE9NLWxldmVsIGFjY2Vzcy4KCnwgVG9vbCB8IFB1cnBvc2UgfCBLZXkgUGFyYW1ldGVycyB8CnwtLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18CnwgYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19uYXZpZ2F0ZSh1cmwpYCB8IE5hdmlnYXRlIHRvIFVSTCB8IFVzZSB0aGlzIChub3QgYGludGVyY2VwdG9yX2Nocm9tZV9uYXZpZ2F0ZWApIHRvIHByZXNlcnZlIERldlRvb2xzIHNlc3Npb24gfAp8IGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfc2NyZWVuc2hvdCgpYCB8IENhcHR1cmUgc2NyZWVuc2hvdCB8IFJldHVybnMgYmFzZTY0IGltYWdlIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX3NuYXBzaG90KClgIHwgR2V0IGFjY2Vzc2liaWxpdHkgdHJlZSB8IFN0YWJsZSBhbHRlcm5hdGl2ZSB0byBDU1Mgc2VsZWN0b3JzIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfbmV0d29yayhyZXNvdXJjZV90eXBlcylgIHwgQnJvd3Nlci1zaWRlIG5ldHdvcmsgdmlldyB8IGByZXNvdXJjZV90eXBlc2A6IGUuZy4gYFsieGhyIiwgImZldGNoIl1gIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3RfY29uc29sZSgpYCB8IEdldCBjb25zb2xlIG1lc3NhZ2VzIHwgSW5jbHVkZXMgZXJyb3JzLCB3YXJuaW5ncywgbG9ncyB8CnwgYGludGVyY2VwdG9yX2Nocm9tZV9kZXZ0b29sc19saXN0X2Nvb2tpZXMoZG9tYWluX2ZpbHRlcilgIHwgR2V0IGNvb2tpZXMgfCBGaWx0ZXIgYnkgZG9tYWluIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX2xpc3Rfc3RvcmFnZV9rZXlzKHN0b3JhZ2VfdHlwZSlgIHwgTGlzdCBzdG9yYWdlIGtleXMgfCBgc3RvcmFnZV90eXBlYDogImxvY2FsIiBvciAic2Vzc2lvbiIgfAp8IGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfZ2V0X3N0b3JhZ2VfdmFsdWUoa2V5LCBzdG9yYWdlX3R5cGUpYCB8IEdldCBzdG9yYWdlIHZhbHVlIHwgUmVhZCBsb2NhbFN0b3JhZ2Uvc2Vzc2lvblN0b3JhZ2UgfAp8IGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfZ2V0X25ldHdvcmtfZmllbGQocmVxdWVzdF9pZCwgZmllbGQpYCB8IEdldCBzcGVjaWZpYyBuZXR3b3JrIGZpZWxkIHwgSW5zcGVjdCBpbmRpdmlkdWFsIHJlcXVlc3RzIHwKCiMjIyBJbXBvcnRhbnQKCi0gKipBbHdheXMgdXNlIGBpbnRlcmNlcHRvcl9jaHJvbWVfZGV2dG9vbHNfbmF2aWdhdGUoKWAqKiBmb3IgbmF2aWdhdGlvbiwgbm90IGBpbnRlcmNlcHRvcl9jaHJvbWVfbmF2aWdhdGUoKWAuIFRoZSBsYXR0ZXIgbG9zZXMgdGhlIERldlRvb2xzIHNlc3Npb24uCi0gKipgaW50ZXJjZXB0b3JfY2hyb21lX2RldnRvb2xzX3NuYXBzaG90KClgKiogcmV0dXJucyBhbiBhY2Nlc3NpYmlsaXR5IHRyZWUsIHdoaWNoIGlzIG1vcmUgc3RhYmxlIHRoYW4gQ1NTIHNlbGVjdG9ycyBmb3IgZGF0YSBleHRyYWN0aW9uLgoKLS0tCgojIyBIdW1hbiBJbnRlcmFjdGlvbiAoSHVtYW5pemVyKQoKQW50aS1kZXRlY3Rpb24gaW50ZXJhY3Rpb24gdG9vbHMgdGhhdCBtaW1pYyByZWFsIGh1bWFuIGJlaGF2aW9yLiBVc2UgdGhlc2UgaW5zdGVhZCBvZiBkaXJlY3QgRE9NIG1hbmlwdWxhdGlvbi4KCnwgVG9vbCB8IFB1cnBvc2UgfCBJbnRlcm5hbCBCZWhhdmlvciB8CnwtLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18CnwgYGh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsIHNlbGVjdG9yKWAgfCBDbGljayBlbGVtZW50IHwgQmV6aWVyIGN1cnZlIG1vdXNlIG1vdmVtZW50IHdpdGggRml0dHMncyBsYXcgdGltaW5nOyByYW5kb20gdmFyaWFuY2UgfAp8IGBodW1hbml6ZXJfdHlwZSh0YXJnZXRfaWQsIHRleHQpYCB8IFR5cGUgdGV4dCB8IFdQTS1iYXNlZCBkZWxheXMgKGRlZmF1bHQgNDAgV1BNKTsgYmlncmFtIGZyZXF1ZW5jeSBtb2RpZmllcjsgc2hpZnQgcGVuYWx0eSArNTBtczsgb3B0aW9uYWwgdHlwbyBpbmplY3Rpb24gd2l0aCBRV0VSVFkgbmVpZ2hib3IgbWFwcGluZyB8CnwgYGh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCBkaXJlY3Rpb24sIGFtb3VudClgIHwgU2Nyb2xsIHBhZ2UgfCBlYXNlSW5PdXRRdWFkIGFjY2VsZXJhdGlvbi9kZWNlbGVyYXRpb24gY3VydmUgfAp8IGBodW1hbml6ZXJfbW92ZSh0YXJnZXRfaWQsIHgsIHkpYCB8IE1vdmUgbW91c2UgfCBDdWJpYyBCZXppZXIgY3VydmVzIHdpdGggcmFuZG9taXplZCBjb250cm9sIHBvaW50czsgb3ZlcnNob290K2NvcnJlY3Rpb24gZm9yIGRpc3RhbmNlcyA+MjAwcHggfAp8IGBodW1hbml6ZXJfaWRsZSh0YXJnZXRfaWQsIGR1cmF0aW9uX21zKWAgfCBJZGxlIHdpdGggbWljcm8tbW92ZW1lbnRzIHwgTWljcm8taml0dGVyIMKxMy04cHg7IG9jY2FzaW9uYWwgbWljcm8tc2Nyb2xscyB0byBkZWZlYXQgaWRsZSBkZXRlY3Rpb24gfAoKIyMjIEludGVyYWN0aW9uIFBhdHRlcm5zCgoqKkNsaWNrIGFuIGVsZW1lbnQqKjoKYGBgCmh1bWFuaXplcl9jbGljayh0YXJnZXRfaWQsICJidXR0b24uc3VibWl0IikKYGBgCgoqKkZpbGwgYSBmb3JtIGZpZWxkKio6CmBgYApodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCAiaW5wdXRbbmFtZT0nc2VhcmNoJ10iKSAgIOKGkiBGb2N1cyB0aGUgZmllbGQKaHVtYW5pemVyX3R5cGUodGFyZ2V0X2lkLCAic2VhcmNoIHF1ZXJ5IikgICAgICAgICAgICAgIOKGkiBUeXBlIHdpdGggaHVtYW4gdGltaW5nCmBgYAoKKipTY3JvbGwgYW5kIG9ic2VydmUgdHJhZmZpYyoqOgpgYGAKcHJveHlfY2xlYXJfdHJhZmZpYygpCmh1bWFuaXplcl9zY3JvbGwodGFyZ2V0X2lkLCAiZG93biIsIDUwMCkKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCAyMDAwKQpwcm94eV9saXN0X3RyYWZmaWModXJsX2ZpbHRlcjogInBhZ2U9IikgICAgICAgICAgICAgICDihpIgU2VlIHBhZ2luYXRpb24gQVBJIGNhbGxzCmBgYAoKLS0tCgojIyBBbnRpLURldGVjdGlvbgoKIyMjIExheWVyIDE6IFN0ZWFsdGggTW9kZSAoQnJvd3NlciBTZXNzaW9ucykKCioqVG9vbCoqOiBgaW50ZXJjZXB0b3JfY2hyb21lX2xhdW5jaCh1cmwsIHN0ZWFsdGhNb2RlOiB0cnVlKWAKCkF1dG9tYXRpY2FsbHkgYXBwbGllZCB3aGVuIGBzdGVhbHRoTW9kZTogdHJ1ZWAuIFBhdGNoZXM6Ci0gYG5hdmlnYXRvci53ZWJkcml2ZXJgIOKGkiBgZmFsc2VgICh3aXRoIGBjb25maWd1cmFibGU6dHJ1ZWAgdG8gbWF0Y2ggcmVhbCBDaHJvbWUpCi0gYGNocm9tZS5ydW50aW1lYCDihpIgZXhpc3RzIHdpdGggZXhwZWN0ZWQgc2hhcGUgKEFrYW1haSBwcmltYXJ5IGNoZWNrKQotIGBQZXJtaXNzaW9ucy5xdWVyeWAg4oaSIGNvcnJlY3QgcmVzcG9uc2UgZm9yIG5vdGlmaWNhdGlvbnMgKENEUCBhcnRpZmFjdCBmaXgpCi0gYEVycm9yLnN0YWNrYCDihpIgY2xlYW5lZCBvZiBDRFAtaW5qZWN0ZWQgdHJhY2VzIChgSW5qZWN0ZWRTY3JpcHRgLCBgZXZhbHVhdGVgKQotIEN1cmF0ZWQgQ2hyb21lIGZsYWdzOiBkZWxpYmVyYXRlbHkgb21pdHMgYC0tZGlzYWJsZS1leHRlbnNpb25zYCAocmVtb3ZlcyBgY2hyb21lLnJ1bnRpbWVgKSwgYC0tbXV0ZS1hdWRpb2AgKGRldGVjdGFibGUgdmlhIEF1ZGlvQ29udGV4dCkKCkluamVjdGVkIHZpYSBgUGFnZS5hZGRTY3JpcHRUb0V2YWx1YXRlT25OZXdEb2N1bWVudGAg4oCUIHJ1bnMgYmVmb3JlIGFueSBwYWdlIHNjcmlwdCwgb24gZXZlcnkgZnJhbWUuCgoqKldoZW4gdG8gdXNlKio6IEFsd2F5cyBmb3IgcHJvdGVjdGVkIHNpdGVzLiBUaGlzIGlzIHRoZSBkZWZhdWx0IHJlY29tbWVuZGF0aW9uLgoKIyMjIExheWVyIDI6IFRMUyBGaW5nZXJwcmludCBTcG9vZmluZyAoSFRUUC1Pbmx5IENsaWVudHMpCgoqKlRvb2wqKjogYHByb3h5X3NldF9maW5nZXJwcmludF9zcG9vZihwcmVzZXQpYAoKVXNlcyAqKmltcGl0KiogKFJ1c3QgTkFQSSBtb2R1bGUpIGZvciBuYXRpdmUgVExTIGltcGVyc29uYXRpb24uIFNwb29mcyBKQTMgZmluZ2VycHJpbnQgKyBIVFRQLzIgZnJhbWUgb3JkZXJpbmcuIEF1dG8tbm9ybWFsaXplcyBVc2VyLUFnZW50ICsgVUEgQ2xpZW50IEhpbnRzIGhlYWRlcnMuCgoqKkF2YWlsYWJsZSBwcmVzZXRzKio6IGBjaHJvbWVfMTMxYCwgYGNocm9tZV8xMzZgLCBgY2hyb21lXzEzNl9saW51eGAsIGBmaXJlZm94XzEzM2AsIGBva2h0dHAzYCwgYG9raHR0cDRgLCBgb2todHRwNWAKCioqV2hlbiB0byB1c2UqKjogT05MWSB3aGVuIHN3aXRjaGluZyBmcm9tIGJyb3dzZXIgdG8gSFRUUC1vbmx5IHRvb2xzIChjdXJsLCBnb3RTY3JhcGluZywgZmV0Y2gpIEFORCB0aGUgdGFyZ2V0IGJsb2NrcyBiYXNlZCBvbiBUTFMgZmluZ2VycHJpbnQuCgoqKkRvIE5PVCB1c2UgZm9yIENocm9tZSBicm93c2VyIHNlc3Npb25zKiog4oCUIENocm9tZSBhbHJlYWR5IGhhcyBhIGxlZ2l0aW1hdGUgVExTIGZpbmdlcnByaW50LgoKIyMjIExheWVyIDM6IFVwc3RyZWFtIFByb3hpZXMKCnwgVG9vbCB8IFB1cnBvc2UgfAp8LS0tLS0tfC0tLS0tLS0tLXwKfCBgcHJveHlfc2V0X3Vwc3RyZWFtKHVybClgIHwgQ2hhaW4gdG8gdXBzdHJlYW0gcHJveHkgKGUuZy4sIEFwaWZ5IHJlc2lkZW50aWFsIHByb3hpZXMpIHwKfCBgcHJveHlfc2V0X2hvc3RfdXBzdHJlYW0oaG9zdG5hbWUsIHVybClgIHwgU2V0IHBlci1ob3N0IHVwc3RyZWFtIHByb3h5IHwKfCBgcHJveHlfcmVtb3ZlX2hvc3RfdXBzdHJlYW0oaG9zdG5hbWUpYCB8IFJlbW92ZSBwZXItaG9zdCB1cHN0cmVhbSB8CnwgYHByb3h5X2NsZWFyX3Vwc3RyZWFtKClgIHwgUmVtb3ZlIGFsbCB1cHN0cmVhbSBwcm94aWVzIHwKCiMjIyBMYXllciA0OiBSZXF1ZXN0IE1hbmlwdWxhdGlvbgoKfCBUb29sIHwgUHVycG9zZSB8CnwtLS0tLS18LS0tLS0tLS0tfAp8IGBwcm94eV9hZGRfcnVsZShtYXRjaGVyLCBoYW5kbGVyKWAgfCBBZGQgaW50ZXJjZXB0aW9uIHJ1bGUgKHBhc3N0aHJvdWdoL21vY2svZm9yd2FyZC9kcm9wKSB8CnwgYHByb3h5X2luamVjdF9oZWFkZXJzKGhlYWRlcnMpYCB8IEluamVjdCBjdXN0b20gaGVhZGVycyBpbnRvIGFsbCByZXF1ZXN0cyB8CnwgYHByb3h5X3Jld3JpdGVfdXJsKHBhdHRlcm4sIHJlcGxhY2VtZW50KWAgfCBSZXdyaXRlIFVSTHMgbWF0Y2hpbmcgcGF0dGVybiB8CnwgYHByb3h5X21vY2tfcmVzcG9uc2UobWF0Y2hlciwgcmVzcG9uc2UpYCB8IFJldHVybiBtb2NrIHJlc3BvbnNlIGZvciBtYXRjaGluZyByZXF1ZXN0cyB8CnwgYHByb3h5X2xpc3RfcnVsZXMoKWAgfCBMaXN0IGFjdGl2ZSBydWxlcyB8CnwgYHByb3h5X2VuYWJsZV9ydWxlKGlkKWAgLyBgcHJveHlfZGlzYWJsZV9ydWxlKGlkKWAgfCBUb2dnbGUgcnVsZXMgfAp8IGBwcm94eV9yZW1vdmVfcnVsZShpZClgIHwgRGVsZXRlIGEgcnVsZSB8CnwgYHByb3h5X3Rlc3RfcnVsZV9tYXRjaCh1cmwpYCB8IFRlc3QgaWYgVVJMIG1hdGNoZXMgYW55IHJ1bGUgfAoKIyMjIFRMUyBBbmFseXNpcwoKfCBUb29sIHwgUHVycG9zZSB8CnwtLS0tLS18LS0tLS0tLS0tfAp8IGBwcm94eV9nZXRfdGxzX2NvbmZpZygpYCB8IEdldCBjdXJyZW50IFRMUyBjb25maWd1cmF0aW9uIHwKfCBgcHJveHlfZ2V0X3Rsc19maW5nZXJwcmludHMoKWAgfCBHZXQgY2FwdHVyZWQgVExTIGZpbmdlcnByaW50cyB8CnwgYHByb3h5X2xpc3RfdGxzX2ZpbmdlcnByaW50cygpYCB8IExpc3QgYWxsIG9ic2VydmVkIGZpbmdlcnByaW50cyB8CnwgYHByb3h5X2xpc3RfZmluZ2VycHJpbnRfcHJlc2V0cygpYCB8IExpc3QgYXZhaWxhYmxlIHNwb29maW5nIHByZXNldHMgfAp8IGBwcm94eV9jaGVja19maW5nZXJwcmludF9ydW50aW1lKClgIHwgQ2hlY2sgaWYgZmluZ2VycHJpbnQgcnVudGltZSBpcyBhdmFpbGFibGUgfAoKLS0tCgojIyBTZXNzaW9uIE1hbmFnZW1lbnQKClJlY29yZCwgcmVwbGF5LCBhbmQgYW5hbHl6ZSBicm93c2luZyBzZXNzaW9ucy4KCnwgVG9vbCB8IFB1cnBvc2UgfAp8LS0tLS0tfC0tLS0tLS0tLXwKfCBgcHJveHlfc2Vzc2lvbl9zdGFydChuYW1lLCBjYXB0dXJlX3Byb2ZpbGUpYCB8IFN0YXJ0IHJlY29yZGluZyBzZXNzaW9uIHwKfCBgcHJveHlfc2Vzc2lvbl9zdG9wKHNlc3Npb25faWQpYCB8IFN0b3AgcmVjb3JkaW5nIHwKfCBgcHJveHlfc2Vzc2lvbl9zdGF0dXMoc2Vzc2lvbl9pZClgIHwgQ2hlY2sgc2Vzc2lvbiBzdGF0dXMgfAp8IGBwcm94eV9saXN0X3Nlc3Npb25zKClgIHwgTGlzdCBhbGwgc2Vzc2lvbnMgfAp8IGBwcm94eV9nZXRfc2Vzc2lvbihzZXNzaW9uX2lkKWAgfCBHZXQgc2Vzc2lvbiBkZXRhaWxzIHwKfCBgcHJveHlfcXVlcnlfc2Vzc2lvbihzZXNzaW9uX2lkLCBxdWVyeSlgIHwgU2VhcmNoIHdpdGhpbiBhIHNlc3Npb24gfAp8IGBwcm94eV9zZXNzaW9uX3JlY292ZXIoc2Vzc2lvbl9pZClgIHwgUmVjb3ZlciBpbnRlcnJ1cHRlZCBzZXNzaW9uIHwKfCBgcHJveHlfZXhwb3J0X2hhcihzZXNzaW9uX2lkLCBwYXRoKWAgfCBFeHBvcnQgc2Vzc2lvbiBhcyBIQVIgZmlsZSB8CnwgYHByb3h5X2ltcG9ydF9oYXIocGF0aClgIHwgSW1wb3J0IEhBUiBmaWxlIHwKfCBgcHJveHlfcmVwbGF5X3Nlc3Npb24oc2Vzc2lvbl9pZCwgbW9kZSlgIHwgUmVwbGF5IHNlc3Npb24gKGBkcnlfcnVuYCBvciBgZXhlY3V0ZWApIHwKfCBgcHJveHlfZGVsZXRlX3Nlc3Npb24oc2Vzc2lvbl9pZClgIHwgRGVsZXRlIHNlc3Npb24gfAoKIyMjIFNlc3Npb24gV29ya2Zsb3cKCmBgYAoxLiBwcm94eV9zZXNzaW9uX3N0YXJ0KCJyZWNvbi1zaG9wY29tIikgICAgICDihpIgU3RhcnQgcmVjb3JkaW5nCjIuIC4uLiBwZXJmb3JtIHJlY29ubmFpc3NhbmNlIC4uLgozLiBwcm94eV9zZXNzaW9uX3N0b3Aoc2Vzc2lvbl9pZCkgICAgICAgICAgICDihpIgU3RvcCByZWNvcmRpbmcKNC4gcHJveHlfZXhwb3J0X2hhcihzZXNzaW9uX2lkLCAicmVjb24uaGFyIikg4oaSIEV4cG9ydCBmb3IgYW5hbHlzaXMKNS4gcHJveHlfcmVwbGF5X3Nlc3Npb24oc2Vzc2lvbl9pZCwgImRyeV9ydW4iKSDihpIgUmV2aWV3IHdoYXQgd291bGQgaGFwcGVuCmBgYAoKLS0tCgojIyBDaHJvbWUgTGlmZWN5Y2xlCgp8IFRvb2wgfCBQdXJwb3NlIHwKfC0tLS0tLXwtLS0tLS0tLS18CnwgYGludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2godXJsLCBzdGVhbHRoTW9kZSlgIHwgTGF1bmNoIENocm9tZSB0aHJvdWdoIHByb3h5IHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX25hdmlnYXRlKHVybClgIHwgTmF2aWdhdGUgKGxvc2VzIERldlRvb2xzIOKAlCBwcmVmZXIgZGV2dG9vbHNfbmF2aWdhdGUpIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2Nsb3NlKClgIHwgQ2xvc2UgQ2hyb21lIHwKfCBgaW50ZXJjZXB0b3JfY2hyb21lX2NkcF9pbmZvKClgIHwgR2V0IENEUCBjb25uZWN0aW9uIGluZm8gfAoKLS0tCgojIyBQcm94eSBMaWZlY3ljbGUKCnwgVG9vbCB8IFB1cnBvc2UgfAp8LS0tLS0tfC0tLS0tLS0tLXwKfCBgcHJveHlfc3RhcnQoKWAgfCBTdGFydCB0aGUgTUlUTSBwcm94eSB8CnwgYHByb3h5X3N0b3AoKWAgfCBTdG9wIHRoZSBwcm94eSB8CnwgYHByb3h5X3N0YXR1cygpYCB8IENoZWNrIHByb3h5IHN0YXR1cyB8CnwgYHByb3h5X2dldF9jYV9jZXJ0KClgIHwgR2V0IENBIGNlcnRpZmljYXRlIGZvciBtYW51YWwgdHJ1c3QgfAoKLS0tCgojIyBSZWxhdGVkCgotICoqVHJhZmZpYyBpbnRlcmNlcHRpb24gc3RyYXRlZ3kqKjogU2VlIGAuLi9zdHJhdGVnaWVzL3RyYWZmaWMtaW50ZXJjZXB0aW9uLm1kYAotICoqQW50aS1ibG9ja2luZyBsYXllcnMqKjogU2VlIGAuLi9zdHJhdGVnaWVzL2FudGktYmxvY2tpbmcubWRgCi0gKipTZXNzaW9uIHdvcmtmbG93cyoqOiBTZWUgYC4uL3N0cmF0ZWdpZXMvc2Vzc2lvbi13b3JrZmxvd3MubWRgCi0gKipET00gc2NyYXBpbmcgdmlhIERldlRvb2xzKio6IFNlZSBgLi4vc3RyYXRlZ2llcy9kb20tc2NyYXBpbmcubWRgCg==
+# Proxy-MCP Tool Reference
+
+Quick reference card for all proxy-mcp tools organized by functional layer.
+
+**Source**: `/home/yms/Documents/proxy-mcp/`
+
+---
+
+## Initialization Sequence
+
+Every proxy-mcp session follows this startup sequence:
+
+```
+1. proxy_start()                                          → Start MITM proxy
+2. interceptor_chrome_launch(url, stealthMode: true)      → Launch Chrome through proxy with anti-detection
+3. interceptor_chrome_devtools_attach(target_id)           → Attach DevTools bridge to browser tab
+```
+
+After initialization, all HTTP/HTTPS traffic flows through the proxy and is automatically captured. The DevTools bridge provides DOM access and the humanizer provides anti-detection interactions.
+
+---
+
+## Traffic Analysis
+
+The MITM proxy automatically captures all traffic. These tools query the captured data.
+
+| Tool | Purpose | Key Parameters |
+|------|---------|----------------|
+| `proxy_list_traffic(url_filter, method_filter)` | List captured HTTP exchanges | `url_filter`: substring match on URL; `method_filter`: GET/POST/etc. |
+| `proxy_search_traffic(query)` | Full-text search across traffic | Searches URLs, headers, and body previews |
+| `proxy_get_exchange(exchange_id)` | Get full request/response details | Returns headers, body, timing for a specific exchange |
+| `proxy_clear_traffic()` | Clear captured traffic buffer | Use before navigating to isolate traffic from a specific action |
+
+### Traffic Analysis Workflow
+
+```
+1. proxy_clear_traffic()                    → Clear buffer
+2. humanizer_click(target_id, selector)     → Trigger an action
+3. humanizer_idle(target_id, 2000)          → Wait for network
+4. proxy_list_traffic(url_filter: "api")    → See what API calls the action triggered
+5. proxy_get_exchange(exchange_id)          → Inspect full request/response
+```
+
+### API Discovery Filters
+
+```
+proxy_list_traffic(url_filter: "/api/")           → REST APIs
+proxy_list_traffic(url_filter: "/graphql")         → GraphQL endpoints
+proxy_list_traffic(url_filter: "/_next/data/")     → Next.js data endpoints
+proxy_list_traffic(url_filter: "/wp-json/")        → WordPress REST API
+proxy_search_traffic(query: "application/json")    → Any JSON responses
+```
+
+---
+
+## Browser Control (DevTools Bridge)
+
+After attaching with `interceptor_chrome_devtools_attach(target_id)`, these tools provide DOM-level access.
+
+| Tool | Purpose | Key Parameters |
+|------|---------|----------------|
+| `interceptor_chrome_devtools_navigate(url)` | Navigate to URL | Use this (not `interceptor_chrome_navigate`) to preserve DevTools session |
+| `interceptor_chrome_devtools_screenshot()` | Capture screenshot | Returns base64 image |
+| `interceptor_chrome_devtools_snapshot()` | Get accessibility tree | Stable alternative to CSS selectors |
+| `interceptor_chrome_devtools_list_network(resource_types)` | Browser-side network view | `resource_types`: e.g. `["xhr", "fetch"]` |
+| `interceptor_chrome_devtools_list_console()` | Get console messages | Includes errors, warnings, logs |
+| `interceptor_chrome_devtools_list_cookies(domain_filter)` | Get cookies | Filter by domain |
+| `interceptor_chrome_devtools_list_storage_keys(storage_type)` | List storage keys | `storage_type`: "local" or "session" |
+| `interceptor_chrome_devtools_get_storage_value(key, storage_type)` | Get storage value | Read localStorage/sessionStorage |
+| `interceptor_chrome_devtools_get_network_field(request_id, field)` | Get specific network field | Inspect individual requests |
+
+### Important
+
+- **Always use `interceptor_chrome_devtools_navigate()`** for navigation, not `interceptor_chrome_navigate()`. The latter loses the DevTools session.
+- **`interceptor_chrome_devtools_snapshot()`** returns an accessibility tree, which is more stable than CSS selectors for data extraction.
+
+---
+
+## Human Interaction (Humanizer)
+
+Anti-detection interaction tools that mimic real human behavior. Use these instead of direct DOM manipulation.
+
+| Tool | Purpose | Internal Behavior |
+|------|---------|-------------------|
+| `humanizer_click(target_id, selector)` | Click element | Bezier curve mouse movement with Fitts's law timing; random variance |
+| `humanizer_type(target_id, text)` | Type text | WPM-based delays (default 40 WPM); bigram frequency modifier; shift penalty +50ms; optional typo injection with QWERTY neighbor mapping |
+| `humanizer_scroll(target_id, direction, amount)` | Scroll page | easeInOutQuad acceleration/deceleration curve |
+| `humanizer_move(target_id, x, y)` | Move mouse | Cubic Bezier curves with randomized control points; overshoot+correction for distances >200px |
+| `humanizer_idle(target_id, duration_ms)` | Idle with micro-movements | Micro-jitter ±3-8px; occasional micro-scrolls to defeat idle detection |
+
+### Interaction Patterns
+
+**Click an element**:
+```
+humanizer_click(target_id, "button.submit")
+```
+
+**Fill a form field**:
+```
+humanizer_click(target_id, "input[name='search']")   → Focus the field
+humanizer_type(target_id, "search query")              → Type with human timing
+```
+
+**Scroll and observe traffic**:
+```
+proxy_clear_traffic()
+humanizer_scroll(target_id, "down", 500)
+humanizer_idle(target_id, 2000)
+proxy_list_traffic(url_filter: "page=")               → See pagination API calls
+```
+
+---
+
+## Anti-Detection
+
+### Layer 1: Stealth Mode (Browser Sessions)
+
+**Tool**: `interceptor_chrome_launch(url, stealthMode: true)`
+
+Automatically applied when `stealthMode: true`. Patches:
+- `navigator.webdriver` → `false` (with `configurable:true` to match real Chrome)
+- `chrome.runtime` → exists with expected shape (Akamai primary check)
+- `Permissions.query` → correct response for notifications (CDP artifact fix)
+- `Error.stack` → cleaned of CDP-injected traces (`InjectedScript`, `evaluate`)
+- Curated Chrome flags: deliberately omits `--disable-extensions` (removes `chrome.runtime`), `--mute-audio` (detectable via AudioContext)
+
+Injected via `Page.addScriptToEvaluateOnNewDocument` — runs before any page script, on every frame.
+
+**When to use**: Always for protected sites. This is the default recommendation.
+
+### Layer 2: TLS Fingerprint Spoofing (HTTP-Only Clients)
+
+**Tool**: `proxy_set_fingerprint_spoof(preset)`
+
+Uses **impit** (Rust NAPI module) for native TLS impersonation. Spoofs JA3 fingerprint + HTTP/2 frame ordering. Auto-normalizes User-Agent + UA Client Hints headers.
+
+**Available presets**: `chrome_131`, `chrome_136`, `chrome_136_linux`, `firefox_133`, `okhttp3`, `okhttp4`, `okhttp5`
+
+**When to use**: ONLY when switching from browser to HTTP-only tools (curl, gotScraping, fetch) AND the target blocks based on TLS fingerprint.
+
+**Do NOT use for Chrome browser sessions** — Chrome already has a legitimate TLS fingerprint.
+
+### Layer 3: Upstream Proxies
+
+| Tool | Purpose |
+|------|---------|
+| `proxy_set_upstream(url)` | Chain to upstream proxy (e.g., Apify residential proxies) |
+| `proxy_set_host_upstream(hostname, url)` | Set per-host upstream proxy |
+| `proxy_remove_host_upstream(hostname)` | Remove per-host upstream |
+| `proxy_clear_upstream()` | Remove all upstream proxies |
+
+### Layer 4: Request Manipulation
+
+| Tool | Purpose |
+|------|---------|
+| `proxy_add_rule(matcher, handler)` | Add interception rule (passthrough/mock/forward/drop) |
+| `proxy_inject_headers(headers)` | Inject custom headers into all requests |
+| `proxy_rewrite_url(pattern, replacement)` | Rewrite URLs matching pattern |
+| `proxy_mock_response(matcher, response)` | Return mock response for matching requests |
+| `proxy_list_rules()` | List active rules |
+| `proxy_enable_rule(id)` / `proxy_disable_rule(id)` | Toggle rules |
+| `proxy_remove_rule(id)` | Delete a rule |
+| `proxy_test_rule_match(url)` | Test if URL matches any rule |
+
+### TLS Analysis
+
+| Tool | Purpose |
+|------|---------|
+| `proxy_get_tls_config()` | Get current TLS configuration |
+| `proxy_get_tls_fingerprints()` | Get captured TLS fingerprints |
+| `proxy_list_tls_fingerprints()` | List all observed fingerprints |
+| `proxy_list_fingerprint_presets()` | List available spoofing presets |
+| `proxy_check_fingerprint_runtime()` | Check if fingerprint runtime is available |
+
+---
+
+## Session Management
+
+Record, replay, and analyze browsing sessions.
+
+| Tool | Purpose |
+|------|---------|
+| `proxy_session_start(name, capture_profile)` | Start recording session |
+| `proxy_session_stop(session_id)` | Stop recording |
+| `proxy_session_status(session_id)` | Check session status |
+| `proxy_list_sessions()` | List all sessions |
+| `proxy_get_session(session_id)` | Get session details |
+| `proxy_query_session(session_id, query)` | Search within a session |
+| `proxy_session_recover(session_id)` | Recover interrupted session |
+| `proxy_export_har(session_id, path)` | Export session as HAR file |
+| `proxy_import_har(path)` | Import HAR file |
+| `proxy_replay_session(session_id, mode)` | Replay session (`dry_run` or `execute`) |
+| `proxy_delete_session(session_id)` | Delete session |
+
+### Session Workflow
+
+```
+1. proxy_session_start("recon-shopcom")      → Start recording
+2. ... perform reconnaissance ...
+3. proxy_session_stop(session_id)            → Stop recording
+4. proxy_export_har(session_id, "recon.har") → Export for analysis
+5. proxy_replay_session(session_id, "dry_run") → Review what would happen
+```
+
+---
+
+## Chrome Lifecycle
+
+| Tool | Purpose |
+|------|---------|
+| `interceptor_chrome_launch(url, stealthMode)` | Launch Chrome through proxy |
+| `interceptor_chrome_navigate(url)` | Navigate (loses DevTools — prefer devtools_navigate) |
+| `interceptor_chrome_close()` | Close Chrome |
+| `interceptor_chrome_cdp_info()` | Get CDP connection info |
+
+---
+
+## Proxy Lifecycle
+
+| Tool | Purpose |
+|------|---------|
+| `proxy_start()` | Start the MITM proxy |
+| `proxy_stop()` | Stop the proxy |
+| `proxy_status()` | Check proxy status |
+| `proxy_get_ca_cert()` | Get CA certificate for manual trust |
+
+---
+
+## Related
+
+- **Traffic interception strategy**: See `../strategies/traffic-interception.md`
+- **Anti-blocking layers**: See `../strategies/anti-blocking.md`
+- **Session workflows**: See `../strategies/session-workflows.md`
+- **DOM scraping via DevTools**: See `../strategies/dom-scraping.md`
