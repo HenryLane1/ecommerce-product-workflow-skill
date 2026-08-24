@@ -1,1 +1,147 @@
-IyBQaGFzZSAzOiBJdGVyYXRpdmUgSW1wbGVtZW50YXRpb24KClBhdHRlcm5zIGZvciBpbXBsZW1lbnRpbmcgc2NyYXBlcnMgaW5jcmVtZW50YWxseSwgc3RhcnRpbmcgc2ltcGxlIGFuZCBhZGRpbmcgY29tcGxleGl0eSBvbmx5IGFzIG5lZWRlZC4KCiMjIFN0ZXAgMTogSW1wbGVtZW50IFJlY29tbWVuZGVkIEFwcHJvYWNoCgojIyMgUHJvZ3Jlc3NpdmUgRW5oYW5jZW1lbnQgUGF0dGVybgoKMS4gU3RhcnQgd2l0aCBtaW5pbWFsIHdvcmtpbmcgY29kZQoyLiBUZXN0IHdpdGggc21hbGwgc2FtcGxlICg1LTEwIGl0ZW1zKQozLiBWYWxpZGF0ZSBkYXRhIHF1YWxpdHkKNC4gU2NhbGUgdG8gZnVsbCBkYXRhc2V0CgojIyMgUmVmZXJlbmNlIEltcGxlbWVudGF0aW9uIFBhdHRlcm5zCgotICoqVHJhZmZpYyBpbnRlcmNlcHRpb24qKjogU2VlIGAuLi9zdHJhdGVnaWVzL3RyYWZmaWMtaW50ZXJjZXB0aW9uLm1kYAotICoqU2l0ZW1hcCoqOiBTZWUgYC4uL3N0cmF0ZWdpZXMvc2l0ZW1hcC1kaXNjb3ZlcnkubWRgCi0gKipBUEkqKjogU2VlIGAuLi9zdHJhdGVnaWVzL2FwaS1kaXNjb3ZlcnkubWRgCi0gKipET00gc2NyYXBpbmcqKjogU2VlIGAuLi9zdHJhdGVnaWVzL2RvbS1zY3JhcGluZy5tZGAKLSAqKkV4YW1wbGVzKio6IFNlZSBgLi4vZXhhbXBsZXMvYCBkaXJlY3RvcnkKCiMjIFN0ZXAgMjogVGVzdCBTbWFsbCBCYXRjaCBGaXJzdAoKYGBgamF2YXNjcmlwdAovLyBFeGFtcGxlOiBUZXN0IHdpdGggZmlyc3QgMTAgVVJMcwpjb25zdCB1cmxzID0gYXdhaXQgcm9ib3RzLnBhcnNlVXJsc0Zyb21TaXRlbWFwcygpOwpjb25zdCB0ZXN0VXJscyA9IHVybHMuc2xpY2UoMCwgMTApOwoKY29uc29sZS5sb2coYFRlc3Rpbmcgd2l0aCAke3Rlc3RVcmxzLmxlbmd0aH0gVVJMcyBmaXJzdC4uLmApOwovLyBJbXBsZW1lbnQgc2NyYXBpbmcgbG9naWMKLy8gVmFsaWRhdGUgb3V0cHV0IHF1YWxpdHkKYGBgCgojIyMgVmFsaWRhdGlvbiBDaGVja2xpc3QKCi0g4pyTIERhdGEgc3RydWN0dXJlIGNvcnJlY3Q/Ci0g4pyTIEFsbCBmaWVsZHMgcG9wdWxhdGVkPwotIOKckyBBbnkgZXJyb3JzIG9yIG51bGwgdmFsdWVzPwotIOKckyBQZXJmb3JtYW5jZSBhY2NlcHRhYmxlPwoKIyMgU3RlcCAzOiBTY2FsZSBvciBGYWxsYmFjawoKIyMjIElmIFRlc3QgU3VjY2VlZHMKCmBgYGphdmFzY3JpcHQKY29uc29sZS5sb2coJ+KckyBUZXN0IHN1Y2Nlc3NmdWwsIHNjYWxpbmcgdG8gZnVsbCBkYXRhc2V0Li4uJyk7CmF3YWl0IGNyYXdsZXIuYWRkUmVxdWVzdHModXJscyk7IC8vIEFsbCBVUkxzCmF3YWl0IGNyYXdsZXIucnVuKCk7CmBgYAoKIyMjIElmIFRlc3QgRmFpbHMKCmBgYGphdmFzY3JpcHQKY29uc29sZS5sb2coJ+KclyBJc3N1ZXMgZGV0ZWN0ZWQsIGZhbGxpbmcgYmFjayB0byBhbHRlcm5hdGl2ZSBzdHJhdGVneS4uLicpOwovLyBUcnkgbmV4dCBhcHByb2FjaCBmcm9tIHJlY29tbWVuZGF0aW9ucwpgYGAKCiMjIFN0ZXAgNDogSGFuZGxlIEJsb2NraW5nIChJZiBFbmNvdW50ZXJlZCkKCiMjIyBJZGVudGlmeSBCbG9ja2luZyBUeXBlCgotICoqUmF0ZSBsaW1pdGluZyoqIOKGkiBTbG93IGRvd24gcmVxdWVzdHMgKGBtYXhSZXF1ZXN0c1Blck1pbnV0ZWApCi0gKipJUCBibG9ja2luZyoqIOKGkiBVc2UgcHJveGllcwotICoqQm90IGRldGVjdGlvbioqIOKGkiBVc2UgZmluZ2VycHJpbnRpbmcgKyBwcm94aWVzCi0gKipDbG91ZGZsYXJlL0NBUFRDSEEqKiDihpIgQWR2YW5jZWQgdGVjaG5pcXVlcwoKIyMjIEFwcGx5IEFudGktQmxvY2tpbmcKClNlZSBgLi4vc3RyYXRlZ2llcy9hbnRpLWJsb2NraW5nLm1kYCBmb3IgY29tcGxldGUgZ3VpZGUuCgoqKkR1cmluZyBkZXZlbG9wbWVudCoqIChwcm94eS1tY3ApOgpgYGAKIyBTdGVhbHRoIG1vZGUgaGFuZGxlcyBtb3N0IGJyb3dzZXItbGV2ZWwgZGV0ZWN0aW9uCmludGVyY2VwdG9yX2Nocm9tZV9sYXVuY2godXJsLCBzdGVhbHRoTW9kZTogdHJ1ZSkKCiMgQWRkIGh1bWFuaXplciBmb3IgYmVoYXZpb3JhbCBhbnRpLWRldGVjdGlvbgpodW1hbml6ZXJfY2xpY2sodGFyZ2V0X2lkLCBzZWxlY3RvcikKaHVtYW5pemVyX2lkbGUodGFyZ2V0X2lkLCBkdXJhdGlvbl9tcykKCiMgQWRkIHVwc3RyZWFtIHByb3h5IGZvciBJUCByb3RhdGlvbiBpZiBuZWVkZWQKcHJveHlfc2V0X3Vwc3RyZWFtKCJodHRwOi8vdXNlcjpwYXNzQHByb3h5LmFwaWZ5LmNvbTo4MDAwIikKYGBgCgoqKkZvciBwcm9kdWN0aW9uIEFjdG9ycyoqIChDcmF3bGVlKToKYGBgdHlwZXNjcmlwdApjb25zdCBjcmF3bGVyID0gbmV3IFBsYXl3cmlnaHRDcmF3bGVyKHsKICAgIC8vIEVuYWJsZSBmaW5nZXJwcmludGluZwogICAgdXNlU2Vzc2lvblBvb2w6IHRydWUsCiAgICBmaW5nZXJwcmludE9wdGlvbnM6IHsKICAgICAgICBkZXZpY2VzOiBbJ2Rlc2t0b3AnXSwKICAgICAgICBvcGVyYXRpbmdTeXN0ZW1zOiBbJ3dpbmRvd3MnLCAnbWFjb3MnXSwKICAgICAgICBicm93c2VyczogWydjaHJvbWUnXSwKICAgIH0sCgogICAgLy8gQWRkIHByb3hpZXMKICAgIHByb3h5Q29uZmlndXJhdGlvbjogYXdhaXQgQWN0b3IuY3JlYXRlUHJveHlDb25maWd1cmF0aW9uKHsKICAgICAgICBncm91cHM6IFsnUkVTSURFTlRJQUwnXSwKICAgIH0pLAoKICAgIC8vIFNsb3cgZG93bgogICAgbWF4Q29uY3VycmVuY3k6IDMsCiAgICBtYXhSZXF1ZXN0c1Blck1pbnV0ZTogMzAsCn0pOwpgYGAKCiMjIyBUZXN0IEluY3JlbWVudGFsbHkKCjEuIFN0YXJ0IHdpdGggc3RlYWx0aCBtb2RlIChwcm94eS1tY3ApIG9yIGZpbmdlcnByaW50aW5nIChDcmF3bGVlKQoyLiBBZGQgdXBzdHJlYW0gcHJveGllcyAvIGRhdGFjZW50ZXIgcHJveGllcyBpZiBzdGlsbCBibG9ja2VkCjMuIFVwZ3JhZGUgdG8gcmVzaWRlbnRpYWwgcHJveGllcyBpZiBuZWVkZWQKNC4gQWRkIHNlc3Npb24gcm90YXRpb24KCiMjIFN0ZXAgNTogQWRkIFJvYnVzdG5lc3MKCiMjIyBFcnJvciBIYW5kbGluZyBQYXR0ZXJuCgpgYGBqYXZhc2NyaXB0CmNvbnN0IGNyYXdsZXIgPSBuZXcgUGxheXdyaWdodENyYXdsZXIoewogICAgbWF4UmVxdWVzdFJldHJpZXM6IDMsCiAgICByZXF1ZXN0SGFuZGxlclRpbWVvdXRTZWNzOiA2MCwKCiAgICBhc3luYyByZXF1ZXN0SGFuZGxlcih7IHBhZ2UsIHJlcXVlc3QsIGxvZyB9KSB7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgLy8gU2NyYXBpbmcgbG9naWMKICAgICAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICAgICBsb2cuZXJyb3IoYEZhaWxlZCB0byBzY3JhcGUgJHtyZXF1ZXN0LnVybH06ICR7ZXJyb3IubWVzc2FnZX1gKTsKICAgICAgICAgICAgdGhyb3cgZXJyb3I7IC8vIFJldHJ5CiAgICAgICAgfQogICAgfSwKCiAgICBmYWlsZWRSZXF1ZXN0SGFuZGxlcih7IHJlcXVlc3QsIGVycm9yIH0sIHsgbG9nIH0pIHsKICAgICAgICBsb2cuZXJyb3IoYFJlcXVlc3QgZmFpbGVkIGFmdGVyIHJldHJpZXM6ICR7cmVxdWVzdC51cmx9YCk7CiAgICB9LAp9KTsKYGBgCgojIyMgRW5oYW5jZW1lbnRzIHRvIEFkZAoKLSBFcnJvciBoYW5kbGluZyAodHJ5L2NhdGNoKQotIFJldHJpZXMgd2l0aCBleHBvbmVudGlhbCBiYWNrb2ZmCi0gUHJvZ3Jlc3MgbG9nZ2luZwotIERhdGEgdmFsaWRhdGlvbgotIFJhdGUgbGltaXRpbmcgcmVzcGVjdAoKLS0tCgpCYWNrIHRvIG1haW4gd29ya2Zsb3c6IGAuLi9TS0lMTC5tZGAK
+# Phase 3: Iterative Implementation
+
+Patterns for implementing scrapers incrementally, starting simple and adding complexity only as needed.
+
+## Step 1: Implement Recommended Approach
+
+### Progressive Enhancement Pattern
+
+1. Start with minimal working code
+2. Test with small sample (5-10 items)
+3. Validate data quality
+4. Scale to full dataset
+
+### Reference Implementation Patterns
+
+- **Traffic interception**: See `../strategies/traffic-interception.md`
+- **Sitemap**: See `../strategies/sitemap-discovery.md`
+- **API**: See `../strategies/api-discovery.md`
+- **DOM scraping**: See `../strategies/dom-scraping.md`
+- **Examples**: See `../examples/` directory
+
+## Step 2: Test Small Batch First
+
+```javascript
+// Example: Test with first 10 URLs
+const urls = await robots.parseUrlsFromSitemaps();
+const testUrls = urls.slice(0, 10);
+
+console.log(`Testing with ${testUrls.length} URLs first...`);
+// Implement scraping logic
+// Validate output quality
+```
+
+### Validation Checklist
+
+- ✓ Data structure correct?
+- ✓ All fields populated?
+- ✓ Any errors or null values?
+- ✓ Performance acceptable?
+
+## Step 3: Scale or Fallback
+
+### If Test Succeeds
+
+```javascript
+console.log('✓ Test successful, scaling to full dataset...');
+await crawler.addRequests(urls); // All URLs
+await crawler.run();
+```
+
+### If Test Fails
+
+```javascript
+console.log('✗ Issues detected, falling back to alternative strategy...');
+// Try next approach from recommendations
+```
+
+## Step 4: Handle Blocking (If Encountered)
+
+### Identify Blocking Type
+
+- **Rate limiting** → Slow down requests (`maxRequestsPerMinute`)
+- **IP blocking** → Use proxies
+- **Bot detection** → Use fingerprinting + proxies
+- **Cloudflare/CAPTCHA** → Advanced techniques
+
+### Apply Anti-Blocking
+
+See `../strategies/anti-blocking.md` for complete guide.
+
+**During development** (proxy-mcp):
+```
+# Stealth mode handles most browser-level detection
+interceptor_chrome_launch(url, stealthMode: true)
+
+# Add humanizer for behavioral anti-detection
+humanizer_click(target_id, selector)
+humanizer_idle(target_id, duration_ms)
+
+# Add upstream proxy for IP rotation if needed
+proxy_set_upstream("http://user:pass@proxy.apify.com:8000")
+```
+
+**For production Actors** (Crawlee):
+```typescript
+const crawler = new PlaywrightCrawler({
+    // Enable fingerprinting
+    useSessionPool: true,
+    fingerprintOptions: {
+        devices: ['desktop'],
+        operatingSystems: ['windows', 'macos'],
+        browsers: ['chrome'],
+    },
+
+    // Add proxies
+    proxyConfiguration: await Actor.createProxyConfiguration({
+        groups: ['RESIDENTIAL'],
+    }),
+
+    // Slow down
+    maxConcurrency: 3,
+    maxRequestsPerMinute: 30,
+});
+```
+
+### Test Incrementally
+
+1. Start with stealth mode (proxy-mcp) or fingerprinting (Crawlee)
+2. Add upstream proxies / datacenter proxies if still blocked
+3. Upgrade to residential proxies if needed
+4. Add session rotation
+
+## Step 5: Add Robustness
+
+### Error Handling Pattern
+
+```javascript
+const crawler = new PlaywrightCrawler({
+    maxRequestRetries: 3,
+    requestHandlerTimeoutSecs: 60,
+
+    async requestHandler({ page, request, log }) {
+        try {
+            // Scraping logic
+        } catch (error) {
+            log.error(`Failed to scrape ${request.url}: ${error.message}`);
+            throw error; // Retry
+        }
+    },
+
+    failedRequestHandler({ request, error }, { log }) {
+        log.error(`Request failed after retries: ${request.url}`);
+    },
+});
+```
+
+### Enhancements to Add
+
+- Error handling (try/catch)
+- Retries with exponential backoff
+- Progress logging
+- Data validation
+- Rate limiting respect
+
+---
+
+Back to main workflow: `../SKILL.md`
