@@ -1,1 +1,3 @@
-ZGlzcGxheV9uYW1lOiBHUFQtSW1hZ2UyIFN0eWxlIExpYnJhcnkKc2hvcnRfZGVzY3JpcHRpb246IENob29zZSBHUFQtSW1hZ2UyIHRlbXBsYXRlcywgc3R5bGVzLCBhbmQgcHJvbXB0IGNvbnN0cmFpbnRzLgpkZWZhdWx0X3Byb21wdDogVXNlIHRoZSBHUFQtSW1hZ2UyIHN0eWxlIGxpYnJhcnkgdG8gY3JlYXRlIGEgcHJvZHVjdGlvbi1yZWFkeSBpbWFnZSBwcm9tcHQuCg==
+display_name: GPT-Image2 Style Library
+short_description: Choose GPT-Image2 templates, styles, and prompt constraints.
+default_prompt: Use the GPT-Image2 style library to create a production-ready image prompt.
